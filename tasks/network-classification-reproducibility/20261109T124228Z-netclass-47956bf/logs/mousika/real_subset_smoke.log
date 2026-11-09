@@ -1,0 +1,20 @@
+{
+  "kind": "real_data_prefix_component_smoke",
+  "task": "flow-size prediction",
+  "training_prefix_rows": 512,
+  "test_prefix_rows": 256,
+  "balanced_training_rows": 70,
+  "binary_features": 112,
+  "labels": [
+    0,
+    1
+  ],
+  "predictions": 256,
+  "training_input_sha256": "ed4b51cd05301436b791b06d6f680d55f820638b5c9d1cd3c2a793a7cb499d63",
+  "test_input_sha256": "5b42ae9b98398d0bc89205c5392b160944a1f18e1a3ff316abd3e6fe59cdf9db",
+  "elapsed_seconds": 0.6545072089999167,
+  "test_prefix_accuracy": 0.76953125,
+  "full_paper_equivalence": "Unknown; arbitrary small prefixes, full split and raw preprocessing not restored",
+  "paper_accuracy_reproduced": false,
+  "traffic_application_classification_reproduced": false
+}

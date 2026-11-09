@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched/inference/run_classifier_infer.py",
+    "--load_model_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin",
+    "--config_path",
+    "models/bert/tiny_config.json",
+    "--vocab_path",
+    "models/encryptd_vocab.txt",
+    "--test_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/unlabeled.tsv",
+    "--prediction_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_predictions.tsv",
+    "--labels_num",
+    "2",
+    "--embedding",
+    "word_pos_seg",
+    "--encoder",
+    "transformer",
+    "--mask",
+    "fully_visible",
+    "--seq_length",
+    "16",
+    "--output_prob"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+  "start_utc": "2026-11-09T11:13:46.255691+00:00",
+  "timeout_seconds": 90.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:13:47.473493+00:00",
+  "elapsed_seconds": 1.217806249999967
+}

@@ -1,0 +1,82 @@
+2026-11-09 11:13:39.761 | INFO     | linc.model:__init__:90 - ------- LINC Config -------
+{'num_classes': 2, 'in_features': 8, 'k': 2, 'T': 0.6, 'E': 2, 'lr': 0.001, 'weight_decay': 0.0001, 'batch_size': 16, 'num_epochs': 1, 'save_dir': '/workspace/traffic-repro-audit/papers/linc/runtime-artifacts/synthetic-patched', 'split': 1, 'data': None}
+2026-11-09 11:13:39.763 | INFO     | linc.model:__init__:97 - Using device: cpu
+2026-11-09 11:13:39.766 | INFO     | linc.model:_build_model:112 - ------- Building Model -------
+EnsembleNNModel(
+  (ensemble_nnus): ModuleList(
+    (0-1): 2 x EnsembleNeuralNetworkUnits(
+      (nnus): ModuleList(
+        (0-1): 2 x Sequential(
+          (0): NeuralNetworkUnit(
+            (bias): LearnableBiasVector()
+          )
+          (1): Linear(in_features=8, out_features=4, bias=True)
+          (2): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (3): PReLU(num_parameters=1)
+          (4): Linear(in_features=4, out_features=1, bias=True)
+        )
+      )
+    )
+  )
+  (criterion): CrossEntropyLoss()
+)
+Epoch: [0] [0/4]	Tps  0.043 ( 0.043)	Data  0.033 ( 0.033)	Loss 7.1568e-01 (7.1568e-01)	Acc@1  62.50 ( 62.50)
+Epoch: [0] [1/4]	Tps  0.004 ( 0.023)	Data  0.001 ( 0.017)	Loss 7.2849e-01 (7.2209e-01)	Acc@1  37.50 ( 50.00)
+Epoch: [0] [2/4]	Tps  0.006 ( 0.018)	Data  0.002 ( 0.012)	Loss 6.7969e-01 (7.0796e-01)	Acc@1  56.25 ( 52.08)
+Epoch: [0] [3/4]	Tps  0.004 ( 0.014)	Data  0.000 ( 0.009)	Loss 8.4158e-01 (7.4136e-01)	Acc@1  25.00 ( 45.31)
+2026-11-09 11:13:39.880 | INFO     | linc.model:train:161 - Save the best checkpoint. Acc@1: 62.5000
+2026-11-09 11:13:39.880 | INFO     | linc.model:train:177 - Epoch: 1/1, Train Loss: 0.7414, Train Acc: 45.3125, Valid Loss: 0.6567, Valid Acc: 62.5000
+2026-11-09 11:13:39.880 | INFO     | linc.model:train:188 - Best Valid Acc: 62.5000
+Valid: [0/2]	Tps  0.035 ( 0.035)	Loss 6.5828e-01 (6.5828e-01)	Acc@1  62.50 ( 62.50)
+/workspace/traffic-repro-audit/.conda/linc/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/workspace/traffic-repro-audit/.conda/linc/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/workspace/traffic-repro-audit/.conda/linc/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+2026-11-09 11:13:39.929 | INFO     | linc.model:train:191 - Classification Report (Test): 
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000        14
+           1     0.5625    1.0000    0.7200        18
+
+    accuracy                         0.5625        32
+   macro avg     0.2812    0.5000    0.3600        32
+weighted avg     0.3164    0.5625    0.4050        32
+
+2026-11-09 11:13:39.937 | INFO     | linc.model:export:286 - Stage1: Export Num rules: 6
+2026-11-09 11:13:39.937 | INFO     | linc.model:export:293 - Stage2-Round0: Export Num rules: 3
+2026-11-09 11:13:39.937 | INFO     | linc.model:export:293 - Stage2-Round1: Export Num rules: 2
+2026-11-09 11:13:39.938 | INFO     | linc.model:export:293 - Stage2-Round2: Export Num rules: 2
+2026-11-09 11:13:39.975 | INFO     | linc.model:export:303 - Classification Report: 
+              precision    recall  f1-score   support
+
+           0  1.00000000 1.00000000 1.00000000        14
+           1  1.00000000 1.00000000 1.00000000        18
+
+    accuracy                      1.00000000        32
+   macro avg  1.00000000 1.00000000 1.00000000        32
+weighted avg  1.00000000 1.00000000 1.00000000        32
+
+Validate: [0/1]	Tps  0.025 ( 0.025)
+2026-11-09 11:13:40.014 | INFO     | linc.model:export:326 - Export finished, total rules: 2
+Validate: [0/1]	Tps  0.023 ( 0.023)
+{
+  "scope": "synthetic CPU component test only; no paper metric comparison",
+  "stage": "train",
+  "patched": true,
+  "source": "/workspace/traffic-repro-audit/papers/linc/runtime-artifacts/patched",
+  "torch": "2.0.1+cpu",
+  "numpy": "1.26.4",
+  "cuda_available": false,
+  "synthetic_test_accuracy_percent": 100.0,
+  "rules": 2,
+  "train_rows": 64,
+  "val_rows": 32,
+  "test_rows": 32,
+  "epochs": 1,
+  "features": 8,
+  "seed": 2023,
+  "training_wall_seconds": 0.11297821998596191,
+  "conversion_wall_seconds": 0.08450770378112793
+}

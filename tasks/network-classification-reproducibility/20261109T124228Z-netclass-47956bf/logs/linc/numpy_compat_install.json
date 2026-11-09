@@ -1,0 +1,17 @@
+{
+  "argv": [
+    ".conda/linc/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "numpy==1.26.4"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:11:34.116868+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:11:37.746904+00:00",
+  "elapsed_seconds": 3.6300387409999075
+}

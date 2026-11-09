@@ -1,0 +1,23 @@
+{
+  "generator_exit_code": 0,
+  "generated_file_bytes": 1642922,
+  "generated_file_lines": 9896,
+  "generated_sha256": "1cab4224960dafbf48567c34670348a99a9fd729e0ade7804b1ee223ba0752d6",
+  "bundled_table_entries_sha256": "bdcc21bd3a9fe708d1793e0c3a9a58327b4cfd2347b8392e36b70071f3717db2",
+  "byte_identical_to_bundled_switch_table_entries": false,
+  "ast_parse": "passed (host Python); not P4 compilation or BFRT execution",
+  "entry_calls": {
+    "code_table0.add_with_SetClass0": 203,
+    "code_table1.add_with_SetClass1": 221,
+    "code_table2.add_with_SetClass2": 206,
+    "code_table3.add_with_SetClass3": 222,
+    "code_table4.add_with_SetClass4": 205,
+    "table_feature0.add_with_SetCode0": 64,
+    "table_feature1.add_with_SetCode1": 159,
+    "table_feature2.add_with_SetCode2": 111,
+    "table_feature3.add_with_SetCode3": 244,
+    "target_flows_table.add_with_set_flow_class": 429,
+    "voting_table.add_with_set_final_class": 7776
+  },
+  "scope": "Unmodified author generator executed against bundled original sklearn0.23.2 RF and test CSV; no generated BFRT API calls executed"
+}

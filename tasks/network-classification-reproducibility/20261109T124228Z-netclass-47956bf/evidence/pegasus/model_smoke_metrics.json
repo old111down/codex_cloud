@@ -1,0 +1,21 @@
+{
+  "scope": "Official replacement MLP checkpoint and unmodified model class; synthetic inputs only, no network accuracy or original paper equivalence",
+  "weights_sha256": "8d53350a788ff062f0b4f0f2dce1a3c92b543178f4d5812a85d1bf052ca2bfd0",
+  "input_kind": "synthetic random integers,seed42",
+  "input_shape": [
+    9,
+    10
+  ],
+  "output_shape": [
+    9,
+    3
+  ],
+  "strict_state_dict_load": true,
+  "finite_output": true,
+  "log_probability_normalization_passed": true,
+  "synthetic_csv_sha256": "6da6062c7a89f9b170b96d2041d11d5345abe1890da70fc9ebeecec675fe286d",
+  "state_parameter_count": 12204,
+  "paper_accuracy": "Unknown",
+  "paper_latency": "Unknown",
+  "paper_throughput": "Unknown"
+}

@@ -1,0 +1,52 @@
+{
+  "reviewed_utc": "2026-11-09T10:55:21.700474+00:00",
+  "matrix_sha256": "84c2975aa3bf260175cbaaec9536fbeeef24bacdd1285369cae208bf016f88ef",
+  "matrix_rows": 82,
+  "prefix_counts": {
+    "I": 32,
+    "T": 49,
+    "RUN": 1
+  },
+  "status_counts": {
+    "\u4e0d\u9002\u7528": 5,
+    "\u90e8\u5206\u8986\u76d6": 69,
+    "\u7f3a\u5931": 7,
+    "\u5df2\u9a8c\u8bc1": 1
+  },
+  "expected_claim_ids_complete": true,
+  "paper_figures": {
+    "infocom": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ton": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "notes": "Independent full-paper inventory comparison; does not validate paper metric reproduction."
+}

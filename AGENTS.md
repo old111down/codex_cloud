@@ -32,6 +32,7 @@ On a recoverable push failure, retain the original error/exit status, inspect au
 Record Task ID, Task Name, Start/End Time in UTC, Objective, Source Repositories, Source Commit SHAs, Runtime Environment, Commands Executed, Completed Work, Failed Experiments, Important Findings, Unverified Claims, Artifacts, and Final Status.
 
 - Use `templates/metadata.schema.json` for the machine-readable record and `templates/task_report.md` for the narrative report. Additional fields are allowed.
+- Validate metadata against the schema and explicitly parse known timestamps as UTC. Some JSON Schema installations do not enforce `date-time`; syntax checks alone do not establish valid calendar dates. Preserve genuinely unavailable historical times as `Unknown`, not fabricated values.
 - Preserve original research/execution times. Distinguish research start, archive/export start, inherited work, and new execution; do not invent a new experiment start to extend a budget.
 - `execution_log.md` records actual commands, cwd, UTC times, exit status, input provenance, and links to the selected logs. Preserve failures and separate original-code execution from compatibility repairs or algorithm changes.
 - Distinguish **Verified**, **Partially Verified**, **Failed**, and **Unknown**, with evidence and a precise scope. Installation, a smoke test, synthetic inputs, static code, or similar metrics cannot establish full paper-result reproduction.

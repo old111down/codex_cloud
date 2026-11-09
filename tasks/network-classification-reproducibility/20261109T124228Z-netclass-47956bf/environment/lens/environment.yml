@@ -1,0 +1,13 @@
+name: lens-metric-probe
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=2.2.4
+  - pandas=2.2.3
+  - scipy=1.15.2
+  - scikit-learn=1.6.1
+  - tqdm=4.67.1
+  - pip
+# Purpose: diagnostic metric/reference-split function probes only.
+# Full upstream Lens dependencies (torch/triton/transformers/etc.) were not built.

@@ -1,0 +1,11 @@
+--- a/linc/simulator.py
++++ b/linc/simulator.py
+@@ -55,7 +55,7 @@
+         index_default = torch.sum(mask, dim=-1) == 0
+         index_match = torch.sum(mask, dim=-1) != 0
+         pred = pred * index_match + index_default * self.default_value
+-        index = index * index_match.long() + index_default.long() * len(self.scores)
++        index = index * index_match.long() + index_default.long() * self.num_keys
+         if cache:
+             for q, label, ind in zip(
+                 query[:, 0, ...].cpu().numpy(), label.cpu().numpy(), index.cpu().numpy()

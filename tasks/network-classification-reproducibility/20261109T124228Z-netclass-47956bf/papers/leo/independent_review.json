@@ -1,0 +1,66 @@
+{
+  "reviewed_at_utc": "2026-11-09T11:27:13.729958+00:00",
+  "review_scope": "Report/matrix/paper captions and key method/appendix text, selected source/template/control generator and saved logs; no new training or P4 execution",
+  "paper_figures": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "paper_tables": [
+    1,
+    2
+  ],
+  "coverage_rows": 44,
+  "threshold_arithmetic_recomputed": [
+    {
+      "threshold": 0.5,
+      "rounded": 0,
+      "mismatch_inputs": [
+        0
+      ]
+    },
+    {
+      "threshold": 1.5,
+      "rounded": 2,
+      "mismatch_inputs": []
+    },
+    {
+      "threshold": 2.5,
+      "rounded": 2,
+      "mismatch_inputs": [
+        2
+      ]
+    }
+  ],
+  "unsigned16_recheck": {
+    "input": 65535,
+    "constraint": 2,
+    "difference_word": 65533,
+    "msb1": true,
+    "comparison_domain_scope": "Unsigned16 only; data frequency/paper impact Unknown"
+  },
+  "tracked_source_hashes_verified": 17,
+  "upstream_status_porcelain": "",
+  "matrix_sha256": "70a475a85d639518aba7fd5823abecd919a6984ed038685ea80926a02fc60a7a",
+  "review_helper_note": "Initial hash-review traversal assumed dict but manifest is list; corrected traversal only; no upstream or diagnostic output changed"
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python",
+    "papers/etc_noms_2024/independent_checks.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:56:15.990063+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T10:56:18.309703+00:00",
+  "elapsed_seconds": 2.3196413169999914
+}

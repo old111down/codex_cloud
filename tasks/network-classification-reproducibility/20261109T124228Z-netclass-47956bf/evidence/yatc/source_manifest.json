@@ -1,0 +1,492 @@
+{
+  "retrieved_utc": "2026-11-09T11:16:57.564157+00:00",
+  "remote": "https://github.com/NSSL-SJTU/YaTC.git",
+  "branch": "main",
+  "commit_sha": "a220b75f8365acaf63dbac7df87aaaa357698b85",
+  "commit_utc": "2024-04-30T01:05:07+08:00",
+  "git_status": "",
+  "files": [
+    {
+      "path": "YaTC.png",
+      "bytes": 216954,
+      "sha256": "eea77c419a8a2ec822162f63512473443c070acf22cedb0ee8211a21f31f2d1a"
+    },
+    {
+      "path": "data_process.py",
+      "bytes": 1849,
+      "sha256": "e2d909ca45010b0bbcfd926a210c576dc0f8e0ab73ec20f9cee2ce7a1c230347",
+      "symbols": [
+        {
+          "name": "makedir",
+          "start_line": 9,
+          "end_line": 13
+        },
+        {
+          "name": "read_MFR_bytes",
+          "start_line": 16,
+          "end_line": 44
+        },
+        {
+          "name": "MFR_generator",
+          "start_line": 46,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "path": "engine.py",
+      "bytes": 8225,
+      "sha256": "6bffe9cfd7bf00879815b13b1efda8618d9b28e631cacd1729a24bf56e6eccec",
+      "symbols": [
+        {
+          "name": "pretrain_one_epoch",
+          "start_line": 19,
+          "end_line": 90
+        },
+        {
+          "name": "train_one_epoch",
+          "start_line": 93,
+          "end_line": 169
+        },
+        {
+          "name": "evaluate",
+          "start_line": 173,
+          "end_line": 227
+        }
+      ]
+    },
+    {
+      "path": "fine-tune.py",
+      "bytes": 14633,
+      "sha256": "bf80681559cc7aa8d395045e91f3e957681f57d1fc362822e61e1fe2175e7b68",
+      "symbols": [
+        {
+          "name": "get_args_parser",
+          "start_line": 35,
+          "end_line": 140
+        },
+        {
+          "name": "build_dataset",
+          "start_line": 142,
+          "end_line": 156
+        },
+        {
+          "name": "main",
+          "start_line": 158,
+          "end_line": 335
+        }
+      ]
+    },
+    {
+      "path": "models_YaTC.py",
+      "bytes": 11403,
+      "sha256": "2e25a635a9cc24595dc51446bd1e5853b3d1e2898c76c6225e868116c0481906",
+      "symbols": [
+        {
+          "name": "PatchEmbed",
+          "start_line": 16,
+          "end_line": 32
+        },
+        {
+          "name": "TrafficTransformer",
+          "start_line": 35,
+          "end_line": 93
+        },
+        {
+          "name": "MaskedAutoencoder",
+          "start_line": 96,
+          "end_line": 299
+        },
+        {
+          "name": "MAE_YaTC",
+          "start_line": 303,
+          "end_line": 308
+        },
+        {
+          "name": "TraFormer_YaTC",
+          "start_line": 312,
+          "end_line": 316
+        },
+        {
+          "name": "__init__",
+          "start_line": 19,
+          "end_line": 28
+        },
+        {
+          "name": "forward",
+          "start_line": 30,
+          "end_line": 32
+        },
+        {
+          "name": "__init__",
+          "start_line": 36,
+          "end_line": 45
+        },
+        {
+          "name": "forward_packet_features",
+          "start_line": 47,
+          "end_line": 71
+        },
+        {
+          "name": "forward_features",
+          "start_line": 73,
+          "end_line": 93
+        },
+        {
+          "name": "__init__",
+          "start_line": 100,
+          "end_line": 140
+        },
+        {
+          "name": "initialize_weights",
+          "start_line": 142,
+          "end_line": 162
+        },
+        {
+          "name": "_init_weights",
+          "start_line": 164,
+          "end_line": 172
+        },
+        {
+          "name": "patchify",
+          "start_line": 174,
+          "end_line": 186
+        },
+        {
+          "name": "unpatchify",
+          "start_line": 188,
+          "end_line": 200
+        },
+        {
+          "name": "random_masking",
+          "start_line": 202,
+          "end_line": 227
+        },
+        {
+          "name": "forward_encoder",
+          "start_line": 229,
+          "end_line": 249
+        },
+        {
+          "name": "forward_decoder",
+          "start_line": 251,
+          "end_line": 275
+        },
+        {
+          "name": "forward_loss",
+          "start_line": 277,
+          "end_line": 293
+        },
+        {
+          "name": "forward",
+          "start_line": 295,
+          "end_line": 299
+        }
+      ]
+    },
+    {
+      "path": "pre-train.py",
+      "bytes": 8071,
+      "sha256": "53a11c4b0ba27eea4e39241e1f6a36d43ab3951cce226c227449d37455b9f578",
+      "symbols": [
+        {
+          "name": "get_args_parser",
+          "start_line": 30,
+          "end_line": 95
+        },
+        {
+          "name": "main",
+          "start_line": 98,
+          "end_line": 206
+        }
+      ]
+    },
+    {
+      "path": "readme.md",
+      "bytes": 1954,
+      "sha256": "484ad98e4cbc77aadb2982594071b12c3892ba2650a6a1708c4c72544cd1ffff"
+    },
+    {
+      "path": "util/crop.py",
+      "bytes": 1163,
+      "sha256": "82e4df14f6264a00642d0259db344d6fd66a44ba891f90fde3a6ccd02cae035d",
+      "symbols": [
+        {
+          "name": "RandomResizedCrop",
+          "start_line": 9,
+          "end_line": 36
+        },
+        {
+          "name": "get_params",
+          "start_line": 17,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "path": "util/lars.py",
+      "bytes": 1851,
+      "sha256": "1bb75085eecf93b8d7ed7972c507495586e71a8f483bcdcd4f37c354f88a0fc0",
+      "symbols": [
+        {
+          "name": "LARS",
+          "start_line": 14,
+          "end_line": 47
+        },
+        {
+          "name": "__init__",
+          "start_line": 18,
+          "end_line": 20
+        },
+        {
+          "name": "step",
+          "start_line": 23,
+          "end_line": 47
+        }
+      ]
+    },
+    {
+      "path": "util/lr_decay.py",
+      "bytes": 2018,
+      "sha256": "92896c8b7f325ef90f2187d0aae0476428ed022121229d76cb024798de80048e",
+      "symbols": [
+        {
+          "name": "param_groups_lrd",
+          "start_line": 4,
+          "end_line": 50
+        },
+        {
+          "name": "get_layer_id_for_vit",
+          "start_line": 53,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "path": "util/lr_sched.py",
+      "bytes": 604,
+      "sha256": "ef0b89200268d08a30ccf03a1307ed6e2661770bb3ce0fd9e8f8943fa0bf880d",
+      "symbols": [
+        {
+          "name": "adjust_learning_rate",
+          "start_line": 3,
+          "end_line": 15
+        }
+      ]
+    },
+    {
+      "path": "util/misc.py",
+      "bytes": 11019,
+      "sha256": "21ed3c2c8b5795ed743a31512d0b18eb4a225149a1bbaae988a9c0c62afb00f1",
+      "symbols": [
+        {
+          "name": "SmoothedValue",
+          "start_line": 13,
+          "end_line": 72
+        },
+        {
+          "name": "MetricLogger",
+          "start_line": 75,
+          "end_line": 156
+        },
+        {
+          "name": "setup_for_distributed",
+          "start_line": 159,
+          "end_line": 173
+        },
+        {
+          "name": "is_dist_avail_and_initialized",
+          "start_line": 176,
+          "end_line": 181
+        },
+        {
+          "name": "get_world_size",
+          "start_line": 184,
+          "end_line": 187
+        },
+        {
+          "name": "get_rank",
+          "start_line": 190,
+          "end_line": 193
+        },
+        {
+          "name": "is_main_process",
+          "start_line": 196,
+          "end_line": 197
+        },
+        {
+          "name": "save_on_master",
+          "start_line": 200,
+          "end_line": 202
+        },
+        {
+          "name": "init_distributed_mode",
+          "start_line": 205,
+          "end_line": 237
+        },
+        {
+          "name": "NativeScalerWithGradNormCount",
+          "start_line": 240,
+          "end_line": 266
+        },
+        {
+          "name": "get_grad_norm_",
+          "start_line": 269,
+          "end_line": 281
+        },
+        {
+          "name": "save_model",
+          "start_line": 284,
+          "end_line": 302
+        },
+        {
+          "name": "load_model",
+          "start_line": 305,
+          "end_line": 319
+        },
+        {
+          "name": "all_reduce_mean",
+          "start_line": 322,
+          "end_line": 330
+        },
+        {
+          "name": "__init__",
+          "start_line": 18,
+          "end_line": 24
+        },
+        {
+          "name": "update",
+          "start_line": 26,
+          "end_line": 29
+        },
+        {
+          "name": "synchronize_between_processes",
+          "start_line": 31,
+          "end_line": 42
+        },
+        {
+          "name": "median",
+          "start_line": 45,
+          "end_line": 47
+        },
+        {
+          "name": "avg",
+          "start_line": 50,
+          "end_line": 52
+        },
+        {
+          "name": "global_avg",
+          "start_line": 55,
+          "end_line": 56
+        },
+        {
+          "name": "max",
+          "start_line": 59,
+          "end_line": 60
+        },
+        {
+          "name": "value",
+          "start_line": 63,
+          "end_line": 64
+        },
+        {
+          "name": "__str__",
+          "start_line": 66,
+          "end_line": 72
+        },
+        {
+          "name": "__init__",
+          "start_line": 76,
+          "end_line": 78
+        },
+        {
+          "name": "update",
+          "start_line": 80,
+          "end_line": 87
+        },
+        {
+          "name": "__getattr__",
+          "start_line": 89,
+          "end_line": 95
+        },
+        {
+          "name": "__str__",
+          "start_line": 97,
+          "end_line": 103
+        },
+        {
+          "name": "synchronize_between_processes",
+          "start_line": 105,
+          "end_line": 107
+        },
+        {
+          "name": "add_meter",
+          "start_line": 109,
+          "end_line": 110
+        },
+        {
+          "name": "log_every",
+          "start_line": 112,
+          "end_line": 156
+        },
+        {
+          "name": "print",
+          "start_line": 165,
+          "end_line": 171
+        },
+        {
+          "name": "__init__",
+          "start_line": 243,
+          "end_line": 244
+        },
+        {
+          "name": "__call__",
+          "start_line": 246,
+          "end_line": 260
+        },
+        {
+          "name": "state_dict",
+          "start_line": 262,
+          "end_line": 263
+        },
+        {
+          "name": "load_state_dict",
+          "start_line": 265,
+          "end_line": 266
+        }
+      ]
+    },
+    {
+      "path": "util/pos_embed.py",
+      "bytes": 3475,
+      "sha256": "0209d3ce1f9452f0510938890eadf79f38a3bf3244a48e7b3c35685a8185d8e5",
+      "symbols": [
+        {
+          "name": "get_2d_sincos_pos_embed",
+          "start_line": 5,
+          "end_line": 20
+        },
+        {
+          "name": "get_2d_sincos_pos_embed_from_grid",
+          "start_line": 23,
+          "end_line": 31
+        },
+        {
+          "name": "get_1d_sincos_pos_embed",
+          "start_line": 34,
+          "end_line": 41
+        },
+        {
+          "name": "get_1d_sincos_pos_embed_from_grid",
+          "start_line": 43,
+          "end_line": 61
+        },
+        {
+          "name": "interpolate_pos_embed",
+          "start_line": 63,
+          "end_line": 84
+        }
+      ]
+    }
+  ]
+}

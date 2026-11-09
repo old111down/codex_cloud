@@ -1,0 +1,54 @@
+{
+  "scope": "Arithmetic audit of paper \u00a74.3.2, not reproduction of measured performance",
+  "formula": "higher_percent=(numerator/denominator-1)*100",
+  "results": [
+    {
+      "claim": "training_latency_ETBERT",
+      "numerator": 0.4328,
+      "denominator": 0.0005,
+      "paper_reported_higher_percent": 86560,
+      "computed_higher_percent": 86460.0,
+      "ratio_times_100": 86560.0
+    },
+    {
+      "claim": "training_latency_YaTC",
+      "numerator": 0.1342,
+      "denominator": 0.0005,
+      "paper_reported_higher_percent": 26840,
+      "computed_higher_percent": 26740.000000000004,
+      "ratio_times_100": 26840.000000000004
+    },
+    {
+      "claim": "memory_ETBERT",
+      "numerator": 15189.48,
+      "denominator": 196.38,
+      "paper_reported_higher_percent": 7735,
+      "computed_higher_percent": 7634.73877176902,
+      "ratio_times_100": 7734.73877176902
+    },
+    {
+      "claim": "memory_YaTC_text",
+      "numerator": 5352.48,
+      "denominator": 196.38,
+      "paper_reported_higher_percent": 2725,
+      "computed_higher_percent": 2625.5728689275893,
+      "ratio_times_100": 2725.5728689275893
+    },
+    {
+      "claim": "throughput_over_ETBERT",
+      "numerator": 86251.23,
+      "denominator": 164.91,
+      "paper_reported_higher_percent": 52302,
+      "computed_higher_percent": 52202.00109150445,
+      "ratio_times_100": 52302.00109150445
+    },
+    {
+      "claim": "throughput_over_YaTC",
+      "numerator": 86251.23,
+      "denominator": 636.62,
+      "paper_reported_higher_percent": 13548,
+      "computed_higher_percent": 13448.306682165185,
+      "ratio_times_100": 13548.306682165185
+    }
+  ]
+}

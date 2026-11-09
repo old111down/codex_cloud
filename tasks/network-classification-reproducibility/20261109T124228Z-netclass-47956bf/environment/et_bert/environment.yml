@@ -1,0 +1,17 @@
+name: audit-et-bert
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.20
+  - numpy=1.19.2
+  - pip
+  - tqdm
+  - six
+  - packaging
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==1.13.1+cpu
+      - argparse==1.4.0
+      - scapy==2.5.0
+      - scikit-learn==0.24.2
+      - scipy==1.6.3

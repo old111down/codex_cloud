@@ -1,0 +1,29 @@
+{
+  "argv": [
+    ".conda/yatc/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--report",
+    "environment/yatc/pip-install-report.json",
+    "numpy==1.19.5",
+    "scikit-learn==0.24.2",
+    "timm==0.3.2",
+    "scipy==1.5.4",
+    "pillow==9.5.0",
+    "scikit-image==0.18.3",
+    "tensorboard==2.10.1",
+    "protobuf==3.20.3",
+    "matplotlib==3.3.4",
+    "scapy==2.5.0",
+    "tqdm==4.66.1"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:10:57.138959+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:11:04.140245+00:00",
+  "elapsed_seconds": 7.001284394000095
+}

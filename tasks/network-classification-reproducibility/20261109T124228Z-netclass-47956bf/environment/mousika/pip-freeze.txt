@@ -1,0 +1,15 @@
+# Public sanitized record, not a raw portable requirements file. Local build URLs were withheld; exact Conda versions remain in explicit records.
+cloudpickle @ <LOCAL_BUILD_PATH_WITHHELD>
+imbalanced-learn @ <LOCAL_BUILD_PATH_WITHHELD>
+joblib @ <LOCAL_BUILD_PATH_WITHHELD>
+numpy @ <LOCAL_BUILD_PATH_WITHHELD>
+packaging @ <LOCAL_BUILD_PATH_WITHHELD>
+pandas==1.5.3
+python-dateutil @ <LOCAL_BUILD_PATH_WITHHELD>
+pytz @ <LOCAL_BUILD_PATH_WITHHELD>
+scikit-learn @ <LOCAL_BUILD_PATH_WITHHELD>
+scipy @ <LOCAL_BUILD_PATH_WITHHELD>
+six @ <LOCAL_BUILD_PATH_WITHHELD>
+threadpoolctl @ <LOCAL_BUILD_PATH_WITHHELD>
+torch==1.13.1+cpu
+typing_extensions==4.16.0

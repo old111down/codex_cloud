@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/yatc/bin/python",
+    "/workspace/traffic-repro-audit/papers/yatc/run_with_compat.py",
+    "/workspace/traffic-repro-audit/upstream/yatc/fine-tune.py",
+    "--blr",
+    "2e-3",
+    "--epochs",
+    "200",
+    "--data_path",
+    "./data/ISCXVPN2016_MFR",
+    "--nb_classes",
+    "7"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/readme",
+  "start_utc": "2026-11-09T11:16:17.713940+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:16:19.131797+00:00",
+  "elapsed_seconds": 1.4178614649999872
+}

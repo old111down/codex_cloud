@@ -1,0 +1,18 @@
+{
+  "argv": [
+    ".conda/yatc/bin/python",
+    "papers/yatc/engine_cpu_probe.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:14:38.845998+00:00",
+  "timeout_seconds": 90.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:14:42.477155+00:00",
+  "elapsed_seconds": 3.6312040540001362
+}

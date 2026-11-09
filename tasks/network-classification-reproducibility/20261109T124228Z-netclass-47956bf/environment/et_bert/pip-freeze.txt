@@ -1,0 +1,13 @@
+# Public sanitized record, not a raw portable requirements file. Local build URLs were withheld; exact Conda versions remain in explicit records.
+colorama @ <LOCAL_BUILD_PATH_WITHHELD>
+joblib==1.4.2
+numpy @ <LOCAL_BUILD_PATH_WITHHELD>
+packaging @ <LOCAL_BUILD_PATH_WITHHELD>
+scapy==2.5.0
+scikit-learn==0.24.2
+scipy==1.6.3
+six @ <LOCAL_BUILD_PATH_WITHHELD>
+threadpoolctl==3.5.0
+torch==1.13.1+cpu
+tqdm @ <LOCAL_BUILD_PATH_WITHHELD>
+typing_extensions==4.13.2

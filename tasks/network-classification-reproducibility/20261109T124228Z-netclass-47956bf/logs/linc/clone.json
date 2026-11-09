@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "git",
+    "clone",
+    "https://github.com/haolinyan/LINC.git",
+    "upstream/linc"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:08:15.846892+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:08:16.563024+00:00",
+  "elapsed_seconds": 0.716134669999974
+}

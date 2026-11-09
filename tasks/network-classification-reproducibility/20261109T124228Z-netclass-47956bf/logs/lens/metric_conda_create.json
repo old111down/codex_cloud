@@ -1,0 +1,25 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "create",
+    "-y",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-p",
+    "/workspace/traffic-repro-audit/.conda/lens",
+    "python=3.10",
+    "numpy=2.2.4",
+    "scipy=1.15.2",
+    "scikit-learn=1.6.1",
+    "pip"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:20:43.973463+00:00",
+  "timeout_seconds": 600.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:20:52.721226+00:00",
+  "elapsed_seconds": 8.747766877000231
+}

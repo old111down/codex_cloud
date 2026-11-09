@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python",
+    "papers/flowrest/independent_review_checks.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:26:06.933814+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:26:07.555592+00:00",
+  "elapsed_seconds": 0.621781553999881
+}

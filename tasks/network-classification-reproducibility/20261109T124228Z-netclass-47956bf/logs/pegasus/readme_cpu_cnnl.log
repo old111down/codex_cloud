@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/traffic-repro-audit/.conda/pegasus/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/workspace/traffic-repro-audit/.conda/pegasus/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/workspace/traffic-repro-audit/upstream/pegasus/software/quickdemo/cnnLtest.py", line 117, in <module>
+    run(args)
+  File "/workspace/traffic-repro-audit/upstream/pegasus/software/quickdemo/cnnLtest.py", line 111, in run
+    test_loader = build_data_loader(1501, 2561, 8, test_path, batch_size, args, is_train=False, shuffle=False)
+  File "/workspace/traffic-repro-audit/upstream/pegasus/software/quickdemo/cnnLtest.py", line 54, in build_data_loader
+    dataset = bigcnnFlowDataset(len_vocab, ipd_vocab, filename, window_size, args)
+  File "/workspace/traffic-repro-audit/upstream/pegasus/software/util/bigcnn_data_loader.py", line 38, in __init__
+    with open(filename) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'dataset/PeerRush/redeal_test.json'

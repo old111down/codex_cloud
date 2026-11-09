@@ -1,0 +1,36 @@
+{
+  "scope": "Independent static check of existing ET-BERT loss/history/dropout evidence; no model rerun",
+  "combiner_expression": "loss_mlm / 10 + loss_sp",
+  "combiner_line": 179,
+  "verified_history_shas": [
+    "e376fe3b56d0764deb34b6d9ad8761e5481b3433",
+    "cbd7c8af1b653cc44a501e8decaa816926cb139c",
+    "618b3345a58b4eba86f3c902658ae3eebe0268c7",
+    "50fe7ae87a2ed8132ee804e9a33620f8069c6d8c",
+    "749e2d2dc59e07a5f90498023901e77ad5a03632",
+    "d59470624acd11405f9e88da650cf3bf65521e9a"
+  ],
+  "json_dropout": 0.1,
+  "config_update_overwrites_cli": true,
+  "observed_cpu_base_shape": {
+    "layers": 12,
+    "heads": 12,
+    "hidden_size": 768,
+    "embedding_size": 768,
+    "feedforward_size": 3072,
+    "vocab_size": 60005,
+    "input_shape": [
+      2,
+      16
+    ]
+  },
+  "paper_metric_scope": "Unknown; random initial weights, sequence16",
+  "upstream_clean": true,
+  "review_report": "papers/et_bert/independent_review.md",
+  "review_status": "Passed within stated scope; R1 synthetic only",
+  "final_report_files_read": [
+    "papers/et_bert/static_audit.md",
+    "papers/et_bert/reproduction_report.md",
+    "patches/et_bert/README.md"
+  ]
+}

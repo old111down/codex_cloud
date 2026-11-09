@@ -1,0 +1,20 @@
+--- a/In_switch_ETC/Offline_model_preparation/generate_table_entries.py
++++ b/In_switch_ETC/Offline_model_preparation/generate_table_entries.py
+@@ -27,6 +27,8 @@
+ 
+ ## list the feature names
+ feature_names = ['Flow IAT Min', 'Max Packet Length', 'Flow IAT Max', 'Packet Length Total']
++# Match the key domains in pinned noms_20_5_4.p4: 15, 16, 8, and 16 bits.
++feature_max_values = [(1 << bits) - 1 for bits in (15, 16, 8, 16)]
+ 
+ print(feature_names)
+ 
+@@ -282,7 +284,7 @@
+         for ran, cods0, cods1, cods2, cods3, cods4 in zip(Ranges, Codes.iloc[:,0], Codes.iloc[:,1], Codes.iloc[:,2], Codes.iloc[:,3], Codes.iloc[:,4]):
+             if(ran == Ranges[len(Ranges)-1]):
+                 print("table_feature"+str(fea)+".add_with_SetCode"+str(fea)+"(feature"+str(fea)+"_start="+str(ran.split(",")[0])+ \
+-                ", feature"+str(fea)+"_end="+str(65535)+", code0="+str(cods0) + ", code1=" + str(cods1) + ", code2=" + str(cods2) + \
++                ", feature"+str(fea)+"_end="+str(feature_max_values[fea])+", code0="+str(cods0) + ", code1=" + str(cods1) + ", code2=" + str(cods2) + \
+                 ", code3=" + str(cods3) + ", code4=" + str(cods4) + ")", file = entries_file)
+                 # change 65535 to the maximum value of the feature in cases where the feature is not 16 bits
+             else:

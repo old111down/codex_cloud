@@ -1,0 +1,50 @@
+/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/cuda/amp/autocast_mode.py:120: UserWarning: torch.cuda.amp.autocast only affects CUDA ops, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.autocast only affects CUDA ops, but CUDA is not available.  Disabling.")
+/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test:  [0/1]  loss: 1.5654 (1.5654)  acc1: 0.6000 (0.6000)  acc5: 0.8000 (0.8000)  eta: 0:00:00  time: 0.0018  data: 0.0007
+Test: Total time: 0:00:00 (0.0021 s / it)
+* Acc@1 0.6000 Acc@5 0.8000 loss 1.5654
+* Pre 0.3600 Rec 0.6000 F1 0.4500
+{
+  "scope": "Synthetic metric-name consistency test; no traffic classification accuracy claim",
+  "targets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "predictions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reported_macro_pre": 0.36,
+  "reported_macro_rec": 0.6,
+  "reported_macro_f1": 0.4499999999999999,
+  "actual_weighted_precision_recall_f1": [
+    0.36,
+    0.6,
+    0.4499999999999999
+  ],
+  "actual_macro_precision_recall_f1": [
+    0.12,
+    0.2,
+    0.14999999999999997
+  ],
+  "confirmed": "evaluate stores weighted averages under macro_* keys",
+  "paper_uses_mislabeled_values": "Unknown: full paper not obtained"
+}

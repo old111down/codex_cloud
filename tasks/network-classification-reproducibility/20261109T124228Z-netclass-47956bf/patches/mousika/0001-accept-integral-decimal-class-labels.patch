@@ -1,0 +1,22 @@
+--- a/rule2entry/code/rule2entry.py
++++ b/rule2entry/code/rule2entry.py
+@@ -8,6 +8,7 @@
+ convert if-form rule of DT to ternary entry of P4 table
+ '''
+ import re
++from decimal import Decimal
+ import os
+ 
+ def set_bit_val(byte, index, val):
+@@ -61,7 +62,10 @@
+             for line in f:
+                 pattern = re.compile(r'feature_(\d*)(\D*=)(\d)')
+                 matchObj = pattern.findall(line)
+-                tmp_cls = int(line.split()[-1])
++                class_value = Decimal(line.split()[-1])
++                if not class_value.is_finite() or class_value != class_value.to_integral_value():
++                    raise ValueError("Class label must be a finite integer")
++                tmp_cls = int(class_value)
+                 ternary_list.append(self.get_ternary(matchObj, tmp_cls))
+         return ternary_list
+     

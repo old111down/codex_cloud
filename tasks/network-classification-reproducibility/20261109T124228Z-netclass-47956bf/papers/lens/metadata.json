@@ -1,0 +1,68 @@
+{
+  "paper_id": "lens",
+  "title": "Lens: A Knowledge-Guided Foundation Model for Network Traffic",
+  "year": 2026,
+  "publication_date": "2026-01-14 (audited arXivv5 date; TMLR acceptance2026-06; final publication day Unknown)",
+  "venue": "Transactions on Machine Learning Research; first-author homepage confirmsJune2026 acceptance; audited arXivv5",
+  "doi": "10.48550/arXiv.2402.03646 (preprint DOI; journal DOI Unknown)",
+  "paper_url": "https://arxiv.org/abs/2402.03646v5",
+  "repository_url": "https://github.com/V-Enzo/Lens-foundation-model-for-network-traffic",
+  "branch": "main",
+  "commit_sha": "dc91fb981ccc27371556895f75546ea84dfd46e7",
+  "commit_utc": "2026-06-30T03:45:15Z",
+  "repository_pushed_at": "2026-06-30T03:45:33Z",
+  "license": "Apache-2.0 code; README states model/data CC-BY-NC-4.0 subject to underlying data terms; artifact licenses not independently downloaded",
+  "association_status": "已验证",
+  "association_evidence": [
+    "evidence/round2/modern_search/lens/README.pinned.md:1-7 identifies official code/data/model and exact title",
+    "evidence/round2/modern_search/lens/README.pinned.md:117-126 gives all matching authors, TMLR2026, OpenReview and arXiv2402.03646",
+    "evidence/round2/modern_search/lens/paper.txt first page matches exact title and authors",
+    "evidence/round2/modern_search/lens/author_homepage.html:440,464-472 first author XiaochangLi announcesJune2026TMLR acceptance and directly pairs exact paper with exact GitHubCode link"
+  ],
+  "task": "12 flow classification tasks; 35 dataset×packet-field generation experiments; new-class extension; fuzzing classifier and ablation comparisons",
+  "input_unit": "First34 packets of each flow for classification, up to1500 traffic tokens; one sampled packet per flow for header-field generation",
+  "labels": "Paper Table11 counts: VPN2/6/16; Tor7; USTC16; Android209/country3; iOS196/country3; DoH5; IoT2/7. Actual released label maps not downloaded.",
+  "datasets": [
+    "ISCX-VPN",
+    "ISCX-Tor",
+    "USTC-TFC2016",
+    "CrossPlatform Android/iOS",
+    "CIC-DoHBrw2020",
+    "CIC-IoT2023"
+  ],
+  "model": "T5-v1.1-base encoder-decoder (~0.25B), network BBPE, knowledge-guided masked-span prediction, context-aware constrained label generation",
+  "deployment": "Offline GPU training/evaluation. Real-world deployment explicitly future work (§5); no P4/line-rate claim audited.",
+  "data_public": "Reference processing code and HF links public; raw pcaps not redistributed, processed splits/checkpoints not downloaded in this audit",
+  "code_public": true,
+  "gpu_dependency": "Official README requires CUDA; paper4×A6000 48GB. Main code selects flash attention/use_triton. No model training/inference attempted here.",
+  "proprietary_dependency": "Reference raw preprocessing requires external SplitCap+Mono and Wireshark/TShark; licenses/access must be verified. No switch SDK used.",
+  "reproduction_level": "R0",
+  "component_levels": {
+    "main_model": "R0; not run",
+    "original_metric_and_reference_split_functions": "R1 diagnostic functions only; synthetic inputs, not Lens algorithm/model reproduction"
+  },
+  "environment_scope": "Independent metric/reference-split probe environment only; full Lens torch/triton/transformers environment NOT built",
+  "paper_metrics_reproduced": false,
+  "audited_paper_version": "arXiv2402.03646v5,14Jan2026,18pages; Methods§3/Evaluation§4/AppendicesA-E read. Exact final TMLR-only changes Unknown.",
+  "paper_family_id": "lens",
+  "related_versions": [
+    {
+      "year": 2024,
+      "title": "Lens: A Foundation Model for Network Traffic in Cybersecurity",
+      "relation": "earlier same-arXiv versions; not an independent count"
+    }
+  ],
+  "upstream_git_status": "clean",
+  "unknowns": [
+    "Original data/weights/revisions and paper metric equivalence",
+    "Whether released real splits share the reference pipeline's synthetic-demonstrated cross-task input overlap",
+    "Whether nonstandard TVD normalization is intended author convention",
+    "Full original run configurations and all baseline/fuzzing/ablation artifacts"
+  ],
+  "first_publication_year": 2024,
+  "first_publication_scope": "paper_family; earlier arXiv2402.03646 version, not the2026TMLR version alone",
+  "audited_version_date": "2026-01-14",
+  "year_basis": "year=2026 identifies the audited renamed arXivv5/TMLR-accepted version; first family preprint year=2024",
+  "date_basis": "Downloaded arXivv5 first page gives14Jan2026. First-author homepage author_homepage.html:440 announcesJune2026TMLR acceptance, not a publication day. Earlier same-arXiv2024 title is retained in related_versions; no exact first-release day inferred.",
+  "priority_basis": "P0 for the2026revised version and2026TMLR acceptance/public artifact, not a claim that the family first appeared in2026"
+}

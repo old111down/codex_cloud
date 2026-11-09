@@ -1,0 +1,155 @@
+{
+  "source": "https://github.com/afireswallow/Pegasus",
+  "commit_sha": "a73bd327fbf0db2550a9bc1e304b96e0aa550cba",
+  "path": "upstream/pegasus/software/save/mlp/PeerRush/MLP_PeerRush.pt",
+  "bytes": 53490,
+  "sha256": "8d53350a788ff062f0b4f0f2dce1a3c92b543178f4d5812a85d1bf052ca2bfd0",
+  "pickle_global_operations": [
+    {
+      "opcode": "GLOBAL",
+      "argument": "collections OrderedDict",
+      "offset": 2
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 30
+    },
+    {
+      "opcode": "GLOBAL",
+      "argument": "torch._utils _rebuild_tensor_v2",
+      "offset": 46
+    },
+    {
+      "opcode": "GLOBAL",
+      "argument": "torch FloatStorage",
+      "offset": 97
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 166
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 172
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 250
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 256
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 330
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 336
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 406
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 412
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 482
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 488
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 566
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 572
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 647
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 653
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 723
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 729
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 799
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 805
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 882
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 888
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 963
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 969
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 1040
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 1046
+    },
+    {
+      "opcode": "REDUCE",
+      "argument": null,
+      "offset": 1072
+    }
+  ],
+  "scope": "Static pickle opcode review only; no unpickle in retrieval harness; not a formal safety proof"
+}

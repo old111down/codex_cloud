@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "scripts/mousika/patch_smoke.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:48:21.625382+00:00",
+  "end_utc": "2026-11-09T10:48:21.827533+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.20198904599999423,
+  "timeout_seconds": 30.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

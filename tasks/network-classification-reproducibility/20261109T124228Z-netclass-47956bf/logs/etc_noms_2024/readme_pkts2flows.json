@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+    "data_preparation/pkts2flows.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/etc_noms_2024/Offline_ETC",
+  "start_utc": "2026-11-09T10:47:20.653560+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T10:47:21.369320+00:00",
+  "elapsed_seconds": 0.7157634229999985
+}

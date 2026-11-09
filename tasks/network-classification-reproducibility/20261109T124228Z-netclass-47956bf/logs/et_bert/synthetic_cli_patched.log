@@ -1,0 +1,17 @@
+Batch size:  2
+The number of training instances: 8
+Start training.
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.55it/s]100%|██████████| 1/1 [00:00<00:00,  1.55it/s]
+Epoch id: 1, Training steps: 1, Avg loss: 0.697
+Epoch id: 1, Training steps: 2, Avg loss: 0.735
+Epoch id: 1, Training steps: 3, Avg loss: 0.702
+Epoch id: 1, Training steps: 4, Avg loss: 0.683
+Acc. (Correct/Total): 0.5000 (2/4) 
+Test set evaluation.
+Confusion matrix:
+tensor([[0, 0],
+        [2, 2]])
+Report precision, recall, and f1:
+Label 0: 0.000, 0.000, 0.000
+Label 1: 0.500, 1.000, 0.667
+Acc. (Correct/Total): 0.5000 (2/4) 

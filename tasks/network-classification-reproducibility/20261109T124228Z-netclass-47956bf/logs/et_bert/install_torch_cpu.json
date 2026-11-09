@@ -1,0 +1,22 @@
+{
+  "argv": [
+    ".conda/et_bert/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-cache-dir",
+    "--report",
+    "/workspace/traffic-repro-audit/environment/et_bert/torch-install-report.json",
+    "torch==1.13.1+cpu",
+    "--index-url",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:10:10.102726+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:10:33.540397+00:00",
+  "elapsed_seconds": 23.437677309000037
+}

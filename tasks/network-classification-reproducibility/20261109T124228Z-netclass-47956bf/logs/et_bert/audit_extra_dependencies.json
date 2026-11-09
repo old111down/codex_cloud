@@ -1,0 +1,21 @@
+{
+  "argv": [
+    ".conda/et_bert/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--report",
+    "/workspace/traffic-repro-audit/environment/et_bert/audit-extra-install-report.json",
+    "scapy==2.4.4",
+    "scikit-learn==0.24.2",
+    "scipy==1.6.3"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:11:16.997974+00:00",
+  "timeout_seconds": 180.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:11:26.435791+00:00",
+  "elapsed_seconds": 9.43795704199988
+}

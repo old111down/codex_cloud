@@ -1,0 +1,86 @@
+{
+  "paper_id": "mousika",
+  "title": "Mousika: Enable General In-Network Intelligence in Programmable Switches by Knowledge Distillation",
+  "year": 2022,
+  "venue": "IEEE INFOCOM 2022",
+  "doi": "10.1109/INFOCOM48880.2022.9796936",
+  "paper_url": "https://doi.org/10.1109/INFOCOM48880.2022.9796936",
+  "author_pdf_url": "https://smartinternet.group/wp-content/uploads/2024/01/paper-xgr-mousika-infocom.pdf",
+  "repository_url": "https://github.com/xgr19/Mousika",
+  "branch": "main",
+  "commit_sha": "76c9db9b4200a7c591bd1e9476ba5ab44a467512",
+  "commit_date": "2023-06-13T20:19:53+08:00",
+  "observed_at_utc": "2026-11-09T10:56:15.184957+00:00",
+  "repository_api_updated_at": "2026-11-08T08:17:40Z",
+  "repository_api_pushed_at": "2023-06-19T07:48:36Z",
+  "license": "Unknown — no LICENSE tracked; GitHub API license:null",
+  "task": "Packet-level flow-size prediction; application traffic classification; malware detection",
+  "input_unit": "Packet; binary expansion of selected header fields (112 bits in provided UNIV demo)",
+  "labels": {
+    "UNIV1": [
+      "elephant (top20% flows by size)",
+      "mice"
+    ],
+    "ISCX": [
+      "Email",
+      "Chat",
+      "Streaming",
+      "File Transfer",
+      "VoIP",
+      "P2P"
+    ],
+    "Bot-IoT": [
+      "legitimate",
+      "malicious"
+    ]
+  },
+  "datasets": [
+    "UNIV1",
+    "ISCX VPN/non-VPN reference [32]",
+    "Bot-IoT"
+  ],
+  "model": "Binary Decision Tree distilled from RF/GRU/LSTM; main implements RF and GRU, no LSTM implementation",
+  "deployment": "Server training; P4 Tofino switch packet inference",
+  "data_public": "Partial — main contains preprocessed UNIV ZIP; no processed ISCX/Bot-IoT; raw-to-CSV transform Unknown",
+  "code_public": true,
+  "gpu_dependency": "GRU neural path uses .cuda(); CPU RF path runnable. v2 unconditionally calls CUDA even for RF. No GPU available in audit.",
+  "proprietary_dependency": "Hardware deployment uses Tofino SDE/BFRT/ASIC and Keysight generator; not installed/accessed in this audit",
+  "association_evidence": [
+    "evidence/mousika/access_research/infocom_inventory.md: original paper PDF p9 explicitly links github.com/xgr19/Mousika",
+    "evidence/mousika/access_research/qing_li_homepage.html: corresponding author lists exact paper and links author PDF",
+    "evidence/mousika/repo_api.json: exact paper title repository description; readme main/v2 mapping"
+  ],
+  "paper_fulltext_access": "Verified — coauthor-hosted legal PDF, 10 pages; methods/evaluation read; no appendix in this copy",
+  "reproduction_level": "R1",
+  "component_levels": {
+    "main_UNIV_prefix_RF_to_BDT": "R2 component only; paper equivalence Unknown",
+    "main_ISCX_traffic_classification": "R0",
+    "main_BotIoT": "R0",
+    "Python_rule_encoding": "R1",
+    "v2_full_entry": "R0",
+    "P4_build": "R0",
+    "P4_software_simulation": "R0",
+    "P4_hardware": "R0"
+  },
+  "paper_metrics_reproduced": false,
+  "upstream_status_main": "",
+  "upstream_status_v2": "",
+  "extended_paper": {
+    "title": "Empowering In-Network Classification in Programmable Switches by Binary Decision Tree and Knowledge Distillation",
+    "year_online": 2023,
+    "year_issue": 2024,
+    "venue": "IEEE/ACM Transactions on Networking 32(1):382–395",
+    "doi": "10.1109/TNET.2023.3287091",
+    "branch": "Mousikav2",
+    "commit_sha": "3326869d4c1f25768a9304a2df672e82f38972f9",
+    "commit_date": "2023-06-19T15:48:36+08:00",
+    "author_pdf_url": "https://smartinternet.group/wp-content/uploads/2023/12/paper-xgr-mousikav2-ton.pdf",
+    "fulltext": "Verified 14 pages; no appendix in retrieved copy; separate supplement Unknown",
+    "additional_scope": "Five teacher families; label mixing sweep; outer5fold; 3 physical switches; Deep Packet/SAM; scalability"
+  },
+  "coverage_matrix": "papers/mousika/coverage_matrix.csv",
+  "data_manifest": "evidence/mousika/data_manifest.json",
+  "source_manifest": "evidence/mousika/source_manifest.json",
+  "runtime_environment": "environment/mousika/environment.yml",
+  "reproduction_report": "papers/mousika/reproduction_report.md"
+}

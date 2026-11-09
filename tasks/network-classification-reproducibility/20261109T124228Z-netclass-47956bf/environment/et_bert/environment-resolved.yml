@@ -1,0 +1,53 @@
+name: /workspace/traffic-repro-audit/.conda/et_bert
+channels:
+  - conda-forge
+dependencies:
+  - _openmp_mutex=4.5=20_gnu
+  - bzip2=1.0.8=hda65f42_10
+  - ca-certificates=2026.10.23=hbd8a1cb_0
+  - colorama=0.4.6=pyhd8ed1ab_0
+  - ld_impl_linux-64=2.46.1=default_hbd61a6d_103
+  - libblas=3.11.0=12_h4a7cf45_openblas
+  - libcblas=3.11.0=12_h0358290_openblas
+  - libffi=3.7.0=h81df57d_1
+  - libgcc=16.2.0=ha9f2e26_7
+  - libgcc-ng=16.2.0=h69a702a_7
+  - libgfortran=16.2.0=h69a702a_7
+  - libgfortran5=16.2.0=h6b99dfc_7
+  - libgomp=16.2.0=he0feb66_7
+  - liblapack=3.11.0=12_h47877c9_openblas
+  - liblzma=5.8.3=hb03c661_1
+  - liblzma-devel=5.8.3=hb03c661_1
+  - libnsl=2.0.1=hb9d3cd8_1
+  - libopenblas=0.3.34=pthreads_hf13c14d_2
+  - libsqlite=3.54.1=h0737f62_101
+  - libuuid=2.42.4=hcfc3c73_1
+  - libxcrypt=4.4.38=h280c20c_0
+  - libzlib=1.3.2=h25fd6f3_3
+  - ncurses=6.6=hdb14827_1
+  - numpy=1.19.2=py38hf89b668_1
+  - openssl=3.6.5=h781a0a9_0
+  - packaging=26.2=pyhc364b38_0
+  - pip=24.3.1=pyh8b19718_0
+  - python=3.8.20=h4a871b0_2_cpython
+  - python_abi=3.8=9_cp38
+  - readline=8.3=hd6e31c0_1
+  - setuptools=75.3.0=pyhd8ed1ab_0
+  - six=1.16.0=pyh6c4a22f_0
+  - tk=8.6.13=noxft_h1df4ec4_4
+  - tqdm=4.67.1=pyhd8ed1ab_0
+  - wheel=0.45.1=pyhd8ed1ab_0
+  - xz=5.8.3=ha02ee65_1
+  - xz-gpl-tools=5.8.3=ha02ee65_1
+  - xz-tools=5.8.3=hb03c661_1
+  - zstd=1.5.7=hb78ec9c_7
+  - pip:
+      - argparse==1.4.0
+      - joblib==1.4.2
+      - scapy==2.5.0
+      - scikit-learn==0.24.2
+      - scipy==1.6.3
+      - threadpoolctl==3.5.0
+      - torch==1.13.1+cpu
+      - typing-extensions==4.13.2
+prefix: /workspace/traffic-repro-audit/.conda/et_bert

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "LENS-METRIC-NORM",
+    "category": "\u8fd0\u884c\u89c2\u5bdf\u7ed3\u679c",
+    "statement": "Original TVD implementation divides common-standard total variation bysqrt2; direct synthetic disjoint distributions yield0.70710678 instead of1. Paper has no explicit formula.",
+    "scope": "Original metric function only, notTable6 replication",
+    "impact": "Potential metric-definition mismatch across implementations; custom author convention possible. Paper absolute resultsUnknown.",
+    "evidence": [
+      "upstream/lens/src/lens/utils/metric.py:56-60",
+      "papers/lens/metric_split_probe_results.json",
+      "logs/lens/metric_split_probe.log"
+    ]
+  },
+  {
+    "id": "LENS-TRANS-PATH",
+    "category": "\u8fd0\u884c\u89c2\u5bdf\u7ed3\u679c",
+    "statement": "Reference coarse-pretrain and independent fine-task partition functions can shareflowIDs:400 syntheticflows produce240pretrain/40fine-test with22sharedIDs; samecoarse control overlap0.",
+    "scope": "Synthetic reference-pipeline property only",
+    "impact": "May represent transductive input exposure. Not proof of label leakage or actual paper/test contamination; real artifact/protocolUnknown.",
+    "evidence": [
+      "upstream/lens/data_preprocessing/2_split_pcap_by_label.py:226-248",
+      "papers/lens/metric_split_probe_results.json",
+      "logs/lens/metric_split_probe.log"
+    ]
+  },
+  {
+    "id": "LENS-FUZZ-STAGE",
+    "category": "\u5df2\u786e\u8ba4\u4e8b\u5b9e",
+    "statement": "Five Fig3 downstream ML classifier training/test stages absent from tracked Lens source; generation_fuzzing only calls generation evaluate on train_dataloader.",
+    "scope": "Pinnedcommit staticcoverage",
+    "impact": "Fig3 complete experimental pipeline cannot be replayed from this repository alone.",
+    "evidence": [
+      "upstream/lens/scripts/finetune_generation.py:510-516",
+      "evidence/round2/modern_search/lens/static/upstream_files.json",
+      "papers/lens/coverage_matrix.csv"
+    ]
+  },
+  {
+    "id": "LENS-COMPARE-ABLATIONS",
+    "category": "\u5df2\u786e\u8ba4\u4e8b\u5b9e",
+    "statement": "Baseline architectures and exact noKG/nocontext/randommask/sensitivity run configurations are not provided by pinned Lens repository.",
+    "scope": "Tables2/3/5/6/7/8/12/13",
+    "impact": "Main Lens taskentries are broad; complete all-paper comparison claim remainsUnknown.",
+    "evidence": [
+      "papers/lens/coverage_matrix.csv",
+      "papers/lens/static_audit.md"
+    ]
+  },
+  {
+    "id": "LENS-CONFIG-PAPER",
+    "category": "\u5df2\u786e\u8ba4\u4e8b\u5b9e",
+    "statement": "Published defaults differ from several text settings: pretraindropout0vs0.1,contextnoise0.5vs0.15,hardcodedtheta0.6vsappendixadopt0.5; launcher40epochs vs main20 but appendixmax40.",
+    "scope": "Staticdefaultvsdocumentcomparison",
+    "impact": "Originalexperimentconfiguration/equivalenceUnknown; update/microstep130kvs780k could explain timingcounts and is not declared a provenerror.",
+    "evidence": [
+      "upstream/lens/scripts/configs/pretrain.yaml",
+      "upstream/lens/scripts/pretrain_with_knowledge.py:282-291",
+      "upstream/lens/scripts/run_finetune.sh:24-29",
+      "evidence/round2/modern_search/lens/paper.txt"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    ".conda/etc_noms_2024/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--only-binary=:all:",
+    "--report",
+    "environment/etc_noms_2024/pip-install-report.json",
+    "-r",
+    "environment/etc_noms_2024/requirements.txt"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:45:52.654810+00:00",
+  "timeout_seconds": 600.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T10:46:26.744165+00:00",
+  "elapsed_seconds": 34.089361388999976
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+    "/workspace/traffic-repro-audit/upstream/leo/leo-generator/leo_ctrlplane_generator.py",
+    "--tcam",
+    "--output_filename",
+    "tree0_ctrl.py",
+    "--sub_tree",
+    "1",
+    "--depth",
+    "1",
+    "--input_filename",
+    "tree_0.txt",
+    "--transient"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/leo/runtime-artifacts/smoke",
+  "start_utc": "2026-11-09T11:14:04.595048+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:14:04.659471+00:00",
+  "elapsed_seconds": 0.0644183399999747
+}

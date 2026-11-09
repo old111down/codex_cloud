@@ -1,0 +1,266 @@
+[
+  {
+    "branch": "main",
+    "path": ".gitattributes",
+    "bytes": 66,
+    "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/Dataset/univ.zip",
+    "bytes": 19401333,
+    "sha256": "65e43ba19bd873e14db57ee65210129f5797c3f41947c6dc201d9abfbfb2b4bc"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/DecisionNode.py",
+    "bytes": 3161,
+    "sha256": "a735cfced19a17beaa0aef8782042c487a0b5fa5c1f6aa461b2afc12f113b10a"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/RandomForest.py",
+    "bytes": 4828,
+    "sha256": "e33cc10cd94fbf987395960ab2c86d8138143c92052b754416530caefe98254e"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/SoftTree.py",
+    "bytes": 6538,
+    "sha256": "73032bad13f40fd184b1415393072bf1f84ff1ce2de87eaeb14baf5f954e8761"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/Tree.py",
+    "bytes": 6320,
+    "sha256": "f0b88e779f85018cdecc5b6ec23f4262ad2d9ac0bd7966590e75fd38e8d60ebf"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/bdt_test.py",
+    "bytes": 11053,
+    "sha256": "8997974526875c305e095a519c61c5a5f3fd7450873fd371cb910717d7a89c1b"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/dt_test.py",
+    "bytes": 2259,
+    "sha256": "62a5ccbc1267111534d12d7a7f2e9e97ef610823307d51a19714dff76d6f1e34"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/models/GRU.py",
+    "bytes": 860,
+    "sha256": "c687ed220e8b2abc977f837389f170771c92ff5b94b671c2bfd2d884a9a03986"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/models/__init__.py",
+    "bytes": 20,
+    "sha256": "a1f5fb198bb374057b170c20b8cb151088d5d0d7f0b3e6be53b45ec2e09dde2e"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/result_acc/univ_rf_acc.txt",
+    "bytes": 154,
+    "sha256": "a73657bb5ed7e4fed2eea6055cf34322141508cb40df387d9c9017def6d328b3"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/result_acc/univ_rf_sdt.txt",
+    "bytes": 150,
+    "sha256": "11f8cbf738b8df776deb497b390f7da1f85a9292759a8395695fcd9d8523cc6e"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/result_acc/univ_rf_teacher.txt",
+    "bytes": 150,
+    "sha256": "d7102b8c9165fa958a69f566d98dba67e4432a1986c6d5cf3c9495a02a8ef848"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/rule_tree/univ_rf_kk0_round0.txt",
+    "bytes": 549760,
+    "sha256": "fe073f9ca7559fcb8e47d9990fbea5e0212763885cb174662ccef4123e73c113"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/rule_tree/univ_rf_kk0_round1.txt",
+    "bytes": 545141,
+    "sha256": "0c622e47faac95f37200aebcbc1d65d5093bae6c06ec5e0bdef43bda2cb2378b"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/rule_tree/univ_rf_kk0_round2.txt",
+    "bytes": 543645,
+    "sha256": "c9f63d0988d835e917849aa71d04519b449072cd6af4ff16a493adfff759c7b1"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/rule_tree/univ_rf_kk0_round3.txt",
+    "bytes": 526591,
+    "sha256": "1f3e5117d0c615e63797b58754112f48b61ab2322a90dd97eab35f77435dd4a1"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/rule_tree/univ_rf_kk0_round4.txt",
+    "bytes": 548689,
+    "sha256": "c5ac00f02bb9617b4e87e7ce4f13ebaa27de2115eb10d25be03aa1cbd69aa5d5"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/train_teacher.py",
+    "bytes": 4807,
+    "sha256": "5096e92cc2af078b8bdf9cd27b5b8e9a3f641cf495aeb64070602a89f5a9209b"
+  },
+  {
+    "branch": "main",
+    "path": "Distillation/utils.py",
+    "bytes": 13309,
+    "sha256": "a6bf5685cdf0562fd54008272cc96d8de527067d318c353699f88d5eb878403b"
+  },
+  {
+    "branch": "main",
+    "path": "P4/flowcontrol.p4",
+    "bytes": 7527,
+    "sha256": "a4a5cfbf7c8a4f583e7c8c48f6599785c39620fb2350b76fd1c4b69a231d27b3"
+  },
+  {
+    "branch": "main",
+    "path": "readme.md",
+    "bytes": 2564,
+    "sha256": "b03193e603cbb1a5cd201675012ae15837bcb46b0c8d9c108dcfd2060179cc2d"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/code/entry2dataplane.py",
+    "bytes": 3209,
+    "sha256": "fdfa880f18fd0d5be867d4dc4de2d1f02f1d021ac036fc1cf2cc3562d9cbf3f2"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/code/rule2entry.py",
+    "bytes": 3594,
+    "sha256": "02572572e5021a314ff1f946340b12210c803cffd6e9f4111bcb23498c7cfcca"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/rule_tree/univ/univ_rf_kk0_round0.txt",
+    "bytes": 549760,
+    "sha256": "fe073f9ca7559fcb8e47d9990fbea5e0212763885cb174662ccef4123e73c113"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/rule_tree/univ/univ_rf_kk0_round1.txt",
+    "bytes": 545141,
+    "sha256": "0c622e47faac95f37200aebcbc1d65d5093bae6c06ec5e0bdef43bda2cb2378b"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/rule_tree/univ/univ_rf_kk0_round2.txt",
+    "bytes": 543645,
+    "sha256": "c9f63d0988d835e917849aa71d04519b449072cd6af4ff16a493adfff759c7b1"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/rule_tree/univ/univ_rf_kk0_round3.txt",
+    "bytes": 526591,
+    "sha256": "1f3e5117d0c615e63797b58754112f48b61ab2322a90dd97eab35f77435dd4a1"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/rule_tree/univ/univ_rf_kk0_round4.txt",
+    "bytes": 548689,
+    "sha256": "c5ac00f02bb9617b4e87e7ce4f13ebaa27de2115eb10d25be03aa1cbd69aa5d5"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/ternary_entry/univ/univ_rf_kk0_round0.txt",
+    "bytes": 110469,
+    "sha256": "c1f233e398d1be4148b50b5ea12ae3aa4151bb4ed32fa2c916dbf6db7470f5a8"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/ternary_entry/univ/univ_rf_kk0_round1.txt",
+    "bytes": 110787,
+    "sha256": "ef7025842cb311e38969946b5bef0daf59aca10a5103608ee54de0c9b6618941"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/ternary_entry/univ/univ_rf_kk0_round2.txt",
+    "bytes": 109763,
+    "sha256": "c7ad9a5a45e306b95a6bae86423ec6cf182e459368d4e35eff66e5e58d9a674c"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/ternary_entry/univ/univ_rf_kk0_round3.txt",
+    "bytes": 106178,
+    "sha256": "609564ed26cd8943527d735a5a94780644535341b8b41c9f65481242ae750497"
+  },
+  {
+    "branch": "main",
+    "path": "rule2entry/output/ternary_entry/univ/univ_rf_kk0_round4.txt",
+    "bytes": 110499,
+    "sha256": "ced2a1725218cedf749949696df20560adb5e18674f03a7e653268b7a10a7cd7"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": ".gitattributes",
+    "bytes": 66,
+    "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/DecisionNode.py",
+    "bytes": 2179,
+    "sha256": "b9b44a9792aa25b8b8b9e7e1982a96857822ccf75b49c48053dcef8ef7a76e10"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/SoftTree.py",
+    "bytes": 6118,
+    "sha256": "d4e5515e32df84d84d6c9dc582a4dd027686a27fd381d6dadf72d83d23e1d71f"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/bdt_test.py",
+    "bytes": 4999,
+    "sha256": "74f2a9d7a38ced8af925182380c9f305bc42399053f03095dc3c5b65ba50b054"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/models/GRU.py",
+    "bytes": 534,
+    "sha256": "a751469e182eeb71d04c420edafc386a1ba140528ddcd1bddd29961e4057ebf0"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/models/LSTM.py",
+    "bytes": 563,
+    "sha256": "3e90af1f1eedb1b97a7dbdcb1a21e9b01a3c6906699003179d3036bff88437b8"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/models/__init__.py",
+    "bytes": 39,
+    "sha256": "3bb837a0d47d1d2e9151330bd7c9010326209035903a801f36f56d952cb4d0ad"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/train_teacher.py",
+    "bytes": 2903,
+    "sha256": "fe59ba8ffdc46f4e558ecb06d55b9d25001b367fe291e93e898136e47856b999"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "Distillation/utils.py",
+    "bytes": 11779,
+    "sha256": "03ef24de2258e072ed69eddf25b0bd94d3d165d3b6a2885f32687d71027b14c9"
+  },
+  {
+    "branch": "Mousikav2",
+    "path": "readme.md",
+    "bytes": 1554,
+    "sha256": "938850be929eff6a9bfabe7050172d4248c4de8ea4816ba45438092081fbc781"
+  }
+]

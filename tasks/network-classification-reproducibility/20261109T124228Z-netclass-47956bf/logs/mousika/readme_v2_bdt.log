@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/traffic-repro-audit/upstream/mousika-v2/Distillation/bdt_test.py", line 86, in <module>
+    torch.cuda.set_device(args.cuda)
+  File "/workspace/traffic-repro-audit/.conda/mousika/lib/python3.10/site-packages/torch/cuda/__init__.py", line 326, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'

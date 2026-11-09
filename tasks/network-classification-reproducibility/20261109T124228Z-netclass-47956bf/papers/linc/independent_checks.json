@@ -1,0 +1,90 @@
+{
+  "scope": "Independent synthetic source-function checks, no original dataset/NN/P4 execution",
+  "checks": {
+    "original": {
+      "indices": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mismatches": 5,
+      "cache_counts": [
+        1,
+        6,
+        1,
+        0
+      ],
+      "predictions": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "patched": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mismatches": 0,
+      "cache_counts": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "predictions": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "patched_incremental_boundary": {
+    "query": [
+      1,
+      1,
+      1
+    ],
+    "true_new_label": 3,
+    "predicted_default_label": 0,
+    "corrected_default_index": 3,
+    "values_length": 3,
+    "source_statement": "update_streaming.py:179 pos_X = positive_samples[ind][str(int(values[ind]))]",
+    "error_type": "IndexError",
+    "error": "index 3 is out of bounds for axis 0 with size 3",
+    "interpretation": "Local default-bucket fix needs corresponding incremental-parent/default-entry handling; current full update cannot be declared repaired."
+  },
+  "small_batch_modulus": {
+    "batches": 4,
+    "original_modulus": 0,
+    "zero_division_confirmed_in_existing_log": "logs/linc/train_small_original.log"
+  },
+  "sample_ratio": {
+    "source": "update_streaming.py:27,45-47",
+    "RATIO": 1,
+    "selected_if1000_new_samples": 1000,
+    "not_hard_limited_to63": true,
+    "unknown": "Actual downloaded pickle may already be subsampled; it was not acquired."
+  }
+}

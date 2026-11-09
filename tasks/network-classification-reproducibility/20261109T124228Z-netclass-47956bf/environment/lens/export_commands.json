@@ -1,0 +1,35 @@
+[
+  {
+    "argv": [
+      ".tools/miniforge3/bin/conda",
+      "list",
+      "-p",
+      "/workspace/traffic-repro-audit/.conda/lens",
+      "--explicit"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "time_utc": "2026-11-09T11:26:51.837507+00:00"
+  },
+  {
+    "argv": [
+      ".conda/lens/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "time_utc": "2026-11-09T11:26:52.147419+00:00"
+  },
+  {
+    "argv": [
+      ".conda/lens/bin/python",
+      "-c",
+      "import json,sys,platform,importlib.util,numpy,pandas,scipy,sklearn; print(json.dumps({\"purpose\":\"Original metric/split probes only, not full Lens model environment\",\"python\":sys.version,\"platform\":platform.platform(),\"numpy\":numpy.__version__,\"pandas\":pandas.__version__,\"scipy\":scipy.__version__,\"sklearn\":sklearn.__version__,\"torch_installed\":bool(importlib.util.find_spec(\"torch\")),\"cuda\":\"Unknown/not installed in this environment; no model CUDA test\"},indent=2))"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "time_utc": "2026-11-09T11:26:53.333088+00:00"
+  }
+]

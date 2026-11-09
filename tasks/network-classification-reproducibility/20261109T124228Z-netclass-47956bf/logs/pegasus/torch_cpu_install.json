@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".conda/pegasus/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "torch==2.4.1+cpu",
+    "--index-url",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:24:33.931909+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:24:59.119910+00:00",
+  "elapsed_seconds": 25.188038578000032
+}

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "create",
+    "-y",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-p",
+    "/workspace/traffic-repro-audit/.conda/pegasus",
+    "python=3.8.18",
+    "pip=24.3.1"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:24:25.593576+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:24:33.883018+00:00",
+  "elapsed_seconds": 8.28944563999994
+}

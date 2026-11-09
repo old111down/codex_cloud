@@ -1,0 +1,19 @@
+Accuracy: 0.9534883720930233
+Classification Report:
+                 precision    recall  f1-score   support
+
+     apple.com       0.96      0.91      0.93        99
+     cisco.com       1.00      0.99      0.99        99
+cloudflare.com       0.98      1.00      0.99        88
+  facebook.com       0.84      0.95      0.90        85
+    github.com       0.96      0.91      0.94        82
+    icloud.com       0.96      0.97      0.96        95
+   netflix.com       0.95      0.94      0.95        86
+      nike.com       0.95      0.96      0.96       101
+    nvidia.com       0.98      0.93      0.95        85
+     yahoo.com       0.96      0.96      0.96        83
+
+      accuracy                           0.95       903
+     macro avg       0.95      0.95      0.95       903
+  weighted avg       0.95      0.95      0.95       903
+

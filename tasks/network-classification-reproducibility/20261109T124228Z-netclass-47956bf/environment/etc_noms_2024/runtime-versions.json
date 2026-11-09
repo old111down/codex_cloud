@@ -1,0 +1,50 @@
+{
+  "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+  "executable": "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.17",
+  "package_versions": {
+    "numpy": "1.19.5",
+    "scipy": "1.5.4",
+    "pandas": "1.1.5",
+    "scikit-learn": "0.23.2",
+    "matplotlib": "3.3.4",
+    "seaborn": "0.11.2",
+    "netaddr": "0.8.0",
+    "xgboost": "1.3.3"
+  },
+  "torch": "Not installed; not required by inspected ETC scripts",
+  "CUDA": "Not installed; no GPU exposed",
+  "compiler_probes": {
+    "gcc --version": {
+      "exit_code": 0,
+      "output": "gcc (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    },
+    "g++ --version": {
+      "exit_code": 0,
+      "output": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    },
+    "ld --version": {
+      "exit_code": 0,
+      "output": "GNU ld (GNU Binutils for Debian) 2.44\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) a later version.\nThis program has absolutely no warranty.\n"
+    },
+    "tshark --version": {
+      "error": "[Errno 2] No such file or directory: 'tshark'"
+    },
+    "p4c --version": {
+      "error": "[Errno 2] No such file or directory: 'p4c'"
+    },
+    "bf-p4c --version": {
+      "error": "[Errno 2] No such file or directory: 'bf-p4c'"
+    },
+    "simple_switch --version": {
+      "error": "[Errno 2] No such file or directory: 'simple_switch'"
+    },
+    "nvidia-smi": {
+      "error": "[Errno 2] No such file or directory: 'nvidia-smi'"
+    },
+    "getconf GNU_LIBC_VERSION": {
+      "exit_code": 0,
+      "output": "glibc 2.41\n"
+    }
+  }
+}

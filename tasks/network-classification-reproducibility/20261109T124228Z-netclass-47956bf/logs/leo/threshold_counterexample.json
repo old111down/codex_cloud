@@ -1,0 +1,17 @@
+{
+  "argv": [
+    ".conda/leo/bin/python",
+    "papers/leo/semantic_smoke.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:14:03.833304+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:14:04.549470+00:00",
+  "elapsed_seconds": 0.7162251110000852
+}

@@ -1,0 +1,29 @@
+{
+  "screened_records": 37,
+  "paper_families": 36,
+  "included_paper_families": 35,
+  "verified_included_paper_families": 30,
+  "association_verified_records": 31,
+  "static_audits": 10,
+  "coverage_rows": 574,
+  "command_records": 146,
+  "new_round_command_records": 111,
+  "new_round_runtime_attempt_projects": [
+    "et_bert",
+    "flowrest",
+    "lens",
+    "leo",
+    "linc",
+    "pegasus",
+    "yatc"
+  ],
+  "new_round_successful_algorithm_test_projects": [
+    "et_bert",
+    "flowrest",
+    "lens",
+    "leo",
+    "linc",
+    "pegasus",
+    "yatc"
+  ]
+}

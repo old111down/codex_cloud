@@ -1,0 +1,11 @@
+--- a/fine-tuning/run_classifier.py
++++ b/fine-tuning/run_classifier.py
+@@ -224,7 +224,7 @@
+         print("Confusion matrix:")
+         print(confusion)
+         cf_array = confusion.numpy()
+-        with open("/data2/lxj/pre-train/results/confusion_matrix",'w') as f:
++        with open(args.output_model_path + ".confusion_matrix", 'w') as f:
+             for cf_a in cf_array:
+                 f.write(str(cf_a)+'\n')
+         print("Report precision, recall, and f1:")

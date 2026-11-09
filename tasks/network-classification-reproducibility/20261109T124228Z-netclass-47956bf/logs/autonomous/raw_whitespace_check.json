@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:43:28.618082+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 2,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:43:28.732584+00:00",
+  "elapsed_seconds": 0.11449531899961585
+}

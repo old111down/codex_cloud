@@ -1,0 +1,144 @@
+{
+  "scope": "Exhaustive 6^5 software vote comparison and exact canonical generated add_with entry-set comparison; no BFRT calls, P4 compilation, or packet simulation",
+  "sha256": {
+    "bundled": "bdcc21bd3a9fe708d1793e0c3a9a58327b4cfd2347b8392e36b70071f3717db2",
+    "unmodified": "1cab4224960dafbf48567c34670348a99a9fd729e0ade7804b1ee223ba0752d6",
+    "patched": "e9d6014c6e7abbc0b383466893cbd4752a7ba431faf6c93e8abfb92752325a12"
+  },
+  "vote_counts": {
+    "bundled": 5256,
+    "unmodified": 7776,
+    "patched": 5256
+  },
+  "p4_voting_table_declared_size": 5256,
+  "unmodified_exceeds_p4_declared_size": true,
+  "patched_table_entry_sets_equal_bundled": true,
+  "all_vote_inputs_tested": 7776,
+  "unmodified_effective_decision_differences": 360,
+  "difference_examples": [
+    {
+      "tree_classes": [
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "bundled": 1,
+      "unmodified": 2
+    },
+    {
+      "tree_classes": [
+        1,
+        2,
+        2,
+        4,
+        4
+      ],
+      "bundled": 1,
+      "unmodified": 2
+    },
+    {
+      "tree_classes": [
+        1,
+        2,
+        2,
+        5,
+        5
+      ],
+      "bundled": 1,
+      "unmodified": 2
+    },
+    {
+      "tree_classes": [
+        1,
+        2,
+        2,
+        6,
+        6
+      ],
+      "bundled": 1,
+      "unmodified": 2
+    },
+    {
+      "tree_classes": [
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "bundled": 1,
+      "unmodified": 2
+    }
+  ],
+  "per_table_comparison": {
+    "code_table0": {
+      "bundled_count": 203,
+      "patched_count": 203,
+      "missing": 0,
+      "extra": 0
+    },
+    "code_table1": {
+      "bundled_count": 221,
+      "patched_count": 221,
+      "missing": 0,
+      "extra": 0
+    },
+    "code_table2": {
+      "bundled_count": 206,
+      "patched_count": 206,
+      "missing": 0,
+      "extra": 0
+    },
+    "code_table3": {
+      "bundled_count": 222,
+      "patched_count": 222,
+      "missing": 0,
+      "extra": 0
+    },
+    "code_table4": {
+      "bundled_count": 205,
+      "patched_count": 205,
+      "missing": 0,
+      "extra": 0
+    },
+    "table_feature0": {
+      "bundled_count": 64,
+      "patched_count": 64,
+      "missing": 0,
+      "extra": 0
+    },
+    "table_feature1": {
+      "bundled_count": 159,
+      "patched_count": 159,
+      "missing": 0,
+      "extra": 0
+    },
+    "table_feature2": {
+      "bundled_count": 111,
+      "patched_count": 111,
+      "missing": 0,
+      "extra": 0
+    },
+    "table_feature3": {
+      "bundled_count": 244,
+      "patched_count": 244,
+      "missing": 0,
+      "extra": 0
+    },
+    "target_flows_table": {
+      "bundled_count": 429,
+      "patched_count": 429,
+      "missing": 0,
+      "extra": 0
+    },
+    "voting_table": {
+      "bundled_count": 5256,
+      "patched_count": 5256,
+      "missing": 0,
+      "extra": 0
+    }
+  },
+  "deployment_configuration_difference_remaining": "Generator configures cages1,5; bundled script also configures cage9. No port change made in patch."
+}

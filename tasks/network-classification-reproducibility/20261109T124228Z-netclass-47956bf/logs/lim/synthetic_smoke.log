@@ -1,0 +1,13 @@
+{
+  "test": "synthetic_dependency_and_fit_smoke",
+  "input_shape": [
+    30,
+    15
+  ],
+  "output_shape": [
+    30
+  ],
+  "synthetic": true,
+  "pass": true,
+  "note": "No paper accuracy, traffic-parser, throughput, or hardware claim"
+}

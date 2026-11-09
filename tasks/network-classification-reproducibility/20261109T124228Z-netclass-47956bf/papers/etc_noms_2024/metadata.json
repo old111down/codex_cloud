@@ -1,0 +1,77 @@
+{
+  "paper_id": "etc_noms_2024",
+  "title": "Encrypted Traffic Classification at Line Rate in Programmable Switches with Machine Learning",
+  "authors": [
+    "Aristide Tanyi-Jong Akem",
+    "Guillaume Fraysse",
+    "Marco Fiore"
+  ],
+  "year": 2024,
+  "venue": "NOMS 2024 - IEEE/IFIP Network Operations and Management Symposium",
+  "doi": "10.1109/NOMS59830.2024.10575394",
+  "paper_url": "https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1791/etc_noms24_postprint.pdf?sequence=1&isAllowed=y",
+  "repository_url": "https://github.com/nds-group/ETC_NOMS_2024",
+  "association_evidence": [
+    "paper.pdf p.1 footnote 1 links exact repository",
+    "README.md lines 3,11,31-39 gives exact paper title/DOI and author citation"
+  ],
+  "branch": "main",
+  "commit_sha": "52de99ad76d9eff2f64a0fa28df0500e423b58b2",
+  "commit_utc": "2025-06-19T00:40:55+01:00",
+  "github_pushed_at": "2026-02-02T23:37:02Z",
+  "github_updated_at": "2026-10-13T09:04:25Z",
+  "retrieved_utc": "2026-11-09T10:44:50.434683+00:00",
+  "license": "Unknown; no LICENSE/COPYING file; GitHub API license null",
+  "code_public": true,
+  "data_public": "Partial: two NIMS derived CSVs and one RF pickle included; raw NIMS Dataport access/subscription may be required; Netflow QUIC and ISCX external links; full raw data not acquired",
+  "task": "Encrypted flow classification after n=8 packets (NIMS IMA and ISCX VPN) or n=4 (Netflow QUIC)",
+  "input_unit": "Directional flow keyed by src/dst IP, src/dst port, protocol; packet size and arrival-time statistics",
+  "labels": {
+    "NIMS_IMA": [
+      "Discord",
+      "WhatsApp",
+      "Signal",
+      "Telegram",
+      "Messenger",
+      "Teams"
+    ],
+    "Netflow_QUIC": [
+      "Google Hangout Chat",
+      "Google Hangout VoIP",
+      "File Transfer",
+      "YouTube",
+      "Google Play Music"
+    ],
+    "ISCX_VPN": [
+      "Browsing",
+      "Email",
+      "Chat",
+      "Streaming",
+      "File Transfer",
+      "VoIP",
+      "P2P"
+    ]
+  },
+  "model": "Offline constrained RF hyperparameter/feature selection, Planter-style feature ranges and per-tree codeword tables, majority vote; offline unconstrained RF and XGBoost baselines",
+  "deployment": "Training/baselines on CPU server; in-switch inference Intel Tofino TNA P4 + BFRT controller",
+  "gpu_dependency": "No GPU required by inspected RF code; GPU experiment Unknown/not applicable to primary implementation",
+  "proprietary_hardware_software": "Edgecore Wedge100BF-QS / Tofino BFN-T10-032Q, Intel SDE 9.7.0, P4 Insight and BFRT; not available or installed in audit",
+  "journal_extension": {
+    "title": "Real-Time Encrypted Traffic Classification in Programmable Networks with P4 and Machine Learning",
+    "doi": "10.1002/nem.2320",
+    "year": 2025,
+    "audit_scope": "Not independently audited; extra UC Davis/CSTNET scripts must not be counted as NOMS paper experiments"
+  },
+  "upstream_pristine": true,
+  "datasets": [
+    "NIMS Encrypted Mobile Instant Messaging Traffic Dataset (6 IMA classes)",
+    "Netflow QUIC (5 classes)",
+    "ISCX-VPN-NonVPN-2016 VPN subset (7 classes)"
+  ],
+  "reproduction_level": "R2",
+  "reproduction_level_scope": "Bundled NIMS real-sample RF training/compression only; model-to-table generation separately tested; P4 compile/simulation/hardware R0, original paper metrics Unknown",
+  "patches": [
+    "patches/etc_noms_2024/0001-unique-voting-mode.patch",
+    "patches/etc_noms_2024/0002-feature-range-domains.patch"
+  ]
+}

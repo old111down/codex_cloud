@@ -1,0 +1,14 @@
+/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/cuda/amp/autocast_mode.py:120: UserWarning: torch.cuda.amp.autocast only affects CUDA ops, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.autocast only affects CUDA ops, but CUDA is not available.  Disabling.")
+Traceback (most recent call last):
+  File "papers/yatc/engine_cpu_probe.py", line 19, in <module>
+    train_one_epoch(model,torch.nn.CrossEntropyLoss(),loader,optimizer,torch.device('cpu'),0,NativeScalerWithGradNormCount(),args=args)
+  File "/workspace/traffic-repro-audit/upstream/yatc/engine.py", line 148, in train_one_epoch
+    torch.cuda.synchronize()
+  File "/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/cuda/__init__.py", line 444, in synchronize
+    _lazy_init()
+  File "/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/cuda/__init__.py", line 166, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled

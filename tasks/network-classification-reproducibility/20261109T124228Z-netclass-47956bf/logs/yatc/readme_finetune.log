@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/traffic-repro-audit/upstream/yatc/fine-tune.py", line 11, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/workspace/traffic-repro-audit/.conda/yatc/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 4, in <module>
+    LooseVersion = distutils.version.LooseVersion
+AttributeError: module 'distutils' has no attribute 'version'

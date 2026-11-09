@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".conda/linc/bin/python",
+    "papers/linc/smoke.py",
+    "network"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:12:54.440885+00:00",
+  "timeout_seconds": 45.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:12:57.071901+00:00",
+  "elapsed_seconds": 2.631025382999951
+}

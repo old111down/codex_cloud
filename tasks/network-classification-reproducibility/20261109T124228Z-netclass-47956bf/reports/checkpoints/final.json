@@ -1,0 +1,96 @@
+{
+  "t0_utc": "2026-11-09T11:06:24+00:00",
+  "content_and_validation_completed_utc": "2026-11-09T11:45:49.265970+00:00",
+  "elapsed_seconds_to_sealing_record": 2365.26597,
+  "elapsed_minutes_to_sealing_record": 39.4210995,
+  "hard_deadline_utc": "2026-11-09T14:06:24Z",
+  "end_reason": "Coverage and bounded-run targets achieved; stopped new experiments and sealed early. Original-paper result conditions remain missing, not claimed complete.",
+  "summary": {
+    "screened_records": 37,
+    "paper_families": 36,
+    "included_paper_families": 35,
+    "verified_included_paper_families": 30,
+    "association_verified_records": 31,
+    "static_audits": 10,
+    "coverage_rows": 574,
+    "command_records": 146,
+    "new_round_command_records": 111,
+    "new_round_runtime_attempt_projects": [
+      "et_bert",
+      "flowrest",
+      "lens",
+      "leo",
+      "linc",
+      "pegasus",
+      "yatc"
+    ],
+    "new_round_successful_algorithm_test_projects": [
+      "et_bert",
+      "flowrest",
+      "lens",
+      "leo",
+      "linc",
+      "pegasus",
+      "yatc"
+    ]
+  },
+  "periods": [
+    {
+      "paper_id": "et_bert",
+      "first_command_utc": "2026-11-09T11:08:43.879774+00:00",
+      "last_command_end_utc": "2026-11-09T11:25:04.694821+00:00",
+      "structured_command_count": 29,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "flowrest",
+      "first_command_utc": "2026-11-09T11:08:59.370275+00:00",
+      "last_command_end_utc": "2026-11-09T11:26:07.555592+00:00",
+      "structured_command_count": 18,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "lens",
+      "first_command_utc": "2026-11-09T11:20:43.973463+00:00",
+      "last_command_end_utc": "2026-11-09T11:31:28.076946+00:00",
+      "structured_command_count": 4,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "leo",
+      "first_command_utc": "2026-11-09T11:11:29.919026+00:00",
+      "last_command_end_utc": "2026-11-09T11:18:27.414636+00:00",
+      "structured_command_count": 9,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "linc",
+      "first_command_utc": "2026-11-09T11:08:15.846892+00:00",
+      "last_command_end_utc": "2026-11-09T11:26:57.991834+00:00",
+      "structured_command_count": 21,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "pegasus",
+      "first_command_utc": "2026-11-09T11:24:25.593576+00:00",
+      "last_command_end_utc": "2026-11-09T11:32:49.968551+00:00",
+      "structured_command_count": 12,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    },
+    {
+      "paper_id": "yatc",
+      "first_command_utc": "2026-11-09T11:08:59.082904+00:00",
+      "last_command_end_utc": "2026-11-09T11:16:19.131797+00:00",
+      "structured_command_count": 18,
+      "scope": "Actual command bounds, not full paper reading/writing duration; commands include setup/diagnostics"
+    }
+  ],
+  "remaining_unverified": [
+    "YaTC full paper experiment inventory",
+    "Original raw data/splits/checkpoints and paper-version identity for several artifacts",
+    "Full real-data deep-model training and repeated-run comparable metrics",
+    "Public open-p4studio build/historical SDE compatibility",
+    "P4 packet-level simulation and all real-hardware throughput/resources"
+  ],
+  "archive_state": "Final Git/checksum/bundle actions follow this content-freeze record; timestamps in Git and validation logs retain those steps"
+}

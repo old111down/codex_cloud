@@ -1,0 +1,151 @@
+cpu_affinity [0, 1]
+Executing untouched cell 0
+Executing untouched cell 1
+Executing untouched cell 2
+Executing untouched cell 3
+Executing untouched cell 8
+Executing untouched cell 9
+{
+  "scope": "Selected original notebook cells on public author derived CSV; not full original processing, searches, hardware evaluation or paper-metric reproduction",
+  "mode": "full",
+  "notebook_sha256": "5b11908011ab9bdfb165ac931074d1a8757d8d58b9ad380f941bdd82c9d9c396",
+  "executed_cells": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9
+  ],
+  "skipped_cells": {
+    "4": "Full grid search",
+    "5": "grid result analysis",
+    "6": "grid ranking display",
+    "7": "grid feature display",
+    "10": "model display",
+    "11": "save model"
+  },
+  "train_rows": 20664,
+  "test_rows": 19636,
+  "features": [
+    "Destination Port",
+    "Max Packet Length",
+    "Packet Length Total",
+    "Current Packet Length",
+    "ACK Flag Count"
+  ],
+  "classes": [
+    "ssl",
+    "bittorrent",
+    "http",
+    "edonkey",
+    "pop3",
+    "skype",
+    "imap",
+    "smtp"
+  ],
+  "model_params": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": "auto",
+    "max_leaf_nodes": 500,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 3,
+    "n_jobs": 4,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "tree_nodes": [
+    143,
+    181,
+    117
+  ],
+  "tree_leaves": [
+    72,
+    91,
+    59
+  ],
+  "accuracy": 0.9960786310857609,
+  "classification_report": {
+    "ssl": {
+      "precision": 0.9989561586638831,
+      "recall": 0.9994778067885117,
+      "f1-score": 0.9992169146436961,
+      "support": 1915
+    },
+    "bittorrent": {
+      "precision": 0.9535822401614531,
+      "recall": 0.9926470588235294,
+      "f1-score": 0.9727225939269172,
+      "support": 952
+    },
+    "http": {
+      "precision": 1.0,
+      "recall": 0.9992378048780488,
+      "f1-score": 0.9996187571483035,
+      "support": 15744
+    },
+    "edonkey": {
+      "precision": 0.8165137614678899,
+      "recall": 0.9081632653061225,
+      "f1-score": 0.8599033816425121,
+      "support": 98
+    },
+    "pop3": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 253
+    },
+    "skype": {
+      "precision": 0.9849906191369606,
+      "recall": 0.9162303664921466,
+      "f1-score": 0.949367088607595,
+      "support": 573
+    },
+    "imap": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 42
+    },
+    "smtp": {
+      "precision": 0.9833333333333333,
+      "recall": 1.0,
+      "f1-score": 0.9915966386554621,
+      "support": 59
+    },
+    "accuracy": 0.9960786310857609,
+    "macro avg": {
+      "precision": 0.9671720140954401,
+      "recall": 0.9769695377860449,
+      "f1-score": 0.9715531718280608,
+      "support": 19636
+    },
+    "weighted avg": {
+      "precision": 0.9962439385073864,
+      "recall": 0.9960786310857609,
+      "f1-score": 0.9960935062312988,
+      "support": 19636
+    }
+  },
+  "cell_seconds": {
+    "0": 0.7273147150003751,
+    "1": 0.0007671369999115996,
+    "2": 3.202099969712435e-05,
+    "3": 0.14866209299998445,
+    "8": 8.699299996806076e-05,
+    "9": 0.07266812799980471
+  },
+  "train_input_sha256": "cc9ae522627cb0b55ecf612f15acdecd55bad3349e85dbd23a572f770bde9266",
+  "test_input_sha256": "0ba34e208e4d86f696e68976de66f4d2839cfc741d547419d5c01b968f01652f"
+}

@@ -1,0 +1,15 @@
+cpu_affinity [0, 1]
+{"notebook": "upstream/flowrest/Python/Full_version/Unibs_flowrest_analysis.ipynb", "sha256": "5b11908011ab9bdfb165ac931074d1a8757d8d58b9ad380f941bdd82c9d9c396", "scope": "Sequential original cells until first exception; not a completed notebook run"}
+Executing original cell 0
+Executing original cell 1
+Executing original cell 2
+Executing original cell 3
+Executing original cell 4
+Analysis Complete. Check output file.
+Executing original cell 5
+Executing original cell 6
+Executing original cell 7
+Executing original cell 8
+Executing original cell 9
+Executing original cell 10
+Executing original cell 11

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "git",
+    "apply",
+    "--check",
+    "--directory=papers/linc/runtime-artifacts/patched",
+    "patches/linc/0003-default-subspace-index.patch"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:13:17.083265+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:13:17.087153+00:00",
+  "elapsed_seconds": 0.003880685000012818
+}

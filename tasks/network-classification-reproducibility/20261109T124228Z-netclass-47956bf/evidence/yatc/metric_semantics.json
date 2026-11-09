@@ -1,0 +1,42 @@
+{
+  "scope": "Synthetic metric-name consistency test; no traffic classification accuracy claim",
+  "targets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "predictions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reported_macro_pre": 0.36,
+  "reported_macro_rec": 0.6,
+  "reported_macro_f1": 0.4499999999999999,
+  "actual_weighted_precision_recall_f1": [
+    0.36,
+    0.6,
+    0.4499999999999999
+  ],
+  "actual_macro_precision_recall_f1": [
+    0.12,
+    0.2,
+    0.14999999999999997
+  ],
+  "confirmed": "evaluate stores weighted averages under macro_* keys",
+  "paper_uses_mislabeled_values": "Unknown: full paper not obtained"
+}

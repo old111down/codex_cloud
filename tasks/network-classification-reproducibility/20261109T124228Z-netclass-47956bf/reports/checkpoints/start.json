@@ -1,0 +1,24 @@
+{
+  "round": "autonomous-20261109",
+  "t0_utc": "2026-11-09T11:06:24Z",
+  "deadline_utc": "2026-11-09T14:06:24Z",
+  "baseline_commit": "e3136eb3fc96cd075f89e3b152c689d39823a76c",
+  "inherited_candidates": 11,
+  "inherited_static_audits": 3,
+  "inherited_runtime_projects": 3,
+  "observed_at_utc": "2026-11-09T11:09:26.501220+00:00",
+  "completed": [
+    "Refreshed cloud readiness",
+    "Created isolated audit branch",
+    "Delegated continuous literature search and five static audits"
+  ],
+  "blocked": [
+    "No observed GPU or physical switch hardware"
+  ],
+  "pending": [
+    "20–40 paper screening",
+    "New source-backed coverage matrices",
+    "Bounded CPU execution",
+    "Seven required aggregate deliverables"
+  ]
+}

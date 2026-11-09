@@ -1,0 +1,23 @@
+{
+  "python": "3.11.18 (main, Oct 26 2026, 11:35:17) [GCC 15.3.0]",
+  "python_executable": "/workspace/traffic-repro-audit/.conda/lim/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "pandas": "2.2.2",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.4.2",
+    "xgboost": "2.1.1",
+    "pyshark": "0.6",
+    "tqdm": "4.66.1"
+  },
+  "pytorch": "Not installed / not required by LiM",
+  "cuda_runtime": "Unknown; xgboost wheel may bundle CUDA support, GPU execution not attempted",
+  "cuda_compiler": null,
+  "gpu_cli": null,
+  "tshark": null,
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "g++": "g++ (Debian 14.2.0-19) 14.2.0",
+  "source_requirements": "upstream/lim/requirements.txt",
+  "python_choice": "3.11 selected for README dependency compatibility; paper claims3.13.0; not equivalent",
+  "system_inventory": "environment/host_probe.json"
+}

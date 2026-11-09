@@ -1,0 +1,15 @@
+# Public sanitized record, not a raw portable requirements file. Local build URLs were withheld; exact Conda versions remain in explicit records.
+cloudpickle @ <LOCAL_BUILD_PATH_WITHHELD>
+colorama @ <LOCAL_BUILD_PATH_WITHHELD>
+joblib @ <LOCAL_BUILD_PATH_WITHHELD>
+numpy @ <LOCAL_BUILD_PATH_WITHHELD>
+packaging @ <LOCAL_BUILD_PATH_WITHHELD>
+pandas @ <LOCAL_BUILD_PATH_WITHHELD>
+python-dateutil @ <LOCAL_BUILD_PATH_WITHHELD>
+pytz @ <LOCAL_BUILD_PATH_WITHHELD>
+scikit-learn @ <LOCAL_BUILD_PATH_WITHHELD>
+scipy @ <LOCAL_BUILD_PATH_WITHHELD>
+six @ <LOCAL_BUILD_PATH_WITHHELD>
+threadpoolctl @ <LOCAL_BUILD_PATH_WITHHELD>
+tqdm @ <LOCAL_BUILD_PATH_WITHHELD>
+tzdata @ <LOCAL_BUILD_PATH_WITHHELD>

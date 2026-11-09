@@ -1,0 +1,11 @@
+{
+  "purpose": "Original metric/split probes only, not full Lens model environment",
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.2.4",
+  "pandas": "2.2.3",
+  "scipy": "1.15.2",
+  "sklearn": "1.6.1",
+  "torch_installed": false,
+  "cuda": "Unknown/not installed in this environment; no model CUDA test"
+}

@@ -1,0 +1,49 @@
+{
+  "source_audit_commit": "47956bf6c3eaa0cceee3ac5e525432ca6919b478",
+  "scope": "Derived history summary; original source snippets withheld. This does not establish the actual paper experiment commit.",
+  "historical_snapshots": [
+    {
+      "sha": "e376fe3b56d0764deb34b6d9ad8761e5481b3433",
+      "commit_time": "2022-02-09T12:07:11+08:00",
+      "author_time": "2022-02-09T12:07:11+08:00",
+      "relative_mlm_weight": "1.0 if unweighted sum; other details require official source",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/e376fe3b56d0764deb34b6d9ad8761e5481b3433/uer/trainer.py"
+    },
+    {
+      "sha": "cbd7c8af1b653cc44a501e8decaa816926cb139c",
+      "commit_time": "2022-04-01T13:49:26+08:00",
+      "author_time": "2022-04-01T13:49:26+08:00",
+      "relative_mlm_weight": "0.1",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/cbd7c8af1b653cc44a501e8decaa816926cb139c/uer/trainer.py"
+    },
+    {
+      "sha": "618b3345a58b4eba86f3c902658ae3eebe0268c7",
+      "commit_time": "2024-11-01T14:28:59+08:00",
+      "author_time": "2024-11-01T14:28:59+08:00",
+      "relative_mlm_weight": "1.0 if unweighted sum; other details require official source",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/618b3345a58b4eba86f3c902658ae3eebe0268c7/uer/trainer.py"
+    },
+    {
+      "sha": "50fe7ae87a2ed8132ee804e9a33620f8069c6d8c",
+      "commit_time": "2024-12-24T15:23:56+08:00",
+      "author_time": "2024-12-24T15:23:56+08:00",
+      "relative_mlm_weight": "1.0 if unweighted sum; other details require official source",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/50fe7ae87a2ed8132ee804e9a33620f8069c6d8c/uer/trainer.py"
+    },
+    {
+      "sha": "749e2d2dc59e07a5f90498023901e77ad5a03632",
+      "commit_time": "2025-03-26T22:14:47+08:00",
+      "author_time": "2025-03-26T22:14:47+08:00",
+      "relative_mlm_weight": "0.1",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/749e2d2dc59e07a5f90498023901e77ad5a03632/uer/trainer.py"
+    },
+    {
+      "sha": "d59470624acd11405f9e88da650cf3bf65521e9a",
+      "commit_time": "2026-07-23T17:04:52+08:00",
+      "author_time": "2026-07-23T17:04:52+08:00",
+      "relative_mlm_weight": "0.1",
+      "official_source": "https://github.com/linwhitehat/ET-BERT/blob/d59470624acd11405f9e88da650cf3bf65521e9a/uer/trainer.py"
+    }
+  ],
+  "official_repository": "https://github.com/linwhitehat/ET-BERT"
+}

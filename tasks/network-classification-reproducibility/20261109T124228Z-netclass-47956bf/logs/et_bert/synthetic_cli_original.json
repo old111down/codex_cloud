@@ -1,0 +1,40 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+    "fine-tuning/run_classifier.py",
+    "--vocab_path",
+    "models/encryptd_vocab.txt",
+    "--config_path",
+    "models/bert/tiny_config.json",
+    "--train_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/train.tsv",
+    "--dev_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/dev.tsv",
+    "--test_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/test.tsv",
+    "--output_model_path",
+    "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/tiny_synthetic_model.bin",
+    "--epochs_num",
+    "1",
+    "--batch_size",
+    "2",
+    "--seq_length",
+    "16",
+    "--report_steps",
+    "1",
+    "--learning_rate",
+    "2e-5"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+  "start_utc": "2026-11-09T11:12:37.775480+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:12:39.297001+00:00",
+  "elapsed_seconds": 1.5215254030001688
+}

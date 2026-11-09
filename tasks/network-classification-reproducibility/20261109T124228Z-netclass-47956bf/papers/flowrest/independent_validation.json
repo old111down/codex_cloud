@@ -1,0 +1,89 @@
+{
+  "scope": "Independent review of existing artifacts, no retraining, model loading, P4 or packet execution",
+  "metrics_recomputed_from_all_predictions": {
+    "core_conference": {
+      "rows": 73249,
+      "correct": 47293,
+      "accuracy": 0.645647039550028,
+      "macro_precision_recall_f1": [
+        0.5663067272055334,
+        0.38257654635048083,
+        0.40269406439541156
+      ],
+      "weighted_precision_recall_f1": [
+        0.6873379850719181,
+        0.645647039550028,
+        0.6364816462187943
+      ],
+      "prediction_sha256": "63dfe65da3fc1ee79b4fe6e0af2592e03c17fc1406d92a47d0930a32dcd06785"
+    },
+    "core_conference_time_aligned": {
+      "rows": 73249,
+      "correct": 72299,
+      "accuracy": 0.9870305396660706,
+      "macro_precision_recall_f1": [
+        0.9681403278009943,
+        0.8941213196220354,
+        0.9199888480412192
+      ],
+      "weighted_precision_recall_f1": [
+        0.9873310576375058,
+        0.9870305396660706,
+        0.9866874145437323
+      ],
+      "prediction_sha256": "9c6649a03cd02efcc6f936f60252e6953246f60067d81f71d10781b500356182"
+    },
+    "core_full": {
+      "rows": 19636,
+      "correct": 19559,
+      "accuracy": 0.9960786310857609,
+      "macro_precision_recall_f1": [
+        0.96717201409544,
+        0.9769695377860449,
+        0.9715531718280608
+      ],
+      "weighted_precision_recall_f1": [
+        0.9962439385073864,
+        0.9960786310857609,
+        0.9960935062312988
+      ],
+      "prediction_sha256": "b279a76f555e746cdd26809296b4f3bbfc1f01a0620c497dc9b51ddbf8638b18"
+    }
+  },
+  "sensitivity": {
+    "same_train_hash_model_params_labels_row_indices_seed_tree_sizes": true,
+    "only_harness_data_change": "After original cell20, multiply three X_test time columns1000; verified same common cell list and branch source",
+    "paper_equivalence": "Unknown; physical units and original processing not established"
+  },
+  "original_unibs_notebook": {
+    "code_cells": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "exit_code": 0,
+    "raw_log_matches_notebook_hash": true
+  },
+  "generated_range_invalid_intervals": [
+    [
+      1,
+      7,
+      65535
+    ],
+    [
+      6,
+      26,
+      65535
+    ]
+  ],
+  "upstream_clean": true
+}

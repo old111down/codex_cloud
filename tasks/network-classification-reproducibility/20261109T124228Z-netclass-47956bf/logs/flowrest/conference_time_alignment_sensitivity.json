@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+    "/workspace/traffic-repro-audit/papers/flowrest/run_core.py",
+    "conference_time_aligned"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+  "start_utc": "2026-11-09T11:17:01.265424+00:00",
+  "timeout_seconds": 180.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:17:07.508964+00:00",
+  "elapsed_seconds": 6.2435543849996975
+}

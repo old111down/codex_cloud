@@ -1,0 +1,229 @@
+{
+  "scope": "Selected original notebook cells on public author derived CSV; not full original processing, searches, hardware evaluation or paper-metric reproduction",
+  "mode": "conference_time_aligned",
+  "variant": "Data-processing sensitivity: test time features multiplied1000; not assumed paper equivalent",
+  "notebook_sha256": "bc92f43355e2d05f473b5cc984a9b3b1e7207fbebe38f77246fd2b93e12aa1b6",
+  "executed_cells": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    20,
+    23,
+    26,
+    27,
+    29
+  ],
+  "skipped_cells": {
+    "22": "feature/depth/tree search",
+    "24": "compression grid",
+    "28": "pruning grid",
+    "30": "overwrite saved model"
+  },
+  "train_rows": 215484,
+  "test_rows": 73249,
+  "features": [
+    "Packet Length Total",
+    "Flow Duration",
+    "Max Packet Length",
+    "Source Port",
+    "Min Packet Length",
+    "Destination Port",
+    "Flow IAT Max"
+  ],
+  "classes": [
+    "Withings Smart Baby Monitor",
+    "Withings Aura smart sleep sensor",
+    "Dropcam",
+    "TP-Link Day Night Cloud camera",
+    "Samsung SmartCam",
+    "Netatmo weather station",
+    "Netatmo Welcome",
+    "Amazon Echo",
+    "Laptop",
+    "NEST Protect smoke alarm",
+    "Insteon Camera",
+    "Belkin Wemo switch",
+    "Belkin wemo motion sensor",
+    "Light Bulbs LiFX Smart Bulb",
+    "Triby Speaker",
+    "Smart Things"
+  ],
+  "model_params": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 10,
+    "max_features": "auto",
+    "max_leaf_nodes": 350,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 3,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "tree_nodes": [
+    699,
+    699,
+    699
+  ],
+  "tree_leaves": [
+    350,
+    350,
+    350
+  ],
+  "accuracy": 0.9870305396660706,
+  "classification_report": {
+    "Triby Speaker": {
+      "precision": 0.9375,
+      "recall": 0.4878048780487805,
+      "f1-score": 0.641711229946524,
+      "support": 123
+    },
+    "Dropcam": {
+      "precision": 0.9444444444444444,
+      "recall": 0.85,
+      "f1-score": 0.8947368421052632,
+      "support": 20
+    },
+    "Smart Things": {
+      "precision": 1.0,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.9,
+      "support": 11
+    },
+    "Netatmo Welcome": {
+      "precision": 0.98796992481203,
+      "recall": 0.939018580276322,
+      "f1-score": 0.9628724963361015,
+      "support": 2099
+    },
+    "Withings Smart Baby Monitor": {
+      "precision": 0.9572225666460012,
+      "recall": 0.9593041317179248,
+      "f1-score": 0.9582622187742437,
+      "support": 3219
+    },
+    "TP-Link Day Night Cloud camera": {
+      "precision": 0.9871794871794872,
+      "recall": 0.9821428571428571,
+      "f1-score": 0.9846547314578005,
+      "support": 784
+    },
+    "Amazon Echo": {
+      "precision": 0.9705766967438211,
+      "recall": 0.9925113666755817,
+      "f1-score": 0.9814214876033057,
+      "support": 7478
+    },
+    "Samsung SmartCam": {
+      "precision": 0.9988306253077301,
+      "recall": 0.9971123126075203,
+      "f1-score": 0.9979707293075882,
+      "support": 16276
+    },
+    "Belkin wemo motion sensor": {
+      "precision": 0.993312053503572,
+      "recall": 0.9976337684146248,
+      "f1-score": 0.9954682204196657,
+      "support": 13101
+    },
+    "Belkin Wemo switch": {
+      "precision": 0.9978976007914915,
+      "recall": 0.9903043691703486,
+      "f1-score": 0.9940864851546137,
+      "support": 8148
+    },
+    "Netatmo weather station": {
+      "precision": 0.9991809991809992,
+      "recall": 0.9910641754670999,
+      "f1-score": 0.9951060358890702,
+      "support": 1231
+    },
+    "NEST Protect smoke alarm": {
+      "precision": 0.9230769230769231,
+      "recall": 0.9375,
+      "f1-score": 0.9302325581395349,
+      "support": 64
+    },
+    "Laptop": {
+      "precision": 0.9923120195012188,
+      "recall": 0.9895287958115183,
+      "f1-score": 0.99091845332834,
+      "support": 10696
+    },
+    "Withings Aura smart sleep sensor": {
+      "precision": 0.8352444176222088,
+      "recall": 0.9189907038512616,
+      "f1-score": 0.8751185583306987,
+      "support": 1506
+    },
+    "Light Bulbs LiFX Smart Bulb": {
+      "precision": 0.9727272727272728,
+      "recall": 0.45726495726495725,
+      "f1-score": 0.622093023255814,
+      "support": 234
+    },
+    "Insteon Camera": {
+      "precision": 0.9927702132787083,
+      "recall": 0.9975783993219518,
+      "f1-score": 0.9951684986109434,
+      "support": 8259
+    },
+    "accuracy": 0.9870305396660706,
+    "macro avg": {
+      "precision": 0.9681403278009942,
+      "recall": 0.8941213196220354,
+      "f1-score": 0.9199888480412193,
+      "support": 73249
+    },
+    "weighted avg": {
+      "precision": 0.9873310576375058,
+      "recall": 0.9870305396660706,
+      "f1-score": 0.9866874145437321,
+      "support": 73249
+    }
+  },
+  "cell_seconds": {
+    "0": 0.8832532749997881,
+    "1": 0.0022160339999572898,
+    "2": 0.0012287109998396772,
+    "4": 0.00021141099978194688,
+    "5": 8.64570001795073e-05,
+    "6": 0.00012760600020556012,
+    "7": 0.00016998399996737135,
+    "8": 4.9757999931898667e-05,
+    "9": 2.5291999918408692e-05,
+    "10": 0.00026376200003142003,
+    "11": 7.480700014639297e-05,
+    "12": 5.01670001540333e-05,
+    "13": 0.00020327700030975393,
+    "14": 0.0002471929997227562,
+    "17": 1.9105412059998343,
+    "20": 0.6795897299998614,
+    "23": 8.964400012700935e-05,
+    "26": 1.192509113000142,
+    "27": 0.00035259900005257805,
+    "29": 0.600210430000061
+  },
+  "train_input_sha256": "847b0bdfef69a5096cd6bdac16cd04aed8e88e79e8206ad005030edd3eca33c3",
+  "test_input_sha256": "a56bd8f3d88743f5cb5dd3eb5d07c07a3723263fcab1da427bb33db50cdf37bd"
+}

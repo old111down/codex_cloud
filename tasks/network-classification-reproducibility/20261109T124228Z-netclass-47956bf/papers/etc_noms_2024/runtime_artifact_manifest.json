@@ -1,0 +1,23 @@
+[
+  {
+    "path": "papers/etc_noms_2024/runtime-artifacts/audit_retrained_rf.pkl",
+    "bytes": 222380,
+    "sha256": "bec7a2a71efb2fdf19998ad26a688d2c6d5211445f40b22c8470c32272381371",
+    "git_tracked": false,
+    "provenance": "Produced by logged ETC audit commands; see reproduction_report.md"
+  },
+  {
+    "path": "papers/etc_noms_2024/runtime-artifacts/generator/table_entries.py",
+    "bytes": 1642922,
+    "sha256": "1cab4224960dafbf48567c34670348a99a9fd729e0ade7804b1ee223ba0752d6",
+    "git_tracked": false,
+    "provenance": "Produced by logged ETC audit commands; see reproduction_report.md"
+  },
+  {
+    "path": "papers/etc_noms_2024/runtime-artifacts/patched/In_switch_ETC/Offline_model_preparation/table_entries.py",
+    "bytes": 1380840,
+    "sha256": "e9d6014c6e7abbc0b383466893cbd4752a7ba431faf6c93e8abfb92752325a12",
+    "git_tracked": false,
+    "provenance": "Produced by logged ETC audit commands; see reproduction_report.md"
+  }
+]

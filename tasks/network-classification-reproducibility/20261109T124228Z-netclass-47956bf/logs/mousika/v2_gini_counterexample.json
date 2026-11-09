@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "scripts/mousika/v2_gini_counterexample.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:50:05.995963+00:00",
+  "end_utc": "2026-11-09T10:50:06.817179+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.8211776370000052,
+  "timeout_seconds": 30.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

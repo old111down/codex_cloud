@@ -1,0 +1,41 @@
+--- a/pre-train.py
++++ b/pre-train.py
+@@ -6,7 +6,11 @@
+ import time
+ from pathlib import Path
+ 
++import collections.abc
++import distutils.version  # torch1.9 SummaryWriter compatibility
+ import torch
++import torch._six
++torch._six.container_abcs = collections.abc  # timm0.3.2 / torch1.9 compatibility
+ import torch.backends.cudnn as cudnn
+ from torch.utils.tensorboard import SummaryWriter
+ import torchvision.transforms as transforms
+--- a/fine-tune.py
++++ b/fine-tune.py
+@@ -6,7 +6,11 @@
+ import time
+ from pathlib import Path
+ 
++import collections.abc
++import distutils.version  # torch1.9 SummaryWriter compatibility
+ import torch
++import torch._six
++torch._six.container_abcs = collections.abc  # timm0.3.2 / torch1.9 compatibility
+ import torch.backends.cudnn as cudnn
+ from torch.utils.tensorboard import SummaryWriter
+ 
+--- a/models_YaTC.py
++++ b/models_YaTC.py
+@@ -1,6 +1,10 @@
+ from functools import partial
+ 
++import collections.abc
++import distutils.version  # torch1.9 SummaryWriter compatibility
+ import torch
++import torch._six
++torch._six.container_abcs = collections.abc  # timm0.3.2 / torch1.9 compatibility
+ import torch.nn as nn
+ 
+ import timm.models.vision_transformer

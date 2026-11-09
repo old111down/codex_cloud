@@ -1,0 +1,46 @@
+[
+  {
+    "url": "https://box.networks.imdea.org/s/xV7P5bunjxbiSh1/download?path=%2F&files=unibs2009_train_3_pkt.csv",
+    "path": "papers/flowrest/runtime-artifacts/full/unibs2009_train_3_pkt.csv",
+    "source": "Author repository README public train/test share",
+    "started_utc": "2026-11-09T11:14:31.828563+00:00",
+    "http_status": 200,
+    "bytes": 3000728,
+    "sha256": "9248dac688abd80870aaa6cfaa4507c7ba5521979bcd49aef78514edf69fbf23",
+    "content_preview": "Flow ID,Min Packet Length,Max Packet Length,Packet Length Mean,Packet Length Total,Packet Count,Current Packet Length,Flow IAT Min,Flow IAT Max,Flow IAT Mean,Flow Duration,SYN Flag",
+    "ended_utc": "2026-11-09T11:14:34.118086+00:00"
+  },
+  {
+    "url": "https://box.networks.imdea.org/s/xV7P5bunjxbiSh1/download?path=%2F&files=unibs2009_test_3_pkt.csv",
+    "path": "papers/flowrest/runtime-artifacts/full/unibs2009_test_3_pkt.csv",
+    "source": "Author repository README public train/test share",
+    "started_utc": "2026-11-09T11:14:34.119794+00:00",
+    "http_status": 200,
+    "bytes": 2801719,
+    "sha256": "09c34197320dcf7a1cf2ba1eb0ec358e9789a5d8bbe817f3c2fb5c33f4942973",
+    "content_preview": "Flow ID,Min Packet Length,Max Packet Length,Packet Length Mean,Packet Length Total,Packet Count,Current Packet Length,Flow IAT Min,Flow IAT Max,Flow IAT Mean,Flow Duration,SYN Flag",
+    "ended_utc": "2026-11-09T11:14:35.054271+00:00"
+  },
+  {
+    "url": "https://box.networks.imdea.org/s/xV7P5bunjxbiSh1/download?path=%2F&files=rf3_train.csv",
+    "path": "papers/flowrest/runtime-artifacts/conference/rf3_train.csv",
+    "source": "Author repository README public train/test share",
+    "started_utc": "2026-11-09T11:14:35.054833+00:00",
+    "http_status": 200,
+    "bytes": 42626749,
+    "sha256": "be3b090fe07e45ff4e0889df20755d428be78a247aa8512ca9c4bc44551939bb",
+    "content_preview": "Flow ID,Src MAC,Dst MAC,Min Packet Length,Max Packet Length,Packet Length Mean,Packet Length Total,Packet Count,Current Packet Length,Flow IAT Min,Flow IAT Max,Flow IAT Mean,Flow D",
+    "ended_utc": "2026-11-09T11:14:45.510558+00:00"
+  },
+  {
+    "url": "https://box.networks.imdea.org/s/xV7P5bunjxbiSh1/download?path=%2F&files=rf3_test.csv",
+    "path": "papers/flowrest/runtime-artifacts/conference/rf3_test.csv",
+    "source": "Author repository README public train/test share",
+    "started_utc": "2026-11-09T11:14:45.512597+00:00",
+    "http_status": 200,
+    "bytes": 15051200,
+    "sha256": "e2a8d5d28b1b3d502624fc847710195e8c04654a8334aa1b4036515c64334026",
+    "content_preview": "Flow ID,Src MAC,Dst MAC,Min Packet Length,Max Packet Length,Packet Length Mean,Packet Length Total,Packet Count,Current Packet Length,Flow IAT Min,Flow IAT Max,Flow IAT Mean,Flow D",
+    "ended_utc": "2026-11-09T11:14:50.151974+00:00"
+  }
+]

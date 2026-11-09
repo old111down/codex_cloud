@@ -1,0 +1,271 @@
+{
+  "paper_id": "flowrest",
+  "audit_round": "autonomous-20261109",
+  "runs": [
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/conda_create.json",
+        "logs/flowrest/conda_create.log"
+      ]
+    },
+    {
+      "run_id": "conference_time_alignment_sensitivity",
+      "phase": "sensitivity",
+      "input_kind": "real",
+      "metrics": {
+        "accuracy": 0.9870305396660706,
+        "train_rows": 215484,
+        "test_rows": 73249,
+        "macro_f1": 0.9199888480412193,
+        "weighted_f1": 0.9866874145437321
+      },
+      "level": "R2",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Explicit data-processing sensitivity condition, not a confirmed equivalent repair or original paper evaluation",
+      "evidence_files": [
+        "logs/flowrest/conference_time_alignment_sensitivity.json",
+        "logs/flowrest/conference_time_alignment_sensitivity.log"
+      ]
+    },
+    {
+      "run_id": "core_conference",
+      "phase": "core_algorithm",
+      "input_kind": "real",
+      "metrics": {
+        "accuracy": 0.645647039550028,
+        "train_rows": 215484,
+        "test_rows": 73249,
+        "macro_f1": 0.40269406439541156,
+        "weighted_f1": 0.6364816462187943
+      },
+      "level": "R2",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/core_conference.json",
+        "logs/flowrest/core_conference.log"
+      ]
+    },
+    {
+      "run_id": "core_full",
+      "phase": "core_algorithm",
+      "input_kind": "real",
+      "metrics": {
+        "accuracy": 0.9960786310857609,
+        "train_rows": 20664,
+        "test_rows": 19636,
+        "macro_f1": 0.9715531718280608,
+        "weighted_f1": 0.9960935062312988
+      },
+      "level": "R2",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/core_full.json",
+        "logs/flowrest/core_full.log"
+      ]
+    },
+    {
+      "run_id": "data_audit",
+      "phase": "data_audit",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/data_audit.json",
+        "logs/flowrest/data_audit.log"
+      ]
+    },
+    {
+      "run_id": "full_generator_bundled_model_configured",
+      "phase": "model_generation",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Bundled older RF has no feature_names_in_ attribute",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/full_generator_bundled_model_configured.json",
+        "logs/flowrest/full_generator_bundled_model_configured.log"
+      ]
+    },
+    {
+      "run_id": "generated_range_validation",
+      "phase": "static_validation",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Audit harness expected wrong terminal interval starts; corrected harness preserved original generated output",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/generated_range_validation.json",
+        "logs/flowrest/generated_range_validation.log"
+      ]
+    },
+    {
+      "run_id": "generated_range_validation_corrected_harness",
+      "phase": "static_validation",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/generated_range_validation_corrected_harness.json",
+        "logs/flowrest/generated_range_validation_corrected_harness.log"
+      ]
+    },
+    {
+      "run_id": "original_conference_generator",
+      "phase": "model_generation",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Initial audit working directory lacked required author sav; resolved by copying unchanged artifact",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/original_conference_generator.json",
+        "logs/flowrest/original_conference_generator.log"
+      ]
+    },
+    {
+      "run_id": "original_conference_generator_with_model",
+      "phase": "model_generation",
+      "input_kind": "none",
+      "metrics": {
+        "generated_script": true,
+        "invalid_time_key_intervals": 2
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Author pretrained artifact and generated Python only; not BFRT or P4 execution",
+      "evidence_files": [
+        "logs/flowrest/original_conference_generator_with_model.json",
+        "logs/flowrest/original_conference_generator_with_model.log"
+      ]
+    },
+    {
+      "run_id": "original_conference_notebook",
+      "phase": "original_notebook",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "rf3_train.csv absent initially; subsequently public CSV downloaded and selected core executed",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/original_conference_notebook.json",
+        "logs/flowrest/original_conference_notebook.log"
+      ]
+    },
+    {
+      "run_id": "original_full_generator",
+      "phase": "model_generation",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Unconfigured YOUR_TRAINED_MODEL.pkl placeholder",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/original_full_generator.json",
+        "logs/flowrest/original_full_generator.log"
+      ]
+    },
+    {
+      "run_id": "original_full_notebook",
+      "phase": "original_notebook",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "unibs2009_train_3_pkt.csv absent initially; later public CSV downloaded and all code cells executed",
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/original_full_notebook.json",
+        "logs/flowrest/original_full_notebook.log"
+      ]
+    },
+    {
+      "run_id": "original_full_notebook_with_public_data",
+      "phase": "original_notebook",
+      "input_kind": "real",
+      "metrics": {
+        "all_original_code_cells_executed": 12
+      },
+      "level": "R2",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Plain exec of original code cells, rich display not emulated; not full journal all-task evaluation",
+      "evidence_files": [
+        "logs/flowrest/original_full_notebook_with_public_data.json",
+        "logs/flowrest/original_full_notebook_with_public_data.log"
+      ]
+    },
+    {
+      "run_id": "pip_install",
+      "phase": "environment",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/pip_install.json",
+        "logs/flowrest/pip_install.log"
+      ]
+    },
+    {
+      "run_id": "public_data_download",
+      "phase": "data_access",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Paper comparable results Unknown",
+      "evidence_files": [
+        "logs/flowrest/public_data_download.json",
+        "logs/flowrest/public_data_download.log"
+      ]
+    },
+    {
+      "run_id": "synthetic_smoke",
+      "phase": "smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_fit_accuracy": 1.0,
+        "author_saved_model_synthetic_rows": 32,
+        "perfect_f1_threshold99_returns_none": true
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": null,
+      "limitations": "Synthetic inputs and author saved-weight interface only; not paper metric",
+      "evidence_files": [
+        "logs/flowrest/synthetic_smoke.json",
+        "logs/flowrest/synthetic_smoke.log"
+      ]
+    }
+  ]
+}
