@@ -1,0 +1,22 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "create",
+    "--prefix",
+    "/workspace/traffic-repro-audit/.conda/flowrest",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "--yes",
+    "python=3.8",
+    "pip=24.3.1"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:08:59.370275+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:09:05.004965+00:00",
+  "elapsed_seconds": 5.634692978000203
+}

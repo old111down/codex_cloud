@@ -1,0 +1,255 @@
+cpu_affinity [0, 1]
+Executing untouched cell 0
+Executing untouched cell 1
+Executing untouched cell 2
+Executing untouched cell 4
+Executing untouched cell 5
+Executing untouched cell 6
+Executing untouched cell 7
+Executing untouched cell 8
+Executing untouched cell 9
+Executing untouched cell 10
+Executing untouched cell 11
+Executing untouched cell 12
+Executing untouched cell 13
+Executing untouched cell 14
+Executing untouched cell 17
+Executing untouched cell 20
+Executing untouched cell 23
+Executing untouched cell 26
+Compression applied to 'Flow Duration': 32 ->  29
+Compression applied to 'Flow IAT Max': 32 ->  27
+Macro F1-score (from c. rep.):  36.17942739819178
+Executing untouched cell 27
+Number of bits in P4:  437
+Number of bits in P4:  523
+Number of bits in P4:  474
+Executing untouched cell 29
+{
+  "scope": "Selected original notebook cells on public author derived CSV; not full original processing, searches, hardware evaluation or paper-metric reproduction",
+  "mode": "conference",
+  "notebook_sha256": "bc92f43355e2d05f473b5cc984a9b3b1e7207fbebe38f77246fd2b93e12aa1b6",
+  "executed_cells": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    20,
+    23,
+    26,
+    27,
+    29
+  ],
+  "skipped_cells": {
+    "22": "feature/depth/tree search",
+    "24": "compression grid",
+    "28": "pruning grid",
+    "30": "overwrite saved model"
+  },
+  "train_rows": 215484,
+  "test_rows": 73249,
+  "features": [
+    "Packet Length Total",
+    "Flow Duration",
+    "Max Packet Length",
+    "Source Port",
+    "Min Packet Length",
+    "Destination Port",
+    "Flow IAT Max"
+  ],
+  "classes": [
+    "Withings Smart Baby Monitor",
+    "Withings Aura smart sleep sensor",
+    "Dropcam",
+    "TP-Link Day Night Cloud camera",
+    "Samsung SmartCam",
+    "Netatmo weather station",
+    "Netatmo Welcome",
+    "Amazon Echo",
+    "Laptop",
+    "NEST Protect smoke alarm",
+    "Insteon Camera",
+    "Belkin Wemo switch",
+    "Belkin wemo motion sensor",
+    "Light Bulbs LiFX Smart Bulb",
+    "Triby Speaker",
+    "Smart Things"
+  ],
+  "model_params": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 10,
+    "max_features": "auto",
+    "max_leaf_nodes": 350,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 3,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "tree_nodes": [
+    699,
+    699,
+    699
+  ],
+  "tree_leaves": [
+    350,
+    350,
+    350
+  ],
+  "accuracy": 0.645647039550028,
+  "classification_report": {
+    "Triby Speaker": {
+      "precision": 1.0,
+      "recall": 0.15447154471544716,
+      "f1-score": 0.2676056338028169,
+      "support": 123
+    },
+    "Dropcam": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 20
+    },
+    "Smart Things": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 11
+    },
+    "Netatmo Welcome": {
+      "precision": 0.05952380952380952,
+      "recall": 0.004764173415912339,
+      "f1-score": 0.00882223202470225,
+      "support": 2099
+    },
+    "Withings Smart Baby Monitor": {
+      "precision": 0.9929873772791024,
+      "recall": 0.21994408201304752,
+      "f1-score": 0.3601220752797558,
+      "support": 3219
+    },
+    "TP-Link Day Night Cloud camera": {
+      "precision": 0.878300803673938,
+      "recall": 0.9757653061224489,
+      "f1-score": 0.9244712990936556,
+      "support": 784
+    },
+    "Amazon Echo": {
+      "precision": 0.12093315200334763,
+      "recall": 0.1545867879112062,
+      "f1-score": 0.13570464283618008,
+      "support": 7478
+    },
+    "Samsung SmartCam": {
+      "precision": 0.8995890517174536,
+      "recall": 0.7128287048414844,
+      "f1-score": 0.7953930003770611,
+      "support": 16276
+    },
+    "Belkin wemo motion sensor": {
+      "precision": 0.9932988120621383,
+      "recall": 0.9956491870849553,
+      "f1-score": 0.9944726108336828,
+      "support": 13101
+    },
+    "Belkin Wemo switch": {
+      "precision": 0.9953201970443349,
+      "recall": 0.991899852724595,
+      "f1-score": 0.9936070813867716,
+      "support": 8148
+    },
+    "Netatmo weather station": {
+      "precision": 0.5333333333333333,
+      "recall": 0.006498781478472786,
+      "f1-score": 0.012841091492776884,
+      "support": 1231
+    },
+    "NEST Protect smoke alarm": {
+      "precision": 0.18181818181818182,
+      "recall": 0.125,
+      "f1-score": 0.14814814814814814,
+      "support": 64
+    },
+    "Laptop": {
+      "precision": 0.574500594193877,
+      "recall": 0.9491398653702319,
+      "f1-score": 0.7157612719004478,
+      "support": 10696
+    },
+    "Withings Aura smart sleep sensor": {
+      "precision": 0.9506172839506173,
+      "recall": 0.2556440903054449,
+      "f1-score": 0.4029304029304029,
+      "support": 1506
+    },
+    "Light Bulbs LiFX Smart Bulb": {
+      "precision": 0.7443609022556391,
+      "recall": 0.4230769230769231,
+      "f1-score": 0.5395095367847412,
+      "support": 234
+    },
+    "Insteon Camera": {
+      "precision": 0.13632413643276126,
+      "recall": 0.1519554425475239,
+      "f1-score": 0.14371600343544233,
+      "support": 8259
+    },
+    "accuracy": 0.645647039550028,
+    "macro avg": {
+      "precision": 0.5663067272055333,
+      "recall": 0.3825765463504809,
+      "f1-score": 0.40269406439541156,
+      "support": 73249
+    },
+    "weighted avg": {
+      "precision": 0.6873379850719181,
+      "recall": 0.645647039550028,
+      "f1-score": 0.6364816462187943,
+      "support": 73249
+    }
+  },
+  "cell_seconds": {
+    "0": 0.879209094000089,
+    "1": 0.0020640420002564497,
+    "2": 0.0011344409999765048,
+    "4": 0.00018968799986396334,
+    "5": 7.94910001786775e-05,
+    "6": 0.00012656899980356684,
+    "7": 0.00013993099992148927,
+    "8": 4.9171999762620544e-05,
+    "9": 2.5910000204021344e-05,
+    "10": 0.00027267299992672633,
+    "11": 7.183899970186758e-05,
+    "12": 5.09450001118239e-05,
+    "13": 0.00021479199995155795,
+    "14": 0.00014673399982712,
+    "17": 2.0931589430001623,
+    "20": 0.6553112709998459,
+    "23": 0.0001666429998294916,
+    "26": 1.6119471840002007,
+    "27": 0.00027558200008570566,
+    "29": 0.5877254769998217
+  },
+  "train_input_sha256": "847b0bdfef69a5096cd6bdac16cd04aed8e88e79e8206ad005030edd3eca33c3",
+  "test_input_sha256": "0f2571e2b03d5aca2896be3a95efa0d94b8506ee70e70f0466382f32a72cbebd"
+}

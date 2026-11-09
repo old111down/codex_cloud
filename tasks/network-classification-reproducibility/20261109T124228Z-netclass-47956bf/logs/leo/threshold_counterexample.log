@@ -1,0 +1,104 @@
+{
+  "scope": "Synthetic 2-point CART stumps, original text parser, and Python evaluation of pinned P4 arithmetic; not executed P4 or network data",
+  "source_sha256": "7abe8c4e01e2263dbe3aacdb0146c0c0bdc385ee81ec0cdace799c6c0705f69c",
+  "counterexample_confirmed": true,
+  "cases": [
+    {
+      "input_sha256": "01c84f606ffe38ee77bd47a06e5aaca8182c5ba6a3d4e6084c2ea05a0d7d4892",
+      "export_text": "|--- feature_0 <= 0.50\n|   |--- class: 0\n|--- feature_0 >  0.50\n|   |--- class: 1\n",
+      "sklearn_threshold": 0.5,
+      "parsed_constraint": 0,
+      "probes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sklearn_predictions": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "generated_predicate_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mismatching_probes": [
+        0
+      ]
+    },
+    {
+      "input_sha256": "08a4f91a73c9264d29aeedb30697daff6105d49d1af7cc284482999686f030ff",
+      "export_text": "|--- feature_0 <= 1.50\n|   |--- class: 0\n|--- feature_0 >  1.50\n|   |--- class: 1\n",
+      "sklearn_threshold": 1.5,
+      "parsed_constraint": 2,
+      "probes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sklearn_predictions": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "generated_predicate_predictions": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mismatching_probes": []
+    },
+    {
+      "input_sha256": "c9649db321bc41a9025b0d3c804271ac9930a627de6d1170444f3036193e03eb",
+      "export_text": "|--- feature_0 <= 2.50\n|   |--- class: 0\n|--- feature_0 >  2.50\n|   |--- class: 1\n",
+      "sklearn_threshold": 2.5,
+      "parsed_constraint": 2,
+      "probes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sklearn_predictions": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "generated_predicate_predictions": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mismatching_probes": [
+        2
+      ]
+    }
+  ]
+}

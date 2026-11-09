@@ -1,0 +1,35 @@
+{
+  "scope": "Python bit-vector evaluation of pinned generated P4 FEATURE_WIDTH16 add/MSB predicate; not actual P4 compilation/simulation or a statement about observed paper datasets",
+  "original_generator_sha256": "7abe8c4e01e2263dbe3aacdb0146c0c0bdc385ee81ec0cdace799c6c0705f69c",
+  "p4_templates_sha256": "280e29e6632ae23a663d03841330de6d679481576d1d6ab0658b254ad1d6c03f",
+  "feature_domain": "Unsigned16-bit;65535 is representable by the generated header. Actual input frequency Unknown.",
+  "cases": [
+    {
+      "feature_input": 65535,
+      "reference_sklearn_left": false,
+      "parsed_constraint": 0,
+      "neg_constraint_16bit": 0,
+      "sum_16bit": 65535,
+      "generated_left": true,
+      "mismatch": true
+    },
+    {
+      "feature_input": 65535,
+      "reference_sklearn_left": false,
+      "parsed_constraint": 2,
+      "neg_constraint_16bit": 65534,
+      "sum_16bit": 65533,
+      "generated_left": true,
+      "mismatch": true
+    },
+    {
+      "feature_input": 65535,
+      "reference_sklearn_left": false,
+      "parsed_constraint": 2,
+      "neg_constraint_16bit": 65534,
+      "sum_16bit": 65533,
+      "generated_left": true,
+      "mismatch": true
+    }
+  ]
+}

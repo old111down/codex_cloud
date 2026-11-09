@@ -1,0 +1,99 @@
+{
+  "scope": "Synthetic data and author saved-model loading only; no real traffic dataset or paper metric validation",
+  "notebook_sha256": "bc92f43355e2d05f473b5cc984a9b3b1e7207fbebe38f77246fd2b93e12aa1b6",
+  "synthetic_fit": {
+    "rows": 48,
+    "sha256": "c623bb205b3febd66cf7136e36f54e9c5c300f9e39051e808fa829937e7c6d5f",
+    "predictions_equal_labels": true,
+    "accuracy": 1.0,
+    "not_paper_metric": true
+  },
+  "feature_threshold_counterexample": {
+    "upstream_call_threshold": 99,
+    "actual_score_range": [
+      0,
+      1
+    ],
+    "perfect_score": 1.0,
+    "upstream_return": null,
+    "threshold_0_99_returns_feature_subset": true,
+    "scope": "Parameter counterexample; upstream unchanged"
+  },
+  "author_model": {
+    "sha256": "1d0b76e17480c8d5d422276a50e85d906f4e958b51a2039ca02f168cab7f7aaf",
+    "features": [
+      "Packet Length Total",
+      "Flow Duration",
+      "Max Packet Length",
+      "Source Port",
+      "Min Packet Length",
+      "Destination Port",
+      "Flow IAT Max"
+    ],
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "n_estimators": 3,
+    "tree_nodes": [
+      699,
+      699,
+      699
+    ],
+    "tree_leaves": [
+      350,
+      350,
+      350
+    ],
+    "synthetic_input_rows": 32,
+    "input_sha256": "9dbf958bf9a90bb1673184fb7059e16d4c829f15ed8f7d723ed6732cfe795187",
+    "predictions": [
+      6,
+      6,
+      8,
+      6,
+      8,
+      3,
+      4,
+      8,
+      11,
+      8,
+      8,
+      8,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      6,
+      7,
+      6,
+      8,
+      4,
+      8,
+      6,
+      6,
+      8,
+      8
+    ]
+  }
+}

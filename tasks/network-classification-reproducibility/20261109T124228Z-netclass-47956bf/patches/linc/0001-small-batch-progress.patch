@@ -1,0 +1,11 @@
+--- a/linc/model.py
++++ b/linc/model.py
+@@ -262,7 +262,7 @@
+             self.optimizer.zero_grad()
+             batch_time.update(time.time() - end)
+             end = time.time()
+-            if i % (num_batch // 10) == 0:
++            if i % max(1, num_batch // 10) == 0:
+                 progress.display(i)
+         return loss_value.avg, top1.avg
+ 

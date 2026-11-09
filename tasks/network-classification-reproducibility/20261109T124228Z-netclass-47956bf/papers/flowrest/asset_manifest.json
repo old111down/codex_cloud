@@ -1,0 +1,445 @@
+{
+  "collected_utc": "2026-11-09T11:27:52.190050+00:00",
+  "files": [
+    {
+      "path": "evidence/flowrest/Unibs_flowrest_analysis.cells.txt",
+      "bytes": 5418,
+      "sha256": "63e733595dcbeca2afff714195e1371097c0625d10a6bf815d5c8f3866007dfe"
+    },
+    {
+      "path": "evidence/flowrest/core_conference_metrics.json",
+      "bytes": 5764,
+      "sha256": "36071e0ced4dde95c9c656ab3b384c038fd60575c91b0761f819821d60130b40"
+    },
+    {
+      "path": "evidence/flowrest/core_conference_predictions.csv",
+      "bytes": 783565,
+      "sha256": "63dfe65da3fc1ee79b4fe6e0af2592e03c17fc1406d92a47d0930a32dcd06785"
+    },
+    {
+      "path": "evidence/flowrest/core_conference_time_aligned_metrics.json",
+      "bytes": 5919,
+      "sha256": "ab22dad899525e080933cf7bfa10e25c6bed62c2d49a56b61cd932985ff9181f"
+    },
+    {
+      "path": "evidence/flowrest/core_conference_time_aligned_predictions.csv",
+      "bytes": 782681,
+      "sha256": "9c6649a03cd02efcc6f936f60252e6953246f60067d81f71d10781b500356182"
+    },
+    {
+      "path": "evidence/flowrest/core_full_metrics.json",
+      "bytes": 3388,
+      "sha256": "5880ce16905ef2ce82262c81b050e10bf446fa2b33952789d01a467cc9c0e454"
+    },
+    {
+      "path": "evidence/flowrest/core_full_predictions.csv",
+      "bytes": 185274,
+      "sha256": "b279a76f555e746cdd26809296b4f3bbfc1f01a0620c497dc9b51ddbf8638b18"
+    },
+    {
+      "path": "evidence/flowrest/crossref.json",
+      "bytes": 7650,
+      "sha256": "9c692009e2e7876dcafafbdad9ace0c5d170d0c47708f20373762af361ea41b2"
+    },
+    {
+      "path": "evidence/flowrest/data_audit.json",
+      "bytes": 5938,
+      "sha256": "4f4935fe63ca98466849a08963d7542845e45d46754a7f1594a8e3540d7bd42c"
+    },
+    {
+      "path": "evidence/flowrest/data_box_access_log.json",
+      "bytes": 695,
+      "sha256": "53a37a080742505b84d45125947993060048e45c9e63e300f00135b8efbf1f9d"
+    },
+    {
+      "path": "evidence/flowrest/data_box_list0.html",
+      "bytes": 10343,
+      "sha256": "ca68e6bccd9b6b49e29e2fc006ac3bbe85abd824fe893718ec12105385f89693"
+    },
+    {
+      "path": "evidence/flowrest/data_box_list1.html",
+      "bytes": 10343,
+      "sha256": "903102ad71756be1e15b7d3bb7413a97d2588d1b0078059f08ec7522fa6be598"
+    },
+    {
+      "path": "evidence/flowrest/data_box_page.html",
+      "bytes": 15841,
+      "sha256": "e400935ad6b1af16dd46b561f1f6a0c0136844fc946a1d76f4ebfb054f4e20c9"
+    },
+    {
+      "path": "evidence/flowrest/data_download_heads.json",
+      "bytes": 1070,
+      "sha256": "1e38f693167674366041734a13fc52f7684296822b1b3afcaacb33378f0414b1"
+    },
+    {
+      "path": "evidence/flowrest/downloaded_data_manifest.json",
+      "bytes": 2805,
+      "sha256": "454b252ce81da5fcc659f7442dd672fc7d4cd7893b3eb42651439d9913559c96"
+    },
+    {
+      "path": "evidence/flowrest/extended_paper.pdf",
+      "bytes": 9172733,
+      "sha256": "8e5c3e51b1d3d09df97a2587dcf5af99ac0cddc3ad298cc3b9e8e8c7fb887181"
+    },
+    {
+      "path": "evidence/flowrest/extended_paper.txt",
+      "bytes": 172185,
+      "sha256": "29409af289b60be123004fd69f64332a65ccfedf245245a0cba1c89f03722ca5"
+    },
+    {
+      "path": "evidence/flowrest/fetch_log.json",
+      "bytes": 2068,
+      "sha256": "7749d400ca9271d864cb58dc77771229bd774f3ee4d7bf5b0688b7f672d7ad7a"
+    },
+    {
+      "path": "evidence/flowrest/generated_table_validation.json",
+      "bytes": 1844,
+      "sha256": "c554de3f234c8f69baab9c768dc2db4b7326dcab9b5067e2656802910369de58"
+    },
+    {
+      "path": "evidence/flowrest/github_commit.json",
+      "bytes": 4695,
+      "sha256": "55998db624796283d4334de3604e62981b0346b661bb180bbf38be0a76df2179"
+    },
+    {
+      "path": "evidence/flowrest/github_repository.json",
+      "bytes": 6201,
+      "sha256": "045704a2732316f4baabb826d2307c2555498359821cb3127e89d185e9dee78e"
+    },
+    {
+      "path": "evidence/flowrest/notebook_cells.json",
+      "bytes": 45223,
+      "sha256": "f66b63334618844a2eb677d70dee39e0a25e1e323fd749c13e94770f1fcb5bf5"
+    },
+    {
+      "path": "evidence/flowrest/paper.pdf",
+      "bytes": 921539,
+      "sha256": "4727b398fcfbb9e00ea5f43ad9e2aaa8abeea00a49541eebfa287ef6738f4c3a"
+    },
+    {
+      "path": "evidence/flowrest/paper.txt",
+      "bytes": 98913,
+      "sha256": "41fea3184be9e1face478bea3479de4be21478bc75b00b43151356660f3de154"
+    },
+    {
+      "path": "evidence/flowrest/paper_page.html",
+      "bytes": 25790,
+      "sha256": "b5923fd6b8551b1202bd284345485445ac015af5971bb5298fbd03c7808676be"
+    },
+    {
+      "path": "evidence/flowrest/pickle_static_review.json",
+      "bytes": 5585,
+      "sha256": "70e7f316f8826901cb841931a803a6e11993d4fb3d5589c1a0e87d561115480b"
+    },
+    {
+      "path": "evidence/flowrest/smoke_metrics.json",
+      "bytes": 1775,
+      "sha256": "17d4bbc13bb56d4c62e475b57134cecb47c0bfbd9299875209f6ce9e6338b52d"
+    },
+    {
+      "path": "evidence/flowrest/source_manifest.json",
+      "bytes": 4675,
+      "sha256": "e8ef47dd5ae61e1f891ebb66507d8932832efa23d46067f4885d8d76865ee58f"
+    },
+    {
+      "path": "evidence/flowrest/unsw_iot_per_flow_16_classes.cells.txt",
+      "bytes": 15299,
+      "sha256": "48239e3e60c9d5e744c92e1c53ac6fc7105889c0d74bec9198045b10d415f5b4"
+    },
+    {
+      "path": "evidence/flowrest/unsw_iot_per_packet_16_classes.cells.txt",
+      "bytes": 14318,
+      "sha256": "1f58b23c559d3e821040845051504a83a50aa1e6e3b44800cd575b47bb930bce"
+    },
+    {
+      "path": "papers/flowrest/audit_data.py",
+      "bytes": 1367,
+      "sha256": "93b33c3e3be9f7d2b8d3caadb2afa8e998dd8cb43ea0f73d5cd1deead3b72dc5"
+    },
+    {
+      "path": "papers/flowrest/build_coverage.py",
+      "bytes": 14288,
+      "sha256": "a24e63a543cdf2b79ec5771fbdb37390c3c39fbc33e786e59aa73aafb7c0800e"
+    },
+    {
+      "path": "papers/flowrest/coverage_matrix.csv",
+      "bytes": 32127,
+      "sha256": "f15a7277d203a91bbff091200101a89217e0256f8a75b853dc02aa5b6e44a89e"
+    },
+    {
+      "path": "papers/flowrest/execution_summary.json",
+      "bytes": 8885,
+      "sha256": "fb5766336d945ad7475a2e53040f0d55a0ef5981cdd4204e5e0ab877c9a88923"
+    },
+    {
+      "path": "papers/flowrest/fetch_public_data.py",
+      "bytes": 1310,
+      "sha256": "4eb51035ac06252b52d23b550b708e476cc895f238fc4da857742b90eaa6fe9a"
+    },
+    {
+      "path": "papers/flowrest/independent_review.md",
+      "bytes": 4260,
+      "sha256": "f15575cc74566f271a147c3c27a023a25dec98a8ba7a1bc391caafe8d8113354"
+    },
+    {
+      "path": "papers/flowrest/independent_review_checks.py",
+      "bytes": 5400,
+      "sha256": "0b6db56d0a51ce1bd203cf3c3a3539f126b42f59395948f7f529f78e3be84386"
+    },
+    {
+      "path": "papers/flowrest/independent_validation.json",
+      "bytes": 2309,
+      "sha256": "7031e4da660f1b84b53faa0e16959628ef913bdd220294a61c89718085673e2b"
+    },
+    {
+      "path": "papers/flowrest/metadata.json",
+      "bytes": 4626,
+      "sha256": "eb7ac5750c2b0cd852ea1cf9f053acaf406858019b7a35a1c7d768807021d547"
+    },
+    {
+      "path": "papers/flowrest/reproduction_report.md",
+      "bytes": 8761,
+      "sha256": "8a86b13223090cb71e3467d4239546245ef979d692db485a73c459def55701fd"
+    },
+    {
+      "path": "papers/flowrest/run_core.py",
+      "bytes": 3286,
+      "sha256": "3ad2451b352bb37f2fe4be0afa69fa7b716ffadb06e6ec6a5177cb172d8cd4ad"
+    },
+    {
+      "path": "papers/flowrest/run_original_notebook.py",
+      "bytes": 1017,
+      "sha256": "260052607c72f5d01a05dcf1a22a9ee7c366f1cbdaabf8394d30de8fe06bb630"
+    },
+    {
+      "path": "papers/flowrest/smoke_test.py",
+      "bytes": 2878,
+      "sha256": "af16cbba12c374a44456dcf168416ea1ae8d155a6535f161d02bcf300e694f4c"
+    },
+    {
+      "path": "papers/flowrest/static_audit.md",
+      "bytes": 5708,
+      "sha256": "3cb647e126561894ef4543b866854eff93bfb541a0710d8cab0ff928c256bbb0"
+    },
+    {
+      "path": "papers/flowrest/validate_generated_ranges.py",
+      "bytes": 1956,
+      "sha256": "4d51e0667279833007f0a22f6194fc626010963f92098bd977a4260319cf81c8"
+    },
+    {
+      "path": "environment/flowrest/conda-explicit.txt",
+      "bytes": 2266,
+      "sha256": "d9063fedb7c652470f049aebb663d74899410e575d9dc9e0a5aca33e9b47a96e"
+    },
+    {
+      "path": "environment/flowrest/environment.yml",
+      "bytes": 1868,
+      "sha256": "5ddf7a5231136349ee8eb3c6af8d11941f9c42e865ece2642d41a3905e745b9e"
+    },
+    {
+      "path": "environment/flowrest/pip-freeze.txt",
+      "bytes": 612,
+      "sha256": "ed6fd155b9bcb73315f4109612d7bbd63ef4c08219f3b5f437df800d45ea34d0"
+    },
+    {
+      "path": "environment/flowrest/pip-install-report.json",
+      "bytes": 395535,
+      "sha256": "386e9f56d88b61632a37b34971d3db045eef896990081ac85473ce5730559c88"
+    },
+    {
+      "path": "environment/flowrest/requirements.txt",
+      "bytes": 192,
+      "sha256": "6986d72f5091cf8303080d6b85fdbb5c7986cf611f7c5b467fed6527ac71afe8"
+    },
+    {
+      "path": "environment/flowrest/runtime-versions.json",
+      "bytes": 1541,
+      "sha256": "6d03e0334a9041fbd24b57cd8d70365d5887dfdfefb4e1bd0efa4a91a4a19f06"
+    },
+    {
+      "path": "logs/flowrest/clone.log",
+      "bytes": 36,
+      "sha256": "2a3ab5b9c6ab0c906d5b8d8f9adb25b2bb5854728983fb5b4036af890c240cac"
+    },
+    {
+      "path": "logs/flowrest/conda_create.json",
+      "bytes": 524,
+      "sha256": "5f7f62a0f92a8a283cef8891b43ef1767f6fc450403873180991b287437f4328"
+    },
+    {
+      "path": "logs/flowrest/conda_create.log",
+      "bytes": 2742,
+      "sha256": "7e462abba4c68b94a64f7601ec1ec59763a47b1b4cc154af6e25feb6200eb1fe"
+    },
+    {
+      "path": "logs/flowrest/conference_time_alignment_sensitivity.json",
+      "bytes": 599,
+      "sha256": "46b50af662e732ad4683ebae11e1ae340b70a512bfd38996d293791c42746cb2"
+    },
+    {
+      "path": "logs/flowrest/conference_time_alignment_sensitivity.log",
+      "bytes": 7124,
+      "sha256": "17f065d80faedb55461839bd91592baca7bbe842fac5249059f4362d090700af"
+    },
+    {
+      "path": "logs/flowrest/core_conference.json",
+      "bytes": 585,
+      "sha256": "e1ae447b968d51133c626aa704a3d877cc1f5ad32703d7bbe693aab7e3fd3c5c"
+    },
+    {
+      "path": "logs/flowrest/core_conference.log",
+      "bytes": 6565,
+      "sha256": "56a622cee4c7a575eb5495bfc2775527950d771cce496d0e13c00c2fa2f59127"
+    },
+    {
+      "path": "logs/flowrest/core_full.json",
+      "bytes": 574,
+      "sha256": "3c9b2d94e855f390dfdcbc495d6c5d32b1deb8058d554f292c50d95dc87c9792"
+    },
+    {
+      "path": "logs/flowrest/core_full.log",
+      "bytes": 3570,
+      "sha256": "8f36b5c04c4a83b0457ea4fea7d518b07eb50cd628916df4b29d24425d09fda7"
+    },
+    {
+      "path": "logs/flowrest/data_audit.json",
+      "bytes": 371,
+      "sha256": "2b16eb4d1b643daa761c4f35754312a7c915ce113f03df4a191551e47f2a60f4"
+    },
+    {
+      "path": "logs/flowrest/data_audit.log",
+      "bytes": 886,
+      "sha256": "3cf7b32e7ff392c9bf73d03437b5b5bdb9a772e248dfc6aba40ad9d10e72e8a9"
+    },
+    {
+      "path": "logs/flowrest/full_generator_bundled_model_configured.json",
+      "bytes": 606,
+      "sha256": "a7b00de43560b592fd479f228687bf96c8a64143c1259e6f89076777786d32bc"
+    },
+    {
+      "path": "logs/flowrest/full_generator_bundled_model_configured.log",
+      "bytes": 296,
+      "sha256": "44039727e6c616d977a90dba01ad0e58556617a34a45a37e253d6b0e648bce87"
+    },
+    {
+      "path": "logs/flowrest/generated_range_validation.json",
+      "bytes": 366,
+      "sha256": "980f839d914c3f0245fb39762c7e9f6eb7e69378518334962d4cc88d69b7d1bf"
+    },
+    {
+      "path": "logs/flowrest/generated_range_validation.log",
+      "bytes": 280,
+      "sha256": "35d7c616d317d8abf7463705379e242a52c9a33cb04e50ff30face0e6452c600"
+    },
+    {
+      "path": "logs/flowrest/generated_range_validation_corrected_harness.json",
+      "bytes": 365,
+      "sha256": "d216ebef10c657cecb89e0f2d23a9e17d12a33eb5965ba22ccf5aa97ff94744a"
+    },
+    {
+      "path": "logs/flowrest/generated_range_validation_corrected_harness.log",
+      "bytes": 1844,
+      "sha256": "c554de3f234c8f69baab9c768dc2db4b7326dcab9b5067e2656802910369de58"
+    },
+    {
+      "path": "logs/flowrest/independent_review.json",
+      "bytes": 365,
+      "sha256": "4bdc2483e581b8b2cbda2eae009ee7194d768b5f2776e1e35cb7549f66811698"
+    },
+    {
+      "path": "logs/flowrest/independent_review.log",
+      "bytes": 2309,
+      "sha256": "7031e4da660f1b84b53faa0e16959628ef913bdd220294a61c89718085673e2b"
+    },
+    {
+      "path": "logs/flowrest/original_conference_generator.json",
+      "bytes": 524,
+      "sha256": "08d2b308f915a5afe63b651c29f9675968f1f1163fe5533a87843b1eb01361af"
+    },
+    {
+      "path": "logs/flowrest/original_conference_generator.log",
+      "bytes": 710,
+      "sha256": "7bd2e2d35f855da011d8bcb1abb90225587e5972acbeb35102ad5760e3cf40ba"
+    },
+    {
+      "path": "logs/flowrest/original_conference_generator_with_model.json",
+      "bytes": 613,
+      "sha256": "faff278e413ecf9198cf0715319b3b30ae82de33cb3d48b16116097d12e95d1d"
+    },
+    {
+      "path": "logs/flowrest/original_conference_generator_with_model.log",
+      "bytes": 729,
+      "sha256": "b4fbffe4a14b795da427e4cbf1ac2b4fbf617e1ce5faf0af98d8a628d8a17d21"
+    },
+    {
+      "path": "logs/flowrest/original_conference_notebook.json",
+      "bytes": 599,
+      "sha256": "12bfc9d66fdd37a5fce64021febcb854452b6685c6947cb8afaa4c5ca096a5f8"
+    },
+    {
+      "path": "logs/flowrest/original_conference_notebook.log",
+      "bytes": 2528,
+      "sha256": "97573a849dd18417e2138af3b9af72e46b1ed6492653a783e279efb13c56ce26"
+    },
+    {
+      "path": "logs/flowrest/original_full_generator.json",
+      "bytes": 606,
+      "sha256": "8b76aa1fe19fb8d1dde8419ae531c88d13e96d09527c2a4c4fa532462e2d994c"
+    },
+    {
+      "path": "logs/flowrest/original_full_generator.log",
+      "bytes": 621,
+      "sha256": "6ebd4c83b7c4b25ec28cfc3510809f5ba2c19f42f5fcc0a460e897b79355e071"
+    },
+    {
+      "path": "logs/flowrest/original_full_notebook.json",
+      "bytes": 587,
+      "sha256": "27896b3cafade69196cbb41a4d6e8ba7a6bff8d71a6645b8d978bf78c40ff3d9"
+    },
+    {
+      "path": "logs/flowrest/original_full_notebook.log",
+      "bytes": 2225,
+      "sha256": "d2fead7baa6e769e39d169b8797888cd3c39d59dc459b3969a39cb308891a47b"
+    },
+    {
+      "path": "logs/flowrest/original_full_notebook_with_public_data.json",
+      "bytes": 587,
+      "sha256": "7db4d6af3b7fd3e657a635c9bcc39a55f604b51364590af902c3771932b48c3e"
+    },
+    {
+      "path": "logs/flowrest/original_full_notebook_with_public_data.log",
+      "bytes": 624,
+      "sha256": "49f729d9b0ba14874d03479f48f468124615cafca422ecf774371e9905e8756a"
+    },
+    {
+      "path": "logs/flowrest/pip_install.json",
+      "bytes": 521,
+      "sha256": "91b05faf4e417453518f3dfd0b5f5169b37abe292152e1b7d7f014ea4f85797f"
+    },
+    {
+      "path": "logs/flowrest/pip_install.log",
+      "bytes": 11043,
+      "sha256": "362f7fceaa1789dfc35487be715b070a54a82b31ae2be08d1d1be7ceed682dfd"
+    },
+    {
+      "path": "logs/flowrest/public_data_download.json",
+      "bytes": 358,
+      "sha256": "92235d41d18f75bad1d0262a3d159ed0fcf0879c0788de02a9ead8ea252f9c7e"
+    },
+    {
+      "path": "logs/flowrest/public_data_download.log",
+      "bytes": 2630,
+      "sha256": "41d40211d0cc73fa1eac5ff72ace39dd701981a176465f25ad83ffcbe55e24f0"
+    },
+    {
+      "path": "logs/flowrest/synthetic_smoke.json",
+      "bytes": 463,
+      "sha256": "37baa07813fcfea0a7563a1492680934b44f20036998bd7a0bae49b9a69e1ba5"
+    },
+    {
+      "path": "logs/flowrest/synthetic_smoke.log",
+      "bytes": 1901,
+      "sha256": "3b23523f466f1aed34e842ce9c3245eed48b606e9118541f8c17e22ea02ac5a5"
+    }
+  ]
+}

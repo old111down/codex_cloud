@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "scripts/mousika/real_subset_smoke.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:51:09.656510+00:00",
+  "end_utc": "2026-11-09T10:51:12.269240+00:00",
+  "exit_code": 1,
+  "elapsed_seconds": 2.6127395849999857,
+  "timeout_seconds": 60.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+    "/workspace/traffic-repro-audit/upstream/flowrest/Python/Full_version/generate_table_entries_from_RF.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+  "start_utc": "2026-11-09T11:14:33.534012+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:14:34.250058+00:00",
+  "elapsed_seconds": 0.7160470250000799
+}

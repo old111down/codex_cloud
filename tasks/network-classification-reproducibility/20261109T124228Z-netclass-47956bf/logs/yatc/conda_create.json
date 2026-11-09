@@ -1,0 +1,22 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "create",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-y",
+    "-p",
+    "/workspace/traffic-repro-audit/.conda/yatc",
+    "python=3.8",
+    "pip=24.3.1"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:09:28.907512+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:09:37.787542+00:00",
+  "elapsed_seconds": 8.880033965999928
+}

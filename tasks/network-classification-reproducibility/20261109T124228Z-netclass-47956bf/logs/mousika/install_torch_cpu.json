@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-cache-dir",
+    "torch==1.13.1+cpu",
+    "--index-url",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:47:54.699910+00:00",
+  "end_utc": "2026-11-09T10:48:10.296501+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 15.596638736999978,
+  "timeout_seconds": 180.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

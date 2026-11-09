@@ -1,0 +1,21 @@
+{
+  "argv": [
+    ".conda/yatc/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-cache-dir",
+    "torch==1.9.0+cpu",
+    "torchvision==0.10.0+cpu",
+    "--index-url",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:10:06.658988+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:10:37.920385+00:00",
+  "elapsed_seconds": 31.26140164399999
+}

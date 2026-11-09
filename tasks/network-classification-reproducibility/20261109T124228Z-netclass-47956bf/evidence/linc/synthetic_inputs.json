@@ -1,0 +1,52 @@
+{
+  "scope": "Synthetic audit input arrays only; no real network sessions",
+  "generator": "papers/linc/smoke.py",
+  "created_at_utc": "2026-11-09T11:19:44.186673+00:00",
+  "datasets": [
+    {
+      "key": "train",
+      "rows": 64,
+      "features": 8,
+      "rng_seed": 1,
+      "feature_dtype": "float32",
+      "label_dtype": "int64",
+      "feature_sha256": "29f0478a6cdd78d80825f1e4ef9b2aac0fc5abf4b163e4daed85c6e26e73d086",
+      "label_sha256": "f8e31339017d669e64568993f867616bc0112b0120701769f2b0993fd3dbe8bb",
+      "class_counts": [
+        35,
+        29
+      ],
+      "source": "Synthetic; label is first generated input bit"
+    },
+    {
+      "key": "val",
+      "rows": 32,
+      "features": 8,
+      "rng_seed": 2,
+      "feature_dtype": "float32",
+      "label_dtype": "int64",
+      "feature_sha256": "ea1c6af3af98cb3a715c0d0624f6cf95a6e6a163312e88404418d7c0e0b17616",
+      "label_sha256": "da3e6d15e1abc7d1629031576b478e52c1fc82b3b398338e092b266b4e271cbb",
+      "class_counts": [
+        12,
+        20
+      ],
+      "source": "Synthetic; label is first generated input bit"
+    },
+    {
+      "key": "test",
+      "rows": 32,
+      "features": 8,
+      "rng_seed": 3,
+      "feature_dtype": "float32",
+      "label_dtype": "int64",
+      "feature_sha256": "aa27bd38d0c27732659571c97e9ea65dc58867700f0d157b4309be99bb58ab6f",
+      "label_sha256": "f36188b4decec5e45b68a85d9c9833a428efd20bcc11e60f8dc75b21fec0889a",
+      "class_counts": [
+        14,
+        18
+      ],
+      "source": "Synthetic; label is first generated input bit"
+    }
+  ]
+}

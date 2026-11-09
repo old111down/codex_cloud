@@ -1,0 +1,170 @@
+{
+  "paper_id": "pegasus",
+  "round": "autonomous_20261109",
+  "runs": [
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "CorrectedREADMEcreate-n typo and isolatedprefix",
+      "evidence_files": [
+        "logs/pegasus/conda_create.json",
+        "logs/pegasus/conda_create.log"
+      ]
+    },
+    {
+      "run_id": "torch_cpu_install",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "ExplicitofficialCPUwheel,READMEtorchunpinned",
+      "evidence_files": [
+        "logs/pegasus/torch_cpu_install.json",
+        "logs/pegasus/torch_cpu_install.log"
+      ]
+    },
+    {
+      "run_id": "readme_dependencies",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Originalrequirementsfileinsoftwaredirectory; notliteralrootrecipe",
+      "evidence_files": [
+        "logs/pegasus/readme_dependencies.json",
+        "logs/pegasus/readme_dependencies.log"
+      ]
+    },
+    {
+      "run_id": "readme_cpu_cnnl",
+      "phase": "original_command",
+      "input_kind": "realtestfilemissing",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "MissingPeerRushtestJSON",
+      "limitations": "Checkpointdeserializedbeforemissingdatafailure; file-specificstaticreviewafterrun recorded",
+      "evidence_files": [
+        "logs/pegasus/readme_cpu_cnnl.json",
+        "logs/pegasus/readme_cpu_cnnl.log"
+      ]
+    },
+    {
+      "run_id": "model_smoke",
+      "phase": "smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "output_rows": 9,
+        "output_classes": 3,
+        "strict_state_dict_load": true
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Officialreplacementweights,notoriginalpaper; no realdata metric",
+      "evidence_files": [
+        "logs/pegasus/model_smoke.json",
+        "logs/pegasus/model_smoke.log"
+      ]
+    },
+    {
+      "run_id": "unmodified_mlp_synthetic",
+      "phase": "smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_macro_f1_printed": 0.3485
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Notnetworkaccuracy; arbitrarysyntheticlabels",
+      "evidence_files": [
+        "logs/pegasus/unmodified_mlp_synthetic.json",
+        "logs/pegasus/unmodified_mlp_synthetic.log"
+      ]
+    },
+    {
+      "run_id": "readme_p4_syntax",
+      "phase": "P4_model_generation",
+      "input_kind": "providedmodeldescription",
+      "metrics": {},
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "P4textonly; no compiler/packet/hardwaretest",
+      "evidence_files": [
+        "logs/pegasus/readme_p4_syntax.json",
+        "logs/pegasus/readme_p4_syntax.log"
+      ]
+    },
+    {
+      "run_id": "split_grain_diagnostic",
+      "phase": "data_processing_diagnostic",
+      "input_kind": "synthetic",
+      "metrics": {
+        "single_flow_windows": 33,
+        "input_flows": 1,
+        "val_ratio": 0.2
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "Train/validationflowandpacketsharingmechanismconfirmed",
+      "limitations": "Defaultvalratio=.1; actualexternaltestoverlap/impactUnknown",
+      "evidence_files": [
+        "logs/pegasus/split_grain_diagnostic.json",
+        "logs/pegasus/split_grain_diagnostic.log"
+      ]
+    },
+    {
+      "run_id": "readme_literal_conda_typo",
+      "phase": "original_setup_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "conda create-n invalidcommand",
+      "limitations": "Post-hoc literalrecipeaudit; noextraenvironmentcreated",
+      "evidence_files": [
+        "logs/pegasus/readme_literal_conda_typo.json",
+        "logs/pegasus/readme_literal_conda_typo.log"
+      ]
+    },
+    {
+      "run_id": "readme_literal_root_requirements",
+      "phase": "original_setup_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Rootrequirements.txtmissing",
+      "limitations": "Actualworkingdirectorycorrectionrequired",
+      "evidence_files": [
+        "logs/pegasus/readme_literal_root_requirements.json",
+        "logs/pegasus/readme_literal_root_requirements.log"
+      ]
+    },
+    {
+      "run_id": "retrieve_evidence",
+      "phase": "evidence_retrieval",
+      "input_kind": "publicauthorPDF+checkpointmetadata",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "ACM403; DriveHEADonlyHTML",
+      "limitations": "No actualdatasetdownload; staticpicklechecknotformalsafetyproof",
+      "evidence_files": [
+        "logs/pegasus/retrieve_evidence.json",
+        "logs/pegasus/retrieve_evidence.log"
+      ]
+    }
+  ]
+}

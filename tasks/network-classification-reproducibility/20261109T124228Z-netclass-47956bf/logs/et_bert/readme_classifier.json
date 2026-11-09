@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+    "fine-tuning/run_classifier.py",
+    "--pretrained_model_path",
+    "models/pre-trained_model.bin",
+    "--vocab_path",
+    "models/encryptd_vocab.txt",
+    "--train_path",
+    "datasets/cstnet-tls1.3/packet/train_dataset.tsv",
+    "--dev_path",
+    "datasets/cstnet-tls1.3/packet/valid_dataset.tsv",
+    "--test_path",
+    "datasets/cstnet-tls1.3/packet/test_dataset.tsv",
+    "--epochs_num",
+    "10",
+    "--batch_size",
+    "32",
+    "--embedding",
+    "word_pos_seg",
+    "--encoder",
+    "transformer",
+    "--mask",
+    "fully_visible",
+    "--seq_length",
+    "128",
+    "--learning_rate",
+    "2e-5"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+  "start_utc": "2026-11-09T11:10:50.282564+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:10:51.751436+00:00",
+  "elapsed_seconds": 1.4688739410000835
+}

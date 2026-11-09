@@ -1,0 +1,16 @@
+{
+  "scope": "synthetic CPU component test only; no paper metric comparison",
+  "stage": "network",
+  "patched": false,
+  "source": "/workspace/traffic-repro-audit/upstream/linc",
+  "torch": "2.0.1+cpu",
+  "numpy": "1.26.4",
+  "cuda_available": false,
+  "shape": [
+    32,
+    2
+  ],
+  "loss": 0.685883104801178,
+  "parameters": 19976,
+  "input_sha256": "8c55f968acc566e1ee05cbe8e33fc1c98d8d6c1a7839192e50906338bf931a89"
+}

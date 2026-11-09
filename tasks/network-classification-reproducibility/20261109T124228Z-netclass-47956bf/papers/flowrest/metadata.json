@@ -1,0 +1,88 @@
+{
+  "paper_id": "flowrest",
+  "id": "flowrest",
+  "title": "Flowrest: Practical Flow-Level Inference in Programmable Switches with Random Forests",
+  "year": 2023,
+  "publication_date": "2023-05-17",
+  "venue": "IEEE INFOCOM 2023",
+  "doi": "10.1109/INFOCOM53939.2023.10229100",
+  "paper_url": "https://doi.org/10.1109/INFOCOM53939.2023.10229100",
+  "author_pdf_url": "https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1649/Flowrest_INFOCOM_2023.pdf?sequence=4&isAllowed=y",
+  "repository_url": "https://github.com/nds-group/Flowrest",
+  "branch": "main",
+  "commit_sha": "13a527cfc0cac523b9f4be9a9366738bcdd3d5db",
+  "last_commit_utc": "2024-03-11T11:27:31Z",
+  "repository_pushed_at": "2026-02-02T23:31:16Z",
+  "repository_updated_at": "2026-06-09T09:21:09Z",
+  "retrieved_utc": "2026-11-09T11:17:50.443962+00:00",
+  "license": "Unknown; no tracked LICENSE/COPYING, GitHub API license null",
+  "task": "Flow-level IoT device identification, service classification, binary intrusion detection; extension adds IoT bot and cyberattack classification",
+  "input_unit": "Flow, using packet header fields and stateful statistics of first3 packets (conference); extension n=2,3,4",
+  "labels": {
+    "conference_UNSW_IoT": "16 or26 IoT/non-IoT device classes; bundled example16",
+    "UNIBS": "ssl,bittorrent,http,edonkey,pop3,skype,imap,smtp",
+    "CICIDS2017": "benign/malicious",
+    "extension_IoT23": "4benign and10malicious bot classes",
+    "extension_ToN_IoT": "benign+9cyberattack classes"
+  },
+  "datasets": [
+    "UNSW-IoT",
+    "UNIBS2009",
+    "CICIDS2017 Friday",
+    "IoT23 (extension only)",
+    "ToN-IoT (extension only)"
+  ],
+  "model": "Hardware-tailored Random Forest with MDI feature selection, depth/tree/leaf search, bit compression and feature/codeword table encoding; packet-level RF baseline",
+  "deployment": "CPU offline model preparation; Tofino TNA P4 stateful flow inference, BFRT controller",
+  "data_public": "Partial; public author Box-derived CSVs for UNSW16/UNIBS downloaded successfully; no repository raw-PCAP-to-CSV implementation; exact paper selection/provenance Unknown",
+  "code_public": true,
+  "gpu_dependency": "None for inspected RF code; CPU core runs confirmed",
+  "proprietary_dependency": "Original experiments SDE9.7.0/P4 Insight/BFRT and Tofino hardware; not available here. Current public open-p4studio not tested for historical compatibility",
+  "association_status": "已验证",
+  "association_evidence": [
+    "Original author paper p9 Conclusion explicitly links https://github.com/nds-group/Flowrest",
+    "README exact title, author citation and DOI; links author paper",
+    "Extended author paper p16 Conclusion also links same repository"
+  ],
+  "evidence_files": [
+    "evidence/flowrest/paper.pdf",
+    "evidence/flowrest/paper.txt",
+    "evidence/flowrest/extended_paper.pdf",
+    "evidence/flowrest/extended_paper.txt",
+    "evidence/flowrest/github_repository.json",
+    "evidence/flowrest/github_commit.json",
+    "evidence/flowrest/source_manifest.json"
+  ],
+  "screening_status": "Included; static audit and limited CPU core executed",
+  "scope_category": "network traffic classification; explicit classification use cases also include intrusion/bot classification",
+  "priority": "P1 conference / P0 extension",
+  "paper_family_id": "flowrest",
+  "related_versions": [
+    {
+      "year": 2025,
+      "title": "Practical and General-Purpose Flow-Level Inference With Random Forests in Programmable Switches",
+      "doi": "10.1109/TON.2025.3564465",
+      "venue": "IEEE/ACM Transactions on Networking",
+      "paper_url": "https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1926/Flowrest_Extension_ToN_DSpace.pdf?sequence=1",
+      "relationship": "journal extension, same source repository; not an independent family count"
+    }
+  ],
+  "reproduction_level": "R2 for two author-derived CSV core components only; full paper/P4 results unverified",
+  "component_levels": {
+    "conference_UNSW16_core": "R2",
+    "full_UNIBS8_core": "R2",
+    "conference_model_generation": "R1; invalid key ranges found",
+    "other_datasets": "R0",
+    "paper_metrics": "Unknown",
+    "P4_compile": "R0",
+    "software_packet_simulation": "R0",
+    "hardware": "R0"
+  },
+  "unknowns": [
+    "Original raw PCAP processing and exact time-unit provenance",
+    "Paper final selected models/splits equivalence, all hardware metrics",
+    "Missing simulator and multi-mapping baseline implementations",
+    "Raw/derived data licensing: no explicit license observed",
+    "No verified complete implementation for all conference or journal tasks"
+  ]
+}

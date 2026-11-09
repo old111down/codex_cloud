@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "rule2entry.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/mousika/runtime-artifacts/readme-rule2entry/code",
+  "start_utc": "2026-11-09T10:47:37.913796+00:00",
+  "end_utc": "2026-11-09T10:47:38.076346+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.16250787100000252,
+  "timeout_seconds": 30.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

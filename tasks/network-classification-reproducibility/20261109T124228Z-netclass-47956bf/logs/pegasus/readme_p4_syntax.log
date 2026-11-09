@@ -1,0 +1,2 @@
+🧬 Detected MLP model type. Using template: mlp_basic.p4.j2
+Generated: /workspace/traffic-repro-audit/papers/pegasus/runtime-artifacts/p4syntax/mlp16.p4

@@ -1,0 +1,39 @@
+{
+  "scope": "Patch changes output location and import resolution only; equivalence verified for this synthetic seeded run, not all future experiments",
+  "checkpoint_source": "Both files generated locally in this audit from explicit synthetic TSVs, no external checkpoint deserialized",
+  "state_dict_tensor_count": 41,
+  "all_state_tensors_exactly_equal": true,
+  "synthetic_unlabeled_predictions": [
+    "label\tprob",
+    "1\t0.4859338402748108 0.5140661001205444",
+    "1\t0.4858260750770569 0.5141739249229431"
+  ],
+  "confusion_matrix_created": true,
+  "artifacts": [
+    {
+      "path": "papers/et_bert/runtime-artifacts/tiny_synthetic_model.bin",
+      "sha256": "3e7bb41a09f97bc51a36acb54cac297f01c4866ba1f2ec83c37c51d7befdc3d9",
+      "bytes": 32656153
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin",
+      "sha256": "2adff75a6cb1cd4c0d24ade61b2328bf384d5d9b6f8ba625e0d354db0cd21675",
+      "bytes": 32656561
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_predictions.tsv",
+      "sha256": "6c002ebbac5fb0f182ec9bd6e985b3029daa15eb92791ba2920faeea900b1355",
+      "bytes": 91
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_dataset.pt",
+      "sha256": "e118aca672802ad5de29e2d08ffcfc1b42aced1854d44d3953a70299f823c84c",
+      "bytes": 2792
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_pretrained_model.bin-2",
+      "sha256": "5c2cc6e298776ad10ff2c8d5aeb424dba736873b9ae66183769c7d1e2aa26148",
+      "bytes": 63688251
+    }
+  ]
+}

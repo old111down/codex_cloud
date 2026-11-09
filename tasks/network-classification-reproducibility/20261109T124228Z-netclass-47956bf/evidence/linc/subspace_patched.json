@@ -1,0 +1,48 @@
+{
+  "scope": "synthetic CPU component test only; no paper metric comparison",
+  "stage": "subspace",
+  "patched": true,
+  "source": "/workspace/traffic-repro-audit/papers/linc/runtime-artifacts/patched",
+  "torch": "2.0.1+cpu",
+  "numpy": "1.26.4",
+  "cuda_available": false,
+  "expected_subspace_indices": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "actual_subspace_indices": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "predictions": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rules": 3,
+  "all_inputs": 8,
+  "mismatches": 0,
+  "cache_counts": [
+    1,
+    1,
+    1,
+    5
+  ]
+}

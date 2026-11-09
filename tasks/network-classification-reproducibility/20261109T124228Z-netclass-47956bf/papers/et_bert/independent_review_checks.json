@@ -1,0 +1,23 @@
+{
+  "scope": "Independent exact-original-function synthetic loss probe plus static matrix/history checks; no model retraining",
+  "source_sha256": "efb75750396d4f8d6865a1dec2833bcbd99d02cc91ec8f3cfef359598aec2977",
+  "loss_probe": {
+    "loss_mlm": 7.0,
+    "loss_sp": 3.0,
+    "accumulation_steps": 2,
+    "actual": 1.850000023841858,
+    "grad_mlm": 0.05000000074505806,
+    "grad_sp": 0.5,
+    "expected_combiner": "(0.1*mlm+sp)/2"
+  },
+  "history_snapshots_checked": 6,
+  "matrix_rows": 69,
+  "matrix_sha256": "496533fc5089f9aa7f8b97b9c7c4fde70717c1c0d5bb56be22f031c74381879b",
+  "evidence_references_missing": [],
+  "upstream_clean": true,
+  "not_established": [
+    "Exact code used for paper2022 experiments",
+    "Full objective reduction equivalence beyond the supplied loss tensors",
+    "Any real-network dataset metric or inference performance"
+  ]
+}

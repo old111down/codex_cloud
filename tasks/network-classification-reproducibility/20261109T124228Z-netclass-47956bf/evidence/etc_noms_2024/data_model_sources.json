@@ -1,0 +1,65 @@
+[
+  {
+    "local_path": "upstream/etc_noms_2024/In_switch_ETC/Offline_model_preparation/NIMS_IMA_sample_data.csv",
+    "source_url": "https://github.com/nds-group/ETC_NOMS_2024/blob/52de99ad76d9eff2f64a0fa28df0500e423b58b2/In_switch_ETC/Offline_model_preparation/NIMS_IMA_sample_data.csv",
+    "retrieved_utc": "2026-11-09",
+    "size_bytes": 226791,
+    "sha256": "dd8090a26c846a7dd15ba9b91881196a4d029cf91abb2aa01f42fec0627e9cac",
+    "description": "Real derived one-day NIMS sample; repository readme states8Nov2022; 1867rows6classes, not full dataset",
+    "license": "Unknown"
+  },
+  {
+    "local_path": "upstream/etc_noms_2024/In_switch_ETC/Offline_model_preparation/test_data_nimsIMA.csv",
+    "source_url": "https://github.com/nds-group/ETC_NOMS_2024/blob/52de99ad76d9eff2f64a0fa28df0500e423b58b2/In_switch_ETC/Offline_model_preparation/test_data_nimsIMA.csv",
+    "retrieved_utc": "2026-11-09",
+    "size_bytes": 52489,
+    "sha256": "0286cae41006f2c1b55289566e1025f89f197e3c2c228129d6c98cc369108ddd",
+    "description": "Bundled429-row test ground truth; no hardware digest CSV supplied",
+    "license": "Unknown"
+  },
+  {
+    "local_path": "upstream/etc_noms_2024/In_switch_ETC/Offline_model_preparation/noms2024_20_5.pkl",
+    "source_url": "https://github.com/nds-group/ETC_NOMS_2024/blob/52de99ad76d9eff2f64a0fa28df0500e423b58b2/In_switch_ETC/Offline_model_preparation/noms2024_20_5.pkl",
+    "retrieved_utc": "2026-11-09",
+    "size_bytes": 222380,
+    "sha256": "bec7a2a71efb2fdf19998ad26a688d2c6d5211445f40b22c8470c32272381371",
+    "description": "Author RF model; pickle static review before bounded generator execution",
+    "license": "Unknown"
+  },
+  {
+    "local_path": "evidence/etc_noms_2024/paper.pdf",
+    "source_url": "https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1791/etc_noms24_postprint.pdf?sequence=1&isAllowed=y",
+    "retrieved_utc": "2026-11-09",
+    "size_bytes": 627749,
+    "sha256": "0ea43459d81b1d60564176e5d84f6703c8dc27e063cd8ff2e04d68ef192e8ff3",
+    "description": "Accepted nine-page NOMS manuscript",
+    "license": "IEEE copyright; retain for private audit/reference; no relicensing"
+  },
+  {
+    "name": "NIMS raw PCAP",
+    "source_url": "https://doi.org/10.21227/aer2-kq52",
+    "downloaded": false,
+    "sha256": "Unknown",
+    "size_bytes": "Unknown",
+    "license": "Unknown",
+    "access": "Externally linked by author README/paper; successful acquisition not verified in this round"
+  },
+  {
+    "name": "Netflow QUIC raw PCAP",
+    "source_url": "https://drive.google.com/drive/folders/1cwHhzvaQbi-ap8yfrj2vHyPmUTQhaYOj",
+    "downloaded": false,
+    "sha256": "Unknown",
+    "size_bytes": "Unknown",
+    "license": "Unknown",
+    "access": "Externally linked by author README/paper; successful acquisition not verified in this round"
+  },
+  {
+    "name": "ISCX VPN raw PCAP",
+    "source_url": "https://www.unb.ca/cic/datasets/vpn.html",
+    "downloaded": false,
+    "sha256": "Unknown",
+    "size_bytes": "Unknown",
+    "license": "Unknown",
+    "access": "Externally linked by author README/paper; successful acquisition not verified in this round"
+  }
+]

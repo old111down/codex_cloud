@@ -1,0 +1,52 @@
+{
+  "scope": "synthetic CPU component test only; no paper metric comparison",
+  "stage": "subspace",
+  "patched": false,
+  "source": "/workspace/traffic-repro-audit/upstream/linc",
+  "torch": "2.0.1+cpu",
+  "numpy": "1.26.4",
+  "cuda_available": false,
+  "expected_subspace_indices": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "actual_subspace_indices": [
+    0,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "predictions": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rules": 3,
+  "all_inputs": 8,
+  "mismatches": 5,
+  "cache_counts": [
+    1,
+    6,
+    1,
+    0
+  ]
+}
+Traceback (most recent call last):
+  File "/workspace/traffic-repro-audit/papers/linc/smoke.py", line 77, in <module>
+    assert actual==expected,'Unmatched samples must map to the reserved default subspace, not rule1'
+AssertionError: Unmatched samples must map to the reserved default subspace, not rule1

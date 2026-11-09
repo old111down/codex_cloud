@@ -1,0 +1,87 @@
+{
+  "method": "runpy executes upstream source verbatim; capture after completion",
+  "source_sha256": "5d85513faae13ea905acfa07bbdacc4a962638480c79d7bc08d8594ac1ab3877",
+  "data_sha256": "4385b283d64cf20346562bc4c389466aea4c9c5a4b240254d1acb4d76126f3d7",
+  "rows": 4514,
+  "training_rows": 3611,
+  "test_rows": 903,
+  "accuracy": 0.9534883720930233,
+  "classification_report": {
+    "apple.com": {
+      "precision": 0.9574468085106383,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.9326424870466321,
+      "support": 99.0
+    },
+    "cisco.com": {
+      "precision": 1.0,
+      "recall": 0.98989898989899,
+      "f1-score": 0.9949238578680203,
+      "support": 99.0
+    },
+    "cloudflare.com": {
+      "precision": 0.9777777777777777,
+      "recall": 1.0,
+      "f1-score": 0.9887640449438202,
+      "support": 88.0
+    },
+    "facebook.com": {
+      "precision": 0.84375,
+      "recall": 0.9529411764705882,
+      "f1-score": 0.8950276243093923,
+      "support": 85.0
+    },
+    "github.com": {
+      "precision": 0.9615384615384616,
+      "recall": 0.9146341463414634,
+      "f1-score": 0.9375,
+      "support": 82.0
+    },
+    "icloud.com": {
+      "precision": 0.9583333333333334,
+      "recall": 0.968421052631579,
+      "f1-score": 0.9633507853403142,
+      "support": 95.0
+    },
+    "netflix.com": {
+      "precision": 0.9529411764705882,
+      "recall": 0.9418604651162791,
+      "f1-score": 0.9473684210526315,
+      "support": 86.0
+    },
+    "nike.com": {
+      "precision": 0.9509803921568627,
+      "recall": 0.9603960396039604,
+      "f1-score": 0.9556650246305419,
+      "support": 101.0
+    },
+    "nvidia.com": {
+      "precision": 0.9753086419753086,
+      "recall": 0.9294117647058824,
+      "f1-score": 0.9518072289156626,
+      "support": 85.0
+    },
+    "yahoo.com": {
+      "precision": 0.963855421686747,
+      "recall": 0.963855421686747,
+      "f1-score": 0.963855421686747,
+      "support": 83.0
+    },
+    "accuracy": 0.9534883720930233,
+    "macro avg": {
+      "precision": 0.9541932013449717,
+      "recall": 0.9530509965546397,
+      "f1-score": 0.953090489579376,
+      "support": 903.0
+    },
+    "weighted avg": {
+      "precision": 0.9549739140111109,
+      "recall": 0.9534883720930233,
+      "f1-score": 0.9537214207433857,
+      "support": 903.0
+    }
+  },
+  "paper_equivalence": "Unknown: sample selection, balance, versions and original split differ or unavailable",
+  "source_modified": false,
+  "weights_saved": false
+}

@@ -1,0 +1,52 @@
+{
+  "reviewed_at_utc": "2026-11-09T11:31:27.924356+00:00",
+  "scope": "Independent captions/tracked hashes/standard arithmetic and original split functions on synthetic IDs only. No model/tokenizer/real traffic or paper-result reproduction",
+  "figure_numbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "table_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "coverage_rows": 97,
+  "classification_rows": 12,
+  "generation_rows": 35,
+  "extension_rows": 6,
+  "tracked_source_hashes_verified": 58,
+  "metric_arithmetic": {
+    "standard_TVD": 1.0,
+    "code_normalization_TVD": 0.7071067811865475,
+    "unnormalized_HD": 1.4142135623730951,
+    "standard_Hellinger": 1.0,
+    "paper_formula": "No explicit formula found; author convention and Table6 actual-score meaning Unknown"
+  },
+  "synthetic_reference_split": {
+    "records": 400,
+    "pretrain": 240,
+    "same_coarse_test": 32,
+    "independent_fine_test": 40,
+    "same_coarse_overlap": 0,
+    "cross_task_overlap": 22,
+    "interpretation": "Possible transductive input exposure in reference pipeline. Does not prove real released artifact overlap or supervised label leakage."
+  },
+  "upstream_status_porcelain": "",
+  "matrix_sha256": "4a1815e329c9d749795ff97030ce0a47191ce9b992917d7454e6981db8eee2c5"
+}

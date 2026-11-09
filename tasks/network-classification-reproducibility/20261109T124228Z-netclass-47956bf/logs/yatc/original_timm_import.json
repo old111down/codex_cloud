@@ -1,0 +1,15 @@
+{
+  "argv": [
+    ".conda/yatc/bin/python",
+    "-c",
+    "import timm"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:15:38.790929+00:00",
+  "timeout_seconds": 20.0,
+  "resource_environment": {},
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:15:39.564776+00:00",
+  "elapsed_seconds": 0.7738507989997743
+}

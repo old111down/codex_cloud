@@ -1,0 +1,3302 @@
+{
+  "schema_version": "1.0",
+  "task_id": "network-classification-reproducibility:20261109T124228Z-netclass-47956bf",
+  "task_name": "Network traffic classification code coverage and reproducibility audit",
+  "task_slug": "network-classification-reproducibility",
+  "run_id": "20261109T124228Z-netclass-47956bf",
+  "archive_repository": "https://github.com/old111down/codex_cloud",
+  "start_time_utc": "2026-11-09T11:06:24Z",
+  "end_time_utc": null,
+  "archive_started_time_utc": "2026-11-09T12:37:16Z",
+  "archive_completed_time_utc": null,
+  "original_deadline_utc": "2026-11-09T14:06:24Z",
+  "branch": "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf",
+  "objective": "Preserve the existing evidence-backed five-year network traffic classification audit as a public-safe snapshot; no experiment is rerun for archiving.",
+  "source_audit_commit": "47956bf6c3eaa0cceee3ac5e525432ca6919b478",
+  "related_runs": [
+    {
+      "run_id": "local-autonomous-20261109",
+      "relation": "public-safe snapshot of existing completed audit",
+      "note": "Source local commit 47956bf6c3eaa0cceee3ac5e525432ca6919b478; no original Git history or full bundle imported."
+    },
+    {
+      "run_id": "local-round1-e3136eb",
+      "relation": "inherits earlier pilot results",
+      "note": "Original times retained; not counted as new execution."
+    }
+  ],
+  "source_repositories": [
+    {
+      "name": "et_bert",
+      "url": "https://github.com/linwhitehat/ET-BERT.git",
+      "commit_shas": [
+        "d59470624acd11405f9e88da650cf3bf65521e9a"
+      ],
+      "branch": "main",
+      "license": "MIT",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "etc_noms_2024",
+      "url": "https://github.com/nds-group/ETC_NOMS_2024.git",
+      "commit_shas": [
+        "52de99ad76d9eff2f64a0fa28df0500e423b58b2"
+      ],
+      "branch": "main",
+      "license": "Unknown; no LICENSE/COPYING file; GitHub API license null",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "flowrest",
+      "url": "https://github.com/nds-group/Flowrest.git",
+      "commit_shas": [
+        "13a527cfc0cac523b9f4be9a9366738bcdd3d5db"
+      ],
+      "branch": "main",
+      "license": "Unknown; no tracked LICENSE/COPYING, GitHub API license null",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "lens",
+      "url": "https://github.com/V-Enzo/Lens-foundation-model-for-network-traffic.git",
+      "commit_shas": [
+        "dc91fb981ccc27371556895f75546ea84dfd46e7"
+      ],
+      "branch": "detached",
+      "license": "Apache-2.0 code; README states model/data CC-BY-NC-4.0 subject to underlying data terms; artifact licenses not independently downloaded",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "leo",
+      "url": "https://github.com/Purdue-ISL/Leo.git",
+      "commit_shas": [
+        "bd9fb79b8e0bd79b4922f3ca1ada88b9ee69eff2"
+      ],
+      "branch": "main",
+      "license": "MIT",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "lim",
+      "url": "https://github.com/nime-sha256/LiM",
+      "commit_shas": [
+        "1b8ca187f7d02a51e595f797e5c200ae740b459f"
+      ],
+      "branch": "main",
+      "license": "MIT",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "linc",
+      "url": "https://github.com/haolinyan/LINC.git",
+      "commit_shas": [
+        "4a44171c84547de885a54e5f1a234640cd8501d4"
+      ],
+      "branch": "main",
+      "license": "Unknown",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "mousika",
+      "url": "https://github.com/xgr19/Mousika.git",
+      "commit_shas": [
+        "76c9db9b4200a7c591bd1e9476ba5ab44a467512"
+      ],
+      "branch": "main",
+      "license": "Unknown — no LICENSE tracked; GitHub API license:null",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "mousika-v2",
+      "url": "https://github.com/xgr19/Mousika.git",
+      "commit_shas": [
+        "3326869d4c1f25768a9304a2df672e82f38972f9"
+      ],
+      "branch": "detached",
+      "license": "Unknown",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "pegasus",
+      "url": "https://github.com/afireswallow/Pegasus.git",
+      "commit_shas": [
+        "a73bd327fbf0db2550a9bc1e304b96e0aa550cba"
+      ],
+      "branch": "master",
+      "license": "Apache-2.0",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    },
+    {
+      "name": "yatc",
+      "url": "https://github.com/NSSL-SJTU/YaTC.git",
+      "commit_shas": [
+        "a220b75f8365acaf63dbac7df87aaaa357698b85"
+      ],
+      "branch": "main",
+      "license": "Unknown",
+      "version_status": "Verified",
+      "evidence": [
+        "reports/official_sources.csv",
+        "environment/upstream_manifest.json"
+      ]
+    }
+  ],
+  "runtime_environment": {
+    "observed_os": "Debian13.6 x86_64",
+    "cpu_quota_cores": 4,
+    "memory_limit_gib": 16,
+    "gpu": "No available GPU observed",
+    "conda_prefixes": 10,
+    "scope": "Lens environment is metric/split diagnostics only, not the main model environment. No private cloud instance IDs or hostnames published.",
+    "evidence": [
+      "environment/README.md"
+    ]
+  },
+  "commands_executed": [
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "/workspace/traffic-repro-audit/environment/et_bert/audit-extra-install-report.json",
+        "scapy==2.4.4",
+        "scikit-learn==0.24.2",
+        "scipy==1.6.3"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:16.997974+00:00",
+      "end_time_utc": "2026-11-09T11:11:26.435791+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "https://github.com/linwhitehat/ET-BERT.git",
+        "upstream/et_bert"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:08:43.879774+00:00",
+      "end_time_utc": "2026-11-09T11:08:46.603927+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/et_bert",
+        "python=3.8",
+        "numpy=1.19.2",
+        "pip",
+        "tqdm",
+        "six",
+        "packaging"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:09:30.943775+00:00",
+      "end_time_utc": "2026-11-09T11:09:42.991343+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/cpu_model_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:12:34.002452+00:00",
+      "end_time_utc": "2026-11-09T11:12:37.726483+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/independent_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:22:35.137385+00:00",
+      "end_time_utc": "2026-11-09T11:22:36.305013+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--report",
+        "/workspace/traffic-repro-audit/environment/et_bert/torch-install-report.json",
+        "torch==1.13.1+cpu",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:10:10.102726+00:00",
+      "end_time_utc": "2026-11-09T11:10:33.540397+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/loss_equation_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:18:32.961518+00:00",
+      "end_time_utc": "2026-11-09T11:18:33.980778+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\", \"Tests post-reduction combiner, not full Eq2/3 reduction equivalence\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/loss_equation_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:19:00.084778+00:00",
+      "end_time_utc": "2026-11-09T11:19:01.051259+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\", \"Tests post-reduction combiner, not full Eq2/3 reduction equivalence\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/et_bert/runtime-artifacts/patched",
+        "patches/et_bert/0001-portable-confusion-output.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:29.598019+00:00",
+      "end_time_utc": "2026-11-09T11:13:29.602090+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/et_bert/runtime-artifacts/patched",
+        "patches/et_bert/0001-portable-confusion-output.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:29.538904+00:00",
+      "end_time_utc": "2026-11-09T11:13:29.543181+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/et_bert/runtime-artifacts/patched",
+        "patches/et_bert/0002-import-classifier-module.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:46.199991+00:00",
+      "end_time_utc": "2026-11-09T11:13:46.204476+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/et_bert/runtime-artifacts/patched",
+        "patches/et_bert/0002-import-classifier-module.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:46.152310+00:00",
+      "end_time_utc": "2026-11-09T11:13:46.156533+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/validate_patch_equivalence.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:16:42.059887+00:00",
+      "end_time_utc": "2026-11-09T11:16:43.327584+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/prepare_synthetic_inputs.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:25:04.630320+00:00",
+      "end_time_utc": "2026-11-09T11:25:04.694821+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Deterministic artificial text, not real network traffic or paper dataset\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "fine-tuning/run_classifier.py",
+        "--pretrained_model_path",
+        "models/pre-trained_model.bin",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--train_path",
+        "datasets/cstnet-tls1.3/packet/train_dataset.tsv",
+        "--dev_path",
+        "datasets/cstnet-tls1.3/packet/valid_dataset.tsv",
+        "--test_path",
+        "datasets/cstnet-tls1.3/packet/test_dataset.tsv",
+        "--epochs_num",
+        "10",
+        "--batch_size",
+        "32",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--seq_length",
+        "128",
+        "--learning_rate",
+        "2e-5"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:10:50.282564+00:00",
+      "end_time_utc": "2026-11-09T11:10:51.751436+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "fine-tuning/run_classifier.py",
+        "--pretrained_model_path",
+        "models/pre-trained_model.bin",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--train_path",
+        "datasets/cstnet-tls1.3/packet/train_dataset.tsv",
+        "--dev_path",
+        "datasets/cstnet-tls1.3/packet/valid_dataset.tsv",
+        "--test_path",
+        "datasets/cstnet-tls1.3/packet/test_dataset.tsv",
+        "--epochs_num",
+        "10",
+        "--batch_size",
+        "32",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--seq_length",
+        "128",
+        "--learning_rate",
+        "2e-5"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:12:05.381293+00:00",
+      "end_time_utc": "2026-11-09T11:12:06.816344+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "inference/run_classifier_infer.py",
+        "--load_model_path",
+        "models/finetuned_model.bin",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--test_path",
+        "datasets/cstnet-tls1.3/packet/nolabel_test_dataset.tsv",
+        "--prediction_path",
+        "datasets/cstnet-tls1.3/packet/prediction.tsv",
+        "--labels_num",
+        "120",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:11:15.716037+00:00",
+      "end_time_utc": "2026-11-09T11:11:16.732667+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "/workspace/traffic-repro-audit/environment/et_bert/requirements-install-report.json",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:10:49.203884+00:00",
+      "end_time_utc": "2026-11-09T11:10:50.219890+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "pre-training/pretrain.py",
+        "--dataset_path",
+        "dataset.pt",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--output_model_path",
+        "models/pre-trained_model.bin",
+        "--world_size",
+        "8",
+        "--gpu_ranks",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "--total_steps",
+        "500000",
+        "--save_checkpoint_steps",
+        "10000",
+        "--batch_size",
+        "32",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--target",
+        "bert"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:12:52.744352+00:00",
+      "end_time_utc": "2026-11-09T11:12:53.863344+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "pre-training/pretrain.py",
+        "--dataset_path",
+        "dataset.pt",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--output_model_path",
+        "models/pre-trained_model.bin",
+        "--world_size",
+        "8",
+        "--gpu_ranks",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "--total_steps",
+        "500000",
+        "--save_checkpoint_steps",
+        "10000",
+        "--batch_size",
+        "32",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--target",
+        "bert"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:16:15.598753+00:00",
+      "end_time_utc": "2026-11-09T11:16:16.717338+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "/workspace/traffic-repro-audit/environment/et_bert/scapy-compat-install-report.json",
+        "scapy==2.5.0"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:25.772478+00:00",
+      "end_time_utc": "2026-11-09T11:15:27.529595+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/source_behavior_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:51.164104+00:00",
+      "end_time_utc": "2026-11-09T11:14:51.428823+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\", \"Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/source_behavior_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:45.791162+00:00",
+      "end_time_utc": "2026-11-09T11:15:46.807932+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\", \"Failure caused by audit harness missing parent output directory, not an upstream defect\", \"Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/et_bert/bin/python",
+        "papers/et_bert/source_behavior_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:16:14.683970+00:00",
+      "end_time_utc": "2026-11-09T11:16:15.550452+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\", \"Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "fine-tuning/run_classifier.py",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--config_path",
+        "models/bert/tiny_config.json",
+        "--train_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/train.tsv",
+        "--dev_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/dev.tsv",
+        "--test_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/test.tsv",
+        "--output_model_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/tiny_synthetic_model.bin",
+        "--epochs_num",
+        "1",
+        "--batch_size",
+        "2",
+        "--seq_length",
+        "16",
+        "--report_steps",
+        "1",
+        "--learning_rate",
+        "2e-5"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:12:37.775480+00:00",
+      "end_time_utc": "2026-11-09T11:12:39.297001+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched/fine-tuning/run_classifier.py",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--config_path",
+        "models/bert/tiny_config.json",
+        "--train_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/train.tsv",
+        "--dev_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/dev.tsv",
+        "--test_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/test.tsv",
+        "--output_model_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin",
+        "--epochs_num",
+        "1",
+        "--batch_size",
+        "2",
+        "--seq_length",
+        "16",
+        "--report_steps",
+        "1",
+        "--learning_rate",
+        "2e-5"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:13:29.653141+00:00",
+      "end_time_utc": "2026-11-09T11:13:31.823388+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "/workspace/traffic-repro-audit/upstream/et_bert/pre-training/pretrain.py",
+        "--dataset_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_dataset.pt",
+        "--vocab_path",
+        "/workspace/traffic-repro-audit/upstream/et_bert/models/encryptd_vocab.txt",
+        "--output_model_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_pretrained_model.bin",
+        "--config_path",
+        "/workspace/traffic-repro-audit/upstream/et_bert/models/bert/tiny_config.json",
+        "--world_size",
+        "1",
+        "--total_steps",
+        "2",
+        "--save_checkpoint_steps",
+        "2",
+        "--batch_size",
+        "2",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--target",
+        "bert",
+        "--report_steps",
+        "1",
+        "--instances_buffer_size",
+        "24"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts",
+      "start_time_utc": "2026-11-09T11:15:01.030584+00:00",
+      "end_time_utc": "2026-11-09T11:15:03.400829+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched/inference/run_classifier_infer.py",
+        "--load_model_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin",
+        "--config_path",
+        "models/bert/tiny_config.json",
+        "--vocab_path",
+        "models/encryptd_vocab.txt",
+        "--test_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/unlabeled.tsv",
+        "--prediction_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_predictions.tsv",
+        "--labels_num",
+        "2",
+        "--embedding",
+        "word_pos_seg",
+        "--encoder",
+        "transformer",
+        "--mask",
+        "fully_visible",
+        "--seq_length",
+        "16",
+        "--output_prob"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/et_bert",
+      "start_time_utc": "2026-11-09T11:13:46.255691+00:00",
+      "end_time_utc": "2026-11-09T11:13:47.473493+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/et_bert/bin/python",
+        "/workspace/traffic-repro-audit/upstream/et_bert/preprocess.py",
+        "--corpus_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_burst_corpus.txt",
+        "--vocab_path",
+        "/workspace/traffic-repro-audit/upstream/et_bert/models/encryptd_vocab.txt",
+        "--dataset_path",
+        "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/synthetic_dataset.pt",
+        "--processes_num",
+        "1",
+        "--target",
+        "bert",
+        "--seq_length",
+        "16",
+        "--dup_factor",
+        "1",
+        "--docs_buffer_size",
+        "24"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts",
+      "start_time_utc": "2026-11-09T11:14:07.564520+00:00",
+      "end_time_utc": "2026-11-09T11:14:08.633398+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper dataset/checkpoint or real-data metrics\", \"Only stated synthetic/metadata/installation scope; not paper result reproduction\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "--prefix",
+        "/workspace/traffic-repro-audit/.conda/etc_noms_2024",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "--yes",
+        "python=3.8",
+        "pip=24.3.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:45:04.783663+00:00",
+      "end_time_utc": "2026-11-09T10:45:12.603853+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/etc_noms_2024/independent_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:56:15.990063+00:00",
+      "end_time_utc": "2026-11-09T10:56:18.309703+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+        "generate_table_entries.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/etc_noms_2024/runtime-artifacts/generator",
+      "start_time_utc": "2026-11-09T10:47:48.679360+00:00",
+      "end_time_utc": "2026-11-09T10:47:52.208411+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+        "generate_table_entries.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/etc_noms_2024/runtime-artifacts/patched/In_switch_ETC/Offline_model_preparation",
+      "start_time_utc": "2026-11-09T10:49:31.396630+00:00",
+      "end_time_utc": "2026-11-09T10:49:35.172577+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+        "generate_table_entries.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/etc_noms_2024/runtime-artifacts/patched/In_switch_ETC/Offline_model_preparation",
+      "start_time_utc": "2026-11-09T10:51:26.740290+00:00",
+      "end_time_utc": "2026-11-09T10:51:30.820122+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/etc_noms_2024/bin/python",
+        "papers/etc_noms_2024/run_notebook_subset.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:47:19.279356+00:00",
+      "end_time_utc": "2026-11-09T10:47:22.316999+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "bf-p4c",
+        "--version"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/etc_noms_2024/In_switch_ETC/Switch",
+      "start_time_utc": "2026-11-09T10:44:19.352776+00:00",
+      "end_time_utc": "2026-11-09T10:44:19.353533+00:00",
+      "exit_code": 127,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/etc_noms_2024/runtime-artifacts/patched",
+        "patches/etc_noms_2024/0002-feature-range-domains.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:51:26.452840+00:00",
+      "end_time_utc": "2026-11-09T10:51:26.456743+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/etc_noms_2024/runtime-artifacts/patched",
+        "patches/etc_noms_2024/0002-feature-range-domains.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:51:26.155911+00:00",
+      "end_time_utc": "2026-11-09T10:51:26.159786+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/etc_noms_2024/runtime-artifacts/patched",
+        "patches/etc_noms_2024/0001-unique-voting-mode.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:49:31.106573+00:00",
+      "end_time_utc": "2026-11-09T10:49:31.110579+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/etc_noms_2024/runtime-artifacts/patched",
+        "patches/etc_noms_2024/0001-unique-voting-mode.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:49:23.428689+00:00",
+      "end_time_utc": "2026-11-09T10:49:23.432576+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/etc_noms_2024/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--only-binary=:all:",
+        "--report",
+        "environment/etc_noms_2024/pip-install-report.json",
+        "-r",
+        "environment/etc_noms_2024/requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:45:52.654810+00:00",
+      "end_time_utc": "2026-11-09T10:46:26.744165+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "bash",
+        "data_preparation/pcap2csv.sh",
+        "datafile.pcap"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/etc_noms_2024/Offline_ETC",
+      "start_time_utc": "2026-11-09T10:44:19.069812+00:00",
+      "end_time_utc": "2026-11-09T10:44:19.073623+00:00",
+      "exit_code": 127,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/etc_noms_2024/bin/python",
+        "data_preparation/pkts2flows.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/etc_noms_2024/Offline_ETC",
+      "start_time_utc": "2026-11-09T10:47:20.653560+00:00",
+      "end_time_utc": "2026-11-09T10:47:21.369320+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/etc_noms_2024/bin/python",
+        "papers/etc_noms_2024/validate_generated_tables.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:50:04.295734+00:00",
+      "end_time_utc": "2026-11-09T10:50:06.574108+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/etc_noms_2024/bin/python",
+        "papers/etc_noms_2024/validate_generated_tables.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:51:48.991875+00:00",
+      "end_time_utc": "2026-11-09T10:51:51.011790+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "--prefix",
+        "/workspace/traffic-repro-audit/.conda/flowrest",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "--yes",
+        "python=3.8",
+        "pip=24.3.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:08:59.370275+00:00",
+      "end_time_utc": "2026-11-09T11:09:05.004965+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_core.py",
+        "conference_time_aligned"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+      "start_time_utc": "2026-11-09T11:17:01.265424+00:00",
+      "end_time_utc": "2026-11-09T11:17:07.508964+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Explicit data-processing sensitivity condition, not a confirmed equivalent repair or original paper evaluation",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_core.py",
+        "conference"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+      "start_time_utc": "2026-11-09T11:15:47.336147+00:00",
+      "end_time_utc": "2026-11-09T11:15:54.128364+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_core.py",
+        "full"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+      "start_time_utc": "2026-11-09T11:15:45.965728+00:00",
+      "end_time_utc": "2026-11-09T11:15:47.736329+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/flowrest/bin/python",
+        "papers/flowrest/audit_data.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:17:03.990467+00:00",
+      "end_time_utc": "2026-11-09T11:17:05.968569+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/upstream/flowrest/Python/Full_version/generate_table_entries_from_RF.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+      "start_time_utc": "2026-11-09T11:14:33.534012+00:00",
+      "end_time_utc": "2026-11-09T11:14:34.250058+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/flowrest/validate_generated_ranges.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:52.775071+00:00",
+      "end_time_utc": "2026-11-09T11:13:53.090997+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/flowrest/validate_generated_ranges.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:33.120356+00:00",
+      "end_time_utc": "2026-11-09T11:14:33.485575+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/flowrest/independent_review_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:26:06.933814+00:00",
+      "end_time_utc": "2026-11-09T11:26:07.555592+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/upstream/flowrest/Python/Conference_version/convert_RF_to_table_entries.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+      "start_time_utc": "2026-11-09T11:10:45.068262+00:00",
+      "end_time_utc": "2026-11-09T11:10:45.884070+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/upstream/flowrest/Python/Conference_version/convert_RF_to_table_entries.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+      "start_time_utc": "2026-11-09T11:10:58.736849+00:00",
+      "end_time_utc": "2026-11-09T11:11:03.344333+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Author pretrained artifact and generated Python only; not BFRT or P4 execution",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_original_notebook.py",
+        "conference"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/conference",
+      "start_time_utc": "2026-11-09T11:12:38.116864+00:00",
+      "end_time_utc": "2026-11-09T11:12:39.837709+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/upstream/flowrest/Python/Full_version/generate_table_entries_from_RF.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+      "start_time_utc": "2026-11-09T11:12:40.897907+00:00",
+      "end_time_utc": "2026-11-09T11:12:41.617686+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_original_notebook.py",
+        "full"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+      "start_time_utc": "2026-11-09T11:12:39.477108+00:00",
+      "end_time_utc": "2026-11-09T11:12:40.946601+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/flowrest/bin/python",
+        "/workspace/traffic-repro-audit/papers/flowrest/run_original_notebook.py",
+        "full"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/flowrest/runtime-artifacts/full",
+      "start_time_utc": "2026-11-09T11:17:02.609897+00:00",
+      "end_time_utc": "2026-11-09T11:17:28.005908+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Plain exec of original code cells, rich display not emulated; not full journal all-task evaluation",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/flowrest/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--only-binary=:all:",
+        "--report",
+        "environment/flowrest/pip-install-report.json",
+        "-r",
+        "environment/flowrest/requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:09:38.254544+00:00",
+      "end_time_utc": "2026-11-09T11:10:06.156519+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/flowrest/fetch_public_data.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:31.743053+00:00",
+      "end_time_utc": "2026-11-09T11:14:50.225354+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Paper comparable results Unknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/flowrest/bin/python",
+        "papers/flowrest/smoke_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:51.384248+00:00",
+      "end_time_utc": "2026-11-09T11:13:53.105782+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Synthetic inputs and author saved-weight interface only; not paper metric",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/lens/bin/python",
+        "papers/lens/independent_review_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:31:27.060014+00:00",
+      "end_time_utc": "2026-11-09T11:31:28.076946+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/lens",
+        "python=3.10",
+        "numpy=2.2.4",
+        "scipy=1.15.2",
+        "scikit-learn=1.6.1",
+        "pip"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:20:43.973463+00:00",
+      "end_time_utc": "2026-11-09T11:20:52.721226+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Not the full official Lens model environment\", \"No model, tokenizer, real data, or checkpoint test\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "install",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/lens",
+        "pandas=2.2.3",
+        "tqdm=4.67.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:22:57.771473+00:00",
+      "end_time_utc": "2026-11-09T11:23:04.055812+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Not the full official Lens model environment\", \"No model, tokenizer, real data, or checkpoint test\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/lens/bin/python",
+        "papers/lens/metric_and_split_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:23:43.000067+00:00",
+      "end_time_utc": "2026-11-09T11:23:44.116962+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"R1 applies only to these directly loaded original metric/reference-split functions\", \"Main Lens model R0 and not attempted\", \"Paper gives no explicit TVD/HD formula; custom metric convention remains possible\", \"Synthetic transductive input exposure is not proof of real-data supervised label leakage\", \"Actual paper predictions, published split IDs and result effect Unknown\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/leo",
+        "python=3.10",
+        "pip"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:29.919026+00:00",
+      "end_time_utc": "2026-11-09T11:11:35.610386+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Environment installation alone is not algorithm validation",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/leo/bin/python",
+        "papers/leo/integer_domain_diagnostic.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:18:27.381816+00:00",
+      "end_time_utc": "2026-11-09T11:18:27.414636+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Not actual P4 simulation; realdata incidenceUnknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "bf-p4c",
+        "--version"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:22.774516+00:00",
+      "end_time_utc": "2026-11-09T11:13:22.775349+00:00",
+      "exit_code": 127,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Version probe only; no build",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/leo/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "numpy==1.24.4",
+        "scikit-learn==1.3.0",
+        "pandas==2.0.3",
+        "matplotlib==3.7.2",
+        "scapy==2.5.0"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:35.659404+00:00",
+      "end_time_utc": "2026-11-09T11:12:03.412816+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; READMEversions plus explicitNumPy/Pythonpatch compatibility choice",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+        "/workspace/traffic-repro-audit/upstream/leo/leo-generator/leo_ctrlplane_generator.py",
+        "--tcam",
+        "--output_filename",
+        "tree0_ctrl.py",
+        "--sub_tree",
+        "1",
+        "--depth",
+        "1",
+        "--input_filename",
+        "tree_0.txt",
+        "--transient"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/leo/runtime-artifacts/smoke",
+      "start_time_utc": "2026-11-09T11:14:04.595048+00:00",
+      "end_time_utc": "2026-11-09T11:14:04.659471+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; No generated BFRTcalls executed",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+        "/workspace/traffic-repro-audit/upstream/leo/leo-generator/leo_dataplane_generator.py",
+        "--sram",
+        "--filename",
+        "demo.p4",
+        "--sub_tree",
+        "2",
+        "--depth",
+        "10",
+        "--features",
+        "12"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/leo/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:13:22.589103+00:00",
+      "end_time_utc": "2026-11-09T11:13:22.653691+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Only P4 text; no compiler or packets",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+        "resource-model.py",
+        "--tcam",
+        "--muxed_alu_config",
+        "3,3,3,3"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/leo/leo",
+      "start_time_utc": "2026-11-09T11:13:22.695607+00:00",
+      "end_time_utc": "2026-11-09T11:13:22.728314+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Model calculation, not measured hardware resources",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+        "/workspace/traffic-repro-audit/upstream/leo/dataset-simulation/dataset-processor-cicids2017.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/leo/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:17:20.202795+00:00",
+      "end_time_utc": "2026-11-09T11:17:21.875738+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; No original real-data model evaluation",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/leo/bin/python",
+        "papers/leo/semantic_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:03.833304+00:00",
+      "end_time_utc": "2026-11-09T11:14:04.549470+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Diagnostic exit0 meanscounterexampleconfirmed, not classifier replication",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/lim",
+        "python=3.11",
+        "pip"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:45:01.303061+00:00",
+      "end_time_utc": "2026-11-09T10:45:09.600397+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/lim/bin/python",
+        "papers/lim/core_capture.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:47:48.039399+00:00",
+      "end_time_utc": "2026-11-09T10:47:50.016519+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/lim/bin/python",
+        "xgboost_classifier.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/lim",
+      "start_time_utc": "2026-11-09T10:46:41.207835+00:00",
+      "end_time_utc": "2026-11-09T10:46:43.335596+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/lim/bin/pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/lim",
+      "start_time_utc": "2026-11-09T10:45:24.995649+00:00",
+      "end_time_utc": "2026-11-09T10:46:21.527977+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/lim/bin/python",
+        "/workspace/traffic-repro-audit/upstream/lim/pcap_to_netmatrix.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/lim/runtime-artifacts/readme-preprocess",
+      "start_time_utc": "2026-11-09T10:46:55.044506+00:00",
+      "end_time_utc": "2026-11-09T10:46:55.560184+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/lim/bin/python",
+        "papers/lim/smoke_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:47:07.964259+00:00",
+      "end_time_utc": "2026-11-09T10:47:09.233748+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "https://github.com/haolinyan/LINC.git",
+        "upstream/linc"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:08:15.846892+00:00",
+      "end_time_utc": "2026-11-09T11:08:16.563024+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/linc",
+        "python=3.10",
+        "pip"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:08:54.223685+00:00",
+      "end_time_utc": "2026-11-09T11:09:00.359302+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/smoke.py",
+        "subspace"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:00.120840+00:00",
+      "end_time_utc": "2026-11-09T11:13:03.243543+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/smoke.py",
+        "subspace",
+        "--patched"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:40.542860+00:00",
+      "end_time_utc": "2026-11-09T11:13:42.812535+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/independent_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:26:56.368144+00:00",
+      "end_time_utc": "2026-11-09T11:26:57.991834+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "environment/linc/pip-install-report-original-numpy.json",
+        "-r",
+        "environment/linc/requirements-runtime-original-numpy.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:10:42.627600+00:00",
+      "end_time_utc": "2026-11-09T11:11:05.156717+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "torch==2.0.1+cpu",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:10:09.394563+00:00",
+      "end_time_utc": "2026-11-09T11:10:42.582785+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/smoke.py",
+        "network"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:12:54.440885+00:00",
+      "end_time_utc": "2026-11-09T11:12:57.071901+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "-c",
+        "import numpy as np,torch; print(np.__version__,torch.__version__); a=np.zeros((2,2),dtype=np.float32); print(torch.from_numpy(a))"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:17.065470+00:00",
+      "end_time_utc": "2026-11-09T11:11:18.483643+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "numpy==1.26.4"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:34.116868+00:00",
+      "end_time_utc": "2026-11-09T11:11:37.746904+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0001-small-batch-progress.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:16.938390+00:00",
+      "end_time_utc": "2026-11-09T11:13:16.942410+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0001-small-batch-progress.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:16.893992+00:00",
+      "end_time_utc": "2026-11-09T11:13:16.898323+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0002-cpu-export-simulator.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:17.032678+00:00",
+      "end_time_utc": "2026-11-09T11:13:17.036582+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0002-cpu-export-simulator.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:16.982977+00:00",
+      "end_time_utc": "2026-11-09T11:13:16.987072+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0003-default-subspace-index.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:17.129714+00:00",
+      "end_time_utc": "2026-11-09T11:13:17.133594+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/linc/runtime-artifacts/patched",
+        "patches/linc/0003-default-subspace-index.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:17.083265+00:00",
+      "end_time_utc": "2026-11-09T11:13:17.087153+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/linc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/linc",
+      "start_time_utc": "2026-11-09T11:09:36.786806+00:00",
+      "end_time_utc": "2026-11-09T11:09:38.921336+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/linc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--dry-run",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/linc",
+      "start_time_utc": "2026-11-09T11:09:00.412792+00:00",
+      "end_time_utc": "2026-11-09T11:09:03.188903+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/linc/bin/python",
+        "train_nn.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/linc/runtime-artifacts/readme-original",
+      "start_time_utc": "2026-11-09T11:11:13.335964+00:00",
+      "end_time_utc": "2026-11-09T11:11:17.015665+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/smoke.py",
+        "train",
+        "--patched"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:13:37.676859+00:00",
+      "end_time_utc": "2026-11-09T11:13:40.498271+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/linc/bin/python",
+        "papers/linc/smoke.py",
+        "train"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:12:57.132570+00:00",
+      "end_time_utc": "2026-11-09T11:13:00.060280+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "torch==1.13.1+cpu",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:47:54.699910+00:00",
+      "end_time_utc": "2026-11-09T10:48:10.296501+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/patch_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:48:21.625382+00:00",
+      "end_time_utc": "2026-11-09T10:48:21.827533+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "bdt_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/mousika/Distillation",
+      "start_time_utc": "2026-11-09T10:48:50.525508+00:00",
+      "end_time_utc": "2026-11-09T10:48:52.692175+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "bdt_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/mousika/Distillation",
+      "start_time_utc": "2026-11-09T10:45:53.908054+00:00",
+      "end_time_utc": "2026-11-09T10:45:54.829473+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "dt_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/mousika/Distillation",
+      "start_time_utc": "2026-11-09T10:45:54.871185+00:00",
+      "end_time_utc": "2026-11-09T10:45:55.691375+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "rule2entry.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/mousika/runtime-artifacts/readme-rule2entry/code",
+      "start_time_utc": "2026-11-09T10:47:37.913796+00:00",
+      "end_time_utc": "2026-11-09T10:47:38.076346+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "bdt_test.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/mousika-v2/Distillation",
+      "start_time_utc": "2026-11-09T10:48:52.744262+00:00",
+      "end_time_utc": "2026-11-09T10:48:54.592487+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/real_subset_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:51:46.323431+00:00",
+      "end_time_utc": "2026-11-09T10:51:48.845501+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/real_subset_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:51:09.656510+00:00",
+      "end_time_utc": "2026-11-09T10:51:12.269240+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:45:55.730984+00:00",
+      "end_time_utc": "2026-11-09T10:45:56.524789+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:46:24.036145+00:00",
+      "end_time_utc": "2026-11-09T10:46:25.466265+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/v2_gini_counterexample.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:50:05.995963+00:00",
+      "end_time_utc": "2026-11-09T10:50:06.817179+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+        "scripts/mousika/v2_gini_counterexample.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T10:49:40.185195+00:00",
+      "end_time_utc": "2026-11-09T10:49:41.151415+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": true,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/pegasus",
+        "python=3.8.18",
+        "pip=24.3.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:24:25.593576+00:00",
+      "end_time_utc": "2026-11-09T11:24:33.883018+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; CorrectedREADMEcreate-n typo and isolatedprefix",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/pegasus/independent_review_checks.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:30:57.384469+00:00",
+      "end_time_utc": "2026-11-09T11:30:57.499041+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Command exit status is not scientific equivalence; see per-paper report",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/pegasus/bin/python",
+        "papers/pegasus/model_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:27:27.565880+00:00",
+      "end_time_utc": "2026-11-09T11:27:29.234611+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Officialreplacementweights,notoriginalpaper; no realdata metric",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+        "-m",
+        "quickdemo.cnnLtest",
+        "--dataset",
+        "PeerRush",
+        "--ptpth",
+        "save/cnnL/PeerRush/CNNL_PeerRush.pt",
+        "--testpth",
+        "dataset/PeerRush/redeal_test.json",
+        "--device",
+        "cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/software",
+      "start_time_utc": "2026-11-09T11:26:24.103644+00:00",
+      "end_time_utc": "2026-11-09T11:26:26.074645+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Checkpointdeserializedbeforemissingdatafailure; file-specificstaticreviewafterrun recorded",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/software",
+      "start_time_utc": "2026-11-09T11:24:59.175009+00:00",
+      "end_time_utc": "2026-11-09T11:25:25.801309+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Originalrequirementsfileinsoftwaredirectory; notliteralrootrecipe",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create-n",
+        "Pegasus",
+        "python=3.8.18"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:32:48.665034+00:00",
+      "end_time_utc": "2026-11-09T11:32:49.230745+00:00",
+      "exit_code": 2,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Post-hoc literalrecipeaudit; noextraenvironmentcreated",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/pegasus",
+      "start_time_utc": "2026-11-09T11:32:49.503082+00:00",
+      "end_time_utc": "2026-11-09T11:32:49.968551+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; Actualworkingdirectorycorrectionrequired",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+        "codegen.py",
+        "mlp16.p4g",
+        "/workspace/traffic-repro-audit/papers/pegasus/runtime-artifacts/p4syntax/mlp16.p4"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/hardware/p4_syntax",
+      "start_time_utc": "2026-11-09T11:28:41.650546+00:00",
+      "end_time_utc": "2026-11-09T11:28:41.865220+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; P4textonly; no compiler/packet/hardwaretest",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "papers/pegasus/retrieve_evidence.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:25:00.221809+00:00",
+      "end_time_utc": "2026-11-09T11:25:05.403909+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; No actualdatasetdownload; staticpicklechecknotformalsafetyproof",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/pegasus/bin/python",
+        "papers/pegasus/split_grain_diagnostic.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:29:19.843372+00:00",
+      "end_time_utc": "2026-11-09T11:29:22.017343+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Defaultvalratio=.1; actualexternaltestoverlap/impactUnknown",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/pegasus/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "torch==2.4.1+cpu",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:24:33.931909+00:00",
+      "end_time_utc": "2026-11-09T11:24:59.119910+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; ExplicitofficialCPUwheel,READMEtorchunpinned",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+        "-m",
+        "quickdemo.mlptest",
+        "--dataset",
+        "PeerRush",
+        "--ptpth",
+        "save/mlp/PeerRush/MLP_PeerRush.pt",
+        "--testpth",
+        "/workspace/traffic-repro-audit/papers/pegasus/runtime-artifacts/synthetic_9rows.csv",
+        "--device",
+        "cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/software",
+      "start_time_utc": "2026-11-09T11:27:29.282704+00:00",
+      "end_time_utc": "2026-11-09T11:27:31.708025+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; Notnetworkaccuracy; arbitrarysyntheticlabels",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "https://github.com/NSSL-SJTU/YaTC.git",
+        "upstream/yatc"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:08:59.082904+00:00",
+      "end_time_utc": "2026-11-09T11:09:00.206673+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".tools/miniforge3/bin/conda",
+        "create",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-y",
+        "-p",
+        "/workspace/traffic-repro-audit/.conda/yatc",
+        "python=3.8",
+        "pip=24.3.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:09:28.907512+00:00",
+      "end_time_utc": "2026-11-09T11:09:37.787542+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/yatc/runtime-artifacts/cpu_patch",
+        "patches/yatc/0002-guard-cuda-synchronization.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:41.403814+00:00",
+      "end_time_utc": "2026-11-09T11:15:41.407569+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/yatc/runtime-artifacts/cpu_patch",
+        "patches/yatc/0002-guard-cuda-synchronization.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:41.355502+00:00",
+      "end_time_utc": "2026-11-09T11:15:41.359355+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "papers/yatc/engine_cpu_probe.py",
+        "--patched"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:41.697136+00:00",
+      "end_time_utc": "2026-11-09T11:15:43.566912+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper result reproduction\", \"Full paper unavailable\", \"No real data/checkpoint\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "papers/yatc/engine_cpu_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:38.845998+00:00",
+      "end_time_utc": "2026-11-09T11:14:42.477155+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"No paper result reproduction\", \"Full paper unavailable\", \"No real data/checkpoint\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--directory=papers/yatc/runtime-artifacts/import_patch",
+        "patches/yatc/0001-original-dependency-import-compat.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:16:16.455382+00:00",
+      "end_time_utc": "2026-11-09T11:16:16.463417+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--directory=papers/yatc/runtime-artifacts/import_patch",
+        "patches/yatc/0001-original-dependency-import-compat.patch"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:16:16.403672+00:00",
+      "end_time_utc": "2026-11-09T11:16:16.407740+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "environment/yatc/pip-install-report.json",
+        "numpy==1.19.5",
+        "scikit-learn==0.24.2",
+        "timm==0.3.2",
+        "scipy==1.5.4",
+        "pillow==9.5.0",
+        "scikit-image==0.18.3",
+        "tensorboard==2.10.1",
+        "protobuf==3.19.6",
+        "matplotlib==3.3.4",
+        "scapy==2.5.0",
+        "tqdm==4.66.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:11:50.620169+00:00",
+      "end_time_utc": "2026-11-09T11:12:23.759882+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--report",
+        "environment/yatc/pip-install-report.json",
+        "numpy==1.19.5",
+        "scikit-learn==0.24.2",
+        "timm==0.3.2",
+        "scipy==1.5.4",
+        "pillow==9.5.0",
+        "scikit-image==0.18.3",
+        "tensorboard==2.10.1",
+        "protobuf==3.20.3",
+        "matplotlib==3.3.4",
+        "scapy==2.5.0",
+        "tqdm==4.66.1"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:10:57.138959+00:00",
+      "end_time_utc": "2026-11-09T11:11:04.140245+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "torch==1.9.0+cpu",
+        "torchvision==0.10.0+cpu",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:10:06.658988+00:00",
+      "end_time_utc": "2026-11-09T11:10:37.920385+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "papers/yatc/metric_semantics_probe.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:40.228920+00:00",
+      "end_time_utc": "2026-11-09T11:14:42.654245+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper result reproduction\", \"Full paper unavailable\", \"No real data/checkpoint\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "-c",
+        "import timm"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:15:38.790929+00:00",
+      "end_time_utc": "2026-11-09T11:15:39.564776+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/yatc/bin/python",
+        "/workspace/traffic-repro-audit/upstream/yatc/fine-tune.py",
+        "--blr",
+        "2e-3",
+        "--epochs",
+        "200",
+        "--data_path",
+        "./data/ISCXVPN2016_MFR",
+        "--nb_classes",
+        "7"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:12:57.580304+00:00",
+      "end_time_utc": "2026-11-09T11:12:58.253322+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/yatc/bin/python",
+        "/workspace/traffic-repro-audit/papers/yatc/run_with_compat.py",
+        "/workspace/traffic-repro-audit/upstream/yatc/fine-tune.py",
+        "--blr",
+        "2e-3",
+        "--epochs",
+        "200",
+        "--data_path",
+        "./data/ISCXVPN2016_MFR",
+        "--nb_classes",
+        "7"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:16:17.713940+00:00",
+      "end_time_utc": "2026-11-09T11:16:19.131797+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/yatc/bin/python",
+        "/workspace/traffic-repro-audit/upstream/yatc/pre-train.py",
+        "--batch_size",
+        "128",
+        "--blr",
+        "1e-3",
+        "--steps",
+        "150000",
+        "--mask_ratio",
+        "0.9"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:12:56.559598+00:00",
+      "end_time_utc": "2026-11-09T11:12:57.279739+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.conda/yatc/bin/python",
+        "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/import_patch/pre-train.py",
+        "--batch_size",
+        "128",
+        "--blr",
+        "1e-3",
+        "--steps",
+        "150000",
+        "--mask_ratio",
+        "0.9"
+      ],
+      "cwd": "/workspace/traffic-repro-audit/papers/yatc/runtime-artifacts/readme",
+      "start_time_utc": "2026-11-09T11:16:16.505740+00:00",
+      "end_time_utc": "2026-11-09T11:16:17.937934+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Command completion only, not paper-result validation; [\"Only this logged phase attempted\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    },
+    {
+      "command": [
+        ".conda/yatc/bin/python",
+        "papers/yatc/synthetic_smoke.py"
+      ],
+      "cwd": "/workspace/traffic-repro-audit",
+      "start_time_utc": "2026-11-09T11:14:37.432742+00:00",
+      "end_time_utc": "2026-11-09T11:14:40.838740+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Command completion only, not paper-result validation; [\"No paper result reproduction\", \"Full paper unavailable\", \"No real data/checkpoint\"]",
+      "inherited": false,
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    }
+  ],
+  "completed_work": [
+    {
+      "description": "37 screened records;35 in-scope paper families;30 verified official-repository families;10 detailed audit packages;574 coverage rows.",
+      "status": "Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "reports/aggregate_summary.json"
+      ]
+    },
+    {
+      "description": "Scoped real-data CSV algorithm runs and synthetic/function probes retained with original timing and limitations.",
+      "status": "Partially Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    }
+  ],
+  "failed_experiments": [
+    {
+      "description": "Original README/CPU/dependency/data/model-generation failures are preserved in command metadata, selected logs and reports; failed commands are not equivalent to failed paper claims.",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/reproduction_results.csv"
+      ]
+    }
+  ],
+  "important_findings": [
+    {
+      "description": "Loss/configuration, feature-time processing, rule-index/threshold, metric naming and public artifact completeness discrepancies documented with bounded evidence.",
+      "status": "Partially Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/critical_findings.md"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "description": "No complete paper-result R3/R4 reproduction; no P4 compilation, packet-level software-switch simulation or real-hardware throughput/resource validation.",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "reports/final_audit_report.md"
+      ]
+    },
+    {
+      "description": "YaTC complete paper experiment inventory remains Unknown because official full text access was denied; Lens main model not executed.",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "papers/yatc/static_audit.md",
+        "papers/lens/reproduction_report.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "papers.csv",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "coverage_matrix.csv",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reproduction_results.csv",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/final_audit_report.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/critical_findings.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/execution_timeline.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/reproduce_next.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/archive_manifest.csv",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/source_reference_index.csv",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Existing audit result exported without rerunning experiments."
+    },
+    {
+      "path": "reports/publication_independent_review.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Independent in-session review of public-export safety/minimization and unchanged results, not remote upload."
+    }
+  ],
+  "publication_review": {
+    "status": "Verified",
+    "manifest": "reports/archive_manifest.csv",
+    "withheld_manifest": "reports/source_reference_index.csv",
+    "limitations": [
+      "Pattern scanning is not a formal guarantee. Uncertain/raw materials withheld by default.",
+      "Scientific source-relative evidence IDs may refer to withheld local files; official references and hashes are provided."
+    ],
+    "independent_review": "reports/publication_independent_review.md",
+    "scope": "Reviewed public export only; no certification of full paper reproduction or remote upload."
+  },
+  "final_status": "Partially Verified",
+  "final_status_scope": "Research audit completed with scoped R1/R2 evidence; public archive preparation in progress; no full paper-result reproduction.",
+  "remote_verification": {
+    "status": "Unknown",
+    "branch": "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf",
+    "commit_sha": "Unknown"
+  },
+  "pull_request_url": null,
+  "export_created_utc": "2026-11-09T12:49:12.192400+00:00",
+  "summary": {
+    "screened_records": 37,
+    "paper_families": 36,
+    "included_paper_families": 35,
+    "verified_included_paper_families": 30,
+    "association_verified_records": 31,
+    "static_audits": 10,
+    "coverage_rows": 574,
+    "command_records": 146,
+    "new_round_command_records": 111,
+    "new_round_runtime_attempt_projects": [
+      "et_bert",
+      "flowrest",
+      "lens",
+      "leo",
+      "linc",
+      "pegasus",
+      "yatc"
+    ],
+    "new_round_successful_algorithm_test_projects": [
+      "et_bert",
+      "flowrest",
+      "lens",
+      "leo",
+      "linc",
+      "pegasus",
+      "yatc"
+    ]
+  },
+  "limitations": [
+    "Public snapshot is intentionally narrower than the retained local audit.",
+    "Original validators may require withheld local evidence and datasets. Use scripts/validate_public_archive.py for this snapshot."
+  ],
+  "research_completed_time_utc": "2026-11-09T11:47:27Z",
+  "source_repositories_scope": "Fixed repositories actually checked out in the detailed audits; wider screened official associations and versions are in papers.csv and reports/official_sources.csv."
+}

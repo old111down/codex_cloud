@@ -1,0 +1,17 @@
+[
+  {
+    "path": "papers/pegasus/runtime-artifacts/one_synthetic_flow.json",
+    "bytes": 556,
+    "sha256": "013f161ba7ecfc50e8e3d02406933aa31faf1abee62ea1096006e536bf9568b7"
+  },
+  {
+    "path": "papers/pegasus/runtime-artifacts/p4syntax/mlp16.p4",
+    "bytes": 14590,
+    "sha256": "7314f87c20b60222af9747602b2bb570cf53880b639f6c7a27cb06dcb31abe61"
+  },
+  {
+    "path": "papers/pegasus/runtime-artifacts/synthetic_9rows.csv",
+    "bytes": 2511,
+    "sha256": "6da6062c7a89f9b170b96d2041d11d5345abe1890da70fc9ebeecec675fe286d"
+  }
+]

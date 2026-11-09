@@ -1,0 +1,32 @@
+{
+  "reviewed_at_utc": "2026-11-09T11:28:53.578696+00:00",
+  "scope": "Independent coverage/source/log checks plus bounded synthetic counterexample; not real-data or hardware replication",
+  "coverage_rows": 41,
+  "status": "Passed within R1 component boundary, conditionally reachable remaining incremental error retained",
+  "files": [
+    {
+      "path": "papers/linc/coverage_matrix.csv",
+      "sha256": "4be2f800fcc9129d2b1fe6ca9134b51c804dc11047e6ebd16b20366d9347b421"
+    },
+    {
+      "path": "papers/linc/reproduction_report.md",
+      "sha256": "b0f0cc99d3dc3e1c97ce7f7229da3cb74365611114631a49fca744f17b74021b"
+    },
+    {
+      "path": "papers/linc/static_audit.md",
+      "sha256": "d04cfd67d0cbae65e4ce0eac85019ee21def2d489de8e689080538f727ea516b"
+    },
+    {
+      "path": "patches/linc/README.md",
+      "sha256": "ad2742e82488dc51e4a13a2f314e88587592aa4fdd7f6698522c199d58f50d9e"
+    },
+    {
+      "path": "papers/linc/independent_checks.json",
+      "sha256": "e66119d7d060d2a7ec3ad56717f5c3f0f212c5b67e007e0286607f1b5cd938c2"
+    }
+  ],
+  "checks": "papers/linc/independent_checks.json",
+  "raw_execution": "logs/linc/independent_review_checks.json",
+  "important_remaining_issue": "Patch3 correct default indexN is not handled by update_streaming.py:179 values[N]; conditional IndexError independently confirmed",
+  "paper_metrics": "Unknown"
+}

@@ -1,0 +1,43 @@
+{
+  "input_kind": "synthetic",
+  "scope": "Unmodified full MAE_YaTC and TraFormer_YaTC factories plus original PCAP\u2192MFR functions; import aliases applied in audit bootstrap only; random initialization, not pretrained or real traffic",
+  "torch_version": "1.9.0+cpu",
+  "input_shape": [
+    2,
+    1,
+    40,
+    40
+  ],
+  "input_sha256": "47df73eb47589020cc903eb4c5214431400b3fa6d0646407899d4133efba7780",
+  "synthetic_pcap_sha256": "0d6aebb047754342043e53d3a562d646ad3049cf40b923b299c338c3d89ef409",
+  "synthetic_mfr_sha256": "4bfaf415c571045eb4de43270d2ee5cbdc86b69160278f669255aae628d50191",
+  "mae_parameters": 2331460,
+  "classifier_parameters": 1859335,
+  "mae_loss": 0.871423602104187,
+  "mae_pred_shape": [
+    2,
+    400,
+    4
+  ],
+  "masked_patch_counts": [
+    361.0,
+    361.0
+  ],
+  "classification_logits_shape": [
+    2,
+    7
+  ],
+  "synthetic_cross_entropy": 2.152869462966919,
+  "head_weight_max_change": 0.0011000074446201324,
+  "pcap_contains_ip_and_ports_after_representation": true,
+  "packet_count_in_fixture": 3,
+  "zero_padded_packet_slots": 2,
+  "mae_forward_backward_seconds": 0.777754540999922,
+  "classifier_step_seconds": 0.26275125100005425,
+  "limitations": [
+    "Synthetic figures are smoke outputs, not Accuracy/F1 or paper performance",
+    "Default mask_ratio0.9 keeps int(400*(1-0.9))=39 patches due float truncation",
+    "No original dataset, labels, splits or checkpoint loaded",
+    "Whole-function walltime is not controlled inference latency measurement"
+  ]
+}

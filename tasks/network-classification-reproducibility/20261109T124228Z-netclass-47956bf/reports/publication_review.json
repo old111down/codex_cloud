@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-09T12:49:12.192400+00:00",
+  "source_commit": "47956bf6c3eaa0cceee3ac5e525432ca6919b478",
+  "allowlist": "Explicit file classes and selected derived-evidence/stdout names; default deny",
+  "counts": {
+    "copied": 426,
+    "sanitized": 43,
+    "withheld": 646
+  },
+  "manual_review_file_paths": [],
+  "original_source_unchanged": true,
+  "no_research_rerun": true,
+  "limitations": [
+    "Pattern scans are not a formal confidentiality guarantee.",
+    "Public subset intentionally omits raw third-party and uncertain material."
+  ],
+  "external_review_reference": "Independent in-session agent review; administrative UTC/metadata completion and checksum updates are checked by the archiving owner.",
+  "status": "Verified",
+  "status_scope": "Publication safety/minimization and record integrity of the reviewed public subset only; not scientific or remote-upload verification.",
+  "reviewed_at_utc": "2026-11-09T12:54:45.124924+00:00",
+  "independent_review": "reports/publication_independent_review.md"
+}

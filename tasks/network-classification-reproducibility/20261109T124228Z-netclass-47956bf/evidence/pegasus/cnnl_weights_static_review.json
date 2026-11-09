@@ -1,0 +1,25 @@
+{
+  "path": "upstream/pegasus/software/save/cnnL/PeerRush/CNNL_PeerRush.pt",
+  "source_commit": "a73bd327fbf0db2550a9bc1e304b96e0aa550cba",
+  "sha256": "10e42f0347f5e82bf236f613a4bea19d3ed8cb4f97c2e61b5f88ca8f45fa5214",
+  "bytes": 1076828,
+  "reviewed_at_utc": "2026-11-09T11:26:38.615579+00:00",
+  "globals": [
+    {
+      "op": "GLOBAL",
+      "argument": "torch._utils _rebuild_tensor_v2",
+      "offset": 18
+    },
+    {
+      "op": "GLOBAL",
+      "argument": "torch FloatStorage",
+      "offset": 69
+    },
+    {
+      "op": "GLOBAL",
+      "argument": "collections OrderedDict",
+      "offset": 133
+    }
+  ],
+  "protocol_note": "Audit process deviation: initial README CNN-L command loaded the official checkpoint before this file-specific static pickle review, then failed on missing JSON data. Review was performed immediately afterward; only torch tensor rebuild/storage and OrderedDict GLOBALs found. This is not a pre-execution review or formal safety proof. Subsequent isolated model smoke uses weights_only=True after review."
+}

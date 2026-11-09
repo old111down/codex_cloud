@@ -1,0 +1,267 @@
+{
+  "paper_id": "linc",
+  "new_execution": true,
+  "started_utc": "2026-11-09T11:08:15.846892+00:00",
+  "completed_utc": "2026-11-09T11:18:58.318833+00:00",
+  "reproduction_level": "R1",
+  "all_paper_metrics": "Unknown",
+  "runs": [
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/conda_create.json",
+        "logs/linc/conda_create.log"
+      ]
+    },
+    {
+      "run_id": "readme_install_dry_run",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "swanlab==0.3.16 unavailable; official PyPI exact-version probe404",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/readme_install_dry_run.json",
+        "logs/linc/readme_install_dry_run.log"
+      ]
+    },
+    {
+      "run_id": "readme_install",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "swanlab==0.3.16 unavailable; official PyPI exact-version probe404",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/readme_install.json",
+        "logs/linc/readme_install.log"
+      ]
+    },
+    {
+      "run_id": "install_torch_cpu",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/install_torch_cpu.json",
+        "logs/linc/install_torch_cpu.log"
+      ]
+    },
+    {
+      "run_id": "install_runtime_original_numpy",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/install_runtime_original_numpy.json",
+        "logs/linc/install_runtime_original_numpy.log"
+      ]
+    },
+    {
+      "run_id": "readme_train_original_numpy",
+      "phase": "original training command",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "iscx.pkl absent (also NumPy ABI warning)",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/readme_train_original_numpy.json",
+        "logs/linc/readme_train_original_numpy.log"
+      ]
+    },
+    {
+      "run_id": "numpy_bridge_original",
+      "phase": "dependency interoperability",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Torch2.0.1+cpu / NumPy2.0.1 bridge RuntimeError: Numpy is not available",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/numpy_bridge_original.json",
+        "logs/linc/numpy_bridge_original.log"
+      ]
+    },
+    {
+      "run_id": "numpy_compat_install",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/numpy_compat_install.json",
+        "logs/linc/numpy_compat_install.log"
+      ]
+    },
+    {
+      "run_id": "network_smoke",
+      "phase": "forward/backward smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "shape": [
+          32,
+          2
+        ],
+        "loss": 0.685883104801178,
+        "parameters": 19976
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/network_smoke.json",
+        "logs/linc/network_smoke.log"
+      ]
+    },
+    {
+      "run_id": "train_small_original",
+      "phase": "training/export smoke",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "ZeroDivisionError in logging modulus for <10batches",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/train_small_original.json",
+        "logs/linc/train_small_original.log"
+      ]
+    },
+    {
+      "run_id": "default_subspace_original",
+      "phase": "algorithm counterexample",
+      "input_kind": "synthetic",
+      "metrics": {
+        "expected_subspace_indices": [
+          0,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "actual_subspace_indices": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rules": 3,
+        "all_inputs": 8,
+        "mismatches": 5,
+        "cache_counts": [
+          1,
+          6,
+          1,
+          0
+        ]
+      },
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "5/8 synthetic queries incorrectly allocated to rule1 rather than default bucket3",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/default_subspace_original.json",
+        "logs/linc/default_subspace_original.log"
+      ]
+    },
+    {
+      "run_id": "train_export_patched",
+      "phase": "training/export smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_test_accuracy_percent": 100.0,
+        "rules": 2,
+        "train_rows": 64,
+        "val_rows": 32,
+        "test_rows": 32,
+        "epochs": 1,
+        "features": 8
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/train_export_patched.json",
+        "logs/linc/train_export_patched.log"
+      ]
+    },
+    {
+      "run_id": "default_subspace_patched",
+      "phase": "algorithm counterexample",
+      "input_kind": "synthetic",
+      "metrics": {
+        "expected_subspace_indices": [
+          0,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "actual_subspace_indices": [
+          0,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "rules": 3,
+        "all_inputs": 8,
+        "mismatches": 0,
+        "cache_counts": [
+          1,
+          1,
+          1,
+          5
+        ]
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": "All model tests synthetic; no real network data, full incremental update, P4 packet simulation or hardware; final environment has explicit compatibility deviations",
+      "evidence_files": [
+        "logs/linc/default_subspace_patched.json",
+        "logs/linc/default_subspace_patched.log"
+      ]
+    }
+  ]
+}

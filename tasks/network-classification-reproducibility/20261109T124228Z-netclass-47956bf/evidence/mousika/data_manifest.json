@@ -1,0 +1,25 @@
+{
+  "source": "https://github.com/xgr19/Mousika/blob/76c9db9b4200a7c591bd1e9476ba5ab44a467512/Distillation/Dataset/univ.zip",
+  "archive_sha256": "65e43ba19bd873e14db57ee65210129f5797c3f41947c6dc201d9abfbfb2b4bc",
+  "archive_bytes": 19401333,
+  "license": "Unknown (repository contains no LICENSE)",
+  "origin": "README identifies UNIV flow-size prediction; v2 links https://pages.cs.wisc.edu/~tbenson/IMC10_Data.html ; raw-to-CSV transform provenance Unknown",
+  "synthetic": false,
+  "members": [
+    {
+      "path": "univ/univ1-1.csv",
+      "bytes": 240713610,
+      "sha256": "e219977416697ebeb43b595c42b11fad629bf0d8e406b7764b5c931ee6e74aae",
+      "rows_excluding_header": 794822,
+      "header": "srcPort-0,srcPort-1,srcPort-2,srcPort-3,srcPort-4,srcPort-5,srcPort-6,srcPort-7,srcPort-8,srcPort-9,srcPort-10,srcPort-11,srcPort-12,srcPort-13,srcPort-14,srcPort-15,dstPort-0,dstPort-1,dstPort-2,dstPort-3,dstPort-4,dstPort-5,dstPort-6,dstPort-7,dstPort-8,dstPort-9,dstPort-10,dstPort-11,dstPort-12,dstPort-13,dstPort-14,dstPort-15,protocol-0,protocol-1,protocol-2,protocol-3,protocol-4,protocol-5,protocol-6,protocol-7,ip_ihl-0,ip_ihl-1,ip_ihl-2,ip_ihl-3,ip_tos-0,ip_tos-1,ip_tos-2,ip_tos-3,ip_tos-4,ip_tos-5,ip_tos-6,ip_tos-7,ip_ttl-0,ip_ttl-1,ip_ttl-2,ip_ttl-3,ip_ttl-4,ip_ttl-5,ip_ttl-6,ip_ttl-7,tcp_dataofs-0,tcp_dataofs-1,tcp_dataofs-2,tcp_dataofs-3,tcp_window-0,tcp_window-1,tcp_window-2,tcp_window-3,tcp_window-4,tcp_window-5,tcp_window-6,tcp_window-7,tcp_window-8,tcp_window-9,tcp_window-10,tcp_window-11,tcp_window-12,tcp_window-13,tcp_window-14,tcp_window-15,udp_len-0,udp_len-1,udp_len-2,udp_len-3,udp_len-4,udp_len-5,udp_len-6,udp_len-7,udp_len-8,udp_len-9,udp_len-10,udp_len-11,udp_len-12,udp_len-13,udp_len-14,udp_len-15,length-0,length-1,length-2,length-3,length-4,length-5,length-6,length-7,length-8,length-9,length-10,length-11,length-12,length-13,length-14,length-15,srcPort,dstPort,protocol,ip_ihl,ip_tos,ip_flags,ip_ttl,tcp_dataofs,tcp_flag,tcp_window,udp_len,length,srcAddr1,srcAddr2,srcAddr3,srcAddr4,dstAddr1,dstAddr2,dstAddr3,dstAddr4,flowSize"
+    },
+    {
+      "path": "univ/univ1-2.csv",
+      "bytes": 250182410,
+      "sha256": "f7880af39d38e98464592d101f94b2c039878164e8d491c6bdbcf09736f89730",
+      "rows_excluding_header": 825854,
+      "header": "srcPort-0,srcPort-1,srcPort-2,srcPort-3,srcPort-4,srcPort-5,srcPort-6,srcPort-7,srcPort-8,srcPort-9,srcPort-10,srcPort-11,srcPort-12,srcPort-13,srcPort-14,srcPort-15,dstPort-0,dstPort-1,dstPort-2,dstPort-3,dstPort-4,dstPort-5,dstPort-6,dstPort-7,dstPort-8,dstPort-9,dstPort-10,dstPort-11,dstPort-12,dstPort-13,dstPort-14,dstPort-15,protocol-0,protocol-1,protocol-2,protocol-3,protocol-4,protocol-5,protocol-6,protocol-7,ip_ihl-0,ip_ihl-1,ip_ihl-2,ip_ihl-3,ip_tos-0,ip_tos-1,ip_tos-2,ip_tos-3,ip_tos-4,ip_tos-5,ip_tos-6,ip_tos-7,ip_ttl-0,ip_ttl-1,ip_ttl-2,ip_ttl-3,ip_ttl-4,ip_ttl-5,ip_ttl-6,ip_ttl-7,tcp_dataofs-0,tcp_dataofs-1,tcp_dataofs-2,tcp_dataofs-3,tcp_window-0,tcp_window-1,tcp_window-2,tcp_window-3,tcp_window-4,tcp_window-5,tcp_window-6,tcp_window-7,tcp_window-8,tcp_window-9,tcp_window-10,tcp_window-11,tcp_window-12,tcp_window-13,tcp_window-14,tcp_window-15,udp_len-0,udp_len-1,udp_len-2,udp_len-3,udp_len-4,udp_len-5,udp_len-6,udp_len-7,udp_len-8,udp_len-9,udp_len-10,udp_len-11,udp_len-12,udp_len-13,udp_len-14,udp_len-15,length-0,length-1,length-2,length-3,length-4,length-5,length-6,length-7,length-8,length-9,length-10,length-11,length-12,length-13,length-14,length-15,srcPort,dstPort,protocol,ip_ihl,ip_tos,ip_flags,ip_ttl,tcp_dataofs,tcp_flag,tcp_window,udp_len,length,srcAddr1,srcAddr2,srcAddr3,srcAddr4,dstAddr1,dstAddr2,dstAddr3,dstAddr4,flowSize"
+    }
+  ],
+  "weights": "No pretrained model weight file found; bundled rule/ternary text manifests in source_manifest.json"
+}

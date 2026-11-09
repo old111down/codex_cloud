@@ -1,0 +1,323 @@
+{
+  "paper_id": "yatc",
+  "round": "autonomous-20261109",
+  "new_execution": true,
+  "reproduction_level": "R1",
+  "original_readme_success": false,
+  "static_audit_complete": false,
+  "reason": "Full paper blocked; complete experiment inventory Unknown. All public code inspected. R1 applies only compatibility-assisted synthetic functions.",
+  "runs": [
+    {
+      "run_id": "clone",
+      "phase": "source",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/clone.json",
+        "logs/yatc/clone.log"
+      ]
+    },
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/conda_create.json",
+        "logs/yatc/conda_create.log"
+      ]
+    },
+    {
+      "run_id": "install_torch_original",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/install_torch_original.json",
+        "logs/yatc/install_torch_original.log"
+      ]
+    },
+    {
+      "run_id": "install_pinned_dependencies",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Audit-selected protobuf3.20.3 conflicts with TensorBoard2.10.1; fixed request protobuf3.19.6, not upstream defect",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/install_pinned_dependencies.json",
+        "logs/yatc/install_pinned_dependencies.log"
+      ]
+    },
+    {
+      "run_id": "install_dependencies_compatible",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/install_dependencies_compatible.json",
+        "logs/yatc/install_dependencies_compatible.log"
+      ]
+    },
+    {
+      "run_id": "readme_pretrain",
+      "phase": "original_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "torch.utils.tensorboard imports distutils.version attribute absent in this new dependency environment",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/readme_pretrain.json",
+        "logs/yatc/readme_pretrain.log"
+      ]
+    },
+    {
+      "run_id": "readme_finetune",
+      "phase": "original_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "torch.utils.tensorboard imports distutils.version attribute absent in this new dependency environment",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/readme_finetune.json",
+        "logs/yatc/readme_finetune.log"
+      ]
+    },
+    {
+      "run_id": "original_timm_import",
+      "phase": "original_import",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "timm0.3.2 imports torch._six.container_abcs removed from declared torch1.9",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/original_timm_import.json",
+        "logs/yatc/original_timm_import.log"
+      ]
+    },
+    {
+      "run_id": "import_patch_check",
+      "phase": "compatibility_patch",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/import_patch_check.json",
+        "logs/yatc/import_patch_check.log"
+      ]
+    },
+    {
+      "run_id": "import_patch_apply",
+      "phase": "compatibility_patch",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/import_patch_apply.json",
+        "logs/yatc/import_patch_apply.log"
+      ]
+    },
+    {
+      "run_id": "readme_pretrain_import_patched",
+      "phase": "patched_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Dataset ./data/ISCXVPN2016_MFR/train not acquired",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/readme_pretrain_import_patched.json",
+        "logs/yatc/readme_pretrain_import_patched.log"
+      ]
+    },
+    {
+      "run_id": "readme_finetune_compat",
+      "phase": "compatibility_command",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Dataset ./data/ISCXVPN2016_MFR/train not acquired",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/readme_finetune_compat.json",
+        "logs/yatc/readme_finetune_compat.log"
+      ]
+    },
+    {
+      "run_id": "synthetic_smoke",
+      "phase": "smoke",
+      "input_kind": "synthetic",
+      "metrics": {
+        "mae_parameters": 2331460,
+        "classifier_parameters": 1859335,
+        "mae_loss": 0.871423602104187,
+        "classification_logits_shape": [
+          2,
+          7
+        ],
+        "masked_patch_counts": [
+          361.0,
+          361.0
+        ]
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper result reproduction",
+        "Full paper unavailable",
+        "No real data/checkpoint"
+      ],
+      "evidence_files": [
+        "logs/yatc/synthetic_smoke.json",
+        "logs/yatc/synthetic_smoke.log"
+      ]
+    },
+    {
+      "run_id": "engine_cpu_probe",
+      "phase": "original_engine_cpu",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "Unconditional torch.cuda.synchronize at engine.py:148 on CPU build",
+      "limitations": [
+        "No paper result reproduction",
+        "Full paper unavailable",
+        "No real data/checkpoint"
+      ],
+      "evidence_files": [
+        "logs/yatc/engine_cpu_probe.json",
+        "logs/yatc/engine_cpu_probe.log"
+      ]
+    },
+    {
+      "run_id": "cpu_patch_check",
+      "phase": "compatibility_patch",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/cpu_patch_check.json",
+        "logs/yatc/cpu_patch_check.log"
+      ]
+    },
+    {
+      "run_id": "cpu_patch_apply",
+      "phase": "compatibility_patch",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Only this logged phase attempted"
+      ],
+      "evidence_files": [
+        "logs/yatc/cpu_patch_apply.json",
+        "logs/yatc/cpu_patch_apply.log"
+      ]
+    },
+    {
+      "run_id": "engine_cpu_patched",
+      "phase": "patched_engine_cpu",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper result reproduction",
+        "Full paper unavailable",
+        "No real data/checkpoint"
+      ],
+      "evidence_files": [
+        "logs/yatc/engine_cpu_patched.json",
+        "logs/yatc/engine_cpu_patched.log"
+      ]
+    },
+    {
+      "run_id": "metric_semantics",
+      "phase": "metric_semantics",
+      "input_kind": "synthetic",
+      "metrics": {
+        "reported_macro_f1": 0.45,
+        "actual_weighted_f1": 0.45,
+        "actual_macro_f1": 0.15
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper result reproduction",
+        "Full paper unavailable",
+        "No real data/checkpoint"
+      ],
+      "evidence_files": [
+        "logs/yatc/metric_semantics.json",
+        "logs/yatc/metric_semantics.log"
+      ]
+    }
+  ]
+}

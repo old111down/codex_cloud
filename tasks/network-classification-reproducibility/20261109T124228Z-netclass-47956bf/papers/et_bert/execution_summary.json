@@ -1,0 +1,735 @@
+{
+  "paper_id": "et_bert",
+  "reproduction_level": "R1",
+  "paper_result_reproduction": "Unknown",
+  "real_data_run": false,
+  "upstream_commit": "d59470624acd11405f9e88da650cf3bf65521e9a",
+  "runs": [
+    {
+      "run_id": "audit_extra_dependencies",
+      "phase": "environment",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/audit_extra_dependencies.json",
+      "evidence_files": [
+        "logs/et_bert/audit_extra_dependencies.json",
+        "logs/et_bert/audit_extra_dependencies.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "clone",
+      "phase": "source_acquisition",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/clone.json",
+      "evidence_files": [
+        "logs/et_bert/clone.json",
+        "logs/et_bert/clone.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/conda_create.json",
+      "evidence_files": [
+        "logs/et_bert/conda_create.json",
+        "logs/et_bert/conda_create.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "cpu_base_forward",
+      "phase": "smoke",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "parameter_count": 132127490,
+        "finite_loss": 0.6996548771858215,
+        "input_shape": [
+          2,
+          16
+        ],
+        "forward_wall_seconds_single_observation": 0.1351889330001086,
+        "process_max_rss_kib": 766568
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/cpu_base_forward.json",
+      "evidence_files": [
+        "logs/et_bert/cpu_base_forward.json",
+        "logs/et_bert/cpu_base_forward.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "independent_review",
+      "phase": "patch_application",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/independent_review.json",
+      "evidence_files": [
+        "logs/et_bert/independent_review.json",
+        "logs/et_bert/independent_review.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      }
+    },
+    {
+      "run_id": "install_torch_cpu",
+      "phase": "environment",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/install_torch_cpu.json",
+      "evidence_files": [
+        "logs/et_bert/install_torch_cpu.json",
+        "logs/et_bert/install_torch_cpu.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "loss_equation_probe",
+      "phase": "method_probe",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "input_mlm": 10.0,
+        "input_sp": 2.0,
+        "actual_combined": 3.0,
+        "paper_unweighted_combined_if_same_terms": 12.0,
+        "mlm_gradient": 0.1,
+        "sp_gradient": 1.0
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction",
+        "Tests post-reduction combiner, not full Eq2/3 reduction equivalence"
+      ],
+      "command_metadata": "logs/et_bert/loss_equation_probe.json",
+      "evidence_files": [
+        "logs/et_bert/loss_equation_probe.json",
+        "logs/et_bert/loss_equation_probe.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "loss_equation_probe_location_corrected",
+      "phase": "method_probe",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "input_mlm": 10.0,
+        "input_sp": 2.0,
+        "actual_combined": 3.0,
+        "paper_unweighted_combined_if_same_terms": 12.0,
+        "mlm_gradient": 0.1,
+        "sp_gradient": 1.0
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction",
+        "Tests post-reduction combiner, not full Eq2/3 reduction equivalence"
+      ],
+      "command_metadata": "logs/et_bert/loss_equation_probe_location_corrected.json",
+      "evidence_files": [
+        "logs/et_bert/loss_equation_probe_location_corrected.json",
+        "logs/et_bert/loss_equation_probe_location_corrected.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "patch1_apply",
+      "phase": "patch_application",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/patch1_apply.json",
+      "evidence_files": [
+        "logs/et_bert/patch1_apply.json",
+        "logs/et_bert/patch1_apply.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "patch1_check",
+      "phase": "patch_application",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/patch1_check.json",
+      "evidence_files": [
+        "logs/et_bert/patch1_check.json",
+        "logs/et_bert/patch1_check.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "patch2_apply",
+      "phase": "patch_application",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/patch2_apply.json",
+      "evidence_files": [
+        "logs/et_bert/patch2_apply.json",
+        "logs/et_bert/patch2_apply.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "patch2_check",
+      "phase": "patch_application",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/patch2_check.json",
+      "evidence_files": [
+        "logs/et_bert/patch2_check.json",
+        "logs/et_bert/patch2_check.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "patch_equivalence",
+      "phase": "patch_validation",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "exactly_equal_state_tensors": 41
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/patch_equivalence.json",
+      "evidence_files": [
+        "logs/et_bert/patch_equivalence.json",
+        "logs/et_bert/patch_equivalence.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "readme_classifier",
+      "phase": "original_command",
+      "audit_period": "round2_new_execution",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "ModuleNotFoundError: No module named 'uer'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_classifier.json",
+      "evidence_files": [
+        "logs/et_bert/readme_classifier.json",
+        "logs/et_bert/readme_classifier.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "readme_classifier_pythonpath",
+      "phase": "original_command_with_environment_path",
+      "audit_period": "round2_new_execution",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "FileNotFoundError: [Errno 2] No such file or directory: 'datasets/cstnet-tls1.3/packet/train_dataset.tsv'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_classifier_pythonpath.json",
+      "evidence_files": [
+        "logs/et_bert/readme_classifier_pythonpath.json",
+        "logs/et_bert/readme_classifier_pythonpath.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "readme_inference",
+      "phase": "original_command",
+      "audit_period": "round2_new_execution",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "ModuleNotFoundError: No module named 'run_classifier'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_inference.json",
+      "evidence_files": [
+        "logs/et_bert/readme_inference.json",
+        "logs/et_bert/readme_inference.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "readme_install",
+      "phase": "environment",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_install.json",
+      "evidence_files": [
+        "logs/et_bert/readme_install.json",
+        "logs/et_bert/readme_install.log"
+      ],
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "readme_pretrain",
+      "phase": "original_command",
+      "audit_period": "round2_new_execution",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "ModuleNotFoundError: No module named 'uer'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_pretrain.json",
+      "evidence_files": [
+        "logs/et_bert/readme_pretrain.json",
+        "logs/et_bert/readme_pretrain.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "readme_pretrain_pythonpath",
+      "phase": "original_command_with_environment_path",
+      "audit_period": "round2_new_execution",
+      "input_kind": "unknown",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "AssertionError: No available GPUs.",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/readme_pretrain_pythonpath.json",
+      "evidence_files": [
+        "logs/et_bert/readme_pretrain_pythonpath.json",
+        "logs/et_bert/readme_pretrain_pythonpath.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "scapy_compatibility_install",
+      "phase": "environment",
+      "audit_period": "round2_new_execution",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/scapy_compatibility_install.json",
+      "evidence_files": [
+        "logs/et_bert/scapy_compatibility_install.json",
+        "logs/et_bert/scapy_compatibility_install.log"
+      ],
+      "environment_overrides": {}
+    },
+    {
+      "run_id": "source_behavior_checks",
+      "phase": "source_probe",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "FileNotFoundError: [Errno 2] No such file or directory: b'liblibc.a'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction",
+        "Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown"
+      ],
+      "command_metadata": "logs/et_bert/source_behavior_checks.json",
+      "evidence_files": [
+        "logs/et_bert/source_behavior_checks.json",
+        "logs/et_bert/source_behavior_checks.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "source_behavior_checks_compat",
+      "phase": "source_probe",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/traffic-repro-audit/papers/et_bert/runtime-artifacts/behavior/split/dataset\\\\'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction",
+        "Failure caused by audit harness missing parent output directory, not an upstream defect",
+        "Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown"
+      ],
+      "command_metadata": "logs/et_bert/source_behavior_checks_compat.json",
+      "evidence_files": [
+        "logs/et_bert/source_behavior_checks_compat.json",
+        "logs/et_bert/source_behavior_checks_compat.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "source_behavior_checks_final",
+      "phase": "source_probe",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_train_test_shared_sessions": 11,
+        "synthetic_train_valid_shared_sessions": 10
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction",
+        "Original functions executed with explicit mocked external boundaries; actual paper leakage Unknown"
+      ],
+      "command_metadata": "logs/et_bert/source_behavior_checks_final.json",
+      "evidence_files": [
+        "logs/et_bert/source_behavior_checks_final.json",
+        "logs/et_bert/source_behavior_checks_final.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "run_id": "synthetic_cli_original",
+      "phase": "synthetic_training",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "FileNotFoundError: [Errno 2] No such file or directory: '/data2/lxj/pre-train/results/confusion_matrix'",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/synthetic_cli_original.json",
+      "evidence_files": [
+        "logs/et_bert/synthetic_cli_original.json",
+        "logs/et_bert/synthetic_cli_original.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "synthetic_cli_patched",
+      "phase": "synthetic_training_patched",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_accuracy": 0.5,
+        "test_rows": 4,
+        "correct": 2,
+        "epochs": 1
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/synthetic_cli_patched.json",
+      "evidence_files": [
+        "logs/et_bert/synthetic_cli_patched.json",
+        "logs/et_bert/synthetic_cli_patched.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "synthetic_cpu_pretrain",
+      "phase": "synthetic_pretraining",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "steps": 2,
+        "batch_size": 2,
+        "loss_weight_mlm": 0.1,
+        "loss_weight_sp": 1.0
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/synthetic_cpu_pretrain.json",
+      "evidence_files": [
+        "logs/et_bert/synthetic_cpu_pretrain.json",
+        "logs/et_bert/synthetic_cpu_pretrain.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "synthetic_inference_patched",
+      "phase": "synthetic_inference_patched",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "synthetic_unlabeled_predictions": 2
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/synthetic_inference_patched.json",
+      "evidence_files": [
+        "logs/et_bert/synthetic_inference_patched.json",
+        "logs/et_bert/synthetic_inference_patched.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "synthetic_preprocess",
+      "phase": "synthetic_data_processing",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "No paper dataset/checkpoint or real-data metrics",
+        "Only stated synthetic/metadata/installation scope; not paper result reproduction"
+      ],
+      "command_metadata": "logs/et_bert/synthetic_preprocess.json",
+      "evidence_files": [
+        "logs/et_bert/synthetic_preprocess.json",
+        "logs/et_bert/synthetic_preprocess.log"
+      ],
+      "environment_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/workspace/traffic-repro-audit/upstream/et_bert"
+      }
+    },
+    {
+      "run_id": "prepare_synthetic_inputs",
+      "phase": "synthetic_input_preparation",
+      "audit_period": "round2_new_execution",
+      "input_kind": "synthetic",
+      "metrics": {
+        "files": 5
+      },
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "",
+      "limitations": [
+        "Deterministic artificial text, not real network traffic or paper dataset"
+      ],
+      "command_metadata": "logs/et_bert/prepare_synthetic_inputs.json",
+      "evidence_files": [
+        "logs/et_bert/prepare_synthetic_inputs.json",
+        "logs/et_bert/prepare_synthetic_inputs.log",
+        "evidence/et_bert/synthetic_input_manifest.json"
+      ],
+      "environment_overrides": {}
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "git",
+    "apply",
+    "--check",
+    "--directory=papers/yatc/runtime-artifacts/cpu_patch",
+    "patches/yatc/0002-guard-cuda-synchronization.patch"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:15:41.355502+00:00",
+  "timeout_seconds": 20.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:15:41.359355+00:00",
+  "elapsed_seconds": 0.0038442279997070727
+}

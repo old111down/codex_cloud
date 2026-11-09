@@ -1,0 +1,21 @@
+Batch size:  2
+The number of training instances: 8
+Start training.
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  3.05it/s]100%|██████████| 1/1 [00:00<00:00,  3.05it/s]
+Epoch id: 1, Training steps: 1, Avg loss: 0.697
+Epoch id: 1, Training steps: 2, Avg loss: 0.735
+Epoch id: 1, Training steps: 3, Avg loss: 0.702
+Epoch id: 1, Training steps: 4, Avg loss: 0.683
+Acc. (Correct/Total): 0.5000 (2/4) 
+Test set evaluation.
+Confusion matrix:
+tensor([[0, 0],
+        [2, 2]])
+Traceback (most recent call last):
+  File "fine-tuning/run_classifier.py", line 350, in <module>
+    main()
+  File "fine-tuning/run_classifier.py", line 346, in main
+    evaluate(args, read_dataset(args, args.test_path), True)
+  File "fine-tuning/run_classifier.py", line 227, in evaluate
+    with open("/data2/lxj/pre-train/results/confusion_matrix",'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data2/lxj/pre-train/results/confusion_matrix'

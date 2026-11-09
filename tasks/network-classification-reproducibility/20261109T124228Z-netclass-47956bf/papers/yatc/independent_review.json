@@ -1,0 +1,22 @@
+{
+  "reviewed_at_utc": "2026-11-09T11:24:26.174140+00:00",
+  "review_scope": "Independent read of report, matrix, selected original source, patches and original logs; no repeated model execution",
+  "upstream_sha": "a220b75f8365acaf63dbac7df87aaaa357698b85",
+  "upstream_status_porcelain": "",
+  "metric_arithmetic_recomputed_with_stdlib": {
+    "weighted_precision_recall_f1": [
+      0.36,
+      0.6,
+      0.4499999999999999
+    ],
+    "macro_precision_recall_f1": [
+      0.12,
+      0.2,
+      0.14999999999999997
+    ]
+  },
+  "no_paper_metric_validation": true,
+  "tracked_source_hashes_match_manifest": true,
+  "reviewed_matrix_sha256": "ffdc7830729a278eb1bc6ba3222303978414ff5896cc6db5d4228f1fb565b39e",
+  "line_reference_correction_verified": "EVAL-SELECTION now151-152,173-174,308-326"
+}

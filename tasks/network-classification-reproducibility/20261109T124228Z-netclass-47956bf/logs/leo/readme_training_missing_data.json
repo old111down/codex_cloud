@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/leo/bin/python",
+    "/workspace/traffic-repro-audit/upstream/leo/dataset-simulation/dataset-processor-cicids2017.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/papers/leo/runtime-artifacts/readme",
+  "start_utc": "2026-11-09T11:17:20.202795+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:17:21.875738+00:00",
+  "elapsed_seconds": 1.6729484659999798
+}

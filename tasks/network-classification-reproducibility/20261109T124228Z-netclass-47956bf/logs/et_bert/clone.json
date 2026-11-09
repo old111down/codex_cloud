@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "git",
+    "clone",
+    "https://github.com/linwhitehat/ET-BERT.git",
+    "upstream/et_bert"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:08:43.879774+00:00",
+  "timeout_seconds": 180.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:08:46.603927+00:00",
+  "elapsed_seconds": 2.7241515760001676
+}

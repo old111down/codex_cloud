@@ -1,0 +1,102 @@
+{
+  "mousika": {
+    "A_code_coverage": "部分：main为UNIV示例；ISCX/Bot-IoT及扩展版全部教师/评估/硬件链未闭环",
+    "B_execution": "R1 overall; UNIV prefix component R2; application classification R0",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/mousika/coverage_matrix.csv",
+      "papers/mousika/static_audit.md",
+      "papers/mousika/reproduction_report.md"
+    ]
+  },
+  "etc_noms_2024": {
+    "A_code_coverage": "部分：NIMS样本/模型翻译公开；QUIC/VPN交换机配置与完整三用例评估缺口",
+    "B_execution": "R2 NIMS sample core only; P4 compilation/simulation/hardware Unknown",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/etc_noms_2024/coverage_matrix.csv",
+      "papers/etc_noms_2024/static_audit.md",
+      "papers/etc_noms_2024/reproduction_report.md"
+    ]
+  },
+  "lim": {
+    "A_code_coverage": "核心分类器公开且可运行；原PCAP/4000样本/两基线/资源与在线增量声明未闭环",
+    "B_execution": "R2 author CSV core only; original paper evaluation Unknown",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/lim/coverage_matrix.csv",
+      "papers/lim/static_audit.md",
+      "papers/lim/reproduction_report.md"
+    ]
+  },
+  "flowrest": {
+    "A_code_coverage": "部分：UNIBS/UNSW示例和转换器；扩展流管理模拟器/成本约束/多数实验路径缺失",
+    "B_execution": "R2 public CSV components only; time-alignment sensitivity is a separate non-equivalent run",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/flowrest/coverage_matrix.csv",
+      "papers/flowrest/static_audit.md",
+      "papers/flowrest/reproduction_report.md"
+    ]
+  },
+  "leo": {
+    "A_code_coverage": "部分：训练/文本生成/资源模型；完整特征提取、瞬态控制面和全部原始评估缺口",
+    "B_execution": "R1 software text-generation/resource components only; no P4 execution",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/leo/coverage_matrix.csv",
+      "papers/leo/static_audit.md",
+      "papers/leo/reproduction_report.md"
+    ]
+  },
+  "linc": {
+    "A_code_coverage": "部分：分类/规则/增量核心存在，公开示例覆盖不完整；P4源码与原始三任务评估未闭环",
+    "B_execution": "R1 synthetic CPU components with disclosed compatibility fixes; no real-data R2",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/linc/coverage_matrix.csv",
+      "papers/linc/static_audit.md",
+      "papers/linc/reproduction_report.md"
+    ]
+  },
+  "et_bert": {
+    "A_code_coverage": "预训练/微调/推理主要模块存在；完整原数据/七数据集实验协议未闭环，损失/配置与论文有差异",
+    "B_execution": "R1 random-weight base forward and synthetic tiny training only",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/et_bert/coverage_matrix.csv",
+      "papers/et_bert/static_audit.md",
+      "papers/et_bert/reproduction_report.md"
+    ]
+  },
+  "yatc": {
+    "A_code_coverage": "主要模型/预训练/微调源码存在；全文访问受阻，完整论文图表/任务覆盖Unknown",
+    "B_execution": "R1 compatibility-assisted synthetic components only; original README attempts failed",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/yatc/coverage_matrix.csv",
+      "papers/yatc/static_audit.md",
+      "papers/yatc/reproduction_report.md"
+    ]
+  },
+  "lens": {
+    "A_code_coverage": "分类/生成/参考处理模块公开；外部基线、fuzzing后处理、消融/完整扫描缺口；主模型未执行",
+    "B_execution": "R1 metric/data-split component probe only; no language-model training",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/lens/coverage_matrix.csv",
+      "papers/lens/static_audit.md",
+      "papers/lens/reproduction_report.md"
+    ]
+  },
+  "pegasus": {
+    "A_code_coverage": "软件模型和部分P4/BMv2链公开；原权重丢失、特征提取与完整部署链未闭合",
+    "B_execution": "R1 current replacement-weight CPU synthetic inference and P4 text only; no real-data or P4 execution",
+    "C_paper_result_reproduction": "Unknown; no R3/R4 evidence",
+    "evidence": [
+      "papers/pegasus/coverage_matrix.csv",
+      "papers/pegasus/static_audit.md",
+      "papers/pegasus/reproduction_report.md"
+    ]
+  }
+}

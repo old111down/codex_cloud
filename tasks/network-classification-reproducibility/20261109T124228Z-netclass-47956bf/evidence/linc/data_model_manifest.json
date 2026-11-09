@@ -1,0 +1,47 @@
+{
+  "original_datasets": {
+    "iscx_pkl": "Not downloaded; source in README and access probe; hash Unknown",
+    "UNIV1": "Raw or processed LINC dataset not acquired; legacy Mousika loader references absent local Dataset paths",
+    "UNSW_NB15": "Not acquired; no dedicated loader/config supplied"
+  },
+  "external_weights": "Not downloaded or executed",
+  "synthetic_generator": "papers/linc/smoke.py; documented fixed RNG seeds; no network data",
+  "local_runtime_artifacts": [
+    {
+      "path": "papers/linc/runtime-artifacts/synthetic-patched/cache.pkl",
+      "bytes": 2149,
+      "sha256": "a1b07f63e97f2342d0c60bd17edcb755e751cbaeec82e65e85c8fdc58890c34e",
+      "origin": "synthetic audit run"
+    },
+    {
+      "path": "papers/linc/runtime-artifacts/synthetic-patched/rules.txt",
+      "bytes": 19,
+      "sha256": "88733eff86fddc3f153c890fa0f5aa84b7d986737ea4cbc104866472cbb52507",
+      "origin": "synthetic audit run"
+    },
+    {
+      "path": "papers/linc/runtime-artifacts/synthetic-patched/best.pth",
+      "bytes": 17255,
+      "sha256": "20c350acccd0ecff66269653029ba695f81b468bff48a8026fcb9884b4c1134c",
+      "origin": "synthetic audit run"
+    },
+    {
+      "path": "papers/linc/runtime-artifacts/patch-application/requirements.txt",
+      "bytes": 167,
+      "sha256": "ee92d7dbfdb472d352ea6256ed2efe827d71129a767617e048c2924ea34733dc",
+      "origin": "fixed upstream copy; not an independent model"
+    },
+    {
+      "path": "papers/linc/runtime-artifacts/readme-original/requirements.txt",
+      "bytes": 167,
+      "sha256": "ee92d7dbfdb472d352ea6256ed2efe827d71129a767617e048c2924ea34733dc",
+      "origin": "fixed upstream copy; not an independent model"
+    },
+    {
+      "path": "papers/linc/runtime-artifacts/patched/requirements.txt",
+      "bytes": 167,
+      "sha256": "ee92d7dbfdb472d352ea6256ed2efe827d71129a767617e048c2924ea34733dc",
+      "origin": "fixed upstream copy; not an independent model"
+    }
+  ]
+}

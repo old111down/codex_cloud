@@ -1,0 +1,87 @@
+{
+  "paper_id": "lens",
+  "main_model_level": "R0",
+  "main_model_status": "not_attempted",
+  "main_model_command_executed": false,
+  "main_model_failure_reason": "No model command was executed. Full official torch/triton/transformers GPU environment was not built; only independent metric/reference-split diagnostic environment was constructed. Static GPU requirements are not a measured model runtime failure.",
+  "main_model_evidence_files": [
+    "papers/lens/reproduction_report.md",
+    "papers/lens/metadata.json",
+    "environment/host_probe.json"
+  ],
+  "runs": [
+    {
+      "run_id": "metric_conda_create",
+      "phase": "environment_setup",
+      "input_kind": "package_specification_only",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None: command exit0, diagnostic environment setup only",
+      "limitations": [
+        "Not the full official Lens model environment",
+        "No model, tokenizer, real data, or checkpoint test"
+      ],
+      "evidence_files": [
+        "logs/lens/metric_conda_create.json",
+        "logs/lens/metric_conda_create.log",
+        "environment/lens/environment.yml"
+      ],
+      "executed": true,
+      "exit_code": 0
+    },
+    {
+      "run_id": "metric_probe_dependencies",
+      "phase": "environment_setup",
+      "input_kind": "package_specification_only",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None: command exit0, diagnostic environment setup only",
+      "limitations": [
+        "Not the full official Lens model environment",
+        "No model, tokenizer, real data, or checkpoint test"
+      ],
+      "evidence_files": [
+        "logs/lens/metric_probe_dependencies.json",
+        "logs/lens/metric_probe_dependencies.log",
+        "environment/lens/environment.yml"
+      ],
+      "executed": true,
+      "exit_code": 0
+    },
+    {
+      "run_id": "metric_split_probe",
+      "phase": "diagnostic_original_functions",
+      "input_kind": "synthetic_disjoint_point_distributions_and_400_explicit_fake_flow_ids",
+      "metrics": {
+        "original_tvd_disjoint": 0.7071067811865475,
+        "common_standard_tvd_disjoint": 1.0,
+        "original_hd_disjoint": 1.4142135623730951,
+        "common_standard_hellinger_disjoint": 1.0,
+        "coarse_pretrain_count": 240,
+        "fine_test_count": 40,
+        "coarse_pretrain_fine_test_id_overlap": 22,
+        "same_coarse_protocol_pretrain_test_overlap": 0
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "No execution failure; probes confirm normalization and cross-task input-exposure properties, not paper metric failure",
+      "limitations": [
+        "R1 applies only to these directly loaded original metric/reference-split functions",
+        "Main Lens model R0 and not attempted",
+        "Paper gives no explicit TVD/HD formula; custom metric convention remains possible",
+        "Synthetic transductive input exposure is not proof of real-data supervised label leakage",
+        "Actual paper predictions, published split IDs and result effect Unknown"
+      ],
+      "evidence_files": [
+        "logs/lens/metric_split_probe.json",
+        "logs/lens/metric_split_probe.log",
+        "papers/lens/metric_split_probe_results.json",
+        "papers/lens/metric_and_split_probe.py"
+      ],
+      "executed": true,
+      "exit_code": 0
+    }
+  ]
+}

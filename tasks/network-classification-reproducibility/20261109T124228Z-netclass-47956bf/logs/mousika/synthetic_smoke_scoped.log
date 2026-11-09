@@ -1,0 +1,51 @@
+{
+  "kind": "synthetic_component_smoke",
+  "tests": {
+    "TreeClassifier": {
+      "n_synthetic_samples": 32,
+      "predictions_equal_labels": true,
+      "exported_rules_match_synthetic_vectors": false,
+      "known_integration_failure": "invalid literal for int() with base 10: '1.0'"
+    },
+    "SoftTreeClassifier": {
+      "n_synthetic_samples": 32,
+      "predictions_equal_labels": true,
+      "exported_rules_match_synthetic_vectors": true
+    }
+  },
+  "bundled_rule_conversion": [
+    {
+      "path": "upstream/mousika/rule2entry/output/rule_tree/univ/univ_rf_kk0_round0.txt",
+      "rules": 1696,
+      "sha256": "fe073f9ca7559fcb8e47d9990fbea5e0212763885cb174662ccef4123e73c113",
+      "equals_bundled_ternary": true
+    },
+    {
+      "path": "upstream/mousika/rule2entry/output/rule_tree/univ/univ_rf_kk0_round1.txt",
+      "rules": 1700,
+      "sha256": "0c622e47faac95f37200aebcbc1d65d5093bae6c06ec5e0bdef43bda2cb2378b",
+      "equals_bundled_ternary": true
+    },
+    {
+      "path": "upstream/mousika/rule2entry/output/rule_tree/univ/univ_rf_kk0_round2.txt",
+      "rules": 1689,
+      "sha256": "c9f63d0988d835e917849aa71d04519b449072cd6af4ff16a493adfff759c7b1",
+      "equals_bundled_ternary": true
+    },
+    {
+      "path": "upstream/mousika/rule2entry/output/rule_tree/univ/univ_rf_kk0_round3.txt",
+      "rules": 1636,
+      "sha256": "1f3e5117d0c615e63797b58754112f48b61ab2322a90dd97eab35f77435dd4a1",
+      "equals_bundled_ternary": true
+    },
+    {
+      "path": "upstream/mousika/rule2entry/output/rule_tree/univ/univ_rf_kk0_round4.txt",
+      "rules": 1700,
+      "sha256": "c5ac00f02bb9617b4e87e7ce4f13ebaa27de2115eb10d25be03aa1cbd69aa5d5",
+      "equals_bundled_ternary": true
+    }
+  ],
+  "paper_accuracy": "Unknown",
+  "P4_compilation": "not run",
+  "hardware": "not run"
+}

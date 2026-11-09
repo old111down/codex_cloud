@@ -1,0 +1,76 @@
+{
+  "scope": "Static AST inspection of original generated calls vs pinned P4 key declarations. Not P4 compilation, BFRT load, or packet simulation",
+  "generated_sha256": "d8bd6d246f70dba3be40d8f4778e3e8074e69d1d75b12551a04883557cb06f53",
+  "generated_bytes": 1356374,
+  "generated_lines": 5885,
+  "call_counts": {
+    "table_feature0": 140,
+    "table_feature1": 8,
+    "table_feature2": 139,
+    "table_feature3": 136,
+    "table_feature4": 64,
+    "table_feature5": 168,
+    "table_feature6": 24,
+    "code_table0": 350,
+    "code_table1": 350,
+    "code_table2": 350,
+    "voting_table": 4096
+  },
+  "feature_ranges": {
+    "feature0": {
+      "bits": 16,
+      "entries": 140,
+      "domain_max": 65535,
+      "invalid_intervals": []
+    },
+    "feature1": {
+      "bits": 3,
+      "entries": 8,
+      "domain_max": 7,
+      "invalid_intervals": [
+        [
+          7,
+          65535
+        ]
+      ]
+    },
+    "feature2": {
+      "bits": 16,
+      "entries": 139,
+      "domain_max": 65535,
+      "invalid_intervals": []
+    },
+    "feature3": {
+      "bits": 16,
+      "entries": 136,
+      "domain_max": 65535,
+      "invalid_intervals": []
+    },
+    "feature4": {
+      "bits": 16,
+      "entries": 64,
+      "domain_max": 65535,
+      "invalid_intervals": []
+    },
+    "feature5": {
+      "bits": 16,
+      "entries": 168,
+      "domain_max": 65535,
+      "invalid_intervals": []
+    },
+    "feature6": {
+      "bits": 5,
+      "entries": 24,
+      "domain_max": 31,
+      "invalid_intervals": [
+        [
+          26,
+          65535
+        ]
+      ]
+    }
+  },
+  "invalid_interval_count": 2,
+  "p4_evidence": "P4/Conference_version/unsw_per_flow_16_classes/unsw_per_flow_16_classes.p4:316-355",
+  "conclusion": "Original generator exits0 but produces two out-of-width terminal intervals; hardware load behavior untested"
+}

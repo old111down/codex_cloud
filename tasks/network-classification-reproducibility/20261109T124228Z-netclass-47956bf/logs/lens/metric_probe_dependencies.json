@@ -1,0 +1,22 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "install",
+    "-y",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-p",
+    "/workspace/traffic-repro-audit/.conda/lens",
+    "pandas=2.2.3",
+    "tqdm=4.67.1"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:22:57.771473+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:23:04.055812+00:00",
+  "elapsed_seconds": 6.284345135999956
+}

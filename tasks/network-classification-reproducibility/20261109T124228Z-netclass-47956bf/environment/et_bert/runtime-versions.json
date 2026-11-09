@@ -1,0 +1,24 @@
+{
+  "python": "3.8.20",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.17",
+  "torch": "1.13.1+cpu",
+  "numpy": "1.19.2",
+  "scipy": "1.6.3",
+  "sklearn": "0.24.2",
+  "scapy": "2.5.0",
+  "cuda_available": false,
+  "torch_cuda": null,
+  "gpu_count": 0,
+  "compiler": "GCC 13.3.0",
+  "system_tools": {
+    "gcc": "/usr/bin/gcc",
+    "g++": "/usr/bin/g++",
+    "nvcc": null,
+    "nvidia-smi": null,
+    "tshark": null,
+    "SplitCap": null,
+    "wine": null
+  },
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "g++": "g++ (Debian 14.2.0-19) 14.2.0"
+}

@@ -1,0 +1,26 @@
+{
+  "argv": [
+    ".tools/miniforge3/bin/conda",
+    "create",
+    "-y",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-p",
+    "/workspace/traffic-repro-audit/.conda/et_bert",
+    "python=3.8",
+    "numpy=1.19.2",
+    "pip",
+    "tqdm",
+    "six",
+    "packaging"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:09:30.943775+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:09:42.991343+00:00",
+  "elapsed_seconds": 12.047563971000045
+}

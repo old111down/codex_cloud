@@ -1,0 +1,12 @@
+--- a/Distillation/SoftTree.py
++++ b/Distillation/SoftTree.py
+@@ -82,7 +82,8 @@
+             for class_id in range(self.class_num):
+                 left_class_sum = np.sum(dataset[index, class_id - self.class_num])
+                 left_sum += left_class_sum ** 2
+-                right_sum += np.sum(dataset[:, class_id - self.class_num]) - left_class_sum
++                right_class_sum = np.sum(dataset[:, class_id - self.class_num]) - left_class_sum
++                right_sum += right_class_sum ** 2
+             left_gini = 1 - left_sum / (left_samples ** 2)
+             right_gini = 1 - right_sum / (right_samples ** 2)
+             gain = - (left_samples / end * left_gini + right_samples / end * right_gini)

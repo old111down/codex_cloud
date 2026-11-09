@@ -1,0 +1,102 @@
+{
+  "remote": "https://github.com/haolinyan/LINC",
+  "sha": "4a44171c84547de885a54e5f1a234640cd8501d4",
+  "retrieved_utc": "2026-11-09T11:10:10.732270+00:00",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 8196,
+      "sha256": "78d5ad232f1e6491cc0c29534616447ab8539ebd2a75d6b18480b525d050ddfc"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 126,
+      "sha256": "819e98dadd6ccbdc7631ad850a32688f27783541af05e7053b8ac5a82e66d0c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2712,
+      "sha256": "0f2b99562708ebed8ffbc7d59b1e0b148e8fba423a13f099e727f0917539de87"
+    },
+    {
+      "path": "assets/heatmap.html",
+      "bytes": 6045,
+      "sha256": "f241b88963baf42ec642b7405861b5a5099020d4ca93fdef86287055aa87ba13"
+    },
+    {
+      "path": "assets/heatmap.png",
+      "bytes": 149658,
+      "sha256": "17b98315785b72017a9fcc0e8c7d630d2a264085c3b16624e1311431ec5fe664"
+    },
+    {
+      "path": "assets/image.png",
+      "bytes": 225221,
+      "sha256": "7a7caf23ec8f9690d1695353c979afff2b17e4164db4e1aebd051cfa1a65d9c3"
+    },
+    {
+      "path": "linc/DecisionNode.py",
+      "bytes": 3826,
+      "sha256": "b4344ad5ad4561d4ef633ec07421af82eb50b66f24986e168b91928b45d79867"
+    },
+    {
+      "path": "linc/SoftTree.py",
+      "bytes": 6882,
+      "sha256": "02b17c5de9d1038f2fb5627c903242b954a92b33e77ab1dfb8aaf711bc87b3ec"
+    },
+    {
+      "path": "linc/__init__.py",
+      "bytes": 59,
+      "sha256": "9e01a05da3d5ba53490ccf352844e88a8fcff438a84a0e84bf465dece7870881"
+    },
+    {
+      "path": "linc/model.py",
+      "bytes": 12221,
+      "sha256": "445ebc56bc114939e028cffa0419ae1e8270899e59a6f8e35db38db8dc0a9797"
+    },
+    {
+      "path": "linc/mousika.py",
+      "bytes": 3976,
+      "sha256": "3c3a279990564687f28157cec993b438549ef14d31baca80f2ab571575731bb6"
+    },
+    {
+      "path": "linc/mousika_utils.py",
+      "bytes": 18082,
+      "sha256": "b4f908402efe443071e6d532fb76f2a2bf6cc10c96f036f3cefeaa7bb58b7c3c"
+    },
+    {
+      "path": "linc/ops.py",
+      "bytes": 2830,
+      "sha256": "0bf7de808c9bb47197fb89f975c7c694d0cb7faae94c2d18e96b9dc6c18bf109"
+    },
+    {
+      "path": "linc/simulator.py",
+      "bytes": 5977,
+      "sha256": "cf6efbc41e8803aa40898546fee7d11a230e65655723de3fbe08e90788dc4992"
+    },
+    {
+      "path": "linc/utils.py",
+      "bytes": 7659,
+      "sha256": "97774dbb0cf2679f89b4922d549093943ae9e8f58a3a688475cb13a69007857b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 167,
+      "sha256": "ee92d7dbfdb472d352ea6256ed2efe827d71129a767617e048c2924ea34733dc"
+    },
+    {
+      "path": "train_nn.py",
+      "bytes": 1179,
+      "sha256": "c63baa7d3faec3073deada74b2d9890ea3cfbad131be673aa10456068da93c0f"
+    },
+    {
+      "path": "train_nn_c3.py",
+      "bytes": 1625,
+      "sha256": "a3523fdfd8946ccf956216bad70286999124721243ca57d894be70adb93bd301"
+    },
+    {
+      "path": "update_streaming.py",
+      "bytes": 9235,
+      "sha256": "5755effd1df22dc28629c9d81ce86900ab0123decbdf0e6e2d89a16e1f70908e"
+    }
+  ]
+}

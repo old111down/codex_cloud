@@ -1,0 +1,50 @@
+{
+  "paper_id": "lim",
+  "title": "Less is More: Simplifying Network Traffic Classification Leveraging RFCs",
+  "year": 2025,
+  "venue": "Companion Proceedings of the ACM on Web Conference 2025",
+  "doi": "10.1145/3701716.3715492",
+  "paper_url": "https://doi.org/10.1145/3701716.3715492",
+  "open_paper_url": "https://arxiv.org/abs/2502.00586",
+  "audited_paper_version": "arXiv:2502.00586v2, 2025-02-04, 7 PDF pages; DOI final pagination 1398–1401",
+  "repository_url": "https://github.com/nime-sha256/LiM",
+  "association_status": "已验证",
+  "association_evidence": [
+    "evidence/lim/paper.txt: PDF p2 footnote 1 explicitly states Source code URL",
+    "evidence/lim/README.md: lines 8–13 exact title/authors/DOI"
+  ],
+  "branch": "main",
+  "commit_sha": "1b8ca187f7d02a51e595f797e5c200ae740b459f",
+  "commit_time": "2025-05-24T10:19:07+10:00",
+  "github_pushed_at": "2025-05-24T00:19:08Z",
+  "github_updated_at": "2026-11-05T05:02:12Z",
+  "retrieved_at_utc": "2026-11-09T10:43:10.220703+00:00",
+  "license": "MIT",
+  "task": "encrypted TLS1.3 session/domain classification",
+  "input_unit": "bidirectional session represented by first five TLS packets containing app_data and no handshake; 15 numeric features",
+  "labels": [
+    "apple.com",
+    "cisco.com",
+    "cloudflare.com",
+    "facebook.com",
+    "github.com",
+    "icloud.com",
+    "netflix.com",
+    "nike.com",
+    "nvidia.com",
+    "yahoo.com"
+  ],
+  "datasets": [
+    "CSTNET-TLS1.3 (preprocessed author CSV only; raw traffic absent)"
+  ],
+  "model": "vanilla XGBoost XGBClassifier(eval_metric=mlogloss), StandardScaler before split",
+  "deployment": "offline server CPU classification; real-time suitability is claimed, no streaming deployment implementation",
+  "code_public": true,
+  "data_public": "author preprocessed CSV public; original PCAP availability/access terms Unknown",
+  "weights_public": "No weights in repository; trained in memory",
+  "proprietary_hardware_required": false,
+  "gpu_required_for_lim": false,
+  "gpu_required_for_comparative_paper_setup": "paper uses 4 Tesla T4; baselines not present",
+  "reproduction_level": "R2 for author-supplied CSV core classifier; raw-PCAP preprocessing, original evaluation and resource claims unverified",
+  "upstream_git_status": "clean"
+}

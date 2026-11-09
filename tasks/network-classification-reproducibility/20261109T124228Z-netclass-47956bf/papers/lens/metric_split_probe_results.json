@@ -1,0 +1,48 @@
+{
+  "scope": "Original metric and reference split functions, synthetic inputs only. No Lens model/tokenizer/real traffic, no paper result reproduction.",
+  "versions": {
+    "python": "3.10.22",
+    "numpy": "2.2.4",
+    "pandas": "2.2.3",
+    "scipy": "1.15.2",
+    "scikit_learn": "1.6.1"
+  },
+  "source_sha256": {
+    "upstream/lens/src/lens/utils/metric.py": "743155b226c20052d57cf16463db60fd1a76035818c5a6a5e1bc82918fcb87a0",
+    "upstream/lens/data_preprocessing/2_split_pcap_by_label.py": "891263d32d78350a625dc1645e6f491ba7257b6e17dd192f19c34954e1e52081"
+  },
+  "metric": {
+    "inputs": "two disjoint empirical point-mass distributions",
+    "original_jsd_nats": 0.6931471805599453,
+    "original_tvd": 0.7071067811865475,
+    "common_standard_tvd": 1.0,
+    "original_hd": 1.4142135623730951,
+    "common_standard_hellinger": 1.0,
+    "same_distribution_control": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "interpretation": "Code uses a nonstandard normalization relative to common TVD/Hellinger definitions. Paper does not supply a formula. Could be intentional author convention; Table6 predictions/absolute metric impact remain Unknown."
+  },
+  "reference_split": {
+    "synthetic_flow_records": 400,
+    "coarse_pretrain_rows": 240,
+    "same_coarse_protocol_test_rows": 32,
+    "same_coarse_protocol_pretrain_test_overlap": 0,
+    "independent_fine_protocol_test_rows": 40,
+    "coarse_pretrain_fine_test_overlap": 22,
+    "example_synthetic_ids": [
+      "SYNTHETIC/coarse0/fine0_0/flow10.pcap",
+      "SYNTHETIC/coarse0/fine0_0/flow22.pcap",
+      "SYNTHETIC/coarse0/fine0_0/flow28.pcap",
+      "SYNTHETIC/coarse0/fine0_1/flow10.pcap",
+      "SYNTHETIC/coarse0/fine0_1/flow14.pcap",
+      "SYNTHETIC/coarse0/fine0_1/flow28.pcap",
+      "SYNTHETIC/coarse0/fine0_2/flow14.pcap",
+      "SYNTHETIC/coarse0/fine0_2/flow22.pcap"
+    ],
+    "interpretation": "The reference pipeline can expose downstream test inputs in coarse pretraining when independent granular-task manifests share source records. This is transductive input exposure, not proof of supervised label leakage; actual released artifacts and paper protocol disjointness remain Unknown."
+  },
+  "upstream_modified": false
+}

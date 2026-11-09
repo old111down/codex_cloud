@@ -1,0 +1,44 @@
+--- a/linc/utils.py
++++ b/linc/utils.py
+@@ -125,7 +125,7 @@
+             masks.append(mask)
+             use_keys = keys * mask  # (N, in_fea)
+             X = use_keys * 2 - 1
+-            X = torch.from_numpy(X.astype("float32")).cuda()
++            X = torch.from_numpy(X.astype("float32")).to(next(model.parameters()).device)
+             with torch.no_grad():
+                 scores.append(nnu(X).cpu().numpy())
+ 
+--- a/linc/simulator.py
++++ b/linc/simulator.py
+@@ -71,7 +71,8 @@
+         self.switch = Switch(
+             in_fea, keys, masks, values, scores, num_classes=num_classes
+         )
+-        self.switch = self.switch.cuda()
++        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
++        self.switch = self.switch.to(self.device)
+         self.switch.eval()
+         self.num_rules = len(keys)
+ 
+@@ -86,8 +87,8 @@
+             end = time.time()
+             for i, batch in enumerate(loader):
+                 allocate_gt_y += batch[1].numpy().tolist()
+-                X = batch[0].cuda()
+-                y = batch[1].cuda()
++                X = batch[0].to(self.device)
++                y = batch[1].to(self.device)
+                 pred_label = (
+                     self.switch((X + 1) / 2, y, num_drop=num_drop, cache=cache)
+                     .cpu()
+@@ -98,7 +99,8 @@
+                 n = X.size(0)
+                 acc = accuracy_score(batch[1].numpy().flatten(), pred_label) * 100
+                 top1_switch.update(acc, n)
+-                torch.cuda.synchronize()
++                if self.device.type == "cuda":
++                    torch.cuda.synchronize()
+ 
+                 # measure elapsed time
+                 batch_time.update(time.time() - end)

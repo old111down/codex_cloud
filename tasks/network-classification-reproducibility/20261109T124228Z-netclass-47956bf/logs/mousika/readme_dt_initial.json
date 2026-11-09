@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/traffic-repro-audit/.conda/mousika/bin/python",
+    "dt_test.py"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/mousika/Distillation",
+  "start_utc": "2026-11-09T10:45:54.871185+00:00",
+  "end_utc": "2026-11-09T10:45:55.691375+00:00",
+  "exit_code": 1,
+  "elapsed_seconds": 0.8201502640000058,
+  "timeout_seconds": 30.0,
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+}

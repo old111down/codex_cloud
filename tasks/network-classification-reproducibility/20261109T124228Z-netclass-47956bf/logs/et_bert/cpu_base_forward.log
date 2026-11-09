@@ -1,0 +1,41 @@
+{
+  "scope": "Synthetic CPU forward of unmodified Classifier with original base_config: no pretrained weights, no paper data, no accuracy reproduction",
+  "architecture": {
+    "layers": 12,
+    "heads": 12,
+    "hidden_size": 768,
+    "embedding_size": 768,
+    "feedforward_size": 3072,
+    "vocab_size": 60005,
+    "input_shape": [
+      2,
+      16
+    ]
+  },
+  "parameter_count": 132127490,
+  "seed": 7,
+  "threads": 1,
+  "cli_dropout": 0.5,
+  "effective_config_dropout": 0.1,
+  "input_sha256": "9bd6300139c714ca5be82c3c61267893eb240819faef3bb2148df0cef467ee12",
+  "logits_shape": [
+    2,
+    2
+  ],
+  "finite_loss": 0.6996548771858215,
+  "forward_wall_seconds_single_observation": 0.1351889330001086,
+  "max_rss_kib_process": 766568,
+  "metrics": {
+    "paper_accuracy": "Unknown",
+    "paper_precision": "Unknown",
+    "paper_recall": "Unknown",
+    "paper_f1": "Unknown"
+  },
+  "limitations": [
+    "Artificial tokens and two synthetic labels",
+    "No pretraining or original checkpoint",
+    "Sequence16 not paper pretraining512; same base width/depth",
+    "Dropout0.1 from config overwrites requested0.5",
+    "Timing is a functional one-off observation, not comparable inference benchmark"
+  ]
+}

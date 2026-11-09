@@ -1,0 +1,22 @@
+--- a/engine.py
++++ b/engine.py
+@@ -63,7 +63,8 @@
+         if (data_iter_step + 1) % accum_iter == 0:
+             optimizer.zero_grad()
+ 
+-        torch.cuda.synchronize()
++        if device.type == "cuda":
++            torch.cuda.synchronize(device)
+ 
+         metric_logger.update(loss=loss_value)
+ 
+@@ -145,7 +146,8 @@
+         if (data_iter_step + 1) % accum_iter == 0:
+             optimizer.zero_grad()
+ 
+-        torch.cuda.synchronize()
++        if device.type == "cuda":
++            torch.cuda.synchronize(device)
+ 
+         metric_logger.update(loss=loss_value)
+         min_lr = 10.

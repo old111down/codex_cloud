@@ -1,0 +1,30 @@
+{
+  "scope": "Deterministic artificial hex-token fixtures only; no real traffic, no paper dataset or label meaning",
+  "files": [
+    {
+      "path": "papers/et_bert/runtime-artifacts/train.tsv",
+      "bytes": 229,
+      "sha256": "19516eb6f8b96163db04bcdd63efc86944fab6869260882f13f3c4bb25e0aa69"
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/dev.tsv",
+      "bytes": 121,
+      "sha256": "a2cec854f09ef1d6a8014397e95e1f12e9a75765275d624c0a2ce0a1fd862abb"
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/test.tsv",
+      "bytes": 121,
+      "sha256": "a2cec854f09ef1d6a8014397e95e1f12e9a75765275d624c0a2ce0a1fd862abb"
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/unlabeled.tsv",
+      "bytes": 37,
+      "sha256": "2d45cfab6a662d705c6cade77f77f9e9a96e821fa95318f9d6b2d0312d613578"
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_burst_corpus.txt",
+      "bytes": 1464,
+      "sha256": "2d362faabbcd18d3223ff9133c5ef5632641fb73ff9c4cb37e6f89bfd8a37b34"
+    }
+  ]
+}

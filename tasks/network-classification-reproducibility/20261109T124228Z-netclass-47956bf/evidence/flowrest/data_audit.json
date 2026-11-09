@@ -1,0 +1,249 @@
+{
+  "unibs2009_train_3_pkt.csv": {
+    "rows": 20664,
+    "columns": [
+      "Flow ID",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Total",
+      "Packet Count",
+      "Current Packet Length",
+      "Flow IAT Min",
+      "Flow IAT Max",
+      "Flow IAT Mean",
+      "Flow Duration",
+      "SYN Flag Count",
+      "ACK Flag Count",
+      "PSH Flag Count",
+      "FIN Flag Count",
+      "RST Flag Count",
+      "ECE Flag Count",
+      "Source Port",
+      "Destination Port",
+      "Protocol",
+      "Label"
+    ],
+    "sha256": "9248dac688abd80870aaa6cfaa4507c7ba5521979bcd49aef78514edf69fbf23",
+    "null_cells": 0,
+    "exact_duplicate_rows": 0,
+    "flow_id_unique": 20664,
+    "label_counts": {
+      "http": 13029,
+      "bittorrent": 4696,
+      "ssl": 1828,
+      "skype": 549,
+      "edonkey": 285,
+      "pop3": 185,
+      "smtp": 61,
+      "imap": 31
+    },
+    "time_quantiles": {
+      "Flow Duration": {
+        "0.0": 0.0,
+        "0.5": 32200000.0,
+        "0.9": 997949700.0,
+        "1.0": 69332835603000.0
+      },
+      "Flow IAT Min": {
+        "0.0": 0.0,
+        "0.5": 533500.0,
+        "0.9": 184280600.00000003,
+        "1.0": 7199823775000.0
+      },
+      "Flow IAT Max": {
+        "0.0": 0.0,
+        "0.5": 29324000.0,
+        "0.9": 765276100.0000001,
+        "1.0": 69327449869000.0
+      }
+    }
+  },
+  "unibs2009_test_3_pkt.csv": {
+    "rows": 19636,
+    "columns": [
+      "Flow ID",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Total",
+      "Packet Count",
+      "Current Packet Length",
+      "Flow IAT Min",
+      "Flow IAT Max",
+      "Flow IAT Mean",
+      "Flow Duration",
+      "SYN Flag Count",
+      "ACK Flag Count",
+      "PSH Flag Count",
+      "FIN Flag Count",
+      "RST Flag Count",
+      "ECE Flag Count",
+      "Source Port",
+      "Destination Port",
+      "Protocol",
+      "Label"
+    ],
+    "sha256": "09c34197320dcf7a1cf2ba1eb0ec358e9789a5d8bbe817f3c2fb5c33f4942973",
+    "null_cells": 0,
+    "exact_duplicate_rows": 0,
+    "flow_id_unique": 19636,
+    "label_counts": {
+      "http": 15744,
+      "ssl": 1915,
+      "bittorrent": 952,
+      "skype": 573,
+      "pop3": 253,
+      "edonkey": 98,
+      "smtp": 59,
+      "imap": 42
+    },
+    "time_quantiles": {
+      "Flow Duration": {
+        "0.0": 0.0,
+        "0.5": 38921000.0,
+        "0.9": 212820500.0,
+        "1.0": 14926475259000.0
+      },
+      "Flow IAT Min": {
+        "0.0": 0.0,
+        "0.5": 710000.0,
+        "0.9": 17708000.0,
+        "1.0": 4630095023000.0
+      },
+      "Flow IAT Max": {
+        "0.0": 0.0,
+        "0.5": 24312500.0,
+        "0.9": 204761000.0,
+        "1.0": 14583883003000.0
+      }
+    }
+  },
+  "full_split_checks": {
+    "same_flow_id_strings_across_train_test": 182,
+    "interpretation": "Flow IDs can recur on different days; raw dates/session provenance absent. This count alone is not confirmed train-test leakage."
+  },
+  "rf3_train.csv": {
+    "rows": 250261,
+    "columns": [
+      "Flow ID",
+      "Src MAC",
+      "Dst MAC",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Total",
+      "Packet Count",
+      "Current Packet Length",
+      "Flow IAT Min",
+      "Flow IAT Max",
+      "Flow IAT Mean",
+      "Flow Duration",
+      "SYN Flag Count",
+      "ACK Flag Count",
+      "PSH Flag Count",
+      "FIN Flag Count",
+      "RST Flag Count",
+      "ECE Flag Count",
+      "Source Port",
+      "Destination Port",
+      "Protocol",
+      "Label"
+    ],
+    "sha256": "be3b090fe07e45ff4e0889df20755d428be78a247aa8512ca9c4bc44551939bb",
+    "null_cells": 0,
+    "exact_duplicate_rows": 0,
+    "flow_id_unique": 178128,
+    "label_counts": {
+      "other": 101099,
+      "video": 53740,
+      "sensor": 47815,
+      "static": 29880,
+      "audio": 17624,
+      "unknown": 103
+    },
+    "time_quantiles": {
+      "Flow Duration": {
+        "0.0": 94.0,
+        "0.5": 145040.0,
+        "0.9": 2499544.0,
+        "1.0": 84057541947.0
+      },
+      "Flow IAT Min": {
+        "0.0": 25.0,
+        "0.5": 2762.0,
+        "0.9": 1011011.0,
+        "1.0": 41783985447.0
+      },
+      "Flow IAT Max": {
+        "0.0": 61.0,
+        "0.5": 139301.0,
+        "0.9": 1631970.0,
+        "1.0": 84057386024.0
+      }
+    }
+  },
+  "rf3_test.csv": {
+    "rows": 88255,
+    "columns": [
+      "Flow ID",
+      "Src MAC",
+      "Dst MAC",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Total",
+      "Packet Count",
+      "Current Packet Length",
+      "Flow IAT Min",
+      "Flow IAT Max",
+      "Flow IAT Mean",
+      "Flow Duration",
+      "SYN Flag Count",
+      "ACK Flag Count",
+      "PSH Flag Count",
+      "FIN Flag Count",
+      "RST Flag Count",
+      "ECE Flag Count",
+      "Source Port",
+      "Destination Port",
+      "Protocol",
+      "Label"
+    ],
+    "sha256": "e2a8d5d28b1b3d502624fc847710195e8c04654a8334aa1b4036515c64334026",
+    "null_cells": 0,
+    "exact_duplicate_rows": 0,
+    "flow_id_unique": 76051,
+    "label_counts": {
+      "other": 40327,
+      "video": 19165,
+      "sensor": 14372,
+      "static": 8426,
+      "audio": 5965
+    },
+    "time_quantiles": {
+      "Flow Duration": {
+        "0.0": 62.0,
+        "0.5": 151755.0,
+        "0.9": 9008795.400000019,
+        "1.0": 83099171021.0
+      },
+      "Flow IAT Min": {
+        "0.0": 26.0,
+        "0.5": 2847.0,
+        "0.9": 1009524.6,
+        "1.0": 29700019497.0
+      },
+      "Flow IAT Max": {
+        "0.0": 36.0,
+        "0.5": 149914.0,
+        "0.9": 7751003.400000614,
+        "1.0": 82802764551.0
+      }
+    }
+  },
+  "conference_split_checks": {
+    "same_flow_id_strings_across_train_test": 17171,
+    "interpretation": "Flow IDs can recur on different days; raw dates/session provenance absent. This count alone is not confirmed train-test leakage."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "observed_at_utc": "2026-11-09T11:30:02.128397+00:00",
+  "elapsed_seconds": 1418.128397,
+  "progress": {
+    "screened_records": 37,
+    "paper_families": 36,
+    "included_paper_families": 35,
+    "verified_included_paper_families": 30,
+    "association_verified_records": 31,
+    "static_audits": 9,
+    "coverage_rows": 491,
+    "command_records": 130,
+    "new_round_command_records": 95,
+    "new_round_runtime_attempt_projects": [
+      "et_bert",
+      "flowrest",
+      "leo",
+      "linc",
+      "yatc"
+    ],
+    "new_round_successful_algorithm_test_projects": [
+      "et_bert",
+      "flowrest",
+      "leo",
+      "linc",
+      "yatc"
+    ]
+  },
+  "completed": [
+    "Expanded screening and fixed source associations",
+    "Five additional established audit packages plus Lens package under final review",
+    "Real public Flowrest CSV core runs and one-factor sensitivity",
+    "Bounded CPU synthetic/component runs and archived failures",
+    "Independent reviews of ET-BERT/LINC/Flowrest/YaTC/Leo"
+  ],
+  "blocked": [
+    "YaTC official full text denied; paper experiment inventory Unknown",
+    "No original full datasets/checkpoints for several pipelines",
+    "No installed historical SDE or physical switch; public SDK availability separately confirmed"
+  ],
+  "remaining": [
+    "Finish Pegasus source/run review",
+    "Finalize Lens independent review",
+    "Validate unified tables, source references and exact counts",
+    "Write final recommendations and seal evidence/Git archive"
+  ]
+}

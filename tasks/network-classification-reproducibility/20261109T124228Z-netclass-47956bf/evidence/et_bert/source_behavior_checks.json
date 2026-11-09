@@ -1,0 +1,28 @@
+{
+  "scope": "Original source functions with synthetic inputs; not evidence that the paper train/test actually overlapped",
+  "header_behavior": {
+    "function": "data_process/dataset_generation.py:get_burst_feature",
+    "mock_boundary": "flowcontainer.extract only; direction lengths supplied as [+118,+118]",
+    "input_pcap_sha256": "b6c0d136ef8c2e981e7e8643233f64e7e18968337d13e454e52f1f901e183c49",
+    "input_ethernet_destination": "aa:bb:cc:dd:ee:ff",
+    "pretraining_first_token": "aabb",
+    "fine_tuning_first_token_after_fixed_38_byte_slice": "0000",
+    "confirmed": "This BURST helper retains frame headers; alternate vocab_process.preprocess strips first38bytes. Which branch generated the paper corpus is Unknown."
+  },
+  "split_behavior": {
+    "function": "data_process/main.py:dataset_extract",
+    "mock_boundary": "dataset_generation.generation returns160 synthetic packet rows from20 known sessions; models_deal collects arrays after original splitting",
+    "split_sizes": {
+      "train": 128,
+      "test": 16,
+      "valid": 16
+    },
+    "session_overlap_counts": {
+      "train_test": 11,
+      "train_valid": 10,
+      "test_valid": 4
+    },
+    "confirmed": "Default code stratifies packet rows without session groups; same-session packet rows can cross splits.",
+    "not_established": "Actual published dataset train/test leakage, its magnitude, or effects on paper scores remain Unknown."
+  }
+}

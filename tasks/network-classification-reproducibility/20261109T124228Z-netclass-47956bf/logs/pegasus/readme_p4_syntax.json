@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+    "codegen.py",
+    "mlp16.p4g",
+    "/workspace/traffic-repro-audit/papers/pegasus/runtime-artifacts/p4syntax/mlp16.p4"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/hardware/p4_syntax",
+  "start_utc": "2026-11-09T11:28:41.650546+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:28:41.865220+00:00",
+  "elapsed_seconds": 0.21469665399990845
+}

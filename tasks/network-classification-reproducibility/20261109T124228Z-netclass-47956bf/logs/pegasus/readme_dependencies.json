@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.conda/pegasus/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.txt"
+  ],
+  "cwd": "/workspace/traffic-repro-audit/upstream/pegasus/software",
+  "start_utc": "2026-11-09T11:24:59.175009+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:25:25.801309+00:00",
+  "elapsed_seconds": 26.626351012000214
+}

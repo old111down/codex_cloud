@@ -1,0 +1,109 @@
+{
+  "scope": "Original cells subset on bundled real NIMS sample; not full search, CV, packet preprocessing, hardware or paper metric reproduction",
+  "notebook_sha256": "92711008a38d9a219e4709b79ed29fe0e2c0498ae91af3e39dc5dc6d94e327e6",
+  "input_sha256": "dd8090a26c846a7dd15ba9b91881196a4d029cf91abb2aa01f42fec0627e9cac",
+  "executed_cells": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    10,
+    11,
+    12,
+    14,
+    15,
+    18
+  ],
+  "skipped_relevant_cells": {
+    "8": "Hyperparameter/feature grid search",
+    "13": "Full compression search",
+    "16": "Overwrites upstream model",
+    "17": "Overwrites upstream test data",
+    "20-21": "Hardware experiment digest data absent"
+  },
+  "raw_rows": 1867,
+  "filtered_rows": 1714,
+  "train_rows": 1285,
+  "test_rows": 429,
+  "features": [
+    "Flow IAT Min",
+    "Max Packet Length",
+    "Flow IAT Max",
+    "Packet Length Total"
+  ],
+  "class_order": [
+    "Discord",
+    "WhatsApp",
+    "Signal",
+    "Telegram",
+    "Messenger",
+    "Teams"
+  ],
+  "split": "75/25 stratified, random_state=42; original notebook cell6",
+  "compressed_model_accuracy": 0.916083916083916,
+  "compressed_model_classification_report": {
+    "Discord": {
+      "precision": 0.8163265306122449,
+      "recall": 0.851063829787234,
+      "f1-score": 0.8333333333333334,
+      "support": 47
+    },
+    "WhatsApp": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11
+    },
+    "Signal": {
+      "precision": 0.9642857142857143,
+      "recall": 0.9818181818181818,
+      "f1-score": 0.972972972972973,
+      "support": 110
+    },
+    "Telegram": {
+      "precision": 0.8360655737704918,
+      "recall": 0.85,
+      "f1-score": 0.8429752066115703,
+      "support": 60
+    },
+    "Messenger": {
+      "precision": 0.9879518072289156,
+      "recall": 0.8913043478260869,
+      "f1-score": 0.9371428571428572,
+      "support": 92
+    },
+    "Teams": {
+      "precision": 0.8938053097345132,
+      "recall": 0.926605504587156,
+      "f1-score": 0.9099099099099099,
+      "support": 109
+    },
+    "accuracy": 0.916083916083916,
+    "macro avg": {
+      "precision": 0.9164058226053133,
+      "recall": 0.9167986440031098,
+      "f1-score": 0.9160557133284407,
+      "support": 429
+    },
+    "weighted avg": {
+      "precision": 0.9182262353439529,
+      "recall": 0.916083916083916,
+      "f1-score": 0.9164790888757831,
+      "support": 429
+    }
+  },
+  "cell_seconds": {
+    "0": 2.7402741059999585,
+    "1": 0.0017987170000424157,
+    "2": 9.750199996005904e-05,
+    "4": 0.009306890000004842,
+    "6": 0.003626946999986558,
+    "10": 4.7329999972589576e-05,
+    "11": 0.004083354999977473,
+    "12": 0.03868576200000007,
+    "14": 0.0260255609999831,
+    "15": 0.00016629200001716526,
+    "18": 0.009325336000017614
+  }
+}

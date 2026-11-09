@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/nds-group/ETC_NOMS_2024/blob/52de99ad76d9eff2f64a0fa28df0500e423b58b2/In_switch_ETC/Offline_model_preparation/noms2024_20_5.pkl",
+  "sha256": "bec7a2a71efb2fdf19998ad26a688d2c6d5211445f40b22c8470c32272381371",
+  "method": "Inspected pickletools opcodes and strings before author artifact execution in bounded subprocess; no custom module/global names found; not a formal proof of safety",
+  "visible_globals": [
+    "sklearn.ensemble._forest.RandomForestClassifier",
+    "sklearn.tree._classes.DecisionTreeClassifier",
+    "numpy.core.multiarray._reconstruct",
+    "numpy.ndarray",
+    "numpy.dtype",
+    "numpy.core.multiarray.scalar",
+    "sklearn.tree._tree.Tree"
+  ],
+  "sklearn_version_embedded": "0.23.2",
+  "persistent_or_extension_opcodes": []
+}

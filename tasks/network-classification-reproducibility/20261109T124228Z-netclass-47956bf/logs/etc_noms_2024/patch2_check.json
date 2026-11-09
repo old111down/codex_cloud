@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "git",
+    "apply",
+    "--check",
+    "--directory=papers/etc_noms_2024/runtime-artifacts/patched",
+    "patches/etc_noms_2024/0002-feature-range-domains.patch"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T10:51:26.155911+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T10:51:26.159786+00:00",
+  "elapsed_seconds": 0.003866563999963546
+}

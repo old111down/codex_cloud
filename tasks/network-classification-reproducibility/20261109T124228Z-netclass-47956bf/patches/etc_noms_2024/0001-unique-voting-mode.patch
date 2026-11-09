@@ -1,0 +1,29 @@
+--- a/In_switch_ETC/Offline_model_preparation/generate_table_entries.py
++++ b/In_switch_ETC/Offline_model_preparation/generate_table_entries.py
+@@ -7,7 +7,16 @@
+ from sklearn import tree
+ import re
+ from netaddr import IPAddress
+-from statistics import mode
++from collections import Counter
++
++def unique_mode(values):
++    """Keep only unique modes, matching the bundled P4 table and its fallback."""
++    counts = Counter(values)
++    best = max(counts.values())
++    winners = [value for value, count in counts.items() if count == best]
++    if len(winners) != 1:
++        raise ValueError("no unique mode; use P4 default action")
++    return winners[0]
+ import random
+ import ipaddress
+ 
+@@ -311,7 +320,7 @@
+                     for m in range(1, 7):
+                         try:
+                             choices = [i, j, k, l, m]
+-                            mode_number = mode(choices)
++                            mode_number = unique_mode(choices)
+                             print("voting_table.add_with_set_final_class(" + "class0=" + str(i) + ", class1=" + str(j) + \
+                             ", class2=" + str(k) + ", class3=" + str(l) + ", class4=" + str(m) + \
+                             ", class_result=" + str(mode_number) + ")", file=entries_file)

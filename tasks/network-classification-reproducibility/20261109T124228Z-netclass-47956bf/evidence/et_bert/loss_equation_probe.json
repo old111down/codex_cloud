@@ -1,0 +1,14 @@
+{
+  "scope": "Exact original BertTrainer.forward_propagation combiner with supplied loss tensors; synthetic numeric probe, no paper experiment",
+  "source": "uer/trainer.py:179",
+  "paper_reference": "arXiv2202.06335v2 \u00a73.3 Eq(4): L=L_MBM+L_SBP",
+  "input_loss_mlm": 10.0,
+  "input_loss_sp": 2.0,
+  "accumulation_steps": 1,
+  "paper_equation_value": 12.0,
+  "actual_original_code_value": 3.0,
+  "gradient_wrt_mlm": 0.10000000149011612,
+  "gradient_wrt_sp": 1.0,
+  "confirmed": "Pinned implementation uses relative MBM weight0.1, SBP weight1.0.",
+  "unknown": "Whether original 2022 reported experiments used this implementation, and impact on paper metrics."
+}

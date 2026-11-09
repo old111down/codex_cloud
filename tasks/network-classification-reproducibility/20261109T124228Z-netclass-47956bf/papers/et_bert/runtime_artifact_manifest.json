@@ -1,0 +1,153 @@
+{
+  "observed_at_utc": "2026-11-09T11:24:10.039268+00:00",
+  "scope": "Local runtime files are excluded from Git; hashes preserve provenance, not paper equivalence",
+  "files": [
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/burst.txt",
+      "bytes": 633,
+      "sha256": "81f8e388148d4d61481abd5587484580f5b26088b438e48787d83a70711b1330",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/x_datagram_test.npy",
+      "bytes": 1600,
+      "sha256": "95fa0d46c6dc652c3cce530308144ccf45e1ad807f2ffca007e712f4d101c62e",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/x_datagram_train.npy",
+      "bytes": 11904,
+      "sha256": "512f724991eee376bfbbc1836cfc072d39e2826cd33cc2ed7c63e34d21daa2fc",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/x_datagram_valid.npy",
+      "bytes": 1600,
+      "sha256": "165aff5e499be889f7af1482330aeb4179bc60e78a02bed38d3430ffab3abf28",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/y_test.npy",
+      "bytes": 256,
+      "sha256": "b8ceff0bc14ea7975f89bcf6fa5ff62ef17a9ef840f7e7769e4b31fd17f93b83",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/y_train.npy",
+      "bytes": 1152,
+      "sha256": "c9bb532926eb7ee7517dd43f78d58d89d40918a2d1ae1f263cd0f7967276f0fc",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/split/dataset\\/y_valid.npy",
+      "bytes": 256,
+      "sha256": "904820617751ee10cb95f8eec206232f83bebfc2910c0905657d3ab83e2a27ad",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/behavior/synthetic.pcap",
+      "bytes": 292,
+      "sha256": "b6c0d136ef8c2e981e7e8643233f64e7e18968337d13e454e52f1f901e183c49",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/dev.tsv",
+      "bytes": 121,
+      "sha256": "a2cec854f09ef1d6a8014397e95e1f12e9a75765275d624c0a2ce0a1fd862abb",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/patched/fine-tuning/run_classifier.py",
+      "bytes": 14354,
+      "sha256": "2159ad638a86fe7a1a6dc8c8341816d3cced36e293f5cb5a191d46d94e532a47",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/patched/inference/run_classifier_infer.py",
+      "bytes": 5830,
+      "sha256": "0a88e55aebd8c7af78b3c3fb1df9070e9eb75757d7767cfc5cbdf2f3d45a02f3",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin",
+      "bytes": 32656561,
+      "sha256": "2adff75a6cb1cd4c0d24ade61b2328bf384d5d9b6f8ba625e0d354db0cd21675",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/patched_tiny_synthetic_model.bin.confusion_matrix",
+      "bytes": 12,
+      "sha256": "9d6d3b38ffd3d8080ad74a10f0049b436dcb6bdbb582349fc9083c3dca37df86",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_burst_corpus.txt",
+      "bytes": 1464,
+      "sha256": "2d362faabbcd18d3223ff9133c5ef5632641fb73ff9c4cb37e6f89bfd8a37b34",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_dataset.pt",
+      "bytes": 2792,
+      "sha256": "e118aca672802ad5de29e2d08ffcfc1b42aced1854d44d3953a70299f823c84c",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_predictions.tsv",
+      "bytes": 91,
+      "sha256": "6c002ebbac5fb0f182ec9bd6e985b3029daa15eb92791ba2920faeea900b1355",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/synthetic_pretrained_model.bin-2",
+      "bytes": 63688251,
+      "sha256": "5c2cc6e298776ad10ff2c8d5aeb424dba736873b9ae66183769c7d1e2aa26148",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/test.tsv",
+      "bytes": 121,
+      "sha256": "a2cec854f09ef1d6a8014397e95e1f12e9a75765275d624c0a2ce0a1fd862abb",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/tiny_synthetic_model.bin",
+      "bytes": 32656153,
+      "sha256": "3e7bb41a09f97bc51a36acb54cac297f01c4866ba1f2ec83c37c51d7befdc3d9",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/train.tsv",
+      "bytes": 229,
+      "sha256": "19516eb6f8b96163db04bcdd63efc86944fab6869260882f13f3c4bb25e0aa69",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    },
+    {
+      "path": "papers/et_bert/runtime-artifacts/unlabeled.tsv",
+      "bytes": 37,
+      "sha256": "2d45cfab6a662d705c6cade77f77f9e9a96e821fa95318f9d6b2d0312d613578",
+      "source": "Locally generated synthetic audit input/output or pristine source copy plus documented patch",
+      "paper_data": false
+    }
+  ]
+}

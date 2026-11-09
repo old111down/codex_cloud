@@ -1,0 +1,139 @@
+{
+  "paper_id": "leo",
+  "round": "autonomous_20261109",
+  "runs": [
+    {
+      "run_id": "conda_create",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Environment installation alone is not algorithm validation",
+      "evidence_files": [
+        "logs/leo/conda_create.json",
+        "logs/leo/conda_create.log"
+      ]
+    },
+    {
+      "run_id": "pip_install",
+      "phase": "environment",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "READMEversions plus explicitNumPy/Pythonpatch compatibility choice",
+      "evidence_files": [
+        "logs/leo/pip_install.json",
+        "logs/leo/pip_install.log"
+      ]
+    },
+    {
+      "run_id": "readme_dataplane_sram",
+      "phase": "model_generation",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Only P4 text; no compiler or packets",
+      "evidence_files": [
+        "logs/leo/readme_dataplane_sram.json",
+        "logs/leo/readme_dataplane_sram.log"
+      ]
+    },
+    {
+      "run_id": "readme_resource_model",
+      "phase": "smoke",
+      "input_kind": "analytic parameters",
+      "metrics": {
+        "analytic_table_entries": 511
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "None",
+      "limitations": "Model calculation, not measured hardware resources",
+      "evidence_files": [
+        "logs/leo/readme_resource_model.json",
+        "logs/leo/readme_resource_model.log"
+      ]
+    },
+    {
+      "run_id": "p4_compiler_probe",
+      "phase": "P4_build",
+      "input_kind": "none",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "bf-p4c missing",
+      "limitations": "Version probe only; no build",
+      "evidence_files": [
+        "logs/leo/p4_compiler_probe.json",
+        "logs/leo/p4_compiler_probe.log"
+      ]
+    },
+    {
+      "run_id": "readme_training_missing_data",
+      "phase": "data_processing",
+      "input_kind": "original data missing",
+      "metrics": {},
+      "level": "R0",
+      "paper_comparable": false,
+      "failure_reason": "CICIDS CSV FileNotFoundError",
+      "limitations": "No original real-data model evaluation",
+      "evidence_files": [
+        "logs/leo/readme_training_missing_data.json",
+        "logs/leo/readme_training_missing_data.log"
+      ]
+    },
+    {
+      "run_id": "threshold_counterexample",
+      "phase": "source_diagnostic",
+      "input_kind": "synthetic",
+      "metrics": {
+        "boundary_counterexamples": 2,
+        "stumps_checked": 3
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "Semantic preservation fails for original generatedpredicate",
+      "limitations": "Diagnostic exit0 meanscounterexampleconfirmed, not classifier replication",
+      "evidence_files": [
+        "logs/leo/threshold_counterexample.json",
+        "logs/leo/threshold_counterexample.log"
+      ]
+    },
+    {
+      "run_id": "readme_ctrlplane",
+      "phase": "model_generation",
+      "input_kind": "synthetic",
+      "metrics": {},
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "Transient controlplane support explicitly disabled",
+      "limitations": "No generated BFRTcalls executed",
+      "evidence_files": [
+        "logs/leo/readme_ctrlplane.json",
+        "logs/leo/readme_ctrlplane.log"
+      ]
+    },
+    {
+      "run_id": "integer_domain_diagnostic",
+      "phase": "source_diagnostic",
+      "input_kind": "synthetic bitvectors",
+      "metrics": {
+        "unsigned_domain_counterexamples": 3
+      },
+      "level": "R1",
+      "paper_comparable": false,
+      "failure_reason": "MSB subtraction fails over full unsigned16-bit domain",
+      "limitations": "Not actual P4 simulation; realdata incidenceUnknown",
+      "evidence_files": [
+        "logs/leo/integer_domain_diagnostic.json",
+        "logs/leo/integer_domain_diagnostic.log"
+      ]
+    }
+  ]
+}

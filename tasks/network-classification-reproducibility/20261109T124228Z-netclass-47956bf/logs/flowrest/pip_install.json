@@ -1,0 +1,21 @@
+{
+  "argv": [
+    ".conda/flowrest/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--only-binary=:all:",
+    "--report",
+    "environment/flowrest/pip-install-report.json",
+    "-r",
+    "environment/flowrest/requirements.txt"
+  ],
+  "cwd": "/workspace/traffic-repro-audit",
+  "start_utc": "2026-11-09T11:09:38.254544+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-09T11:10:06.156519+00:00",
+  "elapsed_seconds": 27.901979116999883
+}
