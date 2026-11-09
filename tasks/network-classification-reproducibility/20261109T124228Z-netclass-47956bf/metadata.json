@@ -6,9 +6,9 @@
   "run_id": "20261109T124228Z-netclass-47956bf",
   "archive_repository": "https://github.com/old111down/codex_cloud",
   "start_time_utc": "2026-11-09T11:06:24Z",
-  "end_time_utc": null,
+  "end_time_utc": "2026-11-09T13:03:45.250516+00:00",
   "archive_started_time_utc": "2026-11-09T12:37:16Z",
-  "archive_completed_time_utc": null,
+  "archive_completed_time_utc": "2026-11-09T13:03:45.250516+00:00",
   "original_deadline_utc": "2026-11-09T14:06:24Z",
   "branch": "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf",
   "objective": "Preserve the existing evidence-backed five-year network traffic classification audit as a public-safe snapshot; no experiment is rerun for archiving.",
@@ -3141,6 +3141,15 @@
       "evidence": [
         "reports/reproduction_results.csv"
       ]
+    },
+    {
+      "description": "Persistent archive conventions initialized on main; reviewed task snapshot pushed and remote SHA matched; PR1 opened without merging.",
+      "status": "Verified",
+      "evidence_type": "archive_operation",
+      "evidence": [
+        "logs/archive/checkpoint_remote_verification.json",
+        "logs/archive/pull_request_creation.json"
+      ]
     }
   ],
   "failed_experiments": [
@@ -3242,6 +3251,12 @@
       "status": "Verified",
       "publication_review": "approved",
       "description": "Independent in-session review of public-export safety/minimization and unchanged results, not remote upload."
+    },
+    {
+      "path": "reports/reproduction_levels.md",
+      "status": "Verified",
+      "publication_review": "approved",
+      "description": "Local audit R0–R4 definitions and separation of code/execution/paper evidence."
     }
   ],
   "publication_review": {
@@ -3256,13 +3271,18 @@
     "scope": "Reviewed public export only; no certification of full paper reproduction or remote upload."
   },
   "final_status": "Partially Verified",
-  "final_status_scope": "Research audit completed with scoped R1/R2 evidence; public archive preparation in progress; no full paper-result reproduction.",
+  "final_status_scope": "Completed and publication-reviewed audit archive; scientific reproduction remains Partially Verified, limited R1/R2 components, no full R3/R4 or hardware verification.",
   "remote_verification": {
-    "status": "Unknown",
+    "status": "Verified",
     "branch": "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf",
-    "commit_sha": "Unknown"
+    "commit_sha": "91ecd5cdca7fed5c51ffd918cf5cfb8aa168f18e",
+    "checked_at_utc": "2026-11-09T12:58:14.583040+00:00",
+    "scope": "Exact already-pushed checkpoint observed before this metadata update; this is not a self-referential claim about the enclosing final commit. Final head is the GitHub PR head and is checked after the final push.",
+    "evidence": [
+      "logs/archive/checkpoint_remote_verification.json"
+    ]
   },
-  "pull_request_url": null,
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/1",
   "export_created_utc": "2026-11-09T12:49:12.192400+00:00",
   "summary": {
     "screened_records": 37,
@@ -3298,5 +3318,12 @@
     "Original validators may require withheld local evidence and datasets. Use scripts/validate_public_archive.py for this snapshot."
   ],
   "research_completed_time_utc": "2026-11-09T11:47:27Z",
-  "source_repositories_scope": "Fixed repositories actually checked out in the detailed audits; wider screened official associations and versions are in papers.csv and reports/official_sources.csv."
+  "source_repositories_scope": "Fixed repositories actually checked out in the detailed audits; wider screened official associations and versions are in papers.csv and reports/official_sources.csv.",
+  "archive_completion_scope": "Reviewed snapshot already pushed and verified, PR created; this record completes archival metadata before the final non-force push. Final head is verified externally and returned in the PR/task reply.",
+  "archive_phase_elapsed_seconds": 1589.250516,
+  "wall_clock_from_original_t0_seconds": 7041.250516,
+  "budget_not_restarted": true,
+  "scientific_experiments_rerun_for_archive": 0,
+  "archive_status": "Verified",
+  "archive_operations_log": "logs/archive/operations.json"
 }

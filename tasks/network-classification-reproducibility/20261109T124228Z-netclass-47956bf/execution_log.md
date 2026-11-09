@@ -158,3 +158,11 @@ The complete structured record comprises146 original command records:111 autonom
 Export generated at2026-11-09T12:49:12.192400+00:00. This generation is local only; remote identity/permissions, checkpoint pushes, final SHA/PR and remote verification must be added by the parent agent after observing those actions.
 
 Original command JSON metadata is retained under`logs/<paper>/`; only a small stdout subset is public. Missing original stdout is a publication omission indexed in the ledger, not a successful or failed experiment inference.
+
+## Verified archive milestones
+
+- Main bootstrap commit `fc58e1e33b49666469c47f1231b55105b8508c42` was pushed and matched remotely.
+- Reviewed task checkpoint `91ecd5cdca7fed5c51ffd918cf5cfb8aa168f18e` matched the remote branch at 2026-11-09T12:58:14.583040+00:00.
+- PR1 was created at2026-11-09T13:00:09Z, open/unmerged: https://github.com/old111down/codex_cloud/pull/1.
+- Closure record 2026-11-09T13:03:45.250516+00:00; original budget deadline remains14:06:24Z. Source research completion remains11:47:27Z; no experiment was rerun.
+- Exact significant archive Git argv/status records are inlogs/archive/operations.json. Final head is checked after the last metadata push; the archived receipt intentionally refers to the prior already-verified checkpoint.

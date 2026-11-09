@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 3461,
-      "sha256": "6785be4cbbdfb6779fa9912c97b9ed8d00e774f50db372818d0b1e25fdfcb5b0"
+      "bytes": 3878,
+      "sha256": "14953c03bf33f5acdb27b0c954c363b15b37a41faf2bd803bf164bfc36ad7f4e"
     },
     {
       "path": "catalog/README.md",
@@ -588,8 +588,23 @@
     },
     {
       "path": "execution_log.md",
-      "bytes": 15340,
-      "sha256": "fa51a62c97184584e51c44b84beaf9156b00c62ae6db494a82ce37ff11bb6b3f"
+      "bytes": 16101,
+      "sha256": "4ba9b9cf616b44da3b8086862ce5ed5a60dea449b8adbf602962dfc392b3896f"
+    },
+    {
+      "path": "logs/archive/checkpoint_remote_verification.json",
+      "bytes": 534,
+      "sha256": "73ba5f66a585328b2638a74e61e2d219816ffc15f2157aa31aa633cc91ca0388"
+    },
+    {
+      "path": "logs/archive/operations.json",
+      "bytes": 5389,
+      "sha256": "02ebed91ba03f7dab94d147876b938998da3d4868abcc59d8b8b67dea08be84d"
+    },
+    {
+      "path": "logs/archive/pull_request_creation.json",
+      "bytes": 449,
+      "sha256": "98a905af3f7c467f8eb1352626cd5d6b187f87f6e2a839a3249cc1ea743ab501"
     },
     {
       "path": "logs/autonomous/authored_whitespace_check.json",
@@ -1558,8 +1573,8 @@
     },
     {
       "path": "metadata.json",
-      "bytes": 119361,
-      "sha256": "ffa4293aaa27edaadb10684685078ed61386288e050ced50df4a219c06ace3e3"
+      "bytes": 121031,
+      "sha256": "4bfa10061f87e0aca8413711b2c490ece2909a0b8dcff9bfcb559b196b979e93"
     },
     {
       "path": "papers/et_bert/coverage_matrix.csv",
@@ -2232,6 +2247,11 @@
       "sha256": "1e603a7f99a594e90a794d086d0c736c48f194c14621277a91cbab66fb40e730"
     },
     {
+      "path": "reports/archive_publication.md",
+      "bytes": 1662,
+      "sha256": "274cae5e171a494fc6bcc261d1e646cf20ab6932211e522af21977d50c26ba0e"
+    },
+    {
       "path": "reports/audit_assessments.json",
       "bytes": 4657,
       "sha256": "3d9fc4c0a29790e794a47ed14d64409c44328e0cea876e8f778d5820151d2233"
@@ -2310,6 +2330,11 @@
       "path": "reports/reproduce_next.md",
       "bytes": 7407,
       "sha256": "7c1b23dcc808253205958ffc4120556f3e90d2325b22ab28e9aa8d6d4b335818"
+    },
+    {
+      "path": "reports/reproduction_levels.md",
+      "bytes": 1967,
+      "sha256": "bfb600565e09a67fb4bfc0e0010ed2982738a8f36cff4c6655b99f727fa2934c"
     },
     {
       "path": "reports/reproduction_results.csv",
@@ -2423,8 +2448,8 @@
     },
     {
       "path": "task_report.md",
-      "bytes": 2011,
-      "sha256": "b0ad722a86d3de8750ee8ad631d188a651016dda7bdeaf417da6e139f2e4e942"
+      "bytes": 3667,
+      "sha256": "6a369f44da30f823840dbfad461200e77d5fbb2e257e4de1590eeda8bf53bd02"
     }
   ]
 }

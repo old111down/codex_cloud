@@ -21,3 +21,7 @@ Local build paths, emails and infrastructure identifiers are removed only in thi
 Run `python scripts/validate_public_archive.py` to validate this public snapshot. Original internal validators reference retained local evidence and are preserved for provenance, not advertised as passing on the filtered subset. Replaying scientific commands needs the separately acquired official source/data/weights and recorded versions; no code or dataset is downloaded/executed by the public validator.
 
 See[task report](task_report.md),[execution log](execution_log.md) and[metadata](metadata.json). Remote upload/PR status must be set by the archiving owner after checking the remote commit; export generation itself does not establish upload success.
+
+## Persistence and scope
+
+Reviewed checkpoint upload is verified; [PR1](https://github.com/old111down/codex_cloud/pull/1) is open and unmerged. See [publication receipt](reports/archive_publication.md) and [level definitions](reports/reproduction_levels.md). Historical local branch/publication statements describe the source phase; current status is in metadata/PR. Final branch SHA is checked after the last push.

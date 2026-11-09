@@ -1,0 +1,126 @@
+{
+  "scope": "Actual significant archive Git operations; no credential values. Full local outputs retained separately.",
+  "operations": [
+    {
+      "argv": [
+        "git",
+        "add",
+        ".gitattributes",
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "templates/task_report.md",
+        "templates/metadata.schema.json",
+        "indexes/task_index.csv"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:43:23.265267+00:00",
+      "end_utc": "2026-11-09T12:43:23.271170+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt."
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:43:23.271373+00:00",
+      "end_utc": "2026-11-09T12:43:23.274062+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt."
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "Initialize persistent Codex Cloud archive conventions"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:43:23.274219+00:00",
+      "end_utc": "2026-11-09T12:43:23.281990+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "641903b9f776ef62ec134d16667935d4687b6e6b4cf318e1e319ae885617861a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt."
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "credential.helper=!gh auth git-credential",
+        "push",
+        "-u",
+        "origin",
+        "main"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:43:23.282179+00:00",
+      "end_utc": "2026-11-09T12:43:24.900790+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "27dcfc17776735b09ec3e85bbd5412aec660c384a8fe4dd2c8f02dd6cfc1750a",
+      "stderr_sha256": "58466406ec5ca429623d6ea624ccddec8d34088a6d5ce5d5ac4b06187eecabbd",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt.",
+      "stderr": "To https://github.com/old111down/codex_cloud.git\n * [new branch]      main -> main\n"
+    },
+    {
+      "argv": [
+        "git",
+        "switch",
+        "-c",
+        "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "checked_at_utc": "2026-11-09T12:44:32.457963+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d326f93948f1216998ea74ec62f62dc9b461631457ac342898f28942ad339496",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt."
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "Archive publication-reviewed network classification audit snapshot"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:58:10.678187+00:00",
+      "end_utc": "2026-11-09T12:58:10.723906+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "f3e0ced80a5bf3b4c3b2a56e68b8246469e618142790ab86352e930a39bc5c94",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt."
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "credential.helper=!gh auth git-credential",
+        "push",
+        "-u",
+        "origin",
+        "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf"
+      ],
+      "cwd": "/workspace/codex_cloud",
+      "start_utc": "2026-11-09T12:58:10.724396+00:00",
+      "end_utc": "2026-11-09T12:58:12.951450+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "009dbf98bc644e7eca8c2a406397af0f061d6325be03da360d7366132770c056",
+      "stderr_sha256": "29e93d94ac61643a598b89b94e6a7f50d0ed47b59d6cae993c5fb35a858481bf",
+      "result_summary": "Command completed; commit/ref state is preserved in Git and the checkpoint receipt.",
+      "stderr": "remote: \nremote: Create a pull request for 'codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf' on GitHub by visiting:        \nremote:      https://github.com/old111down/codex_cloud/pull/new/codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf        \nremote: \nTo https://github.com/old111down/codex_cloud.git\n * [new branch]      codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf -> codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf\n"
+    }
+  ]
+}

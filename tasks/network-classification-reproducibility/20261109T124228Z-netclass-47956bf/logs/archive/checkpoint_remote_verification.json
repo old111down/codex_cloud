@@ -1,0 +1,10 @@
+{
+  "status": "Verified",
+  "scope": "Initial task-branch checkpoint exists remotely; not paper-result reproduction",
+  "repository": "https://github.com/old111down/codex_cloud",
+  "branch": "codex/network-classification-reproducibility/20261109T124228Z-netclass-47956bf",
+  "local_commit_sha": "91ecd5cdca7fed5c51ffd918cf5cfb8aa168f18e",
+  "remote_commit_sha": "91ecd5cdca7fed5c51ffd918cf5cfb8aa168f18e",
+  "checked_at_utc": "2026-11-09T12:58:14.583040+00:00",
+  "main_bootstrap_commit": "fc58e1e33b49666469c47f1231b55105b8508c42"
+}
