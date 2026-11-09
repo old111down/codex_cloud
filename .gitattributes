@@ -1,0 +1,4 @@
+# Keep evidence hashes stable; CSV writers may intentionally use CRLF.
+*.csv -text whitespace=cr-at-eol
+*.patch -text -whitespace
+tasks/**/logs/** -text -whitespace
