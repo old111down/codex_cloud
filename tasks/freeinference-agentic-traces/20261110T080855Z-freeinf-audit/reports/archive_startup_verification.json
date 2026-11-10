@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-11-10T08:41:03.650978+00:00",
+  "repository": "old111down/codex_cloud",
+  "github_login": "old111down",
+  "public": true,
+  "viewer_permission": "ADMIN",
+  "default_branch": "main",
+  "base_main_sha": "fc58e1e33b49666469c47f1231b55105b8508c42",
+  "task_branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "separate_worktree": true,
+  "upstream_source_status_porcelain": "",
+  "evidence_scope": "Startup and precheckpoint CLI/API observations; no credential values stored"
+}

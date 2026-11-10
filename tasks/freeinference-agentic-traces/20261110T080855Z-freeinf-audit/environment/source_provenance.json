@@ -1433,5 +1433,11 @@
     "sha256": "0ab3b7968bb57f3edd27d7102cb48d99a23c72c0fcb42e6178f81bd8ba077c46",
     "local_private_path": "private/evidence/paper.pdf",
     "public_copy": "withheld; official URL and hash only"
+  },
+  "license_declaration": {
+    "license": "CC-BY-4.0",
+    "scope": "dataset and this artifact as declared by pinned README",
+    "url": "https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/README.md#license",
+    "standalone_license_file": false
   }
 }

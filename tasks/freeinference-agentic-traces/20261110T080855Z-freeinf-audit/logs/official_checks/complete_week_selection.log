@@ -1,0 +1,57 @@
+{
+  "selected": {
+    "week": "2026-06-07_2026-06-13",
+    "requests_bytes": 7885194,
+    "request_rows": 6859,
+    "request_row_groups": 1,
+    "block_ids_uncompressed_bytes": 318492184,
+    "max_rowgroup_block_ids_uncompressed_bytes": 318492184,
+    "all_session_rows": 80,
+    "top_level_sessions": 80,
+    "child_sessions": 0,
+    "top_level_harness_counts": {
+      "opencode": 9,
+      "kilo": 34,
+      "pi": 35,
+      "cline": 2
+    }
+  },
+  "next_two": [
+    {
+      "week": "2026-05-31_2026-06-06",
+      "requests_bytes": 16381638,
+      "request_rows": 7324,
+      "request_row_groups": 1,
+      "block_ids_uncompressed_bytes": 367458789,
+      "max_rowgroup_block_ids_uncompressed_bytes": 367458789,
+      "all_session_rows": 76,
+      "top_level_sessions": 65,
+      "child_sessions": 11,
+      "top_level_harness_counts": {
+        "cline": 2,
+        "kilo": 23,
+        "pi": 21,
+        "opencode": 13,
+        "eval:swe-bench": 6
+      }
+    },
+    {
+      "week": "2026-05-17_2026-05-23",
+      "requests_bytes": 21989656,
+      "request_rows": 10738,
+      "request_row_groups": 2,
+      "block_ids_uncompressed_bytes": 447233912,
+      "max_rowgroup_block_ids_uncompressed_bytes": 410057701,
+      "all_session_rows": 125,
+      "top_level_sessions": 106,
+      "child_sessions": 19,
+      "top_level_harness_counts": {
+        "hermes": 21,
+        "kilo": 41,
+        "opencode": 24,
+        "pi": 5,
+        "cline": 15
+      }
+    }
+  ]
+}

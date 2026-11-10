@@ -1,5 +1,5 @@
 {
-  "reviewed_at_utc": "2026-11-10T08:37:59.381551+00:00",
+  "reviewed_at_utc": "2026-11-10T08:56:56.528760+00:00",
   "status": "Verified",
   "scope": "Explicit allowlist with topical content review and root pattern/path/size/binary checks; no complete third-party source/data",
   "limitations": [
@@ -10,9 +10,9 @@
   "files": [
     {
       "path": "README.md",
-      "source_sha256": "6e474194c4eeefe1a406eef507cf631b7313b26a323aab7781200dbc56232a31",
-      "published_sha256": "6e474194c4eeefe1a406eef507cf631b7313b26a323aab7781200dbc56232a31",
-      "bytes": 4716,
+      "source_sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f",
+      "published_sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f",
+      "bytes": 4787,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -28,18 +28,18 @@
     },
     {
       "path": "code_execution_summary.json",
-      "source_sha256": "c5920fdee9d52a980de2271d858f7680bf6a4e95fbf3564a153c5b625dbb4630",
-      "published_sha256": "c5920fdee9d52a980de2271d858f7680bf6a4e95fbf3564a153c5b625dbb4630",
-      "bytes": 24031,
+      "source_sha256": "33dcae2d93d7aa1d2087df91b61b1d36fbbd41b969e2f7ba13f3dd91dd3b4caa",
+      "published_sha256": "33dcae2d93d7aa1d2087df91b61b1d36fbbd41b969e2f7ba13f3dd91dd3b4caa",
+      "bytes": 37392,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "critical_findings.md",
-      "source_sha256": "f01b2554056e7aa7c35338086919c8c028141a19fdd3e426627f9a84142c2987",
-      "published_sha256": "f01b2554056e7aa7c35338086919c8c028141a19fdd3e426627f9a84142c2987",
-      "bytes": 3565,
+      "source_sha256": "ef74e01671ea76dc1b1d63870f8970e2e2ebac7aad7318caf2e17a08ab998fd7",
+      "published_sha256": "ef74e01671ea76dc1b1d63870f8970e2e2ebac7aad7318caf2e17a08ab998fd7",
+      "bytes": 4204,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -58,6 +58,15 @@
       "source_sha256": "7d8d6ff7627395efb1652301eacc30cec1a1395628f6e2ee277dc9e4eaeff3e2",
       "published_sha256": "7d8d6ff7627395efb1652301eacc30cec1a1395628f6e2ee277dc9e4eaeff3e2",
       "bytes": 12318,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "environment/archive_tools_versions.json",
+      "source_sha256": "02fb26e8a7763c3d5c8c01a77805b402f98f2e4d8e5087b8779474cff1f17371",
+      "published_sha256": "02fb26e8a7763c3d5c8c01a77805b402f98f2e4d8e5087b8779474cff1f17371",
+      "bytes": 246,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -129,27 +138,27 @@
     },
     {
       "path": "environment/source_provenance.json",
-      "source_sha256": "1e092c0c2e6b5582b5d3b23e34379dae8ddc94c0ed1dae511cb7e318c3ad6563",
-      "published_sha256": "1e092c0c2e6b5582b5d3b23e34379dae8ddc94c0ed1dae511cb7e318c3ad6563",
-      "bytes": 50962,
+      "source_sha256": "f94aff945444a888fb5f22074551df50a8fb0fe749b7c964daf3f801936ac6e1",
+      "published_sha256": "f94aff945444a888fb5f22074551df50a8fb0fe749b7c964daf3f801936ac6e1",
+      "bytes": 51269,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "execution_log.md",
-      "source_sha256": "ac319ff78336ed9a133f00b2b1e4475495f9699f8da830019c1ac35945070f36",
-      "published_sha256": "ac319ff78336ed9a133f00b2b1e4475495f9699f8da830019c1ac35945070f36",
-      "bytes": 17750,
+      "source_sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38",
+      "published_sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38",
+      "bytes": 24998,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "execution_timeline.md",
-      "source_sha256": "4c0896eb3fd9aa32e421e5da10b7a8e2aecbc06292d34132c7b9f76b753cd154",
-      "published_sha256": "4c0896eb3fd9aa32e421e5da10b7a8e2aecbc06292d34132c7b9f76b753cd154",
-      "bytes": 6124,
+      "source_sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae",
+      "published_sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae",
+      "bytes": 7923,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -204,6 +213,24 @@
       "source_sha256": "416a5f98bd241a48e46ebd23d642940268663d70e7c3691413254c2b38b56c81",
       "published_sha256": "416a5f98bd241a48e46ebd23d642940268663d70e7c3691413254c2b38b56c81",
       "bytes": 4917,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/archive_checkpoint.json",
+      "source_sha256": "6e7d26ddf366428622909b0bebcc44ab25da8c0a0f9b4f12bdeae0c4671be867",
+      "published_sha256": "6e7d26ddf366428622909b0bebcc44ab25da8c0a0f9b4f12bdeae0c4671be867",
+      "bytes": 522,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/archive_checkpoint.log",
+      "source_sha256": "6b95c40fc2a804810267d96151607022ad0d1d3e006b9debf5136b00670bd9f8",
+      "published_sha256": "6b95c40fc2a804810267d96151607022ad0d1d3e006b9debf5136b00670bd9f8",
+      "bytes": 661,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -294,6 +321,96 @@
       "source_sha256": "edc1e75b362b86e9bfe70cb00931b2382afb8cb82fd2f7bb69388f01b277dc03",
       "published_sha256": "edc1e75b362b86e9bfe70cb00931b2382afb8cb82fd2f7bb69388f01b277dc03",
       "bytes": 512,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_mixed_scope_week.json",
+      "source_sha256": "1244b88f14737e05e2ba1b9bce81e114380d7edbb89ff21146f0a13c212e727c",
+      "published_sha256": "1244b88f14737e05e2ba1b9bce81e114380d7edbb89ff21146f0a13c212e727c",
+      "bytes": 802,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_mixed_scope_week.log",
+      "source_sha256": "93ce8bc8eb8bb51958f69f1ac3b3d98f021f229bdca942121d514a97baa4cd9a",
+      "published_sha256": "93ce8bc8eb8bb51958f69f1ac3b3d98f021f229bdca942121d514a97baa4cd9a",
+      "bytes": 12830,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_smallest_week.json",
+      "source_sha256": "9aaf5e2a44301e117c8c1348ab818b5f290e48af754bba7fa13385bc1fbae201",
+      "published_sha256": "9aaf5e2a44301e117c8c1348ab818b5f290e48af754bba7fa13385bc1fbae201",
+      "bytes": 800,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_smallest_week.log",
+      "source_sha256": "a1ec059a72b1c54b867d3d7a0a9f969bab2abaf03a52f38364e90c7789acc3a9",
+      "published_sha256": "a1ec059a72b1c54b867d3d7a0a9f969bab2abaf03a52f38364e90c7789acc3a9",
+      "bytes": 9441,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_smallest_week_with_footer.json",
+      "source_sha256": "4b5cc491578d52143f2b3c36a32cc8175d4bbcf8f637d00d910a603b71d6b46b",
+      "published_sha256": "4b5cc491578d52143f2b3c36a32cc8175d4bbcf8f637d00d910a603b71d6b46b",
+      "bytes": 801,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/compare_complete_smallest_week_with_footer.log",
+      "source_sha256": "cb0b4cab939da5206fe5a29769b96d3a0f48a0703c7997b47561c3ba3fc7c4aa",
+      "published_sha256": "cb0b4cab939da5206fe5a29769b96d3a0f48a0703c7997b47561c3ba3fc7c4aa",
+      "bytes": 12816,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/complete_mixed_scope_selection.json",
+      "source_sha256": "6c6dfa9a83ad591d8a5c86137c6d9c2e4fdac3fd321c524eb0e75cb21e69d6d3",
+      "published_sha256": "6c6dfa9a83ad591d8a5c86137c6d9c2e4fdac3fd321c524eb0e75cb21e69d6d3",
+      "bytes": 509,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/complete_mixed_scope_selection.log",
+      "source_sha256": "6fa472220c987ad9085233301452ec7050ad3ca5eb1a83013533bbed5d97aa3e",
+      "published_sha256": "6fa472220c987ad9085233301452ec7050ad3ca5eb1a83013533bbed5d97aa3e",
+      "bytes": 1465,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/complete_week_selection.json",
+      "source_sha256": "0d8c0fc2b97de45346b59c02c894f7c85ffc7a8c96f5fba3728827c507adfe53",
+      "published_sha256": "0d8c0fc2b97de45346b59c02c894f7c85ffc7a8c96f5fba3728827c507adfe53",
+      "bytes": 509,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/complete_week_selection.log",
+      "source_sha256": "6fa472220c987ad9085233301452ec7050ad3ca5eb1a83013533bbed5d97aa3e",
+      "published_sha256": "6fa472220c987ad9085233301452ec7050ad3ca5eb1a83013533bbed5d97aa3e",
+      "bytes": 1465,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -515,6 +632,69 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "logs/official_checks/selection_helper_first_invocation_error.txt",
+      "source_sha256": "86894814f784e8e4a5c10f0d5fd310d5559056b2831e26cca8f68f8fd30f73bf",
+      "published_sha256": "86894814f784e8e4a5c10f0d5fd310d5559056b2831e26cca8f68f8fd30f73bf",
+      "bytes": 401,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_mixed_scope_week.json",
+      "source_sha256": "2bce564337f867c5446dfb98903e07136f265fc4d3543f8889e5c31cd6215ca7",
+      "published_sha256": "2bce564337f867c5446dfb98903e07136f265fc4d3543f8889e5c31cd6215ca7",
+      "bytes": 1304,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_mixed_scope_week.log",
+      "source_sha256": "6ac27344babbde8d0dc052e3a35cf9e85d73b9137a006fa2059a7f5dbbdda361",
+      "published_sha256": "6ac27344babbde8d0dc052e3a35cf9e85d73b9137a006fa2059a7f5dbbdda361",
+      "bytes": 373,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_mixed_scope_week_missing_time.json",
+      "source_sha256": "cd4e6cec748dfb7c6ad35a7f6e3171a6a518ef146d451121e051bd1a4d845444",
+      "published_sha256": "cd4e6cec748dfb7c6ad35a7f6e3171a6a518ef146d451121e051bd1a4d845444",
+      "bytes": 1261,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_mixed_scope_week_missing_time.log",
+      "source_sha256": "8949655165a0c61c00f762c956c87f6ac09e9432e233d917e905dc4f4ff5038f",
+      "published_sha256": "8949655165a0c61c00f762c956c87f6ac09e9432e233d917e905dc4f4ff5038f",
+      "bytes": 53,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_smallest_week.json",
+      "source_sha256": "229c615f10510e259c495a1763f8554033cc40016bb95cd7ca4f1aceba5cbbdc",
+      "published_sha256": "229c615f10510e259c495a1763f8554033cc40016bb95cd7ca4f1aceba5cbbdc",
+      "bytes": 1045,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/official_checks/simulation_complete_smallest_week.log",
+      "source_sha256": "82c4c7c1133b0531074fe4dff214971c9bd5df6ed56f5f25acbf457c6bfd8346",
+      "published_sha256": "82c4c7c1133b0531074fe4dff214971c9bd5df6ed56f5f25acbf457c6bfd8346",
+      "bytes": 177,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "logs/official_checks/simulation_one_week_guarded.json",
       "source_sha256": "147648ef9aece015446c869de46f71e6058c7f959d324ab481f09532c740bd95",
       "published_sha256": "147648ef9aece015446c869de46f71e6058c7f959d324ab481f09532c740bd95",
@@ -714,9 +894,9 @@
     },
     {
       "path": "metadata.json",
-      "source_sha256": "6308c523749075fdf4fe33ae3c27efe700ba765d79453f65d283a42613e2d49e",
-      "published_sha256": "6308c523749075fdf4fe33ae3c27efe700ba765d79453f65d283a42613e2d49e",
-      "bytes": 36807,
+      "source_sha256": "f6d5ec5cd44da927c5a8214260304696ed29be85107dd957d56ada87451379c9",
+      "published_sha256": "f6d5ec5cd44da927c5a8214260304696ed29be85107dd957d56ada87451379c9",
+      "bytes": 51481,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -741,18 +921,18 @@
     },
     {
       "path": "paper_code_coverage.csv",
-      "source_sha256": "c7687ffe9ea9bd8c814acd162fd3ef82103b3a11777cf412ea85da04b5a5c20d",
-      "published_sha256": "c7687ffe9ea9bd8c814acd162fd3ef82103b3a11777cf412ea85da04b5a5c20d",
-      "bytes": 51064,
+      "source_sha256": "efc499808628b775fa41dc14f7cb4991e5ce88e2255b15e7bcc252c25e76dd6e",
+      "published_sha256": "efc499808628b775fa41dc14f7cb4991e5ce88e2255b15e7bcc252c25e76dd6e",
+      "bytes": 53384,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "paper_execution_report.md",
-      "source_sha256": "369aa61fd838f996554560d0b068aef9910410f2667829198d5d617814c48711",
-      "published_sha256": "369aa61fd838f996554560d0b068aef9910410f2667829198d5d617814c48711",
-      "bytes": 12061,
+      "source_sha256": "6cb235bec8a6ae475c6e0530855e600977d5ca03efea1cc83f027986a2f202e1",
+      "published_sha256": "6cb235bec8a6ae475c6e0530855e600977d5ca03efea1cc83f027986a2f202e1",
+      "bytes": 15661,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -830,10 +1010,91 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "reports/archive_startup_verification.json",
+      "source_sha256": "f411e572dec47e352eaed290224867e2d09016db14f1254210ca9f72fe178ed7",
+      "published_sha256": "f411e572dec47e352eaed290224867e2d09016db14f1254210ca9f72fe178ed7",
+      "bytes": 531,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "reports/batching_denominator_check.json",
       "source_sha256": "2f01a25faac65d8d25a6d40b043d61a7e815de8cd37a71f1ba41b6f94e57407c",
       "published_sha256": "2f01a25faac65d8d25a6d40b043d61a7e815de8cd37a71f1ba41b6f94e57407c",
       "bytes": 697,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.json",
+      "source_sha256": "b3bc693b35f04302bae00bd3fa108bdf2a57dd0134ad5af1fcf1cc689d729868",
+      "published_sha256": "b3bc693b35f04302bae00bd3fa108bdf2a57dd0134ad5af1fcf1cc689d729868",
+      "bytes": 22791,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.md",
+      "source_sha256": "5cb8c3eeb5ee163c58cb492224993555f848f0931d9cdb6e1896af1e46c467b1",
+      "published_sha256": "5cb8c3eeb5ee163c58cb492224993555f848f0931d9cdb6e1896af1e46c467b1",
+      "bytes": 2004,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/checkpoints.json",
+      "source_sha256": "8fbad8437a9c0d74da33a17d8d253cd3c300e1679067fa33f96e3553aeb22de0",
+      "published_sha256": "8fbad8437a9c0d74da33a17d8d253cd3c300e1679067fa33f96e3553aeb22de0",
+      "bytes": 860,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/complete_mixed_scope_week_resource_usage.json",
+      "source_sha256": "f32b16be80acf07ae024fc28bfc3debefc9460069eb677ec14a321ec24605353",
+      "published_sha256": "f32b16be80acf07ae024fc28bfc3debefc9460069eb677ec14a321ec24605353",
+      "bytes": 1109,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/complete_mixed_scope_week_simulation_comparison.csv",
+      "source_sha256": "109062e1fe35993a5858db43d2260b396e1053be01a8a5bc036f9d483aea07d6",
+      "published_sha256": "109062e1fe35993a5858db43d2260b396e1053be01a8a5bc036f9d483aea07d6",
+      "bytes": 101142,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/complete_mixed_scope_week_simulation_comparison.json",
+      "source_sha256": "93ce8bc8eb8bb51958f69f1ac3b3d98f021f229bdca942121d514a97baa4cd9a",
+      "published_sha256": "93ce8bc8eb8bb51958f69f1ac3b3d98f021f229bdca942121d514a97baa4cd9a",
+      "bytes": 12830,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/complete_smallest_week_simulation_comparison.csv",
+      "source_sha256": "7839082e342127d471f05240442c1be5d6c28a4c9b8ddeb6d456542880c8d460",
+      "published_sha256": "7839082e342127d471f05240442c1be5d6c28a4c9b8ddeb6d456542880c8d460",
+      "bytes": 77626,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/complete_smallest_week_simulation_comparison.json",
+      "source_sha256": "cb0b4cab939da5206fe5a29769b96d3a0f48a0703c7997b47561c3ba3fc7c4aa",
+      "published_sha256": "cb0b4cab939da5206fe5a29769b96d3a0f48a0703c7997b47561c3ba3fc7c4aa",
+      "bytes": 12816,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -849,9 +1110,9 @@
     },
     {
       "path": "reports/data_publication_review.json",
-      "source_sha256": "f628d767fae922844bae760711b02c110c56de934d014fc6969ba615e804e9d0",
-      "published_sha256": "f628d767fae922844bae760711b02c110c56de934d014fc6969ba615e804e9d0",
-      "bytes": 27002,
+      "source_sha256": "f64818eaef9418c748ac010c3a6413e746b33729b5f76218e006d2327933e2f2",
+      "published_sha256": "f64818eaef9418c748ac010c3a6413e746b33729b5f76218e006d2327933e2f2",
+      "bytes": 28562,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -902,6 +1163,42 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "reports/final_archive_review.json",
+      "source_sha256": "2543053a5b57b4253fd2f121cc5125074d3f0b6ece5848a509f1b35e56cb7b76",
+      "published_sha256": "2543053a5b57b4253fd2f121cc5125074d3f0b6ece5848a509f1b35e56cb7b76",
+      "bytes": 4686,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/final_archive_review.md",
+      "source_sha256": "50f6362a4d9569503238e4bb0f3193a8ca2afea33af57c8e31e62e67080097cc",
+      "published_sha256": "50f6362a4d9569503238e4bb0f3193a8ca2afea33af57c8e31e62e67080097cc",
+      "bytes": 7362,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/final_validation.json",
+      "source_sha256": "7ae1d9b9e7e748a5a90a62e0f99e728216a61d85731d5f2692695f2435a26df7",
+      "published_sha256": "7ae1d9b9e7e748a5a90a62e0f99e728216a61d85731d5f2692695f2435a26df7",
+      "bytes": 1178,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/full_week_replay_selection.json",
+      "source_sha256": "17255abe70c79da5ae49099a063a9ca9b97b00c3a4afe946061a8cd3400a5800",
+      "published_sha256": "17255abe70c79da5ae49099a063a9ca9b97b00c3a4afe946061a8cd3400a5800",
+      "bytes": 10491,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "reports/independent_alignment_review.json",
       "source_sha256": "ef1adacca1e14a74cf502a401615a9f8c7f479bbed56f7c22713bf32f40e940d",
       "published_sha256": "ef1adacca1e14a74cf502a401615a9f8c7f479bbed56f7c22713bf32f40e940d",
@@ -915,6 +1212,24 @@
       "source_sha256": "6cf2d76350daf7a2c06a12d7c3ed3555ace4a9a404195050157489e62de0cf93",
       "published_sha256": "6cf2d76350daf7a2c06a12d7c3ed3555ace4a9a404195050157489e62de0cf93",
       "bytes": 7359,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/independent_full_week_review.json",
+      "source_sha256": "18d9f9ee1e55669d8aed79b053393d2d5a8ee26ed5ad707f02425644f413d831",
+      "published_sha256": "18d9f9ee1e55669d8aed79b053393d2d5a8ee26ed5ad707f02425644f413d831",
+      "bytes": 40633,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "reports/independent_full_week_review.md",
+      "source_sha256": "61b0bec7f949855554cd2329dfe56b53277c7cbb0c6e1f6f481184ea61d4136d",
+      "published_sha256": "61b0bec7f949855554cd2329dfe56b53277c7cbb0c6e1f6f481184ea61d4136d",
+      "bytes": 10422,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -939,18 +1254,18 @@
     },
     {
       "path": "reports/independent_reproduction_review.json",
-      "source_sha256": "66bc3c74f784e497ae8f921a8856d2f090df186ac03eaa2b05056b012711ccdc",
-      "published_sha256": "66bc3c74f784e497ae8f921a8856d2f090df186ac03eaa2b05056b012711ccdc",
-      "bytes": 13334,
+      "source_sha256": "cf220f957e86eb59260679c1ab864fe37b91dc7164220ddfeb62bcf46831ef39",
+      "published_sha256": "cf220f957e86eb59260679c1ab864fe37b91dc7164220ddfeb62bcf46831ef39",
+      "bytes": 13699,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "reports/independent_reproduction_review.md",
-      "source_sha256": "34393056f20adbfa7e64e547cf97473176a2993dc2c420b182d383886a3b6036",
-      "published_sha256": "34393056f20adbfa7e64e547cf97473176a2993dc2c420b182d383886a3b6036",
-      "bytes": 13684,
+      "source_sha256": "1fa14c6c9f812d1a51ef44a6b2f7a279a68a98f1eb2e714c515552d2819d319a",
+      "published_sha256": "1fa14c6c9f812d1a51ef44a6b2f7a279a68a98f1eb2e714c515552d2819d319a",
+      "bytes": 14608,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1028,10 +1343,19 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "reports/remote_verification.json",
+      "source_sha256": "3a13b8c0a38cf611bebe7e01dcdcf69c6829b81839108beaf7c80651d63caa42",
+      "published_sha256": "3a13b8c0a38cf611bebe7e01dcdcf69c6829b81839108beaf7c80651d63caa42",
+      "bytes": 519,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "reports/reproduction_results.csv",
-      "source_sha256": "d896aeeeced82d1659c50f0fc59b89e6a8a25d7e2a0f66ec59f5969bcae70ced",
-      "published_sha256": "d896aeeeced82d1659c50f0fc59b89e6a8a25d7e2a0f66ec59f5969bcae70ced",
-      "bytes": 17805,
+      "source_sha256": "6d20efe14d9c059dd9eae9bbf739d332a3d3024dfec6b21ec8a5dfa2c49449d1",
+      "published_sha256": "6d20efe14d9c059dd9eae9bbf739d332a3d3024dfec6b21ec8a5dfa2c49449d1",
+      "bytes": 25349,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1092,17 +1416,17 @@
     },
     {
       "path": "reproduction_report.md",
-      "source_sha256": "ec3fb313fc35f4c7459474b7784b97b3d6afa2e8fc7c16cd842bbc3aec1d5013",
-      "published_sha256": "ec3fb313fc35f4c7459474b7784b97b3d6afa2e8fc7c16cd842bbc3aec1d5013",
-      "bytes": 6818,
+      "source_sha256": "2d1ec2775cd986305cc5e1a927da114b69012eef9d28656fb3ce3e7d18f18840",
+      "published_sha256": "2d1ec2775cd986305cc5e1a927da114b69012eef9d28656fb3ce3e7d18f18840",
+      "bytes": 9651,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "research_notes/code_coverage_and_runtime/coverage_inventory.json",
-      "source_sha256": "ad58646bc1e0719808a2d86a691fb839651ece4ebd2b1cfef5e6b80d03908d41",
-      "published_sha256": "ad58646bc1e0719808a2d86a691fb839651ece4ebd2b1cfef5e6b80d03908d41",
+      "source_sha256": "abf81512ebf09c630f06e324fec170a0efc670114082917bf639c4e19733565a",
+      "published_sha256": "abf81512ebf09c630f06e324fec170a0efc670114082917bf639c4e19733565a",
       "bytes": 231,
       "publication_review": "approved",
       "transformations": [],
@@ -1110,18 +1434,18 @@
     },
     {
       "path": "research_notes/code_coverage_and_runtime/notes.md",
-      "source_sha256": "b4ce07a13355185e8b3e0220844c109890395c6f37e8a67daf2423774e2569e5",
-      "published_sha256": "b4ce07a13355185e8b3e0220844c109890395c6f37e8a67daf2423774e2569e5",
-      "bytes": 4765,
+      "source_sha256": "eefe948bdbf30135d6787bad09b7ea73910de5ebfdcf2d347b3d139219fc8041",
+      "published_sha256": "eefe948bdbf30135d6787bad09b7ea73910de5ebfdcf2d347b3d139219fc8041",
+      "bytes": 5526,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "research_notes/code_coverage_and_runtime/publication_allowlist.json",
-      "source_sha256": "bca2c529661dbf3540378d72ab8c71356925e751132809dad793a985a40495cc",
-      "published_sha256": "bca2c529661dbf3540378d72ab8c71356925e751132809dad793a985a40495cc",
-      "bytes": 4106,
+      "source_sha256": "5ebe88f68a3f64799806f0b13319e00db496fcc7f1512b9397679ec2dbbcb7fe",
+      "published_sha256": "5ebe88f68a3f64799806f0b13319e00db496fcc7f1512b9397679ec2dbbcb7fe",
+      "bytes": 6019,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1254,18 +1578,18 @@
     },
     {
       "path": "scripts/build_paper_code_coverage.py",
-      "source_sha256": "a46225aef12bf9248d86e86b0282be31d85b8eb6aa474fb4f607a1f4a631cee2",
-      "published_sha256": "a46225aef12bf9248d86e86b0282be31d85b8eb6aa474fb4f607a1f4a631cee2",
-      "bytes": 16103,
+      "source_sha256": "3e30d9546da597f8044e657ac8f61763628306cfd43903ff91fcab36f26ac9dd",
+      "published_sha256": "3e30d9546da597f8044e657ac8f61763628306cfd43903ff91fcab36f26ac9dd",
+      "bytes": 17776,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "scripts/build_task_record.py",
-      "source_sha256": "990efd42aa3cbdf98874f657c73839fce3b2cbacc3f23a064d93cbd7b5f3ed63",
-      "published_sha256": "990efd42aa3cbdf98874f657c73839fce3b2cbacc3f23a064d93cbd7b5f3ed63",
-      "bytes": 11497,
+      "source_sha256": "afb5076b994fb4fd2adecc63ac0ac4c61553cec4619c807cacb33b93c598e3a4",
+      "published_sha256": "afb5076b994fb4fd2adecc63ac0ac4c61553cec4619c807cacb33b93c598e3a4",
+      "bytes": 14703,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1284,6 +1608,15 @@
       "source_sha256": "0954becb26bf6dab81a3cce60c2d6142265f820af680a320741b2267e319acfa",
       "published_sha256": "0954becb26bf6dab81a3cce60c2d6142265f820af680a320741b2267e319acfa",
       "bytes": 1234,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "scripts/compare_complete_week_simulation.py",
+      "source_sha256": "448e517f39d990624f125c0f064018752d5d07394f80e46f6a524020aac5b7ac",
+      "published_sha256": "448e517f39d990624f125c0f064018752d5d07394f80e46f6a524020aac5b7ac",
+      "bytes": 7864,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1317,9 +1650,9 @@
     },
     {
       "path": "scripts/export_reviewed_archive.py",
-      "source_sha256": "6e6ce7447a5045ad13e371b7444b29228bf7c3b8a237b3baa16067da2cedc1f0",
-      "published_sha256": "6e6ce7447a5045ad13e371b7444b29228bf7c3b8a237b3baa16067da2cedc1f0",
-      "bytes": 6566,
+      "source_sha256": "71eb9d8aa1ec7332b277f5d9ca2fa360be4b4cfd5e7c45b8141e5cbcf66713c6",
+      "published_sha256": "71eb9d8aa1ec7332b277f5d9ca2fa360be4b4cfd5e7c45b8141e5cbcf66713c6",
+      "bytes": 6824,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1370,10 +1703,19 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "scripts/review_complete_week_artifacts.py",
+      "source_sha256": "69cab8e5cb473227c5a2f61501e166ca2d83b299f5f744dc2ff0ef95471c0885",
+      "published_sha256": "69cab8e5cb473227c5a2f61501e166ca2d83b299f5f744dc2ff0ef95471c0885",
+      "bytes": 11987,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "scripts/review_reproduction_evidence.py",
-      "source_sha256": "ee00a064ff3562924c530c20020ca65c643bbb52ab620dfc6410181a288d09da",
-      "published_sha256": "ee00a064ff3562924c530c20020ca65c643bbb52ab620dfc6410181a288d09da",
-      "bytes": 9825,
+      "source_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722",
+      "published_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722",
+      "bytes": 10161,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1383,6 +1725,24 @@
       "source_sha256": "1cc0d4f602155ef046bf7189762bb6d98efbef43b6d0f40fe39c8608af20f50b",
       "published_sha256": "1cc0d4f602155ef046bf7189762bb6d98efbef43b6d0f40fe39c8608af20f50b",
       "bytes": 2199,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "scripts/run_with_resource_usage.py",
+      "source_sha256": "5b1dc7a343c9c17efd2f627f7952bd50b07d78d96762a134e637f675e4d4fd56",
+      "published_sha256": "5b1dc7a343c9c17efd2f627f7952bd50b07d78d96762a134e637f675e4d4fd56",
+      "bytes": 2085,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "scripts/select_complete_week_replay.py",
+      "source_sha256": "5230be474806c624e0c0259005245e40e00eafe16772a0526e04fd758179183f",
+      "published_sha256": "5230be474806c624e0c0259005245e40e00eafe16772a0526e04fd758179183f",
+      "bytes": 2604,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1398,9 +1758,9 @@
     },
     {
       "path": "scripts/summarize_code_execution.py",
-      "source_sha256": "341f2a78f1bc4964743c514a1f621a26607a5eac50aea2906923a5b61de67dfc",
-      "published_sha256": "341f2a78f1bc4964743c514a1f621a26607a5eac50aea2906923a5b61de67dfc",
-      "bytes": 5428,
+      "source_sha256": "ca408a45964226baabb92cbb1656e3412f2896a5114dc7b6b4bb7c22a00ea136",
+      "published_sha256": "ca408a45964226baabb92cbb1656e3412f2896a5114dc7b6b4bb7c22a00ea136",
+      "bytes": 7335,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1410,6 +1770,15 @@
       "source_sha256": "6866168cd3fada2c8322a5d10c6af13728c2ada6c288857ad8b5f07ada56ed8d",
       "published_sha256": "6866168cd3fada2c8322a5d10c6af13728c2ada6c288857ad8b5f07ada56ed8d",
       "bytes": 17651,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "scripts/validate_archive.py",
+      "source_sha256": "349575e2c7244af4d50157049f70899af467a7a6e9b1278bed632b3bb5dcaa5e",
+      "published_sha256": "349575e2c7244af4d50157049f70899af467a7a6e9b1278bed632b3bb5dcaa5e",
+      "bytes": 4527,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1443,9 +1812,9 @@
     },
     {
       "path": "task_report.md",
-      "source_sha256": "bb7cdfbbcddccd5a501ddfb22d764478827f5ccb5d515137421a95746c5df86a",
-      "published_sha256": "bb7cdfbbcddccd5a501ddfb22d764478827f5ccb5d515137421a95746c5df86a",
-      "bytes": 6629,
+      "source_sha256": "aee1865655fd6b0c5194a985ac9a3ea6b31a87515dcca54bb780c64e6f0c8bb9",
+      "published_sha256": "aee1865655fd6b0c5194a985ac9a3ea6b31a87515dcca54bb780c64e6f0c8bb9",
+      "bytes": 6895,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1460,8 +1829,8 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     }
   ],
-  "files_count": 161,
-  "bytes": 1861154,
+  "files_count": 202,
+  "bytes": 2312267,
   "scan_issues": [],
   "withheld": "reports/withheld_artifacts.md"
 }

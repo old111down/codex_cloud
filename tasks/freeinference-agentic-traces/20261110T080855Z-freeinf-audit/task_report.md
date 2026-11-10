@@ -10,7 +10,7 @@
 
 ## B. 能否直接为 PCAP 提供可靠行为标签？
 
-**不能。** 没有配对 PCAP、socket/stream、客户端 request 身份或本次实验的共同事件。历史匿名用户/Session ID 不足以连接另一次采集。请求时刻由服务端完成时间减 latency 得到，不是独立客户端 wire 时间。当前 Gateway 的日志 timestamp 是异步 DB insert time；该当前源码与历史部署的版本对应关系 Unknown。
+**不能。** 没有配对 PCAP、socket/stream、客户端 request 身份或本次实验的共同事件。历史匿名用户/Session ID 不足以连接另一次采集。导出代码把 raw timestamp 解释为 end，再减 latency 得到 start；历史物理打点仍 Unknown，不是独立客户端 wire 时间。当前 Gateway 的日志 timestamp 是异步 DB insert time；该当前源码与历史部署的版本对应关系 Unknown。
 
 八类用户意图也不在公开表中，原始正文、完整标注 prompt、模型和核验材料缺失。Tool Category 不能替代 Create/Debug 等任务意图。即使未来配对成功，工具触发/上下文变异仍可能是推断标签；应单列其误差与标签可得时间。
 
@@ -34,9 +34,9 @@
 
 ## 复现证据与主要问题
 
-- **Verified运行：** 独立Conda和原版源码执行、48个文件校验、全16周统计/绘图入口、真实3Session缓存模拟。主要统计与Table1/多项图表值一致。
+- **Verified运行：** 独立Conda和原版源码执行、48个文件校验、全16周统计/绘图入口、真实3Session缓存模拟，以及完整Jun07和May31两周独立缓存模拟（分别覆盖human-only与human+SWE，四表数值逐键exact-equal）。主要统计与Table1/多项图表值一致。
 - **Partially Verified：** 作者缓存仿真中间表可重画/汇总；完整独立仿真未完成。73项选定声明比较69项，其中67项符合印刷精度，含上述仿真材料，不表示67项独立实验成功。
-- **确认差异：** Table6 batchmix 71.3/28.7与当前原版64.0174/35.9826不一致；84.5%的宽度按call加权，不等于按request单工具占比93.2316%。ProviderD部分cache文字与当前曲线也需澄清。原因Unknown。
+- **确认差异：** Table6 batchmix 71.3/28.7与当前原版64.0174/35.9826不一致；84.5%的宽度按call加权。按request计算时，在有至少1次tool call的人类顶层请求中（排除SWE），单工具占比93.2316%，分母为1,044,159。ProviderD部分cache文字与当前曲线也需澄清。原因Unknown。
 - **Failed且保留：** 原始Make缺`.venv`；pytest0项；无SWE单周输出8NaN；完整单周cache在120秒审计时限超时。均未隐去或描述为算法复现成功。
 - **Unknown：** 95%重建验证、Fig7完整Subagent profile、Fig16意图流程、历史部署打点、RTT预处理、真实Gateway/PCAP关联与所有网络分类精度。
 

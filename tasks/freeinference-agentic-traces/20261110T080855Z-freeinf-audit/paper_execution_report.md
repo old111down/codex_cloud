@@ -1,12 +1,12 @@
 # FreeInference 论文代码覆盖与执行报告
 
-状态：**Partially Verified**。实际完成全部16周公开 Parquet 上的官方统计/绘图入口，并运行了真实小子集的完整 cache 模拟。完整周 cache replay、私有原始日志重建、95% 验证和意图标注未复现。
+状态：**Partially Verified**。实际完成全部16周公开 Parquet 上的官方统计/绘图入口、两个完整周的独立 cache replay，以及真实小子集 smoke。两个完整周的四张输出表均与作者同周数值完全一致；全16周独立 replay、私有原始日志重建、95% 验证和意图标注未复现。
 
 ## 版本与证据边界
 
 - 论文：[From Requests to Sessions](https://data.freeinference.org/pdf/paper/from-requests-to-sessions.pdf)，本次获取18页，p13–18为参考文献，无 Appendix；PDF SHA256见 `research_notes/paper_workload_characterization/inventory.json`。
 - 源码：[HarvardMadSys/freeinference_agentic_trace](https://github.com/HarvardMadSys/freeinference_agentic_trace)，固定 `2b795dbf5eac490a7c081906fdce6cc7a184b7ef`。原 clone 未修改。完整16周 Parquet 来源/哈希、Conda安装记录见 `data_validation_report.md`、`reports/data_manifest.csv` 和 `environment/`。
-- `paper_code_coverage.csv` 有41条官方 registry 映射，加15条独立核查项目；覆盖状态描述代码/输入证据，不能解释为该论文所有实验数值均已独立复现。`paper_metric_comparison.csv` 单独记录结果对照。
+- `paper_code_coverage.csv` 有41条官方 registry 映射，加17条独立核查项目；覆盖状态描述代码/输入证据，不能解释为该论文所有实验数值均已独立复现。`paper_metric_comparison.csv` 单独记录结果对照。
 - 原版统计入口使用公开数据中的已重建 sessions、分类和 token counts；计算一致性不会独立证明采集、重建、标签或 provider 计数正确。
 
 ## 实际运行环境
@@ -31,6 +31,9 @@ Debian13.6；CPU配额4核；内存上限16GiB；无已建立的 GPU、CUDA 或�
 | `prepare_small_realdata` | `scripts/prepare_small_realdata_release.py` | 构造明确标记的真实数据小子集，保持原 schema/块ID，不改原数据 |
 | `simulation_small_realdata` | 相同官方 simulation CLI，数据改为明示小子集 | exit0，2.43s，完整 cache replay 与 cheaper-reads model |
 | `small_realdata_simulation_validation` | conservation、first-read、TTL monotonicity 和 counterfactual baseline 检查 | exit0，52条 policy/TTL tally 和63条 cheaper-read rows |
+| `simulation_complete_smallest_week` | 原版 CLI，完整Jun07周，1worker/8GiBguard/300s界限 | exit0，110.294s；80个human top-level sessions，6859requests，无裁剪 |
+| `simulation_complete_mixed_scope_week` | 原版 CLI，完整May31周，1worker/8GiBguard/600s界限 | exit0，190.867s；同时验证human和SWE两个独立scope |
+| `compare_complete_*_week` | 同周四表按完整复合键、整数exact、浮点显式容差对照 | 两周均所有数值严格exact相同，maxabs0，未使用容差挽救差异 |
 | `paper_all_weeks` | 原版副本中 `make figures PYTHON=CONDA_PYTHON PROCESSES=1` | exit0，64.24s；全部16周，88个输出文件，41个 registry 项均有数值结果 |
 | `paper_all_weeks_quality` | 对最终 `numbers.json` 递归检查有限值 | exit0，0个非有限值，0个显式 skipped 项 |
 | `extra_paper_metrics_all_weeks[_v2]` | 官方 gap/token 函数，列裁剪后的全16周数据 | 补取 cache-usage 子集比例、gap P90、均值/中位数及 provider 曲线；第二次针对独审提出的新口径问题 |
@@ -73,9 +76,26 @@ Figure8a文本约58%/18%可由 mean58.4545%/18.3614%解释，不能与同bin med
 
 ## 小子集模拟的明确界限
 
-Aug30原完整 `requests.parquet` 190544行、20rowgroups；block-ID列解压总量约19GB，最大单组约1.54GB。完整周单worker模拟在本次120s预算内未完成；这不证明普通云CPU永远无法运行，也不证明依赖或算法损坏。
+Aug30原完整 `requests.parquet` 190544行、20rowgroups；block-ID列解压总量约19GB，最大单组约1.54GB。Aug30完整周单worker模拟在本次120s预算内未完成；这不证明普通云CPU永远无法运行，也不证明依赖或算法损坏。随后选择更小的完整周，结果见下一节。
 
 替代 smoke 使用3个完整 top-level、无child且各3–32requests的 sessions，共42requests/39toolcalls，539494个block reads，数据约1.17MB。确定性选择规则、原请求文件SHA、独立派生manifest及派生文件哈希见 `reports/small_realdata_subset_provenance.json`。官方64partition/13TTL/4policy CLI完整执行，得到52条tallies与63条cheaper-read rows；守恒、无限TTL first-read和TTL单调性均通过。该子集的输入块token数8631904、∞TTL first-read tokens530336仅是 smoke 的校验量，**不是论文的命中率或性能复现**。
+
+## 两个完整周的独立 cache replay
+
+对全部16周按真实 `requests.parquet` 文件大小排序，选择最小完整Jun07周和最小同时含human/SWE的完整May31周。输入使用原公开完整三表和原manifest，未裁剪行，也未用作者结果替代计算。显式 `--week` 分支会无条件执行 `simulate_week` 和 `cheaper_reads.write_week`；新输出位于两个独立fresh目录。源码、64partitions、13TTLs、4policies、16-token blocks及counterfactual参数未修改。
+
+| 完整周 | 输入范围 | 原版replay时间 | 输出行数：tallies /totals /request_misses /cheaper_reads | 同周对照 |
+|---|---|---:|---:|---|
+| 2026-06-07–06-13 | 80human top-level；6859requests；0child；请求文件7,885,194B | 110.294s | 52 /1 /6859 /63 | 四表全部键和整数/浮点值exact相同 |
+| 2026-05-31–06-06 | 65top-level=59human+6SWE，另11child；原请求文件7324行、16,381,638B | 190.867s | 104 /2 /7157 /63 | human/SWE分scope四表全部键和整数/浮点值exact相同 |
+
+May31的7157条request_misses是官方top-level scope选择后的请求，原输入7324行仍全部保留；child请求不作为独立scope模拟。两周均逐表核对列、复合键唯一性、keyset、行数、原行键顺序和所有数值。整数要求exact；浮点设 `atol=1e-6, rtol=1e-12`，实际每列max absolute/relative delta均为0，没有依赖容差通过。request级keys和rows只在私有目录比较，不输出身份字段。所有作者/新结果source manifest均相同且对应当前输入。
+
+八个Parquet文件的byte SHA均与作者版本不同，但逻辑数值全相同；footer明确作者Arrow25.0.1/pandas3.0.6、本次26.0.1/3.1.1，均为SNAPPY、格式2.6且原行键顺序一致。没有逐字节逆向归因，因此不把不同SHA误当数值差异。完整哈希/逐列比较与无身份aggregate cells见 `reports/complete_{smallest,mixed_scope}_week_simulation_comparison.{json,csv}`；实际命令见对应 `logs/official_checks/`。
+
+Jun07未采集真实peakRSS，保持Unknown。May31用Linux wait4记录最大RSS统计1,907,608KiB（约1.819GiB）、user155.970s/system35.142s；这是kernel最大resident-set统计，不是并发所有进程RSS求和，也不是GPU内存。资源文件为 `reports/complete_mixed_scope_week_resource_usage.json`。外部`/usr/bin/time`不存在的前置失败单独保留exit127，原算法未启动；随后只使用自有测量wrapper执行一次原版replay，没有安装系统包。
+
+这些结果将**两个指定完整周**升级为独立模拟验证；全16周论文缓存数值仍基于作者中间表，73项数值对照的等级/数量不升级。全16周在剩余预算内的运行时间只能依据块量作规划外推，约9.33h是推测而非实测。按原预算停止新增cache实验，未修改算法或生成缺失论文实验。
 
 ## 执行缺陷、修复与语义限制
 
@@ -90,4 +110,4 @@ Aug30原完整 `requests.parquet` 190544行、20rowgroups；block-ID列解压总
 
 ## 保持 Unknown 的项目
 
-完整原周/16周cache replay结果、真实provider cache策略/容量、真实GPU性能，私有Gateway原日志的重建验证、subagent Figure7完整方法、Table6b完整profile、Figure16意图标签质量，及 batch-mix/provider-D差异根因。未执行匿名JSONL→Parquet转换，未调用任何模型/API来补齐缺失标签，未将推断或模拟当作网络包、TCPflow或实测服务器性能。
+Aug30及全16周完整cache replay结果、真实provider cache策略/容量、真实GPU性能，私有Gateway原日志的重建验证、subagent Figure7完整方法、Table6b完整profile、Figure16意图标签质量，及 batch-mix/provider-D差异根因。两个已核对的小完整周不代表其余14周。未执行匿名JSONL→Parquet转换，未调用任何模型/API来补齐缺失标签，未将推断或模拟当作网络包、TCPflow或实测服务器性能。

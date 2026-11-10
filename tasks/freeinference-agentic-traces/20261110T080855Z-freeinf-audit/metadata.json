@@ -10,7 +10,7 @@
   "archive_started_time_utc": "2026-11-10T08:08:55Z",
   "archive_completed_time_utc": null,
   "deadline_utc": "2026-11-10T11:06:28Z",
-  "record_generated_at_utc": "2026-11-10T08:37:01Z",
+  "record_generated_at_utc": "2026-11-10T08:56:33Z",
   "objective": "Audit full paper, public implementation/data/labels and actual CPU execution; design defensible self-collected trace–PCAP alignment and Hermes MVP without claiming unrun success.",
   "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
   "related_runs": [],
@@ -22,8 +22,12 @@
       "commit_shas": [
         "2b795dbf5eac490a7c081906fdce6cc7a184b7ef"
       ],
-      "license": "Unknown unless qualified in source evidence",
-      "version_status": "Verified"
+      "license": "CC-BY-4.0 declared for dataset and artifact in pinned README License section; no standalone LICENSE file",
+      "version_status": "Verified",
+      "evidence": [
+        "https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/README.md#license",
+        "environment/source_provenance.json"
+      ]
     },
     {
       "name": "FreeInference current Gateway",
@@ -40,8 +44,11 @@
       "commit_shas": [
         "b7db40d82568ea68ce321ac1ead3bfea354c7f56"
       ],
-      "license": "Unknown unless qualified in source evidence",
-      "version_status": "Verified"
+      "license": "MIT as declared by GitHub repository metadata retrieved this run; license text not independently audited",
+      "version_status": "Verified",
+      "evidence": [
+        "https://api.github.com/repos/NousResearch/hermes-agent"
+      ]
     },
     {
       "name": "MAGIC26",
@@ -58,8 +65,11 @@
       "commit_shas": [
         "5c6550b0d08beff983e9159fe2575e7a2334c8c1"
       ],
-      "license": "Unknown unless qualified in source evidence",
-      "version_status": "Verified"
+      "license": "Apache-2.0 code / CC-BY-4.0 dataset declared in pinned README",
+      "version_status": "Verified",
+      "evidence": [
+        "https://github.com/uw-syfi/TraceLab/blob/5c6550b0d08beff983e9159fe2575e7a2334c8c1/README.md#-license"
+      ]
     }
   ],
   "data_source": {
@@ -132,7 +142,39 @@
       "Official PDF HTTP200, downloaded and parsed"
     ],
     "permissions": "ordinary workspace user; privileged capture capability not established",
-    "network_policy": "unrestricted/enforced observed via runtime status; no VPN configured"
+    "network_policy": "unrestricted/enforced observed via runtime status; no VPN configured",
+    "paper_conda_versions": {
+      "python": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+      "python_compiler": "GCC 15.3.0",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "packages": {
+        "pandas": "3.1.1",
+        "pyarrow": "26.0.1",
+        "matplotlib": "3.11.2",
+        "tiktoken": "0.14.0",
+        "orjson": "3.13.0",
+        "tree-sitter": "0.26.0",
+        "tree-sitter-bash": "0.25.1",
+        "pytest": "9.2.0",
+        "huggingface_hub": "2.4.0",
+        "numpy": "2.5.4",
+        "pip": "26.2.2",
+        "setuptools": "84.2.1"
+      },
+      "gpu_tools": {
+        "nvidia-smi": null,
+        "nvcc": null
+      },
+      "source_dependency_policy": "Official pyproject declarations, Python3.12, all required + huggingface + test extras. No compatibility substitutions.",
+      "package_import_path": "PYTHONPATH to pinned pristine source or private execution copy; no editable source install"
+    },
+    "independent_synthetic_alignment_python": "system3.12.14; see logs/alignment_synthetic_checks.log",
+    "archive_validation_versions": {
+      "observed_at_utc": "2026-11-10T08:46:06.532557+00:00",
+      "scope": "System interpreter for standalone synthetic alignment and archive format validation; paper pipeline uses independent Conda",
+      "python": "3.12.14",
+      "jsonschema": "4.26.0"
+    }
   },
   "commands_executed": [
     {
@@ -823,6 +865,272 @@
         "logs/official_checks/workspace_preparation.json",
         "logs/official_checks/workspace_preparation.log"
       ]
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "credential.helper=!gh auth git-credential",
+        "push",
+        "-u",
+        "origin",
+        "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T08:38:33.321900+00:00",
+      "end_time_utc": "2026-11-10T08:38:35.194823+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/archive_checkpoint.json",
+        "logs/archive_checkpoint.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/select_complete_week_replay.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:44:17.624766+00:00",
+      "end_time_utc": "2026-11-10T08:44:18.140205+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/complete_week_selection.json",
+        "logs/official_checks/complete_week_selection.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "simulation",
+        "--week",
+        "2026-06-07",
+        "--release",
+        "/workspace/freeinference-audit/private/data/release",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/complete_smallest_week_simulation",
+        "--processes",
+        "1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:44:45.286368+00:00",
+      "end_time_utc": "2026-11-10T08:46:35.580503+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/simulation_complete_smallest_week.json",
+        "logs/official_checks/simulation_complete_smallest_week.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/compare_complete_week_simulation.py",
+        "--week",
+        "2026-06-07_2026-06-13",
+        "--recomputed",
+        "private/runtime/complete_smallest_week_simulation",
+        "--output",
+        "reports/complete_smallest_week_simulation_comparison.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:47:04.749147+00:00",
+      "end_time_utc": "2026-11-10T08:47:05.367199+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/compare_complete_smallest_week.json",
+        "logs/official_checks/compare_complete_smallest_week.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/select_complete_week_replay.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:48:30.093379+00:00",
+      "end_time_utc": "2026-11-10T08:48:30.658915+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/complete_mixed_scope_selection.json",
+        "logs/official_checks/complete_mixed_scope_selection.log"
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/workspace/freeinference-audit/logs/official_checks/simulation_complete_mixed_scope_week.time.log",
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "simulation",
+        "--week",
+        "2026-05-31",
+        "--release",
+        "/workspace/freeinference-audit/private/data/release",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/complete_mixed_scope_simulation",
+        "--processes",
+        "1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:48:30.698756+00:00",
+      "end_time_utc": "2026-11-10T08:48:30.699593+00:00",
+      "exit_code": 127,
+      "status": "Failed",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/simulation_complete_mixed_scope_week_missing_time.json",
+        "logs/official_checks/simulation_complete_mixed_scope_week_missing_time.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/run_with_resource_usage.py",
+        "--output",
+        "/workspace/freeinference-audit/reports/complete_mixed_scope_week_resource_usage.json",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "simulation",
+        "--week",
+        "2026-05-31",
+        "--release",
+        "/workspace/freeinference-audit/private/data/release",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/complete_mixed_scope_simulation",
+        "--processes",
+        "1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:49:16.915491+00:00",
+      "end_time_utc": "2026-11-10T08:52:27.782666+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/simulation_complete_mixed_scope_week.json",
+        "logs/official_checks/simulation_complete_mixed_scope_week.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/compare_complete_week_simulation.py",
+        "--week",
+        "2026-06-07_2026-06-13",
+        "--recomputed",
+        "private/runtime/complete_smallest_week_simulation",
+        "--output",
+        "reports/complete_smallest_week_simulation_comparison.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:50:13.239939+00:00",
+      "end_time_utc": "2026-11-10T08:50:13.959851+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/compare_complete_smallest_week_with_footer.json",
+        "logs/official_checks/compare_complete_smallest_week_with_footer.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/compare_complete_week_simulation.py",
+        "--week",
+        "2026-05-31_2026-06-06",
+        "--recomputed",
+        "private/runtime/complete_mixed_scope_simulation",
+        "--output",
+        "reports/complete_mixed_scope_week_simulation_comparison.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:52:48.762567+00:00",
+      "end_time_utc": "2026-11-10T08:52:49.378455+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/compare_complete_mixed_scope_week.json",
+        "logs/official_checks/compare_complete_mixed_scope_week.log"
+      ]
     }
   ],
   "completed_work": [
@@ -860,6 +1168,24 @@
       "evidence": [
         "reports/small_realdata_simulation_validation.json",
         "logs/alignment_synthetic_checks.log"
+      ]
+    },
+    {
+      "description": "Fresh original full-week replay 2026-06-07_2026-06-13: four same-week author tables compared by keys/numeric cells; not all16week replay",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/complete_smallest_week_simulation_comparison.json",
+        "paper_execution_report.md"
+      ]
+    },
+    {
+      "description": "Fresh original full-week replay 2026-05-31_2026-06-06: four same-week author tables compared by keys/numeric cells; not all16week replay",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/complete_mixed_scope_week_simulation_comparison.json",
+        "paper_execution_report.md"
       ]
     }
   ],
@@ -918,91 +1244,106 @@
       "path": "README.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f"
     },
     {
       "path": "task_report.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "aee1865655fd6b0c5194a985ac9a3ea6b31a87515dcca54bb780c64e6f0c8bb9"
     },
     {
       "path": "paper_analysis.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "f77e88278e2da21f47de094ed97be378e656ddd9d6031d822d00bc1739f74d7b"
     },
     {
       "path": "architecture.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "65fb5eedcd16b8e8dcd2a44380a06365a4de07c198fd3db77bb90cd8026153ba"
     },
     {
       "path": "data_dictionary.csv",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "0452efb32f9946e3f8ddfddfd8da4f9ddab135fb5d0a49b1de71ae5b72f2190c"
     },
     {
       "path": "label_mechanisms.csv",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "d0865f6e7d477e9e3206a7f11ef0f59bfe6e98e9481cdcdf86f81a428bc417ba"
     },
     {
       "path": "session_reconstruction.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "e9d33e61dab4227534453efafe2cd7cc1c4725b51d65520ec24cbf4550c2ea90"
     },
     {
       "path": "paper_code_coverage.csv",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "efc499808628b775fa41dc14f7cb4991e5ce88e2255b15e7bcc252c25e76dd6e"
     },
     {
       "path": "paper_metric_comparison.csv",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "18d5d065fdabb516e156af0fcc452c6425248a4529ce97b38615b0a15add5758"
     },
     {
       "path": "reproduction_report.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "2d1ec2775cd986305cc5e1a927da114b69012eef9d28656fb3ce3e7d18f18840"
     },
     {
       "path": "trace_pcap_alignment.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "75612157fc7d0ef3dd706ab8ae787bf1c0e2552d0f252b9356efa1a53f1a56f3"
     },
     {
       "path": "mvp_experiment_plan.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "ac24eb5970cf3931daf55269d0e01ca5e72d240c547a039c0ecf2116335a99b4"
     },
     {
       "path": "research_opportunities.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "67faae23fe8fbbc0b5cb1668a8c3025327d12b710c9a4c761fcc0edf3b8b07a3"
     },
     {
       "path": "execution_timeline.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae"
     },
     {
       "path": "execution_log.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
-      "publication_review": "approved"
+      "publication_review": "approved",
+      "sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38"
     }
   ],
   "publication_review": {
@@ -1015,11 +1356,25 @@
   },
   "final_status": "Partially Verified",
   "final_status_scope": "Audit evidence complete within scope;paper results and downstream network feasibility only partially verified",
+  "end_time_scope": "Report sealing time; subsequent push/PR-head verification is recorded in the PR body and final response without a circular self-commit assertion",
   "pull_request_url": null,
   "limitations": [
     "NoPCAP/noAgent/modelinference",
     "Nohistoricalrawlogs/intentdata",
     "Authorcacheintermediatesreused",
     "NoautomaticPRmerge"
-  ]
+  ],
+  "remote_verification": {
+    "status": "Verified",
+    "scope": "First scientific checkpoint only; enclosing later commits are verified separately in PR/reply",
+    "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+    "commit_sha": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
+    "checked_at_utc": "2026-11-10T08:41:03.650978+00:00",
+    "evidence": [
+      "logs/archive_checkpoint.json",
+      "logs/archive_checkpoint.log"
+    ],
+    "local_equals_remote": true,
+    "remote_read_method": "git ls-remote --heads origin <branch>"
+  }
 }

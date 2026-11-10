@@ -1,0 +1,2 @@
+2026-05-31_2026-06-06: the cache replay and the cheaper-reads model, into /workspace/freeinference-audit/private/runtime/complete_mixed_scope_simulation/2026-05-31_2026-06-06
+{"resource_usage": "/workspace/freeinference-audit/reports/complete_mixed_scope_week_resource_usage.json", "elapsed_seconds": 190.79693710199717, "max_rss_kib_linux_wait4": 1907608, "exit_code": 0}

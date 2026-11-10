@@ -1,8 +1,8 @@
 {
-  "reviewed_utc": "2026-11-10T08:35:28.514903+00:00",
+  "reviewed_utc": "2026-11-10T08:50:30.712440+00:00",
   "owner": "freeinf_data",
-  "status": "48 files safe as-is; one file requires public-copy sanitization",
-  "scope": "Only the data-agent-owned 49 original files explicitly enumerated here. No copying, pushing, publication, or deletion performed. Other agents files not reviewed.",
+  "status": "50 files safe as-is; one file requires public-copy sanitization",
+  "scope": "Only the data-agent-owned 51 original files explicitly enumerated here, including two supplemental resource-plan files. No copying, pushing, publication, or deletion performed. Other agents files not reviewed.",
   "review_method": [
     "Read every listed UTF-8 file and checked URLs, credentials, signed URL markers, private key/token patterns, file/home paths, cloud instance/UUID patterns, and standalone16/32hex candidates.",
     "Reviewed JSON structure for raw record/payload keys; none contained session/user/argument/program/prompt/response record values.",
@@ -10,9 +10,9 @@
     "Verified file SHA256 after review; reviewed source data pipeline emits only source metadata and aggregate statistics."
   ],
   "summary": {
-    "files_reviewed": 49,
-    "bytes_reviewed": 1061756,
-    "safe_as_is": 48,
+    "files_reviewed": 51,
+    "bytes_reviewed": 1086551,
+    "safe_as_is": 50,
     "requires_sanitization": 1,
     "actual_trace_ids_found": 0,
     "signed_urls_found": 0,
@@ -69,7 +69,9 @@
     "scripts/download_processed_release.py",
     "scripts/download_selected_week.py",
     "scripts/profile_parquet.py",
-    "scripts/summarize_data_validation.py"
+    "scripts/summarize_data_validation.py",
+    "reports/cache_replay_resource_plan.json",
+    "reports/cache_replay_resource_plan.md"
   ],
   "conditionally_publishable_files": [
     {
@@ -123,7 +125,9 @@
     "scripts/download_processed_release.py",
     "scripts/download_selected_week.py",
     "scripts/profile_parquet.py",
-    "scripts/summarize_data_validation.py"
+    "scripts/summarize_data_validation.py",
+    "reports/cache_replay_resource_plan.json",
+    "reports/cache_replay_resource_plan.md"
   ],
   "recommended_minimum_requires_sanitized_pip_freeze": true,
   "optional_safe_files": [
@@ -693,6 +697,32 @@
       },
       "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
       "safety_notes": []
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.json",
+      "bytes": 22791,
+      "sha256": "b3bc693b35f04302bae00bd3fa108bdf2a57dd0134ad5af1fcf1cc689d729868",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 3
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Supplemental resource plan uses only footer aggregate counts, existing benchmark metadata, public source references and explicitly labeled estimates; no raw values/IDs read."
+      ]
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.md",
+      "bytes": 2004,
+      "sha256": "5cb8c3eeb5ee163c58cb492224993555f848f0931d9cdb6e1896af1e46c467b1",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Supplemental resource plan uses only footer aggregate counts, existing benchmark metadata, public source references and explicitly labeled estimates; no raw values/IDs read."
+      ]
     }
   ],
   "limitations": [
@@ -700,5 +730,6 @@
     "Aggregate rare-category co-occurrences are present by design; no raw identifiers, task text or trace argument/program strings were included.",
     "Allowlist applies to recorded file hashes. Re-review changed files before publication."
   ],
-  "review_record_publication": "This JSON contains only artifact paths/hashes and review metadata and may itself be archived. Self-hash is intentionally not embedded."
+  "review_record_publication": "This JSON contains only artifact paths/hashes and review metadata and may itself be archived. Self-hash is intentionally not embedded.",
+  "supplemental_review_note": "Added cache_replay_resource_plan JSON/Markdown after read-only footer/runtime planning; verified no raw ID, credential or signed URL patterns."
 }

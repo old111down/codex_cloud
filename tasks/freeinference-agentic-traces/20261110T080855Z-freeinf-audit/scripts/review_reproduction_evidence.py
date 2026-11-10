@@ -100,6 +100,10 @@ report={'status':'Verified consistency checks with unresolved method/result disc
                             'The successful small cache replay uses3selected sessions/42requests, not the full paper population.',
                             'Count consistency is independently checked; raw private-source correctness and semantic label accuracy remain Unknown.',
                             'Full-method and numeric discrepancies are described in independent_reproduction_review.md; finite numbers do not imply paper equality.']}
+full_week_review_path=ROOT/'reports/independent_full_week_review.json'
+if full_week_review_path.exists():
+    full_review=json.loads(full_week_review_path.read_text())
+    report['additional_complete_week_artifact_reviews']=[{'week':w['week'],'status':w['status'],'check_counts':w['check_counts']} for w in full_review.get('weeks',[])]
 report['commands_executed']=['python scripts/review_reproduction_evidence.py']
 comparison_path=ROOT/'reports/paper_metric_comparison_summary.json'
 if comparison_path.exists():

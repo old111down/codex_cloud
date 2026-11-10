@@ -1,0 +1,396 @@
+{
+  "status": "Verified",
+  "week": "2026-06-07_2026-06-13",
+  "entire_week_no_subsampling": true,
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "source_manifest_sha256": "cb568f2be6d718d015ff67886042f86ac43637d73a61995ad6010e64177dcf56",
+  "input_tables_record_sha256": "594a1e37de5668de321cc4ff70fc4f719c39c8ed6e6a3db573a6762ccf181a75",
+  "configuration": {
+    "partitions": 64,
+    "block_tokens": 16,
+    "ttls": [
+      "1s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "10m",
+      "15m",
+      "30m",
+      "1h",
+      "3h",
+      "6h",
+      "1d",
+      "none"
+    ],
+    "policies": [
+      "ttl_only",
+      "reclaim_mutate",
+      "reclaim_dead",
+      "reclaim_both"
+    ],
+    "cheaper_reads_ttls": [
+      "5m",
+      "15m",
+      "none"
+    ],
+    "price_cut_steps": 20,
+    "forced_compaction_tokens": 900000,
+    "processes": 1,
+    "audit_address_space_guard_gib": 8
+  },
+  "float_tolerance": {
+    "atol": 1e-06,
+    "rtol": 1e-12
+  },
+  "integer_rule": "exact equality",
+  "source_manifests_equal_and_current": true,
+  "tables": {
+    "tallies": {
+      "reference_rows": 52,
+      "recomputed_rows": 52,
+      "reference_sha256": "40105b7ef75aeff0720a3ce9fd5bca8988eef87faf941fe9d505aa4c768055ae",
+      "recomputed_sha256": "26aaf93cb225c6df252eabb7eb250bc4cc30e86003656d7ad1616a00e5261f91",
+      "reference_bytes": 6270,
+      "recomputed_bytes": 6270,
+      "columns_equal": true,
+      "reference_duplicate_keys": 0,
+      "recomputed_duplicate_keys": 0,
+      "metrics": {
+        "hit_tokens": {
+          "integer_exact_comparison": true,
+          "cells": 52,
+          "exact_equal_cells": 52,
+          "within_tolerance_cells": 52,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "miss_tokens": {
+          "integer_exact_comparison": true,
+          "cells": 52,
+          "exact_equal_cells": 52,
+          "within_tolerance_cells": 52,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "reusable_token_seconds": {
+          "integer_exact_comparison": false,
+          "cells": 52,
+          "exact_equal_cells": 52,
+          "within_tolerance_cells": 52,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "dead_token_seconds": {
+          "integer_exact_comparison": false,
+          "cells": 52,
+          "exact_equal_cells": 52,
+          "within_tolerance_cells": 52,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        }
+      },
+      "original_row_key_order_equal": true,
+      "reference_footer": {
+        "created_by": "parquet-cpp-arrow version 25.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.0.6",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "25.0.1"
+        }
+      },
+      "recomputed_footer": {
+        "created_by": "parquet-cpp-arrow version 26.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.1.1",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "26.0.1"
+        }
+      },
+      "byte_equal": false,
+      "keysets_equal": true,
+      "status": "Verified"
+    },
+    "totals": {
+      "reference_rows": 1,
+      "recomputed_rows": 1,
+      "reference_sha256": "7f80d2d43da95dd6828cf05c91360e3f6ee2f98c628835a740b23370680a7782",
+      "recomputed_sha256": "a42477956510ad3156d694218d6cc3413b1eec6c57adf5f5b1c2bdb58571a530",
+      "reference_bytes": 3602,
+      "recomputed_bytes": 3602,
+      "columns_equal": true,
+      "reference_duplicate_keys": 0,
+      "recomputed_duplicate_keys": 0,
+      "metrics": {
+        "active_token_seconds": {
+          "integer_exact_comparison": false,
+          "cells": 1,
+          "exact_equal_cells": 1,
+          "within_tolerance_cells": 1,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "span_seconds": {
+          "integer_exact_comparison": false,
+          "cells": 1,
+          "exact_equal_cells": 1,
+          "within_tolerance_cells": 1,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "output_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 1,
+          "exact_equal_cells": 1,
+          "within_tolerance_cells": 1,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "requests": {
+          "integer_exact_comparison": true,
+          "cells": 1,
+          "exact_equal_cells": 1,
+          "within_tolerance_cells": 1,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        }
+      },
+      "original_row_key_order_equal": true,
+      "reference_footer": {
+        "created_by": "parquet-cpp-arrow version 25.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.0.6",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "25.0.1"
+        }
+      },
+      "recomputed_footer": {
+        "created_by": "parquet-cpp-arrow version 26.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.1.1",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "26.0.1"
+        }
+      },
+      "byte_equal": false,
+      "keysets_equal": true,
+      "status": "Verified"
+    },
+    "request_misses": {
+      "reference_rows": 6859,
+      "recomputed_rows": 6859,
+      "reference_sha256": "6d33f1c69a57c113a1a8d965b569ed72cfcc06e2619de171a35f1a02faf61ae5",
+      "recomputed_sha256": "4921e22bb8d53d427d0c3b5d3cf65dc8962abf37fcca79c18cc93ae7e0186d15",
+      "reference_bytes": 24228,
+      "recomputed_bytes": 24228,
+      "columns_equal": true,
+      "reference_duplicate_keys": 0,
+      "recomputed_duplicate_keys": 0,
+      "metrics": {
+        "missed_tokens": {
+          "integer_exact_comparison": true,
+          "cells": 6859,
+          "exact_equal_cells": 6859,
+          "within_tolerance_cells": 6859,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        }
+      },
+      "original_row_key_order_equal": true,
+      "reference_footer": {
+        "created_by": "parquet-cpp-arrow version 25.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.0.6",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "25.0.1"
+        }
+      },
+      "recomputed_footer": {
+        "created_by": "parquet-cpp-arrow version 26.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.1.1",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "26.0.1"
+        }
+      },
+      "byte_equal": false,
+      "keysets_equal": true,
+      "status": "Verified"
+    },
+    "cheaper_reads": {
+      "reference_rows": 63,
+      "recomputed_rows": 63,
+      "reference_sha256": "3a21b352f427eed6167371b315373c2d04add448a84b5173d8aa24924cbfbf0a",
+      "recomputed_sha256": "36cc85db9f1e18766e5baccce22b0fc09d5d739e2a9c40374c48161494b1a308",
+      "reference_bytes": 8193,
+      "recomputed_bytes": 8193,
+      "columns_equal": true,
+      "reference_duplicate_keys": 0,
+      "recomputed_duplicate_keys": 0,
+      "metrics": {
+        "today_prefilled_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "today_cached_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "prefilled_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "cached_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "output_tokens": {
+          "integer_exact_comparison": false,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "reductions": {
+          "integer_exact_comparison": true,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "skipped_reductions": {
+          "integer_exact_comparison": true,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        },
+        "forced_compactions": {
+          "integer_exact_comparison": true,
+          "cells": 63,
+          "exact_equal_cells": 63,
+          "within_tolerance_cells": 63,
+          "nonfinite_cells": 0,
+          "max_absolute_delta": 0.0,
+          "max_relative_delta_with_denominator_floor1": 0.0,
+          "status": "Verified"
+        }
+      },
+      "original_row_key_order_equal": true,
+      "reference_footer": {
+        "created_by": "parquet-cpp-arrow version 25.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.0.6",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "25.0.1"
+        }
+      },
+      "recomputed_footer": {
+        "created_by": "parquet-cpp-arrow version 26.0.1",
+        "parquet_format_version": "2.6",
+        "row_groups": 1,
+        "compression_codecs": [
+          "SNAPPY"
+        ],
+        "pandas_version": "3.1.1",
+        "pandas_metadata_creator": {
+          "library": "pyarrow",
+          "version": "26.0.1"
+        }
+      },
+      "byte_equal": false,
+      "keysets_equal": true,
+      "status": "Verified"
+    }
+  },
+  "public_aggregate_cells": 716,
+  "request_level_rows_emitted": 0,
+  "scope_limitation": "Independent replay verification of this complete week only; all16week paper simulation metrics remain Partially Verified unless separately replayed. This is a model replay, not GPU/hardware or provider-cache validation.",
+  "serialization_note": "Parquet byte equality and logical equality are distinct. Writer/pandas versions and codecs are recorded; unequal bytes alone do not demonstrate different numerical results. Cause of every byte difference was not reverse-engineered."
+}

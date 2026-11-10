@@ -1,8 +1,8 @@
 # 实际执行时间线
 
-T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成：2026-11-10T08:37:01Z。
+T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成：2026-11-10T08:56:33Z。
 
-截至记录生成累计 30.55 分钟；没有等待耗尽预算。并行子任务的时段相互重叠，不相加冒充总墙钟时间。
+截至记录生成累计 50.08 分钟；没有等待耗尽预算。并行子任务的时段相互重叠，不相加冒充总墙钟时间。
 
 | UTC时段 | 已执行阶段 | 状态/范围 |
 |---|---|---|
@@ -13,6 +13,9 @@ T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成�
 | 08:16–08:27 | 原版失败、smoke、单周与全量统计、真实小子集cache | 缓存全周120秒超时如实保留 |
 | 08:21–08:24 | 公共GET/401检查及11项合成对齐检查 | 无模型调用、无Agent/PCAP |
 | 08:27起 | 论文/数据/时间与ID独立复核；分母差异、报告集成、公开安全审查 | 未验证根因保持Unknown |
+| 08:38:33–08:38:35 | 首个检查点提交/推送 | 远程与本地59f93ca6eff0e53c9086a28e92750d14b3218d3d相同 |
+
+| 08:44–08:53 | 两个完整小周独立缓存模拟与四表逐键比较 | Jun07与含SWE的May31；全16周仍partial |
 
 后续归档操作与远程提交收据见 `reports/remote_verification.json`、`reports/checkpoints.json`（生成后）。
 
@@ -54,3 +57,12 @@ T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成�
 | 2026-11-10T08:30:17.016370+00:00 | 2026-11-10T08:30:17.985021+00:00 | [batching_denominator_check](logs/official_checks/batching_denominator_check.json) | 0 |
 | 2026-11-10T08:30:55.869935+00:00 | 2026-11-10T08:30:55.934442+00:00 | [summarize_data_validation](logs/summarize_data_validation.json) | 0 |
 | 2026-11-10T08:32:25.125890+00:00 | 2026-11-10T08:32:25.240412+00:00 | [workspace_preparation](logs/official_checks/workspace_preparation.json) | 0 |
+| 2026-11-10T08:38:33.321900+00:00 | 2026-11-10T08:38:35.194823+00:00 | [archive_checkpoint](logs/archive_checkpoint.json) | 0 |
+| 2026-11-10T08:44:17.624766+00:00 | 2026-11-10T08:44:18.140205+00:00 | [complete_week_selection](logs/official_checks/complete_week_selection.json) | 0 |
+| 2026-11-10T08:44:45.286368+00:00 | 2026-11-10T08:46:35.580503+00:00 | [simulation_complete_smallest_week](logs/official_checks/simulation_complete_smallest_week.json) | 0 |
+| 2026-11-10T08:47:04.749147+00:00 | 2026-11-10T08:47:05.367199+00:00 | [compare_complete_smallest_week](logs/official_checks/compare_complete_smallest_week.json) | 0 |
+| 2026-11-10T08:48:30.093379+00:00 | 2026-11-10T08:48:30.658915+00:00 | [complete_mixed_scope_selection](logs/official_checks/complete_mixed_scope_selection.json) | 0 |
+| 2026-11-10T08:48:30.698756+00:00 | 2026-11-10T08:48:30.699593+00:00 | [simulation_complete_mixed_scope_week_missing_time](logs/official_checks/simulation_complete_mixed_scope_week_missing_time.json) | 127 |
+| 2026-11-10T08:49:16.915491+00:00 | 2026-11-10T08:52:27.782666+00:00 | [simulation_complete_mixed_scope_week](logs/official_checks/simulation_complete_mixed_scope_week.json) | 0 |
+| 2026-11-10T08:50:13.239939+00:00 | 2026-11-10T08:50:13.959851+00:00 | [compare_complete_smallest_week_with_footer](logs/official_checks/compare_complete_smallest_week_with_footer.json) | 0 |
+| 2026-11-10T08:52:48.762567+00:00 | 2026-11-10T08:52:49.378455+00:00 | [compare_complete_mixed_scope_week](logs/official_checks/compare_complete_mixed_scope_week.json) | 0 |

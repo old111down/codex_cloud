@@ -1,0 +1,929 @@
+table,scope,policy,ttl,read_price_cut,metric,reference_value,recomputed_value,absolute_delta,comparison,rule
+tallies,Agentic,reclaim_both,10m,,hit_tokens,701738720,701738720,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,10s,,hit_tokens,598536784,598536784,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,15m,,hit_tokens,705349344,705349344,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1d,,hit_tokens,710194912,710194912,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1h,,hit_tokens,708989760,708989760,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1m,,hit_tokens,670188352,670188352,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1s,,hit_tokens,173217088,173217088,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,30m,,hit_tokens,707723712,707723712,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,30s,,hit_tokens,654227936,654227936,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,3h,,hit_tokens,709863488,709863488,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,5m,,hit_tokens,695621648,695621648,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,6h,,hit_tokens,710029248,710029248,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,none,,hit_tokens,710202144,710202144,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,10m,,hit_tokens,701807088,701807088,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,10s,,hit_tokens,598536784,598536784,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,15m,,hit_tokens,705417712,705417712,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1d,,hit_tokens,710525984,710525984,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1h,,hit_tokens,709300528,709300528,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1m,,hit_tokens,670188352,670188352,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1s,,hit_tokens,173217088,173217088,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,30m,,hit_tokens,707902880,707902880,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,30s,,hit_tokens,654227936,654227936,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,3h,,hit_tokens,710183648,710183648,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,5m,,hit_tokens,695621664,695621664,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,6h,,hit_tokens,710360320,710360320,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,none,,hit_tokens,710533216,710533216,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,10m,,hit_tokens,702072656,702072656,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,10s,,hit_tokens,598693792,598693792,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,15m,,hit_tokens,705761008,705761008,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1d,,hit_tokens,711640480,711640480,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1h,,hit_tokens,709656928,709656928,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1m,,hit_tokens,670379584,670379584,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1s,,hit_tokens,173265184,173265184,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,30m,,hit_tokens,708256176,708256176,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,30s,,hit_tokens,654384944,654384944,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,3h,,hit_tokens,710837072,710837072,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,5m,,hit_tokens,695874608,695874608,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,6h,,hit_tokens,711130224,711130224,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,none,,hit_tokens,711655584,711655584,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,10m,,hit_tokens,702141376,702141376,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,10s,,hit_tokens,598693792,598693792,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,15m,,hit_tokens,705834592,705834592,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1d,,hit_tokens,712034064,712034064,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1h,,hit_tokens,709983840,709983840,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1m,,hit_tokens,670379584,670379584,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1s,,hit_tokens,173265184,173265184,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,30m,,hit_tokens,708440560,708440560,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,30s,,hit_tokens,654384944,654384944,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,3h,,hit_tokens,711186080,711186080,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,5m,,hit_tokens,695874976,695874976,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,6h,,hit_tokens,711520496,711520496,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,none,,hit_tokens,712097728,712097728,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,10m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,10s,,hit_tokens,1884304,1884304,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,15m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1d,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1m,,hit_tokens,1931488,1931488,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1s,,hit_tokens,1272704,1272704,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,30m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,30s,,hit_tokens,1915808,1915808,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,3h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,5m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,6h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,none,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,10m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,10s,,hit_tokens,1884304,1884304,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,15m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1d,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1m,,hit_tokens,1931488,1931488,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1s,,hit_tokens,1272704,1272704,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,30m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,30s,,hit_tokens,1915808,1915808,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,3h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,5m,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,6h,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,none,,hit_tokens,1946960,1946960,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,10m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,10s,,hit_tokens,1884304,1884304,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,15m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1d,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1m,,hit_tokens,1934368,1934368,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1s,,hit_tokens,1272704,1272704,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,30m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,30s,,hit_tokens,1918576,1918576,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,3h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,5m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,6h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,none,,hit_tokens,1951360,1951360,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,10m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,10s,,hit_tokens,1884304,1884304,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,15m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1d,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1m,,hit_tokens,1934368,1934368,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1s,,hit_tokens,1272704,1272704,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,30m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,30s,,hit_tokens,1918576,1918576,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,3h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,5m,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,6h,,hit_tokens,1949952,1949952,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,none,,hit_tokens,1951360,1951360,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,10m,,miss_tokens,23810784,23810784,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,10s,,miss_tokens,127012720,127012720,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,15m,,miss_tokens,20200160,20200160,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1d,,miss_tokens,15354592,15354592,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1h,,miss_tokens,16559744,16559744,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1m,,miss_tokens,55361152,55361152,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,1s,,miss_tokens,552332416,552332416,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,30m,,miss_tokens,17825792,17825792,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,30s,,miss_tokens,71321568,71321568,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,3h,,miss_tokens,15686016,15686016,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,5m,,miss_tokens,29927856,29927856,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,6h,,miss_tokens,15520256,15520256,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,none,,miss_tokens,15347360,15347360,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,10m,,miss_tokens,23742416,23742416,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,10s,,miss_tokens,127012720,127012720,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,15m,,miss_tokens,20131792,20131792,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1d,,miss_tokens,15023520,15023520,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1h,,miss_tokens,16248976,16248976,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1m,,miss_tokens,55361152,55361152,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,1s,,miss_tokens,552332416,552332416,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,30m,,miss_tokens,17646624,17646624,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,30s,,miss_tokens,71321568,71321568,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,3h,,miss_tokens,15365856,15365856,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,5m,,miss_tokens,29927840,29927840,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,6h,,miss_tokens,15189184,15189184,0.0,Verified,integer exact
+tallies,Agentic,reclaim_dead,none,,miss_tokens,15016288,15016288,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,10m,,miss_tokens,23476848,23476848,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,10s,,miss_tokens,126855712,126855712,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,15m,,miss_tokens,19788496,19788496,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1d,,miss_tokens,13909024,13909024,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1h,,miss_tokens,15892576,15892576,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1m,,miss_tokens,55169920,55169920,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,1s,,miss_tokens,552284320,552284320,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,30m,,miss_tokens,17293328,17293328,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,30s,,miss_tokens,71164560,71164560,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,3h,,miss_tokens,14712432,14712432,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,5m,,miss_tokens,29674896,29674896,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,6h,,miss_tokens,14419280,14419280,0.0,Verified,integer exact
+tallies,Agentic,reclaim_mutate,none,,miss_tokens,13893920,13893920,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,10m,,miss_tokens,23408128,23408128,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,10s,,miss_tokens,126855712,126855712,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,15m,,miss_tokens,19714912,19714912,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1d,,miss_tokens,13515440,13515440,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1h,,miss_tokens,15565664,15565664,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1m,,miss_tokens,55169920,55169920,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,1s,,miss_tokens,552284320,552284320,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,30m,,miss_tokens,17108944,17108944,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,30s,,miss_tokens,71164560,71164560,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,3h,,miss_tokens,14363424,14363424,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,5m,,miss_tokens,29674528,29674528,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,6h,,miss_tokens,14029008,14029008,0.0,Verified,integer exact
+tallies,Agentic,ttl_only,none,,miss_tokens,13451776,13451776,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,10m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,10s,,miss_tokens,163280,163280,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,15m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1d,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1m,,miss_tokens,116096,116096,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,1s,,miss_tokens,774880,774880,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,30m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,30s,,miss_tokens,131776,131776,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,3h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,5m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,6h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_both,none,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,10m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,10s,,miss_tokens,163280,163280,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,15m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1d,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1m,,miss_tokens,116096,116096,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,1s,,miss_tokens,774880,774880,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,30m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,30s,,miss_tokens,131776,131776,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,3h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,5m,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,6h,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_dead,none,,miss_tokens,100624,100624,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,10m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,10s,,miss_tokens,163280,163280,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,15m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1d,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1m,,miss_tokens,113216,113216,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,1s,,miss_tokens,774880,774880,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,30m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,30s,,miss_tokens,129008,129008,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,3h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,5m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,6h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,reclaim_mutate,none,,miss_tokens,96224,96224,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,10m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,10s,,miss_tokens,163280,163280,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,15m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1d,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1m,,miss_tokens,113216,113216,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,1s,,miss_tokens,774880,774880,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,30m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,30s,,miss_tokens,129008,129008,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,3h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,5m,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,6h,,miss_tokens,97632,97632,0.0,Verified,integer exact
+tallies,SWE-Bench,ttl_only,none,,miss_tokens,96224,96224,0.0,Verified,integer exact
+tallies,Agentic,reclaim_both,10m,,reusable_token_seconds,20956001485.08329,20956001485.08329,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,10s,,reusable_token_seconds,8232955572.310722,8232955572.310722,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,15m,,reusable_token_seconds,22933588244.59065,22933588244.59065,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1d,,reusable_token_seconds,38986044261.6687,38986044261.6687,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1h,,reusable_token_seconds,29055553822.04511,29055553822.04511,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1m,,reusable_token_seconds,11859856251.833351,11859856251.833351,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1s,,reusable_token_seconds,2180754171.0188904,2180754171.0188904,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,30m,,reusable_token_seconds,25910969423.936947,25910969423.936947,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,30s,,reusable_token_seconds,10339212849.810886,10339212849.810886,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,3h,,reusable_token_seconds,34343911505.183033,34343911505.183033,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,5m,,reusable_token_seconds,17725450758.803116,17725450758.803116,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,6h,,reusable_token_seconds,36692864593.489426,36692864593.489426,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,none,,reusable_token_seconds,39383667259.84645,39383667259.84645,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,10m,,reusable_token_seconds,21053272151.854065,21053272151.854065,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,10s,,reusable_token_seconds,8233424596.29874,8233424596.29874,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,15m,,reusable_token_seconds,23118879376.052315,23118879376.052315,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1d,,reusable_token_seconds,42149354874.56055,42149354874.56055,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1h,,reusable_token_seconds,29635348496.69832,29635348496.69832,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1m,,reusable_token_seconds,11865068834.19096,11865068834.19096,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1s,,reusable_token_seconds,2180754182.154888,2180754182.154888,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,30m,,reusable_token_seconds,26296023332.445187,26296023332.445187,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,30s,,reusable_token_seconds,10341472153.320503,10341472153.320503,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,3h,,reusable_token_seconds,35071021619.4526,35071021619.4526,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,5m,,reusable_token_seconds,17775321790.055714,17775321790.055714,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,6h,,reusable_token_seconds,37846139415.75656,37846139415.75656,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,none,,reusable_token_seconds,42591697315.17065,42591697315.17065,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,10m,,reusable_token_seconds,21683979163.608593,21683979163.608593,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,10s,,reusable_token_seconds,8247075610.312046,8247075610.312046,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,15m,,reusable_token_seconds,23977035625.85148,23977035625.85148,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1d,,reusable_token_seconds,58640920465.86827,58640920465.86827,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1h,,reusable_token_seconds,32515438902.10463,32515438902.10463,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1m,,reusable_token_seconds,11938952823.404297,11938952823.404297,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1s,,reusable_token_seconds,2182518214.995697,2182518214.995697,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,30m,,reusable_token_seconds,27835824237.103573,27835824237.103573,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,30s,,reusable_token_seconds,10379261527.81221,10379261527.81221,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,3h,,reusable_token_seconds,41870136247.16307,41870136247.16307,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,5m,,reusable_token_seconds,18096995514.257328,18096995514.257328,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,6h,,reusable_token_seconds,49075797086.23281,49075797086.23281,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,none,,reusable_token_seconds,59258599000.17342,59258599000.17342,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,10m,,reusable_token_seconds,21784729797.99576,21784729797.99576,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,10s,,reusable_token_seconds,8247544634.300064,8247544634.300064,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,15m,,reusable_token_seconds,24167591120.129383,24167591120.129383,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1d,,reusable_token_seconds,63317806890.06972,63317806890.06972,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1h,,reusable_token_seconds,33216140901.781013,33216140901.781013,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1m,,reusable_token_seconds,11944168617.057873,11944168617.057873,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1s,,reusable_token_seconds,2182518226.131695,2182518226.131695,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,30m,,reusable_token_seconds,28250022274.39542,28250022274.39542,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,30s,,reusable_token_seconds,10381520831.321827,10381520831.321827,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,3h,,reusable_token_seconds,42955517771.27304,42955517771.27304,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,5m,,reusable_token_seconds,18148004113.12632,18148004113.12632,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,6h,,reusable_token_seconds,50794811698.802185,50794811698.802185,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,none,,reusable_token_seconds,64701228438.7121,64701228438.7121,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,10m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,10s,,reusable_token_seconds,16020933.712173462,16020933.712173462,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,15m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1d,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1m,,reusable_token_seconds,17875392.591358185,17875392.591358185,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1s,,reusable_token_seconds,10954483.072124481,10954483.072124481,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,30m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,30s,,reusable_token_seconds,17166897.24825287,17166897.24825287,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,3h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,5m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,6h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,none,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,10m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,10s,,reusable_token_seconds,16020933.712173462,16020933.712173462,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,15m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1d,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1m,,reusable_token_seconds,17875392.591358185,17875392.591358185,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1s,,reusable_token_seconds,10954483.072124481,10954483.072124481,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,30m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,30s,,reusable_token_seconds,17166897.24825287,17166897.24825287,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,3h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,5m,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,6h,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,none,,reusable_token_seconds,18290846.735328674,18290846.735328674,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,10m,,reusable_token_seconds,19210053.647411346,19210053.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,10s,,reusable_token_seconds,16064933.712173462,16064933.712173462,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,15m,,reusable_token_seconds,19632453.647411346,19632453.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1d,,reusable_token_seconds,140016453.64741135,140016453.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1h,,reusable_token_seconds,23434053.647411346,23434053.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1m,,reusable_token_seconds,18029173.647434235,18029173.647434235,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1s,,reusable_token_seconds,10958883.072124481,10958883.072124481,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,30m,,reusable_token_seconds,20899653.647411346,20899653.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,30s,,reusable_token_seconds,17270984.81632614,17270984.81632614,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,3h,,reusable_token_seconds,33571653.64741135,33571653.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,5m,,reusable_token_seconds,18787653.647411346,18787653.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,6h,,reusable_token_seconds,48778053.64741135,48778053.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,none,,reusable_token_seconds,242450458.73553848,242450458.73553848,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,10m,,reusable_token_seconds,19210053.647411346,19210053.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,10s,,reusable_token_seconds,16064933.712173462,16064933.712173462,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,15m,,reusable_token_seconds,19632453.647411346,19632453.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1d,,reusable_token_seconds,140016453.64741135,140016453.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1h,,reusable_token_seconds,23434053.647411346,23434053.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1m,,reusable_token_seconds,18029173.647434235,18029173.647434235,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1s,,reusable_token_seconds,10958883.072124481,10958883.072124481,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,30m,,reusable_token_seconds,20899653.647411346,20899653.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,30s,,reusable_token_seconds,17270984.81632614,17270984.81632614,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,3h,,reusable_token_seconds,33571653.64741135,33571653.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,5m,,reusable_token_seconds,18787653.647411346,18787653.647411346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,6h,,reusable_token_seconds,48778053.64741135,48778053.64741135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,none,,reusable_token_seconds,242450458.73553848,242450458.73553848,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,10m,,dead_token_seconds,2494550350.2276,2494550350.2276,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,10s,,dead_token_seconds,71738949.17635727,71738949.17635727,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,15m,,dead_token_seconds,3269341175.4676895,3269341175.4676895,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1d,,dead_token_seconds,30231548495.671055,30231548495.671055,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1h,,dead_token_seconds,6591475130.54771,6591475130.54771,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1m,,dead_token_seconds,397673012.22436523,397673012.22436523,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,1s,,dead_token_seconds,7772380.943767548,7772380.943767548,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,30m,,dead_token_seconds,4834012922.187881,4834012922.187881,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,30s,,dead_token_seconds,204757462.4580307,204757462.4580307,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,3h,,dead_token_seconds,10610404135.03593,10610404135.03593,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,5m,,dead_token_seconds,1507427894.1733055,1507427894.1733055,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,6h,,dead_token_seconds,16070658618.366497,16070658618.366497,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_both,none,,dead_token_seconds,38345630428.50667,38345630428.50667,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,10m,,dead_token_seconds,4486970182.84222,4486970182.84222,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,10s,,dead_token_seconds,86034240.0,86034240.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,15m,,dead_token_seconds,6426394629.172428,6426394629.172428,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1d,,dead_token_seconds,126674862886.02365,126674862886.02365,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1h,,dead_token_seconds,20468927727.650017,20468927727.650017,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1m,,dead_token_seconds,514331655.76309204,514331655.76309204,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,1s,,dead_token_seconds,8603424.0,8603424.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,30m,,dead_token_seconds,11703959580.58582,11703959580.58582,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,30s,,dead_token_seconds,258102720.0,258102720.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,3h,,dead_token_seconds,41116541935.24504,41116541935.24504,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,5m,,dead_token_seconds,2399289205.7230988,2399289205.7230988,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,6h,,dead_token_seconds,62208524212.35104,62208524212.35104,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_dead,none,,dead_token_seconds,145624935502.51196,145624935502.51196,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,10m,,dead_token_seconds,5342380750.2276,5342380750.2276,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,10s,,dead_token_seconds,119202789.17635727,119202789.17635727,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,15m,,dead_token_seconds,7541086775.4676895,7541086775.4676895,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1d,,dead_token_seconds,416174513747.62366,416174513747.62366,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1h,,dead_token_seconds,23662210344.62875,23662210344.62875,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1m,,dead_token_seconds,682456052.2243652,682456052.2243652,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,1s,,dead_token_seconds,12518764.943767548,12518764.943767548,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,30m,,dead_token_seconds,13377504122.187881,13377504122.187881,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,30s,,dead_token_seconds,347148982.4580307,347148982.4580307,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,3h,,dead_token_seconds,61704192149.11697,61704192149.11697,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,5m,,dead_token_seconds,2931343094.1733055,2931343094.1733055,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,6h,,dead_token_seconds,118199025832.44751,118199025832.44751,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,reclaim_mutate,none,,dead_token_seconds,1493563316075.2036,1493563316075.2036,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,10m,,dead_token_seconds,8009884800.0,8009884800.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,10s,,dead_token_seconds,133498080.0,133498080.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,15m,,dead_token_seconds,12014827200.0,12014827200.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1d,,dead_token_seconds,1114717499255.207,1114717499255.207,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1h,,dead_token_seconds,47982628043.80097,47982628043.80097,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1m,,dead_token_seconds,800988480.0,800988480.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,1s,,dead_token_seconds,13349808.0,13349808.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,30m,,dead_token_seconds,24013401888.70478,24013401888.70478,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,30s,,dead_token_seconds,400494240.0,400494240.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,3h,,dead_token_seconds,143086774000.8759,143086774000.8759,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,5m,,dead_token_seconds,4004942400.0,4004942400.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,6h,,dead_token_seconds,285741122800.8758,285741122800.8758,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,Agentic,ttl_only,none,,dead_token_seconds,4578942144131.304,4578942144131.304,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,10m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,10s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,15m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1d,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,1s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,30m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,30s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,3h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,5m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,6h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_both,none,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,10m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,10s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,15m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1d,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,1s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,30m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,30s,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,3h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,5m,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,6h,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_dead,none,,dead_token_seconds,0.0,0.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,10m,,dead_token_seconds,43594991.615356445,43594991.615356445,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,10s,,dead_token_seconds,742880.0,742880.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,15m,,dead_token_seconds,58763387.6158371,58763387.6158371,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1d,,dead_token_seconds,1655961896.7834282,1655961896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1h,,dead_token_seconds,119193896.78342819,119193896.78342819,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1m,,dead_token_seconds,4457280.0,4457280.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,1s,,dead_token_seconds,74288.0,74288.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,30m,,dead_token_seconds,85785896.78342819,85785896.78342819,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,30s,,dead_token_seconds,2228640.0,2228640.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,3h,,dead_token_seconds,252825896.7834282,252825896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,5m,,dead_token_seconds,22286400.0,22286400.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,6h,,dead_token_seconds,453273896.7834282,453273896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,reclaim_mutate,none,,dead_token_seconds,3038982513.103924,3038982513.103924,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,10m,,dead_token_seconds,43594991.615356445,43594991.615356445,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,10s,,dead_token_seconds,742880.0,742880.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,15m,,dead_token_seconds,58763387.6158371,58763387.6158371,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1d,,dead_token_seconds,1655961896.7834282,1655961896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1h,,dead_token_seconds,119193896.78342819,119193896.78342819,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1m,,dead_token_seconds,4457280.0,4457280.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,1s,,dead_token_seconds,74288.0,74288.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,30m,,dead_token_seconds,85785896.78342819,85785896.78342819,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,30s,,dead_token_seconds,2228640.0,2228640.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,3h,,dead_token_seconds,252825896.7834282,252825896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,5m,,dead_token_seconds,22286400.0,22286400.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,6h,,dead_token_seconds,453273896.7834282,453273896.7834282,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+tallies,SWE-Bench,ttl_only,none,,dead_token_seconds,3038982513.103924,3038982513.103924,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,Agentic,,,,active_token_seconds,7407557906.118153,7407557906.118153,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,SWE-Bench,,,,active_token_seconds,14444853.344280243,14444853.344280243,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,Agentic,,,,span_seconds,603455.2650001049,603455.2650001049,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,SWE-Bench,,,,span_seconds,161136.11400008202,161136.11400008202,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,Agentic,,,,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,SWE-Bench,,,,output_tokens,34747.0,34747.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+totals,Agentic,,,,requests,6954,6954,0.0,Verified,integer exact
+totals,SWE-Bench,,,,requests,203,203,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.0,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.05,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.1,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.15,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.2,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.25,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.3,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.35,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.4,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.45,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.5,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.55,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.6,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.65,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.7,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.75,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.8,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.85,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.9,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.95,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,1.0,today_prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.0,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.05,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.1,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.15,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.2,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.25,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.3,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.35,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.4,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.45,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.5,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.55,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.6,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.65,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.7,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.75,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.8,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.85,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.9,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.95,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,1.0,today_prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.0,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.05,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.1,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.15,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.2,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.25,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.3,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.35,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.4,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.45,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.5,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.55,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.6,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.65,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.7,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.75,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.8,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.85,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.9,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.95,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,1.0,today_prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.0,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.05,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.1,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.15,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.2,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.25,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.3,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.35,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.4,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.45,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.5,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.55,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.6,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.65,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.7,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.75,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.8,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.85,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.9,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.95,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,1.0,today_cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.0,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.05,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.1,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.15,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.2,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.25,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.3,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.35,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.4,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.45,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.5,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.55,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.6,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.65,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.7,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.75,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.8,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.85,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.9,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.95,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,1.0,today_cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.0,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.05,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.1,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.15,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.2,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.25,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.3,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.35,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.4,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.45,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.5,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.55,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.6,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.65,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.7,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.75,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.8,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.85,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.9,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.95,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,1.0,today_cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.0,prefilled_tokens,19711103.883525312,19711103.883525312,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.05,prefilled_tokens,19711962.502848186,19711962.502848186,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.1,prefilled_tokens,19708549.998113424,19708549.998113424,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.15,prefilled_tokens,19703892.0880035,19703892.0880035,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.2,prefilled_tokens,19693937.997729048,19693937.997729048,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.25,prefilled_tokens,19678488.82344865,19678488.82344865,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.3,prefilled_tokens,19669808.8449381,19669808.8449381,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.35,prefilled_tokens,19652273.31965346,19652273.31965346,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.4,prefilled_tokens,19623783.325080313,19623783.325080313,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.45,prefilled_tokens,19602481.41260709,19602481.41260709,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.5,prefilled_tokens,19848933.147700816,19848933.147700816,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.55,prefilled_tokens,20826278.525940932,20826278.525940932,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.6,prefilled_tokens,21354278.80678104,21354278.80678104,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.65,prefilled_tokens,21945491.230048157,21945491.230048157,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.7,prefilled_tokens,22190287.789300486,22190287.789300486,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.75,prefilled_tokens,22444003.323015235,22444003.323015235,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.8,prefilled_tokens,22249419.261462256,22249419.261462256,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.85,prefilled_tokens,22256420.161479004,22256420.161479004,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.9,prefilled_tokens,22059117.31293743,22059117.31293743,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.95,prefilled_tokens,21837797.320684135,21837797.320684135,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,1.0,prefilled_tokens,21497090.243511572,21497090.243511572,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.0,prefilled_tokens,29213035.74991951,29213035.74991951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.05,prefilled_tokens,29233165.94087769,29233165.94087769,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.1,prefilled_tokens,29230698.43614293,29230698.43614293,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.15,prefilled_tokens,29240931.044648275,29240931.044648275,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.2,prefilled_tokens,29237546.95437382,29237546.95437382,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.25,prefilled_tokens,29235510.828613356,29235510.828613356,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.3,prefilled_tokens,29246954.850102812,29246954.850102812,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.35,prefilled_tokens,29257285.850102812,29257285.850102812,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.4,prefilled_tokens,29262442.614808694,29262442.614808694,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.45,prefilled_tokens,29271135.42999409,29271135.42999409,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.5,prefilled_tokens,29683287.330832615,29683287.330832615,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.55,prefilled_tokens,32156382.901035115,32156382.901035115,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.6,prefilled_tokens,33138692.266649336,33138692.266649336,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.65,prefilled_tokens,34350932.86649477,34350932.86649477,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.7,prefilled_tokens,34850780.79217046,34850780.79217046,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.75,prefilled_tokens,35195994.32588523,35195994.32588523,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.8,prefilled_tokens,35229553.30798699,35229553.30798699,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.85,prefilled_tokens,35335617.307987,35335617.307987,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.9,prefilled_tokens,35156800.45944544,35156800.45944544,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.95,prefilled_tokens,34935480.467192136,34935480.467192136,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,1.0,prefilled_tokens,34601051.39001956,34601051.39001956,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.0,prefilled_tokens,14825747.155363431,14825747.155363431,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.05,prefilled_tokens,14824491.774686309,14824491.774686309,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.1,prefilled_tokens,14820368.269951543,14820368.269951543,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.15,prefilled_tokens,14809805.135548001,14809805.135548001,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.2,prefilled_tokens,14799851.045273552,14799851.045273552,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.25,prefilled_tokens,14783069.87099315,14783069.87099315,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.3,prefilled_tokens,14762156.535168814,14762156.535168814,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.35,prefilled_tokens,14740448.009884173,14740448.009884173,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.4,prefilled_tokens,14696993.227927862,14696993.227927862,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.45,prefilled_tokens,14650743.589468496,14650743.589468496,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.5,prefilled_tokens,14573921.324562212,14573921.324562212,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.55,prefilled_tokens,14479057.70280237,14479057.70280237,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.6,prefilled_tokens,14402585.484747997,14402585.484747997,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.65,prefilled_tokens,14294976.273667196,14294976.273667196,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.7,prefilled_tokens,14211636.03203986,14211636.03203986,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.75,prefilled_tokens,14088687.803403804,14088687.803403804,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.8,prefilled_tokens,13877204.741850821,13877204.741850821,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.85,prefilled_tokens,13656344.828718511,13656344.828718511,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.9,prefilled_tokens,13251225.619810706,13251225.619810706,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.95,prefilled_tokens,12895416.014231002,12895416.014231002,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,1.0,prefilled_tokens,12404569.813867198,12404569.813867198,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.0,cached_tokens,686079400.1164724,686079400.1164724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.05,cached_tokens,686257646.4971493,686257646.4971493,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.1,cached_tokens,686325449.0018841,686325449.0018841,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.15,cached_tokens,686405894.911994,686405894.911994,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.2,cached_tokens,686503077.0022686,686503077.0022686,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.25,cached_tokens,686678572.1765491,686678572.1765491,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.3,cached_tokens,686810011.1550596,686810011.1550596,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.35,cached_tokens,686874386.6803442,686874386.6803442,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.4,cached_tokens,687126124.6749173,687126124.6749173,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.45,cached_tokens,687436021.5873905,687436021.5873905,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.5,cached_tokens,712693670.8522967,712693670.8522967,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.55,cached_tokens,852947979.474056,852947979.474056,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.6,cached_tokens,878352467.1932158,878352467.1932158,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.65,cached_tokens,971936066.7699487,971936066.7699487,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.7,cached_tokens,997731149.2106967,997731149.2106967,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.75,cached_tokens,1009008299.676982,1009008299.676982,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.8,cached_tokens,1009613255.7385352,1009613255.7385352,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.85,cached_tokens,1010451222.8385183,1010451222.8385183,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.9,cached_tokens,1011554019.68706,1011554019.68706,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.95,cached_tokens,1011906661.6793133,1011906661.6793133,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,1.0,cached_tokens,1012752955.7564858,1012752955.7564858,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.0,cached_tokens,676577468.2500786,676577468.2500786,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.05,cached_tokens,676736443.0591203,676736443.0591203,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.1,cached_tokens,676803300.563855,676803300.563855,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.15,cached_tokens,676868855.9553497,676868855.9553497,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.2,cached_tokens,676959468.0456241,676959468.0456241,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.25,cached_tokens,677121550.1713846,677121550.1713846,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.3,cached_tokens,677232865.1498952,677232865.1498952,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.35,cached_tokens,677269374.1498951,677269374.1498951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.4,cached_tokens,677487465.3851892,677487465.3851892,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.45,cached_tokens,677767367.5700039,677767367.5700039,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.5,cached_tokens,702859316.6691651,702859316.6691651,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.55,cached_tokens,841617875.0989617,841617875.0989617,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.6,cached_tokens,866568053.7333474,866568053.7333474,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.65,cached_tokens,959530625.1335025,959530625.1335025,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.7,cached_tokens,985070656.2078274,985070656.2078274,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.75,cached_tokens,996256308.6741126,996256308.6741126,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.8,cached_tokens,996633121.6920109,996633121.6920109,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.85,cached_tokens,997372025.6920105,997372025.6920105,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.9,cached_tokens,998456336.5405523,998456336.5405523,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.95,cached_tokens,998808978.5328056,998808978.5328056,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,1.0,cached_tokens,999648994.609978,999648994.609978,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.0,cached_tokens,690964756.844634,690964756.844634,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.05,cached_tokens,691145117.225311,691145117.225311,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.1,cached_tokens,691213630.7300458,691213630.7300458,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.15,cached_tokens,691299981.8644494,691299981.8644494,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.2,cached_tokens,691397163.954724,691397163.954724,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.25,cached_tokens,691573991.1290044,691573991.1290044,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.3,cached_tokens,691717663.4648287,691717663.4648287,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.35,cached_tokens,691786211.9901133,691786211.9901133,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.4,cached_tokens,692052914.7720696,692052914.7720696,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.45,cached_tokens,692387759.4105289,692387759.4105289,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.5,cached_tokens,717968682.6754351,717968682.6754351,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.55,cached_tokens,859295200.2971951,859295200.2971951,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.6,cached_tokens,885304160.5152497,885304160.5152497,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.65,cached_tokens,979586581.7263308,979586581.7263308,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.7,cached_tokens,1005709800.9679577,1005709800.9679577,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.75,cached_tokens,1017363615.1965938,1017363615.1965938,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.8,cached_tokens,1017985470.2581468,1017985470.2581468,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.85,cached_tokens,1019051298.171279,1019051298.171279,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.9,cached_tokens,1020361911.3801869,1020361911.3801869,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.95,cached_tokens,1020849042.9857665,1020849042.9857665,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,1.0,cached_tokens,1021845476.1861304,1021845476.1861304,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.05,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.1,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.15,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.2,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.25,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.3,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.35,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.4,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.45,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.5,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.55,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.6,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.65,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.7,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.75,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.8,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.85,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.9,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.95,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,1.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.05,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.1,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.15,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.2,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.25,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.3,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.35,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.4,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.45,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.5,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.55,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.6,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.65,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.7,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.75,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.8,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.85,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.9,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,0.95,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,5m,1.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.05,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.1,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.15,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.2,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.25,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.3,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.35,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.4,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.45,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.5,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.55,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.6,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.65,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.7,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.75,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.8,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.85,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.9,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,0.95,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,none,1.0,output_tokens,2113397.0,2113397.0,0.0,Verified,abs<= 1e-06 + 1e-12*abs(reference)
+cheaper_reads,,,15m,0.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.05,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.1,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.15,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.2,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.25,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.3,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.35,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.4,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.45,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.5,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.55,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.6,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.65,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.7,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.75,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.8,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.85,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.9,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.95,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,1.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.05,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.1,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.15,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.2,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.25,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.3,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.35,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.4,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.45,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.5,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.55,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.6,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.65,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.7,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.75,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.8,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.85,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.9,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.95,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,1.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.05,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.1,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.15,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.2,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.25,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.3,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.35,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.4,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.45,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.5,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.55,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.6,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.65,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.7,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.75,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.8,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.85,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.9,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.95,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,1.0,reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.0,skipped_reductions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.05,skipped_reductions,4,4,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.1,skipped_reductions,7,7,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.15,skipped_reductions,11,11,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.2,skipped_reductions,14,14,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.25,skipped_reductions,18,18,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.3,skipped_reductions,22,22,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.35,skipped_reductions,25,25,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.4,skipped_reductions,29,29,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.45,skipped_reductions,32,32,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.5,skipped_reductions,36,36,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.55,skipped_reductions,40,40,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.6,skipped_reductions,43,43,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.65,skipped_reductions,47,47,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.7,skipped_reductions,50,50,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.75,skipped_reductions,54,54,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.8,skipped_reductions,58,58,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.85,skipped_reductions,61,61,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.9,skipped_reductions,65,65,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.95,skipped_reductions,68,68,0.0,Verified,integer exact
+cheaper_reads,,,15m,1.0,skipped_reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.0,skipped_reductions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.05,skipped_reductions,4,4,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.1,skipped_reductions,7,7,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.15,skipped_reductions,11,11,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.2,skipped_reductions,14,14,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.25,skipped_reductions,18,18,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.3,skipped_reductions,22,22,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.35,skipped_reductions,25,25,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.4,skipped_reductions,29,29,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.45,skipped_reductions,32,32,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.5,skipped_reductions,36,36,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.55,skipped_reductions,40,40,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.6,skipped_reductions,43,43,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.65,skipped_reductions,47,47,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.7,skipped_reductions,50,50,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.75,skipped_reductions,54,54,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.8,skipped_reductions,58,58,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.85,skipped_reductions,61,61,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.9,skipped_reductions,65,65,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.95,skipped_reductions,68,68,0.0,Verified,integer exact
+cheaper_reads,,,5m,1.0,skipped_reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,none,0.0,skipped_reductions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.05,skipped_reductions,4,4,0.0,Verified,integer exact
+cheaper_reads,,,none,0.1,skipped_reductions,7,7,0.0,Verified,integer exact
+cheaper_reads,,,none,0.15,skipped_reductions,11,11,0.0,Verified,integer exact
+cheaper_reads,,,none,0.2,skipped_reductions,14,14,0.0,Verified,integer exact
+cheaper_reads,,,none,0.25,skipped_reductions,18,18,0.0,Verified,integer exact
+cheaper_reads,,,none,0.3,skipped_reductions,22,22,0.0,Verified,integer exact
+cheaper_reads,,,none,0.35,skipped_reductions,25,25,0.0,Verified,integer exact
+cheaper_reads,,,none,0.4,skipped_reductions,29,29,0.0,Verified,integer exact
+cheaper_reads,,,none,0.45,skipped_reductions,32,32,0.0,Verified,integer exact
+cheaper_reads,,,none,0.5,skipped_reductions,36,36,0.0,Verified,integer exact
+cheaper_reads,,,none,0.55,skipped_reductions,40,40,0.0,Verified,integer exact
+cheaper_reads,,,none,0.6,skipped_reductions,43,43,0.0,Verified,integer exact
+cheaper_reads,,,none,0.65,skipped_reductions,47,47,0.0,Verified,integer exact
+cheaper_reads,,,none,0.7,skipped_reductions,50,50,0.0,Verified,integer exact
+cheaper_reads,,,none,0.75,skipped_reductions,54,54,0.0,Verified,integer exact
+cheaper_reads,,,none,0.8,skipped_reductions,58,58,0.0,Verified,integer exact
+cheaper_reads,,,none,0.85,skipped_reductions,61,61,0.0,Verified,integer exact
+cheaper_reads,,,none,0.9,skipped_reductions,65,65,0.0,Verified,integer exact
+cheaper_reads,,,none,0.95,skipped_reductions,68,68,0.0,Verified,integer exact
+cheaper_reads,,,none,1.0,skipped_reductions,72,72,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.0,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.05,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.1,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.15,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.2,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.25,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.3,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.35,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.4,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.45,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.5,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.55,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.6,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.65,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.7,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.75,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.8,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.85,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.9,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,0.95,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,15m,1.0,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.0,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.05,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.1,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.15,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.2,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.25,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.3,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.35,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.4,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.45,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.5,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.55,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.6,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.65,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.7,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.75,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.8,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.85,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.9,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,0.95,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,5m,1.0,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.0,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.05,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.1,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.15,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.2,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.25,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.3,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.35,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.4,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.45,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.5,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.55,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.6,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.65,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.7,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.75,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.8,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.85,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.9,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,0.95,forced_compactions,0,0,0.0,Verified,integer exact
+cheaper_reads,,,none,1.0,forced_compactions,0,0,0.0,Verified,integer exact

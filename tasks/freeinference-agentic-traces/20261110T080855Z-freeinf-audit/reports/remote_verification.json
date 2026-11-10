@@ -1,0 +1,13 @@
+{
+  "status": "Verified",
+  "scope": "First scientific checkpoint only; enclosing later commits are verified separately in PR/reply",
+  "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "commit_sha": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
+  "checked_at_utc": "2026-11-10T08:41:03.650978+00:00",
+  "evidence": [
+    "logs/archive_checkpoint.json",
+    "logs/archive_checkpoint.log"
+  ],
+  "local_equals_remote": true,
+  "remote_read_method": "git ls-remote --heads origin <branch>"
+}

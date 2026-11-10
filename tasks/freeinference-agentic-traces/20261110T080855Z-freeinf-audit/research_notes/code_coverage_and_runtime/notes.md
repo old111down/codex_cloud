@@ -4,7 +4,7 @@
 
 **Takeaway:** 主要会话、工具、缓存和benchmark统计代码公开，但 Figure7、完整Table6b、Figure16和95%验证链不完整。
 
-**Cited findings:** 官方 [figure registry](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/paper/__init__.py) 有41条细分映射；独立逐页 inventory 为 [paper](https://data.freeinference.org/pdf/paper/from-requests-to-sessions.pdf) Figure1–16、Table1–7，无Appendix。`paper_code_coverage.csv` 给出56条逐项证据。public [schema](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/release/schema.py) 没有意图标签，也没有public prompt文本。
+**Cited findings:** 官方 [figure registry](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/paper/__init__.py) 有41条细分映射；独立逐页 inventory 为 [paper](https://data.freeinference.org/pdf/paper/from-requests-to-sessions.pdf) Figure1–16、Table1–7，无Appendix。`paper_code_coverage.csv` 给出58条逐项证据。public [schema](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/release/schema.py) 没有意图标签，也没有public prompt文本。
 
 **Inferences:** 已有父子session元数据可能支持新写subagent分析，但新实现不能冒充作者原Figure7实现或验证结果。
 
@@ -12,13 +12,15 @@
 
 ## 2. 官方代码能在实际CPU环境运行吗？
 
-**Takeaway:** 能运行公开处理后数据上的主要统计绘图和真实小样本完整模拟；完整周模拟本次限时未完成。
+**Takeaway:** 能运行公开处理后数据上的主要统计绘图、两个完整周的独立模拟和真实小样本smoke；Aug30/全16周独立模拟未完成。
 
-**Cited findings:** 官方 [Makefile](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/Makefile) 的受控原版目标实际exit0/64.24s，41registry项/88outputs，见 `logs/official_checks/paper_all_weeks.*`。115源码/配置字节一致，独立Conda依赖无替换。`simulation_small_realdata` 使用原 [simulation CLI](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/simulation/__main__.py) 处理3sessions/42requests/539494reads，2.43s exit0，52tallies+63cheaper-read rows及invariants通过。完整周120s exit124，无完整模拟产物。
+**Cited findings:** 官方 [Makefile](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/Makefile) 的受控原版目标实际exit0/64.24s，41registry项/88outputs，见 `logs/official_checks/paper_all_weeks.*`。115源码/配置字节一致，独立Conda依赖无替换。`simulation_small_realdata` 使用原 [simulation CLI](https://github.com/HarvardMadSys/freeinference_agentic_trace/blob/2b795dbf5eac490a7c081906fdce6cc7a184b7ef/simulation/__main__.py) 处理3sessions/42requests/539494reads，2.43s exit0，52tallies+63cheaper-read rows及invariants通过。Aug30完整周120s exit124，无完整模拟产物。
+
+追加核验选了最小完整Jun07周（80human/6859requests），原版replay110.294s成功；最小human/SWE混合May31周（59human+6SWE，另11child）190.867s成功。两周四表完整复合键和所有整数/浮点逐cell exact相同，maxabs0。见 `reports/complete_smallest_week_simulation_comparison.json` 与 `reports/complete_mixed_scope_week_simulation_comparison.json`。Parquet byteSHA不同，footer记录Arrow/pandas版本不同；并非数值差异。May31 wait4最大RSS1,907,608KiB，不是并发RSS求和；Jun07peakRSS未采集为Unknown。全16周缓存论文指标保持Partial。
 
 **Inferences:** 小样本成功证明这条代码链和依赖可执行，不能估计原16周总耗时/峰值内存或声称所有模拟完成。
 
-**Gaps:** GPU、实际KVcache资源、provider serving系统和网络包级行为未测试；8GiB虚拟地址guard/120s是审计条件，不是算法固有需求测量。
+**Gaps:** GPU、实际KVcache资源、provider serving系统和网络包级行为未测试；8GiB虚拟地址guard/120s是Aug30尝试的审计条件，不是算法固有需求测量。两完整周之外14周未独立replay，基于块量的全16周耗时规划外推不是实际运行结果。
 
 ## 3. 数字与论文一致吗？
 

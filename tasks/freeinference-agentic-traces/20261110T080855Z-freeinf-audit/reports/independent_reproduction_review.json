@@ -1,6 +1,6 @@
 {
   "status": "Verified consistency checks with unresolved method/result discrepancies",
-  "review_utc": "2026-11-10T08:33:14.077290+00:00",
+  "review_utc": "2026-11-10T08:55:26.655466+00:00",
   "scope": "Independent read-only review of saved aggregates, source methods and execution logs; no author pipeline/model rerun",
   "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
   "dataset_revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
@@ -317,7 +317,7 @@
     },
     {
       "path": "paper_code_coverage.csv",
-      "sha256": "a623e0a24145ac1e6cd3aa236062f69a736fbfa7a10db6a1bd5bea5c2d7c360a"
+      "sha256": "efc499808628b775fa41dc14f7cb4991e5ce88e2255b15e7bcc252c25e76dd6e"
     },
     {
       "path": "data_dictionary.csv",
@@ -341,6 +341,24 @@
     "The successful small cache replay uses3selected sessions/42requests, not the full paper population.",
     "Count consistency is independently checked; raw private-source correctness and semantic label accuracy remain Unknown.",
     "Full-method and numeric discrepancies are described in independent_reproduction_review.md; finite numbers do not imply paper equality."
+  ],
+  "additional_complete_week_artifact_reviews": [
+    {
+      "week": "2026-05-31_2026-06-06",
+      "status": "Verified",
+      "check_counts": {
+        "Verified": 62,
+        "Failed": 0
+      }
+    },
+    {
+      "week": "2026-06-07_2026-06-13",
+      "status": "Verified",
+      "check_counts": {
+        "Verified": 60,
+        "Failed": 0
+      }
+    }
   ],
   "commands_executed": [
     "python scripts/review_reproduction_evidence.py"

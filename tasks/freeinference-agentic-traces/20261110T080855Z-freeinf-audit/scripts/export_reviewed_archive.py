@@ -18,16 +18,18 @@ def main():
     # These are original reports/scripts reviewed by the root and topical reviewers.
     paths.update("""README.md task_report.md reproduction_report.md critical_findings.md metadata.json execution_timeline.md execution_log.md
 paper_analysis.md architecture.md session_reconstruction.md label_mechanisms.csv research_opportunities.md related_work_comparison.csv
-trace_pcap_alignment.md mvp_experiment_plan.md environment/host_summary.json environment/source_provenance.json
+trace_pcap_alignment.md mvp_experiment_plan.md environment/host_summary.json environment/source_provenance.json environment/archive_tools_versions.json
 environment/freeinference/pip-freeze.txt reports/withheld_artifacts.md reports/reproduction_results.csv reports/data_publication_review.json
 reports/alignment_evidence.csv reports/independent_paper_review.md reports/independent_paper_review.json
 reports/independent_reproduction_review.md reports/independent_reproduction_review.json
+reports/independent_full_week_review.md reports/independent_full_week_review.json
 reports/independent_alignment_review.md reports/independent_alignment_review.json reports/request_acceptance_review.md
+reports/final_archive_review.md reports/final_archive_review.json
 research_notes/paper_workload_characterization/notes.md research_notes/paper_workload_characterization/inventory.json research_notes/paper_workload_characterization/paper_claims.csv
 research_notes/session_collection_and_labels/notes.md research_notes/trace_pcap_alignment_mvp/notes.md
 research_notes/related_agent_measurement_work/notes.md research_notes/related_agent_measurement_work/source_manifest.json
 research_notes/code_coverage_and_runtime/publication_allowlist.json
-scripts/run_logged.py scripts/review_reproduction_evidence.py scripts/build_task_record.py scripts/export_reviewed_archive.py
+scripts/run_logged.py scripts/review_reproduction_evidence.py scripts/review_complete_week_artifacts.py scripts/build_task_record.py scripts/export_reviewed_archive.py scripts/validate_archive.py
 scripts/alignment/check_public_gateway_metadata.py scripts/alignment/match_intervals.py scripts/alignment/synthetic_checks.py
 logs/alignment_public_http_checks.json logs/alignment_synthetic_checks.json logs/alignment_synthetic_checks.log""".split())
     for optional in ["reports/checkpoints.json", "reports/remote_verification.json", "reports/final_validation.json", "reports/archive_startup_verification.json", "logs/archive_checkpoint.json", "logs/archive_checkpoint.log", "logs/archive_final.json", "logs/archive_final.log"]:

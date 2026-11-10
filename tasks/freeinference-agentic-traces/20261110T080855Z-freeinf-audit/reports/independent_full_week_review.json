@@ -1,0 +1,1297 @@
+{
+  "status": "Verified",
+  "review_utc": "2026-11-10T08:55:48.969885+00:00",
+  "scope": "Independent artifact checks on specifically listed complete weeks only; no full-period simulation claim",
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "weeks": [
+    {
+      "status": "Verified",
+      "review_utc": "2026-11-10T08:55:48.969148+00:00",
+      "week": "2026-05-31_2026-06-06",
+      "scope": "Independent read-only direct Parquet artifact comparison; no simulation rerun",
+      "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+      "source_manifest_sha256": "96191219dd2602fbc6ae18e051e55bfa1775d6fbca8ff7f5894c17bed1f109be",
+      "input_tables": {
+        "sessions.parquet": {
+          "rows": 76,
+          "sha256": "17a5e612765dbe759bdc659d9fefb80b4ab500c7ede979ff4529aedfbb93b89c",
+          "bytes": 4013
+        },
+        "requests.parquet": {
+          "rows": 7324,
+          "sha256": "bfb76d58fc23d5afe92bdb3f9503cf0c19cb983586744706f47b5f94bd0f2d69",
+          "bytes": 16381638
+        },
+        "tool_calls.parquet": {
+          "rows": 7595,
+          "sha256": "9ff181f94cb8d9bef95c9d68757c71483c7d128cafd7e2e38ca9c2dd88c4dae9",
+          "bytes": 100951
+        }
+      },
+      "cohort": {
+        "all_sessions": 76,
+        "top_level_sessions": 65,
+        "child_sessions": 11,
+        "top_level_harness_counts": {
+          "kilo": 23,
+          "pi": 21,
+          "opencode": 13,
+          "eval:swe-bench": 6,
+          "cline": 2
+        },
+        "all_requests": 7324,
+        "top_level_requests": 7157,
+        "swe_top_level_sessions": 6
+      },
+      "checks": [
+        {
+          "check": "fresh_output_week_directory_not_symlink",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_output_path_no_symlink_components",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_output_not_under_author_reference",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_exit_zero_not_timeout",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "explicit_week_forces_replay",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_output_is_fresh_path",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_printed_completion",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "output_file_mtimes_within_simulation_window",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tables_bind_current_manifest",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_sessions.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_sessions.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_requests.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_requests.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_tool_calls.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_tool_calls.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "reference_source_file_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "reference_sources_current",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_source_file_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_sources_current",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_hit_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_miss_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_reusable_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_dead_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_scope_policy_TTL_crossproduct",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_active_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_span_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_output_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_requests",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_scopes",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_requests_scope_SWE-Bench",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_output_scope_SWE-Bench",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_requests_scope_Agentic",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_output_scope_Agentic",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_requests_equal_top_level_input",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_outputs_equal_top_level_input",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_exact_missed_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_covers_all_top_level_requests_with_correct_scope",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_today_prefilled_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_today_cached_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_prefilled_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_cached_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_output_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_reductions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_skipped_reductions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_forced_compactions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_TTL_price_crossproduct",
+          "status": "Verified",
+          "detail": null
+        }
+      ],
+      "execution_evidence": {
+        "path": "logs/official_checks/simulation_complete_mixed_scope_week.json",
+        "sha256": "2bce564337f867c5446dfb98903e07136f265fc4d3543f8889e5c31cd6215ca7",
+        "start_utc": "2026-11-10T08:49:16.915491+00:00",
+        "end_utc": "2026-11-10T08:52:27.782666+00:00",
+        "elapsed_seconds": 190.86731310600226,
+        "exit_code": 0
+      },
+      "paths": {
+        "fresh_output_relative": "private/runtime/complete_mixed_scope_simulation/2026-05-31_2026-06-06",
+        "author_reference_relative": "upstream/freeinference_agentic_trace/data/v1/simulation/2026-05-31_2026-06-06",
+        "fresh_output_is_symlink": false
+      },
+      "check_counts": {
+        "Verified": 62,
+        "Failed": 0
+      },
+      "tables": {
+        "tallies": {
+          "keys": [
+            "scope",
+            "policy",
+            "ttl"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "hit_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 104,
+              "finite_cells": 104,
+              "exact_equal_cells": 104,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "miss_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 104,
+              "finite_cells": 104,
+              "exact_equal_cells": 104,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "reusable_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 104,
+              "finite_cells": 104,
+              "exact_equal_cells": 104,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "dead_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 104,
+              "finite_cells": 104,
+              "exact_equal_cells": 104,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "989f92fc91f88e13540914bd265438b5c60753710f188a6c6c22a16083ce84cb",
+            "bytes": 6819,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 104,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "46695d7ddef027b8670c4377c3d39bb820a99d6681d8bc62d479aaad6b139938",
+            "bytes": 6819,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 104,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "totals": {
+          "keys": [
+            "scope"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "active_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 2,
+              "finite_cells": 2,
+              "exact_equal_cells": 2,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "span_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 2,
+              "finite_cells": 2,
+              "exact_equal_cells": 2,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "output_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 2,
+              "finite_cells": 2,
+              "exact_equal_cells": 2,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "requests": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 2,
+              "finite_cells": 2,
+              "exact_equal_cells": 2,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "613717ef40165f07ce00530c23af7024c0e2a836c814261c6dacbe48c621636d",
+            "bytes": 3651,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 2,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "b1ddaf683eee1024806f93c0ec6d8ffce43540e3ac6ed63305ff621da85e8e3a",
+            "bytes": 3651,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 2,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "request_misses": {
+          "keys": [
+            "scope",
+            "session_id",
+            "step"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "missed_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 7157,
+              "finite_cells": 7157,
+              "exact_equal_cells": 7157,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "4c670463b2a0f7a74771a8c1625ddaa668b2c0eb3216c932378e7fd769249659",
+            "bytes": 26825,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 7157,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "c9afdbf5e1bfc8689a2b72fb6feaede5685e1b04e53c4a1947d0da3b19a01a16",
+            "bytes": 26825,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 7157,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "cheaper_reads": {
+          "keys": [
+            "ttl",
+            "read_price_cut"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "today_prefilled_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "today_cached_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "prefilled_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "cached_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "output_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "reductions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "skipped_reductions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "forced_compactions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "b8f6484047dfa4b7ae3b2e786b23b8e8e0e2cca3eb6b081f390bb019ab902d21",
+            "bytes": 8196,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 63,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "8ea9acac1eeaa9ed4fd410de7fa3a26f1b573914b579d9032dab0504ce8006bb",
+            "bytes": 8196,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 63,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        }
+      },
+      "request_keys_or_rows_emitted": 0,
+      "interpretation": "All compared numeric cells are checked exact before discussing float tolerance. Different Parquet hashes indicate byte-level differences, not automatically semantic differences.",
+      "limitations": [
+        "This complete week only; no promotion of sixteen-week cache claims.",
+        "Matches the author model on public processed inputs, not physical provider caches or original private log truth.",
+        "Source hash binding does not independently validate sampling, session reconstruction or labels."
+      ]
+    },
+    {
+      "status": "Verified",
+      "review_utc": "2026-11-10T08:52:57.014957+00:00",
+      "week": "2026-06-07_2026-06-13",
+      "scope": "Independent read-only direct Parquet artifact comparison; no simulation rerun",
+      "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+      "source_manifest_sha256": "cb568f2be6d718d015ff67886042f86ac43637d73a61995ad6010e64177dcf56",
+      "input_tables": {
+        "sessions.parquet": {
+          "rows": 80,
+          "sha256": "5025c78dc15fc8e9bb422fc6cd994ac2c80e992f597a88a0f6bf3c3210b6a18e",
+          "bytes": 3528
+        },
+        "requests.parquet": {
+          "rows": 6859,
+          "sha256": "81c8642eed8141a6911d9321be96454d1620acf4d4e36faa50a80c8c59ca80c5",
+          "bytes": 7885194
+        },
+        "tool_calls.parquet": {
+          "rows": 7426,
+          "sha256": "c1bdcc4242885f2b9351cd311bfe8decacf995a206d17ba013c27714d53a8bf9",
+          "bytes": 102254
+        }
+      },
+      "cohort": {
+        "all_sessions": 80,
+        "top_level_sessions": 80,
+        "child_sessions": 0,
+        "top_level_harness_counts": {
+          "pi": 35,
+          "kilo": 34,
+          "opencode": 9,
+          "cline": 2
+        },
+        "all_requests": 6859,
+        "top_level_requests": 6859,
+        "swe_top_level_sessions": 0
+      },
+      "checks": [
+        {
+          "check": "fresh_output_week_directory_not_symlink",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_output_path_no_symlink_components",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_output_not_under_author_reference",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_exit_zero_not_timeout",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "explicit_week_forces_replay",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_output_is_fresh_path",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "simulation_printed_completion",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "output_file_mtimes_within_simulation_window",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tables_bind_current_manifest",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_sessions.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_sessions.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_requests.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_requests.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_sha_tool_calls.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "input_rows_tool_calls.parquet",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "reference_source_file_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "reference_sources_current",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_source_file_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "fresh_sources_current",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_hit_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_miss_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_reusable_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_dead_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "tallies_exact_scope_policy_TTL_crossproduct",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_active_token_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_span_seconds",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_output_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_requests",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_exact_scopes",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_requests_scope_Agentic",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_output_scope_Agentic",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_requests_equal_top_level_input",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "totals_outputs_equal_top_level_input",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_exact_missed_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "request_misses_covers_all_top_level_requests_with_correct_scope",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_different_file",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_column_set",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_duplicate_keys",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_keyset",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_today_prefilled_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_today_cached_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_prefilled_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_cached_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_output_tokens",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_reductions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_skipped_reductions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_forced_compactions",
+          "status": "Verified",
+          "detail": null
+        },
+        {
+          "check": "cheaper_reads_exact_TTL_price_crossproduct",
+          "status": "Verified",
+          "detail": null
+        }
+      ],
+      "execution_evidence": {
+        "path": "logs/official_checks/simulation_complete_smallest_week.json",
+        "sha256": "229c615f10510e259c495a1763f8554033cc40016bb95cd7ca4f1aceba5cbbdc",
+        "start_utc": "2026-11-10T08:44:45.286368+00:00",
+        "end_utc": "2026-11-10T08:46:35.580503+00:00",
+        "elapsed_seconds": 110.29434521000076,
+        "exit_code": 0
+      },
+      "paths": {
+        "fresh_output_relative": "private/runtime/complete_smallest_week_simulation/2026-06-07_2026-06-13",
+        "author_reference_relative": "upstream/freeinference_agentic_trace/data/v1/simulation/2026-06-07_2026-06-13",
+        "fresh_output_is_symlink": false
+      },
+      "check_counts": {
+        "Verified": 60,
+        "Failed": 0
+      },
+      "tables": {
+        "tallies": {
+          "keys": [
+            "scope",
+            "policy",
+            "ttl"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "hit_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 52,
+              "finite_cells": 52,
+              "exact_equal_cells": 52,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "miss_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 52,
+              "finite_cells": 52,
+              "exact_equal_cells": 52,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "reusable_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 52,
+              "finite_cells": 52,
+              "exact_equal_cells": 52,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "dead_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 52,
+              "finite_cells": 52,
+              "exact_equal_cells": 52,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "40105b7ef75aeff0720a3ce9fd5bca8988eef87faf941fe9d505aa4c768055ae",
+            "bytes": 6270,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 52,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "26aaf93cb225c6df252eabb7eb250bc4cc30e86003656d7ad1616a00e5261f91",
+            "bytes": 6270,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 52,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "totals": {
+          "keys": [
+            "scope"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "active_token_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 1,
+              "finite_cells": 1,
+              "exact_equal_cells": 1,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "span_seconds": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 1,
+              "finite_cells": 1,
+              "exact_equal_cells": 1,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "output_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 1,
+              "finite_cells": 1,
+              "exact_equal_cells": 1,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "requests": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 1,
+              "finite_cells": 1,
+              "exact_equal_cells": 1,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "7f80d2d43da95dd6828cf05c91360e3f6ee2f98c628835a740b23370680a7782",
+            "bytes": 3602,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 1,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "a42477956510ad3156d694218d6cc3413b1eec6c57adf5f5b1c2bdb58571a530",
+            "bytes": 3602,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 1,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "request_misses": {
+          "keys": [
+            "scope",
+            "session_id",
+            "step"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "missed_tokens": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 6859,
+              "finite_cells": 6859,
+              "exact_equal_cells": 6859,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "6d33f1c69a57c113a1a8d965b569ed72cfcc06e2619de171a35f1a02faf61ae5",
+            "bytes": 24228,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 6859,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "4921e22bb8d53d427d0c3b5d3cf65dc8962abf37fcca79c18cc93ae7e0186d15",
+            "bytes": 24228,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 6859,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        },
+        "cheaper_reads": {
+          "keys": [
+            "ttl",
+            "read_price_cut"
+          ],
+          "keysets_equal": true,
+          "columns": {
+            "today_prefilled_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "today_cached_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "prefilled_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "cached_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "output_tokens": {
+              "dtype_reference": "float64",
+              "dtype_fresh": "float64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "reductions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "skipped_reductions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            },
+            "forced_compactions": {
+              "dtype_reference": "int64",
+              "dtype_fresh": "int64",
+              "cells": 63,
+              "finite_cells": 63,
+              "exact_equal_cells": 63,
+              "max_absolute_delta": 0.0,
+              "within_atol_1e6_rtol_1e12": true
+            }
+          },
+          "reference": {
+            "sha256": "3a21b352f427eed6167371b315373c2d04add448a84b5173d8aa24924cbfbf0a",
+            "bytes": 8193,
+            "created_by": "parquet-cpp-arrow version 25.0.1",
+            "pandas_version_metadata": "3.0.6",
+            "rows": 63,
+            "row_groups": 1
+          },
+          "fresh": {
+            "sha256": "36cc85db9f1e18766e5baccce22b0fc09d5d739e2a9c40374c48161494b1a308",
+            "bytes": 8193,
+            "created_by": "parquet-cpp-arrow version 26.0.1",
+            "pandas_version_metadata": "3.1.1",
+            "rows": 63,
+            "row_groups": 1
+          },
+          "byte_equal": false
+        }
+      },
+      "request_keys_or_rows_emitted": 0,
+      "interpretation": "All compared numeric cells are checked exact before discussing float tolerance. Different Parquet hashes indicate byte-level differences, not automatically semantic differences.",
+      "limitations": [
+        "This complete week only; no promotion of sixteen-week cache claims.",
+        "Matches the author model on public processed inputs, not physical provider caches or original private log truth.",
+        "Source hash binding does not independently validate sampling, session reconstruction or labels."
+      ]
+    }
+  ],
+  "all_sixteen_week_cache_claims": "Partially Verified; author intermediates aggregated/redrawn, not all weeks replayed",
+  "request_keys_or_rows_emitted": 0,
+  "static_model_boundary": {
+    "status": "Verified source implementation; impact Unknown",
+    "claim": "The public caller chain forwards one release salt unchanged into token-only block hashing; cache identity is shared block hash within a scope, without explicit model/provider/account namespace.",
+    "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+    "evidence_paths": [
+      "export/paths.py:24",
+      "export/__main__.py:48",
+      "export/build_steps.py:89",
+      "export/request_inputs/digests.py:54",
+      "export/request_inputs/digests.py:83",
+      "export/request_inputs/digests.py:115",
+      "export/request_inputs/digests.py:140",
+      "export/release/requests_table.py:197",
+      "simulation/block_reads.py:23",
+      "simulation/cache.py:70",
+      "simulation/simulate.py:26"
+    ],
+    "interpretation": "An idealized reuse model, not validation of physical model/provider/tenant cache sharing; no claim of algorithm error.",
+    "unknowns": [
+      "Historical private pipeline equivalence",
+      "Real deployment isolation",
+      "Cross-namespace common-prefix frequency",
+      "Effect on reported metrics"
+    ],
+    "salt_value_read_or_emitted": false
+  }
+}

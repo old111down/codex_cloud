@@ -302,6 +302,96 @@
 [".conda/freeinference/bin/python", "scripts/prepare_official_workspaces.py", "--empty-scope-patch"]
 ```
 
+## archive_checkpoint
+
+- UTC：2026-11-10T08:38:33.321900+00:00 → 2026-11-10T08:38:35.194823+00:00
+- cwd：`/workspace/codex_cloud_freeinference`；exit：0
+- [原始命令元数据](logs/archive_checkpoint.json) / [输出](logs/archive_checkpoint.log)
+
+```json
+["git", "-c", "credential.helper=", "-c", "credential.helper=!gh auth git-credential", "push", "-u", "origin", "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit"]
+```
+
+## complete_week_selection
+
+- UTC：2026-11-10T08:44:17.624766+00:00 → 2026-11-10T08:44:18.140205+00:00
+- cwd：`/workspace/freeinference-audit`；exit：0
+- [原始命令元数据](logs/official_checks/complete_week_selection.json) / [输出](logs/official_checks/complete_week_selection.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/select_complete_week_replay.py"]
+```
+
+## simulation_complete_smallest_week
+
+- UTC：2026-11-10T08:44:45.286368+00:00 → 2026-11-10T08:46:35.580503+00:00
+- cwd：`/workspace/freeinference-audit/upstream/freeinference_agentic_trace`；exit：0
+- [原始命令元数据](logs/official_checks/simulation_complete_smallest_week.json) / [输出](logs/official_checks/simulation_complete_smallest_week.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "/workspace/freeinference-audit/scripts/resource_guard.py", "--address-space-gib", "8", "--", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "-m", "simulation", "--week", "2026-06-07", "--release", "/workspace/freeinference-audit/private/data/release", "--output", "/workspace/freeinference-audit/private/runtime/complete_smallest_week_simulation", "--processes", "1"]
+```
+
+## compare_complete_smallest_week
+
+- UTC：2026-11-10T08:47:04.749147+00:00 → 2026-11-10T08:47:05.367199+00:00
+- cwd：`/workspace/freeinference-audit`；exit：0
+- [原始命令元数据](logs/official_checks/compare_complete_smallest_week.json) / [输出](logs/official_checks/compare_complete_smallest_week.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/compare_complete_week_simulation.py", "--week", "2026-06-07_2026-06-13", "--recomputed", "private/runtime/complete_smallest_week_simulation", "--output", "reports/complete_smallest_week_simulation_comparison.json"]
+```
+
+## complete_mixed_scope_selection
+
+- UTC：2026-11-10T08:48:30.093379+00:00 → 2026-11-10T08:48:30.658915+00:00
+- cwd：`/workspace/freeinference-audit`；exit：0
+- [原始命令元数据](logs/official_checks/complete_mixed_scope_selection.json) / [输出](logs/official_checks/complete_mixed_scope_selection.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/select_complete_week_replay.py"]
+```
+
+## simulation_complete_mixed_scope_week_missing_time
+
+- UTC：2026-11-10T08:48:30.698756+00:00 → 2026-11-10T08:48:30.699593+00:00
+- cwd：`/workspace/freeinference-audit/upstream/freeinference_agentic_trace`；exit：127
+- [原始命令元数据](logs/official_checks/simulation_complete_mixed_scope_week_missing_time.json) / [输出](logs/official_checks/simulation_complete_mixed_scope_week_missing_time.log)
+
+```json
+["/usr/bin/time", "-v", "-o", "/workspace/freeinference-audit/logs/official_checks/simulation_complete_mixed_scope_week.time.log", "env", "PYTHONDONTWRITEBYTECODE=1", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "/workspace/freeinference-audit/scripts/resource_guard.py", "--address-space-gib", "8", "--", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "-m", "simulation", "--week", "2026-05-31", "--release", "/workspace/freeinference-audit/private/data/release", "--output", "/workspace/freeinference-audit/private/runtime/complete_mixed_scope_simulation", "--processes", "1"]
+```
+
+## simulation_complete_mixed_scope_week
+
+- UTC：2026-11-10T08:49:16.915491+00:00 → 2026-11-10T08:52:27.782666+00:00
+- cwd：`/workspace/freeinference-audit/upstream/freeinference_agentic_trace`；exit：0
+- [原始命令元数据](logs/official_checks/simulation_complete_mixed_scope_week.json) / [输出](logs/official_checks/simulation_complete_mixed_scope_week.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "/workspace/freeinference-audit/scripts/run_with_resource_usage.py", "--output", "/workspace/freeinference-audit/reports/complete_mixed_scope_week_resource_usage.json", "--", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "/workspace/freeinference-audit/scripts/resource_guard.py", "--address-space-gib", "8", "--", "/workspace/freeinference-audit/.conda/freeinference/bin/python", "-m", "simulation", "--week", "2026-05-31", "--release", "/workspace/freeinference-audit/private/data/release", "--output", "/workspace/freeinference-audit/private/runtime/complete_mixed_scope_simulation", "--processes", "1"]
+```
+
+## compare_complete_smallest_week_with_footer
+
+- UTC：2026-11-10T08:50:13.239939+00:00 → 2026-11-10T08:50:13.959851+00:00
+- cwd：`/workspace/freeinference-audit`；exit：0
+- [原始命令元数据](logs/official_checks/compare_complete_smallest_week_with_footer.json) / [输出](logs/official_checks/compare_complete_smallest_week_with_footer.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/compare_complete_week_simulation.py", "--week", "2026-06-07_2026-06-13", "--recomputed", "private/runtime/complete_smallest_week_simulation", "--output", "reports/complete_smallest_week_simulation_comparison.json"]
+```
+
+## compare_complete_mixed_scope_week
+
+- UTC：2026-11-10T08:52:48.762567+00:00 → 2026-11-10T08:52:49.378455+00:00
+- cwd：`/workspace/freeinference-audit`；exit：0
+- [原始命令元数据](logs/official_checks/compare_complete_mixed_scope_week.json) / [输出](logs/official_checks/compare_complete_mixed_scope_week.log)
+
+```json
+["env", "PYTHONDONTWRITEBYTECODE=1", "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/compare_complete_week_simulation.py", "--week", "2026-05-31_2026-06-06", "--recomputed", "private/runtime/complete_mixed_scope_simulation", "--output", "reports/complete_mixed_scope_week_simulation_comparison.json"]
+```
+
 ## 归档与只读源获取
 
 GitHub身份/写权限、main与工作区检查和来源HTTP获取另记录于source_provenance、alignment_evidence及related source_manifest。没有保存凭据或完整平台状态。归档命令的检查点和远程SHA见对应收据；Git提交不会被描述为实验验证。

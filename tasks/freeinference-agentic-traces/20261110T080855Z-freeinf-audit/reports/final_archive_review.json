@@ -1,0 +1,86 @@
+{
+  "review_started_utc": "2026-11-10T08:39:03Z",
+  "review_completed_utc": "2026-11-10T08:43:30.930562+00:00",
+  "reviewer": "freeinf_related independent archive subaudit",
+  "review_scope": "Local public archive checkpoint only; no network retrieval, no public edits, no Git write operations",
+  "archive_path": "tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "reviewed_local_head": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
+  "worktree_clean_at_snapshot": true,
+  "remote_verification": "Parent reported pushed remote SHA matches reviewed checkpoint; independent remote fetch not performed by this reviewer",
+  "overall_status": "Verified checkpoint content within stated review scope; final metadata/PR/remote-closeout pending",
+  "file_inventory": {
+    "files": 162,
+    "bytes": 1935682,
+    "manifest_listed_files_excluding_self": 161,
+    "manifest_sha256_entries_checked": 161,
+    "manifest_hash_mismatches": 0,
+    "manifest_missing_paths": 0,
+    "python_files": 26,
+    "all_python_under_own_scripts_directory": true,
+    "strict_json_files": 63,
+    "strict_json_failures": 0,
+    "metadata_json_schema_validation": "Passed using existing jsonschema package",
+    "metadata_missing_required_keys": [],
+    "required_user_deliverables_present": 11,
+    "archive_common_documents_present": [
+      "metadata.json",
+      "task_report.md",
+      "execution_log.md"
+    ],
+    "index_matching_run_rows": 1
+  },
+  "link_checks": {
+    "markdown_missing_relative_targets": [],
+    "markdown_absolute_local_hyperlinks": [],
+    "external_link_network_check": false
+  },
+  "publication_observations": {
+    "strict_secret_candidates": 0,
+    "32_hex_identifier_candidates": 0,
+    "assignment_shaped_trace_id_candidates": 0,
+    "email_candidates": 0,
+    "nonloopback_ipv4_candidates": 0,
+    "internal_infrastructure_url_candidates": 0,
+    "prohibited_data_binary_or_source_tree_files_observed": [],
+    "source_provenance_structure": "URLs, versions, filenames, hashes; no full source",
+    "small_subset_provenance": "Selection rule, counts, bytes and hashes; no selected trace IDs or raw rows",
+    "largest_file": "reports/aggregate_stats.json"
+  },
+  "publication_limitations": [
+    "Pattern scans and selected semantic inspection do not guarantee absence of every possible sensitive string",
+    "Official source hosts and public package URLs intentionally retained",
+    "No public assertion that raw inputs or withheld artifacts were uploaded",
+    "Manifest/self hashes apply to reviewed checkpoint only, not later amendments"
+  ],
+  "a_to_e_semantics": {
+    "A": "Correctly conditional service-workload/label-design source; not packet training data",
+    "B": "Correctly no direct historical-trace to independently collected PCAP join",
+    "C": "Correctly same-run client event/dual clock/attempt/transport mapping + PCAP; authorized Gateway bridge only after verification",
+    "D": "Correctly alignment/label-confidence MVP before classifier; exact MiMo account route Unknown; no real Agent/PCAP/model run",
+    "E": "Correctly bounded success; failure rejects specific matching scheme, not all possible network classification"
+  },
+  "reproduction_status_semantics": "Source facts, original aggregate execution, three-session real simulation, author cache products, synthetic alignment and unverified full reproduction remain separate; failures retained",
+  "temporal_provenance": "Historical paper/HF release separated from current Gateway/Hermes/catalog; TraceLab release-vs-paper counts separated; ANT/MAGIC runtime results not claimed",
+  "checkpoint_metadata_conditions": {
+    "start_time_utc": "2026-11-10T08:06:28Z",
+    "end_time_utc": null,
+    "archive_started_time_utc": "2026-11-10T08:08:55Z at reviewed checkpoint; parent correcting actual archive provenance",
+    "archive_completed_time_utc": null,
+    "pull_request_url": null,
+    "nullable_in_progress_values_are_schema_valid": true
+  },
+  "subsequent_updates_reported_by_root": {
+    "new_public_file_count": 166,
+    "runtime_interpreters_and_license_status_metadata_corrected": true,
+    "artifact_status_tied_to_manifest_hash_corrected": true,
+    "summary_denominators_timestamp_and_figure8b_wording_corrected": true,
+    "independent_revalidation_of_new166file_snapshot": false
+  },
+  "closing_requirements": [
+    "Preserve original T0 and write actual end/archive times",
+    "Update index/PR/checkpoint/remote receipts",
+    "Refresh manifest and rerun content/schema/link checks after final edits",
+    "Verify final remote SHA and attach PR; do not merge"
+  ],
+  "review_report_sha256": "50f6362a4d9569503238e4bb0f3193a8ca2afea33af57c8e31e62e67080097cc"
+}

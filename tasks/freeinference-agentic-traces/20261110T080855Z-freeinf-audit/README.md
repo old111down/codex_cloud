@@ -5,7 +5,7 @@
 - Task ID / run：`20261110T080855Z-freeinf-audit`。
 - 实际开始：2026-11-10T08:06:28Z；最多三小时，截至 11:06:28Z。实际结束时间见 [metadata.json](metadata.json)。没有沿用或重跑其它任务的实验。
 - 官方代码固定在 `2b795dbf5eac490a7c081906fdce6cc7a184b7ef`；HF 数据固定在 `bb26cf72c9c20f2b05f765d88548156a74d3c253`。
-- 真实执行：独立 Conda Python 3.12；16 周 / 48 个 Parquet 校验和与聚合检查；原版 Make 统计绘图；小规模真实数据缓存模拟；合成对齐检查。完整缓存重算、原始日志重建验证、意图重标注及真实 Agent/PCAP 实验没有完成。
+- 真实执行：独立 Conda Python 3.12；16 周 / 48 个 Parquet 校验和与聚合检查；原版 Make 统计绘图；真实小子集及两个完整周（5月31–6月6、6月7–13）的独立缓存模拟；合成对齐检查。全16周缓存重算、原始日志重建验证、意图重标注及真实 Agent/PCAP 实验没有完成。
 
 ## 阅读顺序
 
@@ -37,6 +37,6 @@
 
 ## 状态与公开范围
 
-`Verified` 只针对附证据的具体事实或运行；`Partially Verified` 表示执行或材料只覆盖一部分；`Failed` 保留实际错误；`Unknown` 表示无充分证据。合成输入、选出的 3 个真实 Session、作者缓存产物和全量原始数据统计分别列示。
+`Verified` 只针对附证据的具体事实或运行；`Partially Verified` 表示执行或材料只覆盖一部分；`Failed` 保留实际错误；`Unknown` 表示无充分证据。合成输入、选出的 3 个真实 Session、作者缓存产物和全16周公开 processed Parquet 统计分别列示。
 
 [publication_manifest.json](reports/publication_manifest.json) 记录逐文件 SHA-256 与公开变换；[withheld_artifacts.md](reports/withheld_artifacts.md) 列出未上传证据。只上传原创分析、聚合值、来源版本、自己的脚本、环境声明、少量日志及必要补丁。PR 供研究者审查，不自动合并。

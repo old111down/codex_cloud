@@ -43,6 +43,10 @@ Top-level Input `209,199,292,539`、Output `552,524,061`、Cached `197,064,717,6
 
 全期 Make 在隔离运行目录中使用已发布 Cache 中间表。模拟命令识别其 source manifest 后可复用结果，后续程序重新聚合/绘图。**运行了 `make figures` 不等于重新计算了全部 Cache Replay。** Fig10–13、Table7 的无限 TTL Prefill 归因，以及 Figure14 的 TTL 部分，凡来自作者缓存中间表的结果均应是 Partially Verified。作者提供的中间表哈希/来源匹配支持可追溯性，不构成独立重算。[readme_workspace_provenance.json](readme_workspace_provenance.json)、[覆盖矩阵](../paper_code_coverage.csv)、[数值对照](../paper_metric_comparison.csv)。
 
+## 追加完整周 Replay 核验
+
+初轮单周 Aug30 超时和小子集成功之后，追加了资源允许的完整 Jun07 周，原版命令重新计算而非复用中间表，80 个顶层 Human Session、6,859 个 Request，无子代理/SWE。110.294s 完成，同周四张表的键与全部数值严格相等；独立二次检查 60 项通过。四表 Parquet 字节哈希不同，作者/当前 Writer 分别为 Arrow25.0.1/26.0.1、pandas3.0.6/3.1.1，不能因此判数值不一致。具体独立结果及随后其他限定周状态见 [independent_full_week_review.json](independent_full_week_review.json)。随后May31含SWE完整周也成功，104/2/7157/63四表数值严格匹配、62项独审通过；其7324个全部Request中仅7157个Top-level进入模拟。两周结果见同一报告。它们提高了**这两个完整周**模拟的证据等级，没有升级全16周缓存论文值的独立复现状态。
+
 ## 数值核验及确实发现的差异
 
 选定 73 条纸面数值中，69 条有可比值；67 条在论文显示/近似精度内，2 条超出，4 条 Unknown。这个统计混合了公开 Parquet 重算与作者模拟中间表的重画，**不能称 67 条独立复现成功**。数值、方法和真值验证是三个层面。[paper_metric_comparison_summary.json](paper_metric_comparison_summary.json)。
