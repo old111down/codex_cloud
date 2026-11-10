@@ -33,7 +33,7 @@
 | --- | --- | --- |
 | 公开文献筛选 | Verified | 筛选两篇，全文处理 arXiv:2606.07150v3，第二篇查阅官方摘要。[来源清单](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md) |
 | 全文证据笔记 | Verified | 提取 23 个物理页，选页渲染并按页码记录方法和局限。[笔记](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/note.md) |
-| 增量和恢复 | Partially Verified | DOI/arXiv 去重、v2→v3 更新、检查点续跑和模拟重试来自原始试跑记录。逐项预期和实际结果已摘录，临时脚本版本为 `Unknown`。[验收证据](incremental_acceptance.md) |
+| 增量和恢复 | Partially Verified | DOI/arXiv 去重、v2→v3 更新、检查点续跑和模拟重试来自原始试跑记录。逐项预期、实际结果与临时脚本的 SHA-256 已记录。[验收证据](incremental_acceptance.md) |
 | 真实归档和重放 | Verified | 原 5 件附件提交 `36001c487d496c0896b3fedf0aa94f18f00388ad` 已推送。PR 开放后，同批重放从其远端清单命中 DOI 和 arXiv ID，返回 `reuse-existing-pr`。[PR #2](https://github.com/old111down/codex_cloud/pull/2) |
 
 ## 失败与修复

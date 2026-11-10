@@ -18,4 +18,4 @@
 | 推送与建 PR | `git push`、`git ls-remote`、`gh pr create` | 隔离归档克隆 | PR 创建于 `2026-11-10T08:51:58Z` | 0，核对远端分支与原附件提交。[PR #2](https://github.com/old111down/codex_cloud/pull/2) |
 | 实况重放 | `gh pr list`、`verify-live-pr.py 2` | 隔离试跑目录 | Unknown | 首次远端清单读取超时退出 1，有限重试退出 0。判定 `reuse-existing-pr`，跳过重复调研和建 PR |
 
-v3 PDF 的 SHA-256 记录在[来源清单附件](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/manifest.json)。历史事件时间来自原日志、Git 提交或 GitHub PR 元数据。工作流预检复测时间由本轮执行记录。增量和恢复的结果来自原试跑，临时验收脚本的版本为 `Unknown`。
+v3 PDF 的 SHA-256 记录在[来源清单附件](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/manifest.json)。历史事件时间来自原日志、Git 提交或 GitHub PR 元数据。工作流预检复测时间由本轮执行记录。增量和恢复的结果来自原试跑，临时验收脚本版本按原会话完整回读的 SHA-256 标识。[脚本指纹](incremental_acceptance.md)

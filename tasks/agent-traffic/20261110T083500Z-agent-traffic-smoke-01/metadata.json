@@ -135,7 +135,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。脚本指纹见验收证据。"
     },
     {
       "command": "python3 -B run_harness.py resume",
@@ -148,7 +148,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。脚本指纹见验收证据。"
     },
     {
       "command": "python3 -B run_harness.py ingest",
@@ -161,7 +161,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。同批重跑识别重复。临时脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。同批重跑识别重复。脚本指纹见验收证据。"
     },
     {
       "command": "python3 -B run_harness.py simulate-upload-failure",
@@ -174,7 +174,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。脚本指纹见验收证据。"
     },
     {
       "command": "python3 -B run_harness.py retry-preview",
@@ -187,7 +187,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。脚本指纹见验收证据。"
     },
     {
       "command": "python3 -B run_harness.py verify-next-batch",
@@ -200,7 +200,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原试跑工具输出摘录。核对标识、真实版本和归档夹具。临时脚本版本 Unknown。"
+      "scope": "原试跑工具输出摘录。核对标识、真实版本和归档夹具。脚本指纹见验收证据。"
     },
     {
       "command": "git push / git ls-remote / gh pr create",
@@ -257,7 +257,7 @@
       "evidence": [
         "incremental_acceptance.md"
       ],
-      "scope": "原始逐项执行结果摘录，临时脚本版本 Unknown。"
+      "scope": "原始逐项执行结果摘录和临时脚本指纹。"
     },
     {
       "description": "推送原附件并创建 PR，实况重放识别同一开放 PR。",
@@ -345,7 +345,7 @@
     {
       "path": "tasks/agent-traffic/20261110T083500Z-agent-traffic-smoke-01/incremental_acceptance.md",
       "description": "脱敏的原试跑增量与恢复验收证据，含预期、实际结果与来源边界",
-      "sha256": "58ceb2044296ecf281a12dbe887af97f6855543fa5506c79abdccd1790d4eccc",
+      "sha256": "0c88b0348f046421aa6d0b6c4087f894dd2245cfdf35c7df8812f179ed4614f3",
       "status": "Verified",
       "publication_review": "sanitized"
     }
@@ -369,5 +369,11 @@
   },
   "pull_request_url": "https://github.com/old111down/codex_cloud/pull/2",
   "final_status": "Verified",
-  "final_status_scope": "单篇公开全文的证据笔记、真实开放 PR 归档及同批重放。"
+  "final_status_scope": "单篇公开全文的证据笔记、真实开放 PR 归档及同批重放。",
+  "incremental_harness": {
+    "name": "run_harness.py",
+    "sha256": "d66980a9e32f26e33ca1571780acc520837c3a2df53d1a659bc1373cfdbb9a32",
+    "provenance": "按原试跑后会话中的完整文件回读文本计算",
+    "evidence": "incremental_acceptance.md"
+  }
 }
