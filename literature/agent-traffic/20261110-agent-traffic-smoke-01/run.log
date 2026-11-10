@@ -1,0 +1,9 @@
+run_id=20261110-agent-traffic-smoke-01
+recorded_at=2026-11-10T16:35:00+08:00
+workflow=codex-literature-workflow@84b7fff
+scope=agent-traffic
+source=arXiv:2606.07150v3
+access=public-full-text
+pdf_probe=passed
+resume_from=probed
+archive_mode=local-preview
