@@ -1,0 +1,3 @@
+{"event": "start_week", "week": "2026-08-30_2026-09-05"}
+{"event": "completed_week", "week": "2026-08-30_2026-09-05", "rows": {"sessions.parquet": 2047, "requests.parquet": 190544, "tool_calls.parquet": 196975}, "nonzero_observations": {"negative_tool_gap_latency": 2}}
+{"event": "finished", "weeks": 1, "rows": {"sessions.parquet": 2047, "requests.parquet": 190544, "tool_calls.parquet": 196975}, "elapsed_seconds": 8.886519381998369, "max_rss_kib": 388092}

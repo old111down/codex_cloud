@@ -1,0 +1,121 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0 -- /workspace/freeinference-audit/.conda/freeinference/bin/python
+rootdir: /workspace/codex_cloud_freeinference
+plugins: anyio-4.16.0
+collecting ... collected 15 items
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_clean_export_has_matching_hashes_and_preserves_source PASSED [  6%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_ancestor_is_rejected_without_writes FAILED [ 13%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_leaf_is_not_followed FAILED [ 20%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_invalid_allowlist_type_does_not_create_target FAILED [ 26%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_binary_source_preserves_target FAILED [ 33%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_does_not_create_new_target FAILED [ 40%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_preserves_existing_files_and_manifests FAILED [ 46%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_missing_source_does_not_publish_earlier_good_file FAILED [ 53%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_non_utf8_source_preserves_target FAILED [ 60%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_oversized_source_preserves_target FAILED [ 66%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_traversal_does_not_publish_earlier_good_file FAILED [ 73%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_manifest_path_cannot_be_an_allowlisted_input FAILED [ 80%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_public_run_path_cannot_escape_worktree FAILED [ 86%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_sanitization_precedes_scan_without_modifying_source PASSED [ 93%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_source_symlink_ancestor_is_rejected_without_writes FAILED [100%]
+
+=================================== FAILURES ===================================
+_ ExportSafetyTests.test_destination_symlink_ancestor_is_rejected_without_writes _
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:170: in test_destination_symlink_ancestor_is_rejected_without_writes
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:100: in rejected_unchanged
+    with self.assertRaises(Exception) as caught:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Exception not raised
+_______ ExportSafetyTests.test_destination_symlink_leaf_is_not_followed ________
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:178: in test_destination_symlink_leaf_is_not_followed
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:100: in rejected_unchanged
+    with self.assertRaises(Exception) as caught:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Exception not raised
+_____ ExportSafetyTests.test_invalid_allowlist_type_does_not_create_target _____
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:154: in test_invalid_allowlist_type_does_not_create_target
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+__________ ExportSafetyTests.test_late_binary_source_preserves_target __________
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:143: in test_late_binary_source_preserves_target
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+______ ExportSafetyTests.test_late_credential_does_not_create_new_target _______
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:118: in test_late_credential_does_not_create_new_target
+    self.rejected_unchanged(fixture, "Publication scan rejected")
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+_ ExportSafetyTests.test_late_credential_preserves_existing_files_and_manifests _
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:111: in test_late_credential_preserves_existing_files_and_manifests
+    self.rejected_unchanged(fixture, "Publication scan rejected")
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+_ ExportSafetyTests.test_late_missing_source_does_not_publish_earlier_good_file _
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:125: in test_late_missing_source_does_not_publish_earlier_good_file
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+_________ ExportSafetyTests.test_late_non_utf8_source_preserves_target _________
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:149: in test_late_non_utf8_source_preserves_target
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+________ ExportSafetyTests.test_late_oversized_source_preserves_target _________
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:137: in test_late_oversized_source_preserves_target
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+___ ExportSafetyTests.test_late_traversal_does_not_publish_earlier_good_file ___
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:131: in test_late_traversal_does_not_publish_earlier_good_file
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:104: in rejected_unchanged
+    self.assertTrue(before == fingerprint(self.root), "Rejected export changed source/public files or directories")
+E   AssertionError: False is not true : Rejected export changed source/public files or directories
+_____ ExportSafetyTests.test_manifest_path_cannot_be_an_allowlisted_input ______
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:188: in test_manifest_path_cannot_be_an_allowlisted_input
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:100: in rejected_unchanged
+    with self.assertRaises(Exception) as caught:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Exception not raised
+________ ExportSafetyTests.test_public_run_path_cannot_escape_worktree _________
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:183: in test_public_run_path_cannot_escape_worktree
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:100: in rejected_unchanged
+    with self.assertRaises(Exception) as caught:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Exception not raised
+__ ExportSafetyTests.test_source_symlink_ancestor_is_rejected_without_writes ___
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:163: in test_source_symlink_ancestor_is_rejected_without_writes
+    self.rejected_unchanged(fixture)
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:100: in rejected_unchanged
+    with self.assertRaises(Exception) as caught:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Exception not raised
+=========================== short test summary info ============================
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_ancestor_is_rejected_without_writes
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_leaf_is_not_followed
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_invalid_allowlist_type_does_not_create_target
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_binary_source_preserves_target
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_does_not_create_new_target
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_preserves_existing_files_and_manifests
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_missing_source_does_not_publish_earlier_good_file
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_non_utf8_source_preserves_target
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_oversized_source_preserves_target
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_traversal_does_not_publish_earlier_good_file
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_manifest_path_cannot_be_an_allowlisted_input
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_public_run_path_cannot_escape_worktree
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_source_symlink_ancestor_is_rejected_without_writes
+========================= 13 failed, 2 passed in 0.49s =========================

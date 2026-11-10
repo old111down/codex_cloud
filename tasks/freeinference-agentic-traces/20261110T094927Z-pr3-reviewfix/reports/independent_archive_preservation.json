@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-10T10:06:11.157218+00:00",
+  "initial_files": 206,
+  "immutable_files_checked": 199,
+  "historical_log_files_checked": 82,
+  "immutable_mismatches": [],
+  "new_old_run_files": [
+    "scripts/pinned_release_download.py"
+  ],
+  "metadata_original_keys_changed": [],
+  "metadata_original_keys_removed": [],
+  "metadata_added_keys": [
+    "historical_artifact_hash_scope",
+    "post_review_revisions"
+  ],
+  "metadata_only_allowed_keys_added": true,
+  "allowed_original_file_changes": [
+    "README.md",
+    "metadata.json",
+    "reports/publication_manifest.json",
+    "scripts/download_processed_release.py",
+    "scripts/download_selected_week.py",
+    "scripts/export_reviewed_archive.py",
+    "scripts/review_reproduction_evidence.py"
+  ]
+}

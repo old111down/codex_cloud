@@ -1,0 +1,574 @@
+............FFFFFFFFFFFFFFF...........                                   [100%]
+=================================== FAILURES ===================================
+_ ExportSafetyTests.test_clean_export_has_matching_hashes_and_preserves_source _
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_clean_export_has_matching_hashes_and_preserves_source>
+
+    def test_clean_export_has_matching_hashes_and_preserves_source(self):
+>       fixture = Fixture(self.root, existing=False)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ExportSafetyTests.test_destination_symlink_ancestor_is_rejected_without_writes _
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_destination_symlink_ancestor_is_rejected_without_writes>
+
+    def test_destination_symlink_ancestor_is_rejected_without_writes(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:166: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_______ ExportSafetyTests.test_destination_symlink_leaf_is_not_followed ________
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_destination_symlink_leaf_is_not_followed>
+
+    def test_destination_symlink_leaf_is_not_followed(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:173: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_____ ExportSafetyTests.test_invalid_allowlist_type_does_not_create_target _____
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_invalid_allowlist_type_does_not_create_target>
+
+    def test_invalid_allowlist_type_does_not_create_target(self):
+>       fixture = Fixture(self.root, existing=False)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+__________ ExportSafetyTests.test_late_binary_source_preserves_target __________
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_binary_source_preserves_target>
+
+    def test_late_binary_source_preserves_target(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+______ ExportSafetyTests.test_late_credential_does_not_create_new_target _______
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_credential_does_not_create_new_target>
+
+    def test_late_credential_does_not_create_new_target(self):
+>       fixture = Fixture(self.root, existing=False)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ExportSafetyTests.test_late_credential_preserves_existing_files_and_manifests _
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_credential_preserves_existing_files_and_manifests>
+
+    def test_late_credential_preserves_existing_files_and_manifests(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ExportSafetyTests.test_late_missing_source_does_not_publish_earlier_good_file _
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_missing_source_does_not_publish_earlier_good_file>
+
+    def test_late_missing_source_does_not_publish_earlier_good_file(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:122: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_________ ExportSafetyTests.test_late_non_utf8_source_preserves_target _________
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_non_utf8_source_preserves_target>
+
+    def test_late_non_utf8_source_preserves_target(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+________ ExportSafetyTests.test_late_oversized_source_preserves_target _________
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_oversized_source_preserves_target>
+
+    def test_late_oversized_source_preserves_target(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+___ ExportSafetyTests.test_late_traversal_does_not_publish_earlier_good_file ___
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_late_traversal_does_not_publish_earlier_good_file>
+
+    def test_late_traversal_does_not_publish_earlier_good_file(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_____ ExportSafetyTests.test_manifest_path_cannot_be_an_allowlisted_input ______
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_manifest_path_cannot_be_an_allowlisted_input>
+
+    def test_manifest_path_cannot_be_an_allowlisted_input(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+________ ExportSafetyTests.test_public_run_path_cannot_escape_worktree _________
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_public_run_path_cannot_escape_worktree>
+
+    def test_public_run_path_cannot_escape_worktree(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+__ ExportSafetyTests.test_sanitization_precedes_scan_without_modifying_source __
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_sanitization_precedes_scan_without_modifying_source>
+
+    def test_sanitization_precedes_scan_without_modifying_source(self):
+>       fixture = Fixture(self.root, existing=False)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+__ ExportSafetyTests.test_source_symlink_ancestor_is_rejected_without_writes ___
+
+self = <test_export_safety.ExportSafetyTests testMethod=test_source_symlink_ancestor_is_rejected_without_writes>
+
+    def test_source_symlink_ancestor_is_rejected_without_writes(self):
+>       fixture = Fixture(self.root)
+                  ^^^^^^^^^^^^^^^^^^
+
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:157: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:63: in __init__
+    for relative in required_paths():
+                    ^^^^^^^^^^^^^^^^
+20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py:45: in required_paths
+    tree = ast.parse(EXPORTER.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py'
+
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=========================== short test summary info ============================
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_clean_export_has_matching_hashes_and_preserves_source
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_ancestor_is_rejected_without_writes
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_leaf_is_not_followed
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_invalid_allowlist_type_does_not_create_target
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_binary_source_preserves_target
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_does_not_create_new_target
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_preserves_existing_files_and_manifests
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_missing_source_does_not_publish_earlier_good_file
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_non_utf8_source_preserves_target
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_oversized_source_preserves_target
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_traversal_does_not_publish_earlier_good_file
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_manifest_path_cannot_be_an_allowlisted_input
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_public_run_path_cannot_escape_worktree
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_sanitization_precedes_scan_without_modifying_source
+FAILED 20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_source_symlink_ancestor_is_rejected_without_writes
+15 failed, 23 passed in 7.17s

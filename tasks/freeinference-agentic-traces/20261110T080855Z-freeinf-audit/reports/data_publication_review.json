@@ -1,0 +1,735 @@
+{
+  "reviewed_utc": "2026-11-10T08:50:30.712440+00:00",
+  "owner": "freeinf_data",
+  "status": "50 files safe as-is; one file requires public-copy sanitization",
+  "scope": "Only the data-agent-owned 51 original files explicitly enumerated here, including two supplemental resource-plan files. No copying, pushing, publication, or deletion performed. Other agents files not reviewed.",
+  "review_method": [
+    "Read every listed UTF-8 file and checked URLs, credentials, signed URL markers, private key/token patterns, file/home paths, cloud instance/UUID patterns, and standalone16/32hex candidates.",
+    "Reviewed JSON structure for raw record/payload keys; none contained session/user/argument/program/prompt/response record values.",
+    "Matched apparent ID patterns to JSON/CSV statistic context; all standalone16hex candidates were numeric decimal/scientific-notation fractions.",
+    "Verified file SHA256 after review; reviewed source data pipeline emits only source metadata and aggregate statistics."
+  ],
+  "summary": {
+    "files_reviewed": 51,
+    "bytes_reviewed": 1086551,
+    "safe_as_is": 50,
+    "requires_sanitization": 1,
+    "actual_trace_ids_found": 0,
+    "signed_urls_found": 0,
+    "url_credentials_found": 0,
+    "known_secret_tokens_or_private_keys_found": 0,
+    "cloud_instance_ids_or_uuids_found": 0,
+    "raw_record_payload_values_found": 0
+  },
+  "safe_file_allowlist": [
+    "data_dictionary.csv",
+    "data_validation_report.md",
+    "environment/freeinference/conda-explicit.txt",
+    "environment/freeinference/conda-list.json",
+    "environment/freeinference/environment.yml",
+    "environment/freeinference/requirements-from-upstream.txt",
+    "environment/freeinference/runtime_versions.json",
+    "logs/anomaly_and_confounding_audit.json",
+    "logs/anomaly_and_confounding_audit.log",
+    "logs/build_data_dictionary.json",
+    "logs/build_data_dictionary.log",
+    "logs/build_data_manifest.json",
+    "logs/build_data_manifest.log",
+    "logs/conda_create.json",
+    "logs/conda_create.log",
+    "logs/official_dependencies_install.json",
+    "logs/official_dependencies_install.log",
+    "logs/processed_release_download.json",
+    "logs/processed_release_download.log",
+    "logs/profile_full_release.json",
+    "logs/profile_full_release.log",
+    "logs/profile_full_release_final.json",
+    "logs/profile_full_release_final.log",
+    "logs/profile_one_week.json",
+    "logs/profile_one_week.log",
+    "logs/selected_requests_download.json",
+    "logs/selected_requests_download.log",
+    "logs/summarize_data_validation.json",
+    "logs/summarize_data_validation.log",
+    "reports/aggregate_stats.json",
+    "reports/aggregate_stats_one_week.json",
+    "reports/anomaly_and_confounding_aggregates.json",
+    "reports/data_manifest.csv",
+    "reports/data_source_summary.json",
+    "reports/execution_summary.json",
+    "reports/missingness_summary.csv",
+    "reports/observed_schemas.json",
+    "reports/quality_checks.csv",
+    "reports/quality_findings.md",
+    "reports/requests_parquet_footer_one_week.json",
+    "reports/table1_harness_comparison.csv",
+    "scripts/audit_aggregate_anomalies.py",
+    "scripts/build_data_dictionary.py",
+    "scripts/build_data_manifest.py",
+    "scripts/download_processed_release.py",
+    "scripts/download_selected_week.py",
+    "scripts/profile_parquet.py",
+    "scripts/summarize_data_validation.py",
+    "reports/cache_replay_resource_plan.json",
+    "reports/cache_replay_resource_plan.md"
+  ],
+  "conditionally_publishable_files": [
+    {
+      "source": "environment/freeinference/pip-freeze.txt",
+      "public_target": "environment/freeinference/pip-freeze.txt",
+      "required_sanitization": {
+        "match_entire_line_regex": "^packaging @ file://.*$",
+        "replacement": "packaging==26.3",
+        "add_header_comment": "# Public export sanitized: upstream Conda build-path direct reference replaced by the observed installed packaging version. Original pip freeze retained privately."
+      },
+      "evidence": "Read installed importlib.metadata.version(packaging) =26.3 on 2026-11-10; conda-list.json also records packaging version. No dependency reinstallation/substitution occurred.",
+      "preserve_original": true
+    }
+  ],
+  "recommended_minimum_public_bundle": [
+    "data_dictionary.csv",
+    "data_validation_report.md",
+    "environment/freeinference/conda-explicit.txt",
+    "environment/freeinference/conda-list.json",
+    "environment/freeinference/environment.yml",
+    "environment/freeinference/pip-freeze.txt",
+    "environment/freeinference/requirements-from-upstream.txt",
+    "environment/freeinference/runtime_versions.json",
+    "logs/conda_create.json",
+    "logs/conda_create.log",
+    "logs/official_dependencies_install.json",
+    "logs/official_dependencies_install.log",
+    "logs/processed_release_download.json",
+    "logs/processed_release_download.log",
+    "logs/profile_full_release_final.json",
+    "logs/profile_full_release_final.log",
+    "logs/profile_one_week.json",
+    "logs/profile_one_week.log",
+    "logs/selected_requests_download.json",
+    "logs/selected_requests_download.log",
+    "reports/aggregate_stats.json",
+    "reports/aggregate_stats_one_week.json",
+    "reports/anomaly_and_confounding_aggregates.json",
+    "reports/data_manifest.csv",
+    "reports/data_source_summary.json",
+    "reports/execution_summary.json",
+    "reports/missingness_summary.csv",
+    "reports/observed_schemas.json",
+    "reports/quality_checks.csv",
+    "reports/quality_findings.md",
+    "reports/requests_parquet_footer_one_week.json",
+    "reports/table1_harness_comparison.csv",
+    "scripts/audit_aggregate_anomalies.py",
+    "scripts/build_data_dictionary.py",
+    "scripts/build_data_manifest.py",
+    "scripts/download_processed_release.py",
+    "scripts/download_selected_week.py",
+    "scripts/profile_parquet.py",
+    "scripts/summarize_data_validation.py",
+    "reports/cache_replay_resource_plan.json",
+    "reports/cache_replay_resource_plan.md"
+  ],
+  "recommended_minimum_requires_sanitized_pip_freeze": true,
+  "optional_safe_files": [
+    "logs/profile_full_release.json",
+    "logs/profile_full_release.log",
+    "logs/build_data_dictionary.json",
+    "logs/build_data_dictionary.log",
+    "logs/build_data_manifest.json",
+    "logs/build_data_manifest.log",
+    "logs/anomaly_and_confounding_audit.json",
+    "logs/anomaly_and_confounding_audit.log",
+    "logs/summarize_data_validation.json",
+    "logs/summarize_data_validation.log"
+  ],
+  "do_not_publish": [
+    "private/**",
+    ".conda/**",
+    "upstream/**",
+    "The unsanitized original environment/freeinference/pip-freeze.txt",
+    "HF raw API evidence containing arbitrary metadata, any Parquet or JSONL, papers/fulltext and unreviewed files owned by other agents"
+  ],
+  "all_files": [
+    {
+      "path": "data_dictionary.csv",
+      "bytes": 39035,
+      "sha256": "0452efb32f9946e3f8ddfddfd8da4f9ddab135fb5d0a49b1de71ae5b72f2190c",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 68
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "data_validation_report.md",
+      "bytes": 12318,
+      "sha256": "7d8d6ff7627395efb1652301eacc30cec1a1395628f6e2ee277dc9e4eaeff3e2",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 1,
+        "github.com": 7
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "environment/freeinference/conda-explicit.txt",
+      "bytes": 2271,
+      "sha256": "c40257b3b15f929ef574adba1a53e8a7365b5f4e7f378095cd5757d6a98de94f",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "conda.anaconda.org": 26
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Only public conda.anaconda.org package URLs; no file://, URL credentials or account paths."
+      ]
+    },
+    {
+      "path": "environment/freeinference/conda-list.json",
+      "bytes": 16742,
+      "sha256": "17c6ed76df88959eb1bc7fafffd5aecf06a86d063b99c7a1cad23cacf0786d71",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "conda.anaconda.org": 64
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "environment/freeinference/environment.yml",
+      "bytes": 312,
+      "sha256": "83daf9dd05d29daf1abf6aee1214b12ac6f18611f4144a21f8e8415b7899f87c",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "environment/freeinference/pip-freeze.txt",
+      "bytes": 799,
+      "sha256": "35e3d7ee86fc43261c3469696f2950e2f834b70f7cb79ff7717e5a06b9a465ae",
+      "pattern_counts": {
+        "file_url": 1,
+        "home_path": 1
+      },
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Sanitize public copy; preserve original privately",
+      "safety_notes": [
+        "One packaging direct file:// dependency exposes upstream Conda build path; no auth credentials.",
+        "Replace only packaging direct-reference line with packaging==26.3; version read from installed distribution."
+      ]
+    },
+    {
+      "path": "environment/freeinference/requirements-from-upstream.txt",
+      "bytes": 141,
+      "sha256": "b82633b83f04d8def2826946d2f3be2e015c6e75d57891aaff64a2cd37a57e56",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "environment/freeinference/runtime_versions.json",
+      "bytes": 826,
+      "sha256": "0e264191e1f7c95c412599b927a79d6032e45c36b233cc879a0c054f1d0de960",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/anomaly_and_confounding_audit.json",
+      "bytes": 385,
+      "sha256": "cd6ac6b558ea8c09856a629ff7accb1f347171cfe45f82058812edc96d0b706a",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/anomaly_and_confounding_audit.log",
+      "bytes": 4917,
+      "sha256": "416a5f98bd241a48e46ebd23d642940268663d70e7c3691413254c2b38b56c81",
+      "pattern_counts": {
+        "exact_16_hex_token": 12
+      },
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "16-hex-like pattern matches were reviewed as numerical decimal/scientific-notation statistics, not ID values."
+      ]
+    },
+    {
+      "path": "logs/build_data_dictionary.json",
+      "bytes": 380,
+      "sha256": "9fb1e5c584e5339f951f43fd6aa9831c45c5e9c2c5c53d62d995f5f2a8d11d5b",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/build_data_dictionary.log",
+      "bytes": 162,
+      "sha256": "c0fda5b3b4b82c8aaa877c2c6f53dcf0e90d8b481e9df3575a3036a4422553f5",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/build_data_manifest.json",
+      "bytes": 378,
+      "sha256": "9e8c5048dba3ce5243e00e07f72cbd2421dcbeb30250d8dcaf2af9805724caa3",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/build_data_manifest.log",
+      "bytes": 605,
+      "sha256": "32b4b0015b4a60dca93727a6cf374350e06a4fe9c134fac808471ee6b9e37c29",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/conda_create.json",
+      "bytes": 545,
+      "sha256": "1c4196d624b6f1c0f1029962b4513f623e02b8c74e9121d67eb8d032aa4dd36d",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/conda_create.log",
+      "bytes": 3184,
+      "sha256": "9ed35587130298d8813890e284b8d2b798eeda58efac2600503792fc3e4a7ba0",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "bit.ly": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Contains public conda-pypi informational bit.ly link; no credentials/query signature. Optional removal of informational URL does not affect evidence."
+      ]
+    },
+    {
+      "path": "logs/official_dependencies_install.json",
+      "bytes": 472,
+      "sha256": "f21a5f2a86a49396a6324d1b4fce7fedbb4cf6213e023b288fb7bfb2d491ec62",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/official_dependencies_install.log",
+      "bytes": 14231,
+      "sha256": "b84e8a8b9ca640f92207b857cbe05506f7ddc16a4e2ae34953748d880fbe761d",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/processed_release_download.json",
+      "bytes": 360,
+      "sha256": "930d162a7a1cf6413f8cf5e5171d9e4a9b491092f4520db777315a70fd6730cb",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/processed_release_download.log",
+      "bytes": 17469,
+      "sha256": "2df605e99aed766104033368731f34f7cb71a3c0546dc8238f075d57c98c41a4",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Pinned public HuggingFace source URL/path/size/SHA/progress only; no signed redirect URL, raw trace rows or payloads."
+      ]
+    },
+    {
+      "path": "logs/profile_full_release.json",
+      "bytes": 451,
+      "sha256": "e3fc031153ca0be1f1ef43e651301d9988ce38f44e794f05ad26479a77b5ce19",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/profile_full_release.log",
+      "bytes": 4094,
+      "sha256": "2df0ee6e4e5634bfd772237427a19617666f7f5fe54c6dd54ffb2102a8c4086e",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/profile_full_release_final.json",
+      "bytes": 452,
+      "sha256": "c9c5e656dafdc61318bf954a103023f0f31fcda57f78d979fe27939c15e028e1",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/profile_full_release_final.log",
+      "bytes": 4094,
+      "sha256": "85d8f2e4a595988de53e26bf0a7c53e46f1257560c2cd639a2c8093b665f1707",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/profile_one_week.json",
+      "bytes": 492,
+      "sha256": "d6a0d813c63960d3a698b65c7552acdc72b4275f7dc836b53cca09377fcbc7b2",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/profile_one_week.log",
+      "bytes": 459,
+      "sha256": "33ee065bba5dbab853c26da43188d7cdd7744658d7f72fc10709a6a1c54b0483",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/selected_requests_download.json",
+      "bytes": 357,
+      "sha256": "40b7cdc67bd014401657cdbcf4dc7b3eeea4d5e5521de119ed323286963f2cbc",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/selected_requests_download.log",
+      "bytes": 1965,
+      "sha256": "937696a35cb90cd95e98cc3187abb7aa549e6a0a8b5eaf3a8109c60c4f42b191",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Pinned public HuggingFace source URL/path/size/SHA/progress only; no signed redirect URL, raw trace rows or payloads."
+      ]
+    },
+    {
+      "path": "logs/summarize_data_validation.json",
+      "bytes": 384,
+      "sha256": "1f2437ccd36fe3d44af18a5d78285b5f98cba7db65d1c9e4c63e329f04599eda",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "logs/summarize_data_validation.log",
+      "bytes": 133,
+      "sha256": "e5556139750c732c6fb34fe501a803a851d3188c237ed5a3675605f9348aad26",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/aggregate_stats.json",
+      "bytes": 640514,
+      "sha256": "291a559613f142802fa4b6eb909e94483744edadbdfb6948188db6593e54195e",
+      "pattern_counts": {
+        "exact_16_hex_token": 14
+      },
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "16-hex-like pattern matches were reviewed as numerical decimal/scientific-notation statistics, not ID values."
+      ]
+    },
+    {
+      "path": "reports/aggregate_stats_one_week.json",
+      "bytes": 53456,
+      "sha256": "d7e0854e8eaa09b79b119eedab47f56b6737f1364fbfa0ac78e25ac56dde632e",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/anomaly_and_confounding_aggregates.json",
+      "bytes": 4917,
+      "sha256": "416a5f98bd241a48e46ebd23d642940268663d70e7c3691413254c2b38b56c81",
+      "pattern_counts": {
+        "exact_16_hex_token": 12
+      },
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "16-hex-like pattern matches were reviewed as numerical decimal/scientific-notation statistics, not ID values."
+      ]
+    },
+    {
+      "path": "reports/data_manifest.csv",
+      "bytes": 24205,
+      "sha256": "2c9c268ac08eb3eb997c77684ba71d1d99260110f1067ef5040d439df397548c",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 48
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/data_source_summary.json",
+      "bytes": 605,
+      "sha256": "32b4b0015b4a60dca93727a6cf374350e06a4fe9c134fac808471ee6b9e37c29",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/execution_summary.json",
+      "bytes": 8230,
+      "sha256": "7b5ca2d8aa35020584b598325a21d72906991d68ba80f5e435b159fa9135fab2",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/missingness_summary.csv",
+      "bytes": 5709,
+      "sha256": "ecfb928612f68feb0bb0a565088ad6919cfd1a4aad8aa40bbac047df3aaa4f4f",
+      "pattern_counts": {
+        "exact_16_hex_token": 5
+      },
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "16-hex-like pattern matches were reviewed as numerical decimal/scientific-notation statistics, not ID values."
+      ]
+    },
+    {
+      "path": "reports/observed_schemas.json",
+      "bytes": 1545,
+      "sha256": "8b302e731d8b782eec1d9de84861bb998ae9c2c21280ddd5d8bf02bf6d6d692c",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/quality_checks.csv",
+      "bytes": 115656,
+      "sha256": "224da674d2c6e640cc78c807ad55a1200c29d508d79853de2e33a163e36df749",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/quality_findings.md",
+      "bytes": 3932,
+      "sha256": "c7a00c1e24cf67ad816c381c34f4f0bcef8b6d6aa089349f65ae07db9a6efa32",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 5
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/requests_parquet_footer_one_week.json",
+      "bytes": 2725,
+      "sha256": "c1f2df13cf18201bd2ea41ef1c00c16007b1d13b44e0e9481662e24992aa960b",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/table1_harness_comparison.csv",
+      "bytes": 1613,
+      "sha256": "6776f32fa7e628e290372b2d122e1974cb5975a649d5f93fcbe68c27422324cf",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/audit_aggregate_anomalies.py",
+      "bytes": 3742,
+      "sha256": "b6a3ad55acae8b4769e2570d8bbffcd778333693209d2766e72d26b13ead0fdc",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/build_data_dictionary.py",
+      "bytes": 18996,
+      "sha256": "4e20c107841334ea1f892cabeff7ff660e83431dd00f15257006f417d523c9cf",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/build_data_manifest.py",
+      "bytes": 2246,
+      "sha256": "24eea7d2aeceed593b16c63a7c3d62007108e2a36cc85c8ab311af17ca173eee",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/download_processed_release.py",
+      "bytes": 4881,
+      "sha256": "8594208989057e8dbe847d2d0ae8081c5cb0de33925d1b65b4e9c1c2917b30df",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 2
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/download_selected_week.py",
+      "bytes": 2435,
+      "sha256": "adc6c4ebbde3f7ac2600bb57517ed5112f2c5e08fe9f2ffcfd57483f4850f0db",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "huggingface.co": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/profile_parquet.py",
+      "bytes": 20285,
+      "sha256": "7cc6a6b3fc9031769347c64c3a31a861f78f335fcd186167af06692cf5f85479",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "scripts/summarize_data_validation.py",
+      "bytes": 17651,
+      "sha256": "6866168cd3fada2c8322a5d10c6af13728c2ada6c288857ad8b5f07ada56ed8d",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 1,
+        "huggingface.co": 1
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": []
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.json",
+      "bytes": 22791,
+      "sha256": "b3bc693b35f04302bae00bd3fa108bdf2a57dd0134ad5af1fcf1cc689d729868",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {
+        "github.com": 3
+      },
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Supplemental resource plan uses only footer aggregate counts, existing benchmark metadata, public source references and explicitly labeled estimates; no raw values/IDs read."
+      ]
+    },
+    {
+      "path": "reports/cache_replay_resource_plan.md",
+      "bytes": 2004,
+      "sha256": "5cb8c3eeb5ee163c58cb492224993555f848f0931d9cdb6e1896af1e46c467b1",
+      "pattern_counts": {},
+      "credential_url_count": 0,
+      "url_hosts": {},
+      "publication_decision": "Safe within reviewed aggregate/source-metadata scope",
+      "safety_notes": [
+        "Supplemental resource plan uses only footer aggregate counts, existing benchmark metadata, public source references and explicitly labeled estimates; no raw values/IDs read."
+      ]
+    }
+  ],
+  "limitations": [
+    "This review checks the generated artifacts, not the original datasets anonymization or hidden upstream collection system.",
+    "Aggregate rare-category co-occurrences are present by design; no raw identifiers, task text or trace argument/program strings were included.",
+    "Allowlist applies to recorded file hashes. Re-review changed files before publication."
+  ],
+  "review_record_publication": "This JSON contains only artifact paths/hashes and review metadata and may itself be archived. Self-hash is intentionally not embedded.",
+  "supplemental_review_note": "Added cache_replay_resource_plan JSON/Markdown after read-only footer/runtime planning; verified no raw ID, credential or signed URL patterns."
+}

@@ -1,0 +1,16 @@
+{
+  "weeks": 16,
+  "scope": "Top-level human Agentic sessions, benchmark excluded",
+  "swe_sessions": 1035,
+  "cache_reporting_requests": 1077413,
+  "cached_token_share_percent": 97.42251783541164,
+  "cached_token_share_denominator": "sum(prompt_tokens + completion_tokens.fillna(0)) on cache-reported prompt>0 human rows",
+  "gap_p90_seconds": {
+    "tool": 17.22570000000007,
+    "ask_user_tool": 378.06660000000005,
+    "user": 1042.3616000000004,
+    "subagent": 371.3016
+  },
+  "method": "Official paper.metrics.gaps.gap_rows and paper.metrics.tokens.is_cache_reporting; column-pruned public Parquet",
+  "not_a_network_packet_measurement": true
+}

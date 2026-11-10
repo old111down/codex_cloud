@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-v",
+    "--tb=short",
+    "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+  ],
+  "source_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
+  "start_utc": "2026-11-10T09:55:17.820336+00:00",
+  "end_utc": "2026-11-10T09:55:18.647599+00:00",
+  "elapsed_seconds": 0.8274626150000586,
+  "exit_code": 1,
+  "runtime_test_marker_redactions": 0,
+  "expected": "Original exporter violates rejection/no-write regression invariants; baseline must fail"
+}

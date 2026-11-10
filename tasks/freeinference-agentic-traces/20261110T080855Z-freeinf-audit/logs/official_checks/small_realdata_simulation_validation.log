@@ -1,0 +1,28 @@
+{
+  "status": "Verified",
+  "not_a_paper_result": true,
+  "scope": "3audit-selected sessions/42requests only",
+  "checks": [
+    "52policy/TTL tallies",
+    "hit+miss conserves input block tokens",
+    "infinite-TTL first reads equal distinct blocks",
+    "hits monotone withTTL for each policy",
+    "cheaper-reads zero-price-cut baseline unchanged",
+    "skipped reductions bounded"
+  ],
+  "tally_rows": 52,
+  "cheaper_reads_rows": 63,
+  "input_block_tokens": 8631904,
+  "distinct_block_first_read_tokens": 530336,
+  "ttl_infinite_hit_tokens": 8101568,
+  "ttl_infinite_miss_tokens": 530336,
+  "accounting_totals": [
+    {
+      "scope": "Agentic",
+      "active_token_seconds": 137532073.6865158,
+      "span_seconds": 239602.11500000954,
+      "output_tokens": 17933.0,
+      "requests": 42
+    }
+  ]
+}

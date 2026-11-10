@@ -1,0 +1,35 @@
+{
+  "status": "Verified",
+  "scope": "One-week missing-SWE branch only",
+  "not_a_paper_result": true,
+  "section_numbers": {
+    "turn_duration": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "session_duration": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "input_per_request": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "user_prompt_size": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "trajectory_mix_benchmark": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "trajectory_mix_human": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    },
+    "prefill_against_storage": {
+      "drawn": "no: SWE-Bench scope has no requests",
+      "scope": "Agentic and SWE-Bench"
+    }
+  }
+}

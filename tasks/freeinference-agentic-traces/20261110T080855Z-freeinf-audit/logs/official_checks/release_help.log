@@ -1,0 +1,11 @@
+usage: python -m release download [-h] [--tables] [--traces] [--week SUNDAY]
+                                  [--repo REPO] [--hub DIR] [--release DIR]
+
+options:
+  -h, --help     show this help message and exit
+  --tables       the tables and tables.json (9 GB)
+  --traces       the trace files, decompressed with zstd (108 GB)
+  --week SUNDAY  one week's Sunday; repeat for several; every week without it
+  --repo REPO    the Hub repository
+  --hub DIR      where the Hub's files are kept
+  --release DIR  the release directory

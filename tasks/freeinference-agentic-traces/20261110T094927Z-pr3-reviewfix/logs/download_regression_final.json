@@ -1,0 +1,24 @@
+{
+  "phase": "after_fix_additional_boundaries",
+  "start_utc": "2026-11-10T09:58:19.701464+00:00",
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+  ],
+  "environment_override": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "source_sha256": {
+    "download_selected_week.py": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6",
+    "download_processed_release.py": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2",
+    "pinned_release_download.py": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075"
+  },
+  "exit_code": 0,
+  "end_utc": "2026-11-10T09:58:26.117645+00:00",
+  "elapsed_seconds": 6.416058476999979
+}

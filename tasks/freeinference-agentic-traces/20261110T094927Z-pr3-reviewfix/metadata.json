@@ -1,0 +1,675 @@
+{
+  "schema_version": "1.0",
+  "task_id": "20261110T094927Z-pr3-reviewfix",
+  "task_name": "PR3 audit-tool review corrections",
+  "task_slug": "freeinference-agentic-traces",
+  "run_id": "20261110T094927Z-pr3-reviewfix",
+  "archive_repository": "https://github.com/old111down/codex_cloud",
+  "start_time_utc": "2026-11-10T09:49:27Z",
+  "end_time_utc": "2026-11-10T10:12:11Z",
+  "end_time_scope": "Report seal; final remote branch/PR-head verification is recorded externally in the PR description",
+  "objective": "Fix the three P2 review comments with failure-path regressions and preserve original scientific evidence",
+  "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "branch_policy_exception": "User explicitly requested updating the existing PR; this new run is a corrective record on that same branch",
+  "related_runs": [
+    {
+      "run_id": "20261110T080855Z-freeinf-audit",
+      "relation": "Corrective PR review; original science status/times and artifacts retained",
+      "path": "tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit"
+    }
+  ],
+  "inherited_research_budget": {
+    "original_t0_utc": "2026-11-10T08:06:28Z",
+    "deadline_utc": "2026-11-10T11:06:28Z",
+    "reset": false
+  },
+  "source_repositories": [
+    {
+      "url": "https://github.com/old111down/codex_cloud",
+      "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+      "commit_shas": [
+        "34678ab6d88546fcc3d038706a38b41afbbba73d"
+      ],
+      "version_status": "Verified"
+    },
+    {
+      "url": "https://github.com/HarvardMadSys/freeinference_agentic_trace",
+      "commit_shas": [
+        "2b795dbf5eac490a7c081906fdce6cc7a184b7ef"
+      ],
+      "version_status": "Verified"
+    }
+  ],
+  "runtime_environment": {
+    "python": "3.12.16",
+    "pytest": "9.2.0",
+    "platform": "Linux",
+    "paper_environment": "../20261110T080855Z-freeinf-audit/environment/freeinference/runtime_versions.json",
+    "new_environment_installed": false,
+    "new_paper_experiments": false
+  },
+  "commands_executed": [
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:53:14.426596+00:00",
+      "end_time_utc": "2026-11-10T09:53:15.788798+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/review_regression.before.json",
+        "logs/review_regression.before.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:53:41.023293+00:00",
+      "end_time_utc": "2026-11-10T09:53:46.484315+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/download_regression_before.json",
+        "logs/download_regression_before.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:54:36.419875+00:00",
+      "end_time_utc": "2026-11-10T09:54:37.406282+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/review_regression.after.json",
+        "logs/review_regression.after.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-v",
+        "--tb=short",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:55:17.820336+00:00",
+      "end_time_utc": "2026-11-10T09:55:18.647599+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/export_regression.before.json",
+        "logs/export_regression.before.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/review_reproduction_evidence.py",
+        "--root",
+        "/workspace/freeinference-audit",
+        "--output",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/reports/saved_evidence_recheck.json"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:55:28.102923+00:00",
+      "end_time_utc": "2026-11-10T09:55:28.157797+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/review_regression.saved-evidence.json",
+        "logs/review_regression.saved-evidence.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:57:06.156241+00:00",
+      "end_time_utc": "2026-11-10T09:57:11.601155+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/download_regression_after.json",
+        "logs/download_regression_after.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:57:08.579189+00:00",
+      "end_time_utc": "2026-11-10T09:57:09.546418+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_review_status_tests.json",
+        "logs/independent_review_status_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:57:22.118921+00:00",
+      "end_time_utc": "2026-11-10T09:57:23.037363+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/review_regression.public-before.json",
+        "logs/review_regression.public-before.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:57:23.037843+00:00",
+      "end_time_utc": "2026-11-10T09:57:23.965902+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/review_regression.public-after.json",
+        "logs/review_regression.public-after.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/independent_review_status_probes.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:57:56.084533+00:00",
+      "end_time_utc": "2026-11-10T09:57:56.450491+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_review_status_probes.json",
+        "logs/independent_review_status_probes.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:58:19.701464+00:00",
+      "end_time_utc": "2026-11-10T09:58:26.117645+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/download_regression_final.json",
+        "logs/download_regression_final.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:59:17.574027+00:00",
+      "end_time_utc": "2026-11-10T09:59:18.541540+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_review_status_public_tests.json",
+        "logs/independent_review_status_public_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/independent_review_status_probes.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:59:18.871648+00:00",
+      "end_time_utc": "2026-11-10T09:59:19.236508+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_review_status_public_probes.json",
+        "logs/independent_review_status_public_probes.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T09:59:43.939206+00:00",
+      "end_time_utc": "2026-11-10T09:59:50.424075+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_download_tests.json",
+        "logs/independent_download_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-v",
+        "--tb=short",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:00:36.848631+00:00",
+      "end_time_utc": "2026-11-10T10:00:37.816271+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/export_regression.after.json",
+        "logs/export_regression.after.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_download_cache.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:00:38.245502+00:00",
+      "end_time_utc": "2026-11-10T10:00:39.613514+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_download_cache_probes.json",
+        "logs/independent_download_cache_probes.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:01:57.052575+00:00",
+      "end_time_utc": "2026-11-10T10:01:57.920343+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_export_tests.json",
+        "logs/independent_export_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/tmp/pr3-public-regression-hm37s3da/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py",
+        "/tmp/pr3-public-regression-hm37s3da/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+        "/tmp/pr3-public-regression-hm37s3da/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py",
+        "/tmp/pr3-public-regression-hm37s3da/20261110T094927Z-pr3-reviewfix/scripts/independent_review_status_probes.py",
+        "--junitxml=/tmp/pr3-public-regression-hm37s3da/results.xml"
+      ],
+      "cwd": "/tmp/pr3-public-regression-hm37s3da",
+      "start_time_utc": "2026-11-10T10:02:08.968076+00:00",
+      "end_time_utc": "2026-11-10T10:02:16.498220+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/relocated_regression.layout-error.json",
+        "logs/relocated_regression.layout-error.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/tmp/pr3-public-regression-g8vbboq4/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py",
+        "/tmp/pr3-public-regression-g8vbboq4/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+        "/tmp/pr3-public-regression-g8vbboq4/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py",
+        "--junitxml=/tmp/pr3-public-regression-g8vbboq4/results.xml"
+      ],
+      "cwd": "/tmp/pr3-public-regression-g8vbboq4",
+      "start_time_utc": "2026-11-10T10:02:55.021433+00:00",
+      "end_time_utc": "2026-11-10T10:03:02.843247+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/relocated_regression.pre-boundary-fix.json",
+        "logs/relocated_regression.pre-boundary-fix.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:02:57.310571+00:00",
+      "end_time_utc": "2026-11-10T10:02:57.879040+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_export_boundary_probes.json",
+        "logs/independent_export_boundary_probes.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-v",
+        "--tb=short",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:03:55.031467+00:00",
+      "end_time_utc": "2026-11-10T10:03:55.834568+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/export_regression.before_extended.json",
+        "logs/export_regression.before_extended.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-v",
+        "--tb=short",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:04:18.458563+00:00",
+      "end_time_utc": "2026-11-10T10:04:19.306319+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/export_regression.after_extended.json",
+        "logs/export_regression.after_extended.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:05:20.379664+00:00",
+      "end_time_utc": "2026-11-10T10:05:21.554871+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/independent_export_final_tests.json",
+        "logs/independent_export_final_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py",
+        "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+        "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py",
+        "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_download_cache.py",
+        "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py",
+        "--junitxml=/tmp/pr3-public-regression-use5zaug/results.xml"
+      ],
+      "cwd": "/tmp/pr3-public-regression-use5zaug",
+      "start_time_utc": "2026-11-10T10:05:24.502449+00:00",
+      "end_time_utc": "2026-11-10T10:05:33.592786+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/relocated_regression.json",
+        "logs/relocated_regression.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python",
+        "tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/validate_archive.py",
+        "tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+        "--schema",
+        "templates/metadata.schema.json",
+        "--finished"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T10:12:11.099390+00:00",
+      "end_time_utc": "2026-11-10T10:12:11.365020+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; baseline intentional failures and runner mistakes are explained in task_report.md",
+      "evidence": [
+        "logs/archive_validation.json",
+        "logs/archive_validation.log"
+      ]
+    }
+  ],
+  "completed_work": [
+    {
+      "description": "Three P2 defects corrected and portable relocated regressions pass",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/relocated_regression_summary.json",
+        "reports/download_fix.md",
+        "reports/export_fix.md",
+        "reports/review_status_fix.md"
+      ]
+    },
+    {
+      "description": "199 original files and original metadata values preserved",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/independent_archive_preservation.json",
+        "reports/change_inventory.json"
+      ]
+    }
+  ],
+  "failed_experiments": [
+    {
+      "description": "Original baseline regressions fail as expected; first relocated runner used an incorrect flattened layout",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "logs/",
+        "reports/relocated_regression_layout_error.json"
+      ]
+    }
+  ],
+  "important_findings": [
+    {
+      "description": "Original scientific results remain Partially Verified; tooling repairs do not validate missing paper claims",
+      "status": "Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "task_report.md"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "description": "Real clean8.37GB transfer, cross-filesystem hardlink, concurrent/disk-failure export transaction and original unverified paper claims",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "task_report.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "status": "Verified",
+      "sha256": "398fa4357cf1158a41783786b48b3ccedb886ce8f865f7b2ea40249eeb68d172",
+      "publication_review": "approved"
+    },
+    {
+      "path": "task_report.md",
+      "status": "Verified",
+      "sha256": "c3df8ea467b70f2fcc9c8729b1bc2a1975490ff16059d9aef12975fbc34e4e61",
+      "publication_review": "approved"
+    },
+    {
+      "path": "execution_log.md",
+      "status": "Verified",
+      "sha256": "205c748d46ecbea76e70c2a2b2763be94e794454b8cf17109ae3e7e16016b33d",
+      "publication_review": "approved"
+    },
+    {
+      "path": "reports/change_inventory.json",
+      "status": "Verified",
+      "sha256": "3dd3085326d0d9e571480bef48cd0ec8806c435515c5aa88b52ad925cfba8ca7",
+      "publication_review": "approved"
+    }
+  ],
+  "publication_review": {
+    "status": "Verified",
+    "manifest": "reports/publication_manifest.json",
+    "limitations": [
+      "Explicit reviewed text artifacts only; pattern scans are limited evidence"
+    ]
+  },
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/3",
+  "review_comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+  "final_status": "Verified",
+  "final_status_scope": "The three audit-tool repairs and regression checks only; original paper remains Partially Verified"
+}

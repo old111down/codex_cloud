@@ -1,0 +1,6 @@
+Initial metadata-helper invocation used the system Python instead of the declared Conda Python.
+Raw observed error (helper only; no target algorithm ran and no upstream files changed):
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+ModuleNotFoundError: No module named 'pyarrow'
+Corrected by invoking the independent Conda interpreter; see complete_week_selection.json/.log.

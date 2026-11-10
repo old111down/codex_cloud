@@ -1,0 +1,51 @@
+{
+  "checkpoints": [
+    {
+      "recorded_utc": "2026-11-10T08:41:03.650978+00:00",
+      "commit_sha": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
+      "push_exit_code": 0,
+      "remote_equals_local": true,
+      "completed": [
+        "fullpaper/schema/label/sourceaudit",
+        "16week48Parquetvalidation",
+        "originalfullMake",
+        "3realsessionsimulation",
+        "11syntheticalignmentchecks"
+      ],
+      "audit_scope": "16figures/7tables;56coverageentries",
+      "actual_real_pcap_runs": 0,
+      "actual_model_inference_calls": 0,
+      "blockers": [
+        "privateoriginal/intentdata",
+        "fullindependentcachereplay",
+        "authorizedMiMoroute",
+        "noclientcapture"
+      ],
+      "remaining": [
+        "finalsemantic/publicationreview",
+        "PRcreation",
+        "finalremoteverification"
+      ]
+    },
+    {
+      "recorded_utc": "2026-11-10T08:58:28Z",
+      "commit_sha": "918e317a93f9f63351aa0fbd6b9dfdc6ea465985",
+      "push_exit_code": 0,
+      "remote_equals_local": true,
+      "pr_head_matches": true,
+      "completed": [
+        "all required11reports and3commonrecords",
+        "16week publicstatisticalpipeline",
+        "2completeweek freshcache replay with exactsameweek comparison",
+        "122independent completeweek checks",
+        "publicationreview andPRcreation"
+      ],
+      "actual_real_pcap_runs": 0,
+      "actual_model_inference_calls": 0,
+      "remaining": [
+        "closuremetadata/indexupdate",
+        "finalclosingcommitremote+PRheadverification"
+      ]
+    }
+  ]
+}

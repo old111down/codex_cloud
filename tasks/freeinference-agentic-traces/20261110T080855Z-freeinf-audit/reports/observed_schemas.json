@@ -1,0 +1,14 @@
+{
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "dataset_revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "observed_week": "2026-08-30_2026-09-05",
+  "schemas": {
+    "sessions.parquet": "session_id: string\nuser_id: string\nharness: string\nparent_session_id: string\nspawned_by_step: int32\nspawned_by_call_index: int32",
+    "requests.parquet": "session_id: string\nstep: int32\nlink_reason: string\nstart_ms: int64\nend_ms: int64\nttft_ms: int64\nmodel: string\nprovider: string\nstream: bool\nstep_trigger: string\nwaited_for: string\nprompt_tokens: int64\ncompletion_tokens: int64\ncache_read_tokens: int64\nrole_tokens: struct<system: int64, user: int64, assistant: int64, tool: int64, tool_definitions: int64>\n  child 0, system: int64\n  child 1, user: int64\n  child 2, assistant: int64\n  child 3, tool: int64\n  child 4, tool_definitions: int64\nn_messages: int32\ntool_definition_names: list<element: string>\n  child 0, element: string\nfinish_reason: string\ntransition: string\ncause: string\nblock_ids: large_list<element: int64>\n  child 0, element: int64",
+    "tool_calls.parquet": "session_id: string\nstep: int32\ncall_index: int32\nname: string\ncategory: string\nprograms: list<element: string>\n  child 0, element: string\nparse_status: string\narguments_skeleton: string\noutcome: string\nresult_tokens: int64\nlatency_ms: int64"
+  },
+  "parquet_top_level_field_count": 38,
+  "expanded_struct_child_field_count": 5,
+  "dictionary_rows": 68,
+  "scope": "Schema only; no records/IDs/content"
+}

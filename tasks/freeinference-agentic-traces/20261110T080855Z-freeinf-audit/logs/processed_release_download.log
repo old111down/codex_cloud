@@ -1,0 +1,92 @@
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 16, "remaining_parquet_bytes": 6549808478, "free_bytes": 15746727936, "reserve_bytes": 5368709120}
+{"file": "release/2026-05-17_2026-05-23/manifest.json", "bytes": 1394, "sha256": "ee47aab41342750b6dd66388ee43891e4e0b28cdd203435b54ec9742528c5153", "elapsed_seconds": 0.464, "status": "Verified"}
+{"file": "release/2026-05-24_2026-05-30/manifest.json", "bytes": 1396, "sha256": "6abd5d3463f0d1366f14f034595a2f0308647f842aaf55037ed48c4ca0319119", "elapsed_seconds": 0.534, "status": "Verified"}
+{"file": "release/2026-05-17_2026-05-23/processed/tables.json", "bytes": 589, "sha256": "f180e956b380b63d6e872c5ca681a70a026e856cd4617b4903a3c48bbdcabc31", "elapsed_seconds": 0.405, "status": "Verified"}
+{"file": "release/2026-05-24_2026-05-30/processed/tables.json", "bytes": 589, "sha256": "d774166429219dfdfa94fe7218fce3dd628e8d71276eef184a320666b1274fbf", "elapsed_seconds": 0.359, "status": "Verified"}
+{"file": "release/2026-05-24_2026-05-30/processed/sessions.parquet", "bytes": 6029, "sha256": "edd9cfed7f4e1e5818dbee32c246ca222d0fd4513408f077dac6f5d02151330d", "elapsed_seconds": 0.62, "status": "Verified"}
+{"file": "release/2026-05-17_2026-05-23/processed/sessions.parquet", "bytes": 5014, "sha256": "e905f1c1cbb1bac148aaffe7ff21509d4bae74897d87079f056ccf477af53ad8", "elapsed_seconds": 0.691, "status": "Verified"}
+{"file": "release/2026-05-17_2026-05-23/processed/tool_calls.parquet", "bytes": 167525, "sha256": "80340f7eadd41f84fbce362eab7922cda2c80af836222d16b113aaae1a05e430", "elapsed_seconds": 0.809, "status": "Verified"}
+{"file": "release/2026-05-24_2026-05-30/processed/tool_calls.parquet", "bytes": 179107, "sha256": "2c6ef1d6a0a51cdf28cf9d5521bb3d589dc62d107e1df2b1cf45bebf76758b84", "elapsed_seconds": 0.874, "status": "Verified"}
+{"file": "release/2026-05-17_2026-05-23/processed/requests.parquet", "bytes": 21989656, "sha256": "6772d28dee9df407dac2064cf5758a481baf1b8576600965a8cbf47266844d90", "elapsed_seconds": 2.736, "status": "Verified"}
+{"week": "2026-05-17_2026-05-23", "status": "complete; atomically published", "free_bytes": 15703359488}
+{"file": "release/2026-05-24_2026-05-30/processed/requests.parquet", "bytes": 24427181, "sha256": "a045b793e1de0aed6e877f59e1699b6b496a55b9a522465eacfb9b8d7ad6e4d7", "elapsed_seconds": 2.968, "status": "Verified"}
+{"week": "2026-05-24_2026-05-30", "status": "complete; atomically published", "free_bytes": 15699898368}
+{"file": "release/2026-05-31_2026-06-06/manifest.json", "bytes": 1391, "sha256": "96191219dd2602fbc6ae18e051e55bfa1775d6fbca8ff7f5894c17bed1f109be", "elapsed_seconds": 0.43, "status": "Verified"}
+{"file": "release/2026-06-07_2026-06-13/manifest.json", "bytes": 1392, "sha256": "cb568f2be6d718d015ff67886042f86ac43637d73a61995ad6010e64177dcf56", "elapsed_seconds": 0.444, "status": "Verified"}
+{"file": "release/2026-05-31_2026-06-06/processed/tables.json", "bytes": 586, "sha256": "d93244509694cc3355be6e7a42334022eda3328af8c0f5b77b95653726288257", "elapsed_seconds": 0.369, "status": "Verified"}
+{"file": "release/2026-06-07_2026-06-13/processed/tables.json", "bytes": 585, "sha256": "594a1e37de5668de321cc4ff70fc4f719c39c8ed6e6a3db573a6762ccf181a75", "elapsed_seconds": 0.182, "status": "Verified"}
+{"file": "release/2026-05-31_2026-06-06/processed/sessions.parquet", "bytes": 4013, "sha256": "17a5e612765dbe759bdc659d9fefb80b4ab500c7ede979ff4529aedfbb93b89c", "elapsed_seconds": 0.566, "status": "Verified"}
+{"file": "release/2026-06-07_2026-06-13/processed/sessions.parquet", "bytes": 3528, "sha256": "5025c78dc15fc8e9bb422fc6cd994ac2c80e992f597a88a0f6bf3c3210b6a18e", "elapsed_seconds": 0.557, "status": "Verified"}
+{"file": "release/2026-05-31_2026-06-06/processed/tool_calls.parquet", "bytes": 100951, "sha256": "9ff181f94cb8d9bef95c9d68757c71483c7d128cafd7e2e38ca9c2dd88c4dae9", "elapsed_seconds": 0.584, "status": "Verified"}
+{"file": "release/2026-06-07_2026-06-13/processed/tool_calls.parquet", "bytes": 102254, "sha256": "c1bdcc4242885f2b9351cd311bfe8decacf995a206d17ba013c27714d53a8bf9", "elapsed_seconds": 0.606, "status": "Verified"}
+{"file": "release/2026-06-07_2026-06-13/processed/requests.parquet", "bytes": 7885194, "sha256": "81c8642eed8141a6911d9321be96454d1620acf4d4e36faa50a80c8c59ca80c5", "elapsed_seconds": 1.542, "status": "Verified"}
+{"week": "2026-06-07_2026-06-13", "status": "complete; atomically published", "free_bytes": 15683375104}
+{"file": "release/2026-06-14_2026-06-20/manifest.json", "bytes": 1455, "sha256": "47944e2405f869acc1fcc472c93a75dbb33d48bc8ad6bfa23b9c48e9bc2c1b41", "elapsed_seconds": 0.243, "status": "Verified"}
+{"file": "release/2026-06-14_2026-06-20/processed/tables.json", "bytes": 590, "sha256": "60dd96da651cdf6b7ce7ae3b066a0ad5c5fd59aa44506662aa9fd11291470986", "elapsed_seconds": 0.194, "status": "Verified"}
+{"file": "release/2026-05-31_2026-06-06/processed/requests.parquet", "bytes": 16381638, "sha256": "bfb76d58fc23d5afe92bdb3f9503cf0c19cb983586744706f47b5f94bd0f2d69", "elapsed_seconds": 2.372, "status": "Verified"}
+{"week": "2026-05-31_2026-06-06", "status": "complete; atomically published", "free_bytes": 15675367424}
+{"file": "release/2026-06-14_2026-06-20/processed/sessions.parquet", "bytes": 11704, "sha256": "66799ec7bed41d89596389911ef5bb7e4745be640cfb52ee6fdf298dfa94c667", "elapsed_seconds": 0.653, "status": "Verified"}
+{"file": "release/2026-06-21_2026-06-27/manifest.json", "bytes": 1627, "sha256": "534f160161e773a39da4305c4876f1dea9c3ead87a95f47e1c392f3f4b48652d", "elapsed_seconds": 0.36, "status": "Verified"}
+{"file": "release/2026-06-21_2026-06-27/processed/tables.json", "bytes": 591, "sha256": "79c99f93f8b8faa8a23b65838d5881f37c22d3843480001262fd30ebe89eb85d", "elapsed_seconds": 0.187, "status": "Verified"}
+{"file": "release/2026-06-14_2026-06-20/processed/tool_calls.parquet", "bytes": 507460, "sha256": "7311d18b7da84bcbe67d7aa6262fcd9583cec7f7dee73d010ed14fecc079a272", "elapsed_seconds": 0.6, "status": "Verified"}
+{"file": "release/2026-06-21_2026-06-27/processed/sessions.parquet", "bytes": 17300, "sha256": "8edb18feeb8cc7d014e8824f2e3e0714d0e255a0e1e9888cb0951677657d48dd", "elapsed_seconds": 0.436, "status": "Verified"}
+{"file": "release/2026-06-21_2026-06-27/processed/tool_calls.parquet", "bytes": 757720, "sha256": "81568effa216f996c5f558a29e5f125353642e34383221a09acdce4bbe7b2e8a", "elapsed_seconds": 0.913, "status": "Verified"}
+{"file": "release/2026-06-14_2026-06-20/processed/requests.parquet", "bytes": 58290653, "sha256": "1e3ee32ffe76fce288ea4b71c79fd6af34c97c7dc9bef3050269276ae370576f", "elapsed_seconds": 5.724, "status": "Verified"}
+{"week": "2026-06-14_2026-06-20", "status": "complete; atomically published", "free_bytes": 15573815296}
+{"file": "release/2026-06-28_2026-07-04/manifest.json", "bytes": 1459, "sha256": "cda14bf1036c8b4420db2ed231c288986ea9a3b511b9d7e2e73fc299532f719b", "elapsed_seconds": 0.345, "status": "Verified"}
+{"file": "release/2026-06-28_2026-07-04/processed/tables.json", "bytes": 591, "sha256": "182ba813004166d0a683301bb40e06376725ba9f3f45044ed417df03f81a7bda", "elapsed_seconds": 0.192, "status": "Verified"}
+{"file": "release/2026-06-28_2026-07-04/processed/sessions.parquet", "bytes": 16375, "sha256": "5c35b06ae9fd0d1225b40cc9a9bc183d2baaaf316cf11cf9d8f15cbb60a44f10", "elapsed_seconds": 0.534, "status": "Verified"}
+{"file": "release/2026-06-28_2026-07-04/processed/tool_calls.parquet", "bytes": 828097, "sha256": "cf933102c42e8644ca2ce682d1102fee6892a1f5b11f097a611bb3c9095a8e92", "elapsed_seconds": 0.746, "status": "Verified"}
+{"file": "release/2026-06-21_2026-06-27/processed/requests.parquet", "bytes": 101883471, "sha256": "82e639ac17c4560e05c5f4cbc4b24cad9fb8f006c5f8b8a79fff1f8fcf27d4a8", "elapsed_seconds": 10.265, "status": "Verified"}
+{"week": "2026-06-21_2026-06-27", "status": "complete; atomically published", "free_bytes": 15483633664}
+{"file": "release/2026-07-05_2026-07-11/manifest.json", "bytes": 1626, "sha256": "e36baf89867d12ee823fd354573c3652ef9a0d6c1646e15707b12a1f00d3fc57", "elapsed_seconds": 0.195, "status": "Verified"}
+{"file": "release/2026-07-05_2026-07-11/processed/tables.json", "bytes": 592, "sha256": "ba9743f63ab657b1cf51df49daef3c159fec53859a99cfa33a90662f13946c7c", "elapsed_seconds": 0.182, "status": "Verified"}
+{"file": "release/2026-07-05_2026-07-11/processed/sessions.parquet", "bytes": 23675, "sha256": "e9cd6df3a3be20b43eaafb182cec592b283c70046a1d296801f4883f395ed743", "elapsed_seconds": 0.737, "status": "Verified"}
+{"file": "release/2026-07-05_2026-07-11/processed/tool_calls.parquet", "bytes": 1014252, "sha256": "c84c790b85faf38304da734a6ef834ab4634d7ae840f7ab404eb7b8ce4c5d3eb", "elapsed_seconds": 0.752, "status": "Verified"}
+{"file": "release/2026-06-28_2026-07-04/processed/requests.parquet", "bytes": 185210734, "sha256": "d146b14e3353a675b0c9427ee013df5fd022370ce57649df29ee2e8c7bb72efc", "elapsed_seconds": 18.514, "status": "Verified"}
+{"week": "2026-06-28_2026-07-04", "status": "complete; atomically published", "free_bytes": 15171391488}
+{"file": "release/2026-07-12_2026-07-18/manifest.json", "bytes": 1631, "sha256": "7dc8bc2bc0807644a41fb33962d5d61d5aa12fe0fc3c4170720d0d08491829ee", "elapsed_seconds": 0.207, "status": "Verified"}
+{"file": "release/2026-07-12_2026-07-18/processed/tables.json", "bytes": 592, "sha256": "573f9518b3538ef965caebe055be87e82e3388a956875465af5ed304ed1c9998", "elapsed_seconds": 0.168, "status": "Verified"}
+{"file": "release/2026-07-12_2026-07-18/processed/sessions.parquet", "bytes": 23873, "sha256": "f89255cc32b3ca04c134d659928c1e7393ce11856faa69e02b55481efe7a81de", "elapsed_seconds": 0.588, "status": "Verified"}
+{"file": "release/2026-07-05_2026-07-11/processed/requests.parquet", "bytes": 177354609, "sha256": "502b4635f3d9b87b42523c181c0dcef4e91f918b8c104cc628e79bd42affaa20", "elapsed_seconds": 14.804, "status": "Verified"}
+{"file": "release/2026-07-12_2026-07-18/processed/tool_calls.parquet", "bytes": 1257667, "sha256": "10cb1574a45c41da82cbf5da75b8e323fdd3d40d09ad424c563ec5de68b03197", "elapsed_seconds": 0.702, "status": "Verified"}
+{"week": "2026-07-05_2026-07-11", "status": "complete; atomically published", "free_bytes": 15147921408}
+{"file": "release/2026-07-19_2026-07-25/manifest.json", "bytes": 1467, "sha256": "c38a60aea9968cfc3c03a05b12c8f5b05f732447e04f7fb688d6497f84224b7d", "elapsed_seconds": 0.28, "status": "Verified"}
+{"file": "release/2026-07-19_2026-07-25/processed/tables.json", "bytes": 592, "sha256": "c53b4b8d1875f57714baa9abfb7ae33fab7a861a22838955d6c2d19975b4ff6e", "elapsed_seconds": 0.166, "status": "Verified"}
+{"file": "release/2026-07-19_2026-07-25/processed/sessions.parquet", "bytes": 22709, "sha256": "2ab636a3df9016620d597f298c7458b7e6fc4c01f27d83a12ce47854b6897ed4", "elapsed_seconds": 0.611, "status": "Verified"}
+{"file": "release/2026-07-19_2026-07-25/processed/tool_calls.parquet", "bytes": 1410014, "sha256": "fc1c01bbcbc0708f050b1b320c0fbc089e3f9f0d34b9d6dfd132a1dc68357f17", "elapsed_seconds": 0.654, "status": "Verified"}
+{"file": "release/2026-07-12_2026-07-18/processed/requests.parquet", "bytes": 390981191, "sha256": "b479e68289f78cc184c650996d0d7cbc07fa5169a5ccc6a6dc8939d2e536b024", "elapsed_seconds": 37.837, "status": "Verified"}
+{"week": "2026-07-12_2026-07-18", "status": "complete; atomically published", "free_bytes": 14414888960}
+{"file": "release/2026-07-26_2026-08-01/manifest.json", "bytes": 1634, "sha256": "525bf96630938f1e974221292f6ba56a8b5f164e38e6defce3205926e3208c3f", "elapsed_seconds": 0.401, "status": "Verified"}
+{"file": "release/2026-07-26_2026-08-01/processed/tables.json", "bytes": 593, "sha256": "17ee0c5716d994cbd4c3090f0d2f9e6a12816f6e205acaf69e2331cd269512f8", "elapsed_seconds": 0.368, "status": "Verified"}
+{"file": "release/2026-07-26_2026-08-01/processed/sessions.parquet", "bytes": 29092, "sha256": "2e0427b19b38a0ef56543979a4bb0c3934415071ec6331be53bf5b2004b30684", "elapsed_seconds": 0.662, "status": "Verified"}
+{"file": "release/2026-07-26_2026-08-01/processed/tool_calls.parquet", "bytes": 1413998, "sha256": "ea63ebe870d2c551b0f0cbfa9a84ccc4d7e0ec3513ba331b00583857470eb07b", "elapsed_seconds": 0.955, "status": "Verified"}
+{"file": "release/2026-07-19_2026-07-25/processed/requests.parquet", "bytes": 496767884, "sha256": "764616d813311357fd19cc99ecd2e167fcbf14132f9fa8fbfcb1fc19595ccef9", "elapsed_seconds": 49.981, "status": "Verified"}
+{"week": "2026-07-19_2026-07-25", "status": "complete; atomically published", "free_bytes": 14147014656}
+{"file": "release/2026-08-02_2026-08-08/manifest.json", "bytes": 1468, "sha256": "997985833fcb79171c36fb82ad1c04b26cc0345bdc8c1fa029a74fab276bcbc2", "elapsed_seconds": 0.28, "status": "Verified"}
+{"file": "release/2026-08-02_2026-08-08/processed/tables.json", "bytes": 592, "sha256": "3b34a939968ef5d6059a599e33595ce4a1627cdaeea36f84663c87281f8df114", "elapsed_seconds": 0.214, "status": "Verified"}
+{"file": "release/2026-08-02_2026-08-08/processed/sessions.parquet", "bytes": 23573, "sha256": "1b06a5fe0a2228aa01734ac9bbc7ece3cecf414bc0bce88dc55cbb7039784621", "elapsed_seconds": 0.841, "status": "Verified"}
+{"file": "release/2026-08-02_2026-08-08/processed/tool_calls.parquet", "bytes": 1471404, "sha256": "4896a7b8f5b2e9285f8fdd467ca6f438c273f47e54a5c36402e66d7bb4d226ea", "elapsed_seconds": 0.944, "status": "Verified"}
+{"file": "release/2026-07-26_2026-08-01/processed/requests.parquet", "bytes": 406018741, "sha256": "16466f33e7fec987a621a1374baf272d7d9943fd5062ab2cb7ee2ad113a29eaf", "elapsed_seconds": 40.394, "status": "Verified"}
+{"week": "2026-07-26_2026-08-01", "status": "complete; atomically published", "free_bytes": 13563060224}
+{"file": "release/2026-08-09_2026-08-15/manifest.json", "bytes": 1641, "sha256": "d1991a987cab6051bc96e9a2803144b8ea1624014717a666dbe3f2d43bb1aa0a", "elapsed_seconds": 0.431, "status": "Verified"}
+{"file": "release/2026-08-09_2026-08-15/processed/tables.json", "bytes": 596, "sha256": "8ebfde4f06680f3b1bf89f012e49dcd611a0463e183d773f2441815c8017d14a", "elapsed_seconds": 0.452, "status": "Verified"}
+{"file": "release/2026-08-09_2026-08-15/processed/sessions.parquet", "bytes": 36480, "sha256": "1b39f1c9ca957544f9fad4b89072e53a1cb91336d00579c9cb93ff33d4b46c0f", "elapsed_seconds": 0.761, "status": "Verified"}
+{"file": "release/2026-08-09_2026-08-15/processed/tool_calls.parquet", "bytes": 3221784, "sha256": "ed9f8188078164a1a5a3139bbd3b323ac62f778112457d2a8bbb111533c21c71", "elapsed_seconds": 0.957, "status": "Verified"}
+{"file": "release/2026-08-02_2026-08-08/processed/requests.parquet", "bytes": 584823311, "sha256": "f1cdcf63fb579b2c51de3a56025cb3a03d06bc1e45e82a0a79cb53d4c5ac7820", "elapsed_seconds": 54.119, "status": "Verified"}
+{"week": "2026-08-02_2026-08-08", "status": "complete; atomically published", "free_bytes": 12991655936}
+{"file": "release/2026-08-16_2026-08-22/manifest.json", "bytes": 1641, "sha256": "e98ea4ee454123ade7ef5c7cfe18a87dc5da69c813129664b9462a192c3c3d3d", "elapsed_seconds": 0.393, "status": "Verified"}
+{"file": "release/2026-08-16_2026-08-22/processed/tables.json", "bytes": 596, "sha256": "88cb02822567449b3fd6a733adc07c7406551eb51eda33c483f8aee5c5e0002d", "elapsed_seconds": 0.3, "status": "Verified"}
+{"file": "release/2026-08-16_2026-08-22/processed/sessions.parquet", "bytes": 35189, "sha256": "ae029860e6b36c2dbfe3e8612789b22011abfb49707db65e2681424371d54064", "elapsed_seconds": 0.599, "status": "Verified"}
+{"file": "release/2026-08-16_2026-08-22/processed/tool_calls.parquet", "bytes": 2787902, "sha256": "6f8d9aa988d4335d86941b570bf7f1f1f150412b1c51bd0c1e0f5f17e9f92b76", "elapsed_seconds": 0.918, "status": "Verified"}
+{"file": "release/2026-08-09_2026-08-15/processed/requests.parquet", "bytes": 1439923172, "sha256": "cb11c50b6dc9f35d8cff5385768a77c8618c3aff03113f28e7ac8c17a5ffbae7", "elapsed_seconds": 129.522, "status": "Verified"}
+{"week": "2026-08-09_2026-08-15", "status": "complete; atomically published", "free_bytes": 10653863936}
+{"file": "release/2026-08-23_2026-08-29/manifest.json", "bytes": 1475, "sha256": "a528a86738a8d4d1b254bea5fbf7fb01d49ae03bc5f76b794a8084eae8547f0a", "elapsed_seconds": 0.397, "status": "Verified"}
+{"file": "release/2026-08-23_2026-08-29/processed/tables.json", "bytes": 596, "sha256": "798048ced238370e4aec1efc3da73f5d637148a3a1f54ee6e590f84725e37fc0", "elapsed_seconds": 0.372, "status": "Verified"}
+{"file": "release/2026-08-23_2026-08-29/processed/sessions.parquet", "bytes": 37254, "sha256": "0a512113c530dab4b4b9b8bdfe17e42b7e6c7902bc8544568d635c8ca6e2b9d2", "elapsed_seconds": 0.647, "status": "Verified"}
+{"file": "release/2026-08-23_2026-08-29/processed/tool_calls.parquet", "bytes": 3051788, "sha256": "77a82630078933807f2280da14bcbc6753d24a2c1f1f3ae55c151f42d652632e", "elapsed_seconds": 1.335, "status": "Verified"}
+{"file": "release/2026-08-16_2026-08-22/processed/requests.parquet", "bytes": 1241233966, "sha256": "b707132fd02d13cd9ac3570990eea566933344d308990e6669ae4f686ddc9856", "elapsed_seconds": 110.13, "status": "Verified"}
+{"week": "2026-08-16_2026-08-22", "status": "complete; atomically published", "free_bytes": 10529394688}
+{"week": "2026-08-30_2026-09-05", "status": "already present; initially verified by selected-week downloader"}
+{"file": "release/2026-08-23_2026-08-29/processed/requests.parquet", "bytes": 1378069346, "sha256": "27bd0ad8367a4176d5bff29e88820ccc0cda814f882a3c05ecc99da08931d23f", "elapsed_seconds": 136.112, "status": "Verified"}
+{"week": "2026-08-23_2026-08-29", "status": "complete; atomically published", "free_bytes": 9192960000}

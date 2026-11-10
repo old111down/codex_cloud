@@ -1,0 +1,43 @@
+{
+  "start_utc": "2026-11-10T10:05:24.502449+00:00",
+  "scope": "Relocated public checkout plus inert local fixtures; no original paper/data/model rerun",
+  "source_sha256_before": {
+    "download_selected_week.py": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6",
+    "download_processed_release.py": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2",
+    "pinned_release_download.py": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075",
+    "export_reviewed_archive.py": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e",
+    "review_reproduction_evidence.py": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26"
+  },
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-q",
+    "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py",
+    "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+    "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py",
+    "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_download_cache.py",
+    "/tmp/pr3-public-regression-use5zaug/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py",
+    "--junitxml=/tmp/pr3-public-regression-use5zaug/results.xml"
+  ],
+  "cwd": "/tmp/pr3-public-regression-use5zaug",
+  "private_fixture_overrides_removed": true,
+  "pytest_exit_code": 0,
+  "counts": {
+    "tests": 44,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_sha256_after": {
+    "download_selected_week.py": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6",
+    "download_processed_release.py": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2",
+    "pinned_release_download.py": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075",
+    "export_reviewed_archive.py": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e",
+    "review_reproduction_evidence.py": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26"
+  },
+  "status": "Verified",
+  "end_utc": "2026-11-10T10:05:33.592786+00:00"
+}

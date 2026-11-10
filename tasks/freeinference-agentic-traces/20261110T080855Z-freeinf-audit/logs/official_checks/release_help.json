@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "release",
+    "download",
+    "--help"
+  ],
+  "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+  "start_utc": "2026-11-10T08:13:55.447728+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:13:56.037446+00:00",
+  "elapsed_seconds": 0.5897207649977645
+}

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+  "start_utc": "2026-11-10T08:13:55.480507+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 5,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:13:55.999182+00:00",
+  "elapsed_seconds": 0.5186812659994757
+}

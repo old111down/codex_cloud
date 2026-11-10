@@ -1,0 +1,15 @@
+{
+  "weeks": 16,
+  "scope": "all16weeks, top-level human sessions, benchmark excluded",
+  "tool_calls": 1152306,
+  "requests_with_calls": 1044159,
+  "batched_requests": 70673,
+  "same_category_batch_share_percent": {
+    "request_weighted": 64.01737580122536,
+    "call_weighted": 64.63259143272565
+  },
+  "single_call_request_share_percent": 93.23158637717053,
+  "single_call_call_share_percent": 84.48155264313472,
+  "interpretation": "Two different estimands on identical records; neither weighting is inherently invalid. Paper wording/table and code must identify which is intended.",
+  "sources": "paper/metrics/tools.py batching_profile:width.map on calls versus batches.groupby requests"
+}

@@ -1,0 +1,30 @@
+{
+  "input": "private/runtime/figures_one_week/numbers.json",
+  "nonfinite_count": 8,
+  "nonfinite_paths": [
+    "benchmark_vs_production.turn_duration.median_benchmark",
+    "benchmark_vs_production.turn_duration.ratio",
+    "benchmark_vs_production.session_duration.median_benchmark",
+    "benchmark_vs_production.session_duration.ratio",
+    "benchmark_vs_production.input_per_request.median_benchmark",
+    "benchmark_vs_production.input_per_request.ratio",
+    "benchmark_vs_production.user_prompt_size.median_benchmark",
+    "benchmark_vs_production.user_prompt_size.ratio"
+  ],
+  "explicit_not_drawn": [
+    {
+      "path": "sessions.ttft_decomposition_minimax-m2.7",
+      "reason": "no: fewer than 200 long misses"
+    },
+    {
+      "path": "sessions.ttft_decomposition_kimi-k2.7-code",
+      "reason": "no: fewer than 200 long misses"
+    },
+    {
+      "path": "benchmark_vs_production.prefill_against_storage",
+      "reason": "no: no SWE-Bench week was simulated"
+    }
+  ],
+  "status": "Failed",
+  "scope": "Numerical output quality only; not proof of paper-result equality"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "make",
+    "-n",
+    "setup",
+    "figures",
+    "test",
+    "week-2026-08-30"
+  ],
+  "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+  "start_utc": "2026-11-10T08:13:47.918210+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:13:47.931937+00:00",
+  "elapsed_seconds": 0.013685128000361146
+}

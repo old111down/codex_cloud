@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0 -- /workspace/freeinference-audit/.conda/freeinference/bin/python
+rootdir: /workspace/codex_cloud_freeinference
+plugins: anyio-4.16.0
+collecting ... collected 17 items
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_clean_export_has_matching_hashes_and_preserves_source PASSED [  5%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_credential_after_underscore_separator_is_rejected PASSED [ 11%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_credential_shaped_filename_is_rejected_without_echo PASSED [ 17%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_ancestor_is_rejected_without_writes PASSED [ 23%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_destination_symlink_leaf_is_not_followed PASSED [ 29%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_invalid_allowlist_type_does_not_create_target PASSED [ 35%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_binary_source_preserves_target PASSED [ 41%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_does_not_create_new_target PASSED [ 47%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_credential_preserves_existing_files_and_manifests PASSED [ 52%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_missing_source_does_not_publish_earlier_good_file PASSED [ 58%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_non_utf8_source_preserves_target PASSED [ 64%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_oversized_source_preserves_target PASSED [ 70%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_late_traversal_does_not_publish_earlier_good_file PASSED [ 76%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_manifest_path_cannot_be_an_allowlisted_input PASSED [ 82%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_public_run_path_cannot_escape_worktree PASSED [ 88%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_sanitization_precedes_scan_without_modifying_source PASSED [ 94%]
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py::ExportSafetyTests::test_source_symlink_ancestor_is_rejected_without_writes PASSED [100%]
+
+============================== 17 passed in 0.53s ==============================

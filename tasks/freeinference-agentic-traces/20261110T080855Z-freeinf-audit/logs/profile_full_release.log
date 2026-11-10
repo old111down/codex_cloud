@@ -1,0 +1,33 @@
+{"event": "start_week", "week": "2026-05-17_2026-05-23"}
+{"event": "completed_week", "week": "2026-05-17_2026-05-23", "rows": {"sessions.parquet": 125, "requests.parquet": 10738, "tool_calls.parquet": 11388}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-05-24_2026-05-30"}
+{"event": "completed_week", "week": "2026-05-24_2026-05-30", "rows": {"sessions.parquet": 170, "requests.parquet": 12827, "tool_calls.parquet": 14217}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-05-31_2026-06-06"}
+{"event": "completed_week", "week": "2026-05-31_2026-06-06", "rows": {"sessions.parquet": 76, "requests.parquet": 7324, "tool_calls.parquet": 7595}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-06-07_2026-06-13"}
+{"event": "completed_week", "week": "2026-06-07_2026-06-13", "rows": {"sessions.parquet": 80, "requests.parquet": 6859, "tool_calls.parquet": 7426}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-06-14_2026-06-20"}
+{"event": "completed_week", "week": "2026-06-14_2026-06-20", "rows": {"sessions.parquet": 479, "requests.parquet": 35659, "tool_calls.parquet": 36463}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-06-21_2026-06-27"}
+{"event": "completed_week", "week": "2026-06-21_2026-06-27", "rows": {"sessions.parquet": 715, "requests.parquet": 56310, "tool_calls.parquet": 57853}, "nonzero_observations": {"negative_tool_gap_latency": 2}}
+{"event": "start_week", "week": "2026-06-28_2026-07-04"}
+{"event": "completed_week", "week": "2026-06-28_2026-07-04", "rows": {"sessions.parquet": 628, "requests.parquet": 50615, "tool_calls.parquet": 56634}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-07-05_2026-07-11"}
+{"event": "completed_week", "week": "2026-07-05_2026-07-11", "rows": {"sessions.parquet": 978, "requests.parquet": 68302, "tool_calls.parquet": 73179}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-07-12_2026-07-18"}
+{"event": "completed_week", "week": "2026-07-12_2026-07-18", "rows": {"sessions.parquet": 969, "requests.parquet": 72025, "tool_calls.parquet": 78114}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-07-19_2026-07-25"}
+{"event": "completed_week", "week": "2026-07-19_2026-07-25", "rows": {"sessions.parquet": 927, "requests.parquet": 78804, "tool_calls.parquet": 85903}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-07-26_2026-08-01"}
+{"event": "completed_week", "week": "2026-07-26_2026-08-01", "rows": {"sessions.parquet": 1198, "requests.parquet": 84524, "tool_calls.parquet": 89497}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-08-02_2026-08-08"}
+{"event": "completed_week", "week": "2026-08-02_2026-08-08", "rows": {"sessions.parquet": 973, "requests.parquet": 79546, "tool_calls.parquet": 82271}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-08-09_2026-08-15"}
+{"event": "completed_week", "week": "2026-08-09_2026-08-15", "rows": {"sessions.parquet": 1558, "requests.parquet": 163970, "tool_calls.parquet": 167662}, "nonzero_observations": {"cached_tokens_exceed_provider_prompt": 4}}
+{"event": "start_week", "week": "2026-08-16_2026-08-22"}
+{"event": "completed_week", "week": "2026-08-16_2026-08-22", "rows": {"sessions.parquet": 1505, "requests.parquet": 144227, "tool_calls.parquet": 146488}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-08-23_2026-08-29"}
+{"event": "completed_week", "week": "2026-08-23_2026-08-29", "rows": {"sessions.parquet": 1608, "requests.parquet": 159925, "tool_calls.parquet": 163587}, "nonzero_observations": {}}
+{"event": "start_week", "week": "2026-08-30_2026-09-05"}
+{"event": "completed_week", "week": "2026-08-30_2026-09-05", "rows": {"sessions.parquet": 2047, "requests.parquet": 190544, "tool_calls.parquet": 196975}, "nonzero_observations": {"negative_tool_gap_latency": 2}}
+{"event": "finished", "weeks": 16, "rows": {"sessions.parquet": 14036, "requests.parquet": 1222199, "tool_calls.parquet": 1275252}, "elapsed_seconds": 28.081578647997958, "max_rss_kib": 438404}

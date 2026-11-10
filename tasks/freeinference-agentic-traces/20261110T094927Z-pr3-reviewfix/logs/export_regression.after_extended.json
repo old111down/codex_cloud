@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-v",
+    "--tb=short",
+    "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py"
+  ],
+  "source_sha256": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e",
+  "test_sha256": "593f8c1a94319c2789a25c2c6fabecc553b24e226772c1b1f68c30604621185e",
+  "start_utc": "2026-11-10T10:04:18.458563+00:00",
+  "end_utc": "2026-11-10T10:04:19.306319+00:00",
+  "elapsed_seconds": 0.8477889010000581,
+  "exit_code": 0,
+  "runtime_test_marker_redactions": 0,
+  "expected": "All17 original/extended rejection/no-write, sanitized success and metadata scan cases pass"
+}

@@ -1,0 +1,23 @@
+{
+  "test": "three_synthetic_reads_one_16_token_block",
+  "status": "passed",
+  "not_a_paper_metric": true,
+  "ttl_1s": {
+    "hit_tokens": 0,
+    "miss_tokens": 48,
+    "reusable_token_seconds": 32.0,
+    "dead_token_seconds": 16.0
+  },
+  "ttl_10s": {
+    "hit_tokens": 16,
+    "miss_tokens": 32,
+    "reusable_token_seconds": 240.0,
+    "dead_token_seconds": 144.0
+  },
+  "ttl_infinite": {
+    "hit_tokens": 32,
+    "miss_tokens": 16,
+    "reusable_token_seconds": 320.0,
+    "dead_token_seconds": 144.0
+  }
+}

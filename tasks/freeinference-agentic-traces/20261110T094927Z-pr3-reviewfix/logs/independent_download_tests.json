@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-q",
+    "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+  ],
+  "cwd": "/workspace/codex_cloud_freeinference",
+  "start_utc": "2026-11-10T09:59:43.939206+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T09:59:50.424075+00:00",
+  "elapsed_seconds": 6.484869559000117
+}

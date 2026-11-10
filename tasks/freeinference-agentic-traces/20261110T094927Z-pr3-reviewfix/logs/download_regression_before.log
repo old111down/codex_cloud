@@ -1,0 +1,431 @@
+FFFFFFFFF.                                                               [100%]
+=================================== FAILURES ===================================
+________ test_selected_bootstraps_pinned_metadata_from_clean_directory _________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_selected_bootstraps_pinned_metadata_from_clean_directory(release_fixture):
+        f = release_fixture
+>       f['run']('download_selected_week.py')
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:136: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:117: in run
+    return runpy.run_path(str(root / 'scripts' / name), run_name='__main__')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:287: in run_path
+    ???
+<frozen runpy>:98: in _run_module_code
+    ???
+<frozen runpy>:88: in _run_code
+    ???
+/tmp/pytest-of-agent/pytest-2/test_selected_bootstraps_pinne0/audit/scripts/download_selected_week.py:12: in <module>
+    info=json.loads((ROOT/'private/evidence/hf_repo.json').read_text())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-agent/pytest-2/test_selected_bootstraps_pinne0/audit/private/evidence/hf_repo.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-agent/pytest-2/test_selected_bootstraps_pinne0/audit/private/evidence/hf_repo.json'
+
+../freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_____________________ test_full_bootstraps_clean_directory _____________________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_full_bootstraps_clean_directory(release_fixture):
+        f = release_fixture
+>       f['run']('download_processed_release.py')
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:117: in run
+    return runpy.run_path(str(root / 'scripts' / name), run_name='__main__')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:287: in run_path
+    ???
+<frozen runpy>:98: in _run_module_code
+    ???
+<frozen runpy>:88: in _run_code
+    ???
+/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/scripts/download_processed_release.py:89: in <module>
+    for result in pool.map(week,WEEKS): pass
+                  ^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/scripts/download_processed_release.py:81: in week
+    staging.replace(dest)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/private/data/staging/2026-08-30_2026-09-05')
+target = PosixPath('/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/private/data/release/2026-08-30_2026-09-05')
+
+    def replace(self, target):
+        """
+        Rename this path to the target path, overwriting if that path exists.
+    
+        The target path may be absolute or relative. Relative paths are
+        interpreted relative to the current working directory, *not* the
+        directory of the Path object.
+    
+        Returns the new Path instance pointing to the target path.
+        """
+>       os.replace(self, target)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/private/data/staging/2026-08-30_2026-09-05' -> '/tmp/pytest-of-agent/pytest-2/test_full_bootstraps_clean_dir0/audit/private/data/release/2026-08-30_2026-09-05'
+
+../freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1376: FileNotFoundError
+----------------------------- Captured stdout call -----------------------------
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 92, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"file": "release/2026-08-30_2026-09-05/manifest.json", "bytes": 67, "sha256": "100b6f70bb6f87663b95cea505632a176069f68fd21a9f0f9236e961fff80192", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tables.json", "bytes": 433, "sha256": "baeb7b8c234f9038eb1cb937050b8b064f2290b0390f92594f911fdcecfdcbe6", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/sessions.parquet", "bytes": 30, "sha256": "bff8ab3305d1a9c6fcf0ef64269cfa4dffc098a93cac4a4ac6f0efb741ec5387", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tool_calls.parquet", "bytes": 32, "sha256": "6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/requests.parquet", "bytes": 30, "sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36", "elapsed_seconds": 0.002, "status": "Verified"}
+_________________ test_selected_then_full_and_idempotent_reuse _________________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_selected_then_full_and_idempotent_reuse(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()  # Separates the original partial-directory bug from bootstrap.
+        f['run']('download_selected_week.py')
+        selected = f['root'] / 'private/data/release' / WEEK / 'requests.parquet'
+        inode = selected.stat().st_ino
+>       f['run']('download_processed_release.py')
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:117: in run
+    return runpy.run_path(str(root / 'scripts' / name), run_name='__main__')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:287: in run_path
+    ???
+<frozen runpy>:98: in _run_module_code
+    ???
+<frozen runpy>:88: in _run_code
+    ???
+/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/scripts/download_processed_release.py:89: in <module>
+    for result in pool.map(week,WEEKS): pass
+                  ^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/scripts/download_processed_release.py:81: in week
+    staging.replace(dest)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/private/data/staging/2026-08-30_2026-09-05')
+target = PosixPath('/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/private/data/release/2026-08-30_2026-09-05')
+
+    def replace(self, target):
+        """
+        Rename this path to the target path, overwriting if that path exists.
+    
+        The target path may be absolute or relative. Relative paths are
+        interpreted relative to the current working directory, *not* the
+        directory of the Path object.
+    
+        Returns the new Path instance pointing to the target path.
+        """
+>       os.replace(self, target)
+E       OSError: [Errno 39] Directory not empty: '/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/private/data/staging/2026-08-30_2026-09-05' -> '/tmp/pytest-of-agent/pytest-2/test_selected_then_full_and_id0/audit/private/data/release/2026-08-30_2026-09-05'
+
+../freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1376: OSError
+----------------------------- Captured stdout call -----------------------------
+{
+  "week": "2026-08-30_2026-09-05",
+  "revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "source_url": "https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace/resolve/bb26cf72c9c20f2b05f765d88548156a74d3c253/release/2026-08-30_2026-09-05/processed/requests.parquet",
+  "expected_bytes": 30,
+  "downloaded_bytes": 30,
+  "expected_sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36",
+  "observed_sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36",
+  "start_utc": "2026-11-10T09:53:42.334059+00:00",
+  "end_utc": "2026-11-10T09:53:42.335816+00:00",
+  "elapsed_seconds": 0.0017538790000344306,
+  "free_bytes_before": 96636764160,
+  "status": "Verified",
+  "scope": "Public Parquet transfer/hash only; no trace rows printed"
+}
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 62, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"file": "release/2026-08-30_2026-09-05/manifest.json", "bytes": 67, "sha256": "100b6f70bb6f87663b95cea505632a176069f68fd21a9f0f9236e961fff80192", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tables.json", "bytes": 433, "sha256": "baeb7b8c234f9038eb1cb937050b8b064f2290b0390f92594f911fdcecfdcbe6", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/sessions.parquet", "bytes": 30, "sha256": "bff8ab3305d1a9c6fcf0ef64269cfa4dffc098a93cac4a4ac6f0efb741ec5387", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tool_calls.parquet", "bytes": 32, "sha256": "6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/requests.parquet", "bytes": 30, "sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36", "elapsed_seconds": 0.001, "status": "Verified"}
+___________________ test_verified_partial_staging_is_reused ____________________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_verified_partial_staging_is_reused(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()
+        f['seed_week']('staging', ['requests.parquet'])
+>       f['run']('download_processed_release.py')
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:117: in run
+    return runpy.run_path(str(root / 'scripts' / name), run_name='__main__')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:287: in run_path
+    ???
+<frozen runpy>:98: in _run_module_code
+    ???
+<frozen runpy>:88: in _run_code
+    ???
+/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/scripts/download_processed_release.py:89: in <module>
+    for result in pool.map(week,WEEKS): pass
+                  ^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+../freeinference-audit/.conda/freeinference/lib/python3.12/concurrent/futures/thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/scripts/download_processed_release.py:81: in week
+    staging.replace(dest)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/private/data/staging/2026-08-30_2026-09-05')
+target = PosixPath('/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/private/data/release/2026-08-30_2026-09-05')
+
+    def replace(self, target):
+        """
+        Rename this path to the target path, overwriting if that path exists.
+    
+        The target path may be absolute or relative. Relative paths are
+        interpreted relative to the current working directory, *not* the
+        directory of the Path object.
+    
+        Returns the new Path instance pointing to the target path.
+        """
+>       os.replace(self, target)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/private/data/staging/2026-08-30_2026-09-05' -> '/tmp/pytest-of-agent/pytest-2/test_verified_partial_staging_0/audit/private/data/release/2026-08-30_2026-09-05'
+
+../freeinference-audit/.conda/freeinference/lib/python3.12/pathlib.py:1376: FileNotFoundError
+----------------------------- Captured stdout call -----------------------------
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 92, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"file": "release/2026-08-30_2026-09-05/manifest.json", "bytes": 67, "sha256": "100b6f70bb6f87663b95cea505632a176069f68fd21a9f0f9236e961fff80192", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tables.json", "bytes": 433, "sha256": "baeb7b8c234f9038eb1cb937050b8b064f2290b0390f92594f911fdcecfdcbe6", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/sessions.parquet", "bytes": 30, "sha256": "bff8ab3305d1a9c6fcf0ef64269cfa4dffc098a93cac4a4ac6f0efb741ec5387", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tool_calls.parquet", "bytes": 32, "sha256": "6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1", "elapsed_seconds": 0.001, "status": "Verified"}
+_______ test_complete_but_corrupt_destination_is_rejected_and_preserved ________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_complete_but_corrupt_destination_is_rejected_and_preserved(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()
+        dest = f['seed_week']()
+        corrupted = b'corrupt-existing-data'
+        (dest / 'requests.parquet').write_bytes(corrupted)
+>       with pytest.raises((ValueError, AssertionError), match='(?i)hash|checksum|size|mismatch|differs'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (ValueError, AssertionError)
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:179: Failed
+----------------------------- Captured stdout call -----------------------------
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 0, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"week": "2026-08-30_2026-09-05", "status": "already present; initially verified by selected-week downloader"}
+_________ test_selected_refuses_to_overwrite_mismatching_existing_data _________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_selected_refuses_to_overwrite_mismatching_existing_data(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()
+        dest = f['seed_week'](names=['requests.parquet'])
+        corrupted = b'keep-this-unmatched-data'
+        (dest / 'requests.parquet').write_bytes(corrupted)
+>       with pytest.raises((ValueError, AssertionError), match='(?i)hash|checksum|size|mismatch|differs'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (ValueError, AssertionError)
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:191: Failed
+----------------------------- Captured stdout call -----------------------------
+{
+  "week": "2026-08-30_2026-09-05",
+  "revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "source_url": "https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace/resolve/bb26cf72c9c20f2b05f765d88548156a74d3c253/release/2026-08-30_2026-09-05/processed/requests.parquet",
+  "expected_bytes": 30,
+  "downloaded_bytes": 30,
+  "expected_sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36",
+  "observed_sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36",
+  "start_utc": "2026-11-10T09:53:43.874683+00:00",
+  "end_utc": "2026-11-10T09:53:43.877327+00:00",
+  "elapsed_seconds": 0.002598115999944639,
+  "free_bytes_before": 96636764160,
+  "status": "Verified",
+  "scope": "Public Parquet transfer/hash only; no trace rows printed"
+}
+______________ test_corrupt_staging_is_rejected_without_overwrite ______________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_corrupt_staging_is_rejected_without_overwrite(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()
+        stage = f['seed_week']('staging', ['requests.parquet'])
+        corrupted = b'unmatched-staging-data'
+        (stage / 'requests.parquet').write_bytes(corrupted)
+>       with pytest.raises((ValueError, AssertionError), match='(?i)hash|checksum|size|mismatch|differs'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: re.compile('(?i)hash|checksum|size|mismatch|differs', re.IGNORECASE)
+E         Actual message: ''
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:203: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 92, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"file": "release/2026-08-30_2026-09-05/manifest.json", "bytes": 67, "sha256": "100b6f70bb6f87663b95cea505632a176069f68fd21a9f0f9236e961fff80192", "elapsed_seconds": 0.004, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tables.json", "bytes": 433, "sha256": "baeb7b8c234f9038eb1cb937050b8b064f2290b0390f92594f911fdcecfdcbe6", "elapsed_seconds": 0.002, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/sessions.parquet", "bytes": 30, "sha256": "bff8ab3305d1a9c6fcf0ef64269cfa4dffc098a93cac4a4ac6f0efb741ec5387", "elapsed_seconds": 0.001, "status": "Verified"}
+{"file": "release/2026-08-30_2026-09-05/processed/tool_calls.parquet", "bytes": 32, "sha256": "6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1", "elapsed_seconds": 0.002, "status": "Verified"}
+_____ test_manifest_binding_is_verified_even_when_every_file_hash_matches ______
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_manifest_binding_is_verified_even_when_every_file_hash_matches(release_fixture):
+        f = release_fixture
+        f['binding']['manifest_sha256'] = '0' * 64
+        f['payloads']['tables.json'] = json.dumps(f['binding']).encode()
+        f['seed_metadata']()
+        f['seed_week']()
+>       with pytest.raises((ValueError, AssertionError), match='(?i)manifest'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (ValueError, AssertionError)
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:214: Failed
+----------------------------- Captured stdout call -----------------------------
+{"revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253", "weeks": 1, "remaining_parquet_bytes": 0, "free_bytes": 96636764160, "reserve_bytes": 5368709120}
+{"week": "2026-08-30_2026-09-05", "status": "already present; initially verified by selected-week downloader"}
+_____________ test_cached_metadata_with_wrong_revision_is_rejected _____________
+
+release_fixture = {'payloads': {'sessions.parquet': b'inert-fixture-sessions.parquet', 'requests.parquet': b'inert-fixture-requests.parq...'tool_calls.parquet': {'sha256': '6f381721b8d8649530dc7d98c3df8edcfe65f278695b2846217e23a1d2fab5f1', 'rows': 2}}}, ...}
+
+    def test_cached_metadata_with_wrong_revision_is_rejected(release_fixture):
+        f = release_fixture
+        f['seed_metadata']()
+        p = f['root'] / 'private/evidence/hf_repo.json'
+        data = json.loads(p.read_text())
+        data['sha'] = '0' * 40
+        p.write_text(json.dumps(data))
+        with pytest.raises((ValueError, AssertionError), match='(?i)revision|pinned'):
+>           f['run']('download_selected_week.py')
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:117: in run
+    return runpy.run_path(str(root / 'scripts' / name), run_name='__main__')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:287: in run_path
+    ???
+<frozen runpy>:98: in _run_module_code
+    ???
+<frozen runpy>:88: in _run_code
+    ???
+/tmp/pytest-of-agent/pytest-2/test_cached_metadata_with_wron0/audit/scripts/download_selected_week.py:28: in <module>
+    with urllib.request.urlopen(request,timeout=90) as source, partial.open('wb') as output:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py:98: in transport
+    return real_urlopen(target, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:215: in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:521: in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:630: in http_response
+    response = self.parent.error(
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:559: in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:492: in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <urllib.request.HTTPDefaultErrorHandler object at 0x7fe292c92810>
+req = <urllib.request.Request object at 0x7fe292cfa660>
+fp = <http.client.HTTPResponse object at 0x7fe292cfae00>, code = 404
+msg = 'Not Found', hdrs = <http.client.HTTPMessage object at 0x7fe292cfa840>
+
+    def http_error_default(self, req, fp, code, msg, hdrs):
+>       raise HTTPError(req.full_url, code, msg, hdrs, fp)
+E       urllib.error.HTTPError: HTTP Error 404: Not Found
+
+../freeinference-audit/.conda/freeinference/lib/python3.12/urllib/request.py:639: HTTPError
+----------------------------- Captured stdout call -----------------------------
+{
+  "week": "2026-08-30_2026-09-05",
+  "revision": "0000000000000000000000000000000000000000",
+  "source_url": "https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace/resolve/0000000000000000000000000000000000000000/release/2026-08-30_2026-09-05/processed/requests.parquet",
+  "expected_bytes": 30,
+  "downloaded_bytes": 0,
+  "expected_sha256": "1623333a0e91b1f9209b47045f56e7c5803deeac5b220425f06f44ea5bfaff36",
+  "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "start_utc": "2026-11-10T09:53:45.406137+00:00",
+  "end_utc": "2026-11-10T09:53:45.407673+00:00",
+  "elapsed_seconds": 0.0015310539999973116,
+  "free_bytes_before": 96636764160,
+  "status": "Failed",
+  "scope": "Public Parquet transfer/hash only; no trace rows printed"
+}
+=========================== short test summary info ============================
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_selected_bootstraps_pinned_metadata_from_clean_directory
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_full_bootstraps_clean_directory
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_selected_then_full_and_idempotent_reuse
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_verified_partial_staging_is_reused
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_complete_but_corrupt_destination_is_rejected_and_preserved
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_selected_refuses_to_overwrite_mismatching_existing_data
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_corrupt_staging_is_rejected_without_overwrite
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_manifest_binding_is_verified_even_when_every_file_hash_matches
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py::test_cached_metadata_with_wrong_revision_is_rejected
+9 failed, 1 passed in 5.15s

@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-11-10T08:59:00.079799+00:00",
+  "status": "Verified",
+  "scope": "Public snapshot syntax/schema/UTC/files/relative links/manifest hashes only; not scientific validation or remote upload proof",
+  "files": 206,
+  "manifest_entries": 205,
+  "counts": {
+    "json": 86,
+    "python_syntax": 31,
+    "markdown": 29
+  },
+  "csv_rows": {
+    "label_mechanisms.csv": 28,
+    "related_work_comparison.csv": 4,
+    "data_dictionary.csv": 68,
+    "paper_code_coverage.csv": 58,
+    "paper_metric_comparison.csv": 73,
+    "reports/data_manifest.csv": 48,
+    "reports/missingness_summary.csv": 37,
+    "reports/table1_harness_comparison.csv": 14,
+    "reports/alignment_evidence.csv": 30,
+    "reports/complete_mixed_scope_week_simulation_comparison.csv": 928,
+    "reports/complete_smallest_week_simulation_comparison.csv": 716,
+    "reports/reproduction_results.csv": 40,
+    "reports/quality_checks.csv": 592,
+    "research_notes/paper_workload_characterization/paper_claims.csv": 73
+  },
+  "required_artifacts_present": 14,
+  "strict_json": true,
+  "relative_links": "all present",
+  "publication_hashes": "all match",
+  "finished_record_required": true
+}

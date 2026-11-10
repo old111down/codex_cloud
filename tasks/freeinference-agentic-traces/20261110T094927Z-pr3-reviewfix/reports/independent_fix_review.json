@@ -1,0 +1,249 @@
+{
+  "review_status": "Verified within listed implementation/regression scope",
+  "reviewer": "freeinf_related independent reviewer",
+  "review_started_utc": "2026-11-10T09:52:35.449472+00:00",
+  "review_completed_utc": "2026-11-10T10:08:40.579636+00:00",
+  "review_run_id": "20261110T094927Z-pr3-reviewfix",
+  "historical_run_id": "20261110T080855Z-freeinf-audit",
+  "scope": "Three PR P2 utility fixes only; no paper experiment/model/data-download rerun, no Git write or external communication",
+  "sources": {
+    "download_selected_week.py": {
+      "path": "../20261110T080855Z-freeinf-audit/scripts/download_selected_week.py",
+      "before_sha256": "adc6c4ebbde3f7ac2600bb57517ed5112f2c5e08fe9f2ffcfd57483f4850f0db",
+      "after_sha256": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6"
+    },
+    "download_processed_release.py": {
+      "path": "../20261110T080855Z-freeinf-audit/scripts/download_processed_release.py",
+      "before_sha256": "8594208989057e8dbe847d2d0ae8081c5cb0de33925d1b65b4e9c1c2917b30df",
+      "after_sha256": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2"
+    },
+    "pinned_release_download.py": {
+      "path": "../20261110T080855Z-freeinf-audit/scripts/pinned_release_download.py",
+      "before_sha256": null,
+      "after_sha256": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075"
+    },
+    "export_reviewed_archive.py": {
+      "path": "../20261110T080855Z-freeinf-audit/scripts/export_reviewed_archive.py",
+      "before_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
+      "after_sha256": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e"
+    },
+    "review_reproduction_evidence.py": {
+      "path": "../20261110T080855Z-freeinf-audit/scripts/review_reproduction_evidence.py",
+      "before_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722",
+      "after_sha256": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26"
+    }
+  },
+  "decisions": [
+    {
+      "id": "P2-download",
+      "status": "Verified",
+      "implementation": "Clean metadata bootstrap; verified partial/complete reuse; LFS SHA256 plus non-LFS Git blob SHA1 and manifest/table binding; no-clobber file publication",
+      "tests": "12 owner cases independently rerun plus2 independent cached-LFS/mixed-partial cases",
+      "limits": "Inert bytes and local HTTP; no real HF object transfer. File-level publication, not whole-week transaction. Failed private partial files may remain."
+    },
+    {
+      "id": "P2-export",
+      "status": "Verified",
+      "implementation": "Whole-batch read-only preflight and in-memory sanitization/scan precede target writes; path metadata scan; FD_NOFOLLOW staging; public manifest last, source receipt after success",
+      "tests": "Final17 owner cases plus2 independent metadata/manifest-order cases, all independently rerun",
+      "limits": "No claim of all-I/O atomic transaction, concurrent-export protocol or complete secret detection. Only temporary source/public fixtures exported."
+    },
+    {
+      "id": "P2-review-status",
+      "status": "Verified",
+      "implementation": "Failed checks/optional review produce Failed and nonzero; only Verified exits zero; common missing/malformed/shape/serialization errors persist Failed",
+      "tests": "11 public-default owner cases independently rerun and5 independent status/serialization probes",
+      "limits": "Minimal CLI numbers fixture synthetic; not real figure-output validation. Unwritable output can only report nonzero/persist error."
+    }
+  ],
+  "independent_pytest_runs": [
+    {
+      "case_set": "download_owner_suite",
+      "pytest_passed": 12,
+      "exit_code": 0,
+      "start_utc": "2026-11-10T09:59:43.939206+00:00",
+      "end_utc": "2026-11-10T09:59:50.424075+00:00",
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_download_workflow.py"
+      ],
+      "log_metadata": "logs/independent_download_tests.json",
+      "log_stdout": "logs/independent_download_tests.log",
+      "log_metadata_sha256": "2fd51cf053dc3356e16dabc59ba3d960900931c18a3f279b10956ebf52b0169f",
+      "log_stdout_sha256": "73770aa6ed904481644af5f230e050fe7d4917902f43342be1132b27eb34101a"
+    },
+    {
+      "case_set": "download_extra_cache_boundaries",
+      "pytest_passed": 2,
+      "exit_code": 0,
+      "start_utc": "2026-11-10T10:00:38.245502+00:00",
+      "end_utc": "2026-11-10T10:00:39.613514+00:00",
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_download_cache.py"
+      ],
+      "log_metadata": "logs/independent_download_cache_probes.json",
+      "log_stdout": "logs/independent_download_cache_probes.log",
+      "log_metadata_sha256": "e5d9023a9d399510186248660f295ceb1d42ab1e1c01154f235b752be1ea6fdc",
+      "log_stdout_sha256": "beaf6608b19ad2d85bc14e3beb41d879318e72c73ea2f25378f7225699c76452"
+    },
+    {
+      "case_set": "review_owner_public_suite",
+      "pytest_passed": 11,
+      "exit_code": 0,
+      "start_utc": "2026-11-10T09:59:17.574027+00:00",
+      "end_utc": "2026-11-10T09:59:18.541540+00:00",
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+      ],
+      "log_metadata": "logs/independent_review_status_public_tests.json",
+      "log_stdout": "logs/independent_review_status_public_tests.log",
+      "log_metadata_sha256": "db2191b07cfd1a4cd921016e5a607da2f9bdc01ec2bb0af6cd54af79887f4443",
+      "log_stdout_sha256": "eddd0dbb48e8c4cf20c5904f994b11c6327830e2997f61a4930236b40b038e03"
+    },
+    {
+      "case_set": "export_final_owner_and_extra_suite",
+      "pytest_passed": 19,
+      "exit_code": 0,
+      "start_utc": "2026-11-10T10:05:20.379664+00:00",
+      "end_utc": "2026-11-10T10:05:21.554871+00:00",
+      "command": [
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_export_safety.py",
+        "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py"
+      ],
+      "log_metadata": "logs/independent_export_final_tests.json",
+      "log_stdout": "logs/independent_export_final_tests.log",
+      "log_metadata_sha256": "f5471a562f6e3ea63b3dc734c7bc9349702561ce9b9116b418b0ad2445d90376",
+      "log_stdout_sha256": "ebb45d40f253f18e2cb9c13569390fc4729c86584eadc16e48770b6f098f3f2b"
+    }
+  ],
+  "independent_pytest_distinct_cases_passed": 44,
+  "standalone_probe_run": {
+    "log_metadata": "logs/independent_review_status_public_probes.json",
+    "log_stdout": "logs/independent_review_status_public_probes.log",
+    "test_count": 5,
+    "included_in_pytest_count": false,
+    "results": [
+      {
+        "case": "nested_failure",
+        "expected_status": "Failed",
+        "status": "Failed",
+        "exit_code": 1,
+        "strict_json_saved": true,
+        "partial_values_omitted": false
+      },
+      {
+        "case": "unknown_review",
+        "expected_status": "Unknown",
+        "status": "Unknown",
+        "exit_code": 1,
+        "strict_json_saved": true,
+        "partial_values_omitted": false
+      },
+      {
+        "case": "partial_review",
+        "expected_status": "Partially Verified",
+        "status": "Partially Verified",
+        "exit_code": 1,
+        "strict_json_saved": true,
+        "partial_values_omitted": false
+      },
+      {
+        "case": "nonfinite_constant",
+        "expected_status": "Failed",
+        "status": "Failed",
+        "exit_code": 1,
+        "strict_json_saved": true,
+        "partial_values_omitted": false
+      },
+      {
+        "case": "numeric_overflow",
+        "expected_status": "Failed",
+        "status": "Failed",
+        "exit_code": 1,
+        "strict_json_saved": true,
+        "partial_values_omitted": true
+      }
+    ],
+    "minimal_synthetic_numbers_fixture": true,
+    "script": "scripts/independent_review_status_probes.py"
+  },
+  "new_independent_test_sources": [
+    {
+      "path": "scripts/test_independent_download_cache.py",
+      "sha256": "ca669e8330e7db4cfa2a122a0e591e5d33a1cd81ef952f4b5f09672d382a6a72"
+    },
+    {
+      "path": "scripts/test_independent_export_boundaries.py",
+      "sha256": "016bf97472cd4274692d28efb01cd1d8887e7abbd9525566e8bbbf2a46c29a62"
+    },
+    {
+      "path": "scripts/independent_review_status_probes.py",
+      "sha256": "e2388ca0a36810990c59b9d88ce38fe07cf2ee5c466b857bc481ac6b4da7dfe2"
+    }
+  ],
+  "checked_original_failure_records": {
+    "download": "logs/download_regression_before.log:9failed1passed (initial10cases)",
+    "export": "logs/export_regression.before_extended.log:15failed2passed (17cases)",
+    "review": "logs/review_regression.public-before.log:9failed2passed (11cases)",
+    "independently_reran_original_scripts": false,
+    "scope": "Owner logs and original static code inspected; source baseline SHA retained"
+  },
+  "historical_preservation": {
+    "checked_utc": "2026-11-10T10:06:11.157218+00:00",
+    "initial_files": 206,
+    "immutable_files_checked": 199,
+    "historical_log_files_checked": 82,
+    "immutable_mismatches": [],
+    "new_old_run_files": [
+      "scripts/pinned_release_download.py"
+    ],
+    "metadata_original_keys_changed": [],
+    "metadata_original_keys_removed": [],
+    "metadata_added_keys": [
+      "historical_artifact_hash_scope",
+      "post_review_revisions"
+    ],
+    "metadata_only_allowed_keys_added": true,
+    "allowed_original_file_changes": [
+      "README.md",
+      "metadata.json",
+      "reports/publication_manifest.json",
+      "scripts/download_processed_release.py",
+      "scripts/download_selected_week.py",
+      "scripts/export_reviewed_archive.py",
+      "scripts/review_reproduction_evidence.py"
+    ]
+  },
+  "scientific_equivalence": "No old scientific outputs/logs modified; downloader pins identical object bytes; exporter changes publication mechanics; reviewer changes outcome/status handling while retaining28 scientific consistency checks",
+  "reproduction_level_changed": false,
+  "publication_scope": "Synthetic markers constructed at runtime, not logged; fixtures TemporaryDirectory only; public tests default to archived metadata/aggregates, no private dependency",
+  "remaining_root_actions": [
+    "Refresh old publication manifest with before/after provenance",
+    "Finish new-run common records and final validation",
+    "Commit/push to authorized existing PR branch and verify remote; no merge"
+  ],
+  "report_markdown_sha256": "9b91f44457eea91612239465cfbd020a9ab2a84156ec5cfe08f6ffdf5a5a2762"
+}

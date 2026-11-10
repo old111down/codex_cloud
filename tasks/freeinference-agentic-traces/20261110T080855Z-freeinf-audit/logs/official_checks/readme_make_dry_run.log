@@ -1,0 +1,8 @@
+python3.12 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -e '.[huggingface,test]'
+.venv/bin/python -m simulation 
+.venv/bin/python -m paper
+.venv/bin/python -m pytest
+.venv/bin/python -m export build --week 2026-08-30
+.venv/bin/python -m export release --week 2026-08-30
