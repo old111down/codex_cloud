@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "task_id": "agent-traffic:20261110T083500Z-agent-traffic-smoke-01",
+  "task_name": "Agent 网络流量文献调研与归档验收",
+  "task_slug": "agent-traffic",
+  "run_id": "20261110T083500Z-agent-traffic-smoke-01",
+  "literature_run_id": "20261110-agent-traffic-smoke-01",
+  "archive_branch": "literature/agent-traffic/20261110-agent-traffic-smoke-01",
+  "archive_repository": "https://github.com/old111down/codex_cloud",
+  "start_time_utc": "Unknown",
+  "end_time_utc": "Unknown",
+  "artifact_recorded_at_utc": "2026-11-10T08:35:00Z",
+  "objective": "验收一批公开 Agent 网络流量文献的检索、全文阅读、增量去重、检查点续跑、GitHub PR 归档和同批重放。",
+  "related_runs": [
+    {
+      "run_id": "20261110-agent-traffic-smoke-01",
+      "relation": "standard-record-for-existing-literature-run",
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01"
+    }
+  ],
+  "source_snapshot_sha": "36001c487d496c0896b3fedf0aa94f18f00388ad",
+  "source_repositories": [
+    {
+      "name": "codex-literature-workflow",
+      "url": "https://github.com/ParkerGong/codex-literature-workflow",
+      "branch": "main",
+      "release": "v1.0.0",
+      "commit_shas": [
+        "84b7fff758271db15175e7e02781df00446a8d8c"
+      ],
+      "license": "MIT",
+      "version_status": "Verified"
+    },
+    {
+      "name": "archive preview baseline",
+      "url": "https://github.com/old111down/codex_cloud",
+      "branch": "main",
+      "commit_shas": [
+        "fc58e1e33b49666469c47f1231b55105b8508c42"
+      ],
+      "license": "Unknown",
+      "version_status": "Verified"
+    }
+  ],
+  "runtime_environment": {
+    "host": "macOS",
+    "uname": "Darwin arm64",
+    "python": "3.12.14",
+    "pdf_text": "pypdf",
+    "pdf_render": "pdftoppm",
+    "resource_limits": "Unknown"
+  },
+  "commands_executed": [
+    {
+      "command": "uname -sm",
+      "cwd": "指定工作区",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "env_check.py --json --strict",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "init_workspace.py --root <isolated-controller>",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "pdf_probe.py",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md"
+      ]
+    },
+    {
+      "command": "codex -a never exec -s read-only --ephemeral --json",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "run_harness.py ingest",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 75,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "run_harness.py resume",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "run_harness.py simulate-upload-failure",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 75,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "run_harness.py retry-preview",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "git push / git ls-remote / gh pr create",
+      "cwd": "隔离归档克隆",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "https://github.com/old111down/codex_cloud/pull/2"
+      ]
+    },
+    {
+      "command": "verify-live-pr.py 2",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "inherited": true,
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "command": "verify-live-pr.py 2",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": true,
+      "evidence": [
+        "https://github.com/old111down/codex_cloud/pull/2",
+        "execution_log.md"
+      ]
+    }
+  ],
+  "completed_work": [
+    {
+      "description": "完成一篇公开全文的中文笔记和带页码证据，另保留一篇摘要候选。",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "literature/agent-traffic/20261110-agent-traffic-smoke-01/note.md",
+        "literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md"
+      ]
+    },
+    {
+      "description": "通过增量去重、真实 v2→v3 识别、检查点恢复及模拟重试。",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "description": "推送原附件并创建 PR，实况重放识别同一开放 PR。",
+      "status": "Verified",
+      "evidence_type": "archive_operation",
+      "evidence": [
+        "https://github.com/old111down/codex_cloud/pull/2"
+      ]
+    }
+  ],
+  "failed_experiments": [
+    {
+      "description": "最小 PATH 下严格预检失败，补齐渲染路径后通过。",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "execution_log.md"
+      ]
+    },
+    {
+      "description": "首次 GitHub 清单 GET 超时，有限重试后通过。",
+      "status": "Failed",
+      "evidence_type": "archive_operation",
+      "evidence": [
+        "execution_log.md"
+      ]
+    }
+  ],
+  "important_findings": [
+    {
+      "description": "作者报告真实 A2A 分类 0.67，按能力组合留出后为 0.18。",
+      "status": "Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "https://arxiv.org/pdf/2606.07150v3#page=18"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "description": "论文复现、跨部署旁路 PCAP 泛化和实际无人值守调度仍待验证。",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "task_report.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01/note.md",
+      "description": "中文文献笔记及页码依据",
+      "sha256": "8b9d61395dd3d5280a5dc466d119527dd3c709f44f53598b6a1800db5f7224c9",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md",
+      "description": "检索式、获取状态、筛选与版本对照",
+      "sha256": "481a0031aebe60404aeecf1b572b6cb83266be5a0a058f4ca931fede2ee2ad0e",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01/manifest.json",
+      "description": "文献标识、版本、证据页和公开 PDF 哈希",
+      "sha256": "0b8a18545b913c053f4e4172d68389a6ca5006f774bfc8b7221cc25f1255567b",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01/increment.md",
+      "description": "增量摘要",
+      "sha256": "c1bda1139222c937a09be8be87dab880d6810866a56431dba0e3cf927fa40afa",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "literature/agent-traffic/20261110-agent-traffic-smoke-01/run.log",
+      "description": "原始归档预览阶段的公开日志",
+      "sha256": "8662d3823de572385bf8d7536ac7ea46cd109f7da5e54e906f8f267a7d6930c6",
+      "status": "Verified",
+      "publication_review": "approved"
+    }
+  ],
+  "publication_review": {
+    "status": "Verified",
+    "manifest": "task_report.md#产物与公开范围",
+    "limitations": [
+      "原附件保持原样，公开命令记录省略本机路径和认证信息。",
+      "PDF、页图、全文提取和未筛选日志仅留本机。"
+    ]
+  },
+  "remote_verification": {
+    "status": "Verified",
+    "branch": "literature/agent-traffic/20261110-agent-traffic-smoke-01",
+    "commit_sha": "36001c487d496c0896b3fedf0aa94f18f00388ad",
+    "scope": "原始五件文献附件的推送与实况重放",
+    "evidence": [
+      "https://github.com/old111down/codex_cloud/pull/2"
+    ]
+  },
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/2",
+  "final_status": "Verified",
+  "final_status_scope": "单篇公开全文的证据笔记、隔离增量测试、真实开放 PR 归档及同批重放。"
+}
