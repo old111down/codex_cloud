@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONPATH=/workspace/freeinference-audit/private/runtime/empty_scope_patch_source:/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+    "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+    "MPLBACKEND=Agg",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "/workspace/freeinference-audit/scripts/resource_guard.py",
+    "--address-space-gib",
+    "8",
+    "--",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "/workspace/freeinference-audit/scripts/check_empty_scope_patch.py"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:21:33.652114+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:21:37.078688+00:00",
+  "elapsed_seconds": 3.426584353997896
+}

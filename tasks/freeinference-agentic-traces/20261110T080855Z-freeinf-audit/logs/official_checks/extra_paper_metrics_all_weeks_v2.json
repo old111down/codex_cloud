@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+    "MPLBACKEND=Agg",
+    ".conda/freeinference/bin/python",
+    "scripts/resource_guard.py",
+    "--address-space-gib",
+    "8",
+    "--",
+    ".conda/freeinference/bin/python",
+    "scripts/extract_extra_paper_metrics.py",
+    "--release",
+    "private/data/release",
+    "--output",
+    "reports/extra_paper_metrics_all_weeks_v2.json"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:29:37.096790+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:29:55.616638+00:00",
+  "elapsed_seconds": 18.519921300001442
+}

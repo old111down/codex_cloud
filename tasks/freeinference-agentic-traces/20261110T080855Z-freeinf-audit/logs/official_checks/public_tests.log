@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0
+rootdir: /workspace/freeinference-audit/upstream/freeinference_agentic_trace
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collected 0 items
+
+=============================== warnings summary ===============================
+../../.conda/freeinference/lib/python3.12/site-packages/_pytest/config/__init__.py:1810
+  /workspace/freeinference-audit/.conda/freeinference/lib/python3.12/site-packages/_pytest/config/__init__.py:1810: PytestConfigWarning: No files were found in testpaths; consider removing or adjusting your testpaths configuration. Searching recursively from the current directory instead.
+    self.args, self.args_source = self._decide_args(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================== 1 warning in 0.04s ==============================

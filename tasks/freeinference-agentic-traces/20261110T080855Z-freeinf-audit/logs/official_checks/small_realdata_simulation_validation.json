@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    ".conda/freeinference/bin/python",
+    "scripts/verify_small_realdata_simulation.py"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:24:42.795494+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:24:43.361789+00:00",
+  "elapsed_seconds": 0.5662988380026945
+}

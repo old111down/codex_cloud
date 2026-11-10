@@ -1,0 +1,4 @@
+/workspace/freeinference-audit/.conda/freeinference/bin/python -m simulation --processes 1
+every released week is simulated from its current traces
+/workspace/freeinference-audit/.conda/freeinference/bin/python -m paper
+drew dataset, sessions, tools, prefix_caching, benchmark_vs_production into /workspace/freeinference-audit/private/runtime/readme_workspace/figures/v1, with numbers.json and README.md

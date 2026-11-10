@@ -1,0 +1,139 @@
+{
+  "status": "Verified aggregate observations; underlying provider semantics and causal confounding Unknown",
+  "dataset_revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "cached_exceeds_prompt_observations": [
+    {
+      "week": "2026-08-09_2026-08-15",
+      "anonymous_provider": "C",
+      "model_label": "minimax-m3",
+      "rows": 4,
+      "prompt_sum": 835640,
+      "cache_read_sum": 835703
+    }
+  ],
+  "cached_exceeds_prompt_interpretation": "Do not infer corruption: source fields may follow different provider token conventions, reporting/normalization may differ, true provider identities and raw responses are unavailable.",
+  "historical_model_presence": {
+    "exact_label": "mimo-v2.6-flash",
+    "rows": 0,
+    "any_mimo_casefold_substring_rows": 0,
+    "distinct_model_labels": 17,
+    "scope": "All released 16-week processed requests including children; says nothing conclusive about current supported routes."
+  },
+  "human_top_level_harness_imbalance": {
+    "sessions": 10967,
+    "classes": 13,
+    "largest_class": "hermes",
+    "largest_class_sessions": 3953,
+    "largest_class_share": 0.3604449712774688,
+    "smallest_class": "openhands",
+    "smallest_class_sessions": 22,
+    "max_min_count_ratio": 179.6818181818182
+  },
+  "harness_model_dominance": [
+    {
+      "harness": "claude-code",
+      "all_session_request_rows": 64026,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.7108049854746509,
+      "distinct_model_labels": 10
+    },
+    {
+      "harness": "cline",
+      "all_session_request_rows": 13693,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.30731030453516395,
+      "distinct_model_labels": 8
+    },
+    {
+      "harness": "codex",
+      "all_session_request_rows": 64093,
+      "largest_model_label": "glm-5.2",
+      "largest_model_request_share": 0.6090524706286178,
+      "distinct_model_labels": 12
+    },
+    {
+      "harness": "copilot",
+      "all_session_request_rows": 35810,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.4921251047193521,
+      "distinct_model_labels": 9
+    },
+    {
+      "harness": "eval:swe-bench",
+      "all_session_request_rows": 60978,
+      "largest_model_label": "qwen3.6-35b",
+      "largest_model_request_share": 0.8653448784807636,
+      "distinct_model_labels": 7
+    },
+    {
+      "harness": "hermes",
+      "all_session_request_rows": 253192,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.5412098328541186,
+      "distinct_model_labels": 12
+    },
+    {
+      "harness": "kilo",
+      "all_session_request_rows": 69578,
+      "largest_model_label": "glm-5.1",
+      "largest_model_request_share": 0.2460404150737302,
+      "distinct_model_labels": 15
+    },
+    {
+      "harness": "oh-my-pi",
+      "all_session_request_rows": 75368,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.5802860630506316,
+      "distinct_model_labels": 9
+    },
+    {
+      "harness": "openclaw",
+      "all_session_request_rows": 12856,
+      "largest_model_label": "glm-5.2",
+      "largest_model_request_share": 0.32055071561916615,
+      "distinct_model_labels": 9
+    },
+    {
+      "harness": "opencode",
+      "all_session_request_rows": 224167,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.3751265797374279,
+      "distinct_model_labels": 12
+    },
+    {
+      "harness": "openhands",
+      "all_session_request_rows": 1917,
+      "largest_model_label": "glm-5.2",
+      "largest_model_request_share": 0.8116849243609807,
+      "distinct_model_labels": 3
+    },
+    {
+      "harness": "pi",
+      "all_session_request_rows": 311221,
+      "largest_model_label": "deepseek-v4-flash",
+      "largest_model_request_share": 0.5199359940363921,
+      "distinct_model_labels": 14
+    },
+    {
+      "harness": "zcode",
+      "all_session_request_rows": 31271,
+      "largest_model_label": "glm-5.2",
+      "largest_model_request_share": 0.690799782546129,
+      "distinct_model_labels": 8
+    },
+    {
+      "harness": "zoo",
+      "all_session_request_rows": 4029,
+      "largest_model_label": "minimax-m3",
+      "largest_model_request_share": 0.7031521469347233,
+      "distinct_model_labels": 7
+    }
+  ],
+  "classification_limits": [
+    "These are co-occurrence diagnostics, not causal evidence or held-out classifier results.",
+    "No task intent labels/text exist to quantify semantic task-distribution confounding.",
+    "A random request split would mix reconstructed sessions, descendants and accounts; group split and new synchronized PCAP are needed.",
+    "Absolute date, model, provider, tokens and public application labels are unavailable or shortcut-prone network-only classifier features."
+  ]
+}

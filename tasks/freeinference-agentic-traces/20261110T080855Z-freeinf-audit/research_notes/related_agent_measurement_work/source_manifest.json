@@ -1,0 +1,172 @@
+{
+  "retrieved_date_utc": "2026-11-10",
+  "purpose": "Primary-source related-work audit; originals retained privately",
+  "code_commits": {
+    "FreeInference": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+    "MAGIC26": "bf6797f7da735a6fccb8f140f27106c78a87490f",
+    "TraceLab": "5c6550b0d08beff983e9159fe2575e7a2334c8c1",
+    "ANT": "Unknown"
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/2610.06514v1",
+      "status": 200,
+      "bytes": 1366992,
+      "sha256": "5e384768862b40c0b1c97d9d598d76c63fe5068fd12e8abeedbe48e51270ac9e",
+      "retrieved_utc": "2026-11-10T08:13:31.796544+00:00",
+      "name": "ant.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.30560v2",
+      "status": 200,
+      "bytes": 1976810,
+      "sha256": "936e31ed424798058cd6da3bb773c516994fb3ebec2b54ddc4c83f5c1ecffb44",
+      "retrieved_utc": "2026-11-10T08:13:32.129916+00:00",
+      "name": "tracelab.pdf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/uw-syfi/TraceLab/main/README.md",
+      "status": 200,
+      "bytes": 20797,
+      "sha256": "d729996d7b2de2c4d94c5ac577c5bd68365c6248eb4058b7a2da12f22bf111a4",
+      "retrieved_utc": "2026-11-10T08:13:32.453905+00:00",
+      "name": "tracelab_README.md"
+    },
+    {
+      "url": "https://api.github.com/repos/uw-syfi/TraceLab",
+      "status": 200,
+      "bytes": 6296,
+      "sha256": "d25081ccf4908766e27b1b9b5f6de1fa2527b09f6aa1e424428e30204664be2b",
+      "retrieved_utc": "2026-11-10T08:13:32.983522+00:00",
+      "name": "tracelab_repo.json"
+    },
+    {
+      "url": "https://api.github.com/repos/uw-syfi/TraceLab/commits/main",
+      "status": 200,
+      "bytes": 58321,
+      "sha256": "7123b0a4138b07d1fd60c76adb4b159b33e2bd4316e2820ce53d1ccbd65b2f93",
+      "retrieved_utc": "2026-11-10T08:13:33.693426+00:00",
+      "name": "tracelab_head.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/uw-syfi/TraceLab/5c6550b0d08beff983e9159fe2575e7a2334c8c1/README.md",
+      "status": 200,
+      "bytes": 20797,
+      "sha256": "d729996d7b2de2c4d94c5ac577c5bd68365c6248eb4058b7a2da12f22bf111a4",
+      "retrieved_utc": "2026-11-10T08:13:57.262753+00:00",
+      "name": "tracelab_README.pinned.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/simula/magic26/main/README.md",
+      "status": 200,
+      "bytes": 11799,
+      "sha256": "d246d67ac21ff04361209a31d4e7e60018fe1004c4cc0bbdbe74629fe8b603b0",
+      "retrieved_utc": "2026-11-10T08:13:57.645152+00:00",
+      "name": "magic_README.md"
+    },
+    {
+      "url": "https://api.github.com/repos/simula/magic26",
+      "status": 200,
+      "bytes": 18815,
+      "sha256": "071da590ab914ee1e914b1f83ce74c0b8b6d69c6b60b83f14e5608751daf62c0",
+      "retrieved_utc": "2026-11-10T08:13:58.208748+00:00",
+      "name": "magic_repo.json"
+    },
+    {
+      "url": "https://api.github.com/repos/simula/magic26/commits/main",
+      "status": 200,
+      "bytes": 9960,
+      "sha256": "e72f8da7eda2bcdf2c7e31c59677a1dd40ceafe12bc048d6f0a14e2560d1edb4",
+      "retrieved_utc": "2026-11-10T08:13:58.852088+00:00",
+      "name": "magic_head.json"
+    },
+    {
+      "url": "https://api.github.com/repos/simula/magic26/git/trees/main?recursive=1",
+      "status": 200,
+      "bytes": 8783,
+      "sha256": "20c6bcc4e42ab2894ba9bb03a75eba13558a03f83aa6f87118a978dc1896574f",
+      "retrieved_utc": "2026-11-10T08:13:59.193654+00:00",
+      "name": "magic_tree.json"
+    },
+    {
+      "url": "https://anonymous.4open.science/r/ant-main-suite-7BC0/",
+      "status": 200,
+      "bytes": 14612,
+      "sha256": "94a17c6d467e50acd451842626ce7efebf27a2371f5d954573ddcb56e0b828ec",
+      "retrieved_utc": "2026-11-10T08:13:59.814356+00:00",
+      "name": "ant_repo.html"
+    },
+    {
+      "name": "magic_README.pinned.md",
+      "url": "https://raw.githubusercontent.com/simula/magic26/bf6797f7da735a6fccb8f140f27106c78a87490f/README.md",
+      "bytes": 11799,
+      "sha256": "d246d67ac21ff04361209a31d4e7e60018fe1004c4cc0bbdbe74629fe8b603b0",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:03.594733+00:00"
+    },
+    {
+      "name": "magic_react_agent.pinned.py",
+      "url": "https://raw.githubusercontent.com/simula/magic26/bf6797f7da735a6fccb8f140f27106c78a87490f/agents/react_agent.py",
+      "bytes": 21149,
+      "sha256": "0de9252ef81d5c7a253f25f5c09729c7aa2446a02c9a852ab8ca67f1050f250d",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:03.902958+00:00"
+    },
+    {
+      "name": "magic_RF.pinned.py",
+      "url": "https://raw.githubusercontent.com/simula/magic26/bf6797f7da735a6fccb8f140f27106c78a87490f/ml/models/RF.py",
+      "bytes": 2902,
+      "sha256": "4cf9ff1a71a3601aeab61756327467add251475fa3bfd9c19eeb43e658effa19",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:04.157437+00:00"
+    },
+    {
+      "name": "magic_ml_README.pinned.md",
+      "url": "https://raw.githubusercontent.com/simula/magic26/bf6797f7da735a6fccb8f140f27106c78a87490f/ml/README.md",
+      "bytes": 614,
+      "sha256": "0ac2f7d015ec1a582249f947a1e06cf15d6f84f45aa3371851db2ef37c061506",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:04.460259+00:00"
+    },
+    {
+      "name": "magic_ml_data_README.pinned.md",
+      "url": "https://raw.githubusercontent.com/simula/magic26/bf6797f7da735a6fccb8f140f27106c78a87490f/ml/datasets/README.md",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:04.756103+00:00"
+    },
+    {
+      "name": "tracelab_site.html",
+      "url": "https://tracelab.cs.washington.edu",
+      "bytes": 352591,
+      "sha256": "783aa65d2ddd47ce7a1911e092b957e8622a4b643b316801d64c008658602ad6",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:05.642172+00:00"
+    },
+    {
+      "name": "ant_arxiv.html",
+      "url": "https://arxiv.org/abs/2610.06514",
+      "bytes": 42594,
+      "sha256": "0c4c4b11b3c5ddcfd4c839fd43bb00eead1a18509d357271e9f2a0ecb582a10f",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:05.820656+00:00"
+    },
+    {
+      "name": "tracelab_arxiv.html",
+      "url": "https://arxiv.org/abs/2606.30560",
+      "bytes": 42576,
+      "sha256": "597fd597d8cacb815ff5acbfa661bee0d252b5b5993e0d8a93343a2baab0d46e",
+      "status": "success",
+      "retrieved_utc": "2026-11-10T08:16:06.004504+00:00"
+    },
+    {
+      "url": "https://sites.google.com/view/magic-cnsm/home",
+      "sha256": "f06b4441fd8bae62f4ca095a5b389925070e08542154c0c56000d3be2a5fff00",
+      "retrieved_utc": "2026-11-10T08:16:46.779151+00:00",
+      "bytes": 183553,
+      "name": "magic_workshop.html",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    ".conda/freeinference/bin/python",
+    "scripts/prepare_official_workspaces.py",
+    "--empty-scope-patch"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:32:25.125890+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:32:25.240412+00:00",
+  "elapsed_seconds": 0.11452137199739809
+}

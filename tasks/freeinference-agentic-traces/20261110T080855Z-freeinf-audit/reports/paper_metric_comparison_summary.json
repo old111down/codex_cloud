@@ -1,0 +1,28 @@
+{
+  "claims": 73,
+  "compared": 69,
+  "within_printed_rounding": 67,
+  "outside_printed_rounding": [
+    {
+      "claim_id": "batch_mix_same",
+      "reported_value": "71.3",
+      "observed_value": 64.01737580122536,
+      "unit": "percent",
+      "rounding_tolerance": 0.050000001
+    },
+    {
+      "claim_id": "batch_mix_mixed",
+      "reported_value": "28.7",
+      "observed_value": 35.98262419877464,
+      "unit": "percent",
+      "rounding_tolerance": 0.050000001
+    }
+  ],
+  "unknown_claim_ids": [
+    "synchronous_subagent_calls",
+    "asynchronous_subagent_calls",
+    "intent_first_create",
+    "intent_later_continuing"
+  ],
+  "no_full_paper_reproduction_claimed": true
+}

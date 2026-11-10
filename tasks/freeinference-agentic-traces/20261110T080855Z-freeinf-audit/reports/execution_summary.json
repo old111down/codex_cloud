@@ -1,0 +1,254 @@
+{
+  "status": "Verified data/environment execution; partial paper reproduction evidence only",
+  "task_start_utc": "2026-11-10T08:06:28Z",
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "dataset_revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "scope": {
+    "weeks": 16,
+    "week_names": [
+      "2026-05-17_2026-05-23",
+      "2026-05-24_2026-05-30",
+      "2026-05-31_2026-06-06",
+      "2026-06-07_2026-06-13",
+      "2026-06-14_2026-06-20",
+      "2026-06-21_2026-06-27",
+      "2026-06-28_2026-07-04",
+      "2026-07-05_2026-07-11",
+      "2026-07-12_2026-07-18",
+      "2026-07-19_2026-07-25",
+      "2026-07-26_2026-08-01",
+      "2026-08-02_2026-08-08",
+      "2026-08-09_2026-08-15",
+      "2026-08-16_2026-08-22",
+      "2026-08-23_2026-08-29",
+      "2026-08-30_2026-09-05"
+    ],
+    "block_ids_values_read": false
+  },
+  "all_data_bytes": 8371191139,
+  "cohort_totals": {
+    "top_level": {
+      "sessions": 12002,
+      "requests": 1186582,
+      "tool_calls": 1213347,
+      "tokens": {
+        "prompt_tokens": 209199292539,
+        "completion_tokens": 552524061,
+        "cache_read_tokens": 197064717672
+      }
+    },
+    "child": {
+      "sessions": 2034,
+      "requests": 35617,
+      "tool_calls": 61905,
+      "tokens": {
+        "prompt_tokens": 2282702359,
+        "completion_tokens": 25208402,
+        "cache_read_tokens": 2049529110
+      }
+    }
+  },
+  "identifiers_aggregate": {
+    "consistent_nonnull_salt_series": true,
+    "distinct_pseudonymous_accounts_within_salt_series": 267,
+    "duplicate_session_ids_across_all_selected_weeks": 0,
+    "meaning": "Account pseudonyms, not verified individual people; underlying raw identities unavailable."
+  },
+  "table1_harness_rows_matching_counts": 14,
+  "table1_harness_rows_matching_tokens_at_reported_precision": 14,
+  "observations_requiring_interpretation": {
+    "negative_tool_gap_latency": 4,
+    "cached_tokens_exceed_provider_prompt": 4
+  },
+  "executed_pipeline_logs": {
+    "conda_create": {
+      "argv": [
+        "/workspace/traffic-repro-audit/.tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/freeinference-audit/.conda/freeinference",
+        "python=3.12",
+        "pip"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:10:56.581892+00:00",
+      "timeout_seconds": 600.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:11:05.045550+00:00",
+      "elapsed_seconds": 8.463705109999864
+    },
+    "official_dependencies_install": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "-r",
+        "environment/freeinference/requirements-from-upstream.txt"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:12:06.154599+00:00",
+      "timeout_seconds": 600.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:12:28.681009+00:00",
+      "elapsed_seconds": 22.526405845001136
+    },
+    "selected_requests_download": {
+      "argv": [
+        "python",
+        "scripts/download_selected_week.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:12:57.785482+00:00",
+      "timeout_seconds": 1200.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:15:28.487922+00:00",
+      "elapsed_seconds": 150.70252473100118
+    },
+    "processed_release_download": {
+      "argv": [
+        "python",
+        "scripts/download_processed_release.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:18:52.828811+00:00",
+      "timeout_seconds": 1800.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:25:26.502890+00:00",
+      "elapsed_seconds": 393.6741895840023
+    },
+    "profile_one_week": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--week",
+        "2026-08-30",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats_one_week.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:20:52.851899+00:00",
+      "timeout_seconds": 600.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:21:02.309338+00:00",
+      "elapsed_seconds": 9.457435183998314
+    },
+    "profile_full_release": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:25:56.165992+00:00",
+      "timeout_seconds": 900.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:26:24.738260+00:00",
+      "elapsed_seconds": 28.57227549900199
+    },
+    "profile_full_release_final": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:27:22.292180+00:00",
+      "timeout_seconds": 900.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:27:51.184047+00:00",
+      "elapsed_seconds": 28.891915159001655
+    },
+    "build_data_dictionary": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/build_data_dictionary.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:24:01.660558+00:00",
+      "timeout_seconds": 60.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:24:01.877678+00:00",
+      "elapsed_seconds": 0.21711943300033454
+    },
+    "build_data_manifest": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/build_data_manifest.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:26:45.569041+00:00",
+      "timeout_seconds": 60.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:26:45.633764+00:00",
+      "elapsed_seconds": 0.06472124100037036
+    },
+    "anomaly_and_confounding_audit": {
+      "argv": [
+        ".conda/freeinference/bin/python",
+        "scripts/audit_aggregate_anomalies.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_utc": "2026-11-10T08:28:39.715797+00:00",
+      "timeout_seconds": 120.0,
+      "resource_environment": {},
+      "exit_code": 0,
+      "timed_out": false,
+      "end_utc": "2026-11-10T08:28:40.184046+00:00",
+      "elapsed_seconds": 0.46825566299958155
+    }
+  },
+  "unverified": [
+    "Physical historical log instrumentation",
+    "Reconstruction accuracy",
+    "Intent annotation",
+    "Full independent cache simulation",
+    "Paired PCAP/network classification"
+  ],
+  "public_artifacts": [
+    "data_dictionary.csv",
+    "data_validation_report.md",
+    "reports/aggregate_stats.json",
+    "reports/aggregate_stats_one_week.json",
+    "reports/data_manifest.csv",
+    "reports/data_source_summary.json",
+    "reports/observed_schemas.json",
+    "reports/table1_harness_comparison.csv",
+    "reports/quality_checks.csv",
+    "reports/missingness_summary.csv",
+    "reports/anomaly_and_confounding_aggregates.json",
+    "reports/quality_findings.md",
+    "environment/freeinference/",
+    "scripts/"
+  ],
+  "privacy": "No raw data/IDs/arguments/program strings/paper fulltext/author code copied into public outputs; only source metadata and aggregate statistics.",
+  "experiment_substitutions": "None; own quality scripts complement, never replace official statistical/algorithm execution."
+}

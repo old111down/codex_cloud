@@ -1,0 +1,19 @@
+{
+  "audit_derived_subset": true,
+  "not_a_paper_result": true,
+  "source_requests_sha256": "e8f4f987f00442348ac09b1d6dc8865cf3dde299944423d54402f620244d3a6a",
+  "selection": "first3complete top-level childless sessions in first rowgroup with3\u201332requests, sorted released key",
+  "counts": {
+    "sessions.parquet": 3,
+    "requests.parquet": 42,
+    "tool_calls.parquet": 39
+  },
+  "data_bytes": 1167794,
+  "source_first_rowgroup_uncompressed_bytes": 858590398,
+  "subset_block_reads": 539494,
+  "checksums": {
+    "sessions.parquet": "0e8e4da16a665c392fac7de6546f0967a9533c63ce76e0ac9a70bc3296747197",
+    "requests.parquet": "38d2885bfd73e0620d7017c53b6398c41c06beb8f49f3e72f2b375db5b31ff0e",
+    "tool_calls.parquet": "48819d0f49149855e611ef6b56e122ffce043e26cddee31bb1cfda19240f659e"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    ".conda/freeinference/bin/python",
+    "scripts/audit_aggregate_anomalies.py"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:28:39.715797+00:00",
+  "timeout_seconds": 120.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:28:40.184046+00:00",
+  "elapsed_seconds": 0.46825566299958155
+}

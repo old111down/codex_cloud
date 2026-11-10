@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".conda/freeinference/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-cache-dir",
+    "-r",
+    "environment/freeinference/requirements-from-upstream.txt"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:12:06.154599+00:00",
+  "timeout_seconds": 600.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:12:28.681009+00:00",
+  "elapsed_seconds": 22.526405845001136
+}

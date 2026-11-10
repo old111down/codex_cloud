@@ -1,0 +1,705 @@
+{
+  "review_started_utc": "2026-11-10T08:24:10Z",
+  "review_recorded_utc": "2026-11-10T08:30:05.675759+00:00",
+  "reviewer": "freeinf_related independent subaudit",
+  "overall_status": "Verified source review with disclosed unresolved upstream differences; no runtime replication implied",
+  "paper_url": "https://data.freeinference.org/pdf/paper/from-requests-to-sessions.pdf",
+  "paper_sha256": "0ab3b7968bb57f3edd27d7102cb48d99a23c72c0fcb42e6178f81bd8ba077c46",
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "reviewed_file_hashes": {
+    "paper_analysis.md": "f77e88278e2da21f47de094ed97be378e656ddd9d6031d822d00bc1739f74d7b",
+    "research_notes/paper_workload_characterization/paper_claims.csv": "8378f52f03dce55f59c33c6d286b92d8aa9817b24c404df7db62d4dff1637ab2",
+    "research_notes/paper_workload_characterization/inventory.json": "2cb77bd915f964bf34648a83fb1dcc327b0440032d47abc7761fbeafc4ba33e8"
+  },
+  "review_scope": {
+    "pdf_pages": 18,
+    "selected_claim_rows": 73,
+    "unique_claim_ids": 73,
+    "runtime_reproduction": false,
+    "new_network_search": false,
+    "new_dataset_download": false,
+    "new_large_experiment": false,
+    "method": "Primary PDF and fixed source/published CSV static cross-check; source claim validity is distinct from experimental replication",
+    "initial_selected_claim_rows": 71,
+    "final_selected_claim_rows": 73
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "High",
+      "status": "Verified static discrepancy",
+      "topic": "Table6 call-weighted vs request-weighted width denominator",
+      "paper_value": "84.5/8.7/3.5/3.3 described as requests by width",
+      "code_behavior": "value_counts on per-tool-call rows; multi-call request counted once per call",
+      "source_paths": [
+        "paper/metrics/tools.py:150",
+        "paper/metrics/tools.py:162",
+        "figures/v1/tools/batching_profile.csv"
+      ],
+      "unknowns": "Author historical pipeline and correct request probabilities not independently reconstructed",
+      "recommendation": "Preserve paper values as reported; disclose call-weighting; separately recompute request-weighted and zero-tool request coverage",
+      "report_disclosure_status": "Applied by original author and checked"
+    },
+    {
+      "id": "R2",
+      "severity": "High",
+      "status": "Verified paper/artifact mismatch",
+      "topic": "Table6 batch mix differs from published CSV",
+      "paper_values_percent": {
+        "same": 71.3,
+        "mixed": 28.7
+      },
+      "published_values_percent": {
+        "same": 64.01737580122536,
+        "mixed": 35.98262419877464
+      },
+      "source_paths": [
+        "figures/v1/tools/batching_profile.csv",
+        "paper/metrics/tools.py:166"
+      ],
+      "unknowns": "Cause: weighting/filter/version unknown",
+      "recommendation": "Do not claim table reproduced from artifact existence; retain mismatch and compute both documented weightings",
+      "report_disclosure_status": "Applied by original author and checked"
+    },
+    {
+      "id": "R3",
+      "severity": "Medium",
+      "status": "Partially Verified implementation gap",
+      "topic": "Estimated RTT subtraction not located in public export/metric path",
+      "source_paths": [
+        "export/release/requests_table.py:178",
+        "paper/metrics/tools.py:23",
+        "paper/metrics/turns.py:42",
+        "export/log_records/fields.py:174"
+      ],
+      "observed_behavior": "Released wait and metric use next.start_ms-current.end_ms",
+      "unknowns": "Raw upstream timestamp/latency may have pre-processing not visible in audited path",
+      "recommendation": "Call an effective provider-gap estimate; do not assert precise client tool execution or that authors never subtracted RTT",
+      "report_disclosure_status": "Applied by original author and checked"
+    },
+    {
+      "id": "R4",
+      "severity": "Medium",
+      "status": "Verified code qualification",
+      "topic": "Tool Time/latency and failure denominators conditional",
+      "source_paths": [
+        "paper/metrics/tools.py:86",
+        "paper/metrics/tools.py:136",
+        "paper/metrics/tools.py:143"
+      ],
+      "observed_behavior": "Time and latency use single-call requests; failure uses non-null outcomes; result distribution uses matched non-null results",
+      "recommendation": "Add these filters to comparisons and claim metadata",
+      "report_disclosure_status": "Applied by original author and checked"
+    },
+    {
+      "id": "R5",
+      "severity": "Medium",
+      "status": "Verified code selection rule; effect size Unknown",
+      "topic": "Human multi-user-turn selection and SWE exception",
+      "source_paths": [
+        "export/sessions/chains.py:23",
+        "export/sessions/chains.py:89",
+        "export/sessions/chains.py:98"
+      ],
+      "observed_behavior": "Human main chain >=2 user turns and >=1 tool turn; benchmark only >=1 tool turn",
+      "unknowns": "Magnitude of selection effect and exact historical paper export agreement",
+      "recommendation": "Disclose structural selection before generalizing human-vs-benchmark idle/session duration",
+      "report_disclosure_status": "Applied by original author and checked"
+    },
+    {
+      "id": "R6",
+      "severity": "Low",
+      "status": "Documentation qualification resolved; register remains selected claims",
+      "topic": "Selected claim register not exhaustive; mixed total is not pure production",
+      "source_paths": [
+        "research_notes/paper_workload_characterization/paper_claims.csv"
+      ],
+      "observed_behavior": "Table1 evidence kind now distinguishes mixed/benchmark inventory; register expanded from71to73; methods remain outside selected numeric scope",
+      "recommendation": "Describe selected numeric claims; use mixed inventory/benchmark evidence kind and explicit conditional denominators",
+      "report_disclosure_status": "Applied by original author and checked"
+    }
+  ],
+  "focus_checks": {
+    "innovation_boundary": "Supported: serving characterization, not packet classification",
+    "production_selection": "Needs explicit >=2 user-turn human selection vs benchmark exception",
+    "95percent": "Correctly bounded explicit-session-ID subset; sample size/confusion details Unknown",
+    "ttft_queue": "Residual includes overhead, not internal queue measurement",
+    "2x_optimization": "Correctly counterfactual; exclude idle and cap tool gaps",
+    "cache_figures10_to13": "Correctly trace-driven simulation and assumed costs/lifecycle signals",
+    "36x": "Correctly bounded; caption/body metric wording not merged",
+    "62point5percent": "Correctly infinite-retention fresh-prefill attribution",
+    "intent8": "Model/template/human validation Unknown; not gold labels",
+    "table1": "Mixed human +1035 SWE replay, human10967 arithmetic only",
+    "table3": "Internal fields not public schema"
+  },
+  "claim_checks": [
+    {
+      "claim_id": "total_sessions",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "total_requests",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "total_tools",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "input_tokens",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "output_tokens",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "cached_tokens",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "swe_sessions",
+      "source_object": "Table1",
+      "pdf_page": 1,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Table1 includes SWE replay; evidence kind should not imply exclusively human production"
+      ]
+    },
+    {
+      "claim_id": "user_steps",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "tool_steps",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "llm_steps",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "turn_duration",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "session_duration",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "input_median",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "uncached_median",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "output_median",
+      "source_object": "Figure2",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "session_p90",
+      "source_object": "Figure2b",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "cached_token_share",
+      "source_object": "Figure2d",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "cached_cost_share",
+      "source_object": "Figure2d",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "uncached_cost_share",
+      "source_object": "Figure2d",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "output_cost_share",
+      "source_object": "Figure2d",
+      "pdf_page": 4,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "time_user_idle",
+      "source_object": "Figure4c",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "time_tool",
+      "source_object": "Figure4c",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "time_decode",
+      "source_object": "Figure4c",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "time_prefill",
+      "source_object": "Figure4c",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "speedup_prefill",
+      "source_object": "Figure4d",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "speedup_decode",
+      "source_object": "Figure4d",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "speedup_tool",
+      "source_object": "Figure4d",
+      "pdf_page": 5,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "native_calls",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "shell_calls",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "read_calls",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "read_result_tokens",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "interpreter_calls",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "interpreter_waittime",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Current public metric time share conditions on single-call requests"
+      ]
+    },
+    {
+      "claim_id": "askuser_calls",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "askuser_waittime",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Current public metric time share conditions on single-call requests"
+      ]
+    },
+    {
+      "claim_id": "tool_failure",
+      "source_object": "Table5",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Current public metric denominator contains only non-null outcomes"
+      ]
+    },
+    {
+      "claim_id": "sessions_with_batches",
+      "source_object": "Table6",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "sessions_with_subagents",
+      "source_object": "Table6",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "synchronous_subagent_calls",
+      "source_object": "Table6",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "asynchronous_subagent_calls",
+      "source_object": "Table6",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "tool_gap_p90",
+      "source_object": "Figure8c",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "askuser_gap_p90",
+      "source_object": "Figure8c",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "subagent_gap_p90",
+      "source_object": "Figure8c",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "useridle_gap_p90",
+      "source_object": "Figure8c",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "tool_gap_median",
+      "source_object": "Figure8c",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "tool_gap_hit",
+      "source_object": "Figure8d",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "useridle_hit",
+      "source_object": "Figure8d",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "mutated_steps",
+      "source_object": "Table7/Figure9",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "sessions_with_mutation",
+      "source_object": "Table7/Figure9",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "mutation_fresh_prefill",
+      "source_object": "Table7/Figure9",
+      "pdf_page": 8,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Infinite-retention attribution, not actual provider cache-miss attribution"
+      ]
+    },
+    {
+      "claim_id": "prefill_15min",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "prefill_30min",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "prefill_1h",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "prefill_6h",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "prefill_1day",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "stored_1h",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "stored_1day",
+      "source_object": "Figure10a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "api_cost_30min",
+      "source_object": "Figure11a",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "infra_cost_15min",
+      "source_object": "Figure11b",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "deadblocks_day",
+      "source_object": "Figure10b",
+      "pdf_page": 9,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "lifecycle_reclaim_day",
+      "source_object": "Figure13a",
+      "pdf_page": 10,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Caption dead-block reduction vs body accumulated storage; not total capacity"
+      ]
+    },
+    {
+      "claim_id": "comparison_turn_duration_SWE-Bench",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_turn_duration_human",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_session_duration_SWE-Bench",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_session_duration_human",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_input_tokens_SWE-Bench",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_input_tokens_human",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_user_prompt_tokens_SWE-Bench",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "comparison_user_prompt_tokens_human",
+      "source_object": "Figure14",
+      "pdf_page": 11,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": []
+    },
+    {
+      "claim_id": "intent_first_create",
+      "source_object": "Figure16a",
+      "pdf_page": 12,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "LLM-generated labels; model/template/human agreement not reported"
+      ]
+    },
+    {
+      "claim_id": "intent_later_continuing",
+      "source_object": "Figure16a",
+      "pdf_page": 12,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "LLM-generated labels; model/template/human agreement not reported"
+      ]
+    },
+    {
+      "claim_id": "batch_mix_same",
+      "source_object": "Table6a",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Paper value supported but pinned published artifact differs; added after independent feedback"
+      ]
+    },
+    {
+      "claim_id": "batch_mix_mixed",
+      "source_object": "Table6a",
+      "pdf_page": 6,
+      "source_claim_status": "Verified paper reports this value; no runtime reproduction implied",
+      "qualifications": [
+        "Paper value supported but pinned published artifact differs; added after independent feedback"
+      ]
+    }
+  ],
+  "small_consistency_checks": {
+    "harness_table_sessions_sum": 12002,
+    "human_sessions_derived": 10967,
+    "source_claims_recomputed_from_raw_data": false
+  },
+  "unknowns": [
+    "R1/R2 author historical pipeline and causal explanation",
+    "RTT pre-processing before public raw record",
+    "Full-period numerical reproduction and new cache simulation",
+    "Intent label accuracy/human agreement",
+    "95% validation subset size and independence"
+  ],
+  "actions": [
+    "Sent R1-R5 to root and paper analyst",
+    "Did not modify paper_analysis.md or paper_claims.csv",
+    "No upstream changes or Git operations"
+  ],
+  "report_amendments_verified": {
+    "paper_analysis_R1_R5_disclosures": true,
+    "mixed_table1_evidence_kind": true,
+    "conditional_time_failure_qualifications": true,
+    "added_batch_mix_claim_rows": 2,
+    "upstream_numerical_or_algorithmic_differences_resolved": false
+  },
+  "review_report_sha256": "74eee6523ed662511208ad13ea89c12d9bbbc683938092f9778a7bb8d1852dd6"
+}

@@ -1,0 +1,125 @@
+{
+  "rows": 190544,
+  "row_groups": [
+    {
+      "row_group": 0,
+      "rows": 10000,
+      "total_uncompressed": 858590398,
+      "block_uncompressed": 857478901
+    },
+    {
+      "row_group": 1,
+      "rows": 10000,
+      "total_uncompressed": 869129301,
+      "block_uncompressed": 867977160
+    },
+    {
+      "row_group": 2,
+      "rows": 10000,
+      "total_uncompressed": 1021244972,
+      "block_uncompressed": 1020234861
+    },
+    {
+      "row_group": 3,
+      "rows": 10000,
+      "total_uncompressed": 941174012,
+      "block_uncompressed": 940124470
+    },
+    {
+      "row_group": 4,
+      "rows": 10000,
+      "total_uncompressed": 703956805,
+      "block_uncompressed": 702952890
+    },
+    {
+      "row_group": 5,
+      "rows": 10000,
+      "total_uncompressed": 955910028,
+      "block_uncompressed": 954818998
+    },
+    {
+      "row_group": 6,
+      "rows": 10000,
+      "total_uncompressed": 1081479088,
+      "block_uncompressed": 1080402545
+    },
+    {
+      "row_group": 7,
+      "rows": 10000,
+      "total_uncompressed": 762809019,
+      "block_uncompressed": 761848288
+    },
+    {
+      "row_group": 8,
+      "rows": 10000,
+      "total_uncompressed": 1540359892,
+      "block_uncompressed": 1539380083
+    },
+    {
+      "row_group": 9,
+      "rows": 10000,
+      "total_uncompressed": 1119770576,
+      "block_uncompressed": 1118782099
+    },
+    {
+      "row_group": 10,
+      "rows": 10000,
+      "total_uncompressed": 996141660,
+      "block_uncompressed": 995139506
+    },
+    {
+      "row_group": 11,
+      "rows": 10000,
+      "total_uncompressed": 775052332,
+      "block_uncompressed": 774119103
+    },
+    {
+      "row_group": 12,
+      "rows": 10000,
+      "total_uncompressed": 985281408,
+      "block_uncompressed": 984249394
+    },
+    {
+      "row_group": 13,
+      "rows": 10000,
+      "total_uncompressed": 824353639,
+      "block_uncompressed": 823287947
+    },
+    {
+      "row_group": 14,
+      "rows": 10000,
+      "total_uncompressed": 1224337257,
+      "block_uncompressed": 1223221744
+    },
+    {
+      "row_group": 15,
+      "rows": 10000,
+      "total_uncompressed": 1008323211,
+      "block_uncompressed": 1007297004
+    },
+    {
+      "row_group": 16,
+      "rows": 10000,
+      "total_uncompressed": 827312072,
+      "block_uncompressed": 826190566
+    },
+    {
+      "row_group": 17,
+      "rows": 10000,
+      "total_uncompressed": 1332323290,
+      "block_uncompressed": 1331271924
+    },
+    {
+      "row_group": 18,
+      "rows": 10000,
+      "total_uncompressed": 1292600673,
+      "block_uncompressed": 1291495659
+    },
+    {
+      "row_group": 19,
+      "rows": 544,
+      "total_uncompressed": 32173470,
+      "block_uncompressed": 32120223
+    }
+  ]
+}

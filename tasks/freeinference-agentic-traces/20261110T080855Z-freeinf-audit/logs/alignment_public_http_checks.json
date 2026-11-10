@@ -1,0 +1,31 @@
+{
+  "scope": "No-auth public GET only; no inference; no credentials read or sent. User endpoint response body is not read.",
+  "checks": [
+    {
+      "url": "https://freeinference.org/v1/models",
+      "start_utc": "2026-11-10T08:21:02.287772+00:00",
+      "status": 200,
+      "elapsed_seconds": 0.347,
+      "authentication_sent": false,
+      "model_inference_invoked": false,
+      "body_saved": false,
+      "synthetic_request_id_echo_matches": true,
+      "public_model_count": 3,
+      "mimo_v2_6_flash_listed": false,
+      "public_model_ids": [
+        "bge-m3",
+        "deepseek-v4-flash",
+        "qwen3.6-35b"
+      ]
+    },
+    {
+      "url": "https://freeinference.org/user/recent-requests?limit=1",
+      "start_utc": "2026-11-10T08:21:02.635096+00:00",
+      "status": 401,
+      "elapsed_seconds": 0.342,
+      "authentication_sent": false,
+      "model_inference_invoked": false,
+      "body_saved": false
+    }
+  ]
+}

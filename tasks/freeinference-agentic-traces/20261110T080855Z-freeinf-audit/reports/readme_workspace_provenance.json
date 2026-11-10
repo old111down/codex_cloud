@@ -1,0 +1,7 @@
+{
+  "copied_original_source_files_verified_byte_equal": 115,
+  "patched_files": 0,
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "data_and_output_paths": "external symlinks under private/runtime; no upstream changes",
+  "purpose": "Controlled original Make figures target with independent Conda PYTHON override"
+}

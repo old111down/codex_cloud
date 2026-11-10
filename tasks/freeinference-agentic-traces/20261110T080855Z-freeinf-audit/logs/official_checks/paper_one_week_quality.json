@@ -1,0 +1,17 @@
+{
+  "argv": [
+    ".conda/freeinference/bin/python",
+    "scripts/validate_paper_numbers.py",
+    "private/runtime/figures_one_week/numbers.json",
+    "--output",
+    "reports/paper_one_week_numeric_quality.json"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:19:09.945522+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 1,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:19:10.009827+00:00",
+  "elapsed_seconds": 0.06430863799687359
+}

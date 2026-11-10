@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".conda/freeinference/bin/python",
+    "scripts/profile_parquet.py",
+    "--week",
+    "2026-08-30",
+    "--verify-checksums",
+    "--output",
+    "reports/aggregate_stats_one_week.json"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:20:52.851899+00:00",
+  "timeout_seconds": 600.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:21:02.309338+00:00",
+  "elapsed_seconds": 9.457435183998314
+}

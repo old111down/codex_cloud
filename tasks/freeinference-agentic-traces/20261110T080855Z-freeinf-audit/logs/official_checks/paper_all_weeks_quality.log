@@ -1,0 +1,8 @@
+{
+  "input": "private/runtime/figures/numbers.json",
+  "nonfinite_count": 0,
+  "nonfinite_paths": [],
+  "explicit_not_drawn": [],
+  "status": "Verified",
+  "scope": "Numerical output quality only; not proof of paper-result equality"
+}

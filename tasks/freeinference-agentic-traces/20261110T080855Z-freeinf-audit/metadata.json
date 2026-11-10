@@ -1,0 +1,1025 @@
+{
+  "schema_version": "1.0",
+  "task_id": "20261110T080855Z-freeinf-audit",
+  "task_name": "FreeInference Agent Traces deep audit and network-research feasibility",
+  "task_slug": "freeinference-agentic-traces",
+  "run_id": "20261110T080855Z-freeinf-audit",
+  "archive_repository": "https://github.com/old111down/codex_cloud",
+  "start_time_utc": "2026-11-10T08:06:28Z",
+  "end_time_utc": null,
+  "archive_started_time_utc": "2026-11-10T08:08:55Z",
+  "archive_completed_time_utc": null,
+  "deadline_utc": "2026-11-10T11:06:28Z",
+  "record_generated_at_utc": "2026-11-10T08:37:01Z",
+  "objective": "Audit full paper, public implementation/data/labels and actual CPU execution; design defensible self-collected trace–PCAP alignment and Hermes MVP without claiming unrun success.",
+  "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "related_runs": [],
+  "inherited_policy": "Root archive conventions only; this run does not reuse prior network/AR/XR experimental data or reset its own T0.",
+  "source_repositories": [
+    {
+      "name": "FreeInference trace",
+      "url": "https://github.com/HarvardMadSys/freeinference_agentic_trace",
+      "commit_shas": [
+        "2b795dbf5eac490a7c081906fdce6cc7a184b7ef"
+      ],
+      "license": "Unknown unless qualified in source evidence",
+      "version_status": "Verified"
+    },
+    {
+      "name": "FreeInference current Gateway",
+      "url": "https://github.com/HarvardMadSys/hybridInference",
+      "commit_shas": [
+        "7f7585bc60a303f9dc8e2a0f219ab7f0b99f3255"
+      ],
+      "license": "Unknown unless qualified in source evidence",
+      "version_status": "Verified"
+    },
+    {
+      "name": "Hermes",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "commit_shas": [
+        "b7db40d82568ea68ce321ac1ead3bfea354c7f56"
+      ],
+      "license": "Unknown unless qualified in source evidence",
+      "version_status": "Verified"
+    },
+    {
+      "name": "MAGIC26",
+      "url": "https://github.com/simula/magic26",
+      "commit_shas": [
+        "bf6797f7da735a6fccb8f140f27106c78a87490f"
+      ],
+      "license": "Unknown unless qualified in source evidence",
+      "version_status": "Verified"
+    },
+    {
+      "name": "TraceLab",
+      "url": "https://github.com/uw-syfi/TraceLab",
+      "commit_shas": [
+        "5c6550b0d08beff983e9159fe2575e7a2334c8c1"
+      ],
+      "license": "Unknown unless qualified in source evidence",
+      "version_status": "Verified"
+    }
+  ],
+  "data_source": {
+    "dataset": "harvardMadsys/freeinference_agentic_trace",
+    "revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+    "license": "CC-BY-4.0",
+    "gated": false,
+    "parquet_files": 48,
+    "bytes": 8371191139,
+    "weeks": 16,
+    "timestamp_scope": "2026-05-17 through 2026-09-05 completion weeks; derived starts may predate a week",
+    "schema_consistent_across_selected_weeks": {
+      "sessions.parquet": true,
+      "requests.parquet": true,
+      "tool_calls.parquet": true
+    },
+    "all_actual_checksums_match": true,
+    "raw_jsonl_downloaded": false,
+    "raw_data_publication": false,
+    "cache_duplicate": false
+  },
+  "runtime_environment": {
+    "observed_at_utc": "2026-11-10T08:18:35.041214+00:00",
+    "os": {
+      "PRETTY_NAME": "\"Debian GNU/Linux 13 (trixie)\"",
+      "NAME": "\"Debian GNU/Linux\"",
+      "VERSION_ID": "\"13\"",
+      "VERSION": "\"13 (trixie)\"",
+      "VERSION_CODENAME": "trixie",
+      "DEBIAN_VERSION_FULL": "13.6",
+      "ID": "debian",
+      "HOME_URL": "\"https://www.debian.org/\"",
+      "SUPPORT_URL": "\"https://www.debian.org/support\"",
+      "BUG_REPORT_URL": "\"https://bugs.debian.org/\""
+    },
+    "cpu_quota": "400000 100000",
+    "memory_limit_bytes": 17179869184,
+    "disk": {
+      "total": 33770192896,
+      "used": 16288595968,
+      "free": 15746834432
+    },
+    "gpu_devices": [],
+    "tools": {
+      "nvidia-smi": null,
+      "nvcc": null,
+      "tcpdump": null,
+      "tshark": null,
+      "capsh": "/usr/sbin/capsh",
+      "gcc": "/usr/bin/gcc",
+      "make": "/usr/bin/make"
+    },
+    "nvidia_smi": {
+      "argv": [
+        "nvidia-smi"
+      ],
+      "error": "[Errno 2] No such file or directory: 'nvidia-smi'"
+    },
+    "compiler": {
+      "argv": [
+        "gcc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "gcc (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "public_network_observed": [
+      "GitHub clone/API succeeded",
+      "Official PDF HTTP200, downloaded and parsed"
+    ],
+    "permissions": "ordinary workspace user; privileged capture capability not established",
+    "network_policy": "unrestricted/enforced observed via runtime status; no VPN configured"
+  },
+  "commands_executed": [
+    {
+      "command": [
+        "/workspace/traffic-repro-audit/.tools/miniforge3/bin/conda",
+        "create",
+        "-y",
+        "--override-channels",
+        "-c",
+        "conda-forge",
+        "-p",
+        "/workspace/freeinference-audit/.conda/freeinference",
+        "python=3.12",
+        "pip"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:10:56.581892+00:00",
+      "end_time_utc": "2026-11-10T08:11:05.045550+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/conda_create.json",
+        "logs/conda_create.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "-r",
+        "environment/freeinference/requirements-from-upstream.txt"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:12:06.154599+00:00",
+      "end_time_utc": "2026-11-10T08:12:28.681009+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_dependencies_install.json",
+        "logs/official_dependencies_install.log"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "scripts/download_selected_week.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:12:57.785482+00:00",
+      "end_time_utc": "2026-11-10T08:15:28.487922+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/selected_requests_download.json",
+        "logs/selected_requests_download.log"
+      ]
+    },
+    {
+      "command": [
+        "make",
+        "-n",
+        "setup",
+        "figures",
+        "test",
+        "week-2026-08-30"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:13:47.918210+00:00",
+      "end_time_utc": "2026-11-10T08:13:47.931937+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/readme_make_dry_run.json",
+        "logs/official_checks/readme_make_dry_run.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "release",
+        "download",
+        "--help"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:13:55.447728+00:00",
+      "end_time_utc": "2026-11-10T08:13:56.037446+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/release_help.json",
+        "logs/official_checks/release_help.log"
+      ]
+    },
+    {
+      "command": [
+        "make",
+        "figures",
+        "PROCESSES=1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:13:55.477194+00:00",
+      "end_time_utc": "2026-11-10T08:13:55.481611+00:00",
+      "exit_code": 2,
+      "status": "Failed",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/readme_make_figures_original.json",
+        "logs/official_checks/readme_make_figures_original.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:13:55.480507+00:00",
+      "end_time_utc": "2026-11-10T08:13:55.999182+00:00",
+      "exit_code": 5,
+      "status": "Failed",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/public_tests.json",
+        "logs/official_checks/public_tests.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/smoke_official_cache.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:15:00.574769+00:00",
+      "end_time_utc": "2026-11-10T08:15:01.140361+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/cache_synthetic_smoke.json",
+        "logs/official_checks/cache_synthetic_smoke.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+        "MPLBACKEND=Agg",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "paper",
+        "--release",
+        "/workspace/freeinference-audit/private/runtime/release_one_week",
+        "--simulation",
+        "/workspace/freeinference-audit/upstream/freeinference_agentic_trace/data/v1/simulation",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/figures_one_week"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:17:59.825384+00:00",
+      "end_time_utc": "2026-11-10T08:18:24.113195+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/paper_one_week.json",
+        "logs/official_checks/paper_one_week.log"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "scripts/download_processed_release.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:18:52.828811+00:00",
+      "end_time_utc": "2026-11-10T08:25:26.502890+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/processed_release_download.json",
+        "logs/processed_release_download.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/validate_paper_numbers.py",
+        "private/runtime/figures_one_week/numbers.json",
+        "--output",
+        "reports/paper_one_week_numeric_quality.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:19:09.945522+00:00",
+      "end_time_utc": "2026-11-10T08:19:10.009827+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/paper_one_week_quality.json",
+        "logs/official_checks/paper_one_week_quality.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "simulation",
+        "--week",
+        "2026-08-30",
+        "--release",
+        "/workspace/freeinference-audit/private/runtime/release_one_week",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/recomputed_simulation",
+        "--processes",
+        "1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:19:23.600821+00:00",
+      "end_time_utc": "2026-11-10T08:21:23.635493+00:00",
+      "exit_code": 124,
+      "status": "Failed",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/simulation_one_week_guarded.json",
+        "logs/official_checks/simulation_one_week_guarded.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--week",
+        "2026-08-30",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats_one_week.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:20:52.851899+00:00",
+      "end_time_utc": "2026-11-10T08:21:02.309338+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/profile_one_week.json",
+        "logs/profile_one_week.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/private/runtime/empty_scope_patch_source:/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+        "MPLBACKEND=Agg",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/check_empty_scope_patch.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:21:33.652114+00:00",
+      "end_time_utc": "2026-11-10T08:21:37.078688+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/empty_scope_patch_check.json",
+        "logs/official_checks/empty_scope_patch_check.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/prepare_small_realdata_release.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:22:54.026193+00:00",
+      "end_time_utc": "2026-11-10T08:22:58.400289+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/prepare_small_realdata.json",
+        "logs/official_checks/prepare_small_realdata.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "-m",
+        "simulation",
+        "--week",
+        "2026-08-30",
+        "--release",
+        "/workspace/freeinference-audit/private/runtime/small_realdata_release",
+        "--output",
+        "/workspace/freeinference-audit/private/runtime/small_realdata_simulation",
+        "--processes",
+        "1"
+      ],
+      "cwd": "/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+      "start_time_utc": "2026-11-10T08:23:28.727120+00:00",
+      "end_time_utc": "2026-11-10T08:23:31.158514+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/simulation_small_realdata.json",
+        "logs/official_checks/simulation_small_realdata.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/build_data_dictionary.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:24:01.660558+00:00",
+      "end_time_utc": "2026-11-10T08:24:01.877678+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/build_data_dictionary.json",
+        "logs/build_data_dictionary.log"
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "scripts/alignment/synthetic_checks.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:24:25.402535+00:00",
+      "end_time_utc": "2026-11-10T08:24:25.467192+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/alignment_synthetic_checks.json",
+        "logs/alignment_synthetic_checks.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/verify_small_realdata_simulation.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:24:42.795494+00:00",
+      "end_time_utc": "2026-11-10T08:24:43.361789+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/small_realdata_simulation_validation.json",
+        "logs/official_checks/small_realdata_simulation_validation.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+        "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+        "MPLBACKEND=Agg",
+        "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "/workspace/freeinference-audit/scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        "make",
+        "figures",
+        "PYTHON=/workspace/freeinference-audit/.conda/freeinference/bin/python",
+        "PROCESSES=1"
+      ],
+      "cwd": "/workspace/freeinference-audit/private/runtime/readme_workspace",
+      "start_time_utc": "2026-11-10T08:25:55.173910+00:00",
+      "end_time_utc": "2026-11-10T08:26:59.410799+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/paper_all_weeks.json",
+        "logs/official_checks/paper_all_weeks.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:25:56.165992+00:00",
+      "end_time_utc": "2026-11-10T08:26:24.738260+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/profile_full_release.json",
+        "logs/profile_full_release.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/build_data_manifest.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:26:45.569041+00:00",
+      "end_time_utc": "2026-11-10T08:26:45.633764+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/build_data_manifest.json",
+        "logs/build_data_manifest.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/profile_parquet.py",
+        "--verify-checksums",
+        "--output",
+        "reports/aggregate_stats.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:27:22.292180+00:00",
+      "end_time_utc": "2026-11-10T08:27:51.184047+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/profile_full_release_final.json",
+        "logs/profile_full_release_final.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/validate_paper_numbers.py",
+        "private/runtime/figures/numbers.json",
+        "--output",
+        "reports/paper_all_weeks_numeric_quality.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:27:30.119980+00:00",
+      "end_time_utc": "2026-11-10T08:27:30.184614+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/paper_all_weeks_quality.json",
+        "logs/official_checks/paper_all_weeks_quality.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        ".conda/freeinference/bin/python",
+        "scripts/extract_extra_paper_metrics.py",
+        "--release",
+        "private/data/release",
+        "--output",
+        "reports/extra_paper_metrics_all_weeks.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:27:30.126214+00:00",
+      "end_time_utc": "2026-11-10T08:27:49.888005+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/extra_paper_metrics_all_weeks.json",
+        "logs/official_checks/extra_paper_metrics_all_weeks.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/audit_aggregate_anomalies.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:28:39.715797+00:00",
+      "end_time_utc": "2026-11-10T08:28:40.184046+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/anomaly_and_confounding_audit.json",
+        "logs/anomaly_and_confounding_audit.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+        "MPLBACKEND=Agg",
+        ".conda/freeinference/bin/python",
+        "scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        ".conda/freeinference/bin/python",
+        "scripts/extract_extra_paper_metrics.py",
+        "--release",
+        "private/data/release",
+        "--output",
+        "reports/extra_paper_metrics_all_weeks_v2.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:29:37.096790+00:00",
+      "end_time_utc": "2026-11-10T08:29:55.616638+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/extra_paper_metrics_all_weeks_v2.json",
+        "logs/official_checks/extra_paper_metrics_all_weeks_v2.log"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+        "OMP_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        ".conda/freeinference/bin/python",
+        "scripts/resource_guard.py",
+        "--address-space-gib",
+        "8",
+        "--",
+        ".conda/freeinference/bin/python",
+        "scripts/check_batching_denominators.py",
+        "--release",
+        "private/data/release",
+        "--output",
+        "reports/batching_denominator_check.json"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:30:17.016370+00:00",
+      "end_time_utc": "2026-11-10T08:30:17.985021+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/batching_denominator_check.json",
+        "logs/official_checks/batching_denominator_check.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/summarize_data_validation.py"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:30:55.869935+00:00",
+      "end_time_utc": "2026-11-10T08:30:55.934442+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/summarize_data_validation.json",
+        "logs/summarize_data_validation.log"
+      ]
+    },
+    {
+      "command": [
+        ".conda/freeinference/bin/python",
+        "scripts/prepare_official_workspaces.py",
+        "--empty-scope-patch"
+      ],
+      "cwd": "/workspace/freeinference-audit",
+      "start_time_utc": "2026-11-10T08:32:25.125890+00:00",
+      "end_time_utc": "2026-11-10T08:32:25.240412+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/official_checks/workspace_preparation.json",
+        "logs/official_checks/workspace_preparation.log"
+      ]
+    }
+  ],
+  "completed_work": [
+    {
+      "description": "Full18-page paper and public source/schema/label audit;16figures and7tables enumerated",
+      "status": "Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "paper_analysis.md",
+        "paper_code_coverage.csv"
+      ]
+    },
+    {
+      "description": "Independent Conda plus48Parquet checksum/aggregate audit;top-level Table1 inventory matches",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "data_validation_report.md",
+        "reports/data_manifest.csv"
+      ]
+    },
+    {
+      "description": "Original full16-week Make statistics/figures;author cache intermediates reused",
+      "status": "Partially Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "paper_execution_report.md",
+        "logs/official_checks/paper_all_weeks.json"
+      ]
+    },
+    {
+      "description": "Actual original simulation on3real selectedsessions and11synthetic alignment checks",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/small_realdata_simulation_validation.json",
+        "logs/alignment_synthetic_checks.log"
+      ]
+    }
+  ],
+  "failed_experiments": [
+    {
+      "description": "Original Make missing default.venv;pytest collected0tests;one-week output8NaN;full-week simulation audit120s timeout",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reproduction_report.md",
+        "logs/official_checks/"
+      ]
+    }
+  ],
+  "important_findings": [
+    {
+      "description": "Current full public batchmix64.0174/35.9826 differs frompaper71.3/28.7;84.5%width iscall-weighted",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "paper_metric_comparison.csv",
+        "reports/batching_denominator_check.json"
+      ]
+    },
+    {
+      "description": "Historical released trace cannot directlylabel independentlycapturedPCAP;own concurrent client/transport instrumentation isneeded",
+      "status": "Partially Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "trace_pcap_alignment.md",
+        "mvp_experiment_plan.md"
+      ]
+    },
+    {
+      "description": "Anonymous modelcatalog lacks exact MiMoID;authorized availabilityUnknown;no inference attempted",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "logs/alignment_public_http_checks.json"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "description": "Historical deployment/timing instrumentation;95%reconstruction validation;intent labels/quality;full independent cache replay;pairedAgentPCAP/classifier",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "reproduction_report.md",
+        "task_report.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "task_report.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "paper_analysis.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "architecture.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "data_dictionary.csv",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "label_mechanisms.csv",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "session_reconstruction.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "paper_code_coverage.csv",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "paper_metric_comparison.csv",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "reproduction_report.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "trace_pcap_alignment.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "mvp_experiment_plan.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "research_opportunities.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "execution_timeline.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    },
+    {
+      "path": "execution_log.md",
+      "status": "Verified",
+      "description": "Original audit artifact; status refers to presence, not full-paper success",
+      "publication_review": "approved"
+    }
+  ],
+  "publication_review": {
+    "status": "Partially Verified",
+    "manifest": "reports/publication_manifest.json",
+    "withheld_manifest": "reports/withheld_artifacts.md",
+    "limitations": [
+      "Explicitly reviewed export only;pattern scans alone cannot guarantee absence of all sensitive information"
+    ]
+  },
+  "final_status": "Partially Verified",
+  "final_status_scope": "Audit evidence complete within scope;paper results and downstream network feasibility only partially verified",
+  "pull_request_url": null,
+  "limitations": [
+    "NoPCAP/noAgent/modelinference",
+    "Nohistoricalrawlogs/intentdata",
+    "Authorcacheintermediatesreused",
+    "NoautomaticPRmerge"
+  ]
+}

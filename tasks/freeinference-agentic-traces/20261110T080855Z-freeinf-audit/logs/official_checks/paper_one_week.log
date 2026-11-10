@@ -1,0 +1,7 @@
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/workspace/freeinference-audit/.conda/freeinference/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+drew dataset, sessions, tools, prefix_caching, benchmark_vs_production into /workspace/freeinference-audit/private/runtime/figures_one_week, with numbers.json and README.md

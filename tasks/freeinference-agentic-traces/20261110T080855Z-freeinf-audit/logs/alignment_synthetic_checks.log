@@ -1,0 +1,65 @@
+{
+  "scope": "synthetic interval-matcher invariants only",
+  "real_pcaps": 0,
+  "real_agent_runs": 0,
+  "model_inference_calls": 0,
+  "python": "3.12.14",
+  "passed": 11,
+  "failed": 0,
+  "cases": [
+    {
+      "case": "reused_connection_first_request",
+      "passed": true,
+      "observed_status": "serial_time_candidate"
+    },
+    {
+      "case": "reused_connection_second_request",
+      "passed": true,
+      "observed_status": "serial_time_candidate"
+    },
+    {
+      "case": "h2_overlap_without_stream_mapping",
+      "passed": true,
+      "observed_status": "ambiguous"
+    },
+    {
+      "case": "independently_observed_unique_transport_id",
+      "passed": true,
+      "observed_status": "transport_join"
+    },
+    {
+      "case": "coalesced_multi_stream_observation",
+      "passed": true,
+      "observed_status": "ambiguous"
+    },
+    {
+      "case": "clock_uncertainty_creates_overlap",
+      "passed": true,
+      "observed_status": "ambiguous"
+    },
+    {
+      "case": "different_connection",
+      "passed": true,
+      "observed_status": "unmatched"
+    },
+    {
+      "case": "missing_connection_metadata",
+      "passed": true,
+      "observed_status": "unknown"
+    },
+    {
+      "case": "late_packet_is_not_forced_into_nearest_request",
+      "passed": true,
+      "observed_status": "unmatched"
+    },
+    {
+      "case": "boundary_uncertainty_is_not_high_confidence",
+      "passed": true,
+      "observed_status": "weak_time_candidate"
+    },
+    {
+      "case": "invalid_interval_rejected",
+      "passed": true
+    }
+  ]
+}

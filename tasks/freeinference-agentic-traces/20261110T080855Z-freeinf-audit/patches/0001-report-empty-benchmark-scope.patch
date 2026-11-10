@@ -1,0 +1,17 @@
+--- a/paper/benchmark_vs_production/__init__.py
++++ b/paper/benchmark_vs_production/__init__.py
+@@ -35,6 +35,14 @@
+     """Draw the section's figures, and return their numbers beside the paper's."""
+     human = population.sessions_in_scope(figure_inputs.release, population.AGENTIC)
+     benchmark = population.sessions_in_scope(figure_inputs.release, population.SWE_BENCH)
++    # An empty comparison population has no median or trajectory distribution.
++    # Report this explicitly instead of drawing NaN medians or all-zero bands.
++    if human.requests.empty or benchmark.requests.empty:
++        missing = population.AGENTIC if human.requests.empty else population.SWE_BENCH
++        keys = ("turn_duration", "session_duration", "input_per_request", "user_prompt_size",
++                "trajectory_mix_benchmark", "trajectory_mix_human", "prefill_against_storage")
++        return {key: {"drawn": f"no: {missing} scope has no requests",
++                      "scope": f"{population.AGENTIC} and {population.SWE_BENCH}"} for key in keys}
+     numbers = {
+         "turn_duration": comparison.turn_duration(human, benchmark, section_directory),
+         "session_duration": comparison.session_duration(human, benchmark, section_directory),

@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "/workspace/freeinference-audit/scripts/smoke_official_cache.py"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:15:00.574769+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:15:01.140361+00:00",
+  "elapsed_seconds": 0.5655963039971539
+}

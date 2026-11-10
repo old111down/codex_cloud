@@ -1,0 +1,233 @@
+{
+  "paper_title": "From Requests to Sessions: A Large-Scale Characterization of Human-Driven Agentic Workloads",
+  "paper_url": "https://data.freeinference.org/pdf/paper/from-requests-to-sessions.pdf",
+  "pdf_sha256": "0ab3b7968bb57f3edd27d7102cb48d99a23c72c0fcb42e6178f81bd8ba077c46",
+  "pdf_pages": 18,
+  "main_text_pages": "1–13; references begin p13 and continue through p18",
+  "appendix": "None in retrieved18page version",
+  "audited_at_utc": "2026-11-10T08:12:54.158725+00:00",
+  "code_sha": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "figures": [
+    {
+      "number": 1,
+      "pdf_page": 2,
+      "description": "Agent execution hierarchy",
+      "panels": [
+        "session",
+        "turn",
+        "user step",
+        "LLM-tool loop"
+      ],
+      "evidence_kind": "conceptual diagram"
+    },
+    {
+      "number": 2,
+      "pdf_page": 4,
+      "description": "Session structure and token/cost distributions",
+      "panels": [
+        "a counts/session",
+        "b turn/session duration",
+        "c tokens/request",
+        "d session token-cost share"
+      ],
+      "evidence_kind": "production-derived statistics; cost model in d"
+    },
+    {
+      "number": 3,
+      "pdf_page": 4,
+      "description": "Context evolution by step",
+      "panels": [
+        "a token growth P25–P75",
+        "b role context shares"
+      ],
+      "evidence_kind": "production-derived token statistics"
+    },
+    {
+      "number": 4,
+      "pdf_page": 5,
+      "description": "Request and session latency",
+      "panels": [
+        "a Minimax-M2.7 TTFT/decode",
+        "b Kimi-K2.7-Code TTFT/decode",
+        "c session time shares",
+        "d 2x throughput what-if"
+      ],
+      "evidence_kind": "mixed: gateway measurement + inferred prefill/queueing + modeled speedup"
+    },
+    {
+      "number": 5,
+      "pdf_page": 6,
+      "description": "Tool effective latency and output size",
+      "panels": [
+        "a latency P5–P95 and mean",
+        "b result tokens P5–P95 and mean"
+      ],
+      "evidence_kind": "production-derived effective gaps/tokens"
+    },
+    {
+      "number": 6,
+      "pdf_page": 7,
+      "description": "Tool batching",
+      "panels": [
+        "a serial projected vs batch latency",
+        "b calls/request by category"
+      ],
+      "evidence_kind": "mixed observed batching and projected serial counterfactual"
+    },
+    {
+      "number": 7,
+      "pdf_page": 7,
+      "description": "Synchronous subagent stragglers",
+      "panels": [
+        "a imbalance by metric",
+        "b role/work/mixed fanout imbalance"
+      ],
+      "evidence_kind": "production-derived inferred subagent groups"
+    },
+    {
+      "number": 8,
+      "pdf_page": 8,
+      "description": "Prefix reuse and inter-request gap",
+      "panels": [
+        "a hit CDF by gap",
+        "b provider retention",
+        "c gaps by cause",
+        "d mean hit by cause"
+      ],
+      "evidence_kind": "provider-reported cache measurements + gap/category inference"
+    },
+    {
+      "number": 9,
+      "pdf_page": 8,
+      "description": "Append versus mutation cache hit",
+      "panels": [
+        "append",
+        "mutation"
+      ],
+      "evidence_kind": "production-derived transition labels/hit statistics"
+    },
+    {
+      "number": 10,
+      "pdf_page": 9,
+      "description": "TTL prefill and retained blocks",
+      "panels": [
+        "a prefill versus storage",
+        "b retained reusable/dead over active"
+      ],
+      "evidence_kind": "trace-driven prefix-cache simulation"
+    },
+    {
+      "number": 11,
+      "pdf_page": 9,
+      "description": "API and infrastructure cost by TTL",
+      "panels": [
+        "a API cost",
+        "b infrastructure cost"
+      ],
+      "evidence_kind": "trace-driven simulation + assumed prices/footprint"
+    },
+    {
+      "number": 12,
+      "pdf_page": 10,
+      "description": "Cheaper cache-read counterfactual",
+      "panels": [
+        "a prefill reduction",
+        "b API cost reduction"
+      ],
+      "evidence_kind": "hypothetical linear mutation-response simulation"
+    },
+    {
+      "number": 13,
+      "pdf_page": 10,
+      "description": "Lifecycle-signal reclamation",
+      "panels": [
+        "a dead blocks/active",
+        "b infrastructure cost"
+      ],
+      "evidence_kind": "hypothetical mutate/end signals in simulation"
+    },
+    {
+      "number": 14,
+      "pdf_page": 11,
+      "description": "SWE-Bench versus human workload",
+      "panels": [
+        "a turn duration",
+        "b session duration",
+        "c input tokens",
+        "d user prompt size",
+        "e TTL prefill/storage"
+      ],
+      "evidence_kind": "a–d trace comparison; e cache simulation"
+    },
+    {
+      "number": 15,
+      "pdf_page": 11,
+      "description": "Within-turn tool trajectories",
+      "panels": [
+        "a SWE-Bench",
+        "b human-driven"
+      ],
+      "evidence_kind": "production/benchmark derived time-normalized trajectories"
+    },
+    {
+      "number": 16,
+      "pdf_page": 12,
+      "description": "User intent evolution",
+      "panels": [
+        "a intent mix by turn",
+        "b next-intent transitions"
+      ],
+      "evidence_kind": "LLM/few-shot labels on sampled private prompt data"
+    }
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "pdf_page": 1,
+      "description": "Trace totals and harness statistics",
+      "scope_note": "Production trace summary including one SWE-Bench replay;14 listed labels =13human+1benchmark"
+    },
+    {
+      "number": 2,
+      "pdf_page": 2,
+      "description": "Comparison with prior traces",
+      "scope_note": "Literature/context comparison, not a raw-data reproduction target"
+    },
+    {
+      "number": 3,
+      "pdf_page": 3,
+      "description": "Internal production-trace field inventory",
+      "scope_note": "Includes messages; not the public release schema"
+    },
+    {
+      "number": 4,
+      "pdf_page": 5,
+      "description": "Shell-category example commands",
+      "scope_note": "Normalization examples, not commands to execute"
+    },
+    {
+      "number": 5,
+      "pdf_page": 6,
+      "description": "Tool category profile",
+      "scope_note": "Call/session/token/time/fail/batched shares; effective gap semantics"
+    },
+    {
+      "number": 6,
+      "pdf_page": 6,
+      "description": "Batching and subagent profile",
+      "scope_note": "Batch width/mix;subagent fanout and sync/async"
+    },
+    {
+      "number": 7,
+      "pdf_page": 8,
+      "description": "Context mutation causes and prefill attribution",
+      "scope_note": "Transition and session shares;prefill contribution under infinite-retention model"
+    }
+  ],
+  "special_limitations": [
+    "95% one-to-one reconstruction validation only on explicit-session-ID harness subset; subset size and full error breakdown not reported in paper",
+    "LLM intent annotation model name, labeling prompt/examples, human validation and accuracy/agreement are not reported in paper",
+    "Public release removes message text; internal Table3 must not be confused with public schema",
+    "Paper summary straggler magnitudes differ in wording/aggregation between introduction, Fig7 caption and §5.2; do not treat them as one identical quantile"
+  ]
+}

@@ -1,0 +1,28 @@
+{"downloaded_bytes": 134217728, "expected_bytes": 1817646481, "elapsed_seconds": 11.88}
+{"downloaded_bytes": 268435456, "expected_bytes": 1817646481, "elapsed_seconds": 22.82}
+{"downloaded_bytes": 402653184, "expected_bytes": 1817646481, "elapsed_seconds": 34.12}
+{"downloaded_bytes": 536870912, "expected_bytes": 1817646481, "elapsed_seconds": 45.26}
+{"downloaded_bytes": 671088640, "expected_bytes": 1817646481, "elapsed_seconds": 56.23}
+{"downloaded_bytes": 805306368, "expected_bytes": 1817646481, "elapsed_seconds": 67.25}
+{"downloaded_bytes": 939524096, "expected_bytes": 1817646481, "elapsed_seconds": 78.46}
+{"downloaded_bytes": 1073741824, "expected_bytes": 1817646481, "elapsed_seconds": 89.41}
+{"downloaded_bytes": 1207959552, "expected_bytes": 1817646481, "elapsed_seconds": 100.32}
+{"downloaded_bytes": 1342177280, "expected_bytes": 1817646481, "elapsed_seconds": 111.36}
+{"downloaded_bytes": 1476395008, "expected_bytes": 1817646481, "elapsed_seconds": 122.34}
+{"downloaded_bytes": 1610612736, "expected_bytes": 1817646481, "elapsed_seconds": 133.32}
+{"downloaded_bytes": 1744830464, "expected_bytes": 1817646481, "elapsed_seconds": 144.32}
+{
+  "week": "2026-08-30_2026-09-05",
+  "revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "source_url": "https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace/resolve/bb26cf72c9c20f2b05f765d88548156a74d3c253/release/2026-08-30_2026-09-05/processed/requests.parquet",
+  "expected_bytes": 1817646481,
+  "downloaded_bytes": 1817646481,
+  "expected_sha256": "e8f4f987f00442348ac09b1d6dc8865cf3dde299944423d54402f620244d3a6a",
+  "observed_sha256": "e8f4f987f00442348ac09b1d6dc8865cf3dde299944423d54402f620244d3a6a",
+  "start_utc": "2026-11-10T08:12:57.830648+00:00",
+  "end_utc": "2026-11-10T08:15:28.441587+00:00",
+  "elapsed_seconds": 150.6109958570014,
+  "free_bytes_before": 17581809664,
+  "status": "Verified",
+  "scope": "Public Parquet transfer/hash only; no trace rows printed"
+}

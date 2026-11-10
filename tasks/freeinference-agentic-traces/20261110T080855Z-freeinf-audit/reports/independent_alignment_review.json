@@ -1,0 +1,155 @@
+{
+  "review_type": "independent alignment/MVP source-and-log review; self-consistency review of reviewer-authored architecture/session reports",
+  "reviewed_at_utc": "2026-11-10T08:34:27.442721+00:00",
+  "overall_consistency_status": "Verified",
+  "real_mvp_status": "Unknown",
+  "real_agent_runs": 0,
+  "real_pcaps": 0,
+  "model_inference_calls": 0,
+  "new_network_tests_executed_by_reviewer": 0,
+  "upstream_modified": false,
+  "primary_source_commits": {
+    "freeinference_agentic_trace": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+    "hybridInference": "7f7585bc60a303f9dc8e2a0f219ab7f0b99f3255",
+    "hermes-agent": "b7db40d82568ea68ce321ac1ead3bfea354c7f56"
+  },
+  "checks": [
+    {
+      "check": "historical_vs_current_version",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "timestamp_conversion_vs_physical_event",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "current_db_insert_semantics",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "ttft_and_tool_gap_scope",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "three_gateway_id_namespaces",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "jwt_admin_dispatch_permissions",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "hermes_retry_id_and_start_reuse",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "hook_payload_and_queue_limitations",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "label_provenance_and_95pct_scope",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "mvp_not_executed",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "synthetic_11_checks_not_real_alignment",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    },
+    {
+      "check": "anonymous_catalog_scope",
+      "status": "Verified",
+      "scope": "source consistency and/or existing inspected logs; no new real-world validation"
+    }
+  ],
+  "findings": [
+    {
+      "id": "IR-AL-001",
+      "severity": "low",
+      "status": "resolved",
+      "file": "trace_pcap_alignment.md",
+      "issue": "F2 source path used export/release/schema.py",
+      "resolution": "original author corrected URL to release/schema.py; reviewer rechecked local text and upstream file path"
+    },
+    {
+      "id": "IR-AL-002",
+      "severity": "low",
+      "status": "resolved",
+      "file": "trace_pcap_alignment.md",
+      "issue": "PDF Section9 page was cited as12",
+      "resolution": "original author corrected to13; reviewer confirmed PDF page text"
+    }
+  ],
+  "unresolved_major_findings": [],
+  "limitations": [
+    "Reviewer authored architecture.md and session_reconstruction.md; their check is not an independent external review",
+    "No new network or model requests, no Hermes installation, no capture or real alignment test",
+    "Current Gateway snapshot does not prove historical deployment",
+    "11 passed synthetic cases do not measure true alignment accuracy"
+  ],
+  "reviewed_artifacts": [
+    {
+      "path": "trace_pcap_alignment.md",
+      "sha256": "75612157fc7d0ef3dd706ab8ae787bf1c0e2552d0f252b9356efa1a53f1a56f3",
+      "bytes": 19175
+    },
+    {
+      "path": "mvp_experiment_plan.md",
+      "sha256": "ac24eb5970cf3931daf55269d0e01ca5e72d240c547a039c0ecf2116335a99b4",
+      "bytes": 21883
+    },
+    {
+      "path": "architecture.md",
+      "sha256": "65fb5eedcd16b8e8dcd2a44380a06365a4de07c198fd3db77bb90cd8026153ba",
+      "bytes": 16789
+    },
+    {
+      "path": "session_reconstruction.md",
+      "sha256": "e9d33e61dab4227534453efafe2cd7cc1c4725b51d65520ec24cbf4550c2ea90",
+      "bytes": 19315
+    },
+    {
+      "path": "scripts/alignment/match_intervals.py",
+      "sha256": "35ab811555c23c8829138b3b248a724b8bfc3876f535049fd3e9f2cc9ce9b72f",
+      "bytes": 3553
+    },
+    {
+      "path": "scripts/alignment/synthetic_checks.py",
+      "sha256": "d552222aa0c895d769913214a36a752de9abef9d344fb8deb828822a84a5d9f0",
+      "bytes": 2971
+    },
+    {
+      "path": "scripts/alignment/check_public_gateway_metadata.py",
+      "sha256": "79e209a58d7fe857278e529a50d87bc6ea71238ce661f02d4476c59046f0a41a",
+      "bytes": 2289
+    },
+    {
+      "path": "logs/alignment_synthetic_checks.json",
+      "sha256": "fa8570463a15d1a5a1a62ad8b02a63a824cae23c5140615ef39e3c12e2ef8c8b",
+      "bytes": 360
+    },
+    {
+      "path": "logs/alignment_synthetic_checks.log",
+      "sha256": "adcba750f2565b5921e4b53753f16221fa1e2eeaedfb2f4fb1ae62f8b489452a",
+      "bytes": 1559
+    },
+    {
+      "path": "logs/alignment_public_http_checks.json",
+      "sha256": "b80ce4326df0e6a25c51b61b2929dd0b0a257a6ae085b13700f18cb2658413c9",
+      "bytes": 938
+    }
+  ]
+}

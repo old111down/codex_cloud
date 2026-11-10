@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "OMP_NUM_THREADS=2",
+    "OPENBLAS_NUM_THREADS=2",
+    "MKL_NUM_THREADS=2",
+    "TMPDIR=/workspace/freeinference-audit/private/runtime/tmp",
+    "MPLCONFIGDIR=/workspace/freeinference-audit/private/runtime/mpl",
+    "MPLBACKEND=Agg",
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "/workspace/freeinference-audit/scripts/resource_guard.py",
+    "--address-space-gib",
+    "8",
+    "--",
+    "make",
+    "figures",
+    "PYTHON=/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "PROCESSES=1"
+  ],
+  "cwd": "/workspace/freeinference-audit/private/runtime/readme_workspace",
+  "start_utc": "2026-11-10T08:25:55.173910+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:26:59.410799+00:00",
+  "elapsed_seconds": 64.23700753800222
+}

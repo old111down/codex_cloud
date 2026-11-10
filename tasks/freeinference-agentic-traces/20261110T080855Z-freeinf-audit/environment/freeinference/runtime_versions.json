@@ -1,0 +1,25 @@
+{
+  "python": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+  "python_compiler": "GCC 15.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "matplotlib": "3.11.2",
+    "tiktoken": "0.14.0",
+    "orjson": "3.13.0",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-bash": "0.25.1",
+    "pytest": "9.2.0",
+    "huggingface_hub": "2.4.0",
+    "numpy": "2.5.4",
+    "pip": "26.2.2",
+    "setuptools": "84.2.1"
+  },
+  "gpu_tools": {
+    "nvidia-smi": null,
+    "nvcc": null
+  },
+  "source_dependency_policy": "Official pyproject declarations, Python3.12, all required + huggingface + test extras. No compatibility substitutions.",
+  "package_import_path": "PYTHONPATH to pinned pristine source or private execution copy; no editable source install"
+}

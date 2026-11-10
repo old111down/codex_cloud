@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/workspace/traffic-repro-audit/.tools/miniforge3/bin/conda",
+    "create",
+    "-y",
+    "--override-channels",
+    "-c",
+    "conda-forge",
+    "-p",
+    "/workspace/freeinference-audit/.conda/freeinference",
+    "python=3.12",
+    "pip"
+  ],
+  "cwd": "/workspace/freeinference-audit",
+  "start_utc": "2026-11-10T08:10:56.581892+00:00",
+  "timeout_seconds": 600.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T08:11:05.045550+00:00",
+  "elapsed_seconds": 8.463705109999864
+}

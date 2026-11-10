@@ -1,0 +1,19 @@
+{
+  "dataset": "harvardMadsys/freeinference_agentic_trace",
+  "revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "license": "CC-BY-4.0",
+  "gated": false,
+  "parquet_files": 48,
+  "bytes": 8371191139,
+  "weeks": 16,
+  "timestamp_scope": "2026-05-17 through 2026-09-05 completion weeks; derived starts may predate a week",
+  "schema_consistent_across_selected_weeks": {
+    "sessions.parquet": true,
+    "requests.parquet": true,
+    "tool_calls.parquet": true
+  },
+  "all_actual_checksums_match": true,
+  "raw_jsonl_downloaded": false,
+  "raw_data_publication": false,
+  "cache_duplicate": false
+}
