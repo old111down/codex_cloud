@@ -35,6 +35,26 @@
 
 原版 `make figures` 需要显式指定 Conda `PYTHON`、正确的 release/simulation 数据路径。它会复用作者已经发布的缓存仿真结果；这不等于本轮独立计算全量缓存曲线。审计补丁仅针对缺少 SWE 子集时的空分母报告，见 [patches/](patches/)，没有用于全量原版结果。
 
+### 从干净目录下载与续跑
+
+先把本审计目录复制到独立的**私有工作副本**，在副本中执行，避免覆盖本仓库的历史报告。以下是修订后的操作说明，不是本轮重新下载数据的执行记录：
+
+```bash
+conda env create -p .conda/freeinference -f environment/freeinference/environment.yml
+.conda/freeinference/bin/python scripts/download_selected_week.py
+.conda/freeinference/bin/python scripts/download_processed_release.py
+```
+
+第一条下载命令会自动获取并验证固定HF revision的元数据，无需预先提供`private/evidence/hf_repo.json`。它仅下载Aug30周的`requests.parquet`，用于传输探测，尚不是完整可读的一周。第二条命令补齐全部周的三张表及manifest；已有部分目录会经校验后复用，无需删除或重复下载有效请求表。也可直接运行第二条而跳过单表探测。
+
+共享的`pinned_release_download.py`验证已有文件、LFS SHA-256、非LFS Git-blob SHA-1及`tables.json`的manifest绑定；不匹配的已有文件会失败并保留，不静默覆盖。每周使用文件级no-clobber发布并最后发布manifest，不声称非空目录的整体原子替换。完整缓存目录也会重新校验后才跳过传输。两条路径均保留5GiB磁盘余量；全量下载仍需约8.37GB额外数据空间。
+
+### PR评论修订
+
+[评审修复记录](../20261110T094927Z-pr3-reviewfix/README.md)保存三个P2缺陷、修复前失败、修复后回归及独立验收。导出器改为整批预检通过后才写公开工作树；复核器检查失败时先写`Failed`报告并非零退出，可用`--root`/`--output`把新复核写到另一目录。
+
+首轮科学运行、结果和原日志保留。`metadata.json`的历史artifact哈希绑定首轮封版快照；当前文件哈希以`reports/publication_manifest.json`及上述修订记录为准。修复不提升原论文的复现等级。
+
 ## 状态与公开范围
 
 `Verified` 只针对附证据的具体事实或运行；`Partially Verified` 表示执行或材料只覆盖一部分；`Failed` 保留实际错误；`Unknown` 表示无充分证据。合成输入、选出的 3 个真实 Session、作者缓存产物和全16周公开 processed Parquet 统计分别列示。

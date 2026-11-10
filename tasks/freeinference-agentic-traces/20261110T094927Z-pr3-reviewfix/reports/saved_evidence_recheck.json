@@ -1,0 +1,427 @@
+{
+  "status": "Verified",
+  "review_utc": "2026-11-10T09:55:28.149785+00:00",
+  "scope": "Independent read-only review of saved aggregates, source methods and execution logs; no author pipeline/model rerun",
+  "source_commit": "2b795dbf5eac490a7c081906fdce6cc7a184b7ef",
+  "dataset_revision": "bb26cf72c9c20f2b05f765d88548156a74d3c253",
+  "checks": [
+    {
+      "check": "complete_week_count",
+      "status": "Verified",
+      "actual": 16,
+      "expected": 16,
+      "scope": "public release weeks",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_top_level_harness_counts",
+      "status": "Verified",
+      "actual": {
+        "claude-code": 639,
+        "cline": 86,
+        "codex": 763,
+        "copilot": 295,
+        "eval:swe-bench": 1035,
+        "hermes": 3953,
+        "kilo": 797,
+        "oh-my-pi": 719,
+        "openclaw": 189,
+        "opencode": 1733,
+        "openhands": 22,
+        "pi": 1499,
+        "zcode": 197,
+        "zoo": 75
+      },
+      "expected": {
+        "claude-code": 639,
+        "cline": 86,
+        "codex": 763,
+        "copilot": 295,
+        "eval:swe-bench": 1035,
+        "hermes": 3953,
+        "kilo": 797,
+        "oh-my-pi": 719,
+        "openclaw": 189,
+        "opencode": 1733,
+        "openhands": 22,
+        "pi": 1499,
+        "zcode": 197,
+        "zoo": 75
+      },
+      "scope": "top-level includes SWE-Bench, excludes child sessions",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_session_count",
+      "status": "Verified",
+      "actual": 12002,
+      "expected": 12002,
+      "scope": "top-level includes SWE-Bench",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_request_count",
+      "status": "Verified",
+      "actual": 1186582,
+      "expected": 1186582,
+      "scope": "top-level includes SWE-Bench, excludes child requests",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_tool_call_count",
+      "status": "Verified",
+      "actual": 1213347,
+      "expected": 1213347,
+      "scope": "top-level includes SWE-Bench, excludes child tool calls",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_rounded_prompt_tokens",
+      "status": "Verified",
+      "actual": 209.2,
+      "expected": 209.2,
+      "scope": "top-level includes SWE-Bench; rounded at paper precision",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_rounded_cache_read_tokens",
+      "status": "Verified",
+      "actual": 197.1,
+      "expected": 197.1,
+      "scope": "top-level includes SWE-Bench; rounded at paper precision",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "Table1_rounded_completion_tokens",
+      "status": "Verified",
+      "actual": 552.5,
+      "expected": 552.5,
+      "scope": "top-level includes SWE-Bench; rounded at paper precision",
+      "evidence": "paper Table1 p1; reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_sessions",
+      "status": "Verified",
+      "actual": 14036,
+      "expected": 14036,
+      "scope": "all published rows=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_requests",
+      "status": "Verified",
+      "actual": 1222199,
+      "expected": 1222199,
+      "scope": "all published rows=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_tool_calls",
+      "status": "Verified",
+      "actual": 1275252,
+      "expected": 1275252,
+      "scope": "all published rows=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_prompt_tokens",
+      "status": "Verified",
+      "actual": 211481994898,
+      "expected": 211481994898,
+      "scope": "all published token totals=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_completion_tokens",
+      "status": "Verified",
+      "actual": 577732463,
+      "expected": 577732463,
+      "scope": "all published token totals=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "cohorts_partition_cache_read_tokens",
+      "status": "Verified",
+      "actual": 199114246782,
+      "expected": 199114246782,
+      "scope": "all published token totals=top-level+child",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "stable_account_salt_series",
+      "status": "Verified",
+      "actual": true,
+      "expected": true,
+      "scope": "declared salt series only; not proof of one account per person",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "account_count",
+      "status": "Verified",
+      "actual": 267,
+      "expected": 267,
+      "scope": "distinct pseudonymous accounts, not summed weekly counts",
+      "evidence": "README; reports/aggregate_stats.json"
+    },
+    {
+      "check": "session_ids_crossweek_unique",
+      "status": "Verified",
+      "actual": 0,
+      "expected": 0,
+      "scope": "published session identifiers across selected weeks",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "distribution_sum_session_harness",
+      "status": "Verified",
+      "actual": 14036,
+      "expected": 14036,
+      "scope": "aggregate arithmetic only",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "distribution_sum_top_level_session_harness",
+      "status": "Verified",
+      "actual": 12002,
+      "expected": 12002,
+      "scope": "aggregate arithmetic only",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "distribution_sum_request_harness",
+      "status": "Verified",
+      "actual": 1222199,
+      "expected": 1222199,
+      "scope": "aggregate arithmetic only",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "distribution_sum_tool_category",
+      "status": "Verified",
+      "actual": 1275252,
+      "expected": 1275252,
+      "scope": "aggregate arithmetic only",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "all_48_file_row_and_hash_checks",
+      "status": "Verified",
+      "actual": true,
+      "expected": true,
+      "scope": "3tables×16weeks:96 saved row/hash checks against author manifests",
+      "evidence": "reports/aggregate_stats.json"
+    },
+    {
+      "check": "full_period_numerics_finite",
+      "status": "Verified",
+      "actual": 0,
+      "expected": 0,
+      "scope": "author CLI numbers.json only; not proof every plot is semantically correct",
+      "evidence": "private/runtime/figures/numbers.json"
+    },
+    {
+      "check": "quality_report_agrees",
+      "status": "Verified",
+      "actual": 0,
+      "expected": 0,
+      "scope": "independent finite scan agrees with saved validator",
+      "evidence": "reports/paper_all_weeks_numeric_quality.json"
+    },
+    {
+      "check": "no_explicit_full_period_skips",
+      "status": "Verified",
+      "actual": [],
+      "expected": [],
+      "scope": "registered figure CLI outputs; missing modules still remain missing",
+      "evidence": "reports/paper_all_weeks_numeric_quality.json"
+    },
+    {
+      "check": "author_trace_summary_sessions",
+      "status": "Verified",
+      "actual": 12002,
+      "expected": 12002,
+      "scope": "author global top-level inventory cross-check",
+      "evidence": "private/runtime/figures/numbers.json"
+    },
+    {
+      "check": "author_trace_summary_requests",
+      "status": "Verified",
+      "actual": 1186582,
+      "expected": 1186582,
+      "scope": "author global top-level inventory cross-check",
+      "evidence": "private/runtime/figures/numbers.json"
+    },
+    {
+      "check": "author_trace_summary_tool_calls",
+      "status": "Verified",
+      "actual": 1213347,
+      "expected": 1213347,
+      "scope": "author global top-level inventory cross-check",
+      "evidence": "private/runtime/figures/numbers.json"
+    }
+  ],
+  "check_counts": {
+    "Verified": 28,
+    "Failed": 0
+  },
+  "observations": {
+    "all_rows": {
+      "sessions.parquet": 14036,
+      "requests.parquet": 1222199,
+      "tool_calls.parquet": 1275252
+    },
+    "top_level": {
+      "sessions": 12002,
+      "requests": 1186582,
+      "tool_calls": 1213347,
+      "tokens": {
+        "prompt_tokens": 209199292539,
+        "completion_tokens": 552524061,
+        "cache_read_tokens": 197064717672
+      }
+    },
+    "child": {
+      "sessions": 2034,
+      "requests": 35617,
+      "tool_calls": 61905,
+      "tokens": {
+        "prompt_tokens": 2282702359,
+        "completion_tokens": 25208402,
+        "cache_read_tokens": 2049529110
+      }
+    },
+    "human_top_level_sessions": 10967,
+    "negative_tool_gap_call_rows": 4,
+    "negative_tool_gap_distinct_request_batches": 3,
+    "cached_tokens_exceed_prompt_rows": 4,
+    "gap_formula_mismatch_rows": 0,
+    "full_figure_output_nonfinite_values": 0,
+    "one_week_figure_output_nonfinite_values": 8
+  },
+  "evidence_files": [
+    {
+      "path": "reports/aggregate_stats.json",
+      "sha256": "291a559613f142802fa4b6eb909e94483744edadbdfb6948188db6593e54195e"
+    },
+    {
+      "path": "reports/paper_all_weeks_numeric_quality.json",
+      "sha256": "7ffdcca5f8656a2ece000d32b6bc02bea82dc40f0fd25398f48582eafe3bc837"
+    },
+    {
+      "path": "reports/paper_one_week_numeric_quality.json",
+      "sha256": "3ec146fe38dafdb1dfcb60f62c7c26f9f7385f62868266b010479a0cc25cbce8"
+    },
+    {
+      "path": "private/runtime/figures/numbers.json",
+      "sha256": "adab8facfbc3f2a61de9c92ec6e992bb65c994d53b122cb99639738500461ca6"
+    },
+    {
+      "path": "paper_code_coverage.csv",
+      "sha256": "efc499808628b775fa41dc14f7cb4991e5ce88e2255b15e7bcc252c25e76dd6e"
+    },
+    {
+      "path": "data_dictionary.csv",
+      "sha256": "0452efb32f9946e3f8ddfddfd8da4f9ddab135fb5d0a49b1de71ae5b72f2190c"
+    },
+    {
+      "path": "logs/official_checks/paper_all_weeks.json",
+      "sha256": "dbd956517e82b1f1820f27be9e2b431e56c7685ca3864f392af520bfa2c5a8e3"
+    },
+    {
+      "path": "logs/official_checks/simulation_one_week_guarded.json",
+      "sha256": "147648ef9aece015446c869de46f71e6058c7f959d324ab481f09532c740bd95"
+    },
+    {
+      "path": "logs/official_checks/simulation_small_realdata.json",
+      "sha256": "be4cf2837e0dfb89b42de7143ee7c681d51d0e1721c056f07bd66f7b0a0480f4"
+    }
+  ],
+  "important_limits": [
+    "Author-supplied cache intermediate tables were redrawn; full sixteen-week cache simulation was not rerun.",
+    "The successful small cache replay uses3selected sessions/42requests, not the full paper population.",
+    "Count consistency is independently checked; raw private-source correctness and semantic label accuracy remain Unknown.",
+    "Full-method and numeric discrepancies are described in independent_reproduction_review.md; finite numbers do not imply paper equality."
+  ],
+  "additional_complete_week_review_status": "Verified",
+  "additional_complete_week_artifact_reviews": [
+    {
+      "week": "2026-05-31_2026-06-06",
+      "status": "Verified",
+      "check_counts": {
+        "Verified": 62,
+        "Failed": 0
+      }
+    },
+    {
+      "week": "2026-06-07_2026-06-13",
+      "status": "Verified",
+      "check_counts": {
+        "Verified": 60,
+        "Failed": 0
+      }
+    }
+  ],
+  "commands_executed": [
+    "python scripts/review_reproduction_evidence.py"
+  ],
+  "selected_numeric_claim_comparison": {
+    "claims": 73,
+    "compared": 69,
+    "within_printed_rounding": 67,
+    "outside_printed_rounding": [
+      {
+        "claim_id": "batch_mix_same",
+        "reported_value": "71.3",
+        "observed_value": 64.01737580122536,
+        "unit": "percent",
+        "rounding_tolerance": 0.050000001
+      },
+      {
+        "claim_id": "batch_mix_mixed",
+        "reported_value": "28.7",
+        "observed_value": 35.98262419877464,
+        "unit": "percent",
+        "rounding_tolerance": 0.050000001
+      }
+    ],
+    "unknown_claim_ids": [
+      "synchronous_subagent_calls",
+      "asynchronous_subagent_calls",
+      "intent_first_create",
+      "intent_later_continuing"
+    ],
+    "no_full_paper_reproduction_claimed": true
+  },
+  "confirmed_discrepancies": [
+    {
+      "id": "batch_mix",
+      "status": "Verified discrepancy",
+      "paper_same_percent": 71.3,
+      "observed_same_percent": 64.01737580122536,
+      "paper_mixed_percent": 28.7,
+      "observed_mixed_percent": 35.98262419877464,
+      "root_cause": "Unknown"
+    },
+    {
+      "id": "batch_width_estimand",
+      "status": "Verified semantic discrepancy",
+      "single_call_call_share_percent": 84.48155264313472,
+      "single_call_request_share_percent": 93.23158637717053,
+      "scope": "Human top-level requests with calls; zero-call requests excluded"
+    },
+    {
+      "id": "provider_letter_curve",
+      "status": "Partially Verified discrepancy",
+      "observation": "Public C first point below50% near811.652s;D near2051.923s,while paper describesD after15min",
+      "root_cause": "Unknown mapping/filter/version"
+    }
+  ],
+  "method_limits": [
+    "Human selection requires2userturns+1toolturn;SWE requires1toolturn only",
+    "Harness code uses intro phrase before user-agent,paper describes reversed precedence",
+    "No explicitRTT subtraction in public tool-gap path;upstream logged latency preprocessing Unknown",
+    "ToolTime/latency uses single-call requests;failures use nonnull outcome"
+  ],
+  "status_detail": "Consistency checks passed; unresolved scientific method/result discrepancies remain separate",
+  "input_errors": []
+}

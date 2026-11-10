@@ -1,5 +1,5 @@
 {
-  "reviewed_at_utc": "2026-11-10T08:59:00.288088+00:00",
+  "reviewed_at_utc": "2026-11-10T10:12:11Z",
   "status": "Verified",
   "scope": "Explicit allowlist with topical content review and root pattern/path/size/binary checks; no complete third-party source/data",
   "limitations": [
@@ -10,12 +10,18 @@
   "files": [
     {
       "path": "README.md",
-      "source_sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f",
-      "published_sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f",
-      "bytes": 4787,
+      "source_sha256": "d6d5354f856b4732acbd7ac0c4e72d3b8581acba0401eaca00fb3e4beca36a10",
+      "published_sha256": "d6d5354f856b4732acbd7ac0c4e72d3b8581acba0401eaca00fb3e4beca36a10",
+      "bytes": 6722,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "051271951d3af8305decc42c507eb88a74eb06b811b808a3c77338a755b4239f"
+      }
     },
     {
       "path": "architecture.md",
@@ -912,12 +918,18 @@
     },
     {
       "path": "metadata.json",
-      "source_sha256": "09dd768364799a9b5ad4ffd016c65d1ce94e89904144b7287b036f6518a4a948",
-      "published_sha256": "09dd768364799a9b5ad4ffd016c65d1ce94e89904144b7287b036f6518a4a948",
-      "bytes": 52904,
+      "source_sha256": "964d11e5d011ce38f88b4c9e6429cb135820ca85776e986551641966350fe28e",
+      "published_sha256": "964d11e5d011ce38f88b4c9e6429cb135820ca85776e986551641966350fe28e",
+      "bytes": 53727,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "09dd768364799a9b5ad4ffd016c65d1ce94e89904144b7287b036f6518a4a948"
+      }
     },
     {
       "path": "mvp_experiment_plan.md",
@@ -1659,30 +1671,48 @@
     },
     {
       "path": "scripts/download_processed_release.py",
-      "source_sha256": "8594208989057e8dbe847d2d0ae8081c5cb0de33925d1b65b4e9c1c2917b30df",
-      "published_sha256": "8594208989057e8dbe847d2d0ae8081c5cb0de33925d1b65b4e9c1c2917b30df",
-      "bytes": 4881,
+      "source_sha256": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2",
+      "published_sha256": "d1d703bc633a84f96d30cc2df4885667b6fe33d1c52d6f86e04954b0276444c2",
+      "bytes": 1091,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "8594208989057e8dbe847d2d0ae8081c5cb0de33925d1b65b4e9c1c2917b30df"
+      }
     },
     {
       "path": "scripts/download_selected_week.py",
-      "source_sha256": "adc6c4ebbde3f7ac2600bb57517ed5112f2c5e08fe9f2ffcfd57483f4850f0db",
-      "published_sha256": "adc6c4ebbde3f7ac2600bb57517ed5112f2c5e08fe9f2ffcfd57483f4850f0db",
-      "bytes": 2435,
+      "source_sha256": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6",
+      "published_sha256": "1d5136a976c88ad56f52d84536356ef8a18373ac06e05fd861005797f7a79ac6",
+      "bytes": 662,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "adc6c4ebbde3f7ac2600bb57517ed5112f2c5e08fe9f2ffcfd57483f4850f0db"
+      }
     },
     {
       "path": "scripts/export_reviewed_archive.py",
-      "source_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
-      "published_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
-      "bytes": 6924,
+      "source_sha256": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e",
+      "published_sha256": "23db96855f6de1ed0473d066a587b14d08d010a699db47e03a5e1dbf5f859d6e",
+      "bytes": 15701,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10"
+      }
     },
     {
       "path": "scripts/extract_extra_paper_metrics.py",
@@ -1692,6 +1722,15 @@
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "scripts/pinned_release_download.py",
+      "source_sha256": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075",
+      "published_sha256": "f5feb1247c19857068b7d8005ff2871f051a796776344a058ecb47243f4cb075",
+      "bytes": 10362,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original pinned-transfer helper added for the PR review correction"
     },
     {
       "path": "scripts/prepare_official_workspaces.py",
@@ -1740,12 +1779,18 @@
     },
     {
       "path": "scripts/review_reproduction_evidence.py",
-      "source_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722",
-      "published_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722",
-      "bytes": 10161,
+      "source_sha256": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26",
+      "published_sha256": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26",
+      "bytes": 15920,
       "publication_review": "approved",
       "transformations": [],
-      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch",
+      "revision_provenance": {
+        "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+        "run_id": "20261110T094927Z-pr3-reviewfix",
+        "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+        "previous_published_sha256": "da47f1e6c8fce3cd385705ae40eccd287295f61072687ffbdff58a0e9e3ab722"
+      }
     },
     {
       "path": "scripts/run_logged.py",
@@ -1856,8 +1901,14 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     }
   ],
-  "files_count": 205,
-  "bytes": 2317721,
+  "files_count": 206,
+  "bytes": 2339814,
   "scan_issues": [],
-  "withheld": "reports/withheld_artifacts.md"
+  "withheld": "reports/withheld_artifacts.md",
+  "revision_review": {
+    "run_id": "20261110T094927Z-pr3-reviewfix",
+    "comment_url": "https://github.com/old111down/codex_cloud/pull/3#issuecomment-6764182774",
+    "baseline_commit": "34678ab6d88546fcc3d038706a38b41afbbba73d",
+    "historical_scientific_results_unchanged": true
+  }
 }

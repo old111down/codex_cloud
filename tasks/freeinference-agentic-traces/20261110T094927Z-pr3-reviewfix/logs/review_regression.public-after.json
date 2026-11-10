@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-q",
+    "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py"
+  ],
+  "cwd": "/workspace/codex_cloud_freeinference",
+  "start_utc": "2026-11-10T09:57:23.037843+00:00",
+  "end_utc": "2026-11-10T09:57:23.965902+00:00",
+  "exit_code": 0,
+  "target_script_sha256": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26",
+  "baseline_commit": null,
+  "fixture_mode": "Public archived aggregate/CSV/log copies plus explicitly synthetic minimal CLI dataset.trace_summary; no private evidence dependency",
+  "target_override": "Current fixed archived script",
+  "scope": "Only pytest temporary copies and outputs; no scientific experiment rerun"
+}

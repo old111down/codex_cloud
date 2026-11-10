@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-q",
+    "tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_independent_export_boundaries.py"
+  ],
+  "cwd": "/workspace/codex_cloud_freeinference",
+  "start_utc": "2026-11-10T10:02:57.310571+00:00",
+  "timeout_seconds": 60.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-10T10:02:57.879040+00:00",
+  "elapsed_seconds": 0.568479889999935
+}

@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/workspace/freeinference-audit/.conda/freeinference/bin/python",
+    "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T080855Z-freeinf-audit/scripts/review_reproduction_evidence.py",
+    "--root",
+    "/workspace/freeinference-audit",
+    "--output",
+    "/workspace/codex_cloud_freeinference/tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/reports/saved_evidence_recheck.json"
+  ],
+  "cwd": "/workspace/codex_cloud_freeinference",
+  "start_utc": "2026-11-10T09:55:28.102923+00:00",
+  "end_utc": "2026-11-10T09:55:28.157797+00:00",
+  "exit_code": 0,
+  "target_script_sha256": "64c7199d5cd51b3af89a75d551e629f48af0d97761a1a0443f81a9e14765bf26",
+  "original_evidence_hashes_before": {
+    "reports/aggregate_stats.json": "291a559613f142802fa4b6eb909e94483744edadbdfb6948188db6593e54195e",
+    "private/runtime/figures/numbers.json": "adab8facfbc3f2a61de9c92ec6e992bb65c994d53b122cb99639738500461ca6",
+    "reports/independent_reproduction_review.json": "cf220f957e86eb59260679c1ab864fe37b91dc7164220ddfeb62bcf46831ef39",
+    "reports/independent_full_week_review.json": "18d9f9ee1e55669d8aed79b053393d2d5a8ee26ed5ad707f02425644f413d831"
+  },
+  "original_evidence_hashes_after": {
+    "reports/aggregate_stats.json": "291a559613f142802fa4b6eb909e94483744edadbdfb6948188db6593e54195e",
+    "private/runtime/figures/numbers.json": "adab8facfbc3f2a61de9c92ec6e992bb65c994d53b122cb99639738500461ca6",
+    "reports/independent_reproduction_review.json": "cf220f957e86eb59260679c1ab864fe37b91dc7164220ddfeb62bcf46831ef39",
+    "reports/independent_full_week_review.json": "18d9f9ee1e55669d8aed79b053393d2d5a8ee26ed5ad707f02425644f413d831"
+  },
+  "original_evidence_unchanged": true,
+  "scope": "Read-only recheck of prior saved aggregates; output only in new review-fix run; no scientific computation rerun"
+}

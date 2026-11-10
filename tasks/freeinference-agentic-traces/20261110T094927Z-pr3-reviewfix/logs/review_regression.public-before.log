@@ -1,0 +1,252 @@
+.FFFFFFFFF.                                                              [100%]
+=================================== FAILURES ===================================
+____________________ test_request_count_failure_is_reported ____________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_request_count_failure_is_0/audit')
+
+    def test_request_count_failure_is_reported(audit_root):
+        change_json(audit_root, 'reports/aggregate_stats.json',
+                    lambda value: value['cohort_totals']['top_level'].__setitem__('requests', 1186581))
+        result, output = invoke(audit_root)
+>       report = assert_failed(result, output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_request_count_failure_is_0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+__________________ test_manifest_boolean_failure_is_reported ___________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_manifest_boolean_failure_0/audit')
+
+    def test_manifest_boolean_failure_is_reported(audit_root):
+        def mutate(value):
+            value['weeks'][0]['checks']['requests.parquet:sha256_equal_tables_manifest'] = False
+        change_json(audit_root, 'reports/aggregate_stats.json', mutate)
+        result, output = invoke(audit_root)
+>       report = assert_failed(result, output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:123: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_manifest_boolean_failure_0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+_____________________ test_multiple_failures_are_retained ______________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_multiple_failures_are_ret0/audit')
+
+    def test_multiple_failures_are_retained(audit_root):
+        def mutate(value):
+            value['cohort_totals']['top_level']['requests'] -= 1
+            value['weeks'][0]['checks']['requests.parquet:sha256_equal_tables_manifest'] = False
+        change_json(audit_root, 'reports/aggregate_stats.json', mutate)
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_multiple_failures_are_ret0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+________________ test_additional_week_failure_propagates[root] _________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p0/audit')
+level = 'root'
+
+    @pytest.mark.parametrize('level', ['root', 'week', 'check_counts'])
+    def test_additional_week_failure_propagates(audit_root, level):
+        def mutate(value):
+            if level == 'root':
+                value['status'] = 'Failed'
+            elif level == 'week':
+                value['weeks'][0]['status'] = 'Failed'
+            else:
+                value['weeks'][0]['check_counts']['Failed'] = 1
+        change_json(audit_root, 'reports/independent_full_week_review.json', mutate)
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:148: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+________________ test_additional_week_failure_propagates[week] _________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p1/audit')
+level = 'week'
+
+    @pytest.mark.parametrize('level', ['root', 'week', 'check_counts'])
+    def test_additional_week_failure_propagates(audit_root, level):
+        def mutate(value):
+            if level == 'root':
+                value['status'] = 'Failed'
+            elif level == 'week':
+                value['weeks'][0]['status'] = 'Failed'
+            else:
+                value['weeks'][0]['check_counts']['Failed'] = 1
+        change_json(audit_root, 'reports/independent_full_week_review.json', mutate)
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:148: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p1/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+____________ test_additional_week_failure_propagates[check_counts] _____________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p2/audit')
+level = 'check_counts'
+
+    @pytest.mark.parametrize('level', ['root', 'week', 'check_counts'])
+    def test_additional_week_failure_propagates(audit_root, level):
+        def mutate(value):
+            if level == 'root':
+                value['status'] = 'Failed'
+            elif level == 'week':
+                value['weeks'][0]['status'] = 'Failed'
+            else:
+                value['weeks'][0]['check_counts']['Failed'] = 1
+        change_json(audit_root, 'reports/independent_full_week_review.json', mutate)
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:148: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_additional_week_failure_p2/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+>       assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+E       AssertionError: A failed consistency review must exit nonzero
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...match_rows": 0, "full_figure_output_nonfinite_values": 0, "one_week_figure_output_nonfinite_values": 8}}\n', stderr='').returncode
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:93: AssertionError
+___________________ test_missing_input_writes_failure_report ___________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_missing_input_writes_fail0/audit')
+
+    def test_missing_input_writes_failure_report(audit_root):
+        (audit_root / 'reports/aggregate_stats.json').unlink()
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:155: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-... or directory: \'/tmp/pytest-of-agent/pytest-6/test_missing_input_writes_fail0/audit/reports/aggregate_stats.json\'\n')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_missing_input_writes_fail0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+        assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+>       assert output.is_file(), 'Failure must persist a machine-readable report before exit'
+E       AssertionError: Failure must persist a machine-readable report before exit
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/tmp/pytest-of-agent/pytest-6/test_missing_input_writes_fail0/audit/reports/independent_reproduction_review.json').is_file
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:94: AssertionError
+__________________ test_malformed_input_writes_failure_report __________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_malformed_input_writes_fa0/audit')
+
+    def test_malformed_input_writes_failure_report(audit_root):
+        (audit_root / 'private/runtime/figures/numbers.json').write_text('{"dataset":')
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:161: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...xpecting value", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 12 (char 11)\n')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_malformed_input_writes_fa0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+        assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+>       assert output.is_file(), 'Failure must persist a machine-readable report before exit'
+E       AssertionError: Failure must persist a machine-readable report before exit
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/tmp/pytest-of-agent/pytest-6/test_malformed_input_writes_fa0/audit/reports/independent_reproduction_review.json').is_file
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:94: AssertionError
+_________________ test_invalid_structure_writes_failure_report _________________
+
+audit_root = PosixPath('/tmp/pytest-of-agent/pytest-6/test_invalid_structure_writes_0/audit')
+
+    def test_invalid_structure_writes_failure_report(audit_root):
+        (audit_root / 'reports/paper_all_weeks_numeric_quality.json').write_text('[]')
+>       report = assert_failed(*invoke(audit_root))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = CompletedProcess(args=['/workspace/freeinference-audit/.conda/freeinference/bin/python', '/tmp/pytest-of-agent/pytest-...                            ~~~~~~~^^^^^^^^^^^^^^^^^^^\nTypeError: list indices must be integers or slices, not str\n')
+output = PosixPath('/tmp/pytest-of-agent/pytest-6/test_invalid_structure_writes_0/audit/reports/independent_reproduction_review.json')
+
+    def assert_failed(result, output):
+        assert result.returncode != 0, 'A failed consistency review must exit nonzero'
+>       assert output.is_file(), 'Failure must persist a machine-readable report before exit'
+E       AssertionError: Failure must persist a machine-readable report before exit
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/tmp/pytest-of-agent/pytest-6/test_invalid_structure_writes_0/audit/reports/independent_reproduction_review.json').is_file
+
+tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py:94: AssertionError
+=========================== short test summary info ============================
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_request_count_failure_is_reported
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_manifest_boolean_failure_is_reported
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_multiple_failures_are_retained
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_additional_week_failure_propagates[root]
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_additional_week_failure_propagates[week]
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_additional_week_failure_propagates[check_counts]
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_missing_input_writes_failure_report
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_malformed_input_writes_failure_report
+FAILED tasks/freeinference-agentic-traces/20261110T094927Z-pr3-reviewfix/scripts/test_review_status.py::test_invalid_structure_writes_failure_report
+9 failed, 2 passed in 0.64s
