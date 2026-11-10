@@ -392,6 +392,16 @@
 ["env", "PYTHONDONTWRITEBYTECODE=1", "PYTHONPATH=/workspace/freeinference-audit/upstream/freeinference_agentic_trace", "OMP_NUM_THREADS=2", "OPENBLAS_NUM_THREADS=2", "MKL_NUM_THREADS=2", ".conda/freeinference/bin/python", "scripts/compare_complete_week_simulation.py", "--week", "2026-05-31_2026-06-06", "--recomputed", "private/runtime/complete_mixed_scope_simulation", "--output", "reports/complete_mixed_scope_week_simulation_comparison.json"]
 ```
 
+## archive_scientific
+
+- UTC：2026-11-10T08:56:57.340542+00:00 → 2026-11-10T08:56:58.908293+00:00
+- cwd：`/workspace/codex_cloud_freeinference`；exit：0
+- [原始命令元数据](logs/archive_scientific.json) / [输出](logs/archive_scientific.log)
+
+```json
+["git", "-c", "credential.helper=", "-c", "credential.helper=!gh auth git-credential", "push", "origin", "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit"]
+```
+
 ## 归档与只读源获取
 
 GitHub身份/写权限、main与工作区检查和来源HTTP获取另记录于source_provenance、alignment_evidence及related source_manifest。没有保存凭据或完整平台状态。归档命令的检查点和远程SHA见对应收据；Git提交不会被描述为实验验证。

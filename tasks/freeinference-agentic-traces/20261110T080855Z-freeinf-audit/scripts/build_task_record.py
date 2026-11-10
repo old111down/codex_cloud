@@ -101,6 +101,12 @@ def main():
                 artifact["sha256"] = record["published_sha256"]
     if (ROOT / "reports/remote_verification.json").exists():
         metadata["remote_verification"] = load(ROOT / "reports/remote_verification.json")
+        if args.finish:
+            metadata["archive_completed_time_utc"] = metadata["remote_verification"]["checked_at_utc"]
+            metadata["archive_completed_time_scope"] = "Scientific payload commit verified remotely and PR created; final closure commit is verified externally in PR body/final response"
+    if (ROOT / "reports/pull_request_receipt.json").exists():
+        metadata["pull_request_receipt"] = load(ROOT / "reports/pull_request_receipt.json")
+    metadata["publication_review"]["status"] = "Verified" if all(x["publication_review"] in {"approved", "sanitized"} for x in metadata["artifacts"]) else "Partially Verified"
     (ROOT / "metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n")
     elapsed = (utc(now) - utc(info["t0_utc"])).total_seconds()
     lines = ["# 实际执行时间线", "", f"T0：{info['t0_utc']}；硬截止：{info['deadline_utc']}；本记录生成：{now}。", "",
@@ -115,6 +121,8 @@ def main():
              "| 08:27起 | 论文/数据/时间与ID独立复核；分母差异、报告集成、公开安全审查 | 未验证根因保持Unknown |",
              "| 08:38:33–08:38:35 | 首个检查点提交/推送 | 远程与本地59f93ca6eff0e53c9086a28e92750d14b3218d3d相同 |", "",
              "| 08:44–08:53 | 两个完整小周独立缓存模拟与四表逐键比较 | Jun07与含SWE的May31；全16周仍partial |", "",
+             "| 08:56:57–08:56:58 | 科学证据封版推送 | 918e317a93f9f63351aa0fbd6b9dfdc6ea465985远程核实 |",
+             "| 08:57:36 | 创建PR #3 → main并附加任务 | PR保持open，不合并 |", "",
              "后续归档操作与远程提交收据见 `reports/remote_verification.json`、`reports/checkpoints.json`（生成后）。", "",
              "## 阻断及停止原因", "",
              "原始维护者日志/测试、95%验证集、intent正文/标签未公开；精确MiMo授权路由、capture权限未建立；未启动付费推理。完整cache重算未在本轮局部时限完成，保留小子集与作者中间表的不同证据等级。", "",

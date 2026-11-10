@@ -1,8 +1,8 @@
 # 实际执行时间线
 
-T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成：2026-11-10T08:56:33Z。
+T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成：2026-11-10T08:58:59Z。
 
-截至记录生成累计 50.08 分钟；没有等待耗尽预算。并行子任务的时段相互重叠，不相加冒充总墙钟时间。
+截至记录生成累计 52.52 分钟；没有等待耗尽预算。并行子任务的时段相互重叠，不相加冒充总墙钟时间。
 
 | UTC时段 | 已执行阶段 | 状态/范围 |
 |---|---|---|
@@ -16,6 +16,9 @@ T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成�
 | 08:38:33–08:38:35 | 首个检查点提交/推送 | 远程与本地59f93ca6eff0e53c9086a28e92750d14b3218d3d相同 |
 
 | 08:44–08:53 | 两个完整小周独立缓存模拟与四表逐键比较 | Jun07与含SWE的May31；全16周仍partial |
+
+| 08:56:57–08:56:58 | 科学证据封版推送 | 918e317a93f9f63351aa0fbd6b9dfdc6ea465985远程核实 |
+| 08:57:36 | 创建PR #3 → main并附加任务 | PR保持open，不合并 |
 
 后续归档操作与远程提交收据见 `reports/remote_verification.json`、`reports/checkpoints.json`（生成后）。
 
@@ -66,3 +69,4 @@ T0：2026-11-10T08:06:28Z；硬截止：2026-11-10T11:06:28Z；本记录生成�
 | 2026-11-10T08:49:16.915491+00:00 | 2026-11-10T08:52:27.782666+00:00 | [simulation_complete_mixed_scope_week](logs/official_checks/simulation_complete_mixed_scope_week.json) | 0 |
 | 2026-11-10T08:50:13.239939+00:00 | 2026-11-10T08:50:13.959851+00:00 | [compare_complete_smallest_week_with_footer](logs/official_checks/compare_complete_smallest_week_with_footer.json) | 0 |
 | 2026-11-10T08:52:48.762567+00:00 | 2026-11-10T08:52:49.378455+00:00 | [compare_complete_mixed_scope_week](logs/official_checks/compare_complete_mixed_scope_week.json) | 0 |
+| 2026-11-10T08:56:57.340542+00:00 | 2026-11-10T08:56:58.908293+00:00 | [archive_scientific](logs/archive_scientific.json) | 0 |

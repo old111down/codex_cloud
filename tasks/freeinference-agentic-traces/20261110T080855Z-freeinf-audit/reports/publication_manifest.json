@@ -1,5 +1,5 @@
 {
-  "reviewed_at_utc": "2026-11-10T08:56:56.528760+00:00",
+  "reviewed_at_utc": "2026-11-10T08:59:00.288088+00:00",
   "status": "Verified",
   "scope": "Explicit allowlist with topical content review and root pattern/path/size/binary checks; no complete third-party source/data",
   "limitations": [
@@ -147,18 +147,18 @@
     },
     {
       "path": "execution_log.md",
-      "source_sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38",
-      "published_sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38",
-      "bytes": 24998,
+      "source_sha256": "e3759b0436e8bd67b56f0c79944f2915255ecc01623bd65ff69cf01832ceda30",
+      "published_sha256": "e3759b0436e8bd67b56f0c79944f2915255ecc01623bd65ff69cf01832ceda30",
+      "bytes": 25441,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "execution_timeline.md",
-      "source_sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae",
-      "published_sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae",
-      "bytes": 7923,
+      "source_sha256": "2b5009a60f0c7ebb8e1b7a16d88732daded649613adb9fcafc93e389c95a2295",
+      "published_sha256": "2b5009a60f0c7ebb8e1b7a16d88732daded649613adb9fcafc93e389c95a2295",
+      "bytes": 8237,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -231,6 +231,24 @@
       "source_sha256": "6b95c40fc2a804810267d96151607022ad0d1d3e006b9debf5136b00670bd9f8",
       "published_sha256": "6b95c40fc2a804810267d96151607022ad0d1d3e006b9debf5136b00670bd9f8",
       "bytes": 661,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/archive_scientific.json",
+      "source_sha256": "e5997c451b53f1495b77c70eae1c8d8769edfa9e345b515fa519b850a2a7b09c",
+      "published_sha256": "e5997c451b53f1495b77c70eae1c8d8769edfa9e345b515fa519b850a2a7b09c",
+      "bytes": 511,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
+      "path": "logs/archive_scientific.log",
+      "source_sha256": "3f06e973bc9db4494e18110dc69024894d5465854d43f8b7cc9b1ce2eeb3618e",
+      "published_sha256": "3f06e973bc9db4494e18110dc69024894d5465854d43f8b7cc9b1ce2eeb3618e",
+      "bytes": 205,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -894,9 +912,9 @@
     },
     {
       "path": "metadata.json",
-      "source_sha256": "f6d5ec5cd44da927c5a8214260304696ed29be85107dd957d56ada87451379c9",
-      "published_sha256": "f6d5ec5cd44da927c5a8214260304696ed29be85107dd957d56ada87451379c9",
-      "bytes": 51481,
+      "source_sha256": "09dd768364799a9b5ad4ffd016c65d1ce94e89904144b7287b036f6518a4a948",
+      "published_sha256": "09dd768364799a9b5ad4ffd016c65d1ce94e89904144b7287b036f6518a4a948",
+      "bytes": 52904,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1047,9 +1065,9 @@
     },
     {
       "path": "reports/checkpoints.json",
-      "source_sha256": "8fbad8437a9c0d74da33a17d8d253cd3c300e1679067fa33f96e3553aeb22de0",
-      "published_sha256": "8fbad8437a9c0d74da33a17d8d253cd3c300e1679067fa33f96e3553aeb22de0",
-      "bytes": 860,
+      "source_sha256": "370822059871b1e6b5d7e0ff9d457873eb5e87c4584db062bd391e6326bb0e2c",
+      "published_sha256": "370822059871b1e6b5d7e0ff9d457873eb5e87c4584db062bd391e6326bb0e2c",
+      "bytes": 1559,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1182,9 +1200,9 @@
     },
     {
       "path": "reports/final_validation.json",
-      "source_sha256": "7ae1d9b9e7e748a5a90a62e0f99e728216a61d85731d5f2692695f2435a26df7",
-      "published_sha256": "7ae1d9b9e7e748a5a90a62e0f99e728216a61d85731d5f2692695f2435a26df7",
-      "bytes": 1178,
+      "source_sha256": "add9bcd5bc477b27002a96db451ade42b7ad4f628068e5a4475e4d1e9c40315a",
+      "published_sha256": "add9bcd5bc477b27002a96db451ade42b7ad4f628068e5a4475e4d1e9c40315a",
+      "bytes": 1177,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1316,6 +1334,15 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
+      "path": "reports/pull_request_receipt.json",
+      "source_sha256": "0437292c48834ef942c8695f9684c5e0d3eac88d293a17fbc5782649733aef40",
+      "published_sha256": "0437292c48834ef942c8695f9684c5e0d3eac88d293a17fbc5782649733aef40",
+      "bytes": 338,
+      "publication_review": "approved",
+      "transformations": [],
+      "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
+    },
+    {
       "path": "reports/quality_checks.csv",
       "source_sha256": "224da674d2c6e640cc78c807ad55a1200c29d508d79853de2e33a163e36df749",
       "published_sha256": "224da674d2c6e640cc78c807ad55a1200c29d508d79853de2e33a163e36df749",
@@ -1344,18 +1371,18 @@
     },
     {
       "path": "reports/remote_verification.json",
-      "source_sha256": "3a13b8c0a38cf611bebe7e01dcdcf69c6829b81839108beaf7c80651d63caa42",
-      "published_sha256": "3a13b8c0a38cf611bebe7e01dcdcf69c6829b81839108beaf7c80651d63caa42",
-      "bytes": 519,
+      "source_sha256": "8f80857baa24fdd88c4c6b78844e03ac58c6cfe454361a5e0e0a9cbf05fb36b3",
+      "published_sha256": "8f80857baa24fdd88c4c6b78844e03ac58c6cfe454361a5e0e0a9cbf05fb36b3",
+      "bytes": 616,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     },
     {
       "path": "reports/reproduction_results.csv",
-      "source_sha256": "6d20efe14d9c059dd9eae9bbf739d332a3d3024dfec6b21ec8a5dfa2c49449d1",
-      "published_sha256": "6d20efe14d9c059dd9eae9bbf739d332a3d3024dfec6b21ec8a5dfa2c49449d1",
-      "bytes": 25349,
+      "source_sha256": "f1d60e9c40d8c909a993194731ca3dd18240a75d3ca0f2f8e7bcaa5e318accde",
+      "published_sha256": "f1d60e9c40d8c909a993194731ca3dd18240a75d3ca0f2f8e7bcaa5e318accde",
+      "bytes": 25810,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1587,9 +1614,9 @@
     },
     {
       "path": "scripts/build_task_record.py",
-      "source_sha256": "afb5076b994fb4fd2adecc63ac0ac4c61553cec4619c807cacb33b93c598e3a4",
-      "published_sha256": "afb5076b994fb4fd2adecc63ac0ac4c61553cec4619c807cacb33b93c598e3a4",
-      "bytes": 14703,
+      "source_sha256": "d576a983950ccdc76b2ce32c515b7b940f20ab4320f80492ef83a7bf4cdfb8ed",
+      "published_sha256": "d576a983950ccdc76b2ce32c515b7b940f20ab4320f80492ef83a7bf4cdfb8ed",
+      "bytes": 15567,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1650,9 +1677,9 @@
     },
     {
       "path": "scripts/export_reviewed_archive.py",
-      "source_sha256": "71eb9d8aa1ec7332b277f5d9ca2fa360be4b4cfd5e7c45b8141e5cbcf66713c6",
-      "published_sha256": "71eb9d8aa1ec7332b277f5d9ca2fa360be4b4cfd5e7c45b8141e5cbcf66713c6",
-      "bytes": 6824,
+      "source_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
+      "published_sha256": "e186f8e86e261416fdd13ffca62a59a4b5adb05a0fcf94a64bbd357823d2ec10",
+      "bytes": 6924,
       "publication_review": "approved",
       "transformations": [],
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
@@ -1829,8 +1856,8 @@
       "kind": "Original audit analysis/metadata/script, inspected log, environment declaration or necessary patch"
     }
   ],
-  "files_count": 202,
-  "bytes": 2312267,
+  "files_count": 205,
+  "bytes": 2317721,
   "scan_issues": [],
   "withheld": "reports/withheld_artifacts.md"
 }

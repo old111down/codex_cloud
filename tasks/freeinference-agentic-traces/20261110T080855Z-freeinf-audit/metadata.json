@@ -6,11 +6,11 @@
   "run_id": "20261110T080855Z-freeinf-audit",
   "archive_repository": "https://github.com/old111down/codex_cloud",
   "start_time_utc": "2026-11-10T08:06:28Z",
-  "end_time_utc": null,
+  "end_time_utc": "2026-11-10T08:58:59Z",
   "archive_started_time_utc": "2026-11-10T08:08:55Z",
-  "archive_completed_time_utc": null,
+  "archive_completed_time_utc": "2026-11-10T08:58:28Z",
   "deadline_utc": "2026-11-10T11:06:28Z",
-  "record_generated_at_utc": "2026-11-10T08:56:33Z",
+  "record_generated_at_utc": "2026-11-10T08:58:59Z",
   "objective": "Audit full paper, public implementation/data/labels and actual CPU execution; design defensible self-collected trace–PCAP alignment and Hermes MVP without claiming unrun success.",
   "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
   "related_runs": [],
@@ -1131,6 +1131,28 @@
         "logs/official_checks/compare_complete_mixed_scope_week.json",
         "logs/official_checks/compare_complete_mixed_scope_week.log"
       ]
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "credential.helper=!gh auth git-credential",
+        "push",
+        "origin",
+        "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit"
+      ],
+      "cwd": "/workspace/codex_cloud_freeinference",
+      "start_time_utc": "2026-11-10T08:56:57.340542+00:00",
+      "end_time_utc": "2026-11-10T08:56:58.908293+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "Process outcome only; scientific scope is qualified in reproduction_report.md",
+      "evidence": [
+        "logs/archive_scientific.json",
+        "logs/archive_scientific.log"
+      ]
     }
   ],
   "completed_work": [
@@ -1336,18 +1358,18 @@
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
       "publication_review": "approved",
-      "sha256": "b4a9c576773e79dcb373876e6403fa0694a43d75e366a8354c381c519adaa3ae"
+      "sha256": "2b5009a60f0c7ebb8e1b7a16d88732daded649613adb9fcafc93e389c95a2295"
     },
     {
       "path": "execution_log.md",
       "status": "Verified",
       "description": "Original audit artifact; status refers to presence, not full-paper success",
       "publication_review": "approved",
-      "sha256": "655535d5a6e9fe3c0761c8ca56b33e93a7352b0509d85f871ef24a79fd3a9a38"
+      "sha256": "e3759b0436e8bd67b56f0c79944f2915255ecc01623bd65ff69cf01832ceda30"
     }
   ],
   "publication_review": {
-    "status": "Partially Verified",
+    "status": "Verified",
     "manifest": "reports/publication_manifest.json",
     "withheld_manifest": "reports/withheld_artifacts.md",
     "limitations": [
@@ -1357,7 +1379,7 @@
   "final_status": "Partially Verified",
   "final_status_scope": "Audit evidence complete within scope;paper results and downstream network feasibility only partially verified",
   "end_time_scope": "Report sealing time; subsequent push/PR-head verification is recorded in the PR body and final response without a circular self-commit assertion",
-  "pull_request_url": null,
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/3",
   "limitations": [
     "NoPCAP/noAgent/modelinference",
     "Nohistoricalrawlogs/intentdata",
@@ -1366,15 +1388,28 @@
   ],
   "remote_verification": {
     "status": "Verified",
-    "scope": "First scientific checkpoint only; enclosing later commits are verified separately in PR/reply",
+    "scope": "Scientific payload checkpoint, verified by local SHA, git ls-remote and GitHub PR head; final closure commit recorded externally",
     "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
-    "commit_sha": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
-    "checked_at_utc": "2026-11-10T08:41:03.650978+00:00",
+    "commit_sha": "918e317a93f9f63351aa0fbd6b9dfdc6ea465985",
+    "checked_at_utc": "2026-11-10T08:58:28Z",
     "evidence": [
-      "logs/archive_checkpoint.json",
-      "logs/archive_checkpoint.log"
+      "logs/archive_scientific.json",
+      "logs/archive_scientific.log",
+      "reports/pull_request_receipt.json"
     ],
     "local_equals_remote": true,
-    "remote_read_method": "git ls-remote --heads origin <branch>"
+    "remote_read_method": "git ls-remote --heads origin <branch>",
+    "remote_equals_pr_head": true
+  },
+  "archive_completed_time_scope": "Scientific payload commit verified remotely and PR created; final closure commit is verified externally in PR body/final response",
+  "pull_request_receipt": {
+    "url": "https://github.com/old111down/codex_cloud/pull/3",
+    "number": 3,
+    "state": "open",
+    "merged": false,
+    "base": "main",
+    "head": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+    "head_sha_at_scientific_payload": "918e317a93f9f63351aa0fbd6b9dfdc6ea465985",
+    "created_at_utc": "2026-11-10T08:57:36Z"
   }
 }

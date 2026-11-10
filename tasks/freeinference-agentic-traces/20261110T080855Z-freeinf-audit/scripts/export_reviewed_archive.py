@@ -32,7 +32,7 @@ research_notes/code_coverage_and_runtime/publication_allowlist.json
 scripts/run_logged.py scripts/review_reproduction_evidence.py scripts/review_complete_week_artifacts.py scripts/build_task_record.py scripts/export_reviewed_archive.py scripts/validate_archive.py
 scripts/alignment/check_public_gateway_metadata.py scripts/alignment/match_intervals.py scripts/alignment/synthetic_checks.py
 logs/alignment_public_http_checks.json logs/alignment_synthetic_checks.json logs/alignment_synthetic_checks.log""".split())
-    for optional in ["reports/checkpoints.json", "reports/remote_verification.json", "reports/final_validation.json", "reports/archive_startup_verification.json", "logs/archive_checkpoint.json", "logs/archive_checkpoint.log", "logs/archive_final.json", "logs/archive_final.log"]:
+    for optional in ["reports/checkpoints.json", "reports/remote_verification.json", "reports/final_validation.json", "reports/archive_startup_verification.json", "reports/pull_request_receipt.json", "logs/archive_checkpoint.json", "logs/archive_checkpoint.log", "logs/archive_scientific.json", "logs/archive_scientific.log", "logs/archive_final.json", "logs/archive_final.log"]:
         if (ROOT / optional).exists():
             paths.add(optional)
     entries = []

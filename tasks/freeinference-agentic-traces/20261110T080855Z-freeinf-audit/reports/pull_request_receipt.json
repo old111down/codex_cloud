@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/old111down/codex_cloud/pull/3",
+  "number": 3,
+  "state": "open",
+  "merged": false,
+  "base": "main",
+  "head": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
+  "head_sha_at_scientific_payload": "918e317a93f9f63351aa0fbd6b9dfdc6ea465985",
+  "created_at_utc": "2026-11-10T08:57:36Z"
+}

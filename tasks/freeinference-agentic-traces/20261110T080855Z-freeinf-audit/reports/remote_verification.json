@@ -1,13 +1,15 @@
 {
   "status": "Verified",
-  "scope": "First scientific checkpoint only; enclosing later commits are verified separately in PR/reply",
+  "scope": "Scientific payload checkpoint, verified by local SHA, git ls-remote and GitHub PR head; final closure commit recorded externally",
   "branch": "codex/freeinference-agentic-traces/20261110T080855Z-freeinf-audit",
-  "commit_sha": "59f93ca6eff0e53c9086a28e92750d14b3218d3d",
-  "checked_at_utc": "2026-11-10T08:41:03.650978+00:00",
+  "commit_sha": "918e317a93f9f63351aa0fbd6b9dfdc6ea465985",
+  "checked_at_utc": "2026-11-10T08:58:28Z",
   "evidence": [
-    "logs/archive_checkpoint.json",
-    "logs/archive_checkpoint.log"
+    "logs/archive_scientific.json",
+    "logs/archive_scientific.log",
+    "reports/pull_request_receipt.json"
   ],
   "local_equals_remote": true,
-  "remote_read_method": "git ls-remote --heads origin <branch>"
+  "remote_read_method": "git ls-remote --heads origin <branch>",
+  "remote_equals_pr_head": true
 }
