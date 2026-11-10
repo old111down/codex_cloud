@@ -12,7 +12,7 @@
 | 产物记录时间 (UTC) | `2026-11-10T08:35:00Z`，来自原批次日志 |
 | Objective | 验收一批公开 Agent 网络流量文献的检索、全文阅读、增量去重、检查点续跑、GitHub PR 归档和同批重放。 |
 | Related Runs | 原文献批次 `20261110-agent-traffic-smoke-01` |
-| Final Status | **Verified**，单篇公开全文的证据笔记、隔离增量测试、真实开放 PR 归档及同批重放。 |
+| Final Status | **Verified**，单篇公开全文的证据笔记、真实开放 PR 归档及同批重放。 |
 
 本次标准记录补录回应了 [PR #2 的索引与任务记录反馈](https://github.com/old111down/codex_cloud/pull/2#issuecomment-6764104703)，沿用原批次和原 PR。
 
@@ -33,7 +33,7 @@
 | --- | --- | --- |
 | 公开文献筛选 | Verified | 筛选两篇，全文处理 arXiv:2606.07150v3，第二篇查阅官方摘要。[来源清单](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md) |
 | 全文证据笔记 | Verified | 提取 23 个物理页，选页渲染并按页码记录方法和局限。[笔记](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/note.md) |
-| 增量和恢复 | Verified | 隔离试跑验证 DOI/arXiv 去重、v2→v3 更新、探针检查点续跑和模拟上传失败后的同批重试。[增量摘要](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/increment.md) |
+| 增量和恢复 | Partially Verified | DOI/arXiv 去重、v2→v3 更新、检查点续跑和模拟重试来自原始试跑记录。逐项预期和实际结果已摘录，临时脚本版本为 `Unknown`。[验收证据](incremental_acceptance.md) |
 | 真实归档和重放 | Verified | 原 5 件附件提交 `36001c487d496c0896b3fedf0aa94f18f00388ad` 已推送。PR 开放后，同批重放从其远端清单命中 DOI 和 arXiv ID，返回 `reuse-existing-pr`。[PR #2](https://github.com/old111down/codex_cloud/pull/2) |
 
 ## 失败与修复
@@ -43,7 +43,7 @@
 | 最小非交互 PATH | 缺少渲染入口，严格预检失败 | 显式指定已验证的解释器和渲染路径，严格预检退出 0。 |
 | 首次读取 PR 远端清单 | GET 超过 20 秒后退出 1 | 调整只读请求超时并加入有限重试，随后读取清单及去重判定成功。 |
 
-受控退出和模拟上传失败属于恢复测试，其结果见[执行记录](execution_log.md)。
+受控退出和模拟上传失败的逐项结果来自[原试跑记录摘录](incremental_acceptance.md)。预检相对命令已从固定版本的上游检出目录复测，退出 0 且 `core_ready=true`。[执行记录](execution_log.md)
 
 ## 重要发现与未验证项
 
@@ -59,7 +59,7 @@
 - [increment.md](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/increment.md) · 增量摘要
 - [run.log](../../../literature/agent-traffic/20261110-agent-traffic-smoke-01/run.log) · 原始归档预览阶段的公开日志
 
-上述附件沿用原提交，哈希见[元数据](metadata.json)。本次新增记录只收录原始分析和公开题录，执行命令按相对位置和工具名整理。全文 PDF、页图、全文文本、未筛选的日志、认证信息及本机路径保留在公开归档范围之外。
+上述文献附件沿用原提交，新增[增量与恢复验收证据](incremental_acceptance.md)记录脱敏摘录。哈希见[元数据](metadata.json)。本次新增记录只收录原始分析和公开题录，执行命令按相对位置和工具名整理。全文 PDF、页图、全文文本、未筛选的日志、认证信息及本机路径保留在公开归档范围之外。
 
 ## 最终状态
 

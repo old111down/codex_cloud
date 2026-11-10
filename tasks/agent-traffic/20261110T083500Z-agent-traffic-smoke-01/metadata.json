@@ -64,8 +64,21 @@
       ]
     },
     {
-      "command": "env_check.py --json --strict",
-      "cwd": "隔离试跑目录",
+      "command": "python3 -B scripts/env_check.py --json --strict",
+      "cwd": "上游工作流检出目录",
+      "start_time_utc": "2026-11-10T10:02:47Z",
+      "end_time_utc": "2026-11-10T10:02:48Z",
+      "exit_code": 0,
+      "status": "Verified",
+      "inherited": false,
+      "evidence": [
+        "execution_log.md"
+      ],
+      "scope": "固定上游提交的相对命令复测。core_ready=true，pdf_render_ready=true。"
+    },
+    {
+      "command": "python3 -B <upstream-checkout>/scripts/init_workspace.py --root <isolated-controller>",
+      "cwd": "指定工作区",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 0,
@@ -76,20 +89,20 @@
       ]
     },
     {
-      "command": "init_workspace.py --root <isolated-controller>",
-      "cwd": "隔离试跑目录",
+      "command": "python3 -B <upstream-checkout>/scripts/pdf_probe.py 2606.07150v3.pdf --pages 1-23 --no-render --out probe",
+      "cwd": "隔离研究目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 0,
       "status": "Verified",
       "inherited": true,
       "evidence": [
-        "execution_log.md"
+        "literature/agent-traffic/20261110-agent-traffic-smoke-01/sources.md"
       ]
     },
     {
-      "command": "pdf_probe.py",
-      "cwd": "隔离试跑目录",
+      "command": "python3 -B <upstream-checkout>/scripts/pdf_probe.py 2606.07150v3.pdf --pages 10,11,18,19 --out visual-probe",
+      "cwd": "隔离研究目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 0,
@@ -112,52 +125,82 @@
       ]
     },
     {
-      "command": "run_harness.py ingest",
+      "command": "python3 -B run_harness.py ingest",
       "cwd": "隔离试跑目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 75,
-      "status": "Verified",
+      "status": "Partially Verified",
       "inherited": true,
       "evidence": [
-        "execution_log.md"
-      ]
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
     },
     {
-      "command": "run_harness.py resume",
+      "command": "python3 -B run_harness.py resume",
       "cwd": "隔离试跑目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 0,
-      "status": "Verified",
+      "status": "Partially Verified",
       "inherited": true,
       "evidence": [
-        "execution_log.md"
-      ]
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
     },
     {
-      "command": "run_harness.py simulate-upload-failure",
+      "command": "python3 -B run_harness.py ingest",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Partially Verified",
+      "inherited": true,
+      "evidence": [
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。同批重跑识别重复。临时脚本版本 Unknown。"
+    },
+    {
+      "command": "python3 -B run_harness.py simulate-upload-failure",
       "cwd": "隔离试跑目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 75,
-      "status": "Verified",
+      "status": "Partially Verified",
       "inherited": true,
       "evidence": [
-        "execution_log.md"
-      ]
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
     },
     {
-      "command": "run_harness.py retry-preview",
+      "command": "python3 -B run_harness.py retry-preview",
       "cwd": "隔离试跑目录",
       "start_time_utc": "Unknown",
       "end_time_utc": "Unknown",
       "exit_code": 0,
-      "status": "Verified",
+      "status": "Partially Verified",
       "inherited": true,
       "evidence": [
-        "execution_log.md"
-      ]
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。临时验收脚本版本 Unknown。"
+    },
+    {
+      "command": "python3 -B run_harness.py verify-next-batch",
+      "cwd": "隔离试跑目录",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Partially Verified",
+      "inherited": true,
+      "evidence": [
+        "incremental_acceptance.md"
+      ],
+      "scope": "原试跑工具输出摘录。核对标识、真实版本和归档夹具。临时脚本版本 Unknown。"
     },
     {
       "command": "git push / git ls-remote / gh pr create",
@@ -208,12 +251,13 @@
       ]
     },
     {
-      "description": "通过增量去重、真实 v2→v3 识别、检查点恢复及模拟重试。",
-      "status": "Verified",
+      "description": "原试跑报告 DOI/arXiv 去重、v2→v3 更新、检查点恢复与模拟重试通过。",
+      "status": "Partially Verified",
       "evidence_type": "runtime_observation",
       "evidence": [
-        "execution_log.md"
-      ]
+        "incremental_acceptance.md"
+      ],
+      "scope": "原始逐项执行结果摘录，临时脚本版本 Unknown。"
     },
     {
       "description": "推送原附件并创建 PR，实况重放识别同一开放 PR。",
@@ -297,6 +341,13 @@
       "sha256": "8662d3823de572385bf8d7536ac7ea46cd109f7da5e54e906f8f267a7d6930c6",
       "status": "Verified",
       "publication_review": "approved"
+    },
+    {
+      "path": "tasks/agent-traffic/20261110T083500Z-agent-traffic-smoke-01/incremental_acceptance.md",
+      "description": "脱敏的原试跑增量与恢复验收证据，含预期、实际结果与来源边界",
+      "sha256": "58ceb2044296ecf281a12dbe887af97f6855543fa5506c79abdccd1790d4eccc",
+      "status": "Verified",
+      "publication_review": "sanitized"
     }
   ],
   "publication_review": {
@@ -318,5 +369,5 @@
   },
   "pull_request_url": "https://github.com/old111down/codex_cloud/pull/2",
   "final_status": "Verified",
-  "final_status_scope": "单篇公开全文的证据笔记、隔离增量测试、真实开放 PR 归档及同批重放。"
+  "final_status_scope": "单篇公开全文的证据笔记、真实开放 PR 归档及同批重放。"
 }
