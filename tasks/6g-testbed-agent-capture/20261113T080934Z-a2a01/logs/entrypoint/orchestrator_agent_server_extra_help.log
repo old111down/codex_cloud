@@ -1,0 +1,16 @@
+usage: orchestrator_agent.py [-h] [--port PORT] [--host HOST] [--name NAME]
+                             --downstream DOWNSTREAM [--public-url PUBLIC_URL]
+
+Testbed orchestrator A2A agent
+
+options:
+  -h, --help            show this help message and exit
+  --port PORT
+  --host HOST
+  --name NAME
+  --downstream DOWNSTREAM
+                        Comma-separated downstream A2A base URLs
+  --public-url PUBLIC_URL
+                        Externally-reachable base URL to advertise in the
+                        Agent Card (e.g. a cloudflared/ngrok tunnel). Defaults
+                        to http://host:port/.

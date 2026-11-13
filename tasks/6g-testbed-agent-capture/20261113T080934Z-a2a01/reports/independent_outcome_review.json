@@ -1,0 +1,322 @@
+{
+  "schema_version": "independent-outcome-review-v1",
+  "review_stage": "COMPLETE",
+  "raw_evidence_checks": [
+    {
+      "run_alias": "A001",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A002",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A003",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A004",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A005",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A006",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A007",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A008",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A009",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    },
+    {
+      "run_alias": "A010",
+      "public_checks_all_true": true,
+      "raw_matching_syn_delta_verified": true,
+      "wire_SendMessage_verified_from_private_raw_bytes": true,
+      "official_task_duration_matches_DB_timestamps": true,
+      "launcher_and_qdisc_consistent": true,
+      "task_unexpanded_window": true,
+      "pcap_sha_matches_public": true,
+      "raw_packet_records": 40,
+      "target_packets": 34,
+      "matched_connection_packets": 18,
+      "negative_packets": 6,
+      "matched_connection_HTTP_request_count": 2,
+      "task_POST_content_length_framing_verified": true,
+      "raw_response_completed_and_expected_echo_verified": true,
+      "matched_connection_contains_card_and_task_responses": true
+    }
+  ],
+  "raw_packet_total": 400,
+  "note": "No scenario, capture, tc or analyzer rerun; direct read-only independent raw-byte and SQLite checks.",
+  "reviewed_at_utc": "2026-11-13T08:25:45.843207+00:00",
+  "proposed_outcomes": {
+    "official_A2A_single_task": "PASS_WITH_DECLARED_SCOPE",
+    "task_to_unique_connection_alignment": "PASS_WITH_DECLARED_SCOPE",
+    "RTT_intervention_contrast": "BLOCKED_NO_GROUP_B"
+  },
+  "descriptive_statistics": {
+    "official_app_task_ms": {
+      "sample_count": 10,
+      "median_ms": 7.5484514236450195,
+      "min_ms": 6.58726692199707,
+      "max_ms": 10.089635848999023
+    },
+    "HTTP_request_first_to_response_last_ms": {
+      "sample_count": 10,
+      "median_ms": 4.2657039999999995,
+      "min_ms": 3.435602,
+      "max_ms": 5.815071
+    },
+    "same_capture_software_RX_SYN_to_matching_SYNACK_delta_ms": {
+      "sample_count": 10,
+      "median_ms": 0.1114185,
+      "min_ms": 0.010991,
+      "max_ms": 0.271431
+    }
+  },
+  "required_scope_constraints": [
+    "external AF_PACKET collector; upstream CaptureController not run",
+    "single deterministic official A2A task, local no_emulation only",
+    "actual wire method SendMessage; document/canonical message/send is distinct",
+    "connection bytes include card discovery; target-port bytes include other connections",
+    "50ms is matching tolerance, not clock error",
+    "clock valid is structural; ns representation is not accuracy",
+    "baseline receive timestamp delta is not 2d or end-to-end calibration",
+    "n=10 is descriptive; no reliability or tail bound",
+    "unknown netem qdisc blocks group B; no causal delay contrast",
+    "paper code review SHA and historical workbook provenance remain separate"
+  ],
+  "final_document_review": {
+    "status": "PASS",
+    "reviewed_artifacts": [
+      {
+        "path": "REPORT.md",
+        "sha256": "e706b95d20592fc04c0d694f95f1f0146a41df1fccf2b6790f32107bf46a4acc"
+      },
+      {
+        "path": "manifest.json",
+        "sha256": "db9ad8496c551cb09265b653b642b1537c22b5529a073eb76cbcd474bdf5bbcf"
+      },
+      {
+        "path": "runs.csv",
+        "sha256": "967ac81b7e875250b63b375985280fc20e12adf423b57199c61e5527e4e11f21"
+      },
+      {
+        "path": "reports/summary.json",
+        "sha256": "86a59d8d0dc7258de0ca523424f1e09ba18d4556a702376bc28853cb38f90f7a"
+      },
+      {
+        "path": "environment/agent/versions.json",
+        "sha256": "185bea4cd46baf5ac37e2b0d9252d4291a702bcaaddf1f558e92c1a9336966d8"
+      },
+      {
+        "path": "environment/scenario_snapshot.json",
+        "sha256": "0c8b0f84ae9fa52e255ad88c7becf77fbb5b9e7a1845c74a8e77782f2d0a7c7f"
+      },
+      {
+        "path": "reproduce.sh",
+        "sha256": "a1c887cd0cd829e19089b7b3df6d18cb51918f9cd6d68f02a989fa7fa3b03acd"
+      },
+      {
+        "path": "environment/source_provenance.json",
+        "sha256": "022150360d58201a88c2f32ddb2c9be8f7a07471615f198299f3b9b9daca5017"
+      }
+    ],
+    "numeric_consistency": "10 A rows match per-run and private records; summary equals embedded manifest summary; smoke rows excluded",
+    "scope_consistency": "External capture; local deterministic single task; software RX packet delta; no IID/tail/causal/WAN/multihop/historical-run claim",
+    "clock_wording": "valid anchors are structural; ns representation not accuracy; 50ms tolerance not clock error; finite anchors not absolute calibration",
+    "minor_findings": [
+      {
+        "id": "F01",
+        "status": "RESOLVED",
+        "detail": "Excluded smoke001 initially had a fabricated selected-connection alias and nonexistent analyzed path; root blanked both association fields."
+      }
+    ],
+    "unresolved_material_findings": []
+  },
+  "cross_run_identity_review": {
+    "run_count": 10,
+    "distinct_private_task_hash_count": 1,
+    "distinct_app_session_count": 10,
+    "distinct_recorded_child_namespace_token_count": 1,
+    "each_launcher_executes_unshare_and_verifies_child_differs_from_parent": true,
+    "interpretation": "Task hash and namespace token alone are not globally unique run identities; per-run launch manifest, session, connection epoch and time window are required."
+  },
+  "summary_review": {
+    "status": "PASS",
+    "path": "reports/summary.json",
+    "sha256": "86a59d8d0dc7258de0ca523424f1e09ba18d4556a702376bc28853cb38f90f7a",
+    "checks": {
+      "A_attempts": true,
+      "B_attempts": true,
+      "config_pair_hashes_equal": true,
+      "connection_policies_equal": true,
+      "invocation_stats_match": true
+    },
+    "conclusion": "Descriptive baseline statistics and explicitly blocked/no-attempt intervention are consistent with raw evidence; no stable P95 reported."
+  },
+  "reproduce_smoke_integration_review": {
+    "status": "PASS_LOG_REVIEW_ONLY",
+    "command_mode": "reproduce.sh --smoke-only",
+    "exit_code": 0,
+    "fresh_private_copy": true,
+    "same_runtime_environment_and_readonly_source_path": true,
+    "included_in_A_summary": false,
+    "B_evidence": false,
+    "reviewer_reran_scenario": false
+  },
+  "environment_review": {
+    "status": "CONSISTENT",
+    "debian_version": "13.6",
+    "CPU_quota_cores": 4,
+    "memory_limit_GiB": 16,
+    "Python": "3.12.16",
+    "a2a_sdk": "1.1.2",
+    "no_region_or_WAN_inference": true
+  },
+  "source_provenance_review": {
+    "status": "PASS",
+    "executed_SHA_matches_pristine_checkout": true,
+    "all_listed_source_hashes_match": true,
+    "bundled_aitestbed_and_netemu_LICENSE_labels": "5G-MAG Public License (v1.0)",
+    "netemu_pyproject_conflict_preserved_as_unknown_applicability": true,
+    "no_complete_upstream_source_redistribution_claim": true
+  }
+}

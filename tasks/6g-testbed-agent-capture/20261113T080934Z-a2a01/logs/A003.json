@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "/workspace/6g-agent-audit/scripts/launch_round.py",
+    "--run-id",
+    "A003",
+    "--group",
+    "A"
+  ],
+  "cwd": "/workspace/6g-agent-audit",
+  "start_utc": "2026-11-13T08:11:04.187595+00:00",
+  "timeout_seconds": 110.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:11:07.565002+00:00",
+  "elapsed_seconds": 3.3773985289999473
+}

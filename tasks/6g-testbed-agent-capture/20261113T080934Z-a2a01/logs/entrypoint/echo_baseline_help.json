@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "a2a_agents.echo_agent",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 1,
+  "duration_s": 0.13031339645385742,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/echo_baseline_help.log"
+}

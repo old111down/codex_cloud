@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "bash",
+    "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/run_full_tests.sh",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 0,
+  "duration_s": 0.027482271194458008,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/full_runner_help.log"
+}

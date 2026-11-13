@@ -1,0 +1,17 @@
+{
+  "status": "Partially Verified",
+  "parent_AF_PACKET": "unavailable in initial parent context",
+  "own_user_network_namespace": "PASS",
+  "own_child_loopback_AF_PACKET": "PASS",
+  "netem_requested_delay_ms": 20,
+  "netem_inner_exit_code": 2,
+  "netem_error": "Specified qdisc kind is unknown",
+  "probe_outer_exit_code": 0,
+  "start_utc": "2026-11-13T07:59:40.802449+00:00",
+  "end_utc": "2026-11-13T07:59:40.881426+00:00",
+  "B_rounds": 0,
+  "shared_interface_capture_or_qdisc_change": false,
+  "raw_platform_state_published": false,
+  "evidence": "private/evidence/namespace_netem_probe.json (withheld; independently reviewed; original hash only)",
+  "original_sha256": "8eaeab6528d9f8e37a534a490361cad039ab054aaf3467e9b984e9ff33525f0d"
+}

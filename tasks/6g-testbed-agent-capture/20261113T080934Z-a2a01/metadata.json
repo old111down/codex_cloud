@@ -1,0 +1,997 @@
+{
+  "schema_version": "1.0",
+  "task_id": "6g-a2a-audit-20261113",
+  "task_name": "5G-MAG Agent/A2A capture and alignment audit",
+  "task_slug": "6g-testbed-agent-capture",
+  "run_id": "20261113T080934Z-a2a01",
+  "archive_repository": "https://github.com/old111down/codex_cloud",
+  "start_time_utc": "2026-11-13T07:55:41Z",
+  "end_time_utc": null,
+  "archive_started_time_utc": "2026-11-13T08:09:34Z",
+  "archive_completed_time_utc": null,
+  "objective": "Audit and execute the version-pinned official local single-task Agent/A2A path, align official application records to private packet captures, and assess an isolated RTT contrast within the original three-hour budget.",
+  "branch": "codex/6g-testbed-agent-capture/20261113T080934Z-a2a01",
+  "related_runs": [],
+  "source_repositories": [
+    {
+      "name": "5G-MAG/6G-Testbed",
+      "url": "https://github.com/5G-MAG/6G-Testbed",
+      "branch": "detached paper implementation-review revision",
+      "commit_shas": [
+        "d055fa68ef4de30b93a8a30838ae51fe3e4b561c"
+      ],
+      "license": "aitestbed and netemu bundled files: 5G-MAG Public License v1.0; netemu pyproject says Apache-2.0 (conflicting applicability Unknown); bundled aiortc BSD-3-Clause. No upstream source/license text redistributed.",
+      "version_status": "Verified",
+      "evidence": [
+        "manifest.json",
+        "reports/source_provenance.json",
+        "environment/source_provenance.json"
+      ]
+    }
+  ],
+  "runtime_environment": {
+    "os": "Debian GNU/Linux 13.6",
+    "python": "3.12.16",
+    "cpu_quota_cores": 4,
+    "memory_limit_gib": 16,
+    "GPU_used": false,
+    "dependency_policy": "scoped A2A import/runtime; custom aiortc from pinned source PYTHONPATH; not original historical full lock",
+    "capture": "external original AF_PACKET in owned isolated network namespace loopback",
+    "netem": "BLOCKED: unknown qdisc kind; no B runs",
+    "evidence": [
+      "environment/agent/versions.json",
+      "environment/README.md",
+      "reports/permission_summary.json",
+      "environment/host_summary.json"
+    ]
+  },
+  "commands_executed": [
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/run_baseline.py"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:10:56.855384+00:00",
+      "end_time_utc": "2026-11-13T08:11:31.367180+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/baseline_batch.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/run_baseline.py"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:10:55.112602+00:00",
+      "end_time_utc": "2026-11-13T08:10:55.177013+00:00",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/baseline_gate_schema_error.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/launch_round.py",
+        "--run-id",
+        "smoke002",
+        "--group",
+        "smoke"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:08:30.869423+00:00",
+      "end_time_utc": "2026-11-13T08:08:34.506409+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/smoke_002.json"
+      ]
+    },
+    {
+      "command": [
+        ".conda/agent/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--only-binary=:all:",
+        "colorlog>=6.10.1",
+        "PyYAML>=6",
+        "python-dotenv>=1",
+        "openai>=1,<3",
+        "requests>=2.28",
+        "websockets>=12",
+        "httpx==0.28.1",
+        "numpy>=1.24",
+        "a2a-sdk==1.1.2",
+        "uvicorn>=0.27",
+        "starlette>=0.40",
+        "aioice>=0.10.2,<1",
+        "av>=14,<17",
+        "cryptography>=44",
+        "google-crc32c>=1.1",
+        "pyee>=13",
+        "pylibsrtp>=0.10",
+        "pyopenssl>=25",
+        "dpkt>=1.9.8"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:02:29.461683+00:00",
+      "end_time_utc": "2026-11-13T08:02:49.609507+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/a2a_dependencies.json"
+      ]
+    },
+    {
+      "command": [
+        ".conda/agent/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--only-binary=:all:",
+        "a2a-sdk[http-server]==1.1.2"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:04:40.939086+00:00",
+      "end_time_utc": "2026-11-13T08:04:42.258841+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/a2a_server_extra.json"
+      ]
+    },
+    {
+      "command": [
+        "env",
+        "AUDIT_PYTHON=/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "bash",
+        "reproduce.sh",
+        "--smoke-only"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/reproduce_check",
+      "start_time_utc": "2026-11-13T08:22:27.690796+00:00",
+      "end_time_utc": "2026-11-13T08:22:33.739156+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/reproduce_smoke_integration.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A001",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:10:56.958971+00:00",
+      "end_time_utc": "2026-11-13T08:11:00.624985+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A001.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A001",
+        "--private-output",
+        "private/analyzed/A001.json",
+        "--summary-output",
+        "reports/per_run/A001.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.815016+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.979665+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A001.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A002",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:00.680088+00:00",
+      "end_time_utc": "2026-11-13T08:11:04.112679+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A002.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A002",
+        "--private-output",
+        "private/analyzed/A002.json",
+        "--summary-output",
+        "reports/per_run/A002.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.265370+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.715328+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A002.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A003",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:04.187595+00:00",
+      "end_time_utc": "2026-11-13T08:11:07.565002+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A003.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A003",
+        "--private-output",
+        "private/analyzed/A003.json",
+        "--summary-output",
+        "reports/per_run/A003.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.271611+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.667889+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A003.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A004",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:07.653938+00:00",
+      "end_time_utc": "2026-11-13T08:11:10.886196+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A004.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A004",
+        "--private-output",
+        "private/analyzed/A004.json",
+        "--summary-output",
+        "reports/per_run/A004.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.227422+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.671741+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A004.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A005",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:10.980381+00:00",
+      "end_time_utc": "2026-11-13T08:11:14.368186+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A005.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A005",
+        "--private-output",
+        "private/analyzed/A005.json",
+        "--summary-output",
+        "reports/per_run/A005.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.451035+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.873379+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A005.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A006",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:14.458146+00:00",
+      "end_time_utc": "2026-11-13T08:11:18.044834+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A006.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A006",
+        "--private-output",
+        "private/analyzed/A006.json",
+        "--summary-output",
+        "reports/per_run/A006.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.255281+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.673642+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A006.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A007",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:18.115542+00:00",
+      "end_time_utc": "2026-11-13T08:11:21.351109+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A007.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A007",
+        "--private-output",
+        "private/analyzed/A007.json",
+        "--summary-output",
+        "reports/per_run/A007.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.418051+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.762289+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A007.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A008",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:21.457144+00:00",
+      "end_time_utc": "2026-11-13T08:11:24.850365+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A008.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A008",
+        "--private-output",
+        "private/analyzed/A008.json",
+        "--summary-output",
+        "reports/per_run/A008.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.785017+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.963027+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A008.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A009",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:24.907806+00:00",
+      "end_time_utc": "2026-11-13T08:11:27.982787+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A009.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A009",
+        "--private-output",
+        "private/analyzed/A009.json",
+        "--summary-output",
+        "reports/per_run/A009.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.643690+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.915129+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A009.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/scripts/launch_round.py",
+        "--run-id",
+        "A010",
+        "--group",
+        "A"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:11:28.039078+00:00",
+      "end_time_utc": "2026-11-13T08:11:31.327264+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/A010.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/analyze_capture.py",
+        "--run-dir",
+        "private/runtime/A010",
+        "--private-output",
+        "private/analyzed/A010.json",
+        "--summary-output",
+        "reports/per_run/A010.json"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:12:48.720102+00:00",
+      "end_time_utc": "2026-11-13T08:12:48.934885+00:00",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/analysis/A010.json"
+      ]
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "a2a_agents.echo_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/echo_baseline_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "-m",
+        "a2a_agents.echo_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/echo_installed_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "-m",
+        "a2a_agents.echo_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/echo_server_extra_help.json"
+      ]
+    },
+    {
+      "command": [
+        "bash",
+        "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/run_full_tests.sh",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/full_runner_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "a2a_agents.orchestrator_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/orchestrator_agent_baseline_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "-m",
+        "a2a_agents.orchestrator_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/orchestrator_agent_installed_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "-m",
+        "a2a_agents.orchestrator_agent",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/orchestrator_agent_server_extra_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/orchestrator.py",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 1,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/orchestrator_baseline_help.json"
+      ]
+    },
+    {
+      "command": [
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/orchestrator.py",
+        "--help"
+      ],
+      "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+      "start_time_utc": "Unknown",
+      "end_time_utc": "Unknown",
+      "exit_code": 0,
+      "status": "Verified",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/entrypoint/orchestrator_installed_help.json"
+      ]
+    },
+    {
+      "command": [
+        "unshare",
+        "--user",
+        "--map-root-user",
+        "--net",
+        "/workspace/6g-agent-audit/.conda/agent/bin/python",
+        "scripts/run_isolated_round.py",
+        "--run-id",
+        "smoke001",
+        "--group",
+        "smoke",
+        "--parent-netns",
+        "REDACTED_NAMESPACE"
+      ],
+      "cwd": "/workspace/6g-agent-audit",
+      "start_time_utc": "2026-11-13T08:07:21.055212+00:00",
+      "end_time_utc": "2026-11-13T08:07:26.056095+00:00",
+      "exit_code": 0,
+      "status": "Failed",
+      "scope": "command execution only; exit zero does not by itself establish scientific acceptance",
+      "inherited": false,
+      "evidence": [
+        "logs/smoke_001.json"
+      ]
+    }
+  ],
+  "completed_work": [
+    {
+      "description": "Ten official local single-task baseline rounds succeeded with the declared one-prompt, zero-retry configuration.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "runs.csv",
+        "reports/per_run/A001.json",
+        "reports/per_run/A010.json",
+        "reports/summary.json"
+      ]
+    },
+    {
+      "description": "Ten unique connection matches and ten excluded same-capture TCP negative controls were independently checked from private PCAP and SQLite.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "scope": "run/task to HTTP/1.1 connection; no packet-level SDK semantic ground truth",
+      "evidence": [
+        "reports/independent_outcome_review.json",
+        "reports/collector_baseline_review.json",
+        "reports/summary.json"
+      ]
+    },
+    {
+      "description": "Fresh-private-directory smoke-only reproduction entry completed with exit 0; not a new baseline group.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "logs/reproduce_smoke_integration.json",
+        "logs/reproduce_smoke_integration.log"
+      ]
+    }
+  ],
+  "failed_experiments": [
+    {
+      "description": "smoke001 process returned 0 but wrapper supplied an incorrect parent-namespace argument; attempt is excluded from acceptance. Launcher now reads the real parent namespace; smoke002 accepted.",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "logs/smoke_001.json",
+        "logs/smoke_001.log",
+        "logs/smoke_002.json",
+        "reports/per_run/smoke002.json"
+      ]
+    },
+    {
+      "description": "Initial baseline gate used the wrong summary field and exited 1 before round A001. Corrected to match_status; failure retained and ten actual rounds separately logged.",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "logs/baseline_gate_schema_error.json",
+        "logs/baseline_gate_schema_error.log",
+        "logs/baseline_batch.json"
+      ]
+    },
+    {
+      "description": "Owned child-loopback netem delay 20ms returned inner exit 2: Specified qdisc kind is unknown. B group was not run.",
+      "status": "Failed",
+      "scope": "capability probe, RTT contrast BLOCKED",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/permission_summary.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "description": "Initial CLI help failed on missing dependencies; scoped dependencies and SDK http-server extra enabled later help checks without editing upstream.",
+      "status": "Failed",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/entrypoint_audit.md",
+        "logs/entrypoint/echo_installed_help.json",
+        "logs/a2a_server_extra.json",
+        "logs/entrypoint/echo_server_extra_help.json"
+      ]
+    }
+  ],
+  "important_findings": [
+    {
+      "description": "Ten official local single-task baseline rounds succeeded with the declared one-prompt, zero-retry configuration.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "runs.csv",
+        "reports/per_run/A001.json",
+        "reports/per_run/A010.json",
+        "reports/summary.json"
+      ]
+    },
+    {
+      "description": "Ten unique connection matches and ten excluded same-capture TCP negative controls were independently checked from private PCAP and SQLite.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "scope": "run/task to HTTP/1.1 connection; no packet-level SDK semantic ground truth",
+      "evidence": [
+        "reports/independent_outcome_review.json",
+        "reports/collector_baseline_review.json",
+        "reports/summary.json"
+      ]
+    },
+    {
+      "description": "The SYN-to-SYNACK median is 0.1114185 ms in ten same-loopback software-RX observations; this is a packet-based estimate, not independently calibrated endpoint RTT. APP median is 7.5484514236450195 ms; no delay effect can be estimated without B.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/summary.json",
+        "reports/independent_outcome_review.md"
+      ]
+    },
+    {
+      "description": "Executed source and paper implementation-review revision are d055; fetched main was 7231ae8e5670b67564cf28d397c2820d9403ecdc. Historical S4aP260148 is not this execution.",
+      "status": "Verified",
+      "evidence_type": "source_fact",
+      "evidence": [
+        "manifest.json",
+        "reports/paper_evidence.md",
+        "reports/source_provenance.json"
+      ]
+    },
+    {
+      "description": "External collector integrity and task-connection linkage passed within declared scope; upstream CaptureController was not run and nanosecond representation does not prove nanosecond accuracy.",
+      "status": "Verified",
+      "evidence_type": "runtime_observation",
+      "evidence": [
+        "reports/collector_baseline_review.json",
+        "reports/independent_outcome_review.json",
+        "manifest.json"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "description": "RTT intervention, nominal 2d path behavior, socket RTT calibration, historical workbook numeric reproduction, WAN/multihop, TLS/concurrent tasks and per-packet SDK/tool semantics remain unverified.",
+      "status": "Unknown",
+      "evidence_type": "unverified_question",
+      "evidence": [
+        "REPORT.md",
+        "reports/paper_evidence.md",
+        "manifest.json"
+      ]
+    },
+    {
+      "description": "Remote commit and PR have not been verified at this archive checkpoint.",
+      "status": "Unknown",
+      "evidence_type": "archive_operation",
+      "evidence": [
+        "metadata.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "runs.csv",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "manifest.json",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "reports/summary.json",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "reproduce.sh",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "allowedfiles.json",
+      "status": "Verified",
+      "publication_review": "approved"
+    }
+  ],
+  "publication_review": {
+    "status": "Partially Verified",
+    "manifest": "reports/publication_review.json",
+    "withheld_manifest": "reports/withheld.md",
+    "limitations": [
+      "Whole-batch scanning is limited evidence; approved artifacts also receive content inspection.",
+      "Raw evidence remains private and cannot be independently re-read from this public archive."
+    ]
+  },
+  "final_status": "Partially Verified",
+  "final_status_scope": "Official local A2A PASS; run/connection log-PCAP alignment PASS; RTT contrast BLOCKED. This is not complete paper/testbed reproduction. Archive checkpoint remains in progress.",
+  "verdicts": {
+    "A2A_scenario_rerun": "PASS",
+    "log_pcap_alignment": "PASS",
+    "RTT_contrast": "BLOCKED"
+  },
+  "remote_verification": {
+    "status": "Unknown",
+    "branch": "codex/6g-testbed-agent-capture/20261113T080934Z-a2a01",
+    "commit_sha": "Unknown"
+  },
+  "pull_request_url": null,
+  "limitations": [
+    "No B rounds because isolated netem probe failed.",
+    "No upstream CaptureController execution or historical full-lock reproduction.",
+    "No upstream source or raw application/packet evidence is redistributed."
+  ],
+  "hard_deadline_utc": "2026-11-13T10:55:41Z",
+  "checkpoint_generated_time_utc": "2026-11-13T08:26:38.281783+00:00"
+}

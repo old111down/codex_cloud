@@ -1,0 +1,67 @@
+{
+  "observed_utc": "2026-11-13T08:24:42.668202+00:00",
+  "os": {
+    "PRETTY_NAME": "Debian GNU/Linux 13 (trixie)",
+    "NAME": "Debian GNU/Linux",
+    "VERSION_ID": "13",
+    "VERSION": "13 (trixie)",
+    "VERSION_CODENAME": "trixie",
+    "DEBIAN_VERSION_FULL": "13.6",
+    "ID": "debian",
+    "HOME_URL": "https://www.debian.org/",
+    "SUPPORT_URL": "https://www.debian.org/support",
+    "BUG_REPORT_URL": "https://bugs.debian.org/"
+  },
+  "kernel": "6.18.57",
+  "cpu_quota": "400000 100000",
+  "memory_limit_bytes": 17179869184,
+  "disk_free_bytes_at_record": 8742727680,
+  "uid": 1000,
+  "ordinary_effective_capabilities": "none per capsh",
+  "tools": {
+    "ip": "/usr/sbin/ip",
+    "tc": "/usr/sbin/tc",
+    "unshare": "/usr/bin/unshare",
+    "tcpdump": null,
+    "tshark": null,
+    "sudo": null,
+    "docker": "/usr/local/bin/docker"
+  },
+  "namespace_probe": {
+    "unshare_user_net_exit": 0,
+    "new_netns_differs_parent": true,
+    "interfaces": [
+      "lo"
+    ],
+    "AF_PACKET_socket": "PASS"
+  },
+  "netem_probe": {
+    "isolation_verified_before_mutation": true,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "lo",
+      "root",
+      "netem",
+      "delay",
+      "20ms"
+    ],
+    "exit_code": 2,
+    "stderr": "Error: Specified qdisc kind is unknown.\n",
+    "host_module_load_attempted": false
+  },
+  "docker": {
+    "local_socket_readonly_probe_exit": 0,
+    "rootless": true,
+    "used_for_workload": false
+  },
+  "network": {
+    "managed_policy": "unrestricted",
+    "observed_state": "enforced",
+    "public_source_and_package_access": "succeeded",
+    "inference_credentials_used": false
+  },
+  "installation": "project-local Conda and pip wheels; no system elevation/install used"
+}

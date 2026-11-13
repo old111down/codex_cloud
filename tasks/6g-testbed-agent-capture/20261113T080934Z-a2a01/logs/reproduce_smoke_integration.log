@@ -1,0 +1,80 @@
+Requirement already satisfied: a2a-sdk==1.1.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 1)) (1.1.2)
+Requirement already satisfied: aioice==0.13.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 2)) (0.13.0)
+Requirement already satisfied: aiologic==0.17.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 3)) (0.17.1)
+Requirement already satisfied: annotated-types==0.8.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 4)) (0.8.0)
+Requirement already satisfied: anyio==4.16.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 5)) (4.16.0)
+Requirement already satisfied: av==16.1.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 6)) (16.1.0)
+Requirement already satisfied: certifi==2026.10.23 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 7)) (2026.10.23)
+Requirement already satisfied: cffi==2.1.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 8)) (2.1.1)
+Requirement already satisfied: charset-normalizer==3.5.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 9)) (3.5.2)
+Requirement already satisfied: click==8.5.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 10)) (8.5.1)
+Requirement already satisfied: colorlog==6.12.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 11)) (6.12.0)
+Requirement already satisfied: cryptography==50.0.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 12)) (50.0.2)
+Requirement already satisfied: culsans==0.11.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 13)) (0.11.0)
+Requirement already satisfied: distro==1.9.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 14)) (1.9.0)
+Requirement already satisfied: dnspython==2.9.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 15)) (2.9.2)
+Requirement already satisfied: dpkt==1.9.8 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 16)) (1.9.8)
+Requirement already satisfied: google-api-core==2.44.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 17)) (2.44.0)
+Requirement already satisfied: google-auth==2.62.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 18)) (2.62.2)
+Requirement already satisfied: google-crc32c==1.9.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 19)) (1.9.0)
+Requirement already satisfied: googleapis-common-protos==1.76.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 20)) (1.76.0)
+Requirement already satisfied: h11==0.16.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 21)) (0.16.0)
+Requirement already satisfied: httpcore==1.0.9 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 22)) (1.0.9)
+Requirement already satisfied: httpx==0.28.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 23)) (0.28.1)
+Requirement already satisfied: idna==3.20 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 24)) (3.20)
+Requirement already satisfied: ifaddr==0.2.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 25)) (0.2.0)
+Requirement already satisfied: jiter==0.19.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 26)) (0.19.0)
+Requirement already satisfied: json-rpc==1.15.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 27)) (1.15.0)
+Requirement already satisfied: numpy==2.5.4 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 28)) (2.5.4)
+Requirement already satisfied: openai==2.54.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 29)) (2.54.0)
+Requirement already satisfied: opentelemetry-api==1.45.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 30)) (1.45.2)
+Requirement already satisfied: packaging==26.3 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 31)) (26.3)
+Requirement already satisfied: proto-plus==1.29.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 32)) (1.29.0)
+Requirement already satisfied: protobuf==6.33.6 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 33)) (6.33.6)
+Requirement already satisfied: pyasn1==0.6.5 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 34)) (0.6.5)
+Requirement already satisfied: pyasn1_modules==0.4.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 35)) (0.4.2)
+Requirement already satisfied: pycparser==3.12 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 36)) (3.12)
+Requirement already satisfied: pydantic==2.14.3 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 37)) (2.14.3)
+Requirement already satisfied: pydantic_core==2.50.4 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 38)) (2.50.4)
+Requirement already satisfied: pyee==16.0.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 39)) (16.0.2)
+Requirement already satisfied: pylibsrtp==1.0.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 40)) (1.0.0)
+Requirement already satisfied: pyOpenSSL==26.4.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 41)) (26.4.0)
+Requirement already satisfied: python-dotenv==1.2.4 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 42)) (1.2.4)
+Requirement already satisfied: PyYAML==6.0.3 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 43)) (6.0.3)
+Requirement already satisfied: requests==2.34.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 44)) (2.34.2)
+Requirement already satisfied: setuptools==84.2.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 45)) (84.2.1)
+Requirement already satisfied: sniffio==1.3.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 46)) (1.3.1)
+Requirement already satisfied: sse-starlette==3.7.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 47)) (3.7.0)
+Requirement already satisfied: starlette==1.10.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 48)) (1.10.0)
+Requirement already satisfied: tqdm==4.70.1 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 49)) (4.70.1)
+Requirement already satisfied: typing-inspection==0.4.5 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 50)) (0.4.5)
+Requirement already satisfied: typing_extensions==4.16.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 51)) (4.16.0)
+Requirement already satisfied: urllib3==2.8.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 52)) (2.8.0)
+Requirement already satisfied: uvicorn==0.54.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 53)) (0.54.0)
+Requirement already satisfied: websockets==17.4 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 54)) (17.4)
+Requirement already satisfied: wheel==0.48.0 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 55)) (0.48.0)
+Requirement already satisfied: wrapt==2.5.2 in /workspace/6g-agent-audit/.conda/agent/lib/python3.12/site-packages (from -r environment/agent/requirements-runtime.txt (line 56)) (2.5.2)
+{
+  "argv": [
+    "unshare",
+    "--user",
+    "--map-root-user",
+    "--net",
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "scripts/probe_namespace.py",
+    "--parent-netns",
+    "REDACTED_NAMESPACE"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/reproduce_check",
+  "start_utc": "2026-11-13T08:22:28.858152+00:00",
+  "timeout_seconds": 20.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:22:28.972913+00:00",
+  "elapsed_seconds": 0.11475951800002804
+}
+{"run_id": "smoke002", "status": "completed", "app_success": true, "process_exit": 0, "capture_exit": 0, "official_records": 1, "errors": []}
+{"run_id": "smoke002", "launch_verified": true, "scope_verified": true, "parent_qdisc_unchanged": true}
+{"run_alias": "smoke002", "status": "PASS", "match_status": "unique_connection", "failure_reasons": []}
+Smoke-only integration check completed; no A/B comparison or baseline sample estimate generated.

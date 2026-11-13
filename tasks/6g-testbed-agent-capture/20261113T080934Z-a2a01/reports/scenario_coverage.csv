@@ -1,0 +1,6 @@
+scenario,configuration_source,official_type,local_ports,transport,streaming,deterministic,paid_api_required,scope_decision,execution_status,notes
+a2a_single_task_local,aitestbed/configs/scenarios.yaml:1028,a2a_single_task,9001,HTTP JSON-RPC message/send,false,true,false,selected,PASS_LOCAL_SINGLE_TASK,Official default has two prompts; one synthetic prompt is a documented controlled config change
+a2a_streaming_local,aitestbed/configs/scenarios.yaml:1045,a2a_streaming,9001,HTTP JSON-RPC message/stream SSE,true,true,false,excluded,NOT_RUN,Outside selected single-task audit; source inventory only
+a2a_multi_agent_local,aitestbed/configs/scenarios.yaml:1061,a2a_multi_agent,9001|9002|9003,HTTP JSON-RPC message/send,false,true,false,excluded,NOT_RUN,Outside selected single-task audit; source inventory only
+a2a_single_task_remote,aitestbed/configs/scenarios.yaml:1086,a2a_single_task,external,HTTP(S) JSON-RPC message/send,false,endpoint-dependent,endpoint-dependent,excluded,NOT_RUN,No remote endpoint or tunnel used
+a2a_streaming_remote,aitestbed/configs/scenarios.yaml:1099,a2a_streaming,external,HTTP(S) JSON-RPC message/stream SSE,true,endpoint-dependent,endpoint-dependent,excluded,NOT_RUN,No remote endpoint or tunnel used

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "-m",
+    "a2a_agents.echo_agent",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 1,
+  "duration_s": 0.46674466133117676,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/echo_installed_help.log",
+  "pythonpath_sources": [
+    "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed",
+    "/workspace/6g-agent-audit/upstream/6G-Testbed/netemu/src",
+    "/workspace/6g-agent-audit/upstream/6G-Testbed/aiortc-main-clean/src"
+  ]
+}

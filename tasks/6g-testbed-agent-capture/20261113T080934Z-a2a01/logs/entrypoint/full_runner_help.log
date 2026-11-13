@@ -1,0 +1,56 @@
+Usage: /workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/run_full_tests.sh [OPTIONS]
+
+Matrix source: configs/scenarios.yaml:test_matrix
+
+Options:
+  --quick        Run 3 iterations per scenario with shorter delays
+  --full         Run 30 iterations per scenario
+  --runs N       Set exact number of runs per scenario
+  --stress       Enable stress tests (burst search, parallel benchmark)
+  --no-capture   Disable L3/L4 packet capture (enabled by default)
+  --no-anonymize Disable database anonymization (enabled by default)
+  --no-clean     Keep existing database and pcaps (default: clean start)
+  --resume       Resume from last successful run (implies --no-clean);
+                 reports now aggregate the entire cycle, not just this leg.
+  --add-runs N   Append N more runs of every scenario/profile to the existing
+                 cycle. Implies --no-clean. Mutually exclusive with --resume.
+  --verbose, -v  Show full output instead of progress bar
+  --enable LIST  Only run these phases (comma-separated)
+  --disable LIST Skip these phases (comma-separated)
+
+Phase names for --enable/--disable:
+  chat, realtime, image, search, deepseek, gemini, music,
+  trading, computer_use, playwright, multimodal, google_search, stress,
+  vllm, openclaw, a2a
+
+Environment variables:
+  RUNS_PER_SCENARIO        Number of runs (default: 10)
+  INTER_SCENARIO_DELAY     Seconds between scenarios (default: 2)
+  INTER_PROVIDER_DELAY     Seconds between providers (default: 5)
+  CAPTURE_PCAP             Enable pcap capture (default: true)
+  CAPTURE_DIR              Pcap output directory (default: results/captures)
+  CAPTURE_FILTER           BPF filter (default: HTTP(S) plus WebRTC ICE/SRTP/RTP UDP ports)
+  ANONYMIZE_DB             Anonymize provider/model names (default: true)
+  CLEAN_START              Archive old data before starting (default: true)
+  NETWORK_INTERFACE        Global interface override (default: auto)
+  RUN_TIMEOUT_SEC          Per-run timeout in seconds (default: 600, 0 = no timeout)
+  TRACE_PAYLOADS           Persist redacted payload traces (default: 0)
+
+Optional API keys (for additional scenarios):
+  GOOGLE_SEARCH_API_KEY    Enable Google search scenarios
+  GOOGLE_SEARCH_CX         Required with GOOGLE_SEARCH_API_KEY
+  SPOTIFY_CLIENT_ID        Enable Spotify music agent scenarios
+  SPOTIFY_CLIENT_SECRET    Required with SPOTIFY_CLIENT_ID
+
+Pipeline (automated after tests):
+  1. Generate charts (latency, TTFT, throughput, heatmaps, pcap analysis)
+  2. Export to Excel (15 sheets)
+  3. Generate RESULTS.md (full evaluation report)
+  4. Generate TRACES.md (sample request/response traces)
+  5. Build ML dataset from pcap captures
+  6. Train MLP traffic classifier + k-sweep
+  7. Train CVAE traffic generator
+  8. Generate synthetic traffic traces
+  9. Evaluate synthetic traffic quality (KS tests)
+ 10. Anonymize database
+

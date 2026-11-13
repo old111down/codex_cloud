@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/6g-agent-audit/scripts/run_baseline.py", line 39, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/6g-agent-audit/scripts/run_baseline.py", line 22, in main
+    raise RuntimeError('accepted smoke alignment must pass before baseline')
+RuntimeError: accepted smoke alignment must pass before baseline
