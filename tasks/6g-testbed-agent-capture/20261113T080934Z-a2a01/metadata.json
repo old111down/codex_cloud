@@ -6,9 +6,9 @@
   "run_id": "20261113T080934Z-a2a01",
   "archive_repository": "https://github.com/old111down/codex_cloud",
   "start_time_utc": "2026-11-13T07:55:41Z",
-  "end_time_utc": null,
+  "end_time_utc": "2026-11-13T08:30:42Z",
   "archive_started_time_utc": "2026-11-13T08:09:34Z",
-  "archive_completed_time_utc": null,
+  "archive_completed_time_utc": "2026-11-13T08:30:42Z",
   "objective": "Audit and execute the version-pinned official local single-task Agent/A2A path, align official application records to private packet captures, and assess an isolated RTT contrast within the original three-hour budget.",
   "branch": "codex/6g-testbed-agent-capture/20261113T080934Z-a2a01",
   "related_runs": [],
@@ -814,6 +814,15 @@
         "logs/reproduce_smoke_integration.json",
         "logs/reproduce_smoke_integration.log"
       ]
+    },
+    {
+      "description": "Checkpoint committed and pushed; root observed local and remote branch SHA equality and created PR 4 targeting main, without merging.",
+      "status": "Verified",
+      "evidence_type": "archive_operation",
+      "scope": "Checkpoint 815c30ea4464abc8aac5447ad8ede4469effa8be only; final closure commit remains external verification.",
+      "evidence": [
+        "reports/archive_checkpoint.json"
+      ]
     }
   ],
   "failed_experiments": [
@@ -925,11 +934,11 @@
       ]
     },
     {
-      "description": "Remote commit and PR have not been verified at this archive checkpoint.",
+      "description": "The subsequent closure commit SHA is intentionally not embedded in its own content. Root must verify and report that final SHA externally after commit/push. The already verified checkpoint and PR creation are separately recorded.",
       "status": "Unknown",
       "evidence_type": "archive_operation",
       "evidence": [
-        "metadata.json"
+        "reports/archive_checkpoint.json"
       ]
     }
   ],
@@ -963,35 +972,70 @@
       "path": "allowedfiles.json",
       "status": "Verified",
       "publication_review": "approved"
+    },
+    {
+      "path": "reports/archive_checkpoint.json",
+      "description": "Root-observed pushed checkpoint and PR facts, explicitly scoped before closure commit",
+      "status": "Verified",
+      "publication_review": "approved"
+    },
+    {
+      "path": "environment/agent/pip-freeze.txt",
+      "description": "Sanitized convenience freeze, byte-identical to runtime requirements",
+      "status": "Verified",
+      "publication_review": "sanitized"
+    },
+    {
+      "path": "reports/archive_validation.json",
+      "description": "Schema, UTC, protected core and closed allowlist validation scope",
+      "status": "Verified",
+      "publication_review": "approved"
     }
   ],
   "publication_review": {
-    "status": "Partially Verified",
+    "status": "Verified",
     "manifest": "reports/publication_review.json",
     "withheld_manifest": "reports/withheld.md",
     "limitations": [
       "Whole-batch scanning is limited evidence; approved artifacts also receive content inspection.",
       "Raw evidence remains private and cannot be independently re-read from this public archive."
-    ]
+    ],
+    "scope": "Review and scanning of exact approved public artifacts only; scientific overall status remains Partially Verified."
   },
   "final_status": "Partially Verified",
-  "final_status_scope": "Official local A2A PASS; run/connection log-PCAP alignment PASS; RTT contrast BLOCKED. This is not complete paper/testbed reproduction. Archive checkpoint remains in progress.",
+  "final_status_scope": "Official local A2A PASS; run/connection log-PCAP alignment PASS; RTT contrast BLOCKED. Local archive sealed; not complete paper/testbed reproduction. Remote verification below binds the already verified checkpoint, not the subsequently generated closure commit.",
   "verdicts": {
     "A2A_scenario_rerun": "PASS",
     "log_pcap_alignment": "PASS",
     "RTT_contrast": "BLOCKED"
   },
   "remote_verification": {
-    "status": "Unknown",
+    "status": "Verified",
     "branch": "codex/6g-testbed-agent-capture/20261113T080934Z-a2a01",
-    "commit_sha": "Unknown"
+    "commit_sha": "815c30ea4464abc8aac5447ad8ede4469effa8be",
+    "scope": "Already published checkpoint only: root verified local commit equals remote ls-remote result. This field does not refer to the subsequent closure commit.",
+    "evidence": [
+      "reports/archive_checkpoint.json"
+    ],
+    "final_commit_verification_policy": "Root verifies the final closure SHA externally after committing/pushing and reports it in the PR description and final reply; this avoids a self-referential commit hash."
   },
-  "pull_request_url": null,
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/4",
   "limitations": [
     "No B rounds because isolated netem probe failed.",
     "No upstream CaptureController execution or historical full-lock reproduction.",
-    "No upstream source or raw application/packet evidence is redistributed."
+    "No upstream source or raw application/packet evidence is redistributed.",
+    "Fresh-private-directory smoke-only integration reused the existing independent environment and pinned source. The default full reproduce.sh path was not rerun end to end after assembly; original A001–A010 remain the ten measured rounds."
   ],
   "hard_deadline_utc": "2026-11-13T10:55:41Z",
-  "checkpoint_generated_time_utc": "2026-11-13T08:26:38.281783+00:00"
+  "checkpoint_generated_time_utc": "2026-11-13T08:26:38.281783+00:00",
+  "reproduction_validation": {
+    "smoke_only": "Verified; exit 0, fresh private output directory, existing environment and pinned source reused",
+    "default_full_entry_end_to_end_rerun": false,
+    "baseline_measurement_count_unchanged": 10,
+    "evidence": [
+      "logs/reproduce_smoke_integration.json",
+      "logs/reproduce_smoke_integration.log"
+    ]
+  },
+  "archive_sealed_time_utc": "2026-11-13T08:30:42Z"
 }

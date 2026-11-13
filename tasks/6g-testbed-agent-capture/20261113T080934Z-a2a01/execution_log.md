@@ -337,3 +337,11 @@ smoke001 exit 0 is not acceptance: its incorrect parent argument disqualified it
 The smoke-only reproduction integration ran 2026-11-13T08:22:27.690796+00:00 to 2026-11-13T08:22:33.739156+00:00, exit 0, from a fresh private copy. This does not rerun or replace A001–A010, and does not supply a B group. Its namespace token is sanitized only in the public log.
 
 Installation logs not reviewed for publication and all raw application logs remain withheld. Aggregate permission-probe timing/status is in reports/permission_summary.json. Independent review read existing packet/SQLite evidence without rerunning experiments.
+
+## Archive checkpoint and local closure
+
+Root reported a successful checkpoint commit/push and independent `git ls-remote` comparison: local and remote branch both resolved to `815c30ea4464abc8aac5447ad8ede4469effa8be`. The exact operation time was not recorded in this common log and remains Unknown. [PR 4](https://github.com/old111down/codex_cloud/pull/4) targets main and is unmerged. See reports/archive_checkpoint.json. The archiver did not execute additional Git or external-message actions.
+
+Local archive sealing time: `2026-11-13T08:30:42Z`. Archive start `2026-11-13T08:09:34Z` does not reset task start `2026-11-13T07:55:41Z` or deadline `2026-11-13T10:55:41Z`. These common documents bind remote verification to the prior checkpoint only. Root verifies the subsequently generated closure SHA externally after commit/push, in the PR description and final reply.
+
+The fresh-private-output smoke-only integration passed while reusing the existing environment and pinned source; the default full entry was not rerun end to end after assembly. A001–A010 and their counts remain unchanged.

@@ -16,5 +16,7 @@ All timestamps are UTC; these stages share the original budget.
 | 08:18:08 | Independent direct raw-evidence outcome review recorded | reports/independent_outcome_review.json |
 | 08:22:27–08:22:33 | Fresh-private-copy smoke-only reproduce integration exit 0 | logs/reproduce_smoke_integration.json |
 | 2026-11-13T08:26:38.281783+00:00 | In-progress approved archive checkpoint generated; end null | metadata.json; reports/publication_review.json |
+| Exact operation time Unknown; recorded 2026-11-13T08:30:42Z | Root verified pushed checkpoint `815c30ea4464abc8aac5447ad8ede4469effa8be` equals remote ls-remote; PR 4 created against main, unmerged | reports/archive_checkpoint.json |
+| 2026-11-13T08:30:42Z | Local archive sealed; original task start and deadline unchanged | metadata.json; reports/publication_review.json |
 
-No B group was executed. No external publication/commit/PR success is asserted by this timeline.
+No B group was executed. Remote verification in these files binds the preceding checkpoint only. The subsequent closure commit SHA will be externally verified and reported by root after commit/push. Smoke-only integration passed with existing environment/source; the default full entry was not rerun end to end after assembly.

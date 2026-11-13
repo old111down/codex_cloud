@@ -1,0 +1,18 @@
+{
+  "schema_version": "archive-checkpoint-observation-v1",
+  "status": "Verified",
+  "scope": "Previously pushed checkpoint only; not the subsequent closure commit",
+  "branch": "codex/6g-testbed-agent-capture/20261113T080934Z-a2a01",
+  "local_checkpoint_sha": "815c30ea4464abc8aac5447ad8ede4469effa8be",
+  "remote_ls_remote_sha": "815c30ea4464abc8aac5447ad8ede4469effa8be",
+  "local_remote_equal": true,
+  "observed_by": "root agent; archiver records the root-reported observed outcome without rerunning Git",
+  "exact_command_time_utc": "Unknown",
+  "recorded_at_utc": "2026-11-13T08:30:42Z",
+  "pull_request_url": "https://github.com/old111down/codex_cloud/pull/4",
+  "pull_request_base": "main",
+  "pull_request_merged": false,
+  "closure_commit_sha": "Unknown",
+  "closure_commit_policy": "Final closure commit is generated after these bytes are sealed and is verified externally in the PR description and final reply, avoiding a self-referential in-commit SHA.",
+  "verification_tool": "git ls-remote; exact full argv Unknown in this common record"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "archive-local-validation-v1",
+  "status": "PASS",
+  "scope": "Local final text archive and exact export allowlist, before root closure commit/push; does not verify a new remote closure SHA or upgrade scientific verdicts.",
+  "recorded_at_utc": "2026-11-13T08:31:30Z",
+  "metadata_schema": "templates/metadata.schema.json; Draft 2020-12 with date-time FormatChecker",
+  "metadata_schema_result": "PASS",
+  "explicit_UTC_parse_result": "PASS",
+  "parsed_UTC_field_count": 123,
+  "important_findings_have_evidence": true,
+  "overall_final_status": "Partially Verified",
+  "verdicts": {
+    "A2A_scenario_rerun": "PASS",
+    "log_pcap_alignment": "PASS",
+    "RTT_contrast": "BLOCKED"
+  },
+  "protected_core_unchanged_from_private_root": {
+    "REPORT.md": "e706b95d20592fc04c0d694f95f1f0146a41df1fccf2b6790f32107bf46a4acc",
+    "manifest.json": "db9ad8496c551cb09265b653b642b1537c22b5529a073eb76cbcd474bdf5bbcf",
+    "runs.csv": "967ac81b7e875250b63b375985280fc20e12adf423b57199c61e5527e4e11f21",
+    "reports/summary.json": "86a59d8d0dc7258de0ca523424f1e09ba18d4556a702376bc28853cb38f90f7a"
+  },
+  "sanitized_pip_freeze_equals_requirements_runtime": true,
+  "closure_hash_definition": "Every approved payload is pinned by path, byte count and SHA256 in allowedfiles.json. The manifest is scanned/copied separately; its own SHA is recorded in the private export receipt to avoid recursive self-hash.",
+  "exporter_prewrite_requirement": "Scan all bytes and all target paths before any public write; export receipt must PASS before root final commit.",
+  "final_closure_commit_remote_check": "To be performed and reported externally by root after committing/pushing."
+}

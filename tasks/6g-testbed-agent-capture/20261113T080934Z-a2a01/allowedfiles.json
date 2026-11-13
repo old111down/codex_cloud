@@ -7,8 +7,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 2297,
-      "sha256": "311da5fc238a2c794b85388c00a0d4fc293b4830d53156cfccb6001be614ea53",
+      "bytes": 2781,
+      "sha256": "6ff38d177d399a2cea38a1962199369ea382881e39cfd4d5abbbd3b5f1641ab1",
       "review": "approved",
       "content_inspected": true,
       "executable": false
@@ -23,8 +23,8 @@
     },
     {
       "path": "environment/README.md",
-      "bytes": 1050,
-      "sha256": "17ac53b6045366447c5d6bf3b6acbd0bc8ee4e8b851fe9a93860a74fde105b06",
+      "bytes": 1305,
+      "sha256": "ae2a5942d0265c95b403a09d130804992583e7ee65a4eeef449c2198944ed81b",
       "review": "approved",
       "content_inspected": true,
       "executable": false
@@ -44,6 +44,14 @@
       "review": "approved",
       "content_inspected": true,
       "executable": false
+    },
+    {
+      "path": "environment/agent/pip-freeze.txt",
+      "review": "sanitized",
+      "content_inspected": true,
+      "executable": false,
+      "bytes": 968,
+      "sha256": "a47a01fef7e2576a1d3810ae2ad4563bfdbc01d35c98826ce0731978559e7868"
     },
     {
       "path": "environment/agent/requirements-runtime.txt",
@@ -87,16 +95,16 @@
     },
     {
       "path": "execution_log.md",
-      "bytes": 15640,
-      "sha256": "4da22890b256ac56920aee6cd24f9a70ebc1944f847199252f4f40049a269de5",
+      "bytes": 16740,
+      "sha256": "828fbc83637d955b2c8a2bc68695157ba860d60d3ca403c43e0aaebef4c3dd23",
       "review": "approved",
       "content_inspected": true,
       "executable": false
     },
     {
       "path": "execution_timeline.md",
-      "bytes": 1633,
-      "sha256": "f202aef39ce8134ccca57ce522bb669d5adfaba3a0b2da01d2eb48da0cf4f52c",
+      "bytes": 2240,
+      "sha256": "8e57ea39832848ea267ce254b097d668556a28c518a0a3b5fbb689bb33f863a4",
       "review": "approved",
       "content_inspected": true,
       "executable": false
@@ -647,8 +655,8 @@
     },
     {
       "path": "metadata.json",
-      "bytes": 33478,
-      "sha256": "146c50efbb3bcc91a65e04f1b45981fd12a505a765932f139ecee10ab0d6e438",
+      "bytes": 36214,
+      "sha256": "5ff8e3147f2ac3669a427c4884fa28423ce370ee33aa4818e26015c8fe97d5f9",
       "review": "approved",
       "content_inspected": true,
       "executable": false
@@ -668,6 +676,22 @@
       "review": "approved",
       "content_inspected": true,
       "executable": false
+    },
+    {
+      "path": "reports/archive_checkpoint.json",
+      "review": "approved",
+      "content_inspected": true,
+      "executable": false,
+      "bytes": 1057,
+      "sha256": "5fdf10afc4d090ba577060ea6755c375912b79a21d98a2bad7f95ef1a4e25e24"
+    },
+    {
+      "path": "reports/archive_validation.json",
+      "review": "approved",
+      "content_inspected": true,
+      "executable": false,
+      "bytes": 1689,
+      "sha256": "b9bf4ac074a3d12af136e8acc229fd7b9f2bacca996109fdd66597b5c661e49f"
     },
     {
       "path": "reports/collector_baseline_review.json",
@@ -831,8 +855,8 @@
     },
     {
       "path": "reports/publication_review.json",
-      "bytes": 3084,
-      "sha256": "5a8dd43136f8eb89d86e84f43c67045b5a729611f6e6f39f4a937ea40aa424a2",
+      "bytes": 3634,
+      "sha256": "b096742fde8c9c94df4debfc4453100613a4c57a4f4c96d54cd515c4d89b4af4",
       "review": "approved",
       "content_inspected": true,
       "executable": false
@@ -959,8 +983,8 @@
     },
     {
       "path": "task_report.md",
-      "bytes": 7326,
-      "sha256": "d5a6cebbf44d799cea3aed592c90b38db323e6cf8a7c24948542dd649fbe075e",
+      "bytes": 8261,
+      "sha256": "eae4920e9cff2400a703cabf467f3a83151fad3fcd7b1c6212f9695a2b5f2949",
       "review": "approved",
       "content_inspected": true,
       "executable": false

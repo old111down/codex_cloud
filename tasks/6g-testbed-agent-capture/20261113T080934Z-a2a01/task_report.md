@@ -9,9 +9,10 @@
 | Task Slug | 6g-testbed-agent-capture |
 | Run ID | 20261113T080934Z-a2a01 |
 | Start Time (UTC) | 2026-11-13T07:55:41Z |
-| End Time (UTC) | null — in progress |
+| End Time (UTC) | 2026-11-13T08:30:42Z |
 | Archive Start (UTC) | 2026-11-13T08:09:34Z |
 | Checkpoint generated (UTC) | 2026-11-13T08:26:38.281783+00:00 |
+| Local archive sealed (UTC) | 2026-11-13T08:30:42Z |
 | Hard deadline (UTC) | 2026-11-13T10:55:41Z |
 | Objective | Official local Agent/A2A function, application-to-PCAP alignment, isolated RTT contrast |
 | Related Runs | No prior experiment run asserted; S4aP260148 is historical provenance |
@@ -40,7 +41,8 @@ Debian 13.6, CPU quota 4 cores, memory limit 16 GiB, independent Conda Python 3.
 | Official A2A local single-task | Verified / PASS | Ten separated original-code rounds; runs.csv, reports/summary.json |
 | Log-to-PCAP alignment | Verified / PASS | Ten unique HTTP/1.1 task connections; ten observed negative controls rejected; reports/independent_outcome_review.json |
 | Collector integrity | Verified | 400 records read; all hashes/counts/directions and drop/drain checks; reports/collector_baseline_review.json |
-| Smoke-only reproduce entry | Verified | logs/reproduce_smoke_integration.json exit 0; separate smoke, excluded from baseline n |
+| Smoke-only reproduce entry | Verified | logs/reproduce_smoke_integration.json exit 0; fresh private output, reused environment/source; excluded from baseline n |
+| Checkpoint publication / PR | Verified | reports/archive_checkpoint.json; local/remote checkpoint SHA agree; PR 4 targets main, unmerged |
 | RTT intervention contrast | Unknown / BLOCKED | reports/permission_summary.json; B attempts 0 |
 
 ## Failed experiments and repairs
@@ -68,8 +70,8 @@ RTT intervention, nominal 2d calibration, socket RTT, historical workbook numeri
 
 ## Artifacts and publication review
 
-[allowedfiles.json](allowedfiles.json) is the exact reviewed export set with pinned hashes and sizes. See reports/publication_review.json for scans and original/published transformation hashes; reports/withheld.md excludes raw PCAP, application database/records/logs, real IDs/inodes, full official repositories and full paper/page dumps. Original evidence is preserved privately. requirements-runtime.txt normalizes only the local packaging build reference to the observed 26.3 release pin.
+[allowedfiles.json](allowedfiles.json) is the exact reviewed export set with pinned hashes and sizes. See reports/publication_review.json for scans and original/published transformation hashes; reports/withheld.md excludes raw PCAP, application database/records/logs, real IDs/inodes, full official repositories and full paper/page dumps. Original evidence is preserved privately. requirements-runtime.txt normalizes only the local packaging build reference to the observed 26.3 release pin. The convenience environment/agent/pip-freeze.txt is byte-identical to that sanitized declaration; the original freeze remains private. Public-artifact publication review is Verified within this exact allowlist; the scientific verdict remains Partially Verified.
 
 ## Final status and next steps
 
-**Partially Verified:** three separate verdicts are **PASS / PASS / BLOCKED**, scoped as above. The archive is an in-progress checkpoint with end time null. Remote branch verification, final commit and PR URL are pending root completion; no upload success is asserted here. The branch is `codex/6g-testbed-agent-capture/20261113T080934Z-a2a01`. Do not merge automatically. An RTT follow-up requires an authorized isolated path with usable netem, independent endpoint RTT calibration and unchanged task/phase controls.
+**Partially Verified:** three separate verdicts are **PASS / PASS / BLOCKED**, scoped as above. The local archive was sealed at `2026-11-13T08:30:42Z` within the original budget. Archive start did not reset T0. Root verified local/remote checkpoint SHA `815c30ea4464abc8aac5447ad8ede4469effa8be` and created [PR 4](https://github.com/old111down/codex_cloud/pull/4) targeting main; it remains unmerged. This recorded SHA binds that checkpoint only. Root will verify the subsequent closure commit externally in the PR description and final reply, avoiding self-reference. The branch is `codex/6g-testbed-agent-capture/20261113T080934Z-a2a01`. Fresh-private-output smoke-only integration passed using the existing independent environment and pinned source; the default full entry was not rerun end to end after assembly. An RTT follow-up requires an authorized isolated path with usable netem, independent endpoint RTT calibration and unchanged task/phase controls.
