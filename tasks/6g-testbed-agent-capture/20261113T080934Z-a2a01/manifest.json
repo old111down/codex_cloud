@@ -1,0 +1,102 @@
+{
+  "schema_version": "6g-a2a-capture-audit-v1",
+  "created_utc": "2026-11-13T08:24:42.613480+00:00",
+  "source_repository": "https://github.com/5G-MAG/6G-Testbed",
+  "paper_review_commit": "d055fa68ef4de30b93a8a30838ae51fe3e4b561c",
+  "executed_commit": "d055fa68ef4de30b93a8a30838ae51fe3e4b561c",
+  "upstream_modified": false,
+  "paper": "https://arxiv.org/html/2611.07250v1",
+  "historical_artifact_id": "S4aP260148",
+  "historical_artifact_relation": "Distinct historical report/workbook; not asserted to be the present execution",
+  "scenario": "a2a_single_task_local",
+  "observation_point": "Own isolated network namespace loopback software RX",
+  "isolation": "unshare --user --map-root-user --net; only lo; parent/child qdisc snapshots compared",
+  "capture_provider": "Original external AF_PACKET collector; upstream sudo/tcpdump CaptureController not executed",
+  "capture_filter": "Only complete TCP/IP frames involving synthetic task ports9001/9009; PACKET_HOST only; all other frames discarded before writing",
+  "pcap": {
+    "format": "classic nanosecond little endian",
+    "datalink": "DLT_EN10MB",
+    "timestamp": "SO_TIMESTAMPNS software RX CLOCK_REALTIME",
+    "duplication_handling": "PACKET_HOST only; outgoing loopback copy discarded"
+  },
+  "clocks": {
+    "application": "Official float time.time CLOCK_REALTIME; no original monotonic duration",
+    "wrapper": "CLOCK_MONOTONIC/CLOCK_REALTIME sandwich anchors at run/capture, not SDK per-event instrumentation",
+    "pcap": "Kernel software RX CLOCK_REALTIME; nanosecond representation is not nanosecond accuracy",
+    "matching_tolerance_ns": 50000000,
+    "tolerance_is_measured_error": false,
+    "all_A_matched_without_window_expansion": true
+  },
+  "configuration_snapshot": "environment/scenario_snapshot.json",
+  "configuration_changes": [
+    "One deterministic local synthetic prompt instead of two defaults",
+    "No retries",
+    "No inter-run wait inside one-round CLI"
+  ],
+  "connection_policy": "new_server_and_sdk_session_per_round_card_then_one_task",
+  "versions": "environment/agent/versions.json",
+  "dependencies": "environment/agent/requirements-runtime.txt",
+  "seed": "6g-testbed-local-task-v1; transformed deterministically before use; plaintext request/response not published",
+  "verdicts": {
+    "A2A_scenario_rerun": "PASS",
+    "log_pcap_alignment": "PASS",
+    "RTT_contrast": "BLOCKED"
+  },
+  "scope_limits": [
+    "No claim of entire testbed/container pipeline execution",
+    "No upstream CaptureController execution",
+    "No packet-level SDK/tool semantic truth",
+    "No client socket RTT calibration or shaped-profile effect",
+    "No WAN egress, physical multihop, production, classifier or GPU experiment"
+  ],
+  "private_artifacts": "PCAP, literal task/config, original app database/records, connection IDs and raw logs remain under private/",
+  "round_results": "runs.csv",
+  "summary": {
+    "scope": "Separated local baseline rounds; not IID population or WAN inference",
+    "A_attempts": 10,
+    "A_pass": 10,
+    "A_fail_or_blocked": 0,
+    "B_attempts": 0,
+    "B_status": "BLOCKED",
+    "B_reason": "tc netem in our isolated child loopback returned: Specified qdisc kind is unknown; no host module changes attempted",
+    "app_task_latency_ms": {
+      "n": 10,
+      "median": 7.5484514236450195,
+      "min": 6.58726692199707,
+      "max": 10.089635848999023
+    },
+    "packet_syn_to_synack_estimate_ms": {
+      "n": 10,
+      "median": 0.1114185,
+      "min": 0.010991,
+      "max": 0.271431
+    },
+    "HTTP_post_request_to_response_complete_ms": {
+      "n": 10,
+      "median": 4.2657039999999995,
+      "min": 3.435602,
+      "max": 5.815071
+    },
+    "application_invocation_ms_including_import_launch_and_card": {
+      "n": 10,
+      "median": 2624.7174999999997,
+      "min": 2373.682404,
+      "max": 2828.257962
+    },
+    "capture_all_packets": 400,
+    "target_filtered_packets": 340,
+    "matched_connection_packets_including_card": 180,
+    "negative_control_packets": 60,
+    "matching": {
+      "unique_connection": 10,
+      "ambiguous": 0,
+      "unmatched": 0,
+      "not_evaluable": 0
+    },
+    "negative_control_pass": 10,
+    "all_config_hashes_equal": true,
+    "all_connection_policies_equal": true,
+    "task_payloads_published": false,
+    "p95_reported_as_stable_result": false
+  }
+}

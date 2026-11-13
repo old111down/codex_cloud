@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "env",
+    "AUDIT_PYTHON=/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "bash",
+    "reproduce.sh",
+    "--smoke-only"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/reproduce_check",
+  "start_utc": "2026-11-13T08:22:27.690796+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:22:33.739156+00:00",
+  "elapsed_seconds": 6.048365816000114
+}

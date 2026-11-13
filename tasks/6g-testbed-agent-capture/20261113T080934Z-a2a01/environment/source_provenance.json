@@ -1,0 +1,74 @@
+{
+  "repository": "https://github.com/5G-MAG/6G-Testbed",
+  "requested_short_commit": "d055fa68ef4d",
+  "executed_sha": "d055fa68ef4de30b93a8a30838ae51fe3e4b561c",
+  "observed_default_branch_head_before_checkout": "7231ae8e5670b67564cf28d397c2820d9403ecdc",
+  "execution_mode": "paper-review commit source rerun; not historical workbook execution",
+  "git_status_porcelain": "",
+  "commit_time": "2026-09-21T12:22:46-05:00",
+  "licenses": {
+    "aitestbed_license_file": "5G-MAG Public License (v1.0)",
+    "netemu_license_file": "5G-MAG Public License (v1.0)",
+    "netemu_pyproject_declaration": "Apache-2.0; conflicts with bundled LICENSE label; applicability Unknown",
+    "bundled_aiortc_pyproject": "BSD-3-Clause; see its LICENSE",
+    "redistribution_action": "No complete upstream source or license text redistributed; official URLs and file hashes only"
+  },
+  "files": [
+    {
+      "path": "aitestbed/orchestrator.py",
+      "sha256": "9c56a5dc7b86ae73fe76f32ea729139750dd1f26cac6f94097b05bcdff438ea9"
+    },
+    {
+      "path": "aitestbed/clients/a2a_client.py",
+      "sha256": "ae767def5d4042e8c03c76319e811e3980f79f812a4fd5edc62e47ba02237cbc"
+    },
+    {
+      "path": "aitestbed/scenarios/a2a_agent.py",
+      "sha256": "6b49f452e9e0bf27d033456a166a5f230de27e5cec28e3e9603f71f3633bc1e7"
+    },
+    {
+      "path": "aitestbed/a2a_agents/echo_agent.py",
+      "sha256": "824a5e0d9cb226c69c697e499b83f158a7ec91be667b73dd360a0f974fb3deed"
+    },
+    {
+      "path": "aitestbed/a2a_agents/launcher.py",
+      "sha256": "a5b5113071a036347ef5c98fc7e563aaea71fdefb59ffeb3f89a554bbe377008"
+    },
+    {
+      "path": "aitestbed/configs/scenarios.yaml",
+      "sha256": "aecc4cbafcf0ac1c2e5925ce36953664261c74229ef34bf5740db87ae88a9130"
+    },
+    {
+      "path": "aitestbed/configs/profiles.yaml",
+      "sha256": "c280194a6be758ed5b1f8a3429e7371501ee5aaeda61b06ae3cc57f44b67eebd"
+    },
+    {
+      "path": "netemu/src/netemu/pcap.py",
+      "sha256": "d77038201f0dc56a2088ec2101b236df08d8829adcf834d5bbc1c4978f858ab7"
+    },
+    {
+      "path": "netemu/src/netemu/capture.py",
+      "sha256": "930fe1333314fa3c3396f7089641dbeb1de8133f135ec93b4673b3c173c29d8e"
+    },
+    {
+      "path": "netemu/src/netemu/emulator.py",
+      "sha256": "5efe5da6526fe1b284778eb147dcf40a5f7d67436ddeaf255b47f5fb441d010b"
+    },
+    {
+      "path": "aiortc-main-clean/pyproject.toml",
+      "sha256": "5560bb53bed0771eb9f75795040dbe8770992894479212a81d7a3806183b7466"
+    },
+    {
+      "path": "aitestbed/LICENSE",
+      "sha256": "c5f8a8e6652b2a1d241c32bc99d3291a84ad337cdc0ff980a34b500384726010"
+    },
+    {
+      "path": "netemu/LICENSE",
+      "sha256": "c5f8a8e6652b2a1d241c32bc99d3291a84ad337cdc0ff980a34b500384726010"
+    },
+    {
+      "path": "aiortc-main-clean/LICENSE",
+      "sha256": "bec75b5a59bbf89e979e4cb764775eb7b5d0167c5e907139e6f9953698c811b6"
+    }
+  ]
+}

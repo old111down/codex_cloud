@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".conda/agent/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-cache-dir",
+    "--only-binary=:all:",
+    "a2a-sdk[http-server]==1.1.2"
+  ],
+  "cwd": "/workspace/6g-agent-audit",
+  "start_utc": "2026-11-13T08:04:40.939086+00:00",
+  "timeout_seconds": 300.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:04:42.258841+00:00",
+  "elapsed_seconds": 1.3197573740000053
+}

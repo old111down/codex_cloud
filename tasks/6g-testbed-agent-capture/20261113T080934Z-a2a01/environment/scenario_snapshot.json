@@ -1,0 +1,44 @@
+{
+  "scenario": {
+    "type": "a2a_single_task",
+    "inter_prompt_delay_sec": 0,
+    "description": "A2A non-streaming message/send against a local echo agent",
+    "provider": "a2a",
+    "model": "echo",
+    "streaming": false,
+    "loopback_ports": [
+      9001
+    ],
+    "target_port": 9001,
+    "agents": [
+      {
+        "module": "a2a_agents.echo_agent",
+        "port": 9001,
+        "args": [
+          "--behavior",
+          "echo",
+          "--stream-chunks",
+          "1"
+        ]
+      }
+    ],
+    "prompts": {
+      "count": 1,
+      "contents": "WITHHELD",
+      "sha256": "64577338f32306134b5efa324d198ff90c51a4840e8f9715e0523dfeb4eafa71"
+    }
+  },
+  "defaults": {
+    "runs_per_scenario": 10,
+    "inter_run_delay_sec": 0,
+    "timeout_sec": 180,
+    "retry_count": 0,
+    "retry_backoff_sec": 5.0,
+    "retry_backoff_multiplier": 2.0,
+    "stall_gap_sec": 1.0,
+    "burst_gap_sec": 1.0,
+    "inter_prompt_delay_sec": 0
+  },
+  "source_yaml_sha256": "8d52b66b750ec8120e989b19dc196eeee463d5ac914e9bbf63371d8edab8ed17",
+  "description": "Sanitized one-task configuration; literal synthetic payload withheld"
+}

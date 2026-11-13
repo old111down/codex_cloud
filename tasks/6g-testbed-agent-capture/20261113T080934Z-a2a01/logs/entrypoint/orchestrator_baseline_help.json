@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/6g-agent-audit/upstream/6G-Testbed/aitestbed/orchestrator.py",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 1,
+  "duration_s": 0.047937870025634766,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/orchestrator_baseline_help.log"
+}

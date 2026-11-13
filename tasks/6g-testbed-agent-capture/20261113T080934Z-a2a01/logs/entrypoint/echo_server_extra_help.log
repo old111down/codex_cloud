@@ -1,0 +1,20 @@
+usage: echo_agent.py [-h] [--port PORT] [--host HOST] [--name NAME]
+                     [--behavior {echo,upper,reverse}]
+                     [--stream-chunks STREAM_CHUNKS]
+                     [--stream-delay-ms STREAM_DELAY_MS]
+                     [--public-url PUBLIC_URL]
+
+Testbed echo A2A agent
+
+options:
+  -h, --help            show this help message and exit
+  --port PORT
+  --host HOST
+  --name NAME
+  --behavior {echo,upper,reverse}
+  --stream-chunks STREAM_CHUNKS
+  --stream-delay-ms STREAM_DELAY_MS
+  --public-url PUBLIC_URL
+                        Externally-reachable base URL to advertise in the
+                        Agent Card (e.g. a cloudflared/ngrok tunnel). Defaults
+                        to http://host:port/.

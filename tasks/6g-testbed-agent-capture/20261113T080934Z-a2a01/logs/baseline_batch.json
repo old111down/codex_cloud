@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "scripts/run_baseline.py"
+  ],
+  "cwd": "/workspace/6g-agent-audit",
+  "start_utc": "2026-11-13T08:10:56.855384+00:00",
+  "timeout_seconds": 1200.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:11:31.367180+00:00",
+  "elapsed_seconds": 34.512165159000006
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "task-capture-analysis-v1",
+  "run_alias": "A008",
+  "group": "A",
+  "source_sha": "d055fa68ef4de30b93a8a30838ae51fe3e4b561c",
+  "status": "PASS",
+  "match_status": "unique_connection",
+  "failure_reasons": [],
+  "checks": {
+    "source_revision_pinned": true,
+    "run_alias_matches_directory": true,
+    "nonempty_ethernet_ip_tcp": true,
+    "no_truncation_decode_or_time_regression": true,
+    "interface_consistent": true,
+    "capture_ports_match_run_scope": true,
+    "capture_metadata_complete": true,
+    "capture_namespace_manifest_consistent": true,
+    "capture_socket_drained_after_stop": true,
+    "capture_socket_zero_reported_drops": true,
+    "capture_hash_and_count_match": true,
+    "official_db_integrity": true,
+    "run_clock_anchors_valid": true,
+    "collector_clock_anchors_valid": true,
+    "process_exit_zero": true,
+    "exactly_one_official_app_task": true,
+    "scenario_manifest_consistent": true,
+    "private_task_hash_valid": true,
+    "unique_target_connection_and_task": true,
+    "official_task_success": true,
+    "negative_control_seen_exactly_once": true,
+    "negative_control_excluded_from_target": true,
+    "negative_control_protocol_rejected": true,
+    "negative_control_manifest_success": true,
+    "matched_connection_three_way_handshake": true
+  },
+  "matching_granularity": "one_official_wall_clock_task_to_unique_HTTP_1_1_JSONRPC_A2A_send_connection",
+  "observed_rpc_methods": [
+    "SendMessage"
+  ],
+  "canonical_operation": "nonstreaming_A2A_send_message",
+  "per_packet_sdk_event_ground_truth": false,
+  "target_filter_counts": {
+    "packets": 34,
+    "frame_bytes": 5135,
+    "connections": 4,
+    "client_to_server_packets": 19,
+    "server_to_client_packets": 15
+  },
+  "matched_connection_counts": {
+    "packets": 18,
+    "frame_bytes": 3276,
+    "client_to_server_packets": 10,
+    "server_to_client_packets": 8
+  },
+  "protocol_message_send_candidates": 1,
+  "eligible_task_candidates": 1,
+  "eligible_connections": 1,
+  "protocol_candidate_rejection_counts": {},
+  "app_record_match_status": "unique",
+  "negative_control": {
+    "packets": 6,
+    "connections": 1,
+    "matching_manifest_connections": 1,
+    "protocol_message_send_messages": 0,
+    "included_in_target_packet_counts": false,
+    "rejection_reasons": [
+      "different_target_endpoint",
+      "no_A2A_send_method"
+    ]
+  },
+  "official_app_task_count": 1,
+  "official_app_latency_ms": 7.132530212402344,
+  "pcap_http_request_to_response_complete_ms": 4.266414,
+  "syn_to_synack_rtt": {
+    "sample_count": 1,
+    "samples_ms": [
+      0.083768
+    ],
+    "median_ms": 0.083768,
+    "min_ms": 0.083768,
+    "max_ms": 0.083768
+  },
+  "clock": {
+    "status": "valid",
+    "max_anchor_read_bracket_ns": 1089,
+    "offset_midpoint_change_ns": 21.0,
+    "collector": {
+      "status": "valid",
+      "anchor_count": 4,
+      "max_anchor_read_bracket_ns": 1831,
+      "offset_midpoint_range_ns": 96.5,
+      "offset_midpoint_start_end_change_ns": -96.5
+    },
+    "predeclared_matching_tolerance_ns": 50000000,
+    "matching_tolerance_is_measured_clock_error": false,
+    "app_timestamp_float_ulp_ns": 238.4185791015625,
+    "matched_within_unexpanded_official_task_window": true
+  },
+  "hashes": {
+    "pcap_sha256": "2d4b0069ae73dbe36d5b23115d2c32dba2c63ef2ee10541ca596751e6aab24bd",
+    "appdb_sha256": "6da215044f83e71ba4a4c213c128dd1355f67d7c540c1439d6271585e23d06e8",
+    "run_json_sha256": "eb9a856d4f61b777746073dae742a51336699d9b11d13ca3b69fbea7bef3ad99",
+    "task_sha256": "64577338f32306134b5efa324d198ff90c51a4840e8f9715e0523dfeb4eafa71"
+  },
+  "capture_validation": {
+    "nonempty": true,
+    "datalink": 1,
+    "format": "classic_pcap_nanosecond",
+    "reported_socket_drops": 0
+  },
+  "limits": [
+    "Connection linkage uses interface, task run, endpoint, task-time window, HTTP/1.1 and JSON-RPC evidence; these are ground truth, not classifier features.",
+    "SYN-to-SYNACK is a same-capture receive-timestamp delta, distinct from SYN-to-third-ACK and official application latency.",
+    "Nanosecond timestamp representation does not establish nanosecond measurement accuracy.",
+    "One connection-level task match does not validate per-packet SDK events or arbitrary reused-connection tasks.",
+    "Packet/frame byte counts include TCP ACKs and Ethernet/IP/TCP framing; official HTTP serialization counters have different scope.",
+    "No network emulation or RTT intervention contrast is inferred by this analyzer."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/5G-MAG/6G-Testbed",
+  "fetched_main_sha": "7231ae8e5670b67564cf28d397c2820d9403ecdc",
+  "executed_full_sha": "d055fa68ef4de30b93a8a30838ae51fe3e4b561c",
+  "checkout": "detached",
+  "upstream_modified": false,
+  "license": "aitestbed and netemu bundled files: 5G-MAG Public License v1.0; netemu pyproject says Apache-2.0 (conflicting applicability Unknown); bundled aiortc BSD-3-Clause. No upstream source/license text redistributed.",
+  "paper_url": "https://arxiv.org/html/2611.07250v1",
+  "historical_artifact": "S4aP260148",
+  "same_run_asserted": false,
+  "license_evidence": "environment/source_provenance.json"
+}

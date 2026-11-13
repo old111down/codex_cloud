@@ -1,0 +1,63 @@
+{
+  "schema_version": "explicit-allowlist-publication-review-v1",
+  "reviewed_at_utc": "2026-11-13T08:30:42Z",
+  "status": "Verified",
+  "scope": "Public-artifact review of this exact allowlisted final local archive only; does not upgrade scientific verdicts or establish the subsequently generated closure commit remotely.",
+  "content_inspection": "Original reports/config/metadata read; selected logs individually read by independent reviewer; original scripts and per-run aggregate summaries separately inspected before export.",
+  "whole_batch_prewrite_scan_required": true,
+  "scanner": "scripts/export_public.py",
+  "scans": [
+    "path traversal/symlinks/nested git",
+    "size and UTF-8/binary",
+    "secret/private key/token assignments",
+    "UUID",
+    "raw IPv4/IPv6 except inspected synthetic loopback",
+    "namespace inode tokens",
+    "local/private URL",
+    "JSON parsing",
+    "SHA256 and size pinning"
+  ],
+  "synthetic_configuration_exceptions": [
+    "127.0.0.1, 0.0.0.0 and ::1 in original test scripts are explicit public synthetic configuration",
+    "ports 9001 and 9009 are synthetic fixed test ports, not captured endpoint identifiers"
+  ],
+  "transformations": [
+    {
+      "path": "logs/smoke_001.json",
+      "original_sha256": "21bed59821ce529ad3f9fe4f67be58873d6517752ff2fc620640769a1f9b3fe2",
+      "published_sha256": "46f4d2366b354945a7e1682cfc10bcd5f1100da68ba12d2be9cb00492ea51f42",
+      "transformation": "replace raw namespace inode token with REDACTED_NAMESPACE in public copy only; original private evidence retained",
+      "scientific_results_changed": false
+    },
+    {
+      "path": "logs/reproduce_smoke_integration.log",
+      "original_sha256": "b17097ee4749c81e477eabcda375d2775b64ec28f4a3883b9525793ca0bbb1b7",
+      "published_sha256": "a867a13641a18e6f87cc048fcc1242b64837bc66475c515c6d283af9d22e82a4",
+      "transformation": "replace raw namespace inode token with REDACTED_NAMESPACE in public copy only; original private evidence retained",
+      "scientific_results_changed": false
+    },
+    {
+      "path": "reports/scenario_coverage.csv",
+      "original_sha256": "6fd6f856d7c5057c33c1b4a2d56004dfb6833f75103645d9ad29aa0390faa1b8",
+      "published_sha256": "dd6d4cc90b02255bcb89357028813041c3b5a2a1c0a03c0acbe60efa4964ba61",
+      "transformation": "update selected scenario inventory execution_status from planning snapshot to evidenced PASS_LOCAL_SINGLE_TASK; runs.csv and reports/per_run are authoritative",
+      "scientific_results_changed": false
+    },
+    {
+      "path": "environment/agent/pip-freeze.txt",
+      "original_sha256": "83bb1d96757bf28d05a0a66740303cfb96cbe0910718dc2eb84b354737d9c034",
+      "published_sha256": "a47a01fef7e2576a1d3810ae2ad4563bfdbc01d35c98826ce0731978559e7868",
+      "transformation": "Convenience public copy equals the inspected requirements-runtime.txt; original local Conda packaging build reference normalized to packaging==26.3. Original freeze remains private.",
+      "scientific_results_changed": false
+    }
+  ],
+  "original_pip_freeze_sha256": "83bb1d96757bf28d05a0a66740303cfb96cbe0910718dc2eb84b354737d9c034",
+  "environment_transform": "local packaging build reference normalized to observed packaging==26.3; raw freeze withheld",
+  "withheld_manifest": "reports/withheld.md",
+  "limitations": [
+    "Pattern scans do not guarantee absence of secrets.",
+    "Public aggregate evidence cannot replace private raw packet/application inspection.",
+    "Any future changed file requires renewed content inspection and allowlist pins."
+  ],
+  "scan_receipt_private_path": "private/archive_final_export_receipt.json"
+}

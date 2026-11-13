@@ -1,0 +1,48 @@
+{
+  "scope": "Separated local baseline rounds; not IID population or WAN inference",
+  "A_attempts": 10,
+  "A_pass": 10,
+  "A_fail_or_blocked": 0,
+  "B_attempts": 0,
+  "B_status": "BLOCKED",
+  "B_reason": "tc netem in our isolated child loopback returned: Specified qdisc kind is unknown; no host module changes attempted",
+  "app_task_latency_ms": {
+    "n": 10,
+    "median": 7.5484514236450195,
+    "min": 6.58726692199707,
+    "max": 10.089635848999023
+  },
+  "packet_syn_to_synack_estimate_ms": {
+    "n": 10,
+    "median": 0.1114185,
+    "min": 0.010991,
+    "max": 0.271431
+  },
+  "HTTP_post_request_to_response_complete_ms": {
+    "n": 10,
+    "median": 4.2657039999999995,
+    "min": 3.435602,
+    "max": 5.815071
+  },
+  "application_invocation_ms_including_import_launch_and_card": {
+    "n": 10,
+    "median": 2624.7174999999997,
+    "min": 2373.682404,
+    "max": 2828.257962
+  },
+  "capture_all_packets": 400,
+  "target_filtered_packets": 340,
+  "matched_connection_packets_including_card": 180,
+  "negative_control_packets": 60,
+  "matching": {
+    "unique_connection": 10,
+    "ambiguous": 0,
+    "unmatched": 0,
+    "not_evaluable": 0
+  },
+  "negative_control_pass": 10,
+  "all_config_hashes_equal": true,
+  "all_connection_policies_equal": true,
+  "task_payloads_published": false,
+  "p95_reported_as_stable_result": false
+}

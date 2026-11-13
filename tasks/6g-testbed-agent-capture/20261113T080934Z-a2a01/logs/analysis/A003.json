@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "scripts/analyze_capture.py",
+    "--run-dir",
+    "private/runtime/A003",
+    "--private-output",
+    "private/analyzed/A003.json",
+    "--summary-output",
+    "reports/per_run/A003.json"
+  ],
+  "cwd": "/workspace/6g-agent-audit",
+  "start_utc": "2026-11-13T08:12:48.271611+00:00",
+  "timeout_seconds": 30.0,
+  "resource_environment": {},
+  "exit_code": 0,
+  "timed_out": false,
+  "end_utc": "2026-11-13T08:12:48.667889+00:00",
+  "elapsed_seconds": 0.3962806490001185
+}

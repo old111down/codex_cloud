@@ -1,0 +1,76 @@
+usage: orchestrator.py [-h] [--scenario SCENARIO] [--profile PROFILE]
+                       [--runs RUNS] [--config CONFIG] [--profiles PROFILES]
+                       [--db DB] [--interface INTERFACE] [--egress-only]
+                       [--ingress-profile INGRESS_PROFILE] [--report REPORT]
+                       [--list-scenarios] [--list-profiles] [--capture-pcap]
+                       [--capture-filter CAPTURE_FILTER]
+                       [--capture-dir CAPTURE_DIR] [--capture-loopback]
+                       [--no-capture-loopback]
+                       [--capture-loopback-filter CAPTURE_LOOPBACK_FILTER]
+                       [--capture-l7] [--capture-l7-dir CAPTURE_L7_DIR]
+                       [--capture-l7-hosts CAPTURE_L7_HOSTS]
+                       [--capture-l7-proxy-port CAPTURE_L7_PROXY_PORT]
+                       [--capture-l7-web-port CAPTURE_L7_WEB_PORT]
+                       [--mcp-transport {stdio,http}]
+                       [--run-timeout RUN_TIMEOUT] [--stop-on-error]
+                       [--resume]
+
+6G AI Traffic Characterization Testbed
+
+options:
+  -h, --help            show this help message and exit
+  --scenario SCENARIO, -s SCENARIO
+                        Scenario to run (or 'all' for test matrix)
+  --profile PROFILE, -p PROFILE
+                        Network profile to use
+  --runs RUNS, -r RUNS  Number of runs per experiment
+  --config CONFIG       Path to scenarios config
+  --profiles PROFILES   Path to network profiles config
+  --db DB               Path to SQLite database
+  --interface INTERFACE
+                        Network interface for emulation (auto = detect from
+                        default route)
+  --egress-only         Disable ingress shaping (only shape egress/outbound
+                        traffic)
+  --ingress-profile INGRESS_PROFILE
+                        Use a different network profile for ingress traffic
+                        (default: same as --profile)
+  --report REPORT       Output path for report
+  --list-scenarios      List available scenarios
+  --list-profiles       List available network profiles
+  --capture-pcap        Enable L3/L4 capture using tcpdump
+  --capture-filter CAPTURE_FILTER
+                        tcpdump filter expression. The default captures
+                        HTTP(S) plus WebRTC ICE/SRTP/RTP UDP traffic. Pass an
+                        empty string to capture all traffic.
+  --capture-dir CAPTURE_DIR
+                        Directory for pcap captures
+  --capture-loopback    When MCP transport is http, also capture loopback (lo)
+                        so MCP JSON-RPC frames are visible in pcap. Enabled by
+                        default. Use --no-capture-loopback to disable.
+  --no-capture-loopback
+                        Disable the secondary loopback capture (mirror flag).
+  --capture-loopback-filter CAPTURE_LOOPBACK_FILTER
+                        BPF filter for the loopback capture. Defaults to 'not
+                        port 22 and not port 53'.
+  --capture-l7          Enable L7 capture using mitmproxy
+  --capture-l7-dir CAPTURE_L7_DIR
+                        Directory for L7 captures
+  --capture-l7-hosts CAPTURE_L7_HOSTS
+                        Comma-separated hostnames to filter L7 capture
+  --capture-l7-proxy-port CAPTURE_L7_PROXY_PORT
+                        Port for mitmproxy
+  --capture-l7-web-port CAPTURE_L7_WEB_PORT
+                        Port for mitmproxy web UI (0 to disable)
+  --mcp-transport {stdio,http}
+                        MCP server transport: stdio (pipe, no netem) or http
+                        (TCP, netem-shaped)
+  --run-timeout RUN_TIMEOUT
+                        Per-run timeout in seconds (default: no timeout).
+                        Individual runs that exceed this are marked as failed
+                        and skipped.
+  --stop-on-error       Stop immediately on the first failed run (after
+                        retries).
+  --resume              Resume from where a previous run left off. Skips
+                        scenario/profile combinations that already have enough
+                        successful runs in the database.

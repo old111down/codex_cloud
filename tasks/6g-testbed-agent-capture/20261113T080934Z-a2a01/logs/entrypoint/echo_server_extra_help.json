@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/workspace/6g-agent-audit/.conda/agent/bin/python",
+    "-m",
+    "a2a_agents.echo_agent",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 0,
+  "duration_s": 0.5609960556030273,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/echo_server_extra_help.log"
+}

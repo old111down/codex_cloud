@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "a2a_agents.orchestrator_agent",
+    "--help"
+  ],
+  "cwd": "/workspace/6g-agent-audit/private/entrypoint_help",
+  "exit_code": 1,
+  "duration_s": 0.17278409004211426,
+  "log": "/workspace/6g-agent-audit/logs/entrypoint/orchestrator_agent_baseline_help.log"
+}
